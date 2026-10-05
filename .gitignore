@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+.env*
+*.tsbuildinfo
+/assets/
+/relatorios/
+/data.js
+/index.html
+/private/
+/tmp/
+__pycache__/
+*.pyc
+/.pnpm-store/
+/.nojekyll

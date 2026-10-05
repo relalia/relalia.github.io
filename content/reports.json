@@ -1,0 +1,1630 @@
+{
+  "reports": [
+    {
+      "id": "initial",
+      "date": "2026-09-11",
+      "title": "Validação inicial do Alia e VadeChat",
+      "module": "VadeChat",
+      "status": "Linha de base",
+      "count": "9 consultas × 2 modos",
+      "summary": "Comparação inicial dos modos Ágil e Pleno em nove perguntas. A recuperação do manual interno teve falhas e o Pleno recusou algumas consultas.",
+      "highlights": [
+        "Ágil respondeu mais rapidamente e consumiu menos créditos na amostra.",
+        "A rodada estabeleceu a linha de base para o reteste de outubro."
+      ],
+      "files": [
+        {
+          "label": "Relatório público · PDF",
+          "path": "/reports/validacao-inicial-publica.pdf",
+          "kind": "pdf"
+        }
+      ],
+      "findings": [
+        {
+          "id": "P01",
+          "title": "Registro e averbação",
+          "description": "Pleno mais detalhado, com quadro e referências; Ágil direto.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": "P01",
+          "retest": "baseline"
+        },
+        {
+          "id": "P02",
+          "title": "Averbação de construção",
+          "description": "Pleno detalhou o fluxo, mas divergiu do Ágil sobre CND previdenciária.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": "P02",
+          "retest": "baseline"
+        },
+        {
+          "id": "P03",
+          "title": "Prazo de prenotação",
+          "description": "Ágil descreveu o efeito sem prazo exato; Pleno recusou responder.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": "P03",
+          "retest": "baseline"
+        },
+        {
+          "id": "P04",
+          "title": "MACEQ: jornada e ponto",
+          "description": "Ágil recorreu a regra trabalhista geral; Pleno recusou.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": "P04",
+          "retest": "baseline"
+        },
+        {
+          "id": "P05",
+          "title": "Morrinhos: reforma e ampliação",
+          "description": "Pleno separou normas estaduais, municipais e lacunas internas.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": "P05",
+          "retest": "baseline"
+        },
+        {
+          "id": "P06",
+          "title": "ITBI municipal",
+          "description": "Pleno recuperou critérios, exceções e alíquotas; Ágil ficou genérico.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": "P06",
+          "retest": "baseline"
+        },
+        {
+          "id": "P07",
+          "title": "Obras e urbanismo municipal",
+          "description": "Ágil trouxe providências; Pleno não respondeu.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": "P07",
+          "retest": "baseline"
+        },
+        {
+          "id": "P08",
+          "title": "MACEQ: ponto, seção 1.6",
+          "description": "Ágil acertou as marcações, mas omitiu o período exato; Pleno recusou.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": "P08",
+          "retest": "baseline"
+        },
+        {
+          "id": "P09",
+          "title": "MACEQ: atendimento, seção 2.3",
+          "description": "Ágil trouxe fluxo genérico; Pleno recusou.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": "P09",
+          "retest": "baseline"
+        }
+      ]
+    },
+    {
+      "id": "atlas",
+      "date": "2026-09-30",
+      "title": "Atlas · checklist técnico",
+      "module": "Atlas",
+      "status": "Reteste pendente",
+      "count": "51 achados · 44 evidências referenciadas",
+      "summary": "Consolidação de testes do Atlas realizados em 28 e 30 de setembro. Os relatos abaixo preservam o sentido técnico; dados de pessoas, imóveis e protocolos foram removidos.",
+      "highlights": [
+        "51 achados preservados com os IDs e vínculos de evidência.",
+        "Capturas originais omitidas: contêm dados registrais e pessoais.",
+        "Fundamentos e conclusões normativas dependem de revisão especializada."
+      ],
+      "files": [
+        {
+          "label": "Relatório público · PDF",
+          "path": "/reports/atlas-checklist-publico.pdf",
+          "kind": "pdf"
+        }
+      ],
+      "findings": [
+        {
+          "id": "AC-001",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "Titulares atuais não foram apurados na leitura do fólio.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-01"
+          ],
+          "relatedIds": [
+            "AC-012",
+            "AC-029"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-002",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "A alteração da descrição do imóvel foi atribuída ao ato errado.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-02"
+          ],
+          "relatedIds": [
+            "AC-013"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-003",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "Averbações cadastrais foram classificadas como transferência.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-03"
+          ],
+          "relatedIds": [
+            "AC-011"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-004",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "Informações presentes no texto foram tratadas como disponíveis apenas no cadastro.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-04"
+          ],
+          "relatedIds": [
+            "AC-001",
+            "AC-013"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-005",
+          "title": "INTERFACE / USABILIDADE",
+          "kind": "SUGESTÃO DE MELHORIA",
+          "description": "A decisão inicial aparece genérica, enquanto o exame oferece mais detalhe.",
+          "severity": "MÉDIA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-05",
+            "EV-06"
+          ],
+          "relatedIds": [
+            "AC-006",
+            "AC-009"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-006",
+          "title": "NATUREZA DO ATO (LNA)",
+          "kind": "DÚVIDA OPERACIONAL",
+          "description": "Os códigos das duas opções de natureza do ato não são compreensíveis na interface.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-05"
+          ],
+          "relatedIds": [
+            "AC-005"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-007",
+          "title": "NATUREZA DO ATO (LNA)",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "Atos de caracterização e inserção de dados foram apresentados como sem correspondência na lista.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-06"
+          ],
+          "relatedIds": [
+            "AC-008"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-008",
+          "title": "NATUREZA DO ATO (LNA)",
+          "kind": "DÚVIDA OPERACIONAL",
+          "description": "Há dúvida sobre a correspondência entre a lista exibida e os atos praticados.",
+          "severity": "BAIXA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-06"
+          ],
+          "relatedIds": [
+            "AC-007"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-009",
+          "title": "INTERFACE / USABILIDADE",
+          "kind": "INCONSISTÊNCIA DE INTERFACE",
+          "description": "Três comandos da interface parecem conduzir à mesma ação.",
+          "severity": "MÉDIA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-06"
+          ],
+          "relatedIds": [
+            "AC-018"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-010",
+          "title": "LEITURA DO TÍTULO / DOCUMENTOS",
+          "kind": "ERRO DE LEITURA",
+          "description": "Parte dos documentos anexados não foi lida.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-07"
+          ],
+          "relatedIds": [
+            "AC-022"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-011",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "A visualização do fólio repetiu a classificação incorreta de averbações.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-08"
+          ],
+          "relatedIds": [
+            "AC-003"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-012",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "A extração das partes de uma transferência falhou apesar de constarem no texto.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-09"
+          ],
+          "relatedIds": [
+            "AC-001",
+            "AC-003"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-013",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "A descrição atualizada do imóvel não foi identificada.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-10"
+          ],
+          "relatedIds": [
+            "AC-002"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-014",
+          "title": "EXAME / EXIGÊNCIAS",
+          "kind": "FALSO POSITIVO (EXIGÊNCIA INDEVIDA)",
+          "description": "Foi gerada exigência sobre informação que constava do título ou cuja recusa foi registrada.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-11"
+          ],
+          "relatedIds": [
+            "AC-022"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-015",
+          "title": "EXAME / EXIGÊNCIAS",
+          "kind": "FALSO POSITIVO (EXIGÊNCIA INDEVIDA)",
+          "description": "A qualificação das partes foi exigida apesar de constar do instrumento examinado.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-12"
+          ],
+          "relatedIds": [
+            "AC-022"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-016",
+          "title": "EXAME / EXIGÊNCIAS",
+          "kind": "FALSO POSITIVO (EXIGÊNCIA INDEVIDA)",
+          "description": "Exigências duplicadas questionam uma descrição já presente no instrumento.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-13"
+          ],
+          "relatedIds": [
+            "AC-022"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-017",
+          "title": "INTERFACE / USABILIDADE",
+          "kind": "SUGESTÃO DE MELHORIA",
+          "description": "A exigência não identifica claramente o documento que a originou.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-14"
+          ],
+          "relatedIds": [
+            "AC-021"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-018",
+          "title": "INTERFACE / USABILIDADE",
+          "kind": "INCONSISTÊNCIA DE INTERFACE",
+          "description": "Comandos de decisão no exame parecem equivalentes.",
+          "severity": "MÉDIA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-15"
+          ],
+          "relatedIds": [
+            "AC-009",
+            "AC-028"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-019",
+          "title": "LEITURA DO TÍTULO / DOCUMENTOS",
+          "kind": "ERRO DE LEITURA",
+          "description": "Números de certidões foram interpretados como matrículas de imóveis.",
+          "severity": "MÉDIA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-16"
+          ],
+          "relatedIds": [
+            "AC-020"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-020",
+          "title": "EXAME / EXIGÊNCIAS",
+          "kind": "FALSO POSITIVO (EXIGÊNCIA INDEVIDA)",
+          "description": "Pontos de atenção foram gerados para requisitos já descritos no instrumento.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-17",
+            "EV-18"
+          ],
+          "relatedIds": [
+            "AC-022"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-021",
+          "title": "NOTA DE EXIGÊNCIA",
+          "kind": "NÃO CONFORMIDADE NORMATIVA",
+          "description": "A minuta sugere sanar todas as exigências em uma única remessa.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-19"
+          ],
+          "relatedIds": [
+            "AC-027"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-022",
+          "title": "LEITURA DO TÍTULO / DOCUMENTOS",
+          "kind": "ERRO DE LEITURA",
+          "description": "O OCR leu apenas a camada de assinaturas de um documento digitalizado.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-20",
+            "EV-22"
+          ],
+          "relatedIds": [
+            "AC-014",
+            "AC-015",
+            "AC-016",
+            "AC-020"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-023",
+          "title": "NATUREZA DO ATO (LNA)",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "Atos repetidos no pedido foram reduzidos a ocorrências únicas.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-21",
+            "EV-20"
+          ],
+          "relatedIds": [
+            "AC-024"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-024",
+          "title": "EXAME / EXIGÊNCIAS",
+          "kind": "NÃO CONFORMIDADE NORMATIVA",
+          "description": "O exame e a minuta divergem sobre a existência de garantia a cancelar.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-26",
+            "EV-21"
+          ],
+          "relatedIds": [
+            "AC-023"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-025",
+          "title": "INTERFACE / USABILIDADE",
+          "kind": "INCONSISTÊNCIA DE INTERFACE",
+          "description": "Contadores de decisões e atos divergem entre telas.",
+          "severity": "MÉDIA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-23",
+            "EV-24",
+            "EV-25"
+          ],
+          "relatedIds": [
+            "AC-026"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-026",
+          "title": "INTERFACE / USABILIDADE",
+          "kind": "INCONSISTÊNCIA DE INTERFACE",
+          "description": "A interface indica documento definitivo antes da conclusão do exame.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-25"
+          ],
+          "relatedIds": [
+            "AC-027"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-027",
+          "title": "NOTA DE EXIGÊNCIA",
+          "kind": "NÃO CONFORMIDADE NORMATIVA",
+          "description": "A minuta omite campos previstos no modelo de referência e exportação estruturada.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-25"
+          ],
+          "relatedIds": [
+            "AC-021",
+            "AC-026"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-028",
+          "title": "INTERFACE / USABILIDADE",
+          "kind": "SUGESTÃO DE MELHORIA",
+          "description": "Há erros de concordância, nomenclatura e referências na interface.",
+          "severity": "BAIXA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-11",
+            "EV-14",
+            "EV-15"
+          ],
+          "relatedIds": [
+            "AC-018"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-029",
+          "title": "EXAME / EXIGÊNCIAS",
+          "kind": "FALSO POSITIVO (EXIGÊNCIA INDEVIDA)",
+          "description": "Duas exigências de continuidade idênticas decorrem da falha de extração dos titulares.",
+          "severity": "ALTA",
+          "context": "Caso A · protocolo",
+          "evidenceIds": [
+            "EV-01"
+          ],
+          "relatedIds": [
+            "AC-001"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-030",
+          "title": "INTERFACE / USABILIDADE",
+          "kind": "SUGESTÃO DE MELHORIA",
+          "description": "Uma mensagem técnica interna é exibida sem explicação clara ao usuário.",
+          "severity": "BAIXA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-27"
+          ],
+          "relatedIds": [
+            "AC-042"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-031",
+          "title": "INTERFACE / USABILIDADE",
+          "kind": "INCONSISTÊNCIA DE INTERFACE",
+          "description": "A sigla usada para abertura do fólio pode ser confundida com a numeração dos atos.",
+          "severity": "MÉDIA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-27",
+            "EV-32"
+          ],
+          "relatedIds": [
+            "AC-012"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-032",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "A denominação completa do imóvel não foi recuperada.",
+          "severity": "MÉDIA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-29",
+            "EV-34"
+          ],
+          "relatedIds": [
+            "AC-041"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-033",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "Um identificador rural presente no texto não foi encontrado na leitura.",
+          "severity": "ALTA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-29",
+            "EV-35"
+          ],
+          "relatedIds": [
+            "AC-045"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-034",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "Benfeitorias descritas no texto não foram identificadas.",
+          "severity": "MÉDIA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-29",
+            "EV-34"
+          ],
+          "relatedIds": [
+            "AC-045"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-035",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "Uma averbação declaratória foi classificada como constituição de reserva legal.",
+          "severity": "ALTA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-29",
+            "EV-37"
+          ],
+          "relatedIds": [
+            "AC-042",
+            "AC-043"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-036",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "A interface atribui alteração do imóvel a um ato meramente declaratório.",
+          "severity": "MÉDIA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-29",
+            "EV-32"
+          ],
+          "relatedIds": [
+            "AC-044"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-037",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "A titularidade e a qualificação civil presentes no texto não foram extraídas.",
+          "severity": "ALTA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-30",
+            "EV-27",
+            "EV-36"
+          ],
+          "relatedIds": [
+            "AC-001",
+            "AC-038"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-038",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "A comparação com o cadastro recuperou apenas o nome do titular.",
+          "severity": "MÉDIA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-31",
+            "EV-36"
+          ],
+          "relatedIds": [
+            "AC-004",
+            "AC-037"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-039",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "Campos próprios de imóvel urbano foram aplicados a um imóvel rural.",
+          "severity": "MÉDIA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-31",
+            "EV-33",
+            "EV-35"
+          ],
+          "relatedIds": [
+            "AC-041"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-040",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "SUGESTÃO DE MELHORIA",
+          "description": "O campo de área oferece precisão decimal insuficiente.",
+          "severity": "MÉDIA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-31",
+            "EV-33"
+          ],
+          "relatedIds": [],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-041",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "DÚVIDA OPERACIONAL",
+          "description": "A denominação exibida omite um lugar complementar.",
+          "severity": "BAIXA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-31",
+            "EV-33",
+            "EV-34"
+          ],
+          "relatedIds": [
+            "AC-032",
+            "AC-039"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-042",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "Atos de traslado presentes no texto não apareceram na linha do tempo.",
+          "severity": "ALTA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-32",
+            "EV-28",
+            "EV-37"
+          ],
+          "relatedIds": [
+            "AC-030",
+            "AC-035"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-043",
+          "title": "NATUREZA DO ATO (LNA)",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "Um ato de traslado foi classificado como alteração cadastral; outros foram omitidos.",
+          "severity": "MÉDIA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-32",
+            "EV-37"
+          ],
+          "relatedIds": [
+            "AC-003",
+            "AC-036"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-044",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "A origem registral e a natureza da abertura do fólio foram omitidas.",
+          "severity": "MÉDIA",
+          "context": "Caso B · matrícula rural",
+          "evidenceIds": [
+            "EV-29",
+            "EV-33",
+            "EV-36"
+          ],
+          "relatedIds": [],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-045",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "Um registro auxiliar foi analisado como se fosse matrícula imobiliária.",
+          "severity": "ALTA",
+          "context": "Caso C · registro auxiliar",
+          "evidenceIds": [
+            "EV-40",
+            "EV-43"
+          ],
+          "relatedIds": [
+            "AC-046",
+            "AC-047",
+            "AC-048"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-046",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "O registro auxiliar recebeu campos de proprietário que não se aplicam a ele.",
+          "severity": "ALTA",
+          "context": "Caso C · registro auxiliar",
+          "evidenceIds": [
+            "EV-38",
+            "EV-42",
+            "EV-43"
+          ],
+          "relatedIds": [
+            "AC-037",
+            "AC-045"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-047",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "O registro auxiliar recebeu exigência de endereço imobiliário indevida.",
+          "severity": "MÉDIA",
+          "context": "Caso C · registro auxiliar",
+          "evidenceIds": [
+            "EV-39"
+          ],
+          "relatedIds": [
+            "AC-045",
+            "AC-048"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-048",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE LEITURA",
+          "description": "A leitura da garantia omitiu partes, bem, dívida, vencimento ou título.",
+          "severity": "ALTA",
+          "context": "Caso C · registro auxiliar",
+          "evidenceIds": [
+            "EV-43",
+            "EV-41"
+          ],
+          "relatedIds": [
+            "AC-045",
+            "AC-049"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-049",
+          "title": "NATUREZA DO ATO (LNA)",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "A análise considerou apenas o ato inicial e ignorou aditivos posteriores.",
+          "severity": "ALTA",
+          "context": "Caso C · registro auxiliar",
+          "evidenceIds": [
+            "EV-44",
+            "EV-40",
+            "EV-41"
+          ],
+          "relatedIds": [
+            "AC-048"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-050",
+          "title": "INTERFACE / USABILIDADE",
+          "kind": "INCONSISTÊNCIA DE INTERFACE",
+          "description": "Mensagens e rótulos do registro auxiliar apresentam redação confusa.",
+          "severity": "BAIXA",
+          "context": "Caso C · registro auxiliar",
+          "evidenceIds": [
+            "EV-38",
+            "EV-40",
+            "EV-41"
+          ],
+          "relatedIds": [
+            "AC-030",
+            "AC-031"
+          ],
+          "retest": "pending"
+        },
+        {
+          "id": "AC-051",
+          "title": "LEITURA DO FÓLIO",
+          "kind": "ERRO DE CLASSIFICAÇÃO",
+          "description": "A interface declarou ausência de ônus em um registro que constitui garantia.",
+          "severity": "MÉDIA",
+          "context": "Caso C · registro auxiliar",
+          "evidenceIds": [
+            "EV-42"
+          ],
+          "relatedIds": [
+            "AC-045",
+            "AC-048"
+          ],
+          "retest": "pending"
+        }
+      ]
+    },
+    {
+      "id": "retest",
+      "date": "2026-10-02",
+      "title": "Reteste do VadeChat",
+      "module": "VadeChat",
+      "status": "Reteste concluído",
+      "count": "9 perguntas revisitadas",
+      "summary": "Reteste das nove perguntas da linha de base. Houve melhora na recuperação do manual, com falhas de apresentação e respostas incompletas em alguns temas.",
+      "highlights": [
+        "Itens P04, P08 e P09 passaram a recuperar o conteúdo do manual.",
+        "Persistiram respostas cortadas ou sem apresentação completa de fontes em alguns testes."
+      ],
+      "files": [
+        {
+          "label": "Relatório público · PDF",
+          "path": "/reports/reteste-vadechat-publico.pdf",
+          "kind": "pdf"
+        }
+      ],
+      "findings": [
+        {
+          "id": "P01",
+          "title": "Registro e averbação",
+          "description": "Ambos responderam; o quadro do Pleno apareceu com barras verticais, sem tabela renderizada.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": "Persistência",
+          "evidenceIds": [],
+          "comparisonId": "P01",
+          "retest": "completed"
+        },
+        {
+          "id": "P02",
+          "title": "Averbação de construção",
+          "description": "Divergência sobre CND não se repetiu; Ágil sem painel de evidências e diferença sobre emolumentos.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": "Melhora parcial",
+          "evidenceIds": [],
+          "comparisonId": "P02",
+          "retest": "completed"
+        },
+        {
+          "id": "P03",
+          "title": "Prazo de prenotação",
+          "description": "Ambos informaram 20 dias, mas não esclareceram a contagem.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": "Melhora parcial",
+          "evidenceIds": [],
+          "comparisonId": "P03",
+          "retest": "completed"
+        },
+        {
+          "id": "P04",
+          "title": "MACEQ: jornada e ponto",
+          "description": "Ambos recuperaram as quatro marcações e 8h45, conferidos no manual.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": "Melhora observada",
+          "evidenceIds": [],
+          "comparisonId": "P04",
+          "retest": "completed"
+        },
+        {
+          "id": "P05",
+          "title": "Morrinhos: reforma e ampliação",
+          "description": "Primeira tentativa do Pleno terminou cortada; segunda completa. Permanecem ressalvas de evidência.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": "Intermitente",
+          "evidenceIds": [],
+          "comparisonId": "P05",
+          "retest": "completed"
+        },
+        {
+          "id": "P06",
+          "title": "ITBI municipal",
+          "description": "Ágil declarou não localizar LC nº 114/2023, presente no catálogo; Pleno apresentou as três fontes.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": "Persistência",
+          "evidenceIds": [],
+          "comparisonId": "P06",
+          "retest": "completed"
+        },
+        {
+          "id": "P07",
+          "title": "Obras e urbanismo municipal",
+          "description": "Pleno cortou nas duas tentativas e não apresentou todos os dispositivos solicitados da Lei Orgânica e do Plano Diretor.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": "Persistência",
+          "evidenceIds": [],
+          "comparisonId": "P07",
+          "retest": "completed"
+        },
+        {
+          "id": "P08",
+          "title": "MACEQ: ponto, seção 1.6",
+          "description": "Ambos recuperaram quatro marcações e período do dia 21 ao 20, conferidos no manual.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": "Melhora observada",
+          "evidenceIds": [],
+          "comparisonId": "P08",
+          "retest": "completed"
+        },
+        {
+          "id": "P09",
+          "title": "MACEQ: atendimento, seção 2.3",
+          "description": "Ambos recuperaram dez etapas; a seção começa na p. 61 e as etapas constam nas p. 62–63.",
+          "expected": null,
+          "verification": null,
+          "severity": null,
+          "status": "Melhora observada",
+          "evidenceIds": [],
+          "comparisonId": "P09",
+          "retest": "completed"
+        }
+      ]
+    },
+    {
+      "id": "today",
+      "date": "2026-10-05",
+      "title": "Melhorias de navegação e conversa",
+      "module": "VadeChat",
+      "status": "Melhorias propostas",
+      "count": "4 achados de experiência",
+      "summary": "Registro de melhorias de navegação, interação e apresentação da conversa no VadeChat.",
+      "highlights": [
+        "Fluxo de início de conversa e clareza dos controles.",
+        "Captura revisada disponível para o item de confirmações semelhantes."
+      ],
+      "files": [
+        {
+          "label": "Relatório público · PDF",
+          "path": "/reports/melhorias-vadechat-publico.pdf",
+          "kind": "pdf"
+        }
+      ],
+      "findings": [
+        {
+          "id": "VC-UX-01",
+          "title": "Cursor em controles interativos",
+          "description": "Botões e links foram percebidos sem indicação visual consistente de clique ao passar o mouse.",
+          "expected": "Aplicar cursor de ação aos controles habilitados e manter foco visível para teclado.",
+          "verification": "Percorrer início, sugestões e chat com mouse e teclado.",
+          "severity": "Baixa",
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": null,
+          "retest": "pending"
+        },
+        {
+          "id": "VC-UX-02",
+          "title": "Início da conversa com um único envio",
+          "description": "O texto digitado no destaque da página inicial vai ao campo do chat, mas exige outro envio; os chips também exigem passo adicional.",
+          "expected": "Ao acionar Enviar ou uma sugestão, abrir a conversa e enviar a pergunta uma vez, com estado de carregamento e recuperação de erro.",
+          "verification": "Testar texto digitado, Enter e chips em conversas novas; verificar uma única mensagem e solicitação.",
+          "severity": "Média",
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": null,
+          "retest": "pending"
+        },
+        {
+          "id": "VC-CHAT-03",
+          "title": "Confirmações semelhantes em sequência",
+          "description": "Após perguntar “Olá Vadechat. Quem é você e como posso utilizá-lo?”, o usuário relata confirmações repetidas sobre detalhes técnicos e estrutura interna. A captura mostra pelo menos duas perguntas semelhantes e respostas “Sim” entre elas; não comprova ciclo infinito.",
+          "expected": "Depois da confirmação, responder ao conteúdo divulgável ou explicar diretamente o limite de informação, sem novas confirmações equivalentes.",
+          "verification": "Repetir a pergunta e registrar os turnos, modo, data, versão e consumo até uma resposta conclusiva.",
+          "severity": "Alta para investigação",
+          "status": null,
+          "evidenceIds": [
+            "VC-EV-01"
+          ],
+          "comparisonId": null,
+          "retest": "pending"
+        },
+        {
+          "id": "VC-UX-04",
+          "title": "Uso da largura disponível no chat",
+          "description": "Espaços laterais amplos limitam a lista de conversas e a conversa aberta em monitores maiores.",
+          "expected": "Rever largura máxima e distribuição das colunas, preservando leitura e uso em telas menores.",
+          "verification": "Comparar capturas em desktop e notebook e conferir mensagens, anexos e entrada.",
+          "severity": "Baixa",
+          "status": null,
+          "evidenceIds": [],
+          "comparisonId": null,
+          "retest": "pending"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV-01",
+      "findingIds": [
+        "AC-001",
+        "AC-029"
+      ],
+      "description": "Registro visual vinculado a AC-001, AC-029. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-02",
+      "findingIds": [
+        "AC-002"
+      ],
+      "description": "Registro visual vinculado a AC-002. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-03",
+      "findingIds": [
+        "AC-003"
+      ],
+      "description": "Registro visual vinculado a AC-003. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-04",
+      "findingIds": [
+        "AC-004"
+      ],
+      "description": "Registro visual vinculado a AC-004. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-05",
+      "findingIds": [
+        "AC-005",
+        "AC-006"
+      ],
+      "description": "Registro visual vinculado a AC-005, AC-006. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-06",
+      "findingIds": [
+        "AC-005",
+        "AC-007",
+        "AC-008",
+        "AC-009"
+      ],
+      "description": "Registro visual vinculado a AC-005, AC-007, AC-008, AC-009. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-07",
+      "findingIds": [
+        "AC-010"
+      ],
+      "description": "Registro visual vinculado a AC-010. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-08",
+      "findingIds": [
+        "AC-011"
+      ],
+      "description": "Registro visual vinculado a AC-011. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-09",
+      "findingIds": [
+        "AC-012"
+      ],
+      "description": "Registro visual vinculado a AC-012. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-10",
+      "findingIds": [
+        "AC-013"
+      ],
+      "description": "Registro visual vinculado a AC-013. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-11",
+      "findingIds": [
+        "AC-014",
+        "AC-028"
+      ],
+      "description": "Registro visual vinculado a AC-014, AC-028. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-12",
+      "findingIds": [
+        "AC-015"
+      ],
+      "description": "Registro visual vinculado a AC-015. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-13",
+      "findingIds": [
+        "AC-016"
+      ],
+      "description": "Registro visual vinculado a AC-016. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-14",
+      "findingIds": [
+        "AC-017"
+      ],
+      "description": "Registro visual vinculado a AC-017. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-15",
+      "findingIds": [
+        "AC-018",
+        "AC-028"
+      ],
+      "description": "Registro visual vinculado a AC-018, AC-028. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-16",
+      "findingIds": [
+        "AC-019"
+      ],
+      "description": "Registro visual vinculado a AC-019. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-17",
+      "findingIds": [
+        "AC-020"
+      ],
+      "description": "Registro visual vinculado a AC-020. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-18",
+      "findingIds": [
+        "AC-020"
+      ],
+      "description": "Registro visual vinculado a AC-020. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-19",
+      "findingIds": [
+        "AC-021"
+      ],
+      "description": "Registro visual vinculado a AC-021. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-20",
+      "findingIds": [
+        "AC-022",
+        "AC-023"
+      ],
+      "description": "Registro visual vinculado a AC-022, AC-023. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-21",
+      "findingIds": [
+        "AC-023",
+        "AC-024"
+      ],
+      "description": "Registro visual vinculado a AC-023, AC-024. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-22",
+      "findingIds": [
+        "AC-022"
+      ],
+      "description": "Registro visual vinculado a AC-022. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-23",
+      "findingIds": [
+        "AC-025"
+      ],
+      "description": "Registro visual vinculado a AC-025. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-24",
+      "findingIds": [
+        "AC-025",
+        "AC-028"
+      ],
+      "description": "Registro visual vinculado a AC-025, AC-028. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-25",
+      "findingIds": [
+        "AC-025",
+        "AC-026",
+        "AC-027"
+      ],
+      "description": "Registro visual vinculado a AC-025, AC-026, AC-027. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-26",
+      "findingIds": [
+        "AC-024"
+      ],
+      "description": "Registro visual vinculado a AC-024. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-27",
+      "findingIds": [
+        "AC-030",
+        "AC-031",
+        "AC-037"
+      ],
+      "description": "Registro visual vinculado a AC-030, AC-031, AC-037. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-28",
+      "findingIds": [
+        "AC-042"
+      ],
+      "description": "Registro visual vinculado a AC-042. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-29",
+      "findingIds": [
+        "AC-032",
+        "AC-033",
+        "AC-034",
+        "AC-035",
+        "AC-036",
+        "AC-043"
+      ],
+      "description": "Registro visual vinculado a AC-032, AC-033, AC-034, AC-035, AC-036, AC-043. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-30",
+      "findingIds": [
+        "AC-037",
+        "AC-043"
+      ],
+      "description": "Registro visual vinculado a AC-037, AC-043. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-31",
+      "findingIds": [
+        "AC-038",
+        "AC-039",
+        "AC-040",
+        "AC-041"
+      ],
+      "description": "Registro visual vinculado a AC-038, AC-039, AC-040, AC-041. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-32",
+      "findingIds": [
+        "AC-031",
+        "AC-036",
+        "AC-042",
+        "AC-043"
+      ],
+      "description": "Registro visual vinculado a AC-031, AC-036, AC-042, AC-043. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-33",
+      "findingIds": [
+        "AC-031",
+        "AC-039",
+        "AC-040",
+        "AC-041",
+        "AC-044"
+      ],
+      "description": "Registro visual vinculado a AC-031, AC-039, AC-040, AC-041, AC-044. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-34",
+      "findingIds": [
+        "AC-032",
+        "AC-034",
+        "AC-041"
+      ],
+      "description": "Registro visual vinculado a AC-032, AC-034, AC-041. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-35",
+      "findingIds": [
+        "AC-033",
+        "AC-039"
+      ],
+      "description": "Registro visual vinculado a AC-033, AC-039. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-36",
+      "findingIds": [
+        "AC-037",
+        "AC-038",
+        "AC-044"
+      ],
+      "description": "Registro visual vinculado a AC-037, AC-038, AC-044. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-37",
+      "findingIds": [
+        "AC-035",
+        "AC-042",
+        "AC-043"
+      ],
+      "description": "Registro visual vinculado a AC-035, AC-042, AC-043. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-38",
+      "findingIds": [
+        "AC-046",
+        "AC-050"
+      ],
+      "description": "Registro visual vinculado a AC-046, AC-050. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-39",
+      "findingIds": [
+        "AC-047"
+      ],
+      "description": "Registro visual vinculado a AC-047. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-40",
+      "findingIds": [
+        "AC-045",
+        "AC-049",
+        "AC-050"
+      ],
+      "description": "Registro visual vinculado a AC-045, AC-049, AC-050. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-41",
+      "findingIds": [
+        "AC-048",
+        "AC-049",
+        "AC-050"
+      ],
+      "description": "Registro visual vinculado a AC-048, AC-049, AC-050. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-42",
+      "findingIds": [
+        "AC-046",
+        "AC-051"
+      ],
+      "description": "Registro visual vinculado a AC-046, AC-051. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-43",
+      "findingIds": [
+        "AC-045",
+        "AC-046",
+        "AC-048"
+      ],
+      "description": "Registro visual vinculado a AC-045, AC-046, AC-048. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "EV-44",
+      "findingIds": [
+        "AC-049"
+      ],
+      "description": "Registro visual vinculado a AC-049. A captura original foi omitida por conter dados registrais.",
+      "image": null,
+      "publication": "omitted"
+    },
+    {
+      "id": "VC-EV-01",
+      "findingIds": [
+        "VC-CHAT-03"
+      ],
+      "description": "Duas solicitações de confirmação semelhantes apareceram em sequência; a captura não comprova ciclo infinito.",
+      "image": "/evidence/vadechat-confirmacoes-publica.png",
+      "publication": "published"
+    }
+  ]
+}
