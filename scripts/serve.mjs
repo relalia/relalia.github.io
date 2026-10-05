@@ -13,6 +13,7 @@ http.createServer((request, response) => {
   if (!file.startsWith(root + path.sep) && file !== root) { response.writeHead(403).end(); return; }
   const selected = fs.existsSync(file) && fs.statSync(file).isFile() ? file : fs.existsSync(path.join(file, 'index.html')) ? path.join(file, 'index.html') : null;
   if (!selected) { response.writeHead(404).end('Not found'); return; }
-  response.setHeader('Content-Type', `${mime[path.extname(selected)] || 'application/octet-stream'}; charset=utf-8`);
+  const type = mime[path.extname(selected)] || 'application/octet-stream';
+  response.setHeader('Content-Type', /^(text\/|application\/javascript)/.test(type) ? `${type}; charset=utf-8` : type);
   fs.createReadStream(selected).pipe(response);
 }).listen(4173, '127.0.0.1', () => console.log('http://127.0.0.1:4173'));

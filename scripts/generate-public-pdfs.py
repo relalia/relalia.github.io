@@ -10,6 +10,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, KeepTogethe
 
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT / 'content/reports.json').read_text(encoding='utf-8'))
+retest_labels = {'pending': 'Pendente', 'completed': 'Concluído', 'baseline': 'Linha de base'}
 target = ROOT / 'public/reports'
 target.mkdir(parents=True, exist_ok=True)
 styles = getSampleStyleSheet()
@@ -38,7 +39,7 @@ for report in data['reports']:
             parts.append(Paragraph('Evidências vinculadas: ' + escape(', '.join(finding['evidenceIds'])), styles['SmallPublic']))
         if finding.get('relatedIds'):
             parts.append(Paragraph('Achados vinculados: ' + escape(', '.join(finding['relatedIds'])), styles['SmallPublic']))
-        parts.append(Paragraph('Reteste: ' + escape(finding['retest']), styles['SmallPublic']))
+        parts.append(Paragraph('Reteste: ' + escape(retest_labels[finding['retest']]), styles['SmallPublic']))
         story.append(KeepTogether(parts))
     story.extend([Spacer(1, 16), Paragraph('Publicação revisada. Arquivos originais e capturas do Atlas não integram este PDF. Os vínculos de evidência foram mantidos.', styles['SmallPublic'])])
     doc.build(story)
