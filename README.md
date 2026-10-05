@@ -41,7 +41,7 @@ Abra `http://localhost:4173/` para prévia da exportação.
 3. Para cada evidência, acrescente um objeto em `evidence` e vincule seu ID em `finding.evidenceIds`. Use `image: null` e `publication: "omitted"` quando a captura não puder ser publicada. Se houver imagem pública, regrave os pixels sem metadados e confirme que nenhuma informação sensível continua legível.
 4. Gere o PDF público com `python scripts/generate-public-pdfs.py`, execute `pnpm check` e revise manualmente o conteúdo extraível do PDF e as imagens antes de enviar ao GitHub.
 
-As rotas são geradas automaticamente a partir do array `reports`; nenhuma página ou componente precisa ser copiado. O site foi configurado para a raiz de `https://relaria.github.io/`, no repositório `relaria/relaria.github.io`. Se a organização ainda não existir, ela precisa ser criada e o Pages configurado para **GitHub Actions** antes do primeiro deploy. O workflow requer apenas leitura do código no build e `pages: write`/`id-token: write` no job de publicação.
+As rotas são geradas automaticamente a partir do array `reports`; nenhuma página ou componente precisa ser copiado. O site está configurado para a raiz de `https://relalia.github.io/`, no repositório `relalia/relalia.github.io`. O Pages usa **GitHub Actions** como fonte. O workflow requer apenas leitura do código no build e `pages: write`/`id-token: write` no job de publicação.
 
 ## Revisão de privacidade
 
