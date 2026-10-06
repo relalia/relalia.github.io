@@ -1,6 +1,6 @@
 import ReportView from '@/components/ReportView';
-import { getReport } from '@/lib/reports';
+import { reports } from '@/lib/reports';
 
 export default function Home() {
-  return <ReportView report={getReport('today')!} />;
+  return <ReportView report={[...reports].sort((a,b)=>b.date.localeCompare(a.date))[0]} />;
 }

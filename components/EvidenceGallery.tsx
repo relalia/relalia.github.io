@@ -1,28 +1,35 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { evidenceById } from '@/lib/reports';
 
 export default function EvidenceGallery({ ids }: { ids: string[] }) {
   const [open, setOpen] = useState<string | null>(null);
-  if (!ids.length) return null;
+  const dialog = useRef<HTMLDialogElement>(null);
+  const titleId = useId();
   const selected = open ? evidenceById.get(open) : null;
+  useEffect(() => {
+    if (open && dialog.current && !dialog.current.open) dialog.current.showModal();
+    if (!open && dialog.current?.open) dialog.current.close();
+  }, [open]);
+  if (!ids.length) return null;
   return <>
     <div className="evidence-gallery">
       {ids.map(id => {
         const item = evidenceById.get(id);
         if (!item) return null;
-        return <div className="evidence-card" key={id}>
-          <strong>{id}</strong><p>{item.description}</p>
-          {item.image ? <button type="button" onClick={() => setOpen(id)} aria-label={`Ampliar ${id}`}><img src={item.image} alt={`Evidência revisada ${id}`} loading="lazy" /></button> : <span className="omitted">Imagem omitida na versão pública</span>}
-        </div>;
+        return <figure className={`evidence-card ${item.kind === 'video' ? 'video-card' : ''}`} key={id}>
+          <figcaption><strong>{id}</strong><p>{item.description}</p></figcaption>
+          {item.kind === 'image' && item.path && <button className="image-trigger" type="button" onClick={() => setOpen(id)} aria-label={`Ampliar ${id}`}><img src={item.path} alt={item.description} loading="lazy" /><span>Ampliar captura ↗</span></button>}
+          {item.kind === 'video' && item.path && <video controls playsInline preload="metadata" aria-label={`Vídeo ${id}`}><source src={item.path} type="video/mp4" />Seu navegador não reproduz este vídeo. Use o link de download.</video>}
+          {item.kind === 'description' && <span className="description-only">Descrição sem imagem incorporada.</span>}
+          {item.path && <a className="evidence-download" href={item.path} download={item.originalName}>↓ Baixar original{item.kind === 'video' ? ' · MP4' : ''}</a>}
+          {item.originalName && <small className="filename">{item.originalName}</small>}
+        </figure>;
       })}
     </div>
-    {selected?.image && <div className="lightbox-backdrop" role="presentation" onClick={() => setOpen(null)}>
-      <div className="lightbox" role="dialog" aria-modal="true" aria-label={`Evidência ${selected.id}`} onClick={event => event.stopPropagation()}>
-        <div className="lightbox-bar"><strong>{selected.id}</strong><button type="button" onClick={() => setOpen(null)}>Fechar ×</button></div>
-        <img src={selected.image} alt={selected.description} />
-      </div>
-    </div>}
+    <dialog className="lightbox" ref={dialog} onClose={() => setOpen(null)} onClick={event => {if (event.target === event.currentTarget) setOpen(null);}} aria-labelledby={titleId}>
+      {selected?.path && <><div className="lightbox-bar"><strong id={titleId}>{selected.id}</strong><button type="button" onClick={() => setOpen(null)} autoFocus>Fechar ×</button></div><img src={selected.path} alt={selected.description} /><p>{selected.description}</p><a href={selected.path} download={selected.originalName}>Baixar original</a></>}
+    </dialog>
   </>;
 }

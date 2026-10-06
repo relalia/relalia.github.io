@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+const [source,target]=process.argv.slice(2);
+if(!source || !target?.startsWith('/originals/') || target.includes('..') || /[?#\\]/.test(target)) throw Error('Use: node scripts/register-original.mjs SOURCE /originals/FOLDER/FILENAME');
+const bytes=fs.readFileSync(source),sha256=createHash('sha256').update(bytes).digest('hex');
+const destination=path.resolve('public',target.slice(1));
+if(fs.existsSync(destination) && createHash('sha256').update(fs.readFileSync(destination)).digest('hex')!==sha256) throw Error('Existing original differs; choose a new stable filename.');
+fs.mkdirSync(path.dirname(destination),{recursive:true});fs.writeFileSync(destination,bytes);
+const manifest=JSON.parse(fs.readFileSync('content/originals.sha256.json','utf8'));
+const item={path:target,originalName:path.basename(source),bytes:bytes.length,sha256};
+const index=manifest.findIndex(entry=>entry.path===target);
+if(index<0)manifest.push(item);else manifest[index]=item;
+fs.writeFileSync('content/originals.sha256.json',JSON.stringify(manifest,null,2)+'\n');
+fs.writeFileSync('public/originals/SHA256SUMS.txt',manifest.map(entry=>`${entry.sha256}  ${entry.path.slice('/originals/'.length)}`).join('\n')+'\n');
+console.log(JSON.stringify(item,null,2));

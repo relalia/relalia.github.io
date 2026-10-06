@@ -1,0 +1,344 @@
+[
+  {
+    "path": "/originals/reports/validacao-inicial.pdf",
+    "originalName": "validacao-inicial.pdf",
+    "bytes": 1117684,
+    "sha256": "b5cc832864846ad0617302b7e41a76bfeabc9ad512ec36dd57e53bed19d0cc0b"
+  },
+  {
+    "path": "/originals/reports/atlas-checklist-consolidado.pdf",
+    "originalName": "atlas-checklist-consolidado.pdf",
+    "bytes": 3714349,
+    "sha256": "b6b435ca3f337769fce026afd8c7ea254b743aa319c93c9743b7d625c51a11d1"
+  },
+  {
+    "path": "/originals/reports/checklist-atlas-itn004.xlsx",
+    "originalName": "checklist-atlas-itn004.xlsx",
+    "bytes": 3646095,
+    "sha256": "7726fe0004790d146916bbffb456a6fbe1a0399fec8865b9754511ee4d162f45"
+  },
+  {
+    "path": "/originals/reports/reteste-vadechat-2026-10-02.pdf",
+    "originalName": "reteste-vadechat-2026-10-02.pdf",
+    "bytes": 6504847,
+    "sha256": "87a5ef0961f3fd0a2b751959bc3694dd6362d0bcfaa12c3e9c1b773c5559d0c0"
+  },
+  {
+    "path": "/originals/reports/melhorias-vadechat-2026-10-05.pdf",
+    "originalName": "melhorias-vadechat-2026-10-05.pdf",
+    "bytes": 112148,
+    "sha256": "fe4cf67b1dfccb43594b56cdd872bfe2b7d62b579a81f2bb769fb8fbf32ede4b"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-01.png",
+    "originalName": "ev-01.png",
+    "bytes": 7768,
+    "sha256": "943c7580d68d340056f2076165a58d182950083dee2f5a835485cc2acda0aac9"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-02.png",
+    "originalName": "ev-02.png",
+    "bytes": 15001,
+    "sha256": "90a553a45d75d6b6400d8211f13db2e4cdde06bfdf702940d06c4fa325bfd44a"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-03.png",
+    "originalName": "ev-03.png",
+    "bytes": 28810,
+    "sha256": "e8b18cecef4febf67c7e6692e5c96b53cb47a0c4e566d040cb565b453412139a"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-04.png",
+    "originalName": "ev-04.png",
+    "bytes": 95090,
+    "sha256": "4ed54265d64c677fc8134bc77266c0c464a59296968ce5a0af2f6a2e7a35d214"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-05.png",
+    "originalName": "ev-05.png",
+    "bytes": 43103,
+    "sha256": "2eac530a163234b98ad2179506c387ef6fd1982362d35e44dea2be14e0d684c6"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-06.png",
+    "originalName": "ev-06.png",
+    "bytes": 44664,
+    "sha256": "db0f2e831073f401dfcb34220986bf15fc6cf00a62e201fe08a168876ae57dbb"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-07.png",
+    "originalName": "ev-07.png",
+    "bytes": 18458,
+    "sha256": "7acff01626c080daebd0c96e077e151581f6fdde135fa901e926466dc16da1fb"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-08.png",
+    "originalName": "ev-08.png",
+    "bytes": 72810,
+    "sha256": "5aa1fc0192e7b6c20f1109a47ae7bd120fa840e60a441620a36141e4bc97e9fc"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-09.png",
+    "originalName": "ev-09.png",
+    "bytes": 22941,
+    "sha256": "f61793320f48289820cd88474391d67506cd3f9c45b148d5464e75071d093cbe"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-10.png",
+    "originalName": "ev-10.png",
+    "bytes": 66422,
+    "sha256": "9caa76d2fa0aa9710d21ef63798be742ab3f37d2fb238863be0fc3a31eb99d75"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-11.png",
+    "originalName": "ev-11.png",
+    "bytes": 43017,
+    "sha256": "8adda75eec764491d8defbc8f29c94253b59666429ef97369a4d20b5431f02c3"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-12.png",
+    "originalName": "ev-12.png",
+    "bytes": 57168,
+    "sha256": "b665c59b636d2b99f61540768bcb901d95e9b0f520b04e55662841bdb14fac4e"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-13.png",
+    "originalName": "ev-13.png",
+    "bytes": 46834,
+    "sha256": "d8f68ce59993de70dc2e7d01d6554754a0f56e59eb04de47672fde17ecd0fd16"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-14.png",
+    "originalName": "ev-14.png",
+    "bytes": 83980,
+    "sha256": "679dfd1aca5526cb79ff0b2eb1dde3c6e281673d72d9674b0138feffbeaf1974"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-15.png",
+    "originalName": "ev-15.png",
+    "bytes": 83665,
+    "sha256": "7d2105e38fa6bbf8b946003199d0275c83d52f3a8b95cabf2adf11cdf25a19ca"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-16.png",
+    "originalName": "ev-16.png",
+    "bytes": 42245,
+    "sha256": "8c2a02d50bffc59c3d56ec9819652745c210fd131cf7446d6f8d60709cbc4d9b"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-17.png",
+    "originalName": "ev-17.png",
+    "bytes": 133115,
+    "sha256": "c8e53c186a4a9495ed152ea5d7877daefdc54c2d5b14123ba460bc06c92fcc4a"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-18.png",
+    "originalName": "ev-18.png",
+    "bytes": 88784,
+    "sha256": "414b15946b9ad323d75e55e0015676423b30b8aa7a3e90def131127d888f74c0"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-19.png",
+    "originalName": "ev-19.png",
+    "bytes": 19443,
+    "sha256": "d59a4c8a92dae9c83ad211e1fb155d3eb32adb89ee05a97998f6567c469e3ad0"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-20.png",
+    "originalName": "ev-20.png",
+    "bytes": 52572,
+    "sha256": "1a5d3fc3d1336005e68136ceefcc296926d269d25dbf6ec1f898b0312cf03cb1"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-21.png",
+    "originalName": "ev-21.png",
+    "bytes": 38116,
+    "sha256": "3ddf4635e7f4b00bf5e104734161bea9a6111383e26f5ce994df4792805f6a6f"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-22.png",
+    "originalName": "ev-22.png",
+    "bytes": 330307,
+    "sha256": "532003a60fc3a1533b5a6c5cef3624d7664a6b47d2532e5e9f831a2ac9bf04fe"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-23.png",
+    "originalName": "ev-23.png",
+    "bytes": 12370,
+    "sha256": "b75025406d39c60120cba4c3a368e879e8d424bc50a972e1d8b797a17471f19b"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-24.png",
+    "originalName": "ev-24.png",
+    "bytes": 18573,
+    "sha256": "527666220dd0db25e1229bcbf072705031f91b9a79376e41a2f0b433657918f7"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-25.png",
+    "originalName": "ev-25.png",
+    "bytes": 74724,
+    "sha256": "0d07adb9b8911a688aa860491287559afd2fee0d5fc07cafc1b95fab80cf5f75"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-26.png",
+    "originalName": "ev-26.png",
+    "bytes": 22131,
+    "sha256": "67e246cc2fb5b4e394d2c7e7c80886c60aada6f8267b89a6f328eef0cdc62cdc"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-28.png",
+    "originalName": "ev-28.png",
+    "bytes": 16588,
+    "sha256": "b39fdf1e7b7728a9017ad91e5e18cea64853b744b448ff05fcfff3cf843a0c9c"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-29.png",
+    "originalName": "ev-29.png",
+    "bytes": 80859,
+    "sha256": "3f6e87762f8585125f016659c771a58caa21f3ac8425220f3fbec6a84f1fafe8"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-30.png",
+    "originalName": "ev-30.png",
+    "bytes": 22644,
+    "sha256": "f27cd1869ac2174b6c7cf41519cd2170c4409c068fcf90b5b7ebb1179efbdebf"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-31.png",
+    "originalName": "ev-31.png",
+    "bytes": 96636,
+    "sha256": "b8cd7d95a697998dcb1ec56242d48ea9788e3da809e5aa26e27eb3ff4ec17ba1"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-32.png",
+    "originalName": "ev-32.png",
+    "bytes": 446852,
+    "sha256": "b646607237625914e3e8679d15502e474403995468c0ae7f2f78f863727d71a3"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-33.png",
+    "originalName": "ev-33.png",
+    "bytes": 99664,
+    "sha256": "4a58502bcdf61de47dcd35c402490862d3527056f5030d77d5a43ae28a5b6c83"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-34.png",
+    "originalName": "ev-34.png",
+    "bytes": 125696,
+    "sha256": "d99e7fc192eae64c9ad553a5e1f341c9103fa1e7f4b766c8f75383b71fbe11ca"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-35.png",
+    "originalName": "ev-35.png",
+    "bytes": 112807,
+    "sha256": "023419af70f142b41a6419e6397f2b0befb1c0b112bffeb0dbea5cc8037a1ef5"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-36.png",
+    "originalName": "ev-36.png",
+    "bytes": 157138,
+    "sha256": "7e189ea9ba8e8ce684ca816ce68c89b224e2cea13a11b527cf24b6f6d3229e3f"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-37.png",
+    "originalName": "ev-37.png",
+    "bytes": 138374,
+    "sha256": "4575ff29252ab3bdf4d36f3cd26936042c785630db832d3d24381f6130477fca"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-38.png",
+    "originalName": "ev-38.png",
+    "bytes": 25383,
+    "sha256": "9b463fbfa79df277fce60c9d576ab70aa7a8cdce6742567026590b3ac2238046"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-39.png",
+    "originalName": "ev-39.png",
+    "bytes": 71709,
+    "sha256": "ad8edb2e259753f2b3fa743fa918847a1c166a62197fba2c407be76c6434ec57"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-40.png",
+    "originalName": "ev-40.png",
+    "bytes": 61277,
+    "sha256": "fde5b0d5287002fb37affc6e112d70d70af77cee9159ba74592423b47c93cb70"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-41.png",
+    "originalName": "ev-41.png",
+    "bytes": 101278,
+    "sha256": "9ef3dfc751e6517d5069832152dfec2fc7c0718c8a2dc9b1229ffcd6cfb882a1"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-42.png",
+    "originalName": "ev-42.png",
+    "bytes": 30408,
+    "sha256": "82eda9bdc2bc65b543eb732315c96746256a31997846c8afb394a8b529146efd"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-43.png",
+    "originalName": "ev-43.png",
+    "bytes": 170501,
+    "sha256": "84bc470d21394f76ffcf940b02566537e94b47a51f5e31ffc899ddd3b6b8292f"
+  },
+  {
+    "path": "/originals/evidence/atlas/ev-44.png",
+    "originalName": "ev-44.png",
+    "bytes": 206608,
+    "sha256": "d0222f6492abf28435e596af3a3b54ae5c4e159abc8bd33de815254ef5bc7aa3"
+  },
+  {
+    "path": "/originals/evidence/vadechat-2026-10-05/confirmacoes-vadechat.png",
+    "originalName": "confirmacoes-vadechat.png",
+    "bytes": 82335,
+    "sha256": "52af5d373b154621f6d980448c1c8aef125b5dc248fd78d0dff41a1aa250a3ab"
+  },
+  {
+    "path": "/originals/evidence/vadechat-2026-10-06/WhatsApp Image 2026-10-06 at 09.56.08.jpeg",
+    "originalName": "WhatsApp Image 2026-10-06 at 09.56.08.jpeg",
+    "bytes": 131415,
+    "sha256": "4dc37dea6267a1dadea19cf94b48e30db8fa1496194b5d1f269ca836d420a1ad"
+  },
+  {
+    "path": "/originals/evidence/vadechat-2026-10-06/WhatsApp Video 2026-10-06 at 09.56.57.mp4",
+    "originalName": "WhatsApp Video 2026-10-06 at 09.56.57.mp4",
+    "bytes": 2149311,
+    "sha256": "4518b19c306a1279b4d031d31eccb9f6656d3d303685e15d7a2229e0ce93b3e5"
+  },
+  {
+    "path": "/originals/evidence/vadechat-2026-10-06/55319f5b-1c7b-41dc-9c16-c551b1a7d841.png",
+    "originalName": "55319f5b-1c7b-41dc-9c16-c551b1a7d841.png",
+    "bytes": 25644,
+    "sha256": "f666fba1b546072b127c06fcf9161f6aaec97b6466dd6a83e4c95bc6fcf24815"
+  },
+  {
+    "path": "/originals/evidence/vadechat-2026-10-06/3ea5344a-774f-427e-a897-3bf2b2a6bd0f.png",
+    "originalName": "3ea5344a-774f-427e-a897-3bf2b2a6bd0f.png",
+    "bytes": 9179,
+    "sha256": "8c7c33ee93090c4c5dcb0adee40633d89939d06f037dbeca0ee43ad8f262ebc6"
+  },
+  {
+    "path": "/originals/evidence/vadechat-2026-10-06/97b5a9bd-e303-4bf3-a49e-495c302df6a5.png",
+    "originalName": "97b5a9bd-e303-4bf3-a49e-495c302df6a5.png",
+    "bytes": 43544,
+    "sha256": "ccd864195be8fc63ca93e689f3de0d3a097bde0bedf0a7664ab876b8c953d179"
+  },
+  {
+    "path": "/originals/evidence/vadechat-2026-10-06/1000165122.jpg",
+    "originalName": "1000165122.jpg",
+    "bytes": 70789,
+    "sha256": "341b0b3cb64534b8e3527026b095890fe16897ff60921048ac66126fcd07b766"
+  },
+  {
+    "path": "/originals/evidence/vadechat-2026-10-06/Botões de comparação_ ChatGPT e Claude.png",
+    "originalName": "Botões de comparação_ ChatGPT e Claude.png",
+    "bytes": 1048245,
+    "sha256": "12c008f902a7cbc03ba0103645f4a5261e609a851caa98b1f1d920d5edc546f4"
+  },
+  {
+    "path": "/originals/evidence/vadechat-2026-10-06/Comparação ChatGPT_ rescisão por atraso de imóvel.png",
+    "originalName": "Comparação ChatGPT_ rescisão por atraso de imóvel.png",
+    "bytes": 1347480,
+    "sha256": "507cff0d282437f35a9c15a9022b45b33ede12d9e472d437f1d59d400f7cc35b"
+  }
+]

@@ -4,13 +4,16 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "pdfs": "node scripts/generate-pdfs.mjs",
+    "build": "pnpm pdfs && next build",
     "start:export": "node scripts/serve.mjs",
     "typecheck": "tsc --noEmit",
     "verify": "node scripts/verify-public.mjs",
-    "check": "pnpm typecheck && pnpm build && pnpm verify"
+    "test": "node --test scripts/data.test.mjs",
+    "check": "pnpm test && pnpm typecheck && pnpm build && pnpm verify"
   },
   "dependencies": {
+    "@radix-ui/react-select": "^2.3.7",
     "next": "15.5.12",
     "react": "19.2.4",
     "react-dom": "19.2.4"
