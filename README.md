@@ -1,6 +1,6 @@
 # Relalia: O Relatório da Alia
 
-Portal estático de validações do VadeChat e Atlas, publicado em **https://relalia.github.io/** pelo repositório **relalia/relalia.github.io**. Next.js, TypeScript e App Router, sem API Routes, Server Actions ou servidor de produção. Cada relatório tem HTML próprio e funciona por navegação, acesso direto e atualização do navegador.
+Portal estático de validações do VadeChat, Atlas e Base de Conhecimento, publicado em **https://relalia.github.io/** pelo repositório **relalia/relalia.github.io**. Next.js, TypeScript e App Router, sem API Routes, Server Actions ou servidor de produção. Cada relatório tem HTML próprio e funciona por navegação, acesso direto e atualização do navegador.
 
 ## Executar localmente
 
@@ -32,7 +32,7 @@ Prévia da pasta `out`: http://127.0.0.1:4173. `pnpm check` reúne testes de dad
 - `content/reports.json`: conteúdo; os registros Atlas preservam os campos de origem em `originalRecord`. Comparações indicam `reportId`, `findingId` e `label`.
 - `components/`: linha do tempo, ficha, filtros Radix Select, achado, galeria com ampliação/MP4 e abertura/download de documentos.
 - `public/originals/`: quatro PDFs, XLSX e evidências originais. `SHA256SUMS.txt` e `content/originals.sha256.json` registram integridade.
-- `public/reports/`: PDFs gerados, separados dos originais. As fichas das rodadas antigas são complementares; o PDF de 06/10 é o relatório completo gerado. URLs anteriores foram preservadas.
+- `public/reports/`: PDFs gerados, separados dos originais. As fichas das rodadas antigas são complementares; as rodadas de 06/10 e 07/10 têm relatórios gerados a partir do catálogo. URLs anteriores foram preservadas.
 - `scripts/`: geração/verificação de PDFs, validação do catálogo, testes de vínculos e prévia estática com suporte a Range para vídeo.
 - `.github/workflows/pages.yml`: instala dependências, testa, gera PDFs e exportação, verifica e publica somente `out`.
 
@@ -64,6 +64,8 @@ node scripts/register-original.mjs "caminho/da/captura.png" /originals/evidence/
 Os PDFs gerados automaticamente incluem observação, melhoria esperada, verificação, criticidade cadastrada, situação, execução/resultado do reteste e referências/capturas. A geração só escreve em `/reports/`, recusa caminhos fora dessa pasta e nunca altera `/originals/`.
 
 ## Publicação e verificação
+
+Rodada de 07/10/2026: https://relalia.github.io/relatorios/alia-2026-10-07/. Registro parcial com **BC-DOC-01** (visualização) e **BC-DOC-02** (download do original), ambos com erro `NoSuchKey`, **BC-UX-03** (sobreposição de Fechar e Editar) e **ALIA-NAV-04** (breadcrumb e retorno contextual), com a Base de Conhecimento como cenário capturado. **BC-EV-01**, **BC-EV-02**, **BC-EV-03** e **ALIA-EV-04** preservam as capturas originais; o PDF é gerado automaticamente. Novos achados do dia podem ser acrescentados à mesma rodada, atualizando `findings`, `evidence`, `count` e o resumo.
 
 `next.config.ts` usa `output: 'export'`, `trailingSlash: true` e imagens sem otimização de servidor. Os caminhos começam em `/`, pois o repositório de organização publica na raiz do domínio. O Pages deve usar **GitHub Actions** como origem. O job de build tem `contents: read`; apenas o job de deploy recebe `pages: write` e `id-token: write`.
 

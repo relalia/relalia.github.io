@@ -1,4 +1,4 @@
-export type Module = 'VadeChat' | 'Atlas';
+export type Module = 'VadeChat' | 'Atlas' | 'Base de Conhecimento';
 export interface RetestState {
   execution: 'not-performed' | 'performed' | 'not-applicable';
   result?: string;

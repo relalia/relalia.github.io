@@ -55,3 +55,7 @@ ccd864195be8fc63ca93e689f3de0d3a097bde0bedf0a7664ab876b8c953d179  evidence/vadec
 341b0b3cb64534b8e3527026b095890fe16897ff60921048ac66126fcd07b766  evidence/vadechat-2026-10-06/1000165122.jpg
 12c008f902a7cbc03ba0103645f4a5261e609a851caa98b1f1d920d5edc546f4  evidence/vadechat-2026-10-06/Botões de comparação_ ChatGPT e Claude.png
 507cff0d282437f35a9c15a9022b45b33ede12d9e472d437f1d59d400f7cc35b  evidence/vadechat-2026-10-06/Comparação ChatGPT_ rescisão por atraso de imóvel.png
+97edcf5aa8c94a7db4e77c0622b73fcabc88f3d2112d5c7e1b5a5b974d060308  evidence/alia-2026-10-07/bc-doc-01-nosuchkey.png
+664854bfd52e6dd9569a38fb3e87b78f54d2daec49c571b5f7e2ec1a13967a52  evidence/alia-2026-10-07/bc-doc-02-download-nosuchkey.png
+c040cdf0196529a6ce76572aca0e00b614ad1c2e29333d94f872ed4c1bcfe613  evidence/alia-2026-10-07/bc-ux-03-fechar-editar.png
+3d1b76d4d3cf157c4964ce57a2e90720116a4bb381f961f8c0a1401091dcbab7  evidence/alia-2026-10-07/alia-nav-04-breadcrumb.png

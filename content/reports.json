@@ -4078,6 +4078,106 @@
           }
         }
       ]
+    },
+    {
+      "id": "alia-2026-10-07",
+      "date": "2026-10-07",
+      "title": "Alia · Base de Conhecimento",
+      "module": "Base de Conhecimento",
+      "status": "Registro parcial · aguardando reteste",
+      "count": "4 achados",
+      "summary": "Quatro achados de 7 de outubro de 2026 na plataforma Alia, documentados a partir da Base de Conhecimento: NoSuchKey na visualização e no download de documentos, sobreposição entre “Fechar” e “Editar” e falta de breadcrumb e retorno contextual na navegação interna. O registro reúne relatos, capturas e critérios separados de reteste; a causa e a abrangência dos problemas ainda não foram verificadas.",
+      "highlights": [
+        "Exemplo identificado no visualizador: Provimento nº 242, de 21 de julho de 2026 (PDF · 274 KB).",
+        "Visualização e download apresentam NoSuchKey e The specified key does not exist.; no download, o erro aparece em uma resposta XML.",
+        "Os outros registros tratam da sobreposição de Fechar e Editar e da orientação e retorno nas telas internas.",
+        "Registro parcial com quatro achados e quatro capturas originais; todos aguardam reteste."
+      ],
+      "note": "Este registro documenta problemas da plataforma Alia. As capturas mostram os estados descritos; os cliques anteriores, o contexto e a abrangência entre documentos ou telas vêm do relato. Os vínculos entre BC-DOC-01 e BC-DOC-02 indicam fluxos relacionados, sem comprovar uma causa comum. Versão, navegador, causa técnica e resultados de reteste não foram informados.",
+      "files": [
+        {
+          "label": "Relatório de 07/10/2026 · PDF gerado",
+          "path": "/reports/alia-2026-10-07.pdf",
+          "kind": "pdf",
+          "origin": "generated"
+        }
+      ],
+      "findings": [
+        {
+          "id": "BC-DOC-01",
+          "title": "Documentos da Base de Conhecimento não abrem no visualizador",
+          "kind": "Base de Conhecimento / visualização de documentos",
+          "context": "Plataforma Alia · Base de Conhecimento · ação “Visualizar Documento”",
+          "observationLabel": "Observado e relatado",
+          "description": "O usuário relata que alguns documentos cadastrados na Base de Conhecimento não aparecem ao clicar em “Visualizar Documento”. Na captura, o visualizador identifica “Provimento nº 242, de 21 de julho de 2026.” (PDF · 274 KB), mas a área destinada ao PDF exibe “NoSuchKey” e “The specified key does not exist.”, em vez do conteúdo do documento. A captura não permite determinar a causa técnica nem quais outros documentos são afetados.",
+          "expected": "Exibir o conteúdo correto dos documentos cadastrados ao acionar “Visualizar Documento”. Se um arquivo estiver indisponível, apresentar uma mensagem compreensível e uma orientação para recuperação ou nova tentativa, sem deixar apenas o erro técnico bruto na área de leitura.",
+          "verification": "Acionar “Visualizar Documento” no documento identificado na captura e em outros documentos cadastrados. Confirmar que o PDF correto é carregado e pode ser lido, sem NoSuchKey. Repetir a abertura e recarregar a página para verificar a consistência. Verificar a abertura externa e retestar o download separadamente (BC-DOC-02), registrando o resultado de cada ação. Registrar os documentos testados; em casos de indisponibilidade, conferir a mensagem e a possibilidade de nova tentativa.",
+          "evidenceIds": [
+            "BC-EV-01"
+          ],
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          },
+          "relatedIds": [
+            "BC-DOC-02"
+          ]
+        },
+        {
+          "id": "BC-DOC-02",
+          "title": "Download do documento original retorna NoSuchKey",
+          "kind": "Base de Conhecimento / download de documentos",
+          "context": "Plataforma Alia · Base de Conhecimento · ação “Baixar original”",
+          "observationLabel": "Observado e relatado",
+          "description": "O usuário relata que também não consegue baixar o documento ao clicar em “Baixar original”. A captura mostra uma aba do navegador com uma resposta XML: <Code>NoSuchKey</Code> e <Message>The specified key does not exist.</Message>, em vez do documento esperado. O acionamento do botão vem do relato; a imagem registra o resultado na aba. Ela não mostra o título completo do documento nem permite determinar a causa técnica.",
+          "expected": "Entregar o arquivo original correspondente ao documento cadastrado ao clicar em “Baixar original”, com nome e conteúdo adequados, sem retornar o XML de erro como se fosse o documento. Se o arquivo estiver indisponível, informar a falha de forma compreensível e orientar uma nova tentativa ou recuperação.",
+          "verification": "Acionar “Baixar original” no documento afetado e em outros documentos cadastrados, registrando quais foram testados. Confirmar que o download é concluído, que o arquivo pode ser aberto e que seu conteúdo corresponde ao documento selecionado, sem XML NoSuchKey. Repetir a operação após recarregar a página. Em casos de indisponibilidade, conferir a mensagem e a possibilidade de recuperação. Retestar também “Visualizar Documento” separadamente (BC-DOC-01), registrando o resultado de cada ação.",
+          "evidenceIds": [
+            "BC-EV-02"
+          ],
+          "relatedIds": [
+            "BC-DOC-01"
+          ],
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          }
+        },
+        {
+          "id": "BC-UX-03",
+          "title": "Botões Fechar e Editar se sobrepõem no diálogo do documento",
+          "kind": "Base de Conhecimento / interface e usabilidade",
+          "context": "Plataforma Alia · Base de Conhecimento · diálogo de visualização de documento",
+          "observationLabel": "Observado e relatado",
+          "description": "O usuário relata que alguns botões competem entre si e se sobrepõem ao visualizar um documento na Base de Conhecimento, citando “Fechar janela de diálogo” e “Editar campos”. O recorte mostra o botão “X” de fechamento à frente da região superior direita do botão “Editar”, reduzindo a separação visual entre as ações. A captura não demonstra o resultado de cliques nem permite determinar o tamanho da tela ou a abrangência em outros diálogos.",
+          "expected": "Separar os controles de fechamento e edição, com posicionamento e espaçamento que evitem sobreposição visual e de áreas interativas. Manter ambas as ações identificáveis e acessíveis, com foco visível e áreas de toque adequadas, inclusive quando o diálogo se adapta a telas menores.",
+          "verification": "Abrir o diálogo de visualização de documento e conferir a separação entre “Editar” e “Fechar” em diferentes tamanhos de tela e níveis de zoom. Acionar cada controle com mouse ou toque, confirmando que editar não fecha o diálogo e que fechar não inicia a edição. Percorrer os controles com Tab e Shift+Tab, conferir o foco visível e a ativação por teclado; verificar também o comportamento de Escape para fechar o diálogo. Registrar as telas e os resultados do reteste.",
+          "evidenceIds": [
+            "BC-EV-03"
+          ],
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          }
+        },
+        {
+          "id": "ALIA-NAV-04",
+          "title": "Falta de breadcrumb e retorno contextual nas telas internas",
+          "kind": "Navegação / orientação e retorno",
+          "context": "Plataforma Alia · página Base de Conhecimento como exemplo capturado",
+          "observationLabel": "Observado e relatado",
+          "description": "O usuário relata que, ao acessar uma opção interna do sistema, não encontra breadcrumb para se orientar e facilitar o retorno, tendo de clicar na logo da Tri7 Alia para chegar à tela inicial. Na captura da Base de Conhecimento, não há breadcrumb visível junto ao cabeçalho da página. Esse exemplo documenta a dificuldade relatada; a ausência em todas as demais telas e o resultado do clique na logo não são demonstrados pela imagem.",
+          "expected": "Oferecer uma trilha de navegação clara nas telas internas, identificando a localização atual e permitindo acessar os níveis anteriores, por exemplo “Início > Base de Conhecimento”. Quando houver necessidade de retornar à tela anteriormente visitada, disponibilizar também uma ação de retorno contextual, com comportamento previsível e preservação do estado da tela quando aplicável. O breadcrumb representa a hierarquia e não substitui, por si só, o histórico de navegação. Manter as ações de retorno identificáveis, acessíveis por teclado e utilizáveis em telas menores.",
+          "verification": "Navegar da página inicial para a Base de Conhecimento e outras opções internas, registrando as rotas testadas. Conferir a presença da trilha, a indicação da página atual e o destino correto dos links anteriores. Verificar a ação de retorno contextual, quando disponível, incluindo preservação de filtros ou estado pertinente. Testar também acesso direto por URL, com destino de retorno compreensível quando não houver uma tela anterior. Percorrer links e ações com teclado e verificar sua apresentação em telas menores. Confirmar que retornar não depende exclusivamente de clicar na logo.",
+          "evidenceIds": [
+            "ALIA-EV-04"
+          ],
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          }
+        }
+      ]
     }
   ],
   "evidence": [
@@ -4803,6 +4903,54 @@
       "path": "/originals/evidence/vadechat-2026-10-06/Comparação ChatGPT_ rescisão por atraso de imóvel.png",
       "originalName": "Comparação ChatGPT_ rescisão por atraso de imóvel.png",
       "sha256": "507cff0d282437f35a9c15a9022b45b33ede12d9e472d437f1d59d400f7cc35b"
+    },
+    {
+      "id": "BC-EV-01",
+      "reportId": "alia-2026-10-07",
+      "findingIds": [
+        "BC-DOC-01"
+      ],
+      "kind": "image",
+      "description": "Captura original do visualizador da Base de Conhecimento. O cabeçalho identifica “Provimento nº 242, de 21 de julho de 2026.” (PDF · 274 KB), enquanto a área do documento exibe “NoSuchKey” seguido de “The specified key does not exist.”, sem o conteúdo do PDF.",
+      "path": "/originals/evidence/alia-2026-10-07/bc-doc-01-nosuchkey.png",
+      "originalName": "codex-clipboard-65952da4-ea86-4117-b1a1-a4ec58212afd.png",
+      "sha256": "97edcf5aa8c94a7db4e77c0622b73fcabc88f3d2112d5c7e1b5a5b974d060308"
+    },
+    {
+      "id": "BC-EV-02",
+      "reportId": "alia-2026-10-07",
+      "findingIds": [
+        "BC-DOC-02"
+      ],
+      "kind": "image",
+      "description": "Captura original da página aberta após “Baixar original”, conforme relato. A página mostra XML com <Code>NoSuchKey</Code> e <Message>The specified key does not exist.</Message>, em vez do arquivo esperado. O clique anterior e o título completo do documento não são mostrados nesta captura.",
+      "path": "/originals/evidence/alia-2026-10-07/bc-doc-02-download-nosuchkey.png",
+      "originalName": "codex-clipboard-a76e8b05-9de2-4854-b7e1-8573db560af6.png",
+      "sha256": "664854bfd52e6dd9569a38fb3e87b78f54d2daec49c571b5f7e2ec1a13967a52"
+    },
+    {
+      "id": "BC-EV-03",
+      "reportId": "alia-2026-10-07",
+      "findingIds": [
+        "BC-UX-03"
+      ],
+      "kind": "image",
+      "description": "Recorte original do diálogo: o botão “X” de fechamento aparece à frente da região superior direita do botão “Editar”, com sobreposição visual entre os controles. O contexto de visualização de um documento na Base de Conhecimento foi informado pelo usuário.",
+      "path": "/originals/evidence/alia-2026-10-07/bc-ux-03-fechar-editar.png",
+      "originalName": "codex-clipboard-f84977b2-0e91-413e-bd8d-8f9ab44ade03.png",
+      "sha256": "c040cdf0196529a6ce76572aca0e00b614ad1c2e29333d94f872ed4c1bcfe613"
+    },
+    {
+      "id": "ALIA-EV-04",
+      "reportId": "alia-2026-10-07",
+      "findingIds": [
+        "ALIA-NAV-04"
+      ],
+      "kind": "image",
+      "description": "Captura anotada fornecida pelo usuário da página Base de Conhecimento, com a aba Base Interna selecionada. Não há breadcrumb visível no trecho capturado junto ao cabeçalho da página; a logo Tri7 Alia está no cabeçalho global. A imagem registra uma tela, não todas as rotas do sistema.",
+      "path": "/originals/evidence/alia-2026-10-07/alia-nav-04-breadcrumb.png",
+      "originalName": "codex-clipboard-8dcada53-bf8a-424f-ada6-b7dae5640895.png",
+      "sha256": "3d1b76d4d3cf157c4964ce57a2e90720116a4bb381f961f8c0a1401091dcbab7"
     }
   ],
   "notes": {

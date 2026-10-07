@@ -7,7 +7,7 @@ import FindingFilters from './FindingFilters';
 export default function ReportView({ report }: { report: Report }) {
   return <div className="shell">
     <header><h1>Relalia: O Relatório da Alia</h1></header>
-    <section className="intro" aria-label="Sobre o portal"><p>Validações do VadeChat e Atlas. Explore as rodadas, consulte os achados e acompanhe os retestes com seus documentos e evidências.</p></section>
+    <section className="intro" aria-label="Sobre o portal"><p>Validações da plataforma Alia. Explore as rodadas, consulte os achados e acompanhe os retestes com seus documentos e evidências.</p></section>
     <main className="layout"><Timeline activeId={report.id} /><article className="pane detail">
       <div className="kicker">{report.module} · {formatDate(report.date)}</div><h2>{report.title}</h2>
       <div className="meta"><span className="tag">{report.status}</span><span className="tag">{report.count}</span></div>
