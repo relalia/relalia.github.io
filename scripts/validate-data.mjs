@@ -16,7 +16,7 @@ export function validateData(data,assetExists=()=>true) {
     reports.set(report.id,report);
     for(const key of ['title','summary','status','count']) assert(text(report[key]),`Missing ${report.id}.${key}`);
     assert(/^\d{4}-\d{2}-\d{2}$/.test(report.date) && !isNaN(Date.parse(report.date)),`Invalid date ${report.id}`);
-    assert(['Atlas','VadeChat','Base de Conhecimento'].includes(report.module),`Invalid module ${report.id}`);
+    assert(['Atlas','VadeChat','Base de Conhecimento','Alia'].includes(report.module),`Invalid module ${report.id}`);
     assert(Array.isArray(report.highlights) && report.highlights.every(text),`Invalid highlights ${report.id}`);
     assert(Array.isArray(report.findings) && Array.isArray(report.files) && report.files.some(f=>f.kind==='pdf'),`Missing findings/PDF ${report.id}`);
     const ids=new Set();

@@ -4082,18 +4082,19 @@
     {
       "id": "alia-2026-10-07",
       "date": "2026-10-07",
-      "title": "Alia · Base de Conhecimento",
-      "module": "Base de Conhecimento",
-      "status": "Registro parcial · aguardando reteste",
-      "count": "4 achados",
-      "summary": "Quatro achados de 7 de outubro de 2026 na plataforma Alia, documentados a partir da Base de Conhecimento: NoSuchKey na visualização e no download de documentos, sobreposição entre “Fechar” e “Editar” e falta de breadcrumb e retorno contextual na navegação interna. O registro reúne relatos, capturas e critérios separados de reteste; a causa e a abrangência dos problemas ainda não foram verificadas.",
+      "title": "Alia · validação e proposta de benchmark",
+      "module": "Alia",
+      "status": "Registro final · pendências e proposta de melhoria",
+      "count": "5 achados",
+      "summary": "Relatório final de 7 de outubro de 2026 com cinco achados da Tri7 Alia: NoSuchKey na visualização e no download de documentos da Base de Conhecimento, sobreposição entre Fechar e Editar, falta de breadcrumb e retorno contextual e proposta de benchmark rastreável de Q&A em Ágil e Pleno, com comparação entre versões. Os quatro problemas relatados aguardam reteste; o benchmark é uma proposta de melhoria, sem novas execuções ou métricas coletadas neste registro.",
       "highlights": [
-        "Exemplo identificado no visualizador: Provimento nº 242, de 21 de julho de 2026 (PDF · 274 KB).",
-        "Visualização e download apresentam NoSuchKey e The specified key does not exist.; no download, o erro aparece em uma resposta XML.",
-        "Os outros registros tratam da sobreposição de Fechar e Editar e da orientação e retorno nas telas internas.",
-        "Registro parcial com quatro achados e quatro capturas originais; todos aguardam reteste."
+        "Quatro achados de comportamento e navegação, com quatro capturas originais e critérios de reteste.",
+        "Visualização e download apresentam NoSuchKey e a mensagem “The specified key does not exist.”; no download, o erro aparece em XML.",
+        "O quinto item propõe executar Q&A em Ágil e Pleno e registrar respostas reais, fontes, tempo e consumo.",
+        "O benchmark deve avaliar correção, completude, recusa e sigilo, comparar versões e distinguir recuperação da base de erros na resposta.",
+        "Registro final da rodada: quatro itens aguardando reteste e uma proposta de melhoria. Encerrar o registro não significa que os problemas foram corrigidos."
       ],
-      "note": "Este registro documenta problemas da plataforma Alia. As capturas mostram os estados descritos; os cliques anteriores, o contexto e a abrangência entre documentos ou telas vêm do relato. Os vínculos entre BC-DOC-01 e BC-DOC-02 indicam fluxos relacionados, sem comprovar uma causa comum. Versão, navegador, causa técnica e resultados de reteste não foram informados.",
+      "note": "Este relatório registra problemas e uma proposta para a equipe da Tri7 Alia. As capturas mostram os estados descritos; os cliques anteriores, o contexto e a abrangência entre documentos ou telas vêm do relato. Os vínculos entre BC-DOC-01 e BC-DOC-02 indicam fluxos relacionados, sem comprovar uma causa comum. Os quatro problemas não foram retestados neste registro. O fluxo de benchmark proposto não foi executado nem implementado no Relalia; respostas, métricas e gráficos reais dependerão de execuções verificáveis. As rodadas históricas e seus resultados foram preservados.",
       "files": [
         {
           "label": "Relatório de 07/10/2026 · PDF gerado",
@@ -4175,6 +4176,22 @@
           "status": "Aguardando reteste",
           "retest": {
             "execution": "not-performed"
+          }
+        },
+        {
+          "id": "ALIA-BENCH-05",
+          "title": "Benchmark rastreável de Q&A em Ágil e Pleno, comparado entre versões",
+          "kind": "Benchmark / avaliação e rastreabilidade",
+          "context": "Tri7 Alia · execução e avaliação de Q&A nos perfis Ágil e Pleno",
+          "observationLabel": "Proposta de melhoria",
+          "description": "O usuário solicita implementar um fluxo de benchmark que execute os Q&A nos perfis Ágil e Pleno, registre os resultados reais e permita acompanhar a evolução entre versões. Este achado documenta a proposta para a equipe responsável pela Tri7 Alia. Não foram fornecidas evidências de implementação desse fluxo nem novas execuções associadas a este achado; as validações históricas já registradas permanecem disponíveis separadamente.",
+          "expected": "Executar um conjunto identificado de perguntas e respostas de referência (Q&A) nos dois perfis, preservando cada pergunta, a resposta real integral, as fontes efetivamente consultadas e recuperadas e as fontes citadas na resposta. Registrar ID da execução, data, perfil, versão/modelo quando disponíveis, contexto e versão da base, tempo de execução e consumo, com unidades e origem da medição. Quando uma informação não estiver disponível, identificá-la como não coletada, sem estimar um valor como se fosse medido. Aplicar critérios explícitos e independentes: correção, confrontando o conteúdo com uma referência validada e suas fontes; completude, verificando os pontos exigidos e as omissões; recusa, distinguindo a recusa justificada da indevida e registrando o motivo; sigilo, verificando as restrições definidas para o caso e qualquer exposição indevida. Permitir consultar e auditar cada resultado, seus critérios, evidências e justificativa da avaliação. Apresentar indicadores e gráficos comparativos por versão e perfil, incluindo taxas de correção e completude, recusas justificadas e indevidas, violações de sigilo, tempo e consumo por consulta e agregados, com tamanho da amostra, denominadores e cobertura dos dados coletados. Comparar execuções com o mesmo conjunto de Q&A e condições documentadas, explicitando diferenças na base, no contexto ou na configuração.",
+          "suggestion": "Separar a avaliação da recuperação da base da avaliação da resposta. Para classificar falha de recuperação, conferir se a informação de referência existia e estava disponível na base usada e examinar os registros das fontes realmente recuperadas. Classificar erro na resposta quando a geração contradizer ou utilizar incorretamente evidências recuperadas pertinentes. Admitir falha mista ou resultado inconclusivo quando faltarem dados para atribuir a causa. A ausência de uma citação, isoladamente, não comprova falha de recuperação. Os gráficos devem permitir abrir as execuções que compõem cada indicador, sem substituir a análise das respostas individuais.",
+          "verification": "Cadastrar um conjunto de Q&A com IDs estáveis, referências e critérios de correção, completude, recusa e sigilo antes de avaliar as respostas. Executar os mesmos casos em Ágil e Pleno e conferir a preservação das respostas reais, fontes recuperadas/consultadas, fontes citadas, versão, contexto, tempo e consumo medidos; registrar explicitamente campos não coletados e execuções interrompidas. Conferir os critérios em casos de resposta correta e incorreta, resposta incompleta, recusa justificada e indevida e violação de sigilo, usando casos de teste controlados. Comparar ao menos duas versões quando houver execuções reais disponíveis e verificar se filtros, indicadores e gráficos correspondem aos resultados individuais e aos denominadores informados. Abrir cada resultado a partir dos indicadores e conferir sua avaliação e evidências. Validar separadamente as classificações de falha de recuperação, erro na resposta, falha mista e inconclusivo, incluindo situações em que a base não contém a informação e situações em que ela a contém, mas a recuperação falha. Registrar limitações de comparabilidade entre versões. Não preencher respostas, tempos, consumo, versões ou resultados fictícios para simular a execução.",
+          "evidenceIds": [],
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
           }
         }
       ]
