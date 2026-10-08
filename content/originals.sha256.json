@@ -364,5 +364,41 @@
     "originalName": "codex-clipboard-8dcada53-bf8a-424f-ada6-b7dae5640895.png",
     "bytes": 89016,
     "sha256": "3d1b76d4d3cf157c4964ce57a2e90720116a4bb381f961f8c0a1401091dcbab7"
+  },
+  {
+    "path": "/originals/evidence/alia-2026-10-08/giro-ux-01-cards.png",
+    "originalName": "codex-clipboard-de51bc32-5362-4a28-8d8b-bd62e85a3dc5.png",
+    "bytes": 201865,
+    "sha256": "d22bf4973b5ff87d14f96681f98123cb42d4ac4cad32b717146735469405974f"
+  },
+  {
+    "path": "/originals/evidence/alia-2026-10-08/giro-feat-02-periodos.png",
+    "originalName": "codex-clipboard-3b472ae0-70d4-4e7a-aae6-c32cab73fc57.png",
+    "bytes": 438548,
+    "sha256": "2bcc87e4ae2dfd3ce46ba3c0f74e209204c0fbd0fe26781eb8dad06fc3fd3a34"
+  },
+  {
+    "path": "/originals/evidence/alia-2026-10-08/vc-abst-13-com-metaprompt.png",
+    "originalName": "codex-clipboard-db1ba9a0-e039-4ffa-94c4-789f2bab901e.png",
+    "bytes": 140958,
+    "sha256": "0de79a2777102b66e94bb6a2c668a1da1ab735388dff11942109ca24b85dcbcf"
+  },
+  {
+    "path": "/originals/evidence/alia-2026-10-08/vc-abst-13-sem-metaprompt.png",
+    "originalName": "codex-clipboard-066f947b-5490-4fc4-8dd6-8d8e75c64597.png",
+    "bytes": 134871,
+    "sha256": "682fc1b77daddfdb2c2560012873184373abb77b64e26506e1d302d135fbd9bb"
+  },
+  {
+    "path": "/originals/evidence/alia-2026-10-08/vc-abst-13-referencia-1973.jpeg",
+    "originalName": "concreta.jpeg",
+    "bytes": 122519,
+    "sha256": "d30371ac0707563ef65558ad9aae1424be9fa01f7068dafadec69c5caca10f00"
+  },
+  {
+    "path": "/originals/evidence/alia-2026-10-08/vc-abst-13-referencia-1976.jpeg",
+    "originalName": "abstencao.jpeg",
+    "bytes": 61401,
+    "sha256": "90a9c1f62dd798aa53087e78a1c179cd2c8b67ac416c89c1af1c3ebe55b3b523"
   }
 ]

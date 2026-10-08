@@ -4195,6 +4195,142 @@
           }
         }
       ]
+    },
+    {
+      "id": "alia-2026-10-08",
+      "date": "2026-10-08",
+      "title": "GIRO e VadeChat · leitura, decisão e rastreabilidade",
+      "module": "Alia",
+      "status": "Sugestões registradas · revisão de abstenção aguardando reteste",
+      "count": "5 achados",
+      "summary": "Cinco sugestões de 8 de outubro de 2026 para a plataforma Tri7 Alia: cards interativos com resumo completo no GIRO, histórico e balanço por período com plano de ação por serventia, revisão da abstenção e de referências normativas equivocadas, identificação de modelo/modo e regeneração por resposta, e copiar, editar e reenviar mensagens do usuário. Seis capturas originais documentam os cards, a apresentação do GIRO e consultas do VadeChat. As propostas são registradas para a equipe da ferramenta; nenhum desses recursos foi implementado ou retestado pelo Relalia.",
+      "highlights": [
+        "GIRO: acesso ao resumo completo, leitura na fonte e consulta ao VadeChat com ação explicada.",
+        "GIRO: períodos predefinidos e livres, síntese relevante e plano de ação rastreável por serventia; “Giros anteriores” já aparece na captura.",
+        "VadeChat: separar referência equivocada no benchmark, capturas disponíveis, abstenções relatadas e causas técnicas ainda não confirmadas.",
+        "Metadados por resposta e regeneração, com histórico preservado; copiar, editar e reenviar a própria mensagem.",
+        "Seis capturas originais preservadas por SHA-256, incluindo o par com as referências 6.015/1976 e 6.015/1973; sem reconstrução ou alteração das imagens."
+      ],
+      "note": "As capturas são registros visuais de estados específicos e não comprovam comportamento global, modo histórico, correção jurídica ou causa técnica. A pergunta com Lei nº 6.015/1976 contém erro de cadastro identificado pelo usuário; a conclusão da correção interna para 6.015/1973 e novos testes não foram informados. O par de capturas documenta abstenção com 1976 e trecho de resposta substantiva com 1973, sem estabelecer equivalência de todas as condições. As duas outras capturas de VadeChat tratam do Provimento CNJ nº 181/2025. Abstenções adicionais após a correção e substituição de conteúdo durante a geração permanecem relatos sem registro da sequência completa. Todas as seis imagens recebidas foram preservadas. A rodada não modifica os resultados históricos. As ações propostas dizem respeito à Alia/GIRO/VadeChat; o Relalia publica seus relatos e critérios de verificação.",
+      "files": [
+        {
+          "label": "Relatório de 08/10/2026 · PDF gerado",
+          "path": "/reports/alia-2026-10-08.pdf",
+          "kind": "pdf",
+          "origin": "generated"
+        }
+      ],
+      "findings": [
+        {
+          "observationLabel": "Observado e relatado / proposta",
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "id": "GIRO-UX-01",
+          "title": "Cards interativos, resumo completo e ação explicada para o VadeChat",
+          "kind": "GIRO / usabilidade e leitura",
+          "context": "Cards de notícias do GIRO",
+          "description": "A captura mostra resumos terminados em reticências, links de leitura na fonte e um botão compacto por ícone de conversa. O usuário relata que os cards são estáticos, que o resumo gerado pela Alia não pode ser expandido após o truncamento e que o link pequeno dificulta o toque, principalmente no mobile. Solicita maior destaque e explicação da ação de perguntar ao VadeChat sobre o impacto da notícia para sua serventia. A imagem isolada não comprova o comportamento ao clicar, o tamanho da área de toque ou a ausência da função em outras telas.",
+          "expected": "Permitir abrir um detalhe da notícia pelo card ou por uma ação clara, com o resumo integral da Alia, título, fonte e link para o conteúdo original. Oferecer o conteúdo na íntegra quando disponível e permitido, ou pelo menos o resumo completo com acesso à fonte; nunca perder a continuação ao truncar a prévia. Separar e rotular o resumo de IA e o texto da publicação original. Ampliar a área acionável e garantir uso por toque e teclado, sem conflitos entre abrir o detalhe, abrir a fonte e consultar o VadeChat. Dar destaque à ação “Perguntar ao VadeChat” e explicar, por rótulo e ajuda acessíveis, que ela consulta o que a notícia pode mudar na prática para a serventia, preservando contexto e link.",
+          "verification": "Abrir o detalhe pelo card e pelo teclado; conferir que o resumo integral corresponde à prévia e mantém sua continuação. Testar títulos e textos longos, cards sem resumo, abertura e retorno, link externo e ação do VadeChat sem disparos concorrentes. Conferir foco, rótulos e áreas de toque em telas móveis. Verificar que a consulta recebe a notícia e o contexto da serventia e que o usuário entende o efeito do botão antes de acioná-lo.",
+          "evidenceIds": [
+            "GIRO-EV-01"
+          ],
+          "comparisons": [
+            {
+              "reportId": "vadechat-2026-10-06",
+              "findingId": "VC-FLOW-06",
+              "label": "Proposta anterior de continuidade do GIRO para o VadeChat"
+            }
+          ]
+        },
+        {
+          "observationLabel": "Observado e relatado / proposta",
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "id": "GIRO-FEAT-02",
+          "title": "Histórico por período, balanço das notícias e plano de ação por serventia",
+          "kind": "GIRO / histórico e apoio à decisão",
+          "context": "GIRO · períodos, síntese e relevância para a serventia",
+          "description": "A captura apresenta o destaque diário “O que mexeu no extrajudicial hoje”, filtros por serventia e abrangência, busca e “Giros anteriores”. O histórico já tem uma ação visível; seu alcance, períodos e funcionamento não foram testados neste registro. O usuário propõe consultar notícias de períodos amplos e receber um balanço com implicações práticas e ajustes necessários ao tipo de serventia, reduzindo o tempo gasto na leitura e análise de cada notícia. Considera insuficiente que o GIRO funcione apenas como agregador prolixo, pois o valor esperado está em apoiar decisões do cotidiano.",
+          "expected": "Permitir consultar o acervo por dia, semana, período decendial (10 dias), quinzena, mês, trimestre, semestre, ano e intervalo livre. Exibir datas inicial e final inclusivas e explicar o critério dos períodos predefinidos, inclusive calendário ou janela móvel. Combinar período, tipo de serventia, abrangência e busca, preservando o contexto na navegação. Para agrupamentos maiores que um dia, oferecer um balanço geral dos fatos mais relevantes e das alterações normativas, evitando repetição de notícias sobre o mesmo evento e mantendo links para cada fonte. Apresentar plano de ação contextualizado com mudanças, adequações, decisões a avaliar, vigência ou prazo quando sustentados pela fonte, tarefas propostas e pontos que exigem confirmação. Distinguir ato normativo, decisão, notícia e opinião; não tratar notícia como obrigação automaticamente nem inventar ajustes, prazos ou aplicabilidade. Identificar ausência de impacto comprovado, informação insuficiente e cobertura do acervo quando necessário.",
+          "verification": "Consultar cada período e intervalos livres, inclusive limites de mês/ano, datas sem notícias e períodos extensos. Conferir datas, inclusão das notícias, combinação de filtros, ordenação, duplicações e preservação do filtro ao voltar de um detalhe. Rastrear cada ponto do balanço e do plano de ação às notícias e fontes correspondentes. Comparar a síntese com os itens individuais, verificar omissões relevantes e pertinência ao tipo de serventia. Conferir que a interface explica períodos e lacunas de cobertura e que não apresenta obrigações ou prazos sem fundamento disponível.",
+          "evidenceIds": [
+            "GIRO-EV-02"
+          ]
+        },
+        {
+          "id": "VC-ABST-13",
+          "title": "Revisar abstenção, referências equivocadas e respostas parciais fundamentadas",
+          "kind": "VadeChat / recuperação, citações e abstenção",
+          "context": "Consultas de benchmark com e sem metaprompt e referência normativa corrigida",
+          "observationLabel": "Capturas disponíveis e relato do usuário",
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          },
+          "description": "O usuário identificou erro interno na pergunta cadastrada no benchmark: Lei nº 6.015/1976 em vez de Lei nº 6.015/1973. O par de capturas mostra a pergunta sobre averbação de casamento na matrícula: com 1976, aparece abstenção; com 1973, aparece um trecho de resposta substantiva. O usuário relata que corrigir o ano resultou nessa mudança, indicando sensibilidade à referência informada; informa que o cadastro será corrigido internamente, sem confirmação de conclusão neste registro. Também relata abstenções com e sem metaprompt, inclusive após a correção, e conteúdo transmitido durante a geração posteriormente substituído por abstenção. Outras duas capturas tratam do Provimento CNJ nº 181/2025: uma mostra abstenção com metaprompt; a outra, sem o metaprompt visível, mostra uma resposta parcial que declara não localizar essa norma e atribui o conteúdo ao Provimento nº 149/2023. Essas imagens registram estados específicos; não comprovam a transição durante a geração nem outras abstenções após a correção. Não foram verificadas equivalência das condições, correção jurídica das respostas, fontes realmente recuperadas, versão, tempo, consumo ou modo de cada execução.",
+          "hypothesis": "A mudança de referência relatada sugere sensibilidade à formulação, mas não determina a causa técnica das demais abstenções. Recuperação documental, associação entre citações e fontes e critérios de abstenção são pontos propostos para investigação; não há logs suficientes para atribuir a falha a um deles. O seletor global visível não comprova o modo usado em uma resposta anterior.",
+          "expected": "Reconhecer possíveis erros de número ou ano quando houver correspondência inequívoca na base consultada, declarar explicitamente a referência corrigida e prosseguir com fundamentação verificável. Em caso de ambiguidade, pedir esclarecimento sem substituir silenciosamente a norma. Revisar a recuperação documental, o vínculo entre citações e fontes e os critérios de abstenção. Oferecer resposta parcial sustentada quando possível, com limites explícitos; quando faltar informação, indicar especificamente o ato, dispositivo, documento ou dado necessário, em vez de recusa genérica. Distinguir documento ausente da base, documento não recuperado e conteúdo insuficiente para responder. Se conteúdo provisório transmitido durante a geração precisar ser retirado, comunicar a revisão e sua razão, sem tratar texto provisório como resposta validada. Preservar rastreabilidade do resultado final e das fontes. Evitar interromper consultas aproveitáveis sem justificativa específica.",
+          "verification": "Corrigir e versionar internamente a pergunta de benchmark, preservando o registro histórico da formulação errada. Executar pares controlados com referência correta e equivocada, com e sem metaprompt, em Ágil e Pleno, mantendo pergunta, versão, base e contexto documentados. Registrar respostas reais, fontes efetivamente recuperadas e citadas e justificativas de abstenção. Testar correspondência inequívoca e ambígua, base sem a norma, recuperação incompleta e resposta parcial possível. Conferir a correspondência de cada citação com sua fonte, a explicação da correção e a indicação específica do que falta. Registrar a evolução durante a geração e o resultado final para verificar eventuais substituições. Não atribuir causalidade, modo ou correção jurídica somente às capturas.",
+          "evidenceIds": [
+            "VC-EV-13A",
+            "VC-EV-13B",
+            "VC-EV-13C",
+            "VC-EV-13D"
+          ],
+          "comparisons": [
+            {
+              "reportId": "alia-2026-10-07",
+              "findingId": "ALIA-BENCH-05",
+              "label": "Proposta de benchmark rastreável e distinção entre recuperação e resposta"
+            }
+          ]
+        },
+        {
+          "observationLabel": "Relato do usuário / proposta",
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "id": "VC-TRACE-14",
+          "title": "Identificar modelo e modo por resposta e permitir regeneração",
+          "kind": "VadeChat / rastreabilidade e regeneração",
+          "context": "Histórico de conversa e modo de execução por resposta",
+          "description": "O usuário relata dificuldade para identificar posteriormente qual modelo e modo produziram cada resposta, porque o seletor de modo mantém um valor global que não permite inferir a configuração histórica. Solicita um pequeno rótulo abaixo de cada resposta e ação para regenerá-la com o mesmo modelo ou alterando o modo. Não foi fornecida captura específica para este item, nem comprovada a ausência dessas funções em todo o sistema.",
+          "expected": "Gravar a identificação do produto/provedor e do modelo efetivamente utilizado quando disponível, o modo Ágil ou Pleno e a versão quando informada na própria execução de cada resposta. Exibir essas informações em rótulo discreto e acessível abaixo da resposta, preservado após mudar o seletor global ou reabrir a conversa. VadeChat pode identificar a ferramenta; não deve substituir uma identificação técnica de modelo que não foi informada. Mostrar “não informado” para dados históricos ausentes, sem inferir ou preencher retroativamente a partir do estado atual. Oferecer regeneração pelo mesmo modelo/configuração ou escolha explícita de outro modo, indicando a seleção antes de executar. Preservar pergunta, contexto, anexos autorizados e a resposta anterior como versão consultável; identificar cada resultado e os estados de carregamento, erro e conclusão, sem substituir silenciosamente o histórico.",
+          "verification": "Gerar respostas consecutivas em modos diferentes, mudar o seletor global e reabrir a conversa; conferir que cada rótulo mantém os dados de sua execução. Verificar respostas antigas sem metadados e modelos indisponíveis. Regenerar com a mesma configuração e trocando o modo; conferir uma única solicitação, contexto e anexos preservados, versões anteriores acessíveis e metadados corretos. Testar teclado, leitura dos rótulos, erro e cancelamento, sem inventar configuração histórica.",
+          "evidenceIds": [],
+          "comparisons": [
+            {
+              "reportId": "vadechat-2026-10-06",
+              "findingId": "VC-UX-08",
+              "label": "Proposta anterior de indicação dos modos no campo de mensagem"
+            }
+          ]
+        },
+        {
+          "observationLabel": "Solicitação do usuário / proposta",
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "id": "VC-UX-15",
+          "title": "Copiar, editar e reenviar a mensagem do usuário",
+          "kind": "VadeChat / edição e reutilização de mensagens",
+          "context": "Ações na própria mensagem enviada pelo usuário",
+          "description": "O usuário solicita ações para copiar a própria mensagem enviada para o clipboard e editá-la para reenvio, como recursos de reutilização de conversas. Este item é uma proposta sem captura específica ou teste de implementação; não comprova ausência dessas ações em todos os contextos da plataforma.",
+          "expected": "Disponibilizar ações identificáveis e acessíveis de copiar e editar junto à mensagem do usuário. Copiar o texto integral, preservando parágrafos e caracteres, com confirmação e tratamento de indisponibilidade do clipboard. Permitir editar, cancelar ou confirmar o reenvio; indicar modelo/modo escolhido e tratamento dos anexos. Explicar o efeito sobre as respostas posteriores e preservar a versão anterior ou um ramo consultável da conversa, sem perder o histórico silenciosamente. Evitar envio duplicado e oferecer recuperação em caso de erro.",
+          "verification": "Copiar mensagens curtas, longas e multilinha e comparar o texto obtido; testar feedback e falha de clipboard. Editar por mouse, toque e teclado, cancelar sem alterar o original e reenviar uma única vez. Conferir contexto, modo e anexos selecionados, vínculo com a resposta correspondente e acesso ao histórico anterior. Testar erro, nova tentativa e navegação entre conversas.",
+          "evidenceIds": [],
+          "relatedIds": [
+            "VC-TRACE-14"
+          ]
+        }
+      ]
     }
   ],
   "evidence": [
@@ -4968,6 +5104,78 @@
       "path": "/originals/evidence/alia-2026-10-07/alia-nav-04-breadcrumb.png",
       "originalName": "codex-clipboard-8dcada53-bf8a-424f-ada6-b7dae5640895.png",
       "sha256": "3d1b76d4d3cf157c4964ce57a2e90720116a4bb381f961f8c0a1401091dcbab7"
+    },
+    {
+      "id": "GIRO-EV-01",
+      "reportId": "alia-2026-10-08",
+      "findingIds": [
+        "GIRO-UX-01"
+      ],
+      "description": "Captura anotada de cards do GIRO: resumos terminados em reticências, links de leitura na fonte e ações por ícone de conversa. As setas foram fornecidas pelo usuário. A captura documenta a aparência; a ausência de expansão e a dificuldade de toque são relatadas.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-2026-10-08/giro-ux-01-cards.png",
+      "originalName": "codex-clipboard-de51bc32-5362-4a28-8d8b-bd62e85a3dc5.png",
+      "sha256": "d22bf4973b5ff87d14f96681f98123cb42d4ac4cad32b717146735469405974f"
+    },
+    {
+      "id": "GIRO-EV-02",
+      "reportId": "alia-2026-10-08",
+      "findingIds": [
+        "GIRO-FEAT-02"
+      ],
+      "description": "Captura anotada do GIRO em 8 de outubro: destaque “O que mexeu no extrajudicial hoje”, filtros por serventia e abrangência, busca e botão “Giros anteriores”. Não demonstra os períodos disponíveis nem o funcionamento do histórico.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-2026-10-08/giro-feat-02-periodos.png",
+      "originalName": "codex-clipboard-3b472ae0-70d4-4e7a-aae6-c32cab73fc57.png",
+      "sha256": "2bcc87e4ae2dfd3ce46ba3c0f74e209204c0fbd0fe26781eb8dad06fc3fd3a34"
+    },
+    {
+      "id": "VC-EV-13A",
+      "reportId": "alia-2026-10-08",
+      "findingIds": [
+        "VC-ABST-13"
+      ],
+      "description": "Consulta com metaprompt de objetividade, fundamentação e ressalvas, sobre compra e venda de imóvel, comunicação ao COAF e Provimento CNJ nº 181/2025, arts. 155-A, 161 e 162. A captura mostra “Resposta abstida — sem evidência suficiente”. O seletor visível mostra Ágil no momento da captura; isso não comprova o modo da resposta histórica.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-2026-10-08/vc-abst-13-com-metaprompt.png",
+      "originalName": "codex-clipboard-db1ba9a0-e039-4ffa-94c4-789f2bab901e.png",
+      "sha256": "0de79a2777102b66e94bb6a2c668a1da1ab735388dff11942109ca24b85dcbcf"
+    },
+    {
+      "id": "VC-EV-13B",
+      "reportId": "alia-2026-10-08",
+      "findingIds": [
+        "VC-ABST-13"
+      ],
+      "description": "Consulta com a mesma pergunta temática sem o metaprompt visível. A resposta declara não localizar o Provimento CNJ nº 181/2025 e apresenta conteúdo parcial atribuído ao Provimento nº 149/2023, com ressalva final. A captura documenta o texto exibido; a correção jurídica, as fontes realmente recuperadas e a equivalência das condições de execução não foram verificadas.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-2026-10-08/vc-abst-13-sem-metaprompt.png",
+      "originalName": "codex-clipboard-066f947b-5490-4fc4-8dd6-8d8e75c64597.png",
+      "sha256": "682fc1b77daddfdb2c2560012873184373abb77b64e26506e1d302d135fbd9bb"
+    },
+    {
+      "id": "VC-EV-13C",
+      "reportId": "alia-2026-10-08",
+      "findingIds": [
+        "VC-ABST-13"
+      ],
+      "description": "Captura com a pergunta de averbação de casamento na matrícula imobiliária referindo a Lei nº 6.015/1973 e o Código de Normas e Procedimentos do Foro Extrajudicial do Estado de Goiás. O trecho de resposta visível apresenta conteúdo substantivo, seções sobre certidão de casamento e assinatura do requerimento e referências normativas. A imagem não contém a resposta inteira e não comprova sua correção jurídica ou as fontes realmente recuperadas.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-2026-10-08/vc-abst-13-referencia-1973.jpeg",
+      "originalName": "concreta.jpeg",
+      "sha256": "d30371ac0707563ef65558ad9aae1424be9fa01f7068dafadec69c5caca10f00"
+    },
+    {
+      "id": "VC-EV-13D",
+      "reportId": "alia-2026-10-08",
+      "findingIds": [
+        "VC-ABST-13"
+      ],
+      "description": "Captura com pergunta correspondente sobre averbação de casamento, referindo a Lei nº 6.015/1976. Mostra “Resposta abstida — sem evidência suficiente” e orientação genérica para reformular ou especificar a consulta. O ano incorreto faz parte do cadastro de benchmark relatado pelo usuário. A imagem isolada não identifica modelo, modo histórico, versão, configuração da base ou causa técnica.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-2026-10-08/vc-abst-13-referencia-1976.jpeg",
+      "originalName": "abstencao.jpeg",
+      "sha256": "90a9c1f62dd798aa53087e78a1c179cd2c8b67ac416c89c1af1c3ebe55b3b523"
     }
   ],
   "notes": {

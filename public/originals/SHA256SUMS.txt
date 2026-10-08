@@ -59,3 +59,9 @@ ccd864195be8fc63ca93e689f3de0d3a097bde0bedf0a7664ab876b8c953d179  evidence/vadec
 664854bfd52e6dd9569a38fb3e87b78f54d2daec49c571b5f7e2ec1a13967a52  evidence/alia-2026-10-07/bc-doc-02-download-nosuchkey.png
 c040cdf0196529a6ce76572aca0e00b614ad1c2e29333d94f872ed4c1bcfe613  evidence/alia-2026-10-07/bc-ux-03-fechar-editar.png
 3d1b76d4d3cf157c4964ce57a2e90720116a4bb381f961f8c0a1401091dcbab7  evidence/alia-2026-10-07/alia-nav-04-breadcrumb.png
+d22bf4973b5ff87d14f96681f98123cb42d4ac4cad32b717146735469405974f  evidence/alia-2026-10-08/giro-ux-01-cards.png
+2bcc87e4ae2dfd3ce46ba3c0f74e209204c0fbd0fe26781eb8dad06fc3fd3a34  evidence/alia-2026-10-08/giro-feat-02-periodos.png
+0de79a2777102b66e94bb6a2c668a1da1ab735388dff11942109ca24b85dcbcf  evidence/alia-2026-10-08/vc-abst-13-com-metaprompt.png
+682fc1b77daddfdb2c2560012873184373abb77b64e26506e1d302d135fbd9bb  evidence/alia-2026-10-08/vc-abst-13-sem-metaprompt.png
+d30371ac0707563ef65558ad9aae1424be9fa01f7068dafadec69c5caca10f00  evidence/alia-2026-10-08/vc-abst-13-referencia-1973.jpeg
+90a9c1f62dd798aa53087e78a1c179cd2c8b67ac416c89c1af1c3ebe55b3b523  evidence/alia-2026-10-08/vc-abst-13-referencia-1976.jpeg

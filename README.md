@@ -1,6 +1,6 @@
 # Relalia: O Relatório da Alia
 
-Portal estático de validações do VadeChat, Atlas e Base de Conhecimento, publicado em **https://relalia.github.io/** pelo repositório **relalia/relalia.github.io**. Next.js, TypeScript e App Router, sem API Routes, Server Actions ou servidor de produção. Cada relatório tem HTML próprio e funciona por navegação, acesso direto e atualização do navegador.
+Portal estático de validações e propostas para Alia, GIRO, VadeChat, Atlas e Base de Conhecimento, publicado em **https://relalia.github.io/** pelo repositório **relalia/relalia.github.io**. Next.js, TypeScript e App Router, sem API Routes, Server Actions ou servidor de produção. Cada relatório tem HTML próprio e funciona por navegação, acesso direto e atualização do navegador.
 
 ## Executar localmente
 
@@ -32,7 +32,7 @@ Prévia da pasta `out`: http://127.0.0.1:4173. `pnpm check` reúne testes de dad
 - `content/reports.json`: conteúdo; os registros Atlas preservam os campos de origem em `originalRecord`. Comparações indicam `reportId`, `findingId` e `label`.
 - `components/`: linha do tempo, ficha, filtros Radix Select, achado, galeria com ampliação/MP4 e abertura/download de documentos.
 - `public/originals/`: quatro PDFs, XLSX e evidências originais. `SHA256SUMS.txt` e `content/originals.sha256.json` registram integridade.
-- `public/reports/`: PDFs gerados, separados dos originais. As fichas das rodadas antigas são complementares; as rodadas de 06/10 e 07/10 têm relatórios gerados a partir do catálogo. URLs anteriores foram preservadas.
+- `public/reports/`: PDFs gerados, separados dos originais. As fichas das rodadas antigas são complementares; novas rodadas têm relatórios gerados a partir do catálogo. URLs anteriores foram preservadas.
 - `scripts/`: geração/verificação de PDFs, validação do catálogo, testes de vínculos e prévia estática com suporte a Range para vídeo.
 - `.github/workflows/pages.yml`: instala dependências, testa, gera PDFs e exportação, verifica e publica somente `out`.
 
@@ -64,6 +64,8 @@ node scripts/register-original.mjs "caminho/da/captura.png" /originals/evidence/
 Os PDFs gerados automaticamente incluem observação, melhoria esperada, verificação, criticidade cadastrada, situação, execução/resultado do reteste e referências/capturas. A geração só escreve em `/reports/`, recusa caminhos fora dessa pasta e nunca altera `/originals/`.
 
 ## Publicação e verificação
+
+Rodada de 08/10/2026: https://relalia.github.io/relatorios/alia-2026-10-08/. Cinco achados: **GIRO-UX-01** (cards, resumo completo e ação do VadeChat), **GIRO-FEAT-02** (histórico por período, balanço e plano de ação por serventia), **VC-ABST-13** (referências equivocadas, recuperação, citações e abstenção), **VC-TRACE-14** (modelo/modo por resposta e regeneração) e **VC-UX-15** (copiar, editar e reenviar a mensagem). A rodada usa o módulo Alia por abranger GIRO e VadeChat. São seis capturas originais: `GIRO-EV-01`, `GIRO-EV-02` e `VC-EV-13A` a `VC-EV-13D`, com ampliação, download e SHA-256. As imagens `concreta.jpeg` e `abstencao.jpeg` foram restauradas pelo usuário e incorporadas sem alterações. O par da Lei nº 6.015 mostra 1976 com abstenção e 1973 com trecho de resposta substantiva; outras capturas tratam do Provimento CNJ nº 181/2025. O relatório distingue capturas, relatos, hipóteses e propostas, sem afirmar equivalência de condições, modo histórico ou correção jurídica. O erro de cadastro do benchmark será corrigido internamente; as rodadas históricas não foram reescritas. O PDF inclui as seis imagens e os critérios de verificação. Nenhuma funcionalidade proposta foi implementada na Alia pelo Relalia.
 
 Rodada de 07/10/2026: https://relalia.github.io/relatorios/alia-2026-10-07/. Relatório final com **BC-DOC-01** (visualização) e **BC-DOC-02** (download do original), ambos com erro `NoSuchKey`, **BC-UX-03** (sobreposição de Fechar e Editar), **ALIA-NAV-04** (breadcrumb e retorno contextual) e **ALIA-BENCH-05** (proposta de benchmark rastreável de Q&A em Ágil e Pleno, com indicadores e comparação entre versões). A rodada usa o módulo **Alia** por abranger Base de Conhecimento, navegação e benchmark. **BC-EV-01**, **BC-EV-02**, **BC-EV-03** e **ALIA-EV-04** preservam as quatro capturas originais; a proposta de benchmark não tem evidência de implementação anexada. O PDF é gerado automaticamente. Encerrar o registro não implica corrigir problemas ou executar o benchmark: os quatro problemas aguardam reteste, e o quinto item é uma proposta de melhoria. Resultados, tempo, consumo e gráficos de benchmark só devem ser apresentados como reais quando houver execuções verificáveis. A mesma estrutura permite acrescentar novas rodadas e resultados com vínculos de comparação, preservando IDs e URLs existentes.
 
