@@ -38,7 +38,25 @@ Prévia da pasta `out`: http://127.0.0.1:4173. `pnpm check` reúne testes de dad
 
 ## Materiais e integridade
 
-Por decisão expressa do responsável pelo MVP, os documentos e capturas originais são públicos, sem anonimização ou autenticação. As cópias publicadas preservam exatamente os bytes dos arquivos fornecidos. O build verifica SHA-256 antes de gerar PDFs; a verificação final repete a conferência em `out`. Os arquivos de origem locais em `relatorios/`, `assets/` e `data.js` continuam fora do Git, enquanto as cópias publicadas estão organizadas em `public/originals`.
+Por decisão expressa do responsável pelo MVP, os documentos e capturas originais são públicos, sem anonimização ou autenticação de servidor. A interface exige uma senha compartilhada para restringir navegação casual (nível 1). HTML/dados, URLs diretas dos anexos, repositório e histórico Git continuam públicos. Esse bloqueio não é autenticação segura nem criptografia. As cópias publicadas preservam exatamente os bytes dos arquivos fornecidos. O build verifica SHA-256 antes de gerar PDFs; a verificação final repete a conferência em `out`. Os arquivos de origem locais em `relatorios/`, `assets/` e `data.js` continuam fora do Git, enquanto as cópias publicadas estão organizadas em `public/originals`.
+
+## Senha da interface e manutenção
+
+Execute o utilitário em uma janela externa do CMD no Windows (PowerShell 5.1/.NET 4.8 ou mais recente):
+
+```bat
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Users\Rafae\Documents\GitHub\alia-pages-demo\scripts\set-access-password.ps1"
+```
+
+Ele solicita senha e confirmação com entrada oculta, sem caracteres visíveis. Não passe a senha por argumento, variável de ambiente ou conversa. O processo usa bytes UTF-8, salt aleatório de 16 bytes e PBKDF2-HMAC-SHA-256 com 600.000 iterações e resultado de 256 bits. Grava atomicamente **somente** `algorithm`, `hash`, `iterations`, `length`, `salt`, `verifier` e `version` em `public/access-config.json`. A configuração derivada é pública; não contém a senha. Confirmação divergente/vazia ou falha preserva a configuração anterior. Não há senha padrão ou acesso alternativo. Os buffers temporários são limpos no processo; a memória de runtimes não oferece garantia absoluta de apagamento.
+
+Para trocar a senha, execute o mesmo comando: são gerados novo salt e nova versão UUID. Execute `pnpm test`, `pnpm typecheck`, `pnpm build` e `pnpm verify`; commit/push da configuração derivada para `main` publica a troca pelo workflow existente. Não adicione a senha à documentação ou ao commit. A verificação de publicação recusa configuração ausente, inválida ou com campos extras. Em desenvolvimento, ausência/erro mantém a interface bloqueada.
+
+`components/AccessGate.tsx`, no layout compartilhado, começa fechado na renderização estática. Após verificar a senha com Web Crypto, preserva a URL solicitada e grava no localStorage **somente** `{ version, expiresAt }`, com expiração absoluta de oito horas (sem renovação pela navegação). Revalida no carregamento, foco/retorno à aba, eventos de armazenamento e no prazo final. A ação **Sair** sincroniza entre abas via eventos de storage e BroadcastChannel, quando disponíveis. Se o armazenamento falhar, a liberação existe só na memória daquela aba, até o prazo ou recarga. Sem JavaScript a interface fica bloqueada com mensagem explicativa. Web Crypto exige HTTPS ou localhost; navegador sem o recurso também fica bloqueado.
+
+A configuração é buscada separadamente com `cache: 'no-store'` e URL única a cada consulta, no carregamento, envio, retorno e a cada minuto enquanto a aba está visível. Não é embutida no bundle. A troca de versão invalida liberações anteriores no fluxo normal assim que a nova publicação é consultada; clientes offline, cópias antigas e marcadores manipulados não são revogados por esse controle local. Erro de conexão/configuração fecha a interface e oferece nova tentativa. Preserve o nome `public/access-config.json` e publique a configuração junto do restante da exportação. O cache dos anexos não muda.
+
+Testes automatizados de derivação usam credenciais descartáveis em memória, sem consultar a senha real. `powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/set-access-password.ps1 -SelfTest` testa confirmação divergente e o vetor PBKDF2 sem gravar configuração. Para conferir a senha definitiva, digite-a diretamente no navegador; o agente não precisa recebê-la.
 
 O Atlas mantém 51 achados, 44 IDs de evidências e as 43 imagens incorporadas à planilha. **EV-27 é descrição sem imagem incorporada**. Não foi reconstruída uma imagem ausente. Os vínculos originais são preservados, inclusive associações que não são simétricas entre as listas de achados e evidências. AC-022 distingue o texto extraído (assinaturas/validações) da hipótese de causa provável dos problemas relacionados, e disponibiliza a descrição original integral.
 

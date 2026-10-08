@@ -9,7 +9,7 @@
     "start:export": "node scripts/serve.mjs",
     "typecheck": "tsc --noEmit",
     "verify": "node scripts/verify-public.mjs",
-    "test": "node --test scripts/data.test.mjs",
+    "test": "node --test scripts/data.test.mjs scripts/access.test.mjs",
     "check": "pnpm test && pnpm typecheck && pnpm build && pnpm verify"
   },
   "dependencies": {

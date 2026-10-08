@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import AccessGate from '@/components/AccessGate';
 
 export const metadata: Metadata = {
   title: 'Relalia: O Relatório da Alia',
@@ -7,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body>{children}</body></html>;
+  return <html lang="pt-BR"><body><AccessGate>{children}</AccessGate></body></html>;
 }
