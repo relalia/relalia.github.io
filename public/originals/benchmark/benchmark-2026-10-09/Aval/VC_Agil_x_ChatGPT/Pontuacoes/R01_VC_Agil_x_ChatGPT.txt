@@ -1,0 +1,56 @@
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 2 | 1 |
+| 2. Fundamentação e informações essenciais (0-4) | 2 | 1 |
+| 3. Condições, limites e ressalvas (0-2) | 1 | 0 |
+| **Nota total** | **5** | **2** |
+| **Classificação** | Parcialmente conforme | Divergente |
+
+## 2. Análise
+
+**Resposta A**
+
+*Acertos (alinhados à referência):*
+- Identifica a finalidade da averbação como atualização do estado jurídico e da qualificação do titular, sem transmissão ou alteração da propriedade.
+- Exige requerimento e certidão de casamento.
+- Prevê a atualização do estado civil e dos dados de qualificação, e a indicação do novo nome civil quando o casamento o alterar.
+- Trata o regime de bens como relevante para atos futuros e menciona o pacto antenupcial e seu registro.
+- Cita os arts. 246 da Lei 6.015/1973 e o CNPFE de Goiás, coincidindo parcialmente com a fundamentação da referência. Não cita o art. 167, II, nem o Código Nacional de Normas.
+
+*Omissões:*
+- Não afirma o prazo de 90 dias da certidão, que a referência define. Diz expressamente que não conseguiu confirmá-lo e recomenda cautela, o que é omissão e não contradição.
+- Não afirma a exigência de firma reconhecida ou assinatura digital ICP-Brasil. Deixa o ponto em aberto, também sem contradizer a referência.
+- Não especifica as formas aceitas da certidão (original, cópia autenticada ou digital validável). Fala apenas em documento "idôneo e passível de validação", o que se aproxima parcialmente.
+
+*Informação adicional não verificável pela referência:*
+- Exigência de documento de identificação e CPF, lista de documentos complementares e checklist. Isso não contradiz a referência, mas também não é por ela confirmado.
+
+**Resposta B**
+
+*Acertos:*
+- Exige certidão de casamento "atualizada" e requerimento.
+- Prevê a atualização da qualificação (nome, estado civil, regime de bens) e a consignação do novo nome na averbação.
+
+*Omissões:*
+- Não indica o prazo de 90 dias, nem as formas aceitas da certidão.
+- Não menciona firma reconhecida nem assinatura ICP-Brasil.
+- Não trata do pacto antenupcial e seu registro.
+- Não cita os arts. 167, II, e 246 da Lei 6.015/1973.
+
+*Contradições ou desvios em relação à referência:*
+- Sobre a assinatura, apresenta a regra da assinatura própria ou "a rogo" com duas testemunhas, tirada do contexto da habilitação para casamento. A referência exige firma reconhecida ou assinatura digital validável, e a resposta B não prevê isso. Essa lacuna se soma ao desvio de contexto e afeta a orientação prática.
+- Impõe uma lista extensa de documentos pessoais (certidões negativas, título de eleitor, comprovante de endereço etc.) como condição, dizendo que a ausência de qualquer um impede o ato. Isso não aparece na referência e desvia a orientação prática. Não verificável pela referência quanto à existência da regra, mas contrasta com o escopo simples do requerimento e da certidão.
+- Mistura dispositivos relativos à habilitação para casamento e ao registro civil (arts. 630, 634, 412) com a averbação na matrícula imobiliária, o que afasta a resposta do objeto da pergunta.
+
+*Informação adicional não verificável pela referência:*
+- Os números específicos de artigos do Código de Normas (828, 830, 773, 655, 618, 440-AU) e a citação do Provimento 149/2023 do CNJ. A referência não permite confirmar nem refutar cada um. Limitação da comparação: não são tratados como falsos apenas por não constarem no gabarito.
+
+## 3. Resultado
+
+**A venceu** (5 a 2).
+
+## 4. Justificativa
+
+Nenhuma das duas atinge o núcleo prático da referência (prazo de 90 dias, firma reconhecida ou ICP-Brasil, formatos da certidão). A resposta A se mantém no objeto da pergunta, capta a natureza de atualização da averbação, o regime de bens, o pacto antenupcial e a alteração do nome, e é prudente ao não afirmar o que não confirmou. A resposta B desloca a análise para o processo de habilitação e para uma lista ampla de documentos pessoais, e propõe uma regra de assinatura que não corresponde à da referência.

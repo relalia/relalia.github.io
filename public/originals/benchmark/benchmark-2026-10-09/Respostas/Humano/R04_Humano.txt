@@ -1,0 +1,18 @@
+Para fins de fiscalização e tributação no âmbito do Estado de Goiás, o prazo legal para dar entrada no inventário extrajudicial em cartório sem sofrer a incidência de multa sobre o imposto é de até 60 (sessenta) dias corridos, contados a partir da data do falecimento. Embora a legislação processual federal mencione o prazo genérico de dois meses, o sistema automatizado da Secretaria da Economia de Goiás calcula a penalidade estritamente com base nos dias corridos. Portanto, para garantir a não incidência de multa, a transmissão eletrônica da Declaração do ITCD deve ocorrer obrigatoriamente dentro desse limite de 60 dias, sob pena de aplicação imediata de multa punitiva.
+
+
+Fundamentação Jurídica
+1. Legislação Processual Federal (Prazo para instauração):
+
+O Artigo 611 da Lei nº 13.105/2015 (Código de Processo Civil - CPC) determina que o processo de inventário e de partilha deve ser instaurado dentro de 2 (dois) meses a contar da abertura da sucessão.
+
+2. Legislação Tributária Estadual (Critério da multa fiscal):
+A competência para instituir e cobrar o ITCD é dos Estados (Artigo 155, I da Constituição Federal), o Artigo 89 (das Penalidades), da Lei Estadual nº 11.651/1991 (Código Tributário do Estado de Goiás - CTE) vincula expressamente a penalidade ao prazo em dias.
+
+3. Impacto Prático no Atendimento do Cartório:
+
+O conflito normativo (2 meses vs. 60 dias) ganha relevância quando o óbito ocorre em períodos que englobam meses com 31 dias (como a sequência maio/junho ou julho/agosto). Nesses casos, o prazo de "2 meses" do CPC atinge 61 ou 62 dias corridos. Como o sistema ITCD WEB da Secretaria da Economia de Goiás é parametrizado rigorosamente pela contagem em dias da lei estadual, qualquer transmissão realizada no 1º dia subsequente aos 60 dias corridos gerará a guia de imposto com a multa automática.
+
+Fatos obrigatórios (1)
+mencionar Código de Processo Civil e código tributário Estadual
+peso 1.00

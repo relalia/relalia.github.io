@@ -1,0 +1,30 @@
+## 1. Tabela de pontuação
+
+| Resposta | Critério 1 (0-4) | Critério 2 (0-4) | Critério 3 (0-2) | Nota total | Classificação |
+|---|---|---|---|---|---|
+| A | 2 | 1 | 1 | 4 | Parcialmente conforme |
+| B | 4 | 3 | 1 | 8 | Conforme |
+
+## 2. Análise de cada resposta
+
+**Resposta A**
+
+- **Acertos:** Define a abertura de firma como cadastro da assinatura no tabelionato de notas, para conferência futura. Informa que a assinatura é colhida na presença do funcionário autorizado, "geralmente mais de uma vez", o que se aproxima da exigência de no mínimo três assinaturas. Menciona o documento de identificação e o CPF.
+- **Omissões:** Não menciona o Código de Normas do Foro Extrajudicial de Goiás, que é o fato obrigatório da referência (peso 1,00). Não cita o art. 471 nem o art. 472. Não indica o mínimo de três assinaturas. Não trata da possibilidade de abertura por maior de 16 anos, com anotação da incapacidade relativa. Não menciona a biometria recomendada (art. 473) nem a vedação de preenchimento fora da serventia ou por terceiros (art. 474). Não traz a ressalva do art. 476 de que o reconhecimento declara apenas a autoria da assinatura. Não lista os campos da ficha (filiação, estado civil, profissão, sinal público do tabelião etc.).
+- **Contradições:** Afirma que a ficha não tem prazo de validade, mas que pode ser atualizada. A referência não aborda validade, então não há contradição direta. Diz que as regras "podem variar conforme as normas estaduais", o que não contraria a referência, mas deixa de apontar a norma goiana.
+- **Não verificável pela referência:** Os exemplos de uso (contratos, recibos, documentos de veículos). A lista de documentos (RG, CIN, CNH, certidão de casamento, estrangeiros). A menção às regras do CNJ sobre guarda. A fonte ANOREG/BR. As hipóteses de atualização da ficha.
+
+**Resposta B**
+
+- **Acertos:** Cita expressamente o Código de Normas e Procedimentos do Extrajudicial (Corregedoria-Geral da Justiça de Goiás) com os arts. 471 e 472, atendendo ao fato obrigatório. Define a ficha-padrão como depósito da assinatura do interessado. Informa o mínimo de três assinaturas e a conferência e o visto do tabelião ou preposto. Indica que o cadastro pode ser aberto por maiores de 16 anos, com anotação da incapacidade relativa dos menores de 18. Exige o preenchimento na presença do tabelião ou preposto autorizado. Menciona documento de identificação original.
+- **Omissões:** Não detalha todos os campos da ficha (art. 471, I a V), nem cita o CPF. Não menciona a biometria recomendada (art. 473) nem a exceção de diligência externa (art. 474, parágrafo único). Não traz a ressalva do art. 476. Cita o código como "Código de Normas e Procedimentos do Extrajudicial - 2021", denominação ligeiramente diferente da usada na referência, mas que indica a mesma norma de Goiás.
+- **Contradições:** Nenhuma identificada em relação à referência.
+- **Não verificável pela referência:** O art. 475 e a renovação da ficha com cobrança de emolumentos. A possibilidade de recusa do documento com caracteres que gerem insegurança. A seção "No seu cartório", com o MACEQ (vedação para pessoa jurídica, cadastro com foto e digital), que parece referir-se a conteúdo interno de um cartório específico.
+
+## 3. Resultado
+
+**B venceu** (8 contra 4).
+
+## 4. Justificativa final
+
+B se alinha melhor à referência por citar o Código de Normas de Goiás (fato obrigatório), indicar as três assinaturas, a abertura por maiores de 16 anos com anotação da incapacidade relativa e o preenchimento na presença do tabelião. A responde de forma genérica e nacional, sem a norma goiana nem os requisitos e limites do art. 471 em diante, embora traga conteúdo aproveitável sobre o conceito e a ausência de prazo fixo. Ambas omitem o art. 476 e a biometria do art. 473.

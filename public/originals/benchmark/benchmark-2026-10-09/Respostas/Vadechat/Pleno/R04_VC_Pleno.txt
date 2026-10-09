@@ -1,0 +1,27 @@
+**Resposta direta**
+O prazo legal para requerer o inventário é de **2 (dois) meses** a contar do óbito (abertura da sucessão). No âmbito extrajudicial, a escritura pública pode ser lavrada a qualquer tempo, mas, para evitar a incidência de multa sobre o ITCD no Estado de Goiás, os herdeiros devem protocolar a **Declaração do ITCD** junto à Secretaria da Economia de Goiás em até **60 (sessenta) dias** contados da data do falecimento.
+
+---
+
+### Fundamentação legal
+
+- **Prazo processual geral:** O processo de inventário e partilha deve ser instaurado dentro de 2 (dois) meses, a contar da abertura da sucessão [Código de Processo Civil, art. 611].
+- **Lavratura extrajudicial a qualquer tempo:** Em cartório de notas, a escritura pública de inventário e partilha pode ser lavrada a qualquer momento, cabendo ao tabelião fiscalizar o recolhimento de eventual penalidade tributária fixada pelo Estado [Resolução nº 35, de 24 de abril de 2007, art. 31].
+- **Multa fiscal no Estado de Goiás (ITCD):** As infrações relacionadas ao atraso na declaração ou requerimento do inventário sujeitam o contribuinte às seguintes multas graduadas [Lei nº 11.651, de 26 de dezembro de 1991, art. 89, I e I-A]:
+  - **10% (dez por cento)** do valor do imposto devido: se houver atraso na entrega da Declaração do ITCD *causa mortis* por mais de **60 (sessenta) dias** [Lei nº 11.651, de 26 de dezembro de 1991, art. 89, I];
+  - **20% (vinte por cento)** do valor do imposto devido: se o atraso na entrega da declaração ultrapassar **120 (cento e vinte) dias** [Lei nº 11.651, de 26 de dezembro de 1991, art. 89, I-A].
+
+---
+
+### Como é feita a contagem do prazo para afastar a multa
+
+- **Termo inicial (marco de partida):** A contagem inicia-se na data da abertura da sucessão, ou seja, na **data do falecimento** indicada na certidão de óbito.
+- **Forma de contagem:** Contam-se **60 (sessenta) dias corridos** a partir do óbito. Para não sofrer a penalidade de 10%, o Processo Administrativo Digital do ITCD (PADI) deve ser instaurado com o protocolo formal da Declaração de ITCD no sistema da SEFAZ/GO antes de transcorridos os 60 dias [Lei nº 11.651, de 26 de dezembro de 1991, art. 84-A].
+- **Prazo subsequente:** Se a declaração não for apresentada até o 60º dia, a multa de 10% já incide sobre o imposto devido; superado o 120º dia do falecimento sem a declaração, a multa é elevada para 20% [Lei nº 11.651, de 26 de dezembro de 1991, art. 89, I-A].
+
+---
+
+### ⚠️ Atenção
+
+- **Declaração fiscal × Lavratura da escritura:** O que afasta a multa do ITCD em Goiás não é a finalização ou assinatura da escritura no cartório de notas, mas sim o **protocolo da Declaração do ITCD** no prazo de 60 dias perante o Fisco estadual. Uma vez protocolada a declaração tempestivamente, a apuração do tributo segue trâmite próprio e a escritura pública poderá ser outorgada e lavrada sem a incidência da multa de atraso.
+- **Fiscalização pelo Notário e Registrador:** O tabelião deve exigir o recolhimento do tributo ou certidão de desoneração para lavrar o ato [Resolução nº 35, de 24 de abril de 2007, art. 31; Resolução nº 695, de 26 de agosto de 2026, art. 2], e o oficial de registro de imóveis igualmente conferirá a quitação ou regularidade do parcelamento com o DARE e o demonstrativo de cálculo do ITCD no momento do registro da partilha [Código de Normas e Procedimentos, de 18 de dezembro de 2020, art. 811].

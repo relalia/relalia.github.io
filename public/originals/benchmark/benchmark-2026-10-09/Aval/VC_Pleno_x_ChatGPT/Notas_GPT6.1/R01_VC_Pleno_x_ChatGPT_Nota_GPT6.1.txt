@@ -1,0 +1,15 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do Claude Sonnet 5.5 Médio:
+
+**O empate por 5 a 5 pode ser preservado como resultado original, mas o Claude interpretou incorretamente uma ressalva de B (Pleno).**
+
+B afirma ausência de prazo predeterminado **no contexto notarial de inventários e partilhas**, explicitando que não encontrou a regra específica do Registro de Imóveis. Portanto, **não demonstra uma contradição direta com os 90 dias do gabarito**: há omissão do prazo exigido e informação sobre outro contexto não verificável pela referência. Sua inclusão pode confundir o leitor, mas isso não comprova contradição.
+
+Há também um erro objetivo na análise de A: **ela cita o art. 167, II, itens 4 e 5**, na seção sobre assinatura. O Claude registrou essa citação como ausente.
+
+A diferença verificável entre as respostas é:
+
+* **Pleno:** afirma a exigência de firma reconhecida.
+* **ChatGPT:** explicita que a averbação não transfere a propriedade.
+* **Ambas:** omitem os 90 dias, a alternativa ICP-Brasil e os formatos específicos da certidão.
+
+Registre **Q01 Pleno × ChatGPT: empate, 5/10 para cada, ambas “Parcialmente conforme”**, com essas ressalvas na revisão metodológica. A nota do ChatGPT permaneceu igual à atribuída no embate contra o Ágil.

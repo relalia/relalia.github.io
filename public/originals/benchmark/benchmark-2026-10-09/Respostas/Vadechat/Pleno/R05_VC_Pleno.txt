@@ -1,0 +1,39 @@
+A **abertura de firma** (ou ficha-padrão/cartão de autógrafo) é o procedimento pelo qual a pessoa física deposita formalmente seu padrão de assinatura e seus dados de qualificação no Tabelionato de Notas, permitindo a conferência e o futuro reconhecimento de firma por semelhança ou autenticidade.
+
+---
+
+### **Fundamentação legal**
+
+1. **O que é a ficha-padrão:**
+   - Trata-se do registro oficial mantido na serventia notarial contendo a qualificação e o espécime gráfico da assinatura do interessado, formalizado perante o tabelião ou preposto autorizado [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 471, § 2º].
+   - É ato estritamente presencial: é vedada a entrega ou a remessa de fichas-padrão para preenchimento fora da serventia ou por terceiros [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 474]. Excepcionalmente, comprovada a impossibilidade de comparecimento, o tabelião poderá colher a assinatura em diligência externa [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 474, parágrafo único].
+
+2. **Requisitos e documentos necessários para a abertura:**
+   - **Documento de identificação:** apresentação obrigatória do **original** de documento oficial de identificação com foto [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 472]. O tabelião recusará a abertura caso o documento contenha caracteres morfológicos que gerem insegurança [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 472, § 1º].
+   - **Dados cadastrais obrigatórios:** nome completo, endereço, profissão, nacionalidade, estado civil, filiação, telefone, e-mail e número de inscrição no CPF [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 471, I e II].
+   - **Assinaturas:** aposição da assinatura do depositante no mínimo por **3 (três) vezes** [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 471, IV].
+   - **Captura biométrica:** recomenda-se a coleta de biometria facial ou impressão digital, integrando o acervo permanente da serventia [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 473].
+   - **Menores de idade:** o relativamente incapaz (maior de 16 e menor de 18 anos) pode abrir ficha-padrão, consignando-se expressamente a sua incapacidade relativa [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 472, § 3º].
+
+3. **Prazo de validade:**
+   - **A ficha de firma não possui prazo de validade pré-fixado por lei.**
+   - No entanto, a sua **renovação (atualização)** poderá ser exigida pelo tabelionato nas hipóteses de:
+     - Alteração visível do padrão gráfico da assinatura anteriormente depositada; ou
+     - Necessidade de atualização dos dados cadastrais obrigatórios [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 475].
+
+---
+
+### **No seu cartório**
+
+Conforme as rotinas operacionais internas deste cartório:
+- **Pessoa Jurídica:** é expressamente vedada a abertura de cartão de firma para pessoa jurídica; a firma é sempre aberta em nome da pessoa física que a representa [MACEQ – Manual de Condutas, Ética e Qualidade, versão 1.2, Janeiro/2021, item 3.2, p. 75, Enunciado 08].
+- **Atualização na modalidade autêntica:** para atos que exijam reconhecimento autêntico apresentados com assinatura prévia, exige-se a apresentação de documento de identificação para atualização da assinatura no cartão e confirmação biométrica [MACEQ – Manual de Condutas, Ética e Qualidade, versão 1.2, Janeiro/2021, item 3.2, p. 75, Enunciado 02].
+
+Quer que eu detalhe o checklist/procedimento daqui?
+
+---
+
+### **⚠️ Atenção**
+
+- **Publicidade restrita:** a ficha de firma não é de consulta pública indiscriminada. O fornecimento de certidão da ficha e dos documentos arquivados só pode ocorrer a pedido do próprio titular, seus representantes/mandatários com poderes específicos ou por ordem judicial [Provimento nº 149, de 30 de agosto de 2023., art. 106].
+- **Normas locais:** a cobrança de emolumentos para abertura e renovação segue a tabela de custas estadual de cada Tribunal de Justiça.

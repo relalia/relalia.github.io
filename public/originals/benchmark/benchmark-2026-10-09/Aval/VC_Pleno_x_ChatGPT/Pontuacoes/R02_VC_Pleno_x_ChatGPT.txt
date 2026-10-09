@@ -1,0 +1,37 @@
+# Avaliação comparativa
+
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 2 | 4 |
+| 2. Fundamentação e informações essenciais (0-4) | 1 | 3 |
+| 3. Condições, limites e ressalvas (0-2) | 1 | 2 |
+| **Nota total** | **4** | **9** |
+| **Classificação** | Parcialmente conforme | Conforme |
+
+## 2. Análise breve
+
+**Resposta A**
+
+- *Acertos:* Identifica corretamente a comunicação obrigatória do art. 161 (pagamento em espécie ou por título ao portador, declarado pelas partes, de valor igual ou superior a R$ 100.000,00), o que coincide com a referência. Distingue, em termos gerais, comunicação obrigatória e análise com especial atenção.
+- *Omissões:* Não lista nenhuma das hipóteses de especial atenção que a referência apresenta (recusa ou dificuldade de informação, incompatibilidade com o patrimônio, transmissões sucessivas, doação a terceiro sem vínculo familiar, diferença anormal de valores). Admite não ter localizado o art. 155-A e não apresentar os incisos do art. 162, justamente os pontos centrais da pergunta.
+- *Contradição / desalinhamento:* Não contradiz a conclusão da referência, mas trata o art. 162 apenas de forma genérica. A menção a PEP (art. 142, § 4º) não consta da referência e é **não verificável pela referência**, sem prêmio nem penalidade.
+- *Nota sobre a redação anterior (R$ 30.000,00, etc.):* não verificável pela referência.
+- Descontos: critério 1 (orientação prática incompleta, pois não indica o que analisar); critério 2 (ausência dos elementos essenciais); critério 3 (ressalva parcial, pois só indica que o restante depende de análise).
+
+**Resposta B**
+
+- *Acertos:* Conclusão alinhada à referência: art. 161 é comunicação obrigatória para pagamento em espécie ou por título ao portador igual ou superior a R$ 100.000,00, com base em declaração das partes. Cobre as hipóteses de especial atenção da referência: recusa ou resistência à prestação de informações (art. 155-A, VIII); incompatibilidade com o patrimônio ou a capacidade financeira (155-A, III); transmissões sucessivas em período e valores anormais (162, V); doação a terceiro sem vínculo familiar aparente (162, I); diferença anormal de valores (162, VI); dificuldade na identificação do beneficiário final (155-A, IV). Explica que a análise é contextual e que o art. 161 não depende de juízo de suspeição.
+- *Pequena divergência de detalhe:* Na doação (162, I), acrescenta a condição de valor venal igual ou superior a R$ 100.000,00. A referência fala apenas em "quando atendidos os requisitos previstos na norma", então o detalhe é compatível, mas **não verificável pela referência**.
+- *Omissão menor:* A referência não detalha, mas B não destaca expressamente a hipótese genérica de operações incompatíveis com práticas de mercado (item f); é parcialmente coberta pelos critérios do 155-A.
+- *Informações adicionais não verificáveis pela referência:* incisos II a IV do art. 162, incisos I, II, V, VI e VII do art. 155-A, arts. 141, 151 e 171, vigência desde 2/5/2024, histórico da redação anterior e Siscoaf. Sem prêmio nem penalidade; **limitação da comparação**: a referência não permite confirmá-las nem contradizê-las.
+- Desconto: critério 2 (leve, pelo item f não destacado expressamente).
+
+## 3. Resultado
+
+**B venceu** (9 a 4).
+
+## 4. Justificativa final
+
+A Resposta B reproduz a conclusão da referência (art. 161 como comunicação obrigatória a partir de R$ 100.000,00 em espécie ou ao portador; demais hipóteses como análise com especial atenção) e cobre quase todas as situações de especial atenção citadas por ela. A Resposta A acerta apenas o art. 161 e deixa sem conteúdo o núcleo da pergunta, por não apresentar as hipóteses dos arts. 155-A e 162.

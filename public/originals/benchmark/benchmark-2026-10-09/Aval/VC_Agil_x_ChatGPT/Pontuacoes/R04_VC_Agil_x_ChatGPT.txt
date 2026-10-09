@@ -1,0 +1,32 @@
+# Avaliação comparativa
+
+## 1. Tabela de pontuação
+
+| Resposta | Conclusão e orientação prática (0-4) | Fundamentação e informações essenciais (0-4) | Condições, limites e ressalvas (0-2) | **Nota total** | **Classificação** |
+|---|---|---|---|---|---|
+| **A** | 0 | 1 | 0 | **1** | Divergente |
+| **B** | 2 | 3 | 1 | **6** | Parcialmente conforme |
+
+## 2. Análise breve
+
+**Resposta A**
+
+- **Acertos:** cita a Lei nº 11.651/1991 (Código Tributário de Goiás), o que atende parcialmente ao fato obrigatório de mencionar a legislação tributária estadual. Reconhece que a multa do ITCD depende da legislação tributária estadual.
+- **Omissões:** não informa o prazo de 60 dias corridos contados do falecimento. Não menciona o art. 611 do CPC nem o prazo de dois meses. Não explica a contagem em dias corridos, o conflito entre "2 meses" e "60 dias", o sistema ITCD WEB nem a multa automática após o 60º dia.
+- **Contradições:** afirma que o inventário extrajudicial "pode ser aberto a qualquer tempo" e que o prazo "não está fixado em lei específica". Isso contraria a referência, que fixa 60 dias corridos como limite para evitar a multa e aponta o prazo de dois meses do CPC. Essa afirmação altera a conclusão e a orientação prática.
+- **Não verificável pela referência:** art. 88-C da Lei 11.651/1991, Resolução nº 35/2007, art. 811 do Código de Normas do Extrajudicial, Resolução nº 695/2026 e o prazo de 5 dias para o tabelião informar o fisco. A referência não permite confirmar nem refutar esses pontos. Também não é verificável a limitação "na base consultada".
+
+**Resposta B**
+
+- **Acertos:** menciona o art. 611 do CPC (dois meses da abertura da sucessão). Cita a Lei nº 11.651/1991 como legislação tributária estadual, atendendo ao fato obrigatório. Adota dias corridos contados da data do óbito. Identifica o marco de 60 dias. Distingue o prazo civil (CPC) do prazo fiscal estadual, o que se aproxima do "conflito normativo" tratado na referência. Recomenda transmitir a declaração do ITCD o quanto antes.
+- **Contradições:** a conclusão final indica 120 dias como referência prática, com multa só a partir do 121º dia. A referência afirma que a multa incide imediatamente após o 60º dia. A resposta aceita, porém, que o 60º dia é o marco regular e recomenda buscar o prazo de 60 dias. A divergência é parcial, mas afeta o ponto central da orientação.
+- **Omissões:** não explica que o prazo de dois meses do CPC pode chegar a 61 ou 62 dias em meses de 31 dias. Não menciona o sistema ITCD WEB nem a geração automática da multa. Não cita o art. 89 do CTE.
+- **Não verificável pela referência:** os percentuais de multa (10% e 20%), o escalonamento 61º-120º dia, o exemplo com datas de 2022, as perguntas 62 e 65 do site da Secretaria e os links. A escala de multa em dois estágios conflita com a ideia de multa imediata na referência, mas os percentuais em si não podem ser confirmados.
+
+## 3. Resultado
+
+**B venceu** (6 a 1).
+
+## 4. Justificativa final
+
+A Resposta B reproduz o núcleo da referência: o marco de 60 dias corridos do óbito, a distinção entre o prazo do art. 611 do CPC e o prazo tributário estadual, e a menção às duas legislações. Diverge ao tratar 120 dias como limite prático. A Resposta A não traz o prazo de 60 dias nem o do CPC e afirma que o inventário pode ser aberto a qualquer tempo, o que contraria a conclusão da referência.

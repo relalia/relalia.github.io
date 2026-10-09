@@ -1,0 +1,32 @@
+A averbação de casamento com atualização de estado civil e de qualificação na matrícula imobiliária decorre do princípio da especialidade subjetiva e da continuidade registral, exigindo comprovação formal do ato civil e manifestação do interessado.
+
+---
+
+### **Fundamentação legal federal**
+
+Com base na **Lei nº 6.015, de 31 de dezembro de 1973** (Lei de Registros Públicos):
+
+- **Requerimento e reconhecimento de firma:** 
+  - A averbação de alteração decorrente do casamento e da qualificação das partes é formalizada mediante requerimento escrito firmado pelo proprietário/interessado, com **firma reconhecida** [Lei nº 6.015, de 31 de dezembro de 1973, art. 246, § 1º].
+- **Certidão do Registro Civil e alteração do nome:**
+  - A alteração do estado civil e a eventual alteração do nome civil (pelo acréscimo ou modificação de patronímicos em decorrência do matrimônio) dependem de comprovação direta por meio da respectiva **certidão de casamento expedida pelo Registro Civil das Pessoas Naturais**.
+- **Obtenção por meio eletrônico pelo registrador:**
+  - O interessado pode requerer que o próprio oficial de registro de imóveis providencie, preferencialmente por via eletrônica (centrais de serviços eletrônicos compartilhados) e às custas do requerente, as certidões necessárias para a prática do ato [Lei nº 6.015, de 31 de dezembro de 1973, art. 246, § 1º-A].
+- **Atualização da qualificação e regime de bens:**
+  - Para a plena especialidade subjetiva, devem ser apresentados os dados completos do cônjuge (nome completo, nacionalidade, profissão, RG e CPF) e especificado o **regime de bens adotado**, bem como a data do casamento. Caso tenha sido adotado regime diverso da comunhão parcial (ou do regime legal correspondente à época) mediante pacto antenupcial, exige-se a menção ou comprovação do registro do pacto no Livro 3 (Registro Auxiliar) do Registro de Imóveis competente.
+
+---
+
+### **Disposições do Código de Normas do Estado de Goiás**
+
+- **Localizado na base deste cartório:**
+  - No âmbito notarial (inventários e partilhas), o **Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás)** dispõe, a título exemplificativo, que a certidão de casamento destinada a comprovar estado civil das partes não possui prazo de validade predeterminado [Código de Normas e Procedimentos do Extrajudicial - 2021 (Corregedoria-Geral da Justiça do Estado de Goiás), art. 399, § 5º].
+- **Não localizado na base deste cartório:**
+  - Os dispositivos específicos da seção do **Registro de Imóveis** do Código de Normas de Goiás que fixam prazo de validade ou exigência de prazo de expedição (ex.: 30, 60 ou 90 dias) da certidão de casamento especificamente para averbação na matrícula, bem como regras suplementares sobre dispensa de reconhecimento de firma presencial em caso de protocolo eletrônico estadual, não constam nos trechos recuperados nesta consulta.
+
+---
+
+### **⚠️ Atenção**
+
+- **Pacto Antenupcial:** se o regime for o da comunhão universal, separação de bens (convencional) ou participação final nos aqüestos, deve ser apresentada a certidão ou informação do registro da respectiva escritura pública de pacto antenupcial no Registro de Imóveis do domicílio conjugal.
+- **Vigência e prática local:** confira diretamente no Código de Normas do TJGO se a Corregedoria local exige prazo máximo de expedição da certidão do registro civil para a prática de atos no fólio real.

@@ -1,0 +1,67 @@
+Em uma compra e venda de imóvel, o registrador de imóveis deve estar atento a situações que possam configurar indícios de lavagem de dinheiro ou financiamento do terrorismo, conforme previsto no Código Nacional de Normas instituído pelo Provimento CNJ nº 149/2023, com redação dada pelo Provimento CNJ nº 161/2024.
+
+---
+
+### Situações que exigem comunicação obrigatória à Unidade de Inteligência Financeira (UIF) sem necessidade de análise prévia
+
+De acordo com o **artigo 161 do Provimento CNJ nº 149/2023**, o oficial de registro de imóveis deve comunicar obrigatoriamente à UIF, independentemente de análise, as seguintes situações:
+
+- Registro de transmissões sucessivas do mesmo bem em período não superior a 6 meses, se a diferença entre os valores declarados for superior a 50%;
+- Registro de título com diferenças entre o valor da avaliação fiscal do bem e o valor declarado, ou entre o valor patrimonial e o valor declarado (superior ou inferior), superiores a 100%;
+- Registro de documento ou título em que conste declaração das partes de que foi realizado pagamento em espécie ou título de crédito ao portador de valores igual ou superior a R$ 30.000,00.
+
+[Provimento nº 149, de 30 de agosto de 2023, art. 161]
+
+---
+
+### Situações que exigem análise com especial atenção para eventual comunicação
+
+O **artigo 162 do Provimento CNJ nº 149/2023**, com redação do Provimento CNJ nº 161/2024, estabelece que o oficial de registro deve analisar com especial atenção, para fins de eventual comunicação à UIF, operações que envolvam escritura pública e que possam configurar indícios de lavagem de dinheiro ou financiamento do terrorismo.
+
+Além disso, o **artigo 156 do mesmo Provimento** lista situações que podem configurar indícios desses crimes, exigindo atenção especial, tais como:
+
+- Operações que aparentem não resultar de atividades usuais do cliente ou do seu ramo de negócio;
+- Operações cuja origem ou fundamentação econômica ou legal não sejam claramente aferíveis;
+- Operações incompatíveis com o patrimônio ou capacidade econômico-financeira do cliente;
+- Operações cujo beneficiário final não seja possível identificar;
+- Operações envolvendo pessoas jurídicas domiciliadas em jurisdições de alto risco segundo o GAFI;
+- Resistência ou fornecimento de informações falsas ou difíceis de verificar por parte dos envolvidos;
+- Operações injustificadamente complexas ou com custos elevados para dificultar rastreamento.
+
+[Provimento nº 149, de 30 de agosto de 2023, arts. 156 e 162]
+
+---
+
+### Exemplos de operações que exigem comunicação caso consideradas suspeitas (art. 151)
+
+O oficial de registro deve comunicar à UIF, caso considere suspeita, operações como:
+
+- Doações de bens imóveis para terceiros sem vínculo familiar aparente, quando o valor venal seja igual ou superior a R$ 100.000,00;
+- Concessão de empréstimos hipotecários ou com alienação fiduciária entre particulares;
+- Registro de negócios por sociedades dissolvidas que retornaram à atividade;
+- Registro de aquisição de imóveis por fundações e associações com características incompatíveis com suas finalidades;
+- Registro de transmissões sucessivas do mesmo bem em período e com diferença de valor anormais;
+- Registro de título com valor declarado anormal em relação a avaliação fiscal ou valor patrimonial.
+
+[Provimento nº 149, de 30 de agosto de 2023, art. 151]
+
+---
+
+### Outras regras específicas aplicáveis
+
+- Os notários e registradores devem implementar políticas de prevenção à lavagem de dinheiro e financiamento do terrorismo compatíveis com o porte e volume de operações da serventia, incluindo procedimentos para qualificação dos clientes, obtenção de informações sobre o negócio, identificação de operações suspeitas e comunicação à UIF [Provimento nº 149/2023, art. 143].
+- A comunicação à UIF deve ser feita eletronicamente pelo sistema Siscoaf, garantindo o sigilo das informações [art. 151, §3º].
+- O oficial de cumprimento, notário ou registrador é responsável pela comunicação e pela implementação das políticas internas de prevenção [art. 144].
+- A Lei Geral de Proteção de Dados (LGPD) não prejudica o cumprimento das disposições relativas à prevenção à lavagem de dinheiro e financiamento do terrorismo [Provimento nº 149/2023, art. 55-J, §2º].
+
+---
+
+### Resumo prático
+
+- **Comunicação obrigatória e imediata, sem análise:** transmissões sucessivas com grande variação de valor, diferenças anormais entre valores declarados e fiscais, pagamentos em espécie ou títulos ao portador acima de R$ 30.000,00.
+- **Análise cuidadosa para comunicação eventual:** operações atípicas, complexas, sem justificativa econômica clara, incompatíveis com patrimônio, com beneficiário final oculto, ou envolvendo pessoas/jurisdicções de alto risco.
+- **Comunicação caso suspeita:** doações, empréstimos, registros societários e aquisições com características suspeitas, conforme art. 151.
+
+---
+
+Se desejar, posso detalhar os procedimentos para comunicação ao COAF/UIF e os controles internos recomendados para o cartório.

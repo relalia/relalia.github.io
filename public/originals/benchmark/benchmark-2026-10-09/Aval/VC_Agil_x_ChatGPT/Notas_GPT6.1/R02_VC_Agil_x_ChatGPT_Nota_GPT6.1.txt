@@ -1,0 +1,12 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do Claude Sonnet 5.5 Médio:
+
+**Na Q02, a vitória de B (ChatGPT) está bem sustentada pelo gabarito.** Diferentemente da Q01, há contradições explícitas na resposta A (Vadechat):
+
+* **Limite monetário:** A informa **R$ 30 mil**, enquanto a referência estabelece **R$ 100 mil**.
+* **Tratamento das operações:** A apresenta transmissões sucessivas e discrepâncias de valores como comunicação automática; o gabarito as enquadra como situações de especial atenção.
+
+**A classificação “Divergente” de A é, portanto, justificável.** B cobre os pontos essenciais da referência e distingue análise de comunicação obrigatória.
+
+Há duas ressalvas na análise do Claude: “única hipótese” deve significar **única hipótese explicitada no gabarito**, sem presumir que ele esgote a legislação; e o limite de R$ 100 mil para doações permanece **não verificável pela referência**, embora seja compatível com ela.
+
+Pode registrar **Q02: ChatGPT 10/10 — Conforme; Vadechat 2/10 — Divergente; vitória do ChatGPT**. A nota 10 representa plena concordância com o gabarito nos critérios avaliados, sem validar juridicamente todas as informações adicionais.

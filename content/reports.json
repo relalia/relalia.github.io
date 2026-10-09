@@ -4331,6 +4331,87 @@
           ]
         }
       ]
+    },
+    {
+      "id": "benchmark-2026-10-09",
+      "date": "2026-10-09",
+      "title": "Run do Benchmark com Amostra de 5 Perguntas: Ágil x ChatGPT & Pleno x ChatGPT",
+      "module": "VadeChat",
+      "status": "Execução exploratória",
+      "count": "5 perguntas · 10 julgamentos comparativos",
+      "benchmarkId": "benchmark-2026-10-09",
+      "summary": "Nesta amostra, o ChatGPT gratuito venceu três comparações contra o Ágil; o Pleno venceu duas contra o ChatGPT gratuito. Q03 empatou nos dois embates. Os julgamentos medem cobertura, omissões e contradições frente à referência humana, com ressalvas metodológicas registradas separadamente.",
+      "highlights": [
+        "Ágil × ChatGPT gratuito: médias 4,6 e 7,0; uma vitória do Ágil, três do ChatGPT e um empate.",
+        "Pleno × ChatGPT gratuito: médias 7,4 e 5,8; duas vitórias do Pleno, uma do ChatGPT e dois empates.",
+        "A mesma resposta do ChatGPT recebeu notas diferentes em Q02, Q04 e Q05."
+      ],
+      "note": "Execução exploratória com cinco perguntas. As notas medem conformidade com a referência humana, sem comprovação independente da correção jurídica ou superioridade geral dos participantes.",
+      "files": [
+        {
+          "label": "Relatório do benchmark e evidências integrais · PDF",
+          "path": "/reports/benchmark-2026-10-09.pdf",
+          "kind": "pdf",
+          "origin": "generated"
+        }
+      ],
+      "findings": [
+        {
+          "id": "Q01",
+          "title": "Averbação de casamento",
+          "description": "Q01 · Averbação de casamento. Julgamentos originais preservados e revisão metodológica disponível separadamente.",
+          "status": "Comparação documentada",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "kind": "Benchmark exploratório"
+        },
+        {
+          "id": "Q02",
+          "title": "Comunicação ao COAF",
+          "description": "Q02 · Comunicação ao COAF. Julgamentos originais preservados e revisão metodológica disponível separadamente.",
+          "status": "Comparação documentada",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "kind": "Benchmark exploratório"
+        },
+        {
+          "id": "Q03",
+          "title": "Certidão municipal de Morrinhos",
+          "description": "Q03 · Certidão municipal de Morrinhos. Julgamentos originais preservados e revisão metodológica disponível separadamente.",
+          "status": "Comparação documentada",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "kind": "Benchmark exploratório"
+        },
+        {
+          "id": "Q04",
+          "title": "Inventário e multa do ITCD",
+          "description": "Q04 · Inventário e multa do ITCD. Julgamentos originais preservados e revisão metodológica disponível separadamente.",
+          "status": "Comparação documentada",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "kind": "Benchmark exploratório"
+        },
+        {
+          "id": "Q05",
+          "title": "Abertura de firma",
+          "description": "Q05 · Abertura de firma. Julgamentos originais preservados e revisão metodológica disponível separadamente.",
+          "status": "Comparação documentada",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "kind": "Benchmark exploratório"
+        }
+      ]
     }
   ],
   "evidence": [

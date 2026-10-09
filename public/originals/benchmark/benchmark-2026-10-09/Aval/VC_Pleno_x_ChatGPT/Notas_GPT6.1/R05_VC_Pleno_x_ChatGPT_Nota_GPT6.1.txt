@@ -1,0 +1,26 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do Claude Sonnet 5.5 Médio:
+
+**A vitória do Pleno na Q05 é sustentada pela maior cobertura do gabarito, mas a classificação do ChatGPT como “Divergente” não foi demonstrada.**
+
+O Claude cometeu dois erros de interpretação:
+
+* **“Geralmente mais de uma vez” não contradiz o mínimo de três assinaturas:** é uma informação insuficiente, sem afirmar um mínimo diferente.
+* **A resposta do ChatGPT explica semelhança e autenticidade.** A expressão inicial é imprecisa, mas o texto não restringe o reconhecimento à semelhança.
+
+Também é discutível atribuir **10 ao Pleno**, reconhecendo omissões de campos obrigatórios e da ressalva sobre o alcance do reconhecimento. E permanece a lacuna do gabarito: **a validade da ficha não pode ser julgada pela referência fornecida**.
+
+O consolidado dos **julgamentos originais do Claude**, sem ajustes, fica assim:
+
+| Questão   |    Ágil | ChatGPT contra Ágil |   Pleno | ChatGPT contra Pleno |
+| --------- | ------: | ------------------: | ------: | -------------------: |
+| Q01       |       2 |                   5 |       5 |                    5 |
+| Q02       |       2 |                  10 |       4 |                    9 |
+| Q03       |      10 |                  10 |      10 |                   10 |
+| Q04       |       1 |                   6 |       8 |                    3 |
+| Q05       |       8 |                   4 |      10 |                    2 |
+| **Média** | **4,6** |             **7,0** | **7,4** |              **5,8** |
+
+* **Ágil × ChatGPT:** três vitórias do ChatGPT, uma do Ágil e um empate.
+* **Pleno × ChatGPT:** duas vitórias do Pleno, uma do ChatGPT e dois empates.
+
+**O relatório deve mostrar esses resultados acompanhados das ressalvas metodológicas.** A mesma resposta do ChatGPT recebeu notas diferentes nas Q02, Q04 e Q05; portanto, os gráficos precisam preservar os dois embates. Foram cinco perguntas e dez julgamentos comparativos, medindo conformidade com o gabarito humano, sem comprovação independente da correção jurídica.

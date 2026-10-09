@@ -33,4 +33,17 @@ for report in data['reports']:
         if report['id']=='vadechat-2026-10-06':
             assert sum(len(p.images) for p in reader.pages)>=7,'Missing new screenshots in PDF'
             assert 'WhatsApp Video 2026-10-06 at 09.56.57.mp4' in text,'Missing video reference'
+        if report.get('benchmarkId'):
+            b=json.loads((root/f"content/{report['benchmarkId']}.json").read_text(encoding='utf8'))
+            docs=[b['protocol'],b['alternation']]
+            for q in b['questions']:
+                docs += [q['question'],q['human'],q['chatgpt']]
+                for mode in ['agil','pleno']:
+                    docs += [q['comparisons'][mode][field] for field in ['response','document','review']]
+            compact=lambda s:re.sub(r'\s|\ufe0f','',s)
+            for source in docs:
+                assert compact(source['text']) in compact(text),f"Missing integral benchmark source: {source['path']}"
+                assert source['sha256'] in text,f"Missing benchmark hash {source['path']}"
+            assert 'ChatGPT gratuito' in text and 'modelo não identificado' in text
+            print(f"Benchmark: {len(docs)} integral source texts and hashes verified")
         print(f"{report['id']}: {len(reader.pages)} pages, extractable fields verified")

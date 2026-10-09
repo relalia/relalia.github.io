@@ -1,0 +1,17 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do Claude Sonnet 5.5 Médio:
+
+
+**Na Q04, o Claude aplicou incorretamente a classificação de B (ChatGPT).** Pelo seu protocolo, contrariar a conclusão ou uma condição essencial do gabarito exige **“Divergente”**, mesmo com nota 6.
+
+**[Certo] A contradição é central:** o gabarito afirma multa após o **60º dia**; B conclui que o limite para evitá-la é **120 dias**. Recomendar entrega antecipada não elimina essa divergência. Portanto, B não deveria receber “Parcialmente conforme”.
+
+Há também uma ressalva sobre A: **poder realizar o inventário a qualquer tempo não equivale a poder realizá-lo sem multa**. Essa frase, isoladamente, não demonstra contradição. As falhas mais claras são omitir os prazos do gabarito e substituir a transmissão da declaração por orientações sobre pagamento.
+
+Eu registraria provisoriamente:
+
+| IA           | Nota atribuída pelo Claude | Situação                                             |
+| ------------ | -------------------------: | ---------------------------------------------------- |
+| Vadechat — A |                       1/10 | Fundamentação da classificação precisa de revisão    |
+| ChatGPT — B  |                       6/10 | Deve ser classificada como Divergente pelo protocolo |
+
+**B venceu pela pontuação atribuída, mas isso não significa conformidade com o gabarito.** A conclusão do Claude de que B “reproduz o núcleo da referência” é excessiva: ela contraria justamente o limite fiscal perguntado. Essa análise não determina qual prazo está juridicamente correto.

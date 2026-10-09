@@ -1,0 +1,40 @@
+## 1. Tabela de pontuação
+
+| Resposta | Critério 1 (0–4) | Critério 2 (0–4) | Critério 3 (0–2) | Nota total | Classificação |
+|---|---|---|---|---|---|
+| A | 1 | 1 | 0 | 2 | Divergente |
+| B | 4 | 4 | 2 | 10 | Conforme |
+
+## 2. Análise breve
+
+**Resposta A**
+
+- **Acertos:** define a abertura de firma como cadastro da assinatura no tabelionato de notas e exige comparecimento pessoal. Também menciona documento de identificação e CPF.
+- **Omissões:**
+  - Não cita o Código de Normas do Foro Extrajudicial de Goiás, que é fato obrigatório da referência (peso 1,00).
+  - Não indica o rol de dados da ficha: filiação, estado civil, profissão, endereço, telefone, e-mail e data de abertura.
+  - Não traz as três assinaturas no mínimo, o sinal público e a identificação do tabelião ou preposto.
+  - Não trata da biometria recomendada nem da vedação de preenchimento fora da serventia ou por terceiros, com a exceção de diligência.
+  - Não menciona a regra do menor de 16 a 18 anos nem o alcance limitado do reconhecimento de firma, que atesta a autoria e não a legalidade do conteúdo.
+- **Contradições:** a resposta diz que a assinatura é feita "geralmente mais de uma vez", o que é impreciso frente ao mínimo de três vezes da referência. Também chama a abertura de firma de "por semelhança" apenas, enquanto a referência a vincula tanto à autenticidade quanto à semelhança. Sobre a validade, a conclusão ("não tem prazo") não é contradita pela referência, que não trata do tema. Por isso, não é possível dizer que há contradição nesse ponto.
+- **Não verificável pela referência:** a exigência de certidão de casamento, os documentos de estrangeiros, as hipóteses de atualização da ficha e a menção às regras do CNJ sobre guarda. A limitação da comparação é que a referência não aborda prazo de validade.
+
+**Resposta B**
+
+- **Acertos:**
+  - Cita expressamente o Código de Normas e Procedimentos do Extrajudicial de Goiás, atendendo ao fato obrigatório.
+  - Define a ficha-padrão e a associa ao reconhecimento por semelhança ou autenticidade.
+  - Traz os dados obrigatórios do art. 471, I e II, e as três assinaturas mínimas (art. 471, IV).
+  - Indica a biometria recomendada (art. 473) e a possibilidade de abertura por maior de 16 anos com consignação da incapacidade relativa (art. 472, §3º).
+  - Reproduz a vedação de entrega ou remessa da ficha a terceiros e a exceção da diligência externa (art. 474 e parágrafo único).
+- **Omissões:** não menciona o sinal público do tabelião (art. 471, V), nem a data de abertura. Também não traz o art. 476, segundo o qual o reconhecimento declara apenas a autoria da assinatura. São omissões menores diante do conjunto.
+- **Contradições:** nenhuma identificada.
+- **Não verificável pela referência:** a recusa por documento com caracteres morfológicos inseguros (art. 472, §1º), o art. 475 sobre renovação, o MACEQ (vedação de firma para pessoa jurídica), o Provimento nº 149/2023 e a ausência de prazo de validade. A referência não trata desses pontos, então não há prêmio nem penalidade por eles. Os trechos "No seu cartório" parecem decorrer de contexto interno alheio à pergunta e também não são verificáveis.
+
+## 3. Resultado
+
+**B venceu** (10 a 2).
+
+## 4. Justificativa final
+
+A Resposta B ancora a explicação no Código de Normas de Goiás, com os mesmos artigos e requisitos da referência. A Resposta A é genérica, omite a base normativa obrigatória e diverge em pontos concretos, como o número mínimo de assinaturas.

@@ -1,0 +1,11 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do Claude Sonnet 5.5 Médio:
+
+**A avaliação favorece o ChatGPT, mas contém uma inconsistência metodológica que precisa ser corrigida antes de consolidar a Q01.**
+
+* **[Certo] O Claude reconheceu as omissões centrais de ambas:** prazo de 90 dias, firma reconhecida ou assinatura ICP-Brasil e formatos aceitos da certidão.
+* **[Certo] A classificação de B como “Divergente” não foi suficientemente demonstrada.** O próprio Claude considera as exigências adicionais “não verificáveis pela referência”, mas depois as utiliza como desvios para justificar a classificação. Pelo protocolo, ausência no gabarito não comprova contradição.
+* **[Provável] A vantagem de A é sustentada pela maior cobertura do gabarito**, incluindo natureza da averbação, regime de bens e pacto antenupcial. Contudo, as notas **5 e 2** precisam de justificativas dos descontos por critério; a análise atual não permite verificar eventual desconto duplicado.
+
+**Eu manteria esse julgamento como resultado provisório e pediria uma revisão ao Claude**, exigindo que identifique qual afirmação de B contradiz diretamente qual trecho da referência. Se não conseguir demonstrar uma contradição essencial, B deverá ser reclassificada conforme as categorias do protocolo, provavelmente como **“Parcialmente conforme”**, com reavaliação dos pontos.
+
+Preserve o julgamento original e a revisão. Por enquanto, registre: **“Q01: o juiz atribuiu vitória ao ChatGPT por 5 a 2; classificação do Vadechat e descontos pendentes de revisão metodológica.”** Isso mede concordância com o gabarito, sem estabelecer correção jurídica independente.

@@ -1,0 +1,16 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do Claude Sonnet 5.5 Médio:
+
+**A vitória do ChatGPT na Q02 está sustentada, e a classificação do Pleno como “Parcialmente conforme” é coerente.** O Pleno apresenta o limite de R$ 100 mil conforme o gabarito e distingue comunicação obrigatória de análise, mas omite as situações concretas dos arts. 155-A e 162.
+
+**A ressalva está no desconto aplicado ao ChatGPT:** o Claude exige destaque expresso para “operações incompatíveis com práticas de mercado”, embora o protocolo mande avaliar o significado. B aborda operações atípicas, ausência de justificativa econômica e incoerência das operações. Portanto, esse desconto de um ponto é discutível.
+
+Além disso, **a mesma resposta do ChatGPT recebeu 10 contra o Ágil e 9 contra o Pleno**. Isso demonstra variação na pontuação do juiz; não uma mudança na resposta avaliada.
+
+Registre o resultado original:
+
+| IA                 | Nota | Classificação         |
+| ------------------ | ---: | --------------------- |
+| Vadechat Pleno — A | 4/10 | Parcialmente conforme |
+| ChatGPT — B        | 9/10 | Conforme              |
+
+Para o relatório, mantenha as notas por embate e registre essa diferença. Nesta questão, o Ágil apresentou contradições com o gabarito; o Pleno evitou essas contradições, mas entregou uma resposta incompleta.

@@ -1,0 +1,31 @@
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 4 | 4 |
+| 2. Fundamentação e informações essenciais (0-4) | 4 | 4 |
+| 3. Condições, limites e ressalvas (0-2) | 2 | 2 |
+| **Nota total** | **10** | **10** |
+| **Classificação** | Conforme | Conforme |
+
+## 2. Análise breve
+
+**Resposta A**
+- **Acertos:** confirma que há prazo de validade de 180 dias, com base no art. 65, § 1º, da LC nº 120/2024, contado da data do deferimento do pedido. Indica que, vencido o prazo, é necessário novo processo, o que equivale à necessidade de nova certidão, como diz a referência. Responde que a regra está no art. 65, § 1º.
+- **Omissões:** a referência menciona a consequência perante o Cartório (certidão prescrita sem protocolo ou averbação no prazo). A resposta A trata disso apenas implicitamente, ao falar de "protocolo e qualificação registral". Não é omissão relevante.
+- **Contradições:** nenhuma com a referência.
+- **Não verificável pela referência:** o conteúdo dos §§ 2º e 3º e do caput do art. 65; a menção ao art. 18 da Lei Federal nº 6.766/1979; a distinção em relação à Certidão de Inteiro Teor; a sugestão de confirmar o marco temporal com a Prefeitura e o Registro. Tudo isso é informação adicional, sem prêmio ou penalidade por si só. A referência a normas federais está fora do gabarito, o que limita a comparação, mas não a torna falsa.
+
+**Resposta B**
+- **Acertos:** confirma o prazo de 180 dias, contado do deferimento do pedido, com base no art. 65, § 1º. Informa que não haverá revalidação e que é necessário novo processo para obter nova certidão, em linha com a referência. Afirma expressamente que a regra está no art. 65 e que não há outro dispositivo municipal específico sobre o prazo.
+- **Omissões:** mesma observação feita à resposta A quanto ao Cartório de Registro de Imóveis. Não menciona expressamente o protocolo ou averbação no Registro dentro do prazo, mas a conclusão prática é a mesma.
+- **Contradições:** nenhuma com a referência.
+- **Não verificável pela referência:** o conteúdo dos §§ 2º e 3º e do caput do art. 65, bem como a afirmação de que não existe outro dispositivo municipal sobre o tema. A referência só indica o art. 65, § 1º, e não confirma nem contradiz a ausência de outro dispositivo.
+
+## 3. Resultado
+
+**Empate** (10 a 10).
+
+## 4. Justificativa final
+
+Ambas respondem corretamente ao ponto central da referência: prazo de 180 dias, contado do deferimento, previsto no art. 65, § 1º, da LC nº 120/2024, com necessidade de nova certidão após o vencimento. Nenhuma contradiz a referência, e as informações adicionais de cada uma (§§ 2º e 3º, Lei nº 6.766/1979 na A, ausência de outro dispositivo na B) não são verificáveis pela referência e, por isso, não alteram a nota.

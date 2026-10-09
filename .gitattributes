@@ -5,3 +5,4 @@
 *.webp binary
 *.mp4 binary
 *.xlsx binary
+public/originals/benchmark/** -text

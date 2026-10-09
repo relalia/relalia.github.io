@@ -54,6 +54,7 @@ export interface Finding {
 }
 
 export interface Report {
+  benchmarkId?: string;
   id: string;
   date: string;
   dateNote?: string;

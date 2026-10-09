@@ -1,0 +1,51 @@
+# Avaliação
+
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 1 | 4 |
+| 2. Fundamentação e informações essenciais (0-4) | 1 | 4 |
+| 3. Condições, limites e ressalvas (0-2) | 0 | 2 |
+| **Nota total** | **2** | **10** |
+| **Classificação** | **Divergente** | **Conforme** |
+
+## 2. Análise
+
+### Resposta A
+
+**Contradições com a referência (afetam a conclusão central):**
+- Afirma que o art. 161 exige comunicação obrigatória para (i) transmissões sucessivas em até 6 meses com diferença superior a 50% e (ii) diferenças superiores a 100% entre valor declarado e avaliação fiscal ou patrimonial. A referência não prevê essas hipóteses no art. 161. Ela as trata como situações de especial atenção (itens "c" e "e").
+- Fixa o limite de pagamento em espécie ou título ao portador em **R$ 30.000,00**. A referência estabelece **R$ 100.000,00**. Este é o único gatilho de comunicação obrigatória segundo a referência, e A erra o valor.
+- Atribui a "especial atenção" ao art. 162 de forma genérica ("operações que envolvam escritura pública"). Não lista as hipóteses específicas e as remete ao art. 156 e ao art. 151, o que deixa de fora a estrutura 155-A / 162 pedida na pergunta.
+
+**Acertos parciais:**
+- Distingue comunicação obrigatória de análise com especial atenção.
+- Menciona critérios compatíveis com o 155-A (incompatibilidade patrimonial, beneficiário final, resistência a informações), embora os atribua ao art. 156.
+- Menciona doação a terceiros sem vínculo familiar com valor de R$ 100.000,00 ou mais, embora a enquadre como "comunicação caso suspeita" sob o art. 151.
+
+**Não verificável pela referência:** referências aos arts. 143, 144, 151 §3º e 55-J §2º, ao Siscoaf e à LGPD. A referência não os confirma nem contradiz.
+
+### Resposta B
+
+**Acertos:**
+- Identifica corretamente como única hipótese de comunicação obrigatória do art. 161 o pagamento em espécie ou por título ao portador de **R$ 100.000,00 ou mais**, declarado pelas partes. Isso coincide com a referência.
+- Cobre os itens da referência:
+  - a) resistência a informações (155-A, VIII);
+  - b) incompatibilidade com o patrimônio (155-A, III);
+  - c) transmissões sucessivas anormais (162, V);
+  - d) doação a terceiro sem vínculo familiar (162, I);
+  - e) diferença anormal de valores (162, VI);
+  - f) características atípicas e beneficiário final (155-A).
+- Esclarece que o art. 161 não torna obrigatória toda compra e venda de R$ 100.000,00 ou mais, o que reforça a precisão da conclusão.
+- Explica que a análise de especial atenção não equivale a comunicação automática.
+
+**Não verificável pela referência:** o histórico da redação anterior do art. 161, o art. 171 (tabelião), o art. 141, o art. 151 I/II, o Siscoaf, o prazo e as demais inclusões do art. 162 (empréstimos hipotecários, sociedades dissolvidas, fundações). A referência não os confirma nem contradiz. A referência fala em "quando atendidos os requisitos" para doações, e a condição de valor venal de R$ 100.000,00 citada por B é compatível com isso.
+
+## 3. Resultado
+
+**B venceu** (10 a 2).
+
+## 4. Justificativa final
+
+A Resposta B reproduz o núcleo da referência: comunicação obrigatória apenas para pagamento em espécie ou por título ao portador a partir de R$ 100.000,00 (art. 161), e as demais situações como análise de especial atenção (arts. 155-A e 162). A Resposta A contradiz a referência em ponto central, ao tratar como comunicação obrigatória hipóteses que a referência classifica como de análise e ao fixar o limite em R$ 30.000,00. Isso a torna divergente.

@@ -1,0 +1,14 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do Claude Sonnet 5.5 Médio:
+
+**O empate por 10 a 10 na Q03 é coerente com o protocolo.** Ambas cobrem os elementos centrais do gabarito: 180 dias, contagem desde o deferimento, art. 65, § 1º, e necessidade de nova certidão após o vencimento.
+
+O Claude separou adequadamente as informações adicionais do Pleno — **prenotação em vigor e emissão de nota devolutiva** — como não verificáveis pela referência, sem usá-las para aumentar a nota.
+
+Registre:
+
+| IA                 |  Nota | Classificação |
+| ------------------ | ----: | ------------- |
+| ChatGPT — A        | 10/10 | Conforme      |
+| Vadechat Pleno — B | 10/10 | Conforme      |
+
+A avaliação mantém a mesma tolerância do embate Ágil: aceita a consequência registral implícita na resposta do ChatGPT. **Na Q03, ChatGPT, Ágil e Pleno receberam 10**, nos respectivos julgamentos. Isso confirma concordância com o gabarito, sem validar as exigências adicionais.

@@ -1,0 +1,64 @@
+## 1. Tabela de pontuação
+
+| Resposta | Conclusão e orientação prática (0-4) | Fundamentação e informações essenciais (0-4) | Condições, limites e ressalvas (0-2) | Nota total | Classificação |
+|---|---|---|---|---|---|
+| A | 4 | 3 | 1 | 8 | Conforme |
+| B | 1 | 2 | 0 | 3 | Divergente |
+
+## 2. Análise
+
+**Resposta A**
+
+*Acertos:*
+- A conclusão prática coincide com a referência: para evitar a multa do ITCD em Goiás, a Declaração deve ser transmitida em até 60 dias corridos contados do falecimento.
+- Cita o art. 611 do CPC (prazo de 2 meses para instauração do inventário) e a Lei estadual nº 11.651/1991 (CTE), art. 89. Isso atende ao fato obrigatório da referência (mencionar o CPC e o código tributário estadual).
+- Explicita a contagem em dias corridos a partir do óbito e distingue o prazo do CPC (2 meses) do prazo fiscal (60 dias), como a referência faz.
+- Ressalva que o que afasta a multa é o protocolo da Declaração, e não a lavratura da escritura.
+
+*Omissões:*
+- Não explica o conflito entre "2 meses" e "60 dias" em meses de 31 dias (61 ou 62 dias), que é o impacto prático destacado na referência.
+- Não menciona o ITCD WEB como sistema que calcula a multa automaticamente nem a incidência imediata no dia seguinte ao 60º dia (a menção ao 61º dia é só implícita).
+
+*Pontos não verificáveis pela referência:*
+- Escalonamento da multa (10% após 60 dias, 20% após 120 dias).
+- Citações da Resolução nº 35/2007, do art. 84-A da Lei nº 11.651/1991, do PADI, de uma Resolução nº 695 e do Código de Normas e Procedimentos.
+- A referência não permite confirmar nem contradizer esses itens, e eles não geram prêmio nem penalidade. A comparação fica limitada a esse ponto.
+
+*Contradições:* nenhuma com a conclusão central. A referência diz que a multa incide de forma imediata após os 60 dias. A resposta A é compatível com isso, pois afirma que a multa de 10% já incide a partir do 60º dia sem declaração.
+
+*Descontos:*
+- Fundamentação: -1 por não tratar do conflito 2 meses vs. 61/62 dias nem do sistema automatizado.
+- Ressalvas: -1 pela ausência dessa condição prática.
+
+**Resposta B**
+
+*Acertos:*
+- Menciona o art. 611 do CPC (2 meses) e a Lei nº 11.651/1991, o que atende ao fato obrigatório.
+- Usa dias corridos contados do óbito.
+- Distingue o prazo civil do prazo da Declaração do ITCD e menciona o marco de 60 dias.
+
+*Contradições:*
+- A conclusão final define como referência prática o prazo de 120 dias, com multa só a partir do 121º dia. Isso contraria a referência, segundo a qual a multa incide imediatamente após 60 dias corridos.
+- Diz que do 61º ao 120º dia "ainda não se aplica a multa", o que também contraria a referência.
+- Recomenda "evitar o 121º dia". A orientação prática fica deslocada para um limite que a referência não admite.
+
+*Omissões:*
+- Não explica o conflito entre 2 meses e 60 dias em meses de 31 dias.
+- Não menciona o ITCD WEB nem a multa automática.
+
+*Pontos não verificáveis pela referência:*
+- Exemplo "oficial" com datas de 2022 e referência às perguntas 62 e 65 da Secretaria. Não podem ser confirmados.
+- Os links citados também não podem ser confirmados.
+
+*Descontos:*
+- Conclusão: o 60º dia é mencionado, mas a conclusão efetiva (120 dias) contraria a referência, com nota 1/4.
+- Fundamentação: -2 por citar corretamente CPC e CTE, mas sem sustentar o prazo de 60 dias como limite da multa e sem tratar do conflito de contagem.
+- Ressalvas: 0, pois a ressalva central (multa imediata após 60 dias) é contrariada.
+
+## 3. Resultado
+
+**A venceu** (8 a 3).
+
+## 4. Justificativa final
+
+A resposta A reproduz a conclusão da referência (60 dias corridos do óbito para evitar a multa) e cita CPC e CTE. A resposta B contraria a referência ao fixar 120 dias como limite prático para a multa, o que altera a conclusão essencial. Ambas omitem o conflito 2 meses vs. 60 dias em meses de 31 dias. O escalonamento da multa e as demais normas citadas ficaram sem confirmação pela referência e não influenciaram a nota.

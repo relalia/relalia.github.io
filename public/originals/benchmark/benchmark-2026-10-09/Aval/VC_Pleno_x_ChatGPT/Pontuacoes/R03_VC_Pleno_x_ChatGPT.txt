@@ -1,0 +1,45 @@
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 4 | 4 |
+| 2. Fundamentação e informações essenciais (0-4) | 4 | 4 |
+| 3. Condições, limites e ressalvas (0-2) | 2 | 2 |
+| **Nota total** | **10** | **10** |
+| **Classificação** | Conforme | Conforme |
+
+## 2. Análise
+
+**Resposta A**
+
+- **Acertos:** Confirma que há prazo de validade de 180 dias, fundamentado no art. 65, § 1º, da LC nº 120/2024. Indica que a contagem parte da data do deferimento do pedido. Descreve a consequência do vencimento: o Município não revalida a certidão, e é preciso instaurar novo processo. Isso equivale, em substância, à referência, que exige nova certidão após o prazo.
+- **Omissões:** Não afirma de forma direta que, vencido o prazo, o documento não serve para o ato registral. Isso fica implícito na conclusão, e não há contradição com a referência.
+- **Contradições:** Nenhuma.
+- **Não verificável pela referência:**
+  - o conteúdo do *caput* e dos §§ 2º e 3º do art. 65;
+  - a remissão ao art. 62 e seguintes;
+  - a citação do art. 18 da Lei nº 6.766/1979;
+  - a distinção em relação a outras certidões;
+  - os links e as fontes mencionadas.
+
+  Esses pontos não geram prêmio nem penalidade. A limitação da comparação é que a referência só trata do § 1º e da necessidade de nova certidão.
+
+**Resposta B**
+
+- **Acertos:** Confirma o prazo de 180 dias no art. 65, § 1º, com contagem a partir do deferimento. Explica que, vencido o prazo, a certidão caduca e é necessário novo procedimento na Prefeitura. Liga essa consequência ao Registro de Imóveis, o que se aproxima mais da referência: sem protocolo ou averbação no prazo, o documento prescreve e exige nova certidão para o ato registral.
+- **Omissões:** Nenhuma relevante.
+- **Contradições:** Nenhuma.
+- **Não verificável pela referência:**
+  - o conteúdo do art. 65, *caput* e § 2º;
+  - a exigência de prenotação em vigor dentro do prazo;
+  - a emissão de nota devolutiva pelo Oficial de Registro.
+
+  Esses pontos não são confirmados nem contraditos pela referência e não alteram a pontuação.
+
+## 3. Resultado
+
+**Empate** (10 a 10).
+
+## 4. Justificativa final
+
+Ambas as respostas reproduzem os elementos centrais da referência: validade de 180 dias, base no art. 65, § 1º, da LC nº 120/2024, contagem a partir do deferimento e necessidade de novo procedimento após o vencimento. As informações adicionais de cada uma não são verificáveis pela referência e não influenciam a nota. Não há contradição em nenhuma das duas, então as notas são iguais e o resultado é empate.

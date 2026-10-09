@@ -1,0 +1,140 @@
+A distinção central é entre situações que exigem análise com especial atenção e podem levar à comunicação ao COAF e situações que geram comunicação obrigatória, independentemente de avaliação subjetiva da suspeita. No registro imobiliário, essa diferença é especialmente importante porque nem toda operação atípica deve ser automaticamente comunicada, mas determinadas ocorrências têm comunicação expressamente imposta pela norma.
+
+O fundamento é o Código Nacional de Normas da Corregedoria Nacional de Justiça — Foro Extrajudicial (CNN/CN/CNJ-Extra), instituído pelo Provimento CNJ nº 149/2023 e alterado, nesse ponto, pelo Provimento CNJ nº 161/2024, vigente desde 2 de maio de 2024. A norma se refere à comunicação à Unidade de Inteligência Financeira (UIF), função exercida pelo COAF no Brasil. Atos CNJ
+
++1
+
+## 1. Art. 155-A: critérios gerais para identificar operações suspeitas
+
+O art. 155-A estabelece os critérios que notários e registradores devem observar quando realizam a análise com especial atenção prevista no art. 151, I, em conjunto com o art. 141, §§ 1º e 3º.
+
+A análise deve considerar, a partir dos documentos apresentados para a prática do ato, se a operação ou proposta:
+
+- I — aparenta não decorrer das atividades ou dos negócios usuais do cliente, dos demais envolvidos ou do ramo de atuação deles;
+- II — tem origem ou fundamentação econômica ou legal que não pode ser claramente identificada;
+- III — é incompatível com o patrimônio ou com a capacidade econômico-financeira do cliente ou de outros envolvidos;
+- IV — envolve dificuldade ou impossibilidade de identificar o beneficiário final;
+- V — relaciona-se a pessoa jurídica domiciliada em jurisdição que o Grupo de Ação Financeira (GAFI) classifica como de alto risco ou com deficiências estratégicas em prevenção à lavagem de dinheiro e ao financiamento do terrorismo e da proliferação de armas de destruição em massa;
+- VI — envolve países ou dependências classificados pela Receita Federal do Brasil como de tributação favorecida ou submetidos a regime fiscal privilegiado;
+- VII — relaciona-se a pessoa jurídica cujos sócios, administradores, beneficiários finais, procuradores ou representantes legais mantenham domicílio nas jurisdições de risco indicadas no inciso V;
+- VIII — apresenta resistência do cliente ou de outros envolvidos ao fornecimento de informações ou documentos solicitados para os fins previstos no capítulo.
+
+Atos CNJ
+
++1
+
+Esses critérios funcionam como indicadores de risco. A presença de um deles justifica exame cuidadoso, mas não significa, isoladamente, que toda operação deva ser comunicada automaticamente. É preciso avaliar o contexto e verificar se há elementos que fundamentem uma suspeita razoável.
+
+## 2. Art. 162: hipóteses específicas do registro de imóveis que exigem especial atenção
+
+O art. 162 enumera seis grupos de operações, propostas ou situações que devem ser examinados com especial atenção, para avaliar a necessidade de comunicação à UIF, conforme o art. 151, I.
+
+| Inciso | Situação que exige análise especial |
+| --- | --- |
+| I | Doação de imóvel ou de direito real imobiliário a terceiro sem vínculo familiar aparente com o doador, quando o valor venal municipal do imóvel for igual ou superior a R$ 100.000,00. |
+| II | Concessão de empréstimo hipotecário ou com alienação fiduciária entre particulares. |
+| III | Negócios celebrados por sociedades que tenham sido dissolvidas e posteriormente retomado suas atividades. |
+| IV | Aquisição de imóveis por fundações ou associações quando as características do negócio não forem compatíveis com suas finalidades. |
+| V | Transmissões sucessivas do mesmo imóvel em período e com diferença de valores anormais. |
+| VI | Título que apresente valor declarado do imóvel com diferença anormal em relação a outros valores associados, como a avaliação fiscal, o valor patrimonial considerado para fins sucessórios ou o valor utilizado na integralização de capital social. |
+
+Fonte: art. 162, incisos I a VI, na redação do Provimento CNJ nº 161/2024. Atos CNJ
+
++1
+
+### Como aplicar essas hipóteses a uma compra e venda
+
+Alguns exemplos ajudam a diferenciar um sinal de alerta de uma conclusão de suspeita:
+
+- Revendas sucessivas: um imóvel é vendido várias vezes em curto intervalo, com alterações expressivas e pouco explicadas nos preços. O registrador deve investigar a coerência econômica da sequência, sem presumir que toda revenda rápida seja ilícita.
+- Preço incompatível: o título informa preço muito diferente da avaliação fiscal ou de outros valores atribuídos ao imóvel, sem justificativa aparente.
+- Incompatibilidade financeira: o comprador adquire imóvel de valor elevado, mas os documentos disponíveis apontam capacidade econômico-financeira aparentemente insuficiente.
+- Interposição de pessoas: a estrutura da operação dificulta a identificação de quem efetivamente se beneficia da aquisição.
+- Operação sem justificativa econômica clara: empréstimos garantidos por imóvel entre particulares ou aquisições realizadas por entidades cuja finalidade institucional não parece guardar relação com o negócio.
+
+Os exemplos relacionados à capacidade financeira e à identificação do beneficiário final decorrem também dos critérios gerais do art. 155-A. O objetivo é avaliar o conjunto de circunstâncias, e não criar uma presunção automática de crime. Portal CNJ
+
++1
+
+## 3. Art. 161: hipótese de comunicação obrigatória
+
+O art. 161 contém uma regra diferente. O registrador de imóveis, ou seu oficial de cumprimento, deve comunicar à UIF o registro de documento ou título que contenha declaração das partes de que houve pagamento em espécie ou por título ao portador de valor igual ou superior a R$ 100.000,00, ou equivalente em moeda estrangeira.
+
+A regra tem três elementos importantes:
+
+- Valor mínimo: R$ 100.000,00, inclusive quando o pagamento é exatamente desse valor.
+- Meio de pagamento: dinheiro em espécie ou título ao portador.
+- Fato documentado: declaração das partes, constante do documento ou título registrado, de que o pagamento ocorreu por um desses meios.
+
+Nessa hipótese, a comunicação é obrigatória, sem depender de uma conclusão adicional de que a operação seja suspeita. A comunicação deve seguir o art. 151, II. Atos CNJ
+
++1
+
+Atenção: o art. 161 não torna obrigatória a comunicação de toda compra e venda de imóvel de R$ 100.000,00 ou mais. O limite diz respeito ao pagamento em espécie ou por título ao portador, e não ao preço do imóvel por si só.
+
+Também é importante distinguir essa obrigação da regra aplicável ao tabelião de notas: o art. 171 prevê comunicação obrigatória para operação envolvendo pagamento ou recebimento em espécie ou por título ao portador de valor igual ou superior a R$ 100.000,00, inclusive em compra e venda de imóveis. Trata-se de obrigação própria do tabelião, que não deve ser confundida com a regra específica do registrador imobiliário. Atos CNJ
+
++1
+
+## 4. O que mudou com o Provimento CNJ nº 161/2024?
+
+A alteração mais relevante foi a revisão das hipóteses de comunicação automática e dos indicadores de suspeita.
+
+Na redação anterior do art. 161, eram previstas comunicações obrigatórias relativas a transmissões sucessivas do mesmo imóvel com diferenças expressivas de preço, discrepâncias entre valores declarados e valores fiscais ou patrimoniais e pagamentos em espécie a partir de R$ 30.000,00.
+
+Com o Provimento nº 161/2024:
+
+- A comunicação obrigatória prevista no art. 161 passou a abranger pagamentos em espécie ou por título ao portador a partir de R$ 100.000,00, nas condições do dispositivo.
+- As transmissões sucessivas com diferenças anormais de preço e as discrepâncias entre valores passaram a integrar as hipóteses de análise especial do art. 162, incisos V e VI.
+- As demais hipóteses específicas do art. 162 também passaram a ser tratadas sob a lógica de análise especial e eventual comunicação.
+
+Portanto, não é correto aplicar os antigos limites de R$ 30.000,00 ou os antigos critérios percentuais como se ainda gerassem, por si sós, comunicação automática pelo registrador imobiliário.
+
+## 5. Há outras regras que devem ser observadas?
+
+Sim. Os arts. 155-A, 161 e 162 devem ser interpretados em conjunto com as demais disposições do Código Nacional de Normas.
+
+### Art. 151: procedimento e prazo de comunicação
+
+O art. 151 disciplina as comunicações à UIF, distinguindo, essencialmente, a comunicação de operações suspeitas daquela decorrente de hipótese objetiva de comunicação obrigatória.
+
+Na prática, o registrador deve:
+
+- Comunicar as operações consideradas suspeitas nos termos do art. 151, I, depois da análise pertinente.
+- Efetuar as comunicações obrigatórias previstas no art. 151, II, quando configurada a hipótese normativa correspondente.
+- Observar os procedimentos e prazos regulamentares aplicáveis a cada modalidade de comunicação.
+
+### Art. 141: monitoramento, seleção e análise
+
+A análise especial não se limita a verificar se a operação corresponde literalmente a um dos incisos do art. 162. Ela integra os procedimentos de prevenção à lavagem de dinheiro, ao financiamento do terrorismo e à proliferação de armas de destruição em massa (PLD/FTP), que abrangem o monitoramento, a seleção e a análise de operações e propostas.
+
+Por isso, os indicadores do art. 155-A também são relevantes em uma compra e venda comum, mesmo quando não há enquadramento direto em uma hipótese específica do art. 162.
+
+### Fundamentação da comunicação: art. 155-A e parágrafo único do art. 151
+
+A comunicação deve conter elementos claros, precisos e suficientes para sustentar uma conclusão razoável de que há indícios de lavagem de dinheiro, financiamento do terrorismo ou infração correlata. As informações devem ser inseridas nos campos pertinentes do Siscoaf, conforme as instruções da UIF. Não basta simplesmente reproduzir o inciso normativo sem explicar o que, concretamente, despertou a suspeita.
+
+### Outras obrigações
+
+Também devem ser observadas as regras gerais de identificação e qualificação dos envolvidos, conservação de registros e documentos e tratamento das informações. A existência de uma suspeita, por si só, não significa que o ato registral deva ser recusado automaticamente; o procedimento deve seguir as exigências legais e registrais aplicáveis. Portal CNJ
+
++1
+
+## 6. Síntese prática para o registrador
+
+| Situação | Tratamento |
+| --- | --- |
+| Pagamento em espécie ou por título ao portador, declarado no título, de R$ 100.000,00 ou mais | Comunicação obrigatória, conforme o art. 161. |
+| Doação a terceiro sem vínculo familiar aparente, observada a condição de valor venal do art. 162, I | Análise especial; comunicar se considerada suspeita. |
+| Empréstimo hipotecário ou com alienação fiduciária entre particulares | Análise especial; comunicar se considerada suspeita. |
+| Negócio de sociedade dissolvida que retomou a atividade | Análise especial; comunicar se considerada suspeita. |
+| Aquisição por fundação ou associação incompatível com suas finalidades | Análise especial; comunicar se considerada suspeita. |
+| Transmissões sucessivas com período ou diferenças de valor anormais | Análise especial; comunicar se considerada suspeita. |
+| Discrepância anormal entre o preço declarado e outros valores atribuídos ao imóvel | Análise especial; comunicar se considerada suspeita. |
+| Operação aparentemente incompatível com a capacidade financeira, sem origem econômica clara ou com beneficiário final de difícil identificação | Aplicar os critérios gerais do art. 155-A e avaliar a necessidade de comunicação. |
+
+A síntese decorre dos arts. 151, 155-A, 161 e 162 do Código Nacional de Normas, na redação aplicável após o Provimento CNJ nº 161/2024.
+
+Conclusão: em uma compra e venda de imóvel, o ponto decisivo é distinguir a obrigação objetiva de comunicar o pagamento em espécie ou por título ao portador, nos termos do art. 161, da análise contextual exigida pelos arts. 155-A e 162. A comunicação por suspeita deve ser fundamentada em fatos concretos; já a hipótese objetiva do art. 161 não depende de juízo adicional de suspeição.
+
+Para aplicação em um caso concreto, convém consultar o [texto compilado do Código Nacional de Normas no portal do CNJ](<https://atos.cnj.jus.br/>), especialmente porque o enquadramento deve observar a redação vigente e eventuais normas complementares da Corregedoria estadual.

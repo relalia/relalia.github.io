@@ -1,0 +1,21 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do Claude Sonnet 5.5 Médio:
+
+**A vitória do Pleno por 8 a 3 está sustentada pelo gabarito.** A apresenta o limite de **60 dias corridos desde o falecimento** para transmitir a declaração; B conclui por **120 dias**, contrariando a referência.
+
+A classificação do ChatGPT como **“Divergente”** agora segue o protocolo. No embate contra o Ágil, essa mesma contradição havia sido classificada indevidamente como “Parcialmente conforme”.
+
+Duas ressalvas devem acompanhar o resultado:
+
+* **Variação do juiz:** a mesma resposta do ChatGPT passou de **6/10 para 3/10**, além da mudança de classificação. Isso precisa aparecer no relatório.
+* **Possível desconto duplicado no Pleno:** o Claude descontou a ausência da explicação sobre meses de 31 dias em fundamentação e ressalvas, sem esclarecer suficientemente os efeitos distintos exigidos pelo prompt.
+
+Há ainda um erro de redação na análise: o Claude diz que A prevê multa “a partir do 60º dia”, mas A afirma incidência **se a declaração não for apresentada até o 60º dia**.
+
+Registre as notas originais:
+
+| IA                 | Nota | Classificação |
+| ------------------ | ---: | ------------- |
+| Vadechat Pleno — A | 8/10 | Conforme      |
+| ChatGPT — B        | 3/10 | Divergente    |
+
+**O resultado mede alinhamento ao gabarito; não resolve a divergência jurídica entre 60 e 120 dias.**

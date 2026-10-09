@@ -1,0 +1,45 @@
+**Resposta direta**
+
+O prazo legal para abertura do inventário extrajudicial em cartório no Estado de Goiás não está fixado em lei específica na base consultada, mas a lavratura da escritura pública de inventário e partilha pode ser feita a qualquer tempo, conforme previsão geral. Para evitar multa sobre o ITCD, é fundamental observar o prazo para pagamento do imposto conforme a legislação tributária estadual, que deve ser comprovado antes da formalização do inventário.
+
+A contagem do prazo para fins de multa do ITCD deve seguir a legislação tributária estadual, considerando o fato gerador do imposto na data da transmissão (partilha ou doação) e o prazo para pagamento estabelecido pela Secretaria da Fazenda de Goiás, que deve ser comprovado no ato do inventário.
+
+---
+
+**Fundamentação legal**
+
+- **Prazo para abertura do inventário extrajudicial**  
+  A escritura pública de inventário e partilha pode ser lavrada a qualquer tempo, desde que haja comprovação do pagamento integral do ITCD ou concessão de parcelamento ou desoneração do imposto estadual de transmissão causa mortis e doação (ITCD).  
+  Isso está previsto no artigo 88-C da **Lei nº 11.651, de 26 de dezembro de 1991**, que autoriza os tabeliães a formalizar escrituras públicas de inventário somente após a comprovação do pagamento do imposto ou sua regularização.  
+  Além disso, o artigo 31 da **Resolução nº 35, de 24 de abril de 2007** reforça que o tabelião deve fiscalizar o recolhimento de eventual multa prevista na legislação tributária estadual.  
+  [Lei nº 11.651/1991, art. 88-C]; [Resolução nº 35/2007, art. 31]
+
+- **Comprovação do pagamento do ITCD e documentos exigidos**  
+  O oficial de registro de imóveis deve exigir prova de quitação do ITCD ou reconhecimento administrativo de não incidência, imunidade ou isenção pela Secretaria da Fazenda do Estado de Goiás (SEFAZ-GO).  
+  A comprovação se dá mediante apresentação do Documento de Arrecadação de Receita Estadual (DARE), demonstrativo de cálculo do ITCD e comprovante de pagamento.  
+  Havendo excedente de quinhão ou meação, deve ser exigido o DARE e demonstrativo do excedente.  
+  [Código de Normas e Procedimentos do Extrajudicial - 2021, art. 811]
+
+- **Contagem do prazo para evitar multa sobre o ITCD**  
+  O fato gerador do ITCD ocorre na transmissão por doação ou partilha, na data da partilha que beneficiar uma das partes em relação ao excedente de quinhão ou meação.  
+  O prazo para pagamento do imposto é fixado pela legislação tributária estadual, e o tabelião deve exigir a comprovação do pagamento ou regularização antes da lavratura da escritura pública de inventário.  
+  Caso o imposto não seja recolhido previamente, o tabelião deve informar a lavratura da escritura ao fisco no prazo de 5 dias, conforme a **Resolução nº 695, de 26 de agosto de 2026**.  
+  [IV Ciclo de Debates CNB-GO, art. 74]; [Resolução nº 695/2026, art. 2]
+
+- **Observação sobre contagem de prazos**  
+  A contagem do prazo para pagamento do ITCD deve observar os prazos estabelecidos pela Secretaria da Fazenda do Estado de Goiás, que podem incluir prazos para parcelamento ou regimes especiais.  
+  A legislação estadual não fixa prazo específico para abertura do inventário extrajudicial, mas a comprovação do pagamento do imposto é condição para a lavratura da escritura, evitando multa.  
+  [Código de Normas e Procedimentos do Extrajudicial - 2021, art. 811, §6º]
+
+---
+
+**Resumo prático**
+
+- O inventário extrajudicial pode ser aberto a qualquer tempo, mas a escritura só será lavrada após comprovação do pagamento ou regularização do ITCD.  
+- Para evitar multa, o pagamento do ITCD deve ser feito dentro do prazo fixado pela legislação tributária estadual, e o comprovante deve acompanhar o pedido de lavratura da escritura.  
+- O tabelião deve exigir o DARE e demais documentos que comprovem a quitação ou parcelamento do imposto.  
+- Se o imposto não for recolhido previamente, o tabelião tem o prazo de 5 dias para informar o fisco.  
+
+---
+
+Se desejar, posso detalhar os procedimentos práticos para a lavratura do inventário extrajudicial em Goiás ou os documentos exigidos para comprovação do ITCD.

@@ -6,6 +6,7 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, KeepTogether
+from importlib.util import spec_from_file_location, module_from_spec
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -46,6 +47,14 @@ def generate(data):
                 p(attachment['label'],style='Caption'), p(report['summary'])]
             for highlight in report['highlights']:
                 story.append(p('• ' + highlight))
+            if report.get('benchmarkId'):
+                spec = spec_from_file_location('benchmark_pdf', ROOT/'scripts/benchmark-pdf.py')
+                benchmark_pdf = module_from_spec(spec)
+                spec.loader.exec_module(benchmark_pdf)
+                story += benchmark_pdf.benchmark_story(report, p)
+                doc.build(story,onFirstPage=page_footer,onLaterPages=page_footer)
+                print(target.relative_to(ROOT))
+                continue
             if any(f['origin'] == 'original' for f in report['files']):
                 story.append(p('Esta ficha é complementar. Os documentos originais estão disponíveis separadamente, com bytes preservados.', style='Caption'))
             story.append(p(f"{len(report['findings'])} achados",style='FindingTitle'))

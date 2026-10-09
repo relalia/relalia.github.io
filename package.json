@@ -9,19 +9,23 @@
     "start:export": "node scripts/serve.mjs",
     "typecheck": "tsc --noEmit",
     "verify": "node scripts/verify-public.mjs",
-    "test": "node --test scripts/data.test.mjs scripts/access.test.mjs",
+    "test:benchmark-ui": "node scripts/verify-benchmark-ui.mjs",
+    "test": "node --test scripts/data.test.mjs scripts/access.test.mjs scripts/benchmark.test.mjs",
     "check": "pnpm test && pnpm typecheck && pnpm build && pnpm verify"
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.3.7",
     "next": "15.5.12",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "playwright": "^1.64.0",
     "typescript": "^5.9.0"
   }
 }

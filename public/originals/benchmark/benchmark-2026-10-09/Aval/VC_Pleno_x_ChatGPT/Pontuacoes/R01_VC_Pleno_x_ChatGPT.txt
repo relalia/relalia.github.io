@@ -1,0 +1,67 @@
+# Avaliação comparativa
+
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 2 | 2 |
+| 2. Fundamentação e informações essenciais (0-4) | 2 | 2 |
+| 3. Condições, limites e ressalvas (0-2) | 1 | 1 |
+| **Nota total** | **5** | **5** |
+| **Classificação** | Parcialmente conforme | Parcialmente conforme |
+
+## 2. Análise
+
+**Resposta A**
+
+*Acertos:*
+- Alinha-se à referência ao tratar a averbação como atualização do estado civil e da qualificação, sem transmissão da propriedade.
+- Exige requerimento e certidão de casamento.
+- Prevê a atualização do nome civil quando o casamento o alterar, comprovada pela certidão.
+- Destaca o regime de bens e o pacto antenupcial.
+- Cita os arts. 246 da Lei 6.015/1973 e o CNPFE de Goiás, o que coincide em parte com a fundamentação da referência.
+
+*Omissões e contradições:*
+- Não afirma o prazo de 90 dias da certidão. Diz que não conseguiu confirmar a regra e que não seria correto afirmá-la categoricamente. Isso é omissão, não contradição direta, mas deixa de entregar um ponto central da referência.
+- Não afirma a exigência de firma reconhecida ou de assinatura digital ICP-Brasil. Diz apenas que a exigência deve ser verificada, o que é omissão parcial. Ao menos distingue o reconhecimento de firma da forma de assinatura eletrônica.
+- Não menciona as formas admitidas da certidão (original, cópia autenticada ou digital validável), apenas que deve ser "passível de validação".
+- Não cita o art. 167, II, da Lei 6.015/1973 nem o Código Nacional de Normas.
+
+*Informação não verificável pela referência:*
+- Exigência de documento de identificação e CPF.
+- Documentos complementares.
+- Dados do cônjuge e data do casamento a constar na averbação.
+- Afirmação de que a averbação não inclui o cônjuge como coproprietário.
+- Art. 176 da Lei 6.015/1973.
+
+*Limitação da comparação:* a referência não permite confirmar nem contradizer esses pontos.
+
+**Resposta B**
+
+*Acertos:*
+- Afirma a exigência de requerimento escrito com firma reconhecida (art. 246, § 1º), o que coincide parcialmente com a referência. Não menciona a alternativa da assinatura digital ICP-Brasil.
+- Exige certidão de casamento do Registro Civil para estado civil e alteração do nome.
+- Trata do regime de bens e do pacto antenupcial.
+
+*Omissões:*
+- Não fixa o prazo de 90 dias.
+- Não menciona as formas de apresentação da certidão (original, cópia autenticada, digital).
+- Não explicita que a averbação não implica transmissão do direito de propriedade.
+- Não cita o art. 167, II, nem o Código Nacional de Normas.
+
+*Contradições:*
+- Afirma que a certidão de casamento "não possui prazo de validade predeterminado" (art. 399, § 5º do Código de Normas de Goiás). Isso contradiz a referência, que exige certidão atualizada com prazo de 90 dias. O próprio texto ressalva que a regra se refere ao âmbito notarial e que a regra específica do Registro de Imóveis não foi localizada, o que atenua, mas não elimina, a divergência, pois o ponto central da validade fica orientado em sentido oposto ao da referência. A confirmação do prazo é remetida à consulta ao Código.
+
+*Informação não verificável pela referência:*
+- Dados do cônjuge (nacionalidade, profissão, RG, CPF).
+- Obtenção das certidões pelo oficial por via eletrônica (art. 246, § 1º-A).
+- Registro do pacto no Livro 3.
+- Princípios da especialidade subjetiva e da continuidade.
+
+## 3. Resultado
+
+**Empate** (5 a 5).
+
+## 4. Justificativa final
+
+Nenhuma das respostas entrega os dois pontos práticos mais específicos da referência: o prazo de 90 dias da certidão e a forma de assinatura com alternativa ICP-Brasil. A Resposta B acerta a exigência de firma reconhecida e a natureza do requerimento, mas contraria a referência ao afirmar a ausência de prazo de validade para a certidão. A Resposta A não contraria a referência, mas é vaga e deixa de afirmar tanto o prazo quanto a firma reconhecida, embora explicite que a averbação não transfere a propriedade. Os acertos e as falhas de cada uma se compensam, resultando em notas iguais.

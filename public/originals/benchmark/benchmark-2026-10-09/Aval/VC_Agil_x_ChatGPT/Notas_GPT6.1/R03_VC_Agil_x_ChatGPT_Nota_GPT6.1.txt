@@ -1,0 +1,10 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do Claude Sonnet 5.5 Médio:
+
+
+**O empate da Q03 é coerente com o protocolo.** Ambas apresentam os pontos centrais do gabarito: **180 dias contados do deferimento**, fundamento no **art. 65, § 1º**, e necessidade de nova certidão após o vencimento.
+
+O Claude também tratou adequadamente as informações adicionais: não premiou a maior extensão de A nem penalizou afirmações de B que a referência não permite verificar.
+
+**A ressalva é a nota máxima:** ambas deixam implícita a condição de protocolo ou averbação no Registro de Imóveis dentro do prazo. O Claude reconheceu essa ausência e a considerou irrelevante; essa tolerância deverá ser aplicada igualmente nas demais avaliações.
+
+Pode registrar: **Q03 — ChatGPT: 10/10, Conforme; Vadechat: 10/10, Conforme; empate.** As notas expressam concordância com o gabarito, sem confirmar todas as afirmações adicionais.

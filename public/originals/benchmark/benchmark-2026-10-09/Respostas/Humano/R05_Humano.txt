@@ -1,0 +1,17 @@
+A abertura de firma (ficha-padrão / cartão de autógrafo) é o procedimento pelo qual o interessado deposita, junto ao tabelionato de notas, um cadastro com seus dados de qualificação e um modelo de sua assinatura, que servirá de parâmetro para o tabelião reconhecer, no futuro, se uma assinatura lançada em determinado documento efetivamente pertence a essa pessoa (reconhecimento de firma "por autenticidade" ou "por semelhança"). A ficha-padrão deve conter, no mínimo:
+•	nome, endereço, profissão, nacionalidade, estado civil, filiação, telefone e e-mail do depositante (art. 471, I);
+•	número de inscrição no CPF, quando for o caso (inciso II);
+•	numeração do documento oficial de identificação, com órgão emissor e data de expedição (inciso III);
+•	data de abertura do cadastro;
+•	assinatura do depositante, aposta no mínimo por 3 (três) vezes (inciso IV);
+•	sinal público e identificação do tabelião ou preposto que verificou a regularidade do preenchimento (inciso V).
+Fundamentação Legal:
+Requisitos para abertura (art. 471 e 472 do Código de Normas do Foro Extrajudicial de Goiás)
+•	Menores de idade: o maior de 16 anos já pode abrir ficha-padrão, devendo o tabelião apenas consignar a incapacidade relativa do menor de 18 anos (§3º).
+•	Art. 473: recomenda-se (não obrigatório) o uso de biometria facial ou digital na abertura, cujos dados passam a integrar o acervo permanente da serventia.
+•	Art. 474: é vedada a entrega ou remessa da ficha para preenchimento fora da serventia ou por terceiros, o preenchimento deve ser feito na presença do tabelião ou preposto autorizado (art. 471, §2º). Exceção: comprovada a impossibilidade de comparecimento do interessado, o tabelião pode preenchê-la e colher a assinatura em outro local, mediante cobrança de emolumentos de diligência (art. 474, parágrafo único) — mesma lógica territorial que discutimos antes: isso vale dentro da circunscrição do próprio tabelião.
+Vale lembrar que o reconhecimento de firma feito com base na ficha-padrão declara apenas a autoria da assinatura, não conferindo legalidade ao conteúdo do documento (art. 476) ou seja, o tabelião confirma que a assinatura é daquela pessoa, mas não atesta a validade jurídica do que está escrito no documento.
+
+Fatos obrigatórios (1)
+mencionar Código de Normas do Foro Extrajudicial de Goiás
+peso 1.00

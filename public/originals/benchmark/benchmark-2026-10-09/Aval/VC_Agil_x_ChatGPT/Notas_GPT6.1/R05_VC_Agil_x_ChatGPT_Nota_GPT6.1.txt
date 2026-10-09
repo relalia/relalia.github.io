@@ -1,0 +1,21 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do Claude Sonnet 5.5 Médio:
+
+
+**A vantagem do Vadechat na Q05 é sustentada pela maior cobertura do gabarito, mas a avaliação está incompleta: a referência humana não responde à pergunta sobre validade da ficha.** Esse ponto deveria ter sido declarado **inconclusivo**, sem validar a resposta de nenhuma IA.
+
+B (Vadechat) apresenta requisitos ausentes em A (ChatGPT): três assinaturas, regra para menores e referência expressa às normas de Goiás. Isso sustenta sua vantagem no conteúdo verificável.
+
+Entretanto, o Claude deixou de marcar como **não verificável pela referência** a afirmação de B de que a ficha serve também para “autenticação de documentos”. A seção “No seu cartório” igualmente permanece sem confirmação. A nota **8/10 — Conforme** precisa ser interpretada dentro dessas limitações.
+
+Os resultados originais do Claude para a rodada **Ágil × ChatGPT** ficaram assim:
+
+| Questão   | ChatGPT | Vadechat Ágil | Resultado |
+| --------- | ------: | ------------: | --------- |
+| Q01       |       5 |             2 | ChatGPT   |
+| Q02       |      10 |             2 | ChatGPT   |
+| Q03       |      10 |            10 | Empate    |
+| Q04       |       6 |             1 | ChatGPT   |
+| Q05       |       4 |             8 | Vadechat  |
+| **Média** | **7,0** |       **4,6** |           |
+
+**São três vitórias do ChatGPT, uma do Vadechat e um empate, segundo o juiz.** Preserve esses resultados originais e registre separadamente as ressalvas metodológicas, especialmente nas Q01, Q04 e Q05. Cinco perguntas e um julgamento por comparação permitem um resultado exploratório; não sustentam uma conclusão geral de superioridade jurídica.

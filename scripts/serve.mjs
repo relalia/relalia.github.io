@@ -30,4 +30,4 @@ http.createServer((request, response) => {
   response.setHeader('Content-Length',size);
   if(request.method==='HEAD') {response.end();return;}
   fs.createReadStream(selected).pipe(response);
-}).listen(4173, '127.0.0.1', () => console.log('http://127.0.0.1:4173'));
+}).listen(Number(process.env.RELALIA_PORT || 4173), '127.0.0.1', () => console.log(`http://127.0.0.1:${process.env.RELALIA_PORT || 4173}`));
