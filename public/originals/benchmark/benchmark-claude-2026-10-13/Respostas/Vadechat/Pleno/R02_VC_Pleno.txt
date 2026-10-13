@@ -1,0 +1,31 @@
+**Resposta direta**  
+Sim. No procedimento de averbação de retificação de área (aplicável a imóveis urbanos e rurais no contexto de adequação perimetral e georreferenciamento), o art. 440-AX, §§ 1º e 2º, do Código Nacional de Normas da Corregedoria Nacional de Justiça — Foro Extrajudicial (CNN/CN/CNJ-Extra) disciplina expressamente a apresentação da declaração de respeito aos limites divisórios, fixando suas vias de formalização e os requisitos das assinaturas [Provimento nº 149, de 30 de agosto de 2023., art. 440-AX].
+
+---
+
+### **Fundamentação legal**
+
+Conforme o **Provimento nº 149, de 30 de agosto de 2023.**, que aprovou o CNN/CN/CNJ-Extra, a averbação de retificação de área de imóveis urbanos e rurais segue as diretrizes dos arts. 212 e 213 da Lei nº 6.015/1973 e observa as seguintes regras específicas sobre as declarações de limites:
+
+- **Vias de manifestação da declaração:** a declaração expressa dos confinantes de que os limites divisórios foram respeitados pode ser lançada diretamente na planta, no memorial descritivo ou instrumentalizada em documento apartado, observando-se o art. 220 do Código Civil [Provimento nº 149, de 30 de agosto de 2023., art. 440-AX, § 1º].
+- **Forma de autenticação das assinaturas:** as declarações apresentadas pelo proprietário, pelo profissional técnico habilitado e pelos confinantes devem conter reconhecimento de firma ou ser subscritas mediante assinatura eletrônica avançada ou qualificada [Provimento nº 149, de 30 de agosto de 2023., art. 440-AX, § 2º].
+- **Hipótese de dispensa da anuência:** a anuência do confrontante é dispensada, no caso de imóveis rurais, quando tanto o imóvel confrontante quanto a nova descrição do imóvel objeto da retificação já estiverem certificados pelo INCRA na forma do art. 176, § 5º, da Lei nº 6.015/1973, bem como nas hipóteses de confrontação com bens públicos específicos (águas públicas e bens públicos de uso comum como rodovias e ferrovias) [Provimento nº 149, de 30 de agosto de 2023., art. 440-AX, § 3º].
+
+---
+
+### **No seu cartório**
+
+O manual interno do cartório estabelece regras operacionais complementares para a qualificação das declarações no georreferenciamento [MACEQ – Manual de Condutas, Ética e Qualidade, versão 1.2, Janeiro/2021, item 3.4, p. 91]:
+
+- **Marcos de confrontação:** nas declarações de reconhecimento de limites, devem constar obrigatoriamente as descrições dos marcos de confrontação conforme indicados no Memorial Descritivo emitido pelo INCRA.
+- **Confrontantes de outras comarcas:** na prenotação do georreferenciamento, devem ser exigidas certidões de inteiro teor dos imóveis confrontantes situados em outros municípios, para subsidiar a conferência das divisas e a legitimidade das anuências.
+
+Quer que eu detalhe o checklist/procedimento daqui?
+
+---
+
+### **⚠️ Atenção**
+
+A obrigatoriedade de reconhecimento de limites por parte dos confinantes integra o rito de retificação consensual previsto nos arts. 212 e 213 da Lei nº 6.015/1973 e no Decreto nº 4.449/2002. Caso não sejam apresentadas as declarações expressas dos confinantes e a hipótese não recaia nas dispensas do § 3º do art. 440-AX, o procedimento deverá seguir com a notificação formal dos confrontantes pelo oficial de registro [Decreto nº 4.449, de 30 de outubro de 2002., art. 225, § 8º]. 
+
+*Ressalva de vigência: as exigências fundamentam-se nas normas constantes da base do cartório; recomenda-se verificar eventual provimento posterior ou instrução complementar da Corregedoria-Geral de Justiça do seu Estado.*

@@ -37,13 +37,22 @@ for report in data['reports']:
             b=json.loads((root/f"content/{report['benchmarkId']}.json").read_text(encoding='utf8'))
             docs=[b['protocol'],b['alternation']]
             for q in b['questions']:
-                docs += [q['question'],q['human'],q['chatgpt']]
+                docs += [q['question'],q['human'],q['alternative'] if 'alternative' in q else q['chatgpt']]
                 for mode in ['agil','pleno']:
                     docs += [q['comparisons'][mode][field] for field in ['response','document','review']]
             compact=lambda s:re.sub(r'\s|\ufe0f','',s)
             for source in docs:
                 assert compact(source['text']) in compact(text),f"Missing integral benchmark source: {source['path']}"
                 assert source['sha256'] in text,f"Missing benchmark hash {source['path']}"
-            assert 'ChatGPT gratuito' in text and 'modelo não identificado' in text
+            if 'alternativeLabel' in b:
+                assert 'Claude gratuito' in text and 'ChatGPT Grátis' in text and 'GPT-6.1 Alta' in text
+                assert 'Sonnet 5.5 Médio' in text and 'modelo não identificado' in text
+                assert 'Índice das 47 evidências' in text
+                for q in b['questions']:
+                    for mode in ['agil','pleno']:
+                        for field in ['reviewSummary','reviewImpact','reviewAction']:
+                            assert normalize(q['comparisons'][mode][field]) in text
+            else:
+                assert 'ChatGPT gratuito' in text and 'modelo não identificado' in text
             print(f"Benchmark: {len(docs)} integral source texts and hashes verified")
         print(f"{report['id']}: {len(reader.pages)} pages, extractable fields verified")

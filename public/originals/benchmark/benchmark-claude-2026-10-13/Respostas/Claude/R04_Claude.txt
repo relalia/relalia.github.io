@@ -1,0 +1,35 @@
+Sim, a base legal está nos arts. 176 e 225 da Lei 6.015/73. Quanto ao Provimento 149/2023, a resposta é parcial, como explico no fim.
+
+## Identificação do imóvel na matrícula (art. 176, § 1º, II, item 3)
+
+**Imóvel urbano:**
+- características e confrontações;
+- localização;
+- área;
+- logradouro e número;
+- designação cadastral, se houver.
+
+**Imóvel rural:**
+- código do imóvel e dados constantes do CCIR (Certificado de Cadastro de Imóvel Rural);
+- denominação;
+- características e confrontações;
+- localização;
+- área.
+
+Para o imóvel rural, o art. 176, §§ 3º e 4º, exige memorial descritivo georreferenciado ao Sistema Geodésico Brasileiro. Ele deve ser assinado por profissional habilitado, com ART, e ter a precisão posicional fixada pelo INCRA. A exigência vale nos casos de desmembramento, parcelamento e remembramento. Também vale para outros atos, como a transferência, conforme os prazos escalonados por área do Decreto 4.449/2002 e suas alterações. Confira os prazos vigentes para a faixa de área do imóvel em questão.
+
+## Quando exigir atualização ou saneamento
+
+1. **Descrição divergente (art. 225, caput e §§ 1º e 2º).** A descrição do imóvel em escrituras, autos judiciais e instrumentos particulares deve coincidir com a do registro anterior. Se não coincidir, o título é considerado irregular para efeito de matrícula, e o oficial emite nota devolutiva (art. 198) exigindo a correção ou a retificação.
+2. **Imóvel rural em ação judicial (art. 225, § 3º).** Os autos que tratam de imóvel rural devem trazer memorial descritivo com ART e precisão posicional fixada pelo INCRA.
+3. **Retificação (art. 213).** Se a matrícula tem erro, omissão ou descrição imprecisa, a retificação pode ser feita por requerimento do interessado, com a anuência dos confrontantes quando há alteração de medidas perimetrais, ou pela via judicial.
+4. **Georreferenciamento obrigatório.** Nos casos do art. 176, § 3º, e na transferência de imóvel rural sujeito ao prazo, o registrador exige o memorial georreferenciado e certificado pelo INCRA (SIGEF) antes de praticar o ato.
+5. **Continuidade registral (art. 195 e art. 237).** O cartório também exige a regularização prévia quando ela é necessária para manter o encadeamento dos registros.
+
+## Sobre o Provimento 149/2023
+
+Ele instituiu o Código Nacional de Normas do Foro Extrajudicial (CNN/CN/CNJ-Extra), que consolida normas anteriores do CNJ. Entre elas estão as sobre o SINTER, o Cadastro Nacional de Matrícula (CNM), a integração com o CCIR e o CIB/NIRF, o georreferenciamento e a retificação. Ele regulamenta e detalha esses requisitos, mas a base legal é a Lei 6.015/73.
+
+Não consigo citar com segurança os números exatos dos artigos do CNN que tratam da identificação do imóvel, e o código recebe atualizações frequentes. Consulte o texto atualizado no site do CNJ, ou as normas da Corregedoria-Geral de Justiça do seu estado, que podem acrescentar exigências locais.
+
+Sou uma IA, não advogada, então para um caso concreto vale confirmar com um registrador ou advogado especializado em direito registral.

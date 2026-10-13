@@ -1,6 +1,7 @@
 """Generate only catalog attachments explicitly marked generated. Never rewrite originals."""
 from pathlib import Path
 import json
+import os
 from xml.sax.saxutils import escape
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -36,10 +37,17 @@ def generate(data):
         canvas.drawRightString(A4[0]-46, 26, f'Página {doc.page}')
         canvas.restoreState()
     for report in data['reports']:
+        selected_report = os.environ.get('RELALIA_PDF_REPORT')
+        if selected_report and report['id'] != selected_report:
+            continue
         for attachment in report['files']:
             if attachment['origin'] != 'generated':
                 continue
             target = generated_target(attachment)
+            # Preserve already published derivatives. Rebuild a selected report explicitly.
+            if target.exists() and not selected_report and os.environ.get('RELALIA_PDF_REBUILD') != '1':
+                print(f'Preserved {target.relative_to(ROOT)}')
+                continue
             target.parent.mkdir(parents=True, exist_ok=True)
             doc = SimpleDocTemplate(str(target), pagesize=A4, leftMargin=46, rightMargin=46, topMargin=44, bottomMargin=44,
                 title=report['title'], author='Relalia', subject=attachment['label'], invariant=1)

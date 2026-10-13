@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "verify": "node scripts/verify-public.mjs",
     "test:benchmark-ui": "node scripts/verify-benchmark-ui.mjs",
-    "test": "node --test scripts/data.test.mjs scripts/access.test.mjs scripts/benchmark.test.mjs",
+    "test": "node --test scripts/data.test.mjs scripts/access.test.mjs scripts/benchmark.test.mjs scripts/claude-benchmark.test.mjs",
     "check": "pnpm test && pnpm typecheck && pnpm build && pnpm verify"
   },
   "dependencies": {

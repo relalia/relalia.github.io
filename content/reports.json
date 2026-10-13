@@ -4412,6 +4412,88 @@
           "kind": "Benchmark exploratório"
         }
       ]
+    },
+    {
+      "id": "benchmark-claude-2026-10-13",
+      "date": "2026-10-13",
+      "dateNote": "execução confirmada · publicação 13/10",
+      "title": "Run do Benchmark com Amostra de 5 Perguntas: Ágil × Claude & Pleno × Claude",
+      "module": "VadeChat",
+      "status": "Execução exploratória",
+      "count": "5 perguntas · 10 julgamentos comparativos",
+      "benchmarkId": "benchmark-claude-2026-10-13",
+      "summary": "Nos julgamentos originais, o Ágil venceu Q02, Q03 e Q04 e perdeu Q01 e Q05; o Pleno venceu Q02, Q03 e Q04, empatou Q01 e perdeu Q05. O VadeChat acrescentou requisitos documentais e cadastrais do gabarito em Q03/Q04, mas ficou atrás do Claude em Q01 no modo Ágil e em Q05 nos dois modos. As revisões questionam descontos, classificações e a sustentação de vencedores, especialmente Q02 e Q05. As médias próximas do Ágil não sustentam superioridade geral; a vantagem média do Pleno também exige cautela.",
+      "highlights": [
+        "Ágil × Claude gratuito: médias 7,0 e 7,1; VadeChat 3 vitórias, 0 empates e 2 derrotas.",
+        "Pleno × Claude gratuito: médias 7,8 e 7,0; VadeChat 3 vitórias, 1 empate e 1 derrota.",
+        "Claude recebe notas diferentes em Q01, Q03 e Q04; revisões questionam a sustentação dos vencedores em Q05."
+      ],
+      "note": "Execução exploratória com cinco perguntas. As notas medem concordância com a referência humana, sem validação jurídica independente ou comprovação de superioridade geral dos participantes.",
+      "files": [
+        {
+          "label": "Relatório completo, protocolo e evidências integrais · PDF",
+          "path": "/reports/benchmark-claude-2026-10-13.pdf",
+          "kind": "pdf",
+          "origin": "generated"
+        }
+      ],
+      "findings": [
+        {
+          "id": "Q01",
+          "title": "Escritura com indisponibilidade",
+          "description": "Q01 · Escritura com indisponibilidade. Resultado original do ChatGPT Grátis preservado; revisão GPT-6.1 Alta apresentada separadamente.",
+          "status": "Comparação documentada",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "kind": "Benchmark exploratório"
+        },
+        {
+          "id": "Q02",
+          "title": "Declaração de respeito aos limites",
+          "description": "Q02 · Declaração de respeito aos limites. Resultado original do ChatGPT Grátis preservado; revisão GPT-6.1 Alta apresentada separadamente.",
+          "status": "Comparação documentada",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "kind": "Benchmark exploratório"
+        },
+        {
+          "id": "Q03",
+          "title": "Documentos da Junta Comercial",
+          "description": "Q03 · Documentos da Junta Comercial. Resultado original do ChatGPT Grátis preservado; revisão GPT-6.1 Alta apresentada separadamente.",
+          "status": "Comparação documentada",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "kind": "Benchmark exploratório"
+        },
+        {
+          "id": "Q04",
+          "title": "Identificação e saneamento da matrícula",
+          "description": "Q04 · Identificação e saneamento da matrícula. Resultado original do ChatGPT Grátis preservado; revisão GPT-6.1 Alta apresentada separadamente.",
+          "status": "Comparação documentada",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "kind": "Benchmark exploratório"
+        },
+        {
+          "id": "Q05",
+          "title": "Procuração com vários outorgantes",
+          "description": "Q05 · Procuração com vários outorgantes. Resultado original do ChatGPT Grátis preservado; revisão GPT-6.1 Alta apresentada separadamente.",
+          "status": "Comparação documentada",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "kind": "Benchmark exploratório"
+        }
+      ]
     }
   ],
   "evidence": [

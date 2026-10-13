@@ -1,0 +1,34 @@
+**Resposta direta**
+
+O tabelião **pode lavrar** a escritura pública de compra e venda, mas **não de forma desimpedida ou sem ressalvas**. A existência de ordem de indisponibilidade não veda a formalização do negócio no tabelionato, desde que o tabelião consulte obrigatoriamente a CNIB, dê ciência expressa às partes sobre o gravame e consigne formalmente essa circunstância e o risco de recusa de registro no próprio instrumento notarial.
+
+---
+
+### Fundamentação legal
+
+- **Possibilidade de lavratura e dever de cientificação:** a existência de ordem de indisponibilidade não impede a lavratura de escritura pública representativa de negócio jurídico sobre o imóvel, mas impõe ao tabelião a obrigação de cientificar expressamente as partes e consignar todo o contexto no ato notarial [Provimento nº 149, de 30 de agosto de 2023., art. 320-F, parágrafo único], advertindo que a restrição poderá acarretar a impossibilidade de registro no Cartório de Registro de Imóveis competente enquanto vigorar o gravame [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 364 e parágrafo único].
+- **Consulta obrigatória à CNIB:** o notário tem o dever de consultar o banco de dados da Central Nacional de Indisponibilidade de Bens (CNIB) e fazer constar o resultado dessa verificação no texto do ato notarial [Provimento nº 149, de 30 de agosto de 2023., art. 320-F].
+- **Competência para levantamento do gravame:** o tabelião de notas não tem competência jurisdicional para reconhecer a eficácia liberatória da promessa de compra e venda quitada nem para cancelar ordem judicial de indisponibilidade decretada pela Justiça Federal. O cancelamento da restrição depende de ordem do juízo competente [Provimento nº 149, de 30 de agosto de 2023., art. 320-C].
+
+---
+
+### Procedimento prático do tabelião
+
+Para proceder à lavratura, o tabelião deve observar rigorosamente as seguintes etapas:
+
+- **Consulta e certificação da CNIB:** realizar a consulta prévia à base da CNIB e consignar o resultado e os dados da ordem judicial na escritura [Provimento nº 149, de 30 de agosto de 2023., art. 320-F].
+- **Cientificação expressa das partes:** advertir formalmente comprador e vendedor a respeito da indisponibilidade federal incidente sobre o imóvel [Provimento nº 149, de 30 de agosto de 2023., art. 320-F, parágrafo único].
+- **Inserção de cláusula de advertência e ciência de risco:** redigir cláusula específica declarando que o adquirente tem ciência inequívoca da indisponibilidade e de que a escritura poderá não ter ingresso no Registro de Imóveis enquanto a restrição persistir [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 364, parágrafo único].
+- **Circunstanciação da promessa anterior:** mencionar, a pedido das partes, o histórico da promessa de compra e venda e a sua quitação pretérita como elemento causal do negócio, sem que isso implique presunção de eficácia liberatória perante o Registro de Imóveis.
+
+---
+
+### ⚠️ Atenção
+
+A quitação de compromisso de compra e venda anterior à decretação da indisponibilidade é argumento de mérito que ampara o direito do adquirente perante o juízo que determinou a constrição (por meio de embargos de terceiro ou requerimento incidental na Justiça Federal). 
+
+No entanto, no fólio real, **o título notarial não cancela por si a indisponibilidade averbada na matrícula**. Caso as partes optem por lavrar a escritura antes do cancelamento judicial da ordem, o comprador assume o risco de o título ter o registro devolvido com nota de exigência no Registro de Imóveis até que sobrevenha a ordem judicial de cancelamento expedida pelo juízo ordenador [Provimento nº 149, de 30 de agosto de 2023., art. 320-C].
+
+---
+
+*Recomenda-se verificar se não houve alteração posterior nas normas da Corregedoria local ou nos atos da Corregedoria Nacional de Justiça sobre o tema.*

@@ -1,0 +1,17 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do ChatGPT Grátis:
+
+Q02 — VC Ágil × Claude — Nota de revisão
+
+O juiz atribuiu 7,5 à resposta A (Vadechat Ágil) e 6,5 à resposta B (Claude), classificando ambas como parcialmente conformes.
+
+Há um erro de leitura na avaliação de A: a resposta menciona expressamente as assinaturas do proprietário, do profissional técnico e dos confinantes. Portanto, não cabe descontar pela suposta ausência da assinatura do responsável técnico. Permanece uma possível incompletude quanto à declaração específica do requerente de que respeitou os limites.
+
+Essa incompletude foi utilizada nos critérios 1 e 2 sem demonstrar efeitos distintos. Em B, a ausência de conclusão afirmativa também fundamentou descontos nos dois critérios. Ambos os casos exigem revisão para evitar dupla penalização.
+
+O “Não” inicial de B responde à atribuição da obrigatoriedade aos §§ 1º e 2º, que ela descreve como regras de forma e assinatura. Não equivale necessariamente a negar a exigência de declaração quando houver retificação. O juiz deve considerar a resposta integral e distinguir essas duas proposições.
+
+O desconto pela ausência da condição específica de dispensa descrita no gabarito é justificável para ambas. Entretanto, as ressalvas de B sobre fontes e atualização normativa não devem receber crédito por si mesmas, pois não correspondem às condições essenciais da referência.
+
+A classificação de B também precisa acompanhar a interpretação adotada: se houver contradição essencial, seria “Divergente”; se houver apenas incompletude ou diferença de enquadramento, “Parcialmente conforme” é defensável.
+
+Preservar o julgamento original e registrar a necessidade de revisão da pontuação e da justificativa do vencedor. Esta análise utiliza exclusivamente o material fornecido, sem validação jurídica externa.

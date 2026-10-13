@@ -1,0 +1,33 @@
+**Resposta direta**
+A documentação da Junta Comercial a ser apresentada ao Registro de Imóveis varia conforme o tipo de ato pretendido. Para a comprovação de representação em incorporações imobiliárias, a norma local exige os atos constitutivos vigentes acompanhados de certidão simplificada recente [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 1047]. Já em transmissões de bens por conferência ao capital, a certidão dos atos arquivados é o título hábil [Lei nº 8.934, de 18 de novembro de 1994, art. 64]. Quanto aos demais artigos consultados (art. 809, § 4º; art. 910, § 5º; e art. 352, VII do CNPFE/GO), não foram localizados na base deste cartório, impossibilitando verificar eventuais regras específicas neles contidas.
+
+---
+
+### **Fundamentação legal**
+
+A análise dos atos societários e das certidões da Junta Comercial no Registro de Imóveis fundamenta-se nas seguintes regras:
+
+- **Incorporação imobiliária (representação e certidão simplificada):** quando o incorporador for pessoa jurídica, incumbe ao oficial verificar a regularidade da representação societária com base no contrato social e suas posteriores alterações (ou estatuto social acompanhado da ata da assembleia de eleição da diretoria vigente), devendo ser exigida, acompanhada dos atos constitutivos, a **Certidão Simplificada da Junta Comercial emitida em prazo não superior a 30 (trinta) dias** da protocolização [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 1047]. Caso a pessoa jurídica seja representada por procurador, deve ser apresentado conjuntamente o respectivo mandato [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 1047].
+- **Escrituras públicas × instrumentos particulares:** não serão exigidos os atos constitutivos e alterações utilizados na lavratura de escrituras públicas se o tabelião os identificou no instrumento e verificou a validade e a outorga de poderes, ressalvada a necessidade para manter a continuidade ou a especialidade [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 808]. Todavia, os atos constitutivos e alterações **são exigidos** quando o título for instrumento particular (mesmo com força de escritura pública), salvo se já arquivados na Central de Registro de Imóveis ou na própria serventia [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 808].
+- **Integralização e aumento de capital com imóveis:** a certidão dos atos de constituição e de alteração fornecida pelas Juntas Comerciais em que foram arquivados constitui o documento hábil para a transferência do imóvel ao patrimônio da pessoa jurídica no registro competente [Lei nº 8.934, de 18 de novembro de 1994, art. 64] e [Decreto nº 1.800, de 30 de janeiro de 1996, art. 85].
+
+*Dispositivos não localizados:* Os artigos 809, § 4º; 910, § 5º; e 352, VII do Código de Normas e Procedimentos não constam no material recuperado da base deste cartório, não sendo possível afirmar quais exigências específicas são por eles fixadas.
+
+---
+
+### **No seu cartório**
+
+O manual interno do cartório, com respaldo nos enunciados do CORI/GO, estabelece as seguintes rotinas de qualificação:
+
+- **Integralização de capital social:** a transferência de imóveis para pessoa jurídica é feita por certidão de arquivamento da Junta Comercial; se a certidão não contiver a descrição e os dados dos imóveis integralizados, devem ser apresentados também os atos de constituição e de alteração arquivados na Junta Comercial [MACEQ – Manual de Condutas, Ética e Qualidade, versão 1.2, Janeiro/2021, item 3.3, p. 83].
+- **Validade temporal das certidões da Junta Comercial:** certidões que reproduzam o conteúdo de contratos ou estatutos sociais podem ser aceitas independentemente da data de sua emissão, desde que seja confirmada a autenticidade pelo código no site do órgão.
+- **Forma documental:** documentos comprobatórios exigidos na qualificação registral devem ser apresentados em via original ou cópia autenticada.
+
+Quer que eu detalhe o checklist/procedimento daqui?
+
+---
+
+### **⚠️ Atenção**
+- Na incorporação imobiliária, a **Certidão Simplificada da Junta Comercial** possui prazo de emissão fixado estritamente em até **30 dias** antes da protocolização [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 1047], constituindo exceção à regra geral do manual interno que dispensa prazo de validade para certidões societárias cadastrais.
+
+*Recomenda-se conferir se não houve alteração posterior nas normas da Corregedoria-Geral da Justiça local quanto aos dispositivos ausentes do acervo.*

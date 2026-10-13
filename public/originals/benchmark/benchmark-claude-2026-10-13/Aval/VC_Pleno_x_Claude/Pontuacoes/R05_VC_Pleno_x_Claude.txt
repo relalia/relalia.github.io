@@ -1,0 +1,118 @@
+## 1\. Tabela de avaliação
+
+| Critério | Resposta A | Resposta B |
+| --- | --- | --- |
+| 1\. Conclusão e orientação prática (0–4) | 4,0 | 3,0 |
+| 2\. Fundamentação e informações essenciais (0–4) | 2,0 | 2,0 |
+| 3\. Condições, limites e ressalvas (0–2) | 1,5 | 1,0 |
+| Nota total (0–10) | 7,5 | 6,0 |
+| Classificação | Parcialmente conforme | Parcialmente conforme |
+
+## 2\. Análise da resposta A
+
+### Critério 1 — Conclusão e orientação prática: 4,0/4
+
+Acertos:
+
+- Responde diretamente que uma procuração pública pode ter vários outorgantes.
+- Apresenta exemplos compatíveis com a referência, como casais, herdeiros e coproprietários.
+- Orienta sobre a identificação dos participantes e a individualização dos poderes no instrumento.
+
+Omissões e limitações:
+
+- Não explica expressamente que os poderes podem ser idênticos ou distintos para cada outorgante.
+- Não aborda de maneira completa a necessidade de compatibilidade entre os objetos da representação.
+
+Essas omissões não alteram a conclusão principal, razão pela qual a pontuação é máxima neste critério.
+
+### Critério 2 — Fundamentação e informações essenciais: 2,0/4
+
+Acertos:
+
+\- Explica a possibilidade de pluralidade de outorgantes e descreve procedimentos práticos de lavratura.
+
+Omissões:
+
+- Não menciona o Código Civil, fato obrigatório da avaliação.
+- Não apresenta a fundamentação da referência nos arts. 653 e 104 do Código Civil.
+- Não explicita os requisitos de validade do negócio jurídico nem fundamenta a ausência de vedação legal.
+
+O desconto decorre principalmente da ausência de fundamentação normativa e dos requisitos essenciais presentes na referência.
+
+### Critério 3 — Condições, limites e ressalvas: 1,5/2
+
+Acertos:
+
+- Indica a necessidade de clareza na definição dos poderes e na identificação dos bens envolvidos.
+- Reconhece que a revogação pode produzir efeitos diferentes conforme a redação do instrumento.
+
+Omissões:
+
+- Não afirma expressamente que todos os outorgantes devem possuir capacidade para o ato e manifestar individualmente sua vontade.
+- Não trata especificamente da limitação de poderes sobre bens ou direitos pertencentes apenas a um dos outorgantes.
+
+A orientação é amplamente compatível com a referência, mas não contempla todas as condições destacadas por ela.
+
+Informação não verificável pela referência: as afirmações sobre canais do e-Notariado, exigências de comparecimento, preferência de bancos ou registros e efeitos específicos da revogação não podem ser confirmadas nem contraditas apenas com o texto de referência.
+
+## 3\. Análise da resposta B
+
+### Critério 1 — Conclusão e orientação prática: 3,0/4
+
+Acertos:
+
+- Responde afirmativamente à pergunta.
+- Reconhece a possibilidade de vários outorgantes no mesmo instrumento.
+- Destaca a identificação e qualificação dos participantes.
+
+Omissões e limitações:
+
+- Não desenvolve uma orientação prática tão alinhada à referência sobre a individualização dos poderes de cada outorgante.
+- A ressalva de que instrumentos separados são recomendáveis quando os negócios forem independentes não equivale exatamente à condição da referência, que admite poderes distintos desde que claramente individualizados e exige identidade ou compatibilidade dos objetos.
+
+A conclusão principal está alinhada, mas a orientação prática apresenta uma restrição adicional cuja necessidade não é demonstrada pela referência.
+
+### Critério 2 — Fundamentação e informações essenciais: 2,0/4
+
+Acertos:
+
+- Menciona expressamente o Código Civil, cumprindo o fato obrigatório.
+- Cita o art. 680 do Código Civil e apresenta fundamentação relacionada à pluralidade de mandantes.
+- Aborda requisitos de identificação e formalização do ato.
+
+Omissões:
+
+- Não menciona os arts. 653 e 104 do Código Civil indicados na referência.
+- Não explica os requisitos de validade do negócio jurídico da mesma forma que a referência.
+- Não explicita suficientemente que a vontade de cada outorgante deve ser individualmente manifestada e que os poderes podem variar entre eles.
+
+A citação do Código Civil conta positivamente, mas não substitui a análise dos fundamentos e requisitos centrais da referência.
+
+Limitação da comparação: a referência não menciona o art. 680 nem trata da solidariedade entre mandantes. Portanto, essa fundamentação adicional não deve ser considerada falsa ou incorreta apenas por não constar no gabarito. Sua correção jurídica independente não é avaliada aqui.
+
+### Critério 3 — Condições, limites e ressalvas: 1,0/2
+
+Acertos:
+
+- Destaca a identificação dos outorgantes e a necessidade de assinaturas.
+- Reconhece que a outorga conjunta é especialmente pertinente quando há interesse ou patrimônio compartilhado.
+
+Omissões e limitações:
+
+- Não aborda adequadamente o requisito de capacidade de todos os outorgantes.
+- Não desenvolve a individualização dos poderes relativos a bens ou direitos específicos.
+- A recomendação de instrumentos autônomos para negócios independentes introduz uma restrição prática que não está estabelecida na referência como exigência geral.
+
+Informações não verificáveis pela referência: as citações ao Código de Normas e Procedimentos, ao manual interno do cartório, aos procedimentos de validação e aos documentos exigidos não podem ser confirmadas nem contraditas com o material fornecido. Não recebem prêmio ou penalidade por si só.
+
+## 4\. Resultado
+
+## A venceu
+
+Resposta A## 7,5/10
+
+Resposta B## 6,0/10
+
+Diferença: 1,5 ponto.
+
+Justificativa final: A resposta A vence por oferecer orientação prática mais alinhada à referência e apresentar menos restrições adicionais à outorga conjunta. A resposta B também acerta a conclusão e menciona o Código Civil, mas sua fundamentação deixa de desenvolver requisitos importantes da referência e acrescenta ressalvas práticas não confirmadas pelo gabarito. Nenhuma das duas alcança 8 pontos, e ambas são classificadas como parcialmente conformes.

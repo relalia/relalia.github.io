@@ -1,0 +1,72 @@
+## 1\. Tabela de avaliação
+
+| Critério | Resposta A | Resposta B |
+| --- | --- | --- |
+| 1\. Conclusão e orientação prática (0–4) | 1,5 | 3,0 |
+| 2\. Fundamentação e informações essenciais (0–4) | 1,5 | 3,0 |
+| 3\. Condições, limites e ressalvas (0–2) | 1,5 | 1,0 |
+| Nota total | 4,5/10 | 7,0/10 |
+| Classificação | Parcialmente conforme | Parcialmente conforme |
+
+## 2\. Análise da resposta A
+
+Acertos
+
+- Reconhece a relevância de certidões da Junta Comercial para comprovar atos societários.
+- Distingue certidão simplificada de certidão específica ou de inteiro teor, abordando a diferença entre resumir a situação atual da sociedade e comprovar atos arquivados.
+- Identifica corretamente, em relação à referência, que os dispositivos questionados precisam ser analisados para determinar suas exigências específicas.
+- Evita afirmar que verificou o conteúdo dos artigos quando declara não ter conseguido acessá-los.
+
+Omissões
+
+- Não apresenta de forma completa a orientação central da referência: os atos constitutivos e suas alterações devem ser acompanhados de certidão emitida pelo órgão de registro.
+- Não explica especificamente que o art. 910, § 5º, considera a certidão dos atos de constituição, alteração ou extinção documento hábil para a transferência de bens no Registro de Imóveis.
+- Não identifica os prazos distintos de 90 dias para a certidão simplificada mencionada no art. 352, VII, e de 30 dias para a incorporação imobiliária, conforme o art. 1.047.
+- Não explicita a exigência do art. 809, § 4º, de certidão específica contendo o histórico dos atos registrados.
+
+Contradições e informações não verificáveis
+
+- Não há contradição direta com a referência na ressalva de que não conseguiu confirmar o conteúdo dos artigos.
+- As afirmações sobre a legislação geral, os documentos para representação societária e os tipos de certidão aceitos em outras situações são não verificáveis pela referência. Não devem, portanto, gerar penalização por si sós.
+- A resposta não resolve a questão central sobre as exigências diferenciadas previstas nos quatro artigos.
+
+Justificativa da nota: a resposta é prudente e contém informações úteis, mas sua conclusão prática é insuficiente e faltam os principais requisitos e prazos que compõem a referência.
+
+## 3\. Análise da resposta B
+
+Acertos
+
+- Apresenta uma orientação prática direta: atos constitutivos, contratos sociais, estatutos e alterações arquivados na Junta Comercial, acompanhados de certidão.
+- Reconhece que as exigências variam conforme o ato societário.
+- Identifica a certidão de atos constitutivos e de alteração como documento hábil para a transferência de bens, em linha com a ideia central do art. 910, § 5º, na referência.
+- Menciona a certidão simplificada com prazo de até 30 dias para incorporação imobiliária, alinhando-se à referência quanto ao art. 1.047.
+- Aborda a documentação para comprovação da representação societária, embora esse detalhamento não seja inteiramente confirmado pelo texto de referência.
+
+Omissões
+
+- Não explica a exigência do art. 809, § 4º, de certidão específica contendo o histórico dos atos registrados.
+- Não menciona o prazo de até 90 dias para a certidão simplificada previsto no art. 352, VII.
+- Não esclarece que a referência exige certidão dos atos de constituição, alteração ou extinção para a finalidade indicada no art. 910, § 5º.
+- Não diferencia claramente o prazo de 30 dias para a certidão simplificada daquele também mencionado na referência para a certidão específica contendo todos os arquivamentos.
+
+Contradições e informações não verificáveis
+
+- A afirmação de que devem ser apresentadas “duas vias originais”, com rubricas e reconhecimento de firma, não encontra confirmação na referência. É não verificável pela referência, não uma contradição demonstrada.
+- As exigências adicionais sobre publicidade, anuência conjugal, integralização de imóveis e documentos específicos são igualmente não verificáveis pela referência.
+- A afirmação de que certidões podem ser aceitas independentemente da data de emissão, desde que autenticadas, não pode ser generalizada a partir da referência. Esta estabelece prazos específicos de 90 e 30 dias para situações determinadas. Como a resposta B não delimita claramente a ressalva a outras situações, há uma tensão com as condições expressas no gabarito, mas não é possível afirmar uma contradição absoluta para todos os atos.
+
+Justificativa da nota: a resposta B oferece uma orientação mais próxima da conclusão humana e contempla expressamente a transferência de bens e o prazo de 30 dias para incorporação imobiliária. Perde pontos principalmente pela omissão da certidão específica com histórico dos atos e do prazo de 90 dias, além da inclusão de exigências adicionais não confirmadas.
+
+## 4\. Resultado
+
+## B venceu
+
+Resposta A### 4,5/10
+
+Resposta B### 7,0/10
+
+Diferença: 2,5 pontos
+
+## 5\. Justificativa final
+
+A resposta B é mais alinhada à referência porque apresenta os documentos societários acompanhados de certidão, reconhece a aptidão da certidão para transferência de bens e menciona o prazo de 30 dias para incorporação imobiliária. A resposta A é mais cautelosa quanto à verificação normativa, mas deixa sem resposta os requisitos concretos dos quatro artigos. Nenhuma das respostas reproduz integralmente a distinção entre os prazos e os tipos de certidão estabelecida pela referência. As informações adicionais de ambas que não podem ser confirmadas nem contraditas pelo gabarito foram tratadas como não verificáveis, sem penalização automática.

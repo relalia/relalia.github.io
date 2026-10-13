@@ -1,0 +1,22 @@
+**Sim, o tabelião pode lavrar a escritura.** Mas "normalmente" precisa de duas ressalvas.
+
+**Fundamento.** O parágrafo único do art. 320-F do Código Nacional de Normas (Provimento CNJ 149/2023), incluído pelo Provimento CNJ 188/2024, que revogou o Provimento 39/2014 e instituiu a CNIB 2.0, estabelece que a existência de ordem de indisponibilidade não impede a lavratura de escritura pública, mas obriga que as partes sejam cientificadas, bem como que a circunstância seja consignada no ato notarial.
+
+**Como proceder, na prática:**
+
+1. **Consultar a CNIB.** A consulta é obrigatória e o resultado deve constar do ato (art. 320-F, § 3º, segundo a doutrina que comenta o Provimento 188).
+2. **Cientificar as partes** da indisponibilidade, em especial o comprador, sobre o risco quanto ao registro.
+3. **Consignar na escritura** a existência da ordem (órgão, processo, data) e a ciência das partes.
+4. **Documentar a anterioridade.** Fazer constar os dados da promessa de compra e venda quitada e arquivar o instrumento e as provas do pagamento, com prova de data certa (reconhecimento de firma, registro etc.). A anterioridade à decretação da indisponibilidade é o que sustenta a tese do comprador.
+
+**Ressalvas.**
+
+- **O registro é outra etapa.** A lavratura é permitida, mas a indisponibilidade continua impedindo o registro do título. Se a escritura for levada ao Registro de Imóveis, o registrador pode exigir autorização do juízo que decretou a medida, no caso a Justiça Federal. A tese da promessa anterior quitada (em linha com a Súmula 375/STJ e a lógica da proteção ao adquirente de boa-fé) costuma ser levada ao próprio juízo para obter o levantamento ou a autorização. O tabelião não decide esse mérito. Ele apenas lavra, adverte e documenta.
+- **Há regra específica para a adjudicação compulsória.** Os dispositivos do Provimento 188 sobre essa via (Lei 13.465/2017) dispensam autorização da autoridade ordenadora. Isso não se aplica automaticamente à escritura de compra e venda comum.
+- **Confira o texto vigente e as normas locais.** Não consegui abrir o texto integral e atualizado do CNN. Confira a redação atual dos arts. 320-A e seguintes e as normas da Corregedoria do seu estado.
+
+Sources:
+- [Provimento CNJ 188/2024 – atos.cnj.jus.br](https://atos.cnj.jus.br/atos/detalhar/5897)
+- [CNB/SP – Provimento 188/2024](https://cnbsp.org.br/2024/12/11/cnj-publica-provimento-no-188-2024-que-trata-sobre-o-funcionamento-da-central-nacional-de-indisponibilidade-de-bens-cnib-2-0/)
+- [Conjur – análise do Provimento 188](https://www.conjur.com.br/?p=831559)
+- [Jus.com.br – art. 320-F, § 3º](https://jus.com.br/artigos/112392/concentracao-legal-prioridade-registral-e-a-arrepsia-da-indisponibilidade-regrada-no-provimento-188-do-cnj-arrebatamento-matricial)

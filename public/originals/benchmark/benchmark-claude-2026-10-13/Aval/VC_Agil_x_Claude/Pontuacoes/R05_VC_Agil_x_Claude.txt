@@ -1,0 +1,71 @@
+## 1\. Tabela de avaliação
+
+| Critério | Resposta A | Resposta B |
+| --- | --- | --- |
+| 1\. Conclusão e orientação prática (0–4) | 4,0 | 4,0 |
+| 2\. Fundamentação e informações essenciais (0–4) | 2,0 | 2,0 |
+| 3\. Condições, limites e ressalvas (0–2) | 1,5 | 1,0 |
+| Nota total (0–10) | 7,5 | 7,0 |
+| Classificação | Parcialmente conforme | Parcialmente conforme |
+
+## 2\. Análise da resposta A
+
+Acertos
+
+- Responde diretamente que uma procuração pública pode ter vários outorgantes, em concordância com a referência.
+- Apresenta exemplos compatíveis com os da referência, como casais, herdeiros e coproprietários.
+- Ressalta a necessidade de identificar os outorgantes e especificar claramente os poderes conferidos.
+- Reconhece que os poderes podem variar conforme o bem ou ato envolvido, aproximando-se da orientação de individualização da referência.
+
+Omissões
+
+- Não menciona expressamente o Código Civil, deixando de atender ao fato obrigatório indicado na avaliação.
+- Não apresenta a fundamentação pelos artigos 653 e 104 do Código Civil, nem explicita os requisitos de capacidade, licitude do objeto e validade do negócio jurídico.
+- Não destaca expressamente a necessidade de compatibilidade quanto ao objeto da representação e de manifestação individual da vontade de cada outorgante.
+
+Informações não verificáveis pela referência
+
+- As afirmações sobre assinatura por canais notariais eletrônicos, revogação individual dos poderes e preferência de bancos ou registros por uma procuração conjunta não podem ser confirmadas nem contraditas com base na referência.
+- A possibilidade de procurações separadas também é informação adicional, sem impacto direto na conclusão principal.
+
+Justificativa da nota: a conclusão e a orientação prática estão plenamente alinhadas. A pontuação de fundamentação é parcial pela ausência do Código Civil e dos fundamentos essenciais expressamente apresentados na referência. As ressalvas práticas são úteis, mas não abrangem integralmente as condições indicadas no texto humano.
+
+## 3\. Análise da resposta B
+
+Acertos
+
+- Responde afirmativamente à pergunta e reconhece a possibilidade de múltiplos outorgantes em uma mesma procuração pública.
+- Menciona expressamente o Código Civil, atendendo ao fato obrigatório.
+- Destaca a qualificação dos outorgantes, a assinatura de todos e a clareza na descrição dos poderes, em consonância com a referência.
+- Apresenta exemplos de negócios comuns envolvendo cônjuges, sócios e coproprietários.
+
+Omissões
+
+- Não desenvolve os requisitos gerais de validade do negócio jurídico previstos no artigo 104 do Código Civil, mencionados na referência.
+- Não explica de forma suficiente que cada outorgante manifesta sua própria vontade nem que os poderes podem ser diferentes para cada um, desde que individualizados.
+- Não aborda expressamente a compatibilidade do objeto da representação como condição para a outorga conjunta.
+
+Contradições ou limitações
+
+- A afirmação de que cada outorgante deve ser pessoalmente identificado e assinar o instrumento é compatível, em linhas gerais, com a referência.
+- A menção à responsabilidade solidária, atribuída ao artigo 680 do Código Civil, não é desenvolvida na referência. Portanto, sua correção jurídica não pode ser determinada nesta comparação.
+- A resposta dá destaque a regras sobre múltiplos procuradores, embora a pergunta trate de múltiplos outorgantes. Essa distinção reduz a precisão da fundamentação em relação ao foco da referência.
+
+Informações não verificáveis pela referência
+
+- As citações aos artigos 449, 450, 453 e 455 do Código de Normas e Procedimentos, assim como os procedimentos específicos de assinatura e registro no livro de procurações, não podem ser confirmados nem contraditos com base exclusivamente no texto humano.
+- A exigência de responsabilidade solidária expressa no instrumento não é estabelecida pela referência e, por isso, não deve ser considerada correta nem incorreta nesta avaliação.
+
+Justificativa da nota: a conclusão está alinhada e a resposta menciona o Código Civil. Entretanto, parte da fundamentação se concentra em regras sobre procuradores, e não sobre a pluralidade de outorgantes, enquanto faltam elementos centrais da referência sobre a vontade individual e a individualização dos poderes.
+
+## 4\. Resultado
+
+## A venceu
+
+Resposta A## 7,5
+
+Resposta B## 7,0
+
+A resposta A apresenta maior alinhamento com a orientação prática e com os exemplos da referência, além de manter o foco na pluralidade de outorgantes. A resposta B atende ao fato obrigatório de mencionar o Código Civil, mas sua fundamentação se afasta parcialmente do foco central ao dedicar espaço considerável à disciplina dos procuradores.
+
+Justificativa final: a vantagem de A é pequena. Ambas acertam a conclusão principal, mas omitem parte da fundamentação e das condições essenciais da referência. A nota superior de A decorre da maior aderência prática ao conteúdo de referência, não da extensão ou da qualidade estilística. As informações normativas adicionais de B permanecem não verificáveis, sem penalização automática por sua mera presença.

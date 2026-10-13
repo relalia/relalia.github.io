@@ -1,0 +1,26 @@
+**Resposta direta**
+**Sim.** Uma procuração pública pode perfeitamente ser outorgada e assinada por mais de uma pessoa no mesmo instrumento (pluralidade de outorgantes), desde que todas sejam plenamente identificadas, qualificadas e compareçam para assinar o ato notarial.
+
+---
+
+### Fundamentação legal
+
+- **Pluralidade de mandantes e solidariedade:** O mandato conferido por duas ou mais pessoas para a realização de um negócio comum é expressamente admitido pela legislação civil, hipótese em que cada outorgante responde solidariamente perante o mandatário pelos compromissos e efeitos do mandato, ressalvado o direito de regresso contra os demais [Lei nº 10.406, de 10 de janeiro de 2002, art. 680].
+- **Capacidade e assinatura no ato:** Toda pessoa capaz tem aptidão para outorgar mandato por instrumento público, cabendo ao tabelião de notas ou preposto autorizado qualificar e identificar pessoalmente cada um dos outorgantes, colhendo por autenticidade as respectivas assinaturas no livro próprio [Código de Normas e Procedimentos, de 18 de dezembro de 2020, art. 450].
+- **Requisitos estruturais do ato notarial:** Como qualquer escritura pública ou ato notarial, o instrumento deve conter expressamente a qualificação completa de todas as partes comparecentes e o encerramento com as assinaturas de todos os outorgantes [Código de Normas e Procedimentos, de 18 de dezembro de 2020, art. 352, III e XV].
+- **Documentação de suporte:** Tratando-se de outorga conjunta que envolva direitos reais sobre bens imóveis, exige-se a documentação de identificação de todos os outorgantes, comprovante de endereço e certidão de casamento/estado civil de cada um, conforme o caso [Código de Normas e Procedimentos, de 18 de dezembro de 2020, art. 455, II e III].
+
+---
+
+### No seu cartório
+
+O manual interno não restringe a existência de múltiplos outorgantes em um mesmo instrumento. No entanto, para a utilização prática de procurações em atos da serventia, adota-se rotina específica de controle [MACEQ – Manual de Condutas, Ética e Qualidade, versão 1.2, Janeiro/2021, item 3.2, p. 75]:
+- **Confirmação e validação do instrumento:** Toda procuração apresentada para a prática de qualquer ato deve ser confirmada junto ao cartório de origem (por telefone, e-mail institucional oficial ou malote digital), bem como validada por meio da consulta ao selo eletrônico no portal do Tribunal de Justiça e à Central de Escrituras e Procurações (CEP/CENSEC).
+
+Quer que eu detalhe o procedimento daqui?
+
+---
+
+### ⚠️ Atenção
+- **Negócio comum × negócios distintos:** A outorga conjunta em um mesmo instrumento é plenamente cabível quando as partes possuem um interesse ou patrimônio compartilhado (como cônjuges, coproprietários de um imóvel ou sócios). Se os atos pretendidos forem totalmente independentes e relativos a patrimônios distintos sem qualquer conexão fática ou jurídica, recomenda-se a lavratura de instrumentos autônomos para evitar tumulto documental e complexidade na revogação parcial.
+- **Ressalva de vigência:** As exigências normativas acima refletem as disposições consolidadas na base de normas deste cartório, sendo recomendável verificar se não houve alteração normativa posterior na esfera local ou federal.

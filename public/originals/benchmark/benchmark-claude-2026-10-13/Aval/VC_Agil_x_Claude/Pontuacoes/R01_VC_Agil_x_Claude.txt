@@ -1,0 +1,63 @@
+## 1. Tabela de avaliação
+
+| Critério | Resposta A | Resposta B |
+| --- | --- | --- |
+| 1. Conclusão e orientação prática (0–4) | 4,0 | 2,5 |
+| 2. Fundamentação e informações essenciais (0–4) | 4,0 | 2,5 |
+| 3. Condições, limites e ressalvas (0–2) | 2,0 | 0,5 |
+| Nota total | 10,0 | 5,5 |
+| Classificação | Conforme | Parcialmente conforme |
+
+## 2. Análise das respostas
+
+### Resposta A — 10,0/10
+
+Acertos:
+
+- Apresenta a conclusão central da referência: a indisponibilidade não impede a lavratura da escritura.
+- Prevê a consulta à CNIB, a ciência expressa das partes e a consignação da restrição no ato notarial.
+- Distingue corretamente, em relação à referência, a lavratura da escritura da possibilidade de registro do título.
+- Afirma expressamente que o tabelião não pode decidir, por conta própria, o mérito da alegação de anterioridade da promessa de compra e venda.
+- Ressalva que a quitação anterior não garante automaticamente o registro e menciona a possibilidade de intervenção judicial.
+
+Omissões e informações adicionais:
+
+- A referência exige que se ressalve expressamente na escritura a possibilidade de o título não ser registrado enquanto vigente a indisponibilidade. A resposta A aborda esse risco, embora sem reproduzir integralmente essa formulação.
+- A recomendação de documentar a anterioridade e arquivar provas de pagamento é uma orientação adicional, não verificável pela referência.
+- As menções à adjudicação compulsória, à Súmula 375 do STJ e a outros atos normativos são informações adicionais cuja correção não pode ser avaliada exclusivamente pelo texto de referência.
+
+Pontuação: recebe nota máxima porque preserva a conclusão, contempla as providências essenciais e respeita o limite de atuação do tabelião estabelecido pela referência. As informações adicionais não justificam penalização por si sós.
+
+### Resposta B — 5,5/10
+
+Acertos:
+
+- Reconhece que a indisponibilidade não impede a lavratura da escritura.
+- Menciona a consulta à CNIB, a ciência expressa das partes e a consignação da restrição no ato notarial.
+- Identifica a quitação anterior à decretação da indisponibilidade como elemento relevante para a situação apresentada.
+
+Omissões:
+
+- Não ressalva adequadamente que o título pode não ser registrado enquanto a indisponibilidade estiver vigente.
+- Não esclarece que a análise da eficácia da promessa anterior, de eventual direito do comprador e da possibilidade de afastar a restrição cabe ao Registro de Imóveis e, se necessário, ao juízo competente.
+- Não alerta de maneira suficiente que o tabelião não pode concluir, por conta própria, que o imóvel está livre para registro.
+
+Contradições relevantes:
+
+- O trecho “a indisponibilidade não constitui óbice absoluto para a lavratura” está alinhado à referência, mas a afirmação de que a quitação anterior torna o título um ato jurídico perfeito, “autorizando a formalização da escritura”, vai além do que o gabarito permite concluir.
+- A resposta B apresenta a anterioridade da quitação como fundamento para autorizar a formalização, sem distinguir adequadamente a lavratura da escritura da possibilidade de registro. Isso enfraquece uma ressalva central da referência.
+- A frase “No seu cartório” sugere conhecimento sobre os procedimentos de uma serventia específica que não foi fornecido. Essa alegação é não verificável pela referência e não acrescenta fundamento válido à avaliação.
+
+Pontuação: recebe crédito pela conclusão inicial e pelas formalidades notariais, mas perde pontos pela ausência dos limites essenciais relativos ao registro e pela atribuição de efeito conclusivo à quitação anterior.
+
+## 3. Resultado
+
+# A venceu
+
+Diferença: 4,5 pontos
+
+A: 10,0/10 · B: 5,5/10
+
+## 4. Justificativa final
+
+A resposta A está mais alinhada à referência porque diferencia a autorização para lavrar a escritura da possibilidade de registrar o título e não atribui ao tabelião competência para afastar a indisponibilidade com base na quitação anterior. A resposta B acerta as formalidades iniciais, mas deixa de explicitar limites essenciais e sugere que a quitação anterior autoriza a formalização sem a ressalva necessária sobre o registro. A vitória de A decorre da maior concordância com a referência, não de uma verificação jurídica independente.

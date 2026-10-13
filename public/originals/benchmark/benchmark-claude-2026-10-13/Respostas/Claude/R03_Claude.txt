@@ -1,0 +1,16 @@
+Vou verificar o texto atual desses dispositivos do Código de Normas do Foro Extrajudicial de Goiás.
+
+Não consegui confirmar o texto dos arts. 809, § 4º, 910, § 5º, 352, VII, e 1.047 do CNPFE de Goiás, então não posso dizer se eles impõem exigências diferentes conforme o ato. As fontes que consegui abrir trazem só as primeiras páginas do Código (Provimento nº 46/2020), e o PDF consolidado do MPGO (atualizado até o Prov. 143/2025) bloqueou o acesso automatizado. Como o Código foi alterado várias vezes depois de 2021, inclusive pelos Provimentos 143/2025 e 175/2026, prefiro não afirmar o conteúdo desses artigos de memória.
+
+**O que vale em regra, pela legislação geral (não pelo CNPFE)**
+
+- **Constituição e existência da sociedade empresária:** o documento normalmente aceito é a certidão simplificada da Junta Comercial. Ela atesta o arquivamento do ato constitutivo, a situação atual, a sede, o capital e os administradores. Para empresário individual e EIRELI ou SLU, o mesmo vale quanto ao ato de inscrição ou constituição.
+- **Alterações contratuais e demais atos societários:** em regra se exige certidão do próprio ato arquivado (certidão específica ou de inteiro teor, ou cópia com o número e a data do arquivamento). Isso vale, por exemplo, para a deliberação que autoriza a venda do imóvel, para cisão, fusão, incorporação, cessão de quotas ou mudança de administradores ou de sede. A certidão simplificada só resume o estado atual, não prova a deliberação.
+- **Poderes de quem assina:** o Registro de Imóveis costuma conferir a representação pelo contrato social ou estatuto, por ata de eleição ou por procuração. A certidão simplificada atualizada ajuda, mas nem sempre basta sozinha.
+- **Sociedades não empresárias** (simples, associações, fundações) não passam pela Junta. O documento vem do Registro Civil de Pessoas Jurídicas.
+
+Se esses quatro artigos distinguem entre constituição, alteração, extinção ou transferência de sede, a distinção estaria no tipo de certidão exigida (simplificada, específica ou inteiro teor) e na atualidade dela.
+
+Se você colar o texto desses dispositivos (ou o trecho do Livro IX, Registro de Imóveis, em que aparecem), comparo as exigências artigo por artigo. O texto vigente está na página da Corregedoria do Foro Extrajudicial do TJGO, que tem o Código consolidado e os provimentos mais recentes.
+
+Sources: [Código de Normas do Foro Extrajudicial (TJGO, 2021)](https://docs.tjgo.jus.br/corregedoria/NovoCodigoNormasProcedimentosForoExtrajudicial.pdf) · [Provimento 175/2026 (TJGO)](https://www.tjgo.jus.br/files/2026/01%20-%20Janeiro/Provimento%20175-2026.pdf)

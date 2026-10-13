@@ -1,0 +1,74 @@
+## 1\. Tabela de avaliação
+
+A avaliação considera exclusivamente a pergunta, a resposta humana de referência e as respostas A e B. O ponto central é a concordância com a referência, especialmente a obrigatoriedade da declaração e a distinção entre os §§ 1º e 2º e o § 3º, I, do art. 440-AX.
+
+| Critério | Máximo | Resposta A | Resposta B |
+| --- | --- | --- | --- |
+| 1\. Conclusão e orientação prática | 4,0 | 4,0 | 2,0 |
+| 2\. Fundamentação e informações essenciais | 4,0 | 3,0 | 3,0 |
+| 3\. Condições, limites e ressalvas | 2,0 | 1,5 | 1,5 |
+| Nota total | 10,0 | 8,5 | 6,5 |
+| Classificação | — | Conforme | Parcialmente conforme |
+
+## 2\. Análise individual
+
+### Resposta A — 8,5/10
+
+Critério 1 — Conclusão e orientação prática: 4,0/4,0
+
+- Acerto: responde diretamente “Sim” e relaciona a declaração ao procedimento de retificação de área e à adequação perimetral e georreferenciamento.
+- Alinhamento: reconhece a exigência de declaração de respeito aos limites e apresenta orientações sobre sua formalização.
+- Limitação: a conclusão não reproduz integralmente a exigência específica da referência quanto à declaração do próprio requerente e às assinaturas dos proprietários confrontantes e do responsável técnico. Essa insuficiência é considerada no critério 2, sem novo desconto neste critério.
+
+Critério 2 — Fundamentação e informações essenciais: 3,0/4,0
+
+- Acerto: identifica o art. 440-AX, §§ 1º e 2º, e descreve as formas de apresentação das declarações e os requisitos de assinatura.
+- Omissão: não explicita, na resposta direta, todos os elementos indicados pela referência: declaração do requerente, anuência dos confrontantes e assinatura do responsável técnico.
+- Informação adicional: menciona o Provimento nº 149/2023, os arts. 212 e 213 da Lei nº 6.015/1973 e outras normas. Essas informações adicionais não podem ser integralmente confirmadas nem contraditas pela referência.
+
+Critério 3 — Condições, limites e ressalvas: 1,5/2,0
+
+- Acerto: identifica hipóteses de dispensa de anuência no § 3º e ressalva a necessidade de verificar eventuais alterações normativas.
+- Limitação: não destaca especificamente a condição descrita na referência de que a matrícula do imóvel objeto do georreferenciamento indique expressamente seus marcos como confrontantes.
+- Informação adicional não verificável: as hipóteses envolvendo bens públicos, notificações e exigências operacionais do cartório não são avaliáveis com base apenas na referência.
+
+Classificação: Conforme. A resposta acompanha a conclusão principal e apresenta fundamentação compatível com o núcleo da referência, embora omita alguns detalhes.
+
+### Resposta B — 6,5/10
+
+Critério 1 — Conclusão e orientação prática: 2,0/4,0
+
+- Problema central: começa com “Não”, embora a referência responda afirmativamente que a apresentação da declaração é necessária no contexto descrito.
+- Acerto parcial: distingue a regulamentação da forma e das assinaturas das declarações da questão mais ampla da obrigatoriedade no georreferenciamento.
+- Limitação: a negativa inicial pode levar a uma conclusão prática diferente da referência. A distinção entre o conteúdo dos parágrafos e a obrigação geral é pertinente, mas não elimina a divergência na resposta direta.
+
+Critério 2 — Fundamentação e informações essenciais: 3,0/4,0
+
+- Acerto: descreve a função dos §§ 1º e 2º quanto à forma de apresentação e à autenticação das assinaturas.
+- Acerto: identifica o § 3º, I, como dispositivo relacionado à dispensa de anuência, em consonância com a observação de revisão da referência.
+- Omissão: não confirma diretamente a exigência da declaração do próprio requerente, reconhecendo que o § 13 do art. 213 da LRP não foi confirmado em seu texto exato.
+- Informação adicional não verificável: a referência ao Provimento CNJ 195/2025, à compilação privada e à crítica doutrinária não pode ser validada ou refutada com o material fornecido.
+
+Critério 3 — Condições, limites e ressalvas: 1,5/2,0
+
+- Acerto: diferencia a regra de declaração das hipóteses de dispensa de anuência e apresenta ressalvas quanto à confirmação do texto normativo.
+- Limitação: a resposta não esclarece a condição específica indicada na referência relativa à matrícula do imóvel e aos marcos de confrontação.
+- Informação adicional não verificável: as observações sobre controle registral, falsidade, grilagem e exigências complementares não podem ser julgadas a partir da referência humana.
+
+Classificação: Parcialmente conforme. Contém explicações relevantes sobre os dispositivos, mas a negativa inicial prejudica a concordância com a conclusão da referência.
+
+## 3\. Resultado
+
+Resposta A
+
+## 8,5/10
+
+Resposta B
+
+## 6,5/10
+
+Vencedora: Resposta A.
+
+## 4\. Justificativa final
+
+A resposta A é mais alinhada à referência porque responde afirmativamente e reconhece a exigência de declaração de respeito aos limites, com indicação das formalidades pertinentes. A resposta B apresenta uma distinção útil entre os parágrafos e o dever geral de declarar, mas sua negativa inicial diverge da conclusão humana. Ambas reconhecem aspectos relevantes do art. 440-AX, e as informações adicionais não verificáveis não foram usadas, por si só, para penalizar nenhuma das respostas.

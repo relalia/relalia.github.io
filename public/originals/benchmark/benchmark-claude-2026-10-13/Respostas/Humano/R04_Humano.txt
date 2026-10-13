@@ -1,0 +1,21 @@
+A matrícula deve conter obrigatoriamente o Código Nacional de Matrícula (CNM) e a indicação da área, expressa em metros quadrados (m²) para imóveis urbanos ou em hectares (ha) para imóveis rurais.
+
+Devem ser incluídos dados detalhados de localização, como logradouro completo e bairro, para imóveis urbanos, ou vila e povoado, para imóveis rurais, além do CEP em ambos os casos.
+
+A identificação exige, ainda, a descrição perimetral mediante georreferenciamento, que é obrigatória para imóveis rurais nos casos previstos em lei e para imóveis urbanos em situações de Reurb ou por requerimento do interessado. Para os demais imóveis rurais, a certificação da poligonal no Incra permanece facultativa, a critério do proprietário.
+
+É indispensável a consignação dos códigos dos cadastros obrigatórios:
+
+Imóveis rurais: CCIR, NIRF (ou CIB) e código do CAR;
+Imóveis urbanos: Cadastro Imobiliário Fiscal (CIF) e CIB.
+
+No caso de imóvel rural pertencente a pessoa jurídica, deve constar também a nacionalidade de quem possui a maioria do capital social da empresa.
+
+Essas informações devem ser inseridas no ato de abertura de novas matrículas ou mediante averbação de saneamento nas matrículas existentes, quando da prática do primeiro registro voluntário.
+
+O oficial de registro deve exigir o saneamento prévio de elementos omissos ou incorretos, podendo utilizar dados de escrituras públicas para regularizar o fólio real.
+
+Base legal: Art. 235-A da Lei nº 6.015/1973, regulamentado pelo art. 330 e art. 440-AQ, incisos I e II; art. 440-AQ, §§ 1º e 2º; inciso III, alíneas “a”, “b” e “c”; inciso IV, alíneas “a” e “b”, item 4; art. 440-AS; art. 440-AR, §§ 3º, 4º e 5º, do Provimento nº 149/2023-CNJ, atualizado pelo Provimento nº 195/2025; e arts. 176, §§ 3º a 5º, e 225, § 3º, da Lei nº 6.015/1973.
+
+Variações da pergunta (1)
+Considerando as disposições da Lei nº 6.015/1973 (Lei de Registros Públicos), especialmente os arts. 176, 225 e 235-A, bem como as normas estabelecidas pelo Provimento nº 149/2023 do CNJ, com as alterações introduzidas pelo Provimento nº 195/2025, quais são as informações e características do imóvel que devem constar obrigatoriamente na matrícula imobiliária e quais dados devem ser atualizados ou complementados quando estiverem ausentes ou divergentes?

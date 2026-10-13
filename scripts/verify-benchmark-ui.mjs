@@ -6,7 +6,10 @@ import fs from 'node:fs';
 import {randomBytes,randomUUID,pbkdf2Sync} from 'node:crypto';
 import {spawn} from 'node:child_process';
 import {once} from 'node:events';
-import benchmark from '../content/benchmark-2026-10-09.json' with {type:'json'};
+const benchmarkId=process.argv[2] || 'benchmark-2026-10-09';
+const benchmark=JSON.parse(fs.readFileSync(`content/${benchmarkId}.json`,'utf8'));
+const alternativeLabel=benchmark.alternativeLabel || 'ChatGPT gratuito';
+const alternativeKey=benchmark.questions[0].alternative?'alternative':'chatgpt';
 import {statistics,formatScore} from '../lib/benchmark-math.mjs';
 const base=process.env.RELALIA_TEST_URL || 'http://127.0.0.1:4174';
 const server=process.env.RELALIA_TEST_URL?null:spawn(process.execPath,['scripts/serve.mjs'],{env:{...process.env,RELALIA_PORT:'4174'},stdio:['ignore','pipe','inherit']});
@@ -17,10 +20,11 @@ const browser=await chromium.launch({headless:true,...(process.env.RELALIA_BROWS
 fs.mkdirSync('tmp/benchmark-ui',{recursive:true});
 const errors=[];
 try {
-  for(const width of [320,390,768,1440]) {
+  for(const width of (process.env.RELALIA_TEST_WIDTHS?process.env.RELALIA_TEST_WIDTHS.split(',').map(Number):[320,390,768,1440])) {
     const context=await browser.newContext({viewport:{width,height:1000},permissions:['clipboard-read','clipboard-write']});
     await context.route('**/access-config.json?*',route=>route.fulfill({json:config}));
     const page=await context.newPage();
+    await page.emulateMedia({reducedMotion:'reduce'});
     page.on('pageerror',error=>errors.push(error.message));
     await page.goto(`${base}/relatorios/${benchmark.id}/`);
     await page.getByLabel('Senha',{exact:true}).fill(password);
@@ -43,8 +47,8 @@ try {
     await point.focus();
     await page.keyboard.press('Tab');
     await page.keyboard.press('Shift+Tab');
-    assert.match(await point.getAttribute('aria-label'),/Q01.*Vadechat Ágil.*Divergente/);
-    assert.match(await page.locator('#tooltip-agil').innerText(),/Q01.*Vadechat Ágil.*2,0.*Divergente/);
+    assert.ok((await point.getAttribute('aria-label')).includes(benchmark.questions[0].comparisons.agil.scores.vadechat.classification));
+    assert.ok((await page.locator('#tooltip-agil').innerText()).includes(formatScore(benchmark.questions[0].comparisons.agil.scores.vadechat.total)));
     const focusOutline=await point.evaluate(el=>getComputedStyle(el.querySelector('circle')).stroke);
     assert.equal(focusOutline,'rgb(166, 107, 23)');
     await point.press('Escape');
@@ -54,20 +58,20 @@ try {
     const textualButton=textualMarkers.getByRole('button').first();
     assert.ok((await textualButton.boundingBox()).height>=44);
     await textualButton.click();
-    assert.match(await page.locator('#tooltip-agil').innerText(),/Q01.*2,0/);
+    assert.ok((await page.locator('#tooltip-agil').innerText()).includes(formatScore(benchmark.questions[0].comparisons.agil.scores.vadechat.total)));
     await textualMarkers.locator('summary').click();
     for(const mode of ['agil','pleno']) {
-      await page.locator('#benchmark-results').getByRole('button',{name:`${mode==='agil'?'Ágil':'Pleno'} × ChatGPT gratuito`,exact:true}).click();
+      await page.locator('#benchmark-results').getByRole('button',{name:`${mode==='agil'?'Ágil':'Pleno'} × ${alternativeLabel}`,exact:true}).click();
       const means=await page.locator('#benchmark-results .benchmark-score-grid strong').allTextContents();
       assert.ok(means[0].startsWith(formatScore(statistics(benchmark.questions,mode,'vadechat').mean)));
-      assert.ok(means[1].startsWith(formatScore(statistics(benchmark.questions,mode,'chatgpt').mean)));
+      assert.ok(means[1].startsWith(formatScore(statistics(benchmark.questions,mode,alternativeKey).mean)));
       for(const q of benchmark.questions) {
         const card=page.locator(`#${q.id}`);
         assert.equal(await card.locator('.benchmark-question-text').innerText(),q.question.text.trim());
         const classes=await card.locator('.benchmark-score-grid span:last-child').allTextContents();
         assert.ok(classes[0].startsWith(q.comparisons[mode].scores.vadechat.classification));
-        assert.ok(classes[1].startsWith(q.comparisons[mode].scores.chatgpt.classification));
-        const sources=[q.question,q.human,q.comparisons[mode].response,q.chatgpt,q.comparisons[mode].document,q.comparisons[mode].review];
+        assert.ok(classes[1].startsWith(q.comparisons[mode].scores[alternativeKey].classification));
+        const sources=[q.question,q.human,q.comparisons[mode].response,q[alternativeKey],q.comparisons[mode].document,q.comparisons[mode].review];
         for(const [index,doc] of sources.entries()) {
           const detail=card.locator('details.benchmark-source').nth(index);
           await detail.locator('summary').first().click();
@@ -103,11 +107,26 @@ try {
     assert.ok(!prompt.includes('[cole a'));
     await noOverflow('reconstructed prompt');
     await reconstruction.locator('summary').first().click();
-    await page.locator('#benchmark-results').getByRole('button',{name:'Ágil × ChatGPT gratuito',exact:true}).click();
+    await page.locator('#benchmark-results').getByRole('button',{name:`Ágil × ${alternativeLabel}`,exact:true}).click();
     await page.evaluate(()=>window.scrollTo(0,0));
-    await page.screenshot({path:`tmp/benchmark-ui/${width}-results.png`,fullPage:false});
-    await page.locator('#benchmark-charts').scrollIntoViewIfNeeded();
-    await page.screenshot({path:`tmp/benchmark-ui/${width}-charts.png`,fullPage:false});
+    await page.screenshot({path:`tmp/benchmark-ui/${benchmarkId}-${width}-results.png`,fullPage:false});
+    await page.locator('#benchmark-charts').evaluate(el=>el.scrollIntoView({block:'start'}));
+    await page.screenshot({path:`tmp/benchmark-ui/${benchmarkId}-${width}-charts.png`,fullPage:false});
+    const filter=page.getByRole('combobox',{name:'Filtrar pergunta',exact:true});
+    await filter.click();await page.getByRole('option',{name:new RegExp('Q04')}).click();
+    assert.equal(await page.locator('.benchmark-question').count(),1);
+    assert.equal(await page.locator('#Q04').count(),1);
+    await filter.click();await page.getByRole('option',{name:'Todas as cinco perguntas',exact:true}).click();
+    assert.equal(await page.locator('.benchmark-question').count(),5);
+    await noOverflow('custom dropdown filter');
+    if(alternativeKey==='alternative') {
+      const roles=await page.locator('.benchmark-roles').innerText();
+      assert.ok(roles.includes('Claude gratuito') && roles.includes('ChatGPT Grátis') && roles.includes('GPT-6.1 Alta'));
+      assert.ok(roles.includes('Sonnet 5.5 Médio') && roles.includes('modelo não identificado'));
+      await page.goto(`${base}/relatorios/benchmark-2026-10-09/`);await page.locator('.benchmark').waitFor();
+      assert.ok((await page.locator('.benchmark-roles').innerText()).includes('ChatGPT gratuito'));
+      await page.goto(`${base}/relatorios/${benchmark.id}/`);await page.locator('.benchmark').waitFor();
+    }
     await page.reload();
     await page.locator('.benchmark').waitFor();
     await page.goto(`${base}/`);

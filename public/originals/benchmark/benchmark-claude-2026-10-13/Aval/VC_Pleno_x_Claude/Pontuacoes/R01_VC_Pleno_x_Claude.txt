@@ -1,0 +1,69 @@
+## 1. Tabela de avaliação
+
+| Critério | Máximo | Resposta A | Resposta B |
+| --- | --- | --- | --- |
+| Conclusão e orientação prática | 4,0 | 4,0 | 4,0 |
+| Fundamentação e informações essenciais | 4,0 | 3,5 | 3,5 |
+| Condições, limites e ressalvas | 2,0 | 2,0 | 2,0 |
+| Nota total | 10,0 | 9,5 | 9,5 |
+| Classificação | — | Conforme | Conforme |
+
+## 2. Análise da resposta A
+
+### Conclusão e orientação prática — 4,0/4,0
+
+A resposta afirma expressamente que o tabelião pode lavrar a escritura, mas que a lavratura exige ressalvas. Está alinhada à referência ao distinguir a possibilidade de formalização do ato notarial da possibilidade de registro imobiliário.
+
+Também orienta a consultar a CNIB, cientificar as partes e consignar a indisponibilidade na escritura.
+
+### Fundamentação e informações essenciais — 3,5/4,0
+
+A resposta identifica corretamente, em relação à referência, o art. 320-F, parágrafo único, do Provimento CNJ nº 149/2023 e associa a lavratura aos deveres de ciência e consignação da restrição.
+
+A perda de 0,5 ponto decorre de não explicitar com a mesma precisão que a avaliação sobre eventual direito adquirido do comprador e a eficácia da promessa anterior compete ao Registro de Imóveis e, se necessário, ao juízo responsável pela indisponibilidade. A resposta afirma que o tabelião não decide o mérito, o que contempla parte relevante dessa orientação.
+
+### Condições, limites e ressalvas — 2,0/2,0
+
+A resposta ressalva que a indisponibilidade continua sendo um obstáculo ao registro e que a promessa quitada anteriormente não assegura automaticamente a registrabilidade da escritura. Também distingue a escritura comum da adjudicação compulsória.
+
+A documentação da promessa e do pagamento, a referência à Súmula 375/STJ e os detalhes sobre reconhecimento de firma e data certa são informações não verificáveis pela referência. Não geram desconto por si só, pois não contradizem expressamente o texto de referência.
+
+## 3. Análise da resposta B
+
+### Conclusão e orientação prática — 4,0/4,0
+
+A resposta conclui que a escritura pode ser lavrada, desde que sejam observados os deveres de consulta à CNIB, cientificação expressa e consignação da restrição. Também alerta para o risco de recusa do registro enquanto vigente a indisponibilidade.
+
+Isso corresponde diretamente à conclusão e à orientação prática da referência.
+
+### Fundamentação e informações essenciais — 3,5/4,0
+
+A resposta cita o art. 320-F, parágrafo único, do Provimento CNJ nº 149/2023 e descreve os deveres notariais essenciais. Também esclarece que o tabelião não pode, por conta própria, afastar a indisponibilidade com fundamento na quitação anterior.
+
+A perda de 0,5 ponto decorre de não explicitar integralmente a divisão de competências descrita na referência: a análise da eficácia da promessa e da eventual possibilidade de afastamento da restrição cabe ao Registro de Imóveis e, se necessário, ao juízo que decretou a medida. A resposta aborda a competência judicial para o cancelamento, mas não desenvolve de forma igualmente clara o papel do registrador na análise do título.
+
+As referências ao art. 364 de um Código de Normas e Procedimentos, ao art. 320-C e aos embargos de terceiro são informações não verificáveis pela referência. Como a tarefa exige comparação exclusiva com o gabarito, não cabe considerá-las corretas ou incorretas de forma independente.
+
+### Condições, limites e ressalvas — 2,0/2,0
+
+A resposta ressalta que a quitação anterior não produz, por si só, eficácia liberatória perante o Registro de Imóveis e que a escritura não cancela a indisponibilidade averbada. Também condiciona a superação da restrição à atuação judicial competente.
+
+Essas ressalvas são plenamente compatíveis com a referência, que rejeita expressamente a conclusão de que a quitação anterior torna a venda automaticamente registrável.
+
+## 4. Resultado
+
+## Empate
+
+Resposta A
+
+# 9,5/10
+
+Resposta B
+
+# 9,5/10
+
+As duas respostas foram classificadas como Conformes.
+
+## 5. Justificativa final
+
+As respostas A e B coincidem com os pontos centrais da referência: a escritura pode ser lavrada, a indisponibilidade deve ser consultada e expressamente consignada, e a quitação anterior não autoriza o tabelião a garantir o registro nem a afastar a restrição. As diferenças estão principalmente na fundamentação complementar e no detalhamento procedimental, sem divergência decisiva em relação ao gabarito. Como receberam a mesma pontuação pelos critérios estabelecidos, o resultado é empate.

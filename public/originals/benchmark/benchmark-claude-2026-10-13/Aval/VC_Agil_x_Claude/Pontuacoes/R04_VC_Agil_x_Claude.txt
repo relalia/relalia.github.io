@@ -1,0 +1,73 @@
+## 1\. Tabela de avaliação
+
+| Critério | Resposta A | Resposta B |
+| --- | --- | --- |
+| 1\. Conclusão e orientação prática (0–4) | 3,5 | 3,0 |
+| 2\. Fundamentação e informações essenciais (0–4) | 3,0 | 2,5 |
+| 3\. Condições, limites e ressalvas (0–2) | 1,5 | 1,5 |
+| Nota total | 8,0/10 | 7,0/10 |
+| Classificação | Conforme | Parcialmente conforme |
+
+## 2\. Análise da resposta A
+
+Acertos
+
+- Identifica o Código Nacional de Matrícula (CNM), a área em unidades distintas para imóveis urbanos e rurais e a descrição perimetral por georreferenciamento.
+- Apresenta os cadastros imobiliários pertinentes: CIF e CIB para imóveis urbanos; CCIR, NIRF e CAR para imóveis rurais.
+- Distingue a exigência de georreferenciamento rural das hipóteses específicas aplicáveis aos imóveis urbanos.
+- Reconhece a necessidade de saneamento de inconsistências e divergências e menciona a possibilidade de atuação do cartório.
+
+Omissões
+
+- Não menciona a exigência de indicação do CEP para ambos os tipos de imóveis.
+- Omite a informação sobre a nacionalidade de quem detém a maioria do capital social quando o imóvel rural pertence a pessoa jurídica.
+- Não explicita que a inclusão dos dados nas matrículas existentes ocorre mediante averbação de saneamento por ocasião do primeiro registro voluntário.
+- Não esclarece expressamente a possibilidade de utilizar dados de escrituras públicas para regularizar o fólio real.
+
+Contradições ou pontos de atenção
+
+A resposta descreve procedimentos de saneamento de duplicidades, cancelamento de matrículas e tratamento de sobreposições. Esses detalhes não são confirmados pela referência humana. Portanto, são informações não verificáveis pela referência, e não erros demonstrados por essa comparação.
+
+A afirmação de que o saneamento deve ocorrer sempre que houver inconsistência é mais genérica do que a orientação específica da referência, que destaca a abertura de novas matrículas e o primeiro registro voluntário nas existentes.
+
+Justificativa da pontuação: a resposta contempla a maior parte dos requisitos materiais e fornece orientação prática coerente com a referência. Perde pontos principalmente pela ausência de dados expressamente exigidos no gabarito e pela falta de precisão quanto ao momento do saneamento.
+
+## 3\. Análise da resposta B
+
+Acertos
+
+- Apresenta os elementos básicos de identificação de imóveis urbanos e rurais, incluindo localização, área, características e confrontações.
+- Aborda o georreferenciamento rural e a necessidade de corrigir descrições divergentes.
+- Reconhece a possibilidade de retificação de erros ou omissões e a necessidade de regularização antes de determinados atos registrais.
+- Explicita que sua exposição sobre o Provimento nº 149/2023 é parcial, evitando afirmar segurança quanto aos números exatos dos dispositivos.
+
+Omissões
+
+- Não apresenta expressamente o CNM como informação obrigatória na matrícula.
+- Não especifica o CEP para ambos os tipos de imóveis nem os detalhes de localização indicados na referência, como bairro, vila ou povoado.
+- Não reúne os códigos cadastrais exigidos pela referência: CIF e CIB para imóveis urbanos; CCIR, NIRF ou CIB e CAR para imóveis rurais.
+- Omite a nacionalidade de quem possui a maioria do capital social de pessoa jurídica proprietária de imóvel rural.
+- Não esclarece o procedimento específico de averbação de saneamento por ocasião do primeiro registro voluntário em matrícula existente.
+- Não menciona a utilização de dados de escrituras públicas para o saneamento.
+
+Contradições ou pontos de atenção
+
+A resposta afirma que o memorial georreferenciado é exigido em hipóteses de transferência de imóveis rurais conforme prazos aplicáveis. A referência humana não detalha esses prazos nem todas as hipóteses de incidência. Assim, esse ponto é não verificável pela referência, não sendo adequado considerá-lo falso apenas por não constar do gabarito.
+
+A afirmação de que o Provimento regulamenta requisitos relativos ao SINTER, à integração cadastral e à retificação também não pode ser integralmente confirmada ou contradita pela referência fornecida.
+
+Justificativa da pontuação: a resposta é aproveitável na identificação geral do imóvel e nas hipóteses de correção, mas dedica menos atenção aos requisitos cadastrais específicos e aos procedimentos de saneamento destacados pelo profissional. A própria ressalva sobre o Provimento evidencia a incompletude da fundamentação normativa solicitada.
+
+## 4\. Resultado
+
+## A venceu
+
+Resposta A## 8,0/10
+
+Resposta B## 7,0/10
+
+A resposta A apresenta maior concordância com a referência, sobretudo por identificar o CNM, os códigos cadastrais e as hipóteses de georreferenciamento. A resposta B aborda corretamente vários aspectos gerais, mas omite mais requisitos específicos do gabarito.
+
+## 5\. Justificativa final
+
+A resposta A vence por maior cobertura dos elementos centrais da referência humana, especialmente os dados cadastrais e as condições de identificação do imóvel. Ambas deixam de mencionar informações expressamente exigidas no gabarito, mas as omissões da resposta B são mais numerosas. As informações adicionais não confirmadas pela referência foram tratadas como não verificáveis, sem penalização automática. O resultado mede exclusivamente a concordância com a referência fornecida, não a correção jurídica independente das respostas.

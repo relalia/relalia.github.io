@@ -1,0 +1,16 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do ChatGPT Grátis:
+
+Q03 — VC Pleno × Claude — Nota de revisão
+
+O juiz atribuiu 5,5 à resposta A (Claude) e 6,0 à resposta B (Vadechat Pleno), classificando ambas como parcialmente conformes. A vantagem de B é defensável: apresenta os documentos para incorporação imobiliária, o prazo de 30 dias e a certidão como título para transferência de imóveis.
+
+Há inconsistência entre julgamentos: a mesma resposta A, com a mesma pergunta e referência, recebeu 4,5 contra o Ágil. Os critérios de conclusão e fundamentação aumentaram 0,5 ponto cada, sem alteração do conteúdo avaliado.
+
+O juiz também trata como inteiramente não verificáveis as referências adicionais de B à legislação federal. Deve separar a validade dessas citações da concordância de seu conteúdo: a aptidão da certidão para transferência de bens encontra correspondência parcial no gabarito, embora B não contemple a extinção societária.
+
+A igualdade de 2,0 pontos em fundamentação exige melhor justificativa, pois B apresenta requisitos específicos que A não informa. Os 1,5 pontos em ressalvas para A também não estão sustentados pelas condições do gabarito: admitir dificuldade de acesso às fontes não substitui os prazos exigidos.
+
+As omissões da certidão específica com histórico e do prazo de 90 dias são demonstradas. Entretanto, a frase final da referência sobre prazo de 30 dias para certidão específica não delimita sua aplicação; essa lacuna não deve ser completada pelo juiz.
+
+Preservar o julgamento original e registrar a necessidade de calibrar a pontuação. A vitória de B é plausível, mas sua margem numérica não está suficientemente justificada.
+

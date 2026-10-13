@@ -1,0 +1,95 @@
+## 1. Tabela de avaliação
+
+A avaliação considera exclusivamente a pergunta, a resposta humana de referência e as respostas A e B fornecidas. O ponto central é a concordância com a referência, especialmente quanto à obrigatoriedade da declaração, às assinaturas exigidas e à distinção entre os §§ 1º e 2º e o § 3º, I, do art. 440-AX.
+
+| Critério | Máximo | Resposta A | Resposta B |
+| --- | --- | --- | --- |
+| 1. Conclusão e orientação prática | 4,0 | 3,0 | 2,0 |
+| 2. Fundamentação e informações essenciais | 4,0 | 3,0 | 3,0 |
+| 3. Condições, limites e ressalvas | 2,0 | 1,5 | 1,5 |
+| Nota total | 10,0 | 7,5 | 6,5 |
+| Classificação | — | Parcialmente conforme | Parcialmente conforme |
+
+## 2. Análise da resposta A
+
+### Critério 1 — Conclusão e orientação prática: 3,0/4,0
+
+Acertos:
+
+- Confirma a obrigatoriedade de declaração expressa sobre o respeito aos limites divisórios.
+- Indica formas de apresentação da declaração e os requisitos de assinatura.
+
+Desconto: a resposta atribui a declaração aos confinantes, mas não esclarece adequadamente a exigência específica de declaração do próprio requerente, destacada na referência humana.
+
+### Critério 2 — Fundamentação e informações essenciais: 3,0/4,0
+
+Acertos:
+
+- Identifica corretamente os §§ 1º e 2º como relacionados ao formato e às assinaturas das declarações.
+- Menciona o § 3º como dispositivo que prevê hipóteses de dispensa de anuência.
+- Apresenta a possibilidade de assinatura com firma reconhecida ou assinatura eletrônica avançada ou qualificada.
+
+Desconto: a resposta não reproduz integralmente os sujeitos e as exigências apresentados na referência, sobretudo a declaração do requerente e a assinatura do responsável técnico vinculada ao procedimento.
+
+Há também uma imprecisão relevante de atribuição: a resposta associa diretamente aos §§ 1º e 2º a exigência de declaração dos confinantes, sem distinguir com clareza essa obrigação da declaração do requerente.
+
+### Critério 3 — Condições, limites e ressalvas: 1,5/2,0
+
+Acertos:
+
+- Reconhece a existência de hipóteses específicas de dispensa de anuência no § 3º.
+- Não afirma que a anuência dos confrontantes seja dispensada em todos os casos.
+
+Desconto: não apresenta a condição específica indicada na referência para a dispensa de anuência: imóvel confrontante já georreferenciado e certificado, com a matrícula do imóvel objeto expressamente indicada como confrontante em seus marcos.
+
+Informações adicionais não verificáveis pela referência: a referência não permite confirmar nem contradizer a menção ao art. 220 do Código Civil, ao encerramento e à abertura de matrículas, nem a todas as modalidades de assinatura descritas. Esses pontos não recebem penalidade por si sós.
+
+Síntese: a resposta A acompanha a conclusão geral de obrigatoriedade e aborda os requisitos formais, mas deixa incompleta a identificação das declarações exigidas e da condição específica de dispensa.
+
+## 3. Análise da resposta B
+
+### Critério 1 — Conclusão e orientação prática: 2,0/4,0
+
+Acerto: a resposta distingue a declaração dos confinantes da declaração do requerente e reconhece que os §§ 1º e 2º regulam o formato e a assinatura das declarações.
+
+Problema principal: começa com “Não”, respondendo negativamente à pergunta sobre a obrigatoriedade da declaração de respeito aos limites. Embora a resposta esclareça que os parágrafos tratam da forma e da assinatura, a referência humana confirma a obrigatoriedade da declaração no contexto descrito.
+
+A distinção entre a matéria regulamentada pelos parágrafos e a existência da obrigação é pertinente, mas a conclusão negativa não se alinha plenamente à resposta de referência.
+
+### Critério 2 — Fundamentação e informações essenciais: 3,0/4,0
+
+Acertos:
+
+- Descreve o conteúdo dos §§ 1º e 2º como relativo à forma de apresentação e à assinatura das declarações.
+- Identifica separadamente a declaração do requerente e a declaração dos confinantes.
+- Reconhece que a dispensa de anuência é tratada no § 3º, I, e não nos §§ 1º e 2º.
+
+Desconto: apesar da distinção conceitual, a resposta não conclui afirmativamente que a declaração de respeito aos limites é obrigatória no cenário descrito pela referência. A observação de que não conseguiu confirmar o texto exato do § 13 do art. 213 da LRP também deixa incompleta a fundamentação sobre a declaração do requerente.
+
+### Critério 3 — Condições, limites e ressalvas: 1,5/2,0
+
+Acertos:
+
+- Diferencia a retificação de área da averbação de georreferenciamento em si.
+- Identifica hipóteses de dispensa de anuência relacionadas ao § 3º.
+- Apresenta ressalvas sobre a fonte consultada e a necessidade de confirmar a redação oficial.
+
+Desconto: não explicita integralmente a condição específica descrita na referência para a dispensa de anuência, incluindo a exigência relativa à matrícula do imóvel objeto constar expressamente como confrontante nos marcos.
+
+Informações adicionais não verificáveis pela referência: as menções ao Provimento CNJ 195/2025, ao § 13 do art. 213 da LRP, aos §§ 7º, 8º e 9º, à crítica doutrinária e às fontes externas não podem ser validadas nem invalidadas com base apenas na resposta humana. Não são penalizadas por si sós.
+
+Síntese: a resposta B apresenta uma distinção útil entre a declaração do requerente e a dos confinantes, mas sua conclusão negativa diverge do sentido afirmativo da referência.
+
+## 4. Resultado
+
+## A venceu
+
+Resposta A# 7,5/10
+
+Resposta B# 6,5/10
+
+Diferença: 1,0 ponto.
+
+## 5. Justificativa final
+
+A resposta A vence porque confirma a obrigatoriedade da declaração e apresenta orientação prática mais alinhada à conclusão afirmativa da referência. A resposta B tem o mérito de distinguir as declarações do requerente e dos confinantes e de localizar a dispensa de anuência no § 3º, I, mas sua abertura negativa prejudica a concordância com a conclusão humana. Ambas deixam incompleta a condição específica de dispensa de anuência descrita na referência.

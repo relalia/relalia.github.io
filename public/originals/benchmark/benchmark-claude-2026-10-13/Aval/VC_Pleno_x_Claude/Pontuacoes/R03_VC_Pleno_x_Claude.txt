@@ -1,0 +1,118 @@
+## 1. Tabela de avaliação
+
+A avaliação considera exclusivamente a concordância com a resposta humana de referência. Informações adicionais não confirmadas nem contraditas pela referência não recebem pontos extras nem geram descontos por si só.
+
+| Critério | Máximo | Resposta A | Resposta B |
+| --- | --- | --- | --- |
+| 1. Conclusão e orientação prática | 4,0 | 2,0 | 2,5 |
+| 2. Fundamentação e informações essenciais | 4,0 | 2,0 | 2,0 |
+| 3. Condições, limites e ressalvas | 2,0 | 1,5 | 1,5 |
+| Nota total | 10,0 | 5,5 | 6,0 |
+| Classificação | — | Parcialmente conforme | Parcialmente conforme |
+
+## 2. Análise da resposta A
+
+### Critério 1 — Conclusão e orientação prática: 2,0/4,0
+
+Acertos:
+
+- Reconhece que a documentação societária varia conforme o ato a comprovar.
+- Diferencia certidão simplificada de certidão específica ou de inteiro teor.
+- Identifica que a certidão simplificada pode não demonstrar deliberações societárias específicas.
+
+Omissões:
+
+- Não apresenta diretamente a orientação central da referência: atos constitutivos e alterações acompanhados obrigatoriamente de certidão emitida pelo órgão de registro.
+- Não explica especificamente a função do art. 910, § 5º, na transferência de bens, nem a exigência temporal de 30 dias do art. 1.047.
+
+A resposta reconhece expressamente não ter conseguido confirmar o conteúdo dos dispositivos, o que limita sua conclusão prática.
+
+### Critério 2 — Fundamentação e informações essenciais: 2,0/4,0
+
+Acertos:
+
+- Aborda a documentação relativa à constituição e às alterações societárias.
+- Distingue documentos que resumem a situação societária daqueles que comprovam atos específicos.
+
+Omissões:
+
+- Não apresenta a exigência de certidão específica com o histórico dos atos registrados, conforme o art. 809, § 4º, descrito na referência.
+- Não identifica a certidão dos atos de constituição, alteração ou extinção como documento hábil para transferência de bens, conforme o art. 910, § 5º.
+- Não informa o prazo de 90 dias associado ao art. 352, VII, nem o prazo de 30 dias relativo ao art. 1.047.
+
+A resposta não contradiz diretamente essas exigências, mas deixa de fornecer os elementos centrais que permitiriam responder à pergunta.
+
+### Critério 3 — Condições, limites e ressalvas: 1,5/2,0
+
+Acertos:
+
+- Explicita a impossibilidade de confirmar os dispositivos.
+- Delimita suas afirmações como orientações gerais, e não como conclusões sobre o CNPFE.
+
+Limitação:
+
+- A distinção entre sociedades empresárias e não empresárias, bem como as referências a outros tipos de certidão, são informações adicionais não verificáveis pela referência.
+
+Classificação: Parcialmente conforme. A resposta é cautelosa e contém orientações aproveitáveis, mas não resolve os requisitos normativos específicos apresentados na referência.
+
+## 3. Análise da resposta B
+
+### Critério 1 — Conclusão e orientação prática: 2,5/4,0
+
+Acertos:
+
+- Afirma que a documentação exigida varia conforme o ato.
+- Identifica a exigência de certidão simplificada emitida há no máximo 30 dias para incorporação imobiliária.
+- Aborda a documentação necessária à transferência de imóveis para o patrimônio de uma pessoa jurídica.
+
+Omissões:
+
+- Não apresenta o prazo de 90 dias previsto na referência para a certidão simplificada mencionada no art. 352, VII.
+- Não integra claramente as exigências dos arts. 809, § 4º, e 910, § 5º, à orientação prática geral.
+
+A resposta fornece uma orientação mais específica sobre incorporação imobiliária do que A, mas permanece incompleta quanto ao conjunto de dispositivos perguntados.
+
+### Critério 2 — Fundamentação e informações essenciais: 2,0/4,0
+
+Acertos:
+
+- Reproduz a exigência de certidão simplificada emitida em até 30 dias para incorporação imobiliária, em linha com a referência.
+- Menciona os atos constitutivos e suas alterações como documentos relevantes.
+- Trata da certidão dos atos arquivados para transferência de imóveis ao patrimônio da pessoa jurídica.
+
+Omissões:
+
+- Não apresenta a exigência de certidão específica com o histórico dos atos registrados, vinculada ao art. 809, § 4º.
+- Não explicita a regra do art. 910, § 5º, nos termos da referência, abrangendo atos de constituição, alteração ou extinção como documentos hábeis para transferência de bens.
+- Não menciona o prazo de 90 dias do art. 352, VII.
+
+Limitação da comparação: as referências adicionais à Lei nº 8.934/1994, ao Decreto nº 1.800/1996 e ao art. 808 não podem ser consideradas incorretas apenas por não aparecerem na resposta humana. Seu conteúdo é não verificável pela referência e, portanto, não recebe crédito nem penalidade.
+
+### Critério 3 — Condições, limites e ressalvas: 1,5/2,0
+
+Acertos:
+
+- Ressalva que não conseguiu localizar três dos dispositivos questionados.
+- Distingue incorporação imobiliária, escrituras públicas, instrumentos particulares e integralização de capital.
+
+Limitação:
+
+- A regra geral do manual interno que dispensaria prazo de validade para determinadas certidões é uma informação adicional não verificável pela referência. Não é possível determinar, com base no gabarito, se ela conflita com outras exigências aplicáveis.
+
+Classificação: Parcialmente conforme. A resposta contempla uma exigência essencial da referência e oferece orientação documental específica, mas não cobre integralmente as regras apresentadas pelo profissional.
+
+## 4. Resultado
+
+## B venceu
+
+Diferença de 0,5 ponto
+
+Resposta A
+
+### 5,5/10
+
+Resposta B
+
+### 6,0/10
+
+Justificativa final: B apresenta maior concordância porque identifica expressamente a exigência de certidão simplificada com emissão em até 30 dias para incorporação imobiliária e aborda a documentação para transferência de imóveis à pessoa jurídica. A também oferece informações úteis, mas não explicita essas exigências centrais. Ambas omitem o prazo de 90 dias e a exigência de certidão específica com histórico dos atos, previstos na referência. A vitória de B é relativa, pois nenhuma das respostas reproduz adequadamente o conjunto das orientações essenciais do gabarito.

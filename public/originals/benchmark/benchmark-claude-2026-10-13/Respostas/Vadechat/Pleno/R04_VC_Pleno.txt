@@ -1,0 +1,54 @@
+**Resposta direta**
+
+A identificação regular do imóvel na matrícula decorre do princípio da especialidade objetiva e exige elementos específicos previstos no art. 176 da Lei de Registros Públicos e no art. 440-AQ do Código Nacional de Normas do CNJ (Provimento nº 149/2023). O cartório deve exigir a atualização ou saneamento sempre que houver divergência entre o título apresentado e o registro anterior, omissão de elementos essenciais para a perfeita amarração do imóvel, hipóteses de desmembramento/parcelamento/remembramento, ou quando for constatada duplicidade, sobreposição ou multiplicidade de matrículas.
+
+---
+
+**Fundamentação legal**
+
+### 1. Informações obrigatórias para identificação do imóvel
+
+A qualificação do imóvel na matrícula deve atender aos requisitos gerais e específicos de localização e dimensionamento:
+
+- **Imóvel urbano:**
+  - **Requisitos da Lei nº 6.015/1973:** características, confrontações, localização, área, logradouro, número e sua designação cadastral, se houver [Lei nº 6.015, de 31 de dezembro de 1973., art. 176, § 1º, II, "3", "b"].
+  - **Minúcias complementares:** indicação com precisão dos confrontantes e, tratando-se exclusivamente de terreno, menção expressa se está situado do lado par ou ímpar do logradouro, a quadra e a distância métrica da edificação ou da esquina mais próxima [Lei nº 6.015, de 31 de dezembro de 1973., art. 225, caput].
+  - **Complementos do Provimento CNJ nº 149/2023:** indicação da área em metros quadrados (m²), Código Nacional de Matrícula (CNM), Cadastro Imobiliário Fiscal (CIF) ou inscrição imobiliária municipal, Cadastro Imobiliário Brasileiro (CIB) quando implantado, além de CEP, logradouro completo, bairro/setor, município, estado e indicação de lote, quadra e loteamento nos parcelamentos de solo urbano [Provimento nº 149, de 30 de agosto de 2023., art. 440-AQ, I, II, IV, "a" e § 1º]. Georreferenciamento em área urbana é exigido em Reurb ou a requerimento do interessado [Provimento nº 149, de 30 de agosto de 2023., art. 440-AQ, III, "c"].
+
+- **Imóvel rural:**
+  - **Requisitos da Lei nº 6.015/1973:** código do imóvel, dados constantes do Certificado de Cadastro de Imóvel Rural (CCIR), denominação, características, confrontações, localização e área [Lei nº 6.015, de 31 de dezembro de 1973., art. 176, § 1º, II, "3", "a"].
+  - **Complementos do Provimento CNJ nº 149/2023:** indicação da área em hectares (ha), Código Nacional de Matrícula (CNM), código do imóvel no CCIR/Incra, NIRF ou CIB (Receita Federal), código de inscrição no Cadastro Ambiental Rural (CAR) e, se adquirido por pessoa jurídica, informação da nacionalidade de quem detém a maioria do capital social (Lei nº 5.709/1971) [Provimento nº 149, de 30 de agosto de 2023., art. 440-AQ, I, II e IV, "b"].
+  - **Georreferenciamento e certificação:** descrição perimetral georreferenciada obrigatória com prévia certificação da poligonal no Incra para os imóveis rurais enquadrados nos §§ 3º a 5º do art. 176 da Lei nº 6.015/1973, acompanhada de memorial descritivo e ART [Lei nº 6.015, de 31 de dezembro de 1973., art. 176, § 3º; Provimento nº 149, de 30 de agosto de 2023., art. 440-AQ, III, "a"].
+
+---
+
+### 2. Momentos e hipóteses de exigência de atualização ou saneamento
+
+O registrador deve obstar o ato e exigir o saneamento/atualização nas seguintes circunstâncias:
+
+- **Desconformidade entre o título e o registro anterior:** consideram-se irregulares para efeito de matrícula os títulos nos quais a caracterização do imóvel não coincida com a que consta do registro anterior [Lei nº 6.015, de 31 de dezembro de 1973., art. 225, § 2º].
+- **Desmembramento, parcelamento ou remembramento rural:** obrigatória a apuração de memorial descritivo georreferenciado ao Sistema Geodésico Brasileiro com ART e certificação do Incra [Lei nº 6.015, de 31 de dezembro de 1973., art. 176, § 3º].
+- **Unitariedade da matrícula violada:** cada imóvel deve corresponder a uma única matrícula. Se o mesmo imóvel for objeto de mais de uma matrícula ou estiver descrito por partes, procede-se ao bloqueio ou retificação para unificação; havendo mais de um imóvel na mesma matrícula, abrem-se matrículas distintas, propondo-se bloqueio das deficientes se não atenderem à especialidade [Provimento nº 149, de 30 de agosto de 2023., art. 337, §§ 1º a 3º].
+- **Duplicidade e sobreposição material:** identificada duplicidade de matrículas ou sobreposição de áreas no sistema georreferenciado (SIG-RI), o oficial deve promover o saneamento de ofício ou via procedimento de retificação/autotutela registral [Provimento nº 149, de 30 de agosto de 2023., arts. 440-BA e 440-BB].
+- **Ressalva dos extratos eletrônicos:** nos casos de extratos eletrônicos, dispensa-se a atualização prévia da matrícula quanto a dados objetivos do art. 176 da Lei nº 6.015/1973, desde que haja correspondência suficiente para identificar de forma inequívoca o imóvel e que não se crie nova unidade por desmembramento ou fusão sem observância da especialidade [Provimento nº 149, de 30 de agosto de 2023., art. 210-F].
+
+---
+
+**No seu cartório**
+
+O manual interno estabelece rotinas específicas de qualificação e saneamento para a abertura de matrícula e georreferenciamento:
+
+- **Imóvel constante de transcrição:** alterações na descrição física do bem devem ser formalizadas previamente em ato próprio de caracterização no Livro de Transcrição das Transmissões, viabilizando a abertura da matrícula com a descrição completa e correta [MACEQ – Manual de Condutas, Ética e Qualidade, versão 1.2, Janeiro/2021, item 3.4, Enunciado 04, p. 91].
+- **Confrontações no georreferenciamento:** o memorial descritivo emitido pelo Incra deve conter, obrigatoriamente, no campo de confrontação, o Código Nacional de Serventia (CNS) e o número da matrícula do imóvel confrontante [MACEQ – Manual de Condutas, Ética e Qualidade, versão 1.2, Janeiro/2021, item 3.4, Enunciado 07, p. 91].
+- **Correspondência de dados no georreferenciamento:** o número do documento de responsabilidade técnica (ART/RRT) e o código do imóvel no CCIR devem coincidir estritamente com os indicados no memorial emitido pelo Incra [MACEQ – Manual de Condutas, Ética e Qualidade, versão 1.2, Janeiro/2021, item 3.4, Enunciado 08, p. 91].
+- **Vedação de cumulação:** não é permitido cumular, em procedimento único, a retificação, unificação e desmembramento de área [MACEQ – Manual de Condutas, Ética e Qualidade, versão 1.2, Janeiro/2021, item 3.4, Enunciado 06, p. 91].
+
+Quer que eu detalhe o checklist/procedimento daqui?
+
+---
+
+**⚠️ Atenção**
+
+A exigência de saneamento é rigorosa diante de qualquer mutação que altere os limites, confrontações ou área do imóvel. Nos instrumentos públicos ou particulares apresentados a registro, a ausência de amarração perimétrica (como a distância da esquina mais próxima em terrenos urbanos) ou a falta de dados cadastrais obrigatórios impedem o ingresso do título até que a retificação ou complementação seja formalizada.
+
+*Ressalva de vigência: Como a resposta se fundamenta nas normas vigentes cadastradas na base, recomenda-se conferir eventuais alterações normativas supervenientes da Corregedoria-Geral da Justiça local e do CNJ.*

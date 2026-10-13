@@ -1,0 +1,67 @@
+**Resposta direta**
+
+Para que a identificação do imóvel esteja regular na matrícula, devem constar informações específicas que variam conforme o imóvel seja urbano ou rural, incluindo dados cadastrais, localização, confrontações e características detalhadas. O cartório deve exigir a atualização ou saneamento desses dados sempre que houver duplicidade, inconsistência, ou quando os dados não permitirem a identificação inequívoca do imóvel, conforme previsto nos arts. 176 e 225 da Lei nº 6.015/1973 e nos dispositivos do Provimento nº 149/2023 do CNJ.
+
+---
+
+**Informações obrigatórias na matrícula do imóvel (arts. 176 e 225 da Lei nº 6.015/1973)**
+
+O artigo 176 da Lei nº 6.015/1973 estabelece que a matrícula do imóvel deve conter, entre outros:
+
+- **Número de ordem** da matrícula, sequencial e infinito;
+- **Data** da matrícula;
+- **Identificação do imóvel**, que deve incluir:
+
+  - Para imóveis rurais: código do imóvel, dados do CCIR (Certificado de Cadastro de Imóvel Rural), denominação, características, confrontações, localização e área;
+  
+  - Para imóveis urbanos: características, confrontações, localização, área, logradouro, número e designação cadastral, se houver;
+
+- **Nome, domicílio e nacionalidade do proprietário**, com detalhamento conforme pessoa física (estado civil, profissão, CPF ou RG, ou filiação na falta destes) ou pessoa jurídica (sede social e CNPJ);
+- **Número do registro anterior**;
+- Indicação da existência de matrículas em regime de multipropriedade, quando aplicável.
+
+O artigo 225 da mesma lei reforça que nas escrituras e autos judiciais as partes devem indicar com precisão as características, confrontações e localização do imóvel, mencionando os nomes dos confrontantes e, no caso de terrenos, o lado do logradouro (par ou ímpar), quadra e distância métrica da edificação ou esquina mais próxima, exigindo certidão do registro imobiliário. Títulos com caracterização divergente da matrícula anterior são considerados irregulares para fins de matrícula.
+
+Além disso, para imóveis rurais, a localização, limites e confrontações devem ser obtidos a partir de memorial descritivo assinado por profissional habilitado com Anotação de Responsabilidade Técnica (ART), contendo coordenadas georreferenciadas conforme o Sistema Geodésico Brasileiro, com precisão fixada pelo INCRA, garantindo isenção para imóveis rurais de até quatro módulos fiscais.
+
+[Lei nº 6.015, de 31 de dezembro de 1973, arts. 176 e 225]
+
+---
+
+**Atualização e saneamento dos dados da matrícula (Provimento nº 149/2023 do CNJ)**
+
+O Provimento nº 149/2023 do CNJ complementa as regras sobre a identificação do imóvel e a manutenção da regularidade da matrícula:
+
+- A matrícula deve conter, além dos requisitos do art. 176 da Lei nº 6.015/1973, o **Código Nacional de Matrícula (CNM)**, a indicação da área do imóvel (m² para urbano e hectares para rural) e a descrição perimetral por georreferenciamento, obrigatória para imóveis rurais com certificação prévia do INCRA, e facultativa para outros imóveis rurais, além de ser exigida em imóveis urbanos em situações específicas (ex.: regularização fundiária urbana, requerimento do interessado);
+
+- Devem constar também os códigos dos cadastros imobiliários obrigatórios, como o Cadastro Imobiliário Fiscal (CIF) ou Cadastro Imobiliário Brasileiro (CIB) para imóveis urbanos, e o Código do Imóvel Rural do CCIR, Número do Imóvel na Receita Federal (NIRF) e Cadastro Ambiental Rural (CAR) para imóveis rurais;
+
+- O oficial de registro deve promover o **saneamento de ofício** em caso de duplicidade ou multiplicidade material de matrículas, por meio de averbações que informem a existência da duplicidade, cancelamento das matrículas menos completas e abertura de nova matrícula saneada, observando a ordem legal dos ônus e inclusão dos dados de especialidade objetiva e subjetiva;
+
+- Quando houver indícios de sobreposição entre imóveis georreferenciados, o registrador deve inserir observação específica nas certidões e promover o saneamento conforme o art. 213, II, da Lei nº 6.015/1973;
+
+- A atualização dos dados cadastrais deve ser feita sempre que identificadas inconsistências que comprometam a identificação inequívoca do imóvel ou a cadeia dominial, inclusive mediante notificações e exigências de documentos complementares;
+
+- O cartório deve informar às prefeituras, até o último dia útil do mês subsequente, todas as mudanças na titularidade dos imóveis para fins de atualização cadastral dos contribuintes municipais, sem cobrança de custas ou emolumentos;
+
+- A validação técnica dos dados enviados ao sistema nacional (ON-RTDPJ) inclui prazos para apresentação e saneamento de pendências, garantindo a conformidade dos dados da matrícula.
+
+[Provimento nº 149, de 30 de agosto de 2023, arts. 440, 440-BB, 440-BA, 440-AQ, 184-A]
+
+---
+
+**Resumo prático**
+
+- A matrícula deve conter dados completos e precisos do imóvel e do proprietário, conforme a natureza urbana ou rural, incluindo identificação cadastral, confrontações, localização, área e dados pessoais do titular;
+
+- O cartório deve exigir atualização ou saneamento dos dados sempre que houver duplicidade, inconsistência, sobreposição ou divergência entre o título apresentado e a matrícula;
+
+- O saneamento pode ser promovido de ofício pelo oficial, com averbações específicas e, se necessário, abertura de nova matrícula;
+
+- A comunicação das alterações para atualização cadastral municipal é obrigatória e gratuita;
+
+- O Provimento nº 149/2023 do CNJ detalha procedimentos técnicos e prazos para garantir a integridade e a confiabilidade dos dados da matrícula.
+
+---
+
+Quer que eu detalhe os procedimentos específicos para o saneamento de duplicidades ou para a atualização cadastral conforme o Provimento nº 149/2023?

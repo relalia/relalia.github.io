@@ -1,0 +1,15 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do ChatGPT Grátis:
+
+Q01 — VC Ágil × Claude — Nota de revisão
+
+O juiz atribuiu 10,0 à resposta A (Claude) e 5,5 à resposta B (Vadechat Ágil). A vitória de A é coerente com a referência: contempla as formalidades notariais, distingue lavratura e registro e explicita que o tabelião não decide o mérito da quitação anterior.
+
+B também permite a lavratura e apresenta consulta à CNIB, ciência das partes e consignação da restrição. Sua principal deficiência é omitir a advertência sobre a possibilidade de não registro e os limites de atuação do tabelião.
+
+O julgamento, porém, aproxima indevidamente “quitação anterior autoriza a formalização da escritura” de “quitação anterior garante o registro”. Essas afirmações não são equivalentes. O trecho de B segundo o qual “o registro é a execução desse direito” gera tensão com a referência, mas não declara expressamente registrabilidade automática.
+
+Por isso, os descontos em conclusão, fundamentação e ressalvas precisam identificar efeitos distintos, evitando penalizar repetidamente a mesma omissão. A classificação “Parcialmente conforme” é defensável pela leitura de incompletude; se o juiz entender existir contradição essencial, deverá justificar a classificação “Divergente”.
+
+As referências adicionais de A, inclusive a menção ao art. 320-F, § 3º, permanecem não verificáveis pelo gabarito. A nota 10 representa concordância com a referência, não validação jurídica integral.
+
+Preservar as pontuações originais e registrar esta revisão separadamente.

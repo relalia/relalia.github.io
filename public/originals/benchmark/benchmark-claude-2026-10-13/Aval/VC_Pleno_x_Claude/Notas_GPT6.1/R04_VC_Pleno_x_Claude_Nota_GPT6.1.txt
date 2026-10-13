@@ -1,0 +1,15 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do ChatGPT Grátis:
+
+Q04 — VC Pleno × Claude — Nota de revisão
+
+O juiz atribuiu 9,0 à resposta A (Vadechat Pleno), classificada como conforme, e 6,0 à resposta B (Claude), parcialmente conforme. A vantagem de A é sustentada pela maior cobertura dos requisitos do gabarito, incluindo unidades de área, CNM, cadastros, identificação urbana e nacionalidade do controlador da pessoa jurídica rural.
+
+A análise de A, porém, não registra todas as omissões. O CEP aparece expressamente apenas na identificação urbana; faltam os detalhes de localização rural mencionados na referência e a possibilidade de utilizar dados de escrituras públicas no saneamento. Também permanecem ausentes o primeiro registro voluntário como momento específico e a certificação facultativa dos demais imóveis rurais.
+
+A condiciona o CIB urbano à sua implantação, enquanto o gabarito o apresenta sem essa ressalva. Essa diferença deve ser examinada, sem tratá-la automaticamente como correspondência integral nem concluir erro jurídico externo.
+
+Quanto a B, CNM e CIB/NIRF são mencionados no trecho sobre o Provimento. A deficiência é não desenvolvê-los claramente como requisitos obrigatórios, e não sua ausência absoluta. A falta dos números exatos dos artigos não deve ser penalizada por si só; o desconto deve decorrer do conteúdo essencial omitido.
+
+Há inconsistência entre julgamentos: a mesma resposta B recebeu 7,0 contra o Ágil e 6,0 contra o Pleno, com redução nos critérios de fundamentação e ressalvas. Isso exige calibrar a pontuação individual.
+
+Preservar a vitória e as notas originais, registrando as omissões adicionais e a oscilação do juiz. O resultado mede concordância com a referência, sem validação jurídica independente.

@@ -682,5 +682,287 @@
     "originalName": "R05_ChatGPT.txt",
     "bytes": 4525,
     "sha256": "3dea083a8c8568cc0c3c024cfe037a52c854adc0a560d70d9fd97f573fb445e5"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/global_prompt.txt",
+    "originalName": "global_prompt.txt",
+    "bytes": 3183,
+    "sha256": "804fd1fc570bdb21585cf577d67cfeaec1bdc5845e31aace0640ba8508e7c10b"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/answer_alternation.txt",
+    "originalName": "answer_alternation.txt",
+    "bytes": 303,
+    "sha256": "03ae54344d8477c9f5e0ce7511c6251a7b40a742dd318366ea93e16df3f57a47"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Perguntas/Q01.txt",
+    "originalName": "Q01.txt",
+    "bytes": 465,
+    "sha256": "80904a95dc8667bc48631ee4e6cf626d8a5e681f28bb9983c18137287239c2ca"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Humano/R01_Humano.txt",
+    "originalName": "R01_Humano.txt",
+    "bytes": 1270,
+    "sha256": "e986203432557ef6be566ae09f5302cf3a25bb1bba5a758fec67251c0f8083dd"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Claude/R01_Claude.txt",
+    "originalName": "R01_Claude.txt",
+    "bytes": 2854,
+    "sha256": "a2b296a777a27ab64df2c90927cfc6ae476bb275ed4f88f82f915d220fc29ee3"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Agil_x_Claude/Pontuacoes/R01_VC_Agil_x_Claude.txt",
+    "originalName": "R01_VC_Agil_x_Claude.txt",
+    "bytes": 4526,
+    "sha256": "58f734a287aa2f376e33d18a7b99419dfa6779c8ee7b500651f6f8afde09fc45"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Agil_x_Claude/Notas_GPT6.1/R01_VC_Agil_x_Claude_Nota_GPT6.1.txt",
+    "originalName": "R01_VC_Agil_x_Claude_Nota_GPT6.1.txt",
+    "bytes": 1665,
+    "sha256": "1f4ebaa4ca11d916a9603711c036c9fd1c4008d9786b295b126e2dc0ef261f32"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Vadechat/Agil/R01_VC_Agil.txt",
+    "originalName": "R01_VC_Agil.txt",
+    "bytes": 2859,
+    "sha256": "9b49672553cda9d00e37285b7de2deddb197d7b541d931556f4c34c554c090eb"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Pleno_x_Claude/Pontuacoes/R01_VC_Pleno_x_Claude.txt",
+    "originalName": "R01_VC_Pleno_x_Claude.txt",
+    "bytes": 4750,
+    "sha256": "bc6e4d81add569c15393ad8450203410a0381c16e2aa3e0505253a772ca99127"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Pleno_x_Claude/Notas_GPT6.1/R01_VC_Pleno_x_Claude_Nota_GPT6.1.txt",
+    "originalName": "R01_VC_Pleno_x_Claude_Nota_GPT6.1.txt",
+    "bytes": 1609,
+    "sha256": "9f66f5494ee371f59e90566f918b0895c5c1926813593d43364fad9c1d578e7a"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Vadechat/Pleno/R01_VC_Pleno.txt",
+    "originalName": "R01_VC_Pleno.txt",
+    "bytes": 4004,
+    "sha256": "9504498be2840d30c089f5bec76f6f0d5d65a2a7e7461f177cfd48cfd8902949"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Perguntas/Q02.txt",
+    "originalName": "Q02.txt",
+    "bytes": 143,
+    "sha256": "e4da82c7fd312d1fdbe6182c39c82b956161061ed308a51a870d6d749fbb6688"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Humano/R02_Humano.txt",
+    "originalName": "R02_Humano.txt",
+    "bytes": 1547,
+    "sha256": "5c3b92c172b21cc480215fb42f558eb3b1e53d6574597f12ed661c891ecb48e5"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Claude/R02_Claude.txt",
+    "originalName": "R02_Claude.txt",
+    "bytes": 2888,
+    "sha256": "9f825145f942cc681d81892fb0a01d42d894dcfdf77d99e1c79007454412d741"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Agil_x_Claude/Pontuacoes/R02_VC_Agil_x_Claude.txt",
+    "originalName": "R02_VC_Agil_x_Claude.txt",
+    "bytes": 6322,
+    "sha256": "1d0aa052bd3a37e0d02d73bd680a9ac3aefdb96fc81a8778d6edce2571fe220a"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Agil_x_Claude/Notas_GPT6.1/R02_VC_Agil_x_Claude_Nota_GPT6.1.txt",
+    "originalName": "R02_VC_Agil_x_Claude_Nota_GPT6.1.txt",
+    "bytes": 1941,
+    "sha256": "29849ccf0b6120efaadaf203288a7ece433e0c542dc7cdded6d8a6c99589d401"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Vadechat/Agil/R02_VC_Agil.txt",
+    "originalName": "R02_VC_Agil.txt",
+    "bytes": 2396,
+    "sha256": "bf7f97c29f6d73831089b3d467a4dde1223a89732eefabc629e0583613de87c1"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Pleno_x_Claude/Pontuacoes/R02_VC_Pleno_x_Claude.txt",
+    "originalName": "R02_VC_Pleno_x_Claude.txt",
+    "bytes": 5570,
+    "sha256": "98218e8e9239714746bb20c469e870b86f28300defd6a83e58647fccaf0bf4ee"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Pleno_x_Claude/Notas_GPT6.1/R02_VC_Pleno_x_Claude_Nota_GPT6.1.txt",
+    "originalName": "R02_VC_Pleno_x_Claude_Nota_GPT6.1.txt",
+    "bytes": 1771,
+    "sha256": "99283e7ebdc0ee6d6cf14a2a4caba9ebd65e2b189ef2122a3e8679caf7633991"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Vadechat/Pleno/R02_VC_Pleno.txt",
+    "originalName": "R02_VC_Pleno.txt",
+    "bytes": 3689,
+    "sha256": "c1d8436a6f54e1e4a5c4e083487b1a4ac3d399cb08a4bdf886747ad20c2b6791"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Perguntas/Q03.txt",
+    "originalName": "Q03.txt",
+    "bytes": 328,
+    "sha256": "58497642f74e62e720f1fee5210e20187eed930697beaf76408a0af0bf42c256"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Humano/R03_Humano.txt",
+    "originalName": "R03_Humano.txt",
+    "bytes": 1858,
+    "sha256": "88d577c0a09cb5859308407d113322f67c4dca72cff2b4cbaff82f12f2d96795"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Claude/R03_Claude.txt",
+    "originalName": "R03_Claude.txt",
+    "bytes": 2726,
+    "sha256": "bfd85ee79d824908bfada3af4d597891f2411ac037b2b5acc552038ebb5c688a"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Agil_x_Claude/Pontuacoes/R03_VC_Agil_x_Claude.txt",
+    "originalName": "R03_VC_Agil_x_Claude.txt",
+    "bytes": 5881,
+    "sha256": "bb43445adfb6135cccf8021a0d823ec188275761b8e5de344f66601d64a60ad6"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Agil_x_Claude/Notas_GPT6.1/R03_VC_Agil_x_Claude_Nota_GPT6.1.txt",
+    "originalName": "R03_VC_Agil_x_Claude_Nota_GPT6.1.txt",
+    "bytes": 1938,
+    "sha256": "55a9edd72b0a7c914d012040ae80a9201ff84562aa800d22975b1cdd46712967"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Vadechat/Agil/R03_VC_Agil.txt",
+    "originalName": "R03_VC_Agil.txt",
+    "bytes": 4473,
+    "sha256": "924f9a878ed01f6f8071e1a55602c40baf68a6f3d8f50ff8d3e337f5d36faf2f"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Pleno_x_Claude/Pontuacoes/R03_VC_Pleno_x_Claude.txt",
+    "originalName": "R03_VC_Pleno_x_Claude.txt",
+    "bytes": 6439,
+    "sha256": "5c625925c829fec84acf21ad1a1ae95549e495409507b35f0462eed18537e587"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Pleno_x_Claude/Notas_GPT6.1/R03_VC_Pleno_x_Claude_Nota_GPT6.1.txt",
+    "originalName": "R03_VC_Pleno_x_Claude_Nota_GPT6.1.txt",
+    "bytes": 1764,
+    "sha256": "e0cb938bb83854a11d2bc75e73fdc7d15988ef39dac054e12e6e7ce014f0cdcf"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Vadechat/Pleno/R03_VC_Pleno.txt",
+    "originalName": "R03_VC_Pleno.txt",
+    "bytes": 4760,
+    "sha256": "054387583dff3470e35b9069875fa506c390ab6fe4c9a7d8e670220f44d2ce2f"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Perguntas/Q04.txt",
+    "originalName": "Q04.txt",
+    "bytes": 395,
+    "sha256": "6e3dc5263aefa68b9216c99d4ca047d946f3cf8ecaef2f92d252b8656ecec6a5"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Humano/R04_Humano.txt",
+    "originalName": "R04_Humano.txt",
+    "bytes": 2410,
+    "sha256": "d10f2c3427e39a352a24a5e4d7f006ef553e4699c8067ac8d35ee7152a771eb0"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Claude/R04_Claude.txt",
+    "originalName": "R04_Claude.txt",
+    "bytes": 3208,
+    "sha256": "421097780e7461bf0fc02bfa565f08bf07e3abbb2238d01993f28ae99b9b077e"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Agil_x_Claude/Pontuacoes/R04_VC_Agil_x_Claude.txt",
+    "originalName": "R04_VC_Agil_x_Claude.txt",
+    "bytes": 5632,
+    "sha256": "97340df67d02a3eb98c120a48177f3d4491ced58f728111a5b7552b862146dab"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Agil_x_Claude/Notas_GPT6.1/R04_VC_Agil_x_Claude_Nota_GPT6.1.txt",
+    "originalName": "R04_VC_Agil_x_Claude_Nota_GPT6.1.txt",
+    "bytes": 1934,
+    "sha256": "0c0396c13cb1e1ae3c78fe1fc6332c0ca91ac5e9c8174f59f2bf42e588bb0a49"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Vadechat/Agil/R04_VC_Agil.txt",
+    "originalName": "R04_VC_Agil.txt",
+    "bytes": 6066,
+    "sha256": "42572e50184d0e5387848c2aa15af063c602fbacbcc8bd33428ada5b2f7c1e1a"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Pleno_x_Claude/Pontuacoes/R04_VC_Pleno_x_Claude.txt",
+    "originalName": "R04_VC_Pleno_x_Claude.txt",
+    "bytes": 5040,
+    "sha256": "e31e716e4a4201a3ab8ffbbd2e411366d85dcd33c2c64a4a4f6c42506c0ed0f3"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Pleno_x_Claude/Notas_GPT6.1/R04_VC_Pleno_x_Claude_Nota_GPT6.1.txt",
+    "originalName": "R04_VC_Pleno_x_Claude_Nota_GPT6.1.txt",
+    "bytes": 1843,
+    "sha256": "5f41d468c26144b5206e57fff7e7d726e92fde281d639d5743463e685b23762f"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Vadechat/Pleno/R04_VC_Pleno.txt",
+    "originalName": "R04_VC_Pleno.txt",
+    "bytes": 7508,
+    "sha256": "53e2a2f63710bb428be0a984e4e285a7db88fb8df296ad2b0af94649ba205a8d"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Perguntas/Q05.txt",
+    "originalName": "Q05.txt",
+    "bytes": 83,
+    "sha256": "726fa0d3a9384b3c5f407f1d8cc1e2e8f0c894196532a6fa4539abbfdc2c75b4"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Humano/R05_Humano.txt",
+    "originalName": "R05_Humano.txt",
+    "bytes": 2476,
+    "sha256": "1bcb52330586749a0e9225cd796848014f36a4bcc6c7df2d56b27878c88f27b8"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Claude/R05_Claude.txt",
+    "originalName": "R05_Claude.txt",
+    "bytes": 1939,
+    "sha256": "0383dd8dc53d0d4b4c96fcd4639b74188b507168c6dfa30cbde9aa545c152607"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Agil_x_Claude/Pontuacoes/R05_VC_Agil_x_Claude.txt",
+    "originalName": "R05_VC_Agil_x_Claude.txt",
+    "bytes": 5388,
+    "sha256": "4925c2f1ee109f9181d9ecb616dfd5d5c9126c68705054f738fe0f2658f017db"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Agil_x_Claude/Notas_GPT6.1/R05_VC_Agil_x_Claude_Nota_GPT6.1.txt",
+    "originalName": "R05_VC_Agil_x_Claude_Nota_GPT6.1.txt",
+    "bytes": 1833,
+    "sha256": "af5b29b49b73b861aea81f054a906ae3c2d69302d15ae38be73a66e83e96615d"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Vadechat/Agil/R05_VC_Agil.txt",
+    "originalName": "R05_VC_Agil.txt",
+    "bytes": 3914,
+    "sha256": "db3d8335f169d521163f4384772b0903745c084a645053d0d79bd9cf31954112"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Pleno_x_Claude/Pontuacoes/R05_VC_Pleno_x_Claude.txt",
+    "originalName": "R05_VC_Pleno_x_Claude.txt",
+    "bytes": 6263,
+    "sha256": "b430fabbc58e3a6762bcf7e535eff9a56f80b4a098a53568a5dfc5e6eab63496"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Aval/VC_Pleno_x_Claude/Notas_GPT6.1/R05_VC_Pleno_x_Claude_Nota_GPT6.1.txt",
+    "originalName": "R05_VC_Pleno_x_Claude_Nota_GPT6.1.txt",
+    "bytes": 1874,
+    "sha256": "a7995ca9198e6a945eceb06cfc26dd71fc8e7d997dfbd6088f375dad2d4ff790"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-claude-2026-10-13/Respostas/Vadechat/Pleno/R05_VC_Pleno.txt",
+    "originalName": "R05_VC_Pleno.txt",
+    "bytes": 3340,
+    "sha256": "f860f4659e382d2f680ee2e5a10a4759ec71977711e6638c95fff644da3b0f85"
   }
 ]

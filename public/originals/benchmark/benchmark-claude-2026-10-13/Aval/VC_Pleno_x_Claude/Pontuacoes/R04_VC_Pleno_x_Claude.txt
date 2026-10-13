@@ -1,0 +1,52 @@
+## 1\. Tabela de avaliação
+
+A comparação considera exclusivamente a resposta humana de referência fornecida, sem verificar a correção jurídica independente das respostas.
+
+| Critério | Resposta A | Resposta B |
+| --- | --- | --- |
+| 1\. Conclusão e orientação prática (0–4) | 4,0 | 3,0 |
+| 2\. Fundamentação e informações essenciais (0–4) | 3,5 | 2,0 |
+| 3\. Condições, limites e ressalvas (0–2) | 1,5 | 1,0 |
+| Nota total | 9,0/10 | 6,0/10 |
+| Classificação | Conforme | Parcialmente conforme |
+
+## 2\. Análise da resposta A
+
+Nota: 9,0/10 — Conforme
+
+- Acertos: apresenta os dados de identificação urbana e rural, incluindo área em unidades distintas, CNM, cadastros fiscais e rurais, localização, CEP e georreferenciamento. Também contempla a nacionalidade de quem detém a maioria do capital social de pessoa jurídica proprietária de imóvel rural. Esses pontos correspondem substancialmente aos elementos centrais da referência.
+- Orientação prática: explica quando o cartório deve exigir saneamento, destacando divergências entre o título e o registro, omissões de elementos essenciais e situações que demandam regularização. A orientação está alinhada à referência quanto à necessidade de corrigir dados omissos ou incorretos.
+- Omissões ou limitações: não explicita com a mesma precisão da referência que a inserção dos dados ocorre na abertura de novas matrículas ou por averbação de saneamento nas existentes quando da prática do primeiro registro voluntário. Também não reproduz claramente a ressalva de que a certificação da poligonal rural permanece facultativa para os demais imóveis rurais, a critério do proprietário.
+- Informações adicionais não verificáveis pela referência: as regras sobre duplicidade e sobreposição de matrículas, extratos eletrônicos, manual interno, ART/RRT e procedimentos específicos de bloqueio e retificação não podem ser confirmadas nem contraditas apenas com o gabarito apresentado.
+
+Justificativa da nota: a resposta abrange praticamente todos os elementos materiais da referência e fornece orientação prática compatível. Os descontos decorrem principalmente da falta de precisão sobre o momento específico do saneamento e da ausência de explicitação da ressalva relativa à certificação rural facultativa.
+
+## 3\. Análise da resposta B
+
+Nota: 6,0/10 — Parcialmente conforme
+
+- Acertos: identifica corretamente, em relação à referência, os dados básicos previstos para imóveis urbanos e rurais, como localização, área, características, confrontações e informações cadastrais rurais. Também reconhece a necessidade de corrigir divergências entre o título e o registro anterior e aborda o georreferenciamento rural.
+- Omissões relevantes: não apresenta o conjunto de requisitos complementares enfatizados na referência: CNM, CEP, logradouro completo e bairro, códigos do CAR, CIF e CIB, bem como a nacionalidade de quem detém a maioria do capital social da pessoa jurídica proprietária de imóvel rural. A resposta também não explica o momento específico de inclusão dos dados em novas matrículas ou de averbação nas existentes por ocasião do primeiro registro voluntário.
+- Fundamentação incompleta: a resposta reconhece que o Provimento nº 149/2023 regulamenta a matéria, mas admite não conseguir citar com segurança os artigos específicos sobre identificação do imóvel. Isso deixa sem desenvolvimento justamente parte importante da fundamentação solicitada e da referência.
+- Condições e ressalvas: menciona os prazos escalonados do georreferenciamento rural e recomenda conferir os prazos aplicáveis. Contudo, não apresenta a ressalva da referência sobre a certificação da poligonal rural facultativa nos demais casos, nem esclarece o uso de dados de escrituras públicas para saneamento.
+- Informações adicionais não verificáveis pela referência: as menções aos arts. 198, 213, 195 e 237, aos procedimentos de retificação e às exigências em ações judiciais não podem ser confirmadas nem contraditas com base apenas na resposta humana.
+
+Justificativa da nota: a resposta oferece uma estrutura básica útil, mas omite diversos dados cadastrais expressamente destacados no gabarito e não desenvolve adequadamente as disposições específicas do Provimento nº 149/2023.
+
+## 4\. Resultado
+
+## A venceu
+
+Resposta A
+
+# 9,0/10
+
+Resposta B
+
+# 6,0/10
+
+Diferença: 3,0 pontos.
+
+A resposta A é a mais alinhada à referência porque contempla mais informações obrigatórias sobre a identificação dos imóveis, incluindo os cadastros específicos, e oferece orientação mais completa sobre o saneamento registral. A resposta B acerta os requisitos gerais, mas deixa de abordar elementos essenciais expressamente indicados no gabarito.
+
+A vitória de A decorre da maior concordância com a referência, não de uma validação jurídica independente de nenhuma das respostas.

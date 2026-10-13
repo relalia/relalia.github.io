@@ -1,0 +1,18 @@
+Nota do GPT-6.1 Sol Alta sobre a avaliação do ChatGPT Grátis:
+
+Q04 — VC Ágil × Claude — Nota de revisão
+
+O juiz atribuiu 8,0 à resposta A (Vadechat Ágil), classificada como conforme, e 7,0 à resposta B (Claude), parcialmente conforme. A vitória de A é sustentada pela maior cobertura dos requisitos específicos do gabarito.
+
+Entretanto, A apresenta “CIF ou CIB” para imóveis urbanos, enquanto a referência exige “CIF e CIB”. Isso transforma uma exigência cumulativa em alternativa e não foi identificado pelo juiz. Se considerado requisito essencial, constitui contradição que impede a classificação “Conforme”, independentemente da nota total.
+
+A também vincula a obrigatoriedade do georreferenciamento rural à certificação prévia do Incra, enquanto a referência a vincula aos casos previstos em lei. Essa diferença deve ser examinada como possível alteração do critério de obrigatoriedade, sem recorrer a legislação externa.
+
+Quanto a B, o CNM aparece no trecho sobre o Provimento. A deficiência é não o apresentar claramente como informação obrigatória da matrícula, e não sua ausência absoluta. O juiz também deixou de apontar a omissão das unidades de área — metros quadrados e hectares.
+
+Os 1,5 pontos em ressalvas para ambas carecem de justificativa comparativa: A menciona hipóteses urbanas e facultatividade rural presentes no gabarito; B não explicita esses pontos. A cautela de B sobre fontes não substitui essas condições.
+
+Ambas omitem CEP, nacionalidade do controlador da pessoa jurídica rural e o momento específico do saneamento nas matrículas existentes. Esses descontos são sustentados pela referência.
+
+Preservar o julgamento original, mantendo a vitória de A como plausível e registrando a necessidade de revisar sua classificação e a distribuição dos pontos. Esta revisão mede apenas concordância com o gabarito.
+
