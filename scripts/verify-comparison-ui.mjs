@@ -56,7 +56,9 @@ try{
     await page.reload();await page.locator('.benchmark-comparison').waitFor();
     await page.goto(base+'/');await page.locator('.benchmark-comparison').waitFor();assert(await page.locator('.timeline a[aria-current="page"]').getAttribute('href')===`/relatorios/${d.id}/`);
     await page.getByRole('link',{name:'Execução inicial · 09/10/2026',exact:true}).click();await page.locator('.benchmark:not(.benchmark-comparison)').waitFor();
-    assert(page.url().includes('benchmark-2026-10-09'));await context.close();
+    assert(page.url().includes('benchmark-2026-10-09'));
+    assert(await page.locator(`.timeline a[href="/relatorios/${d.id}/"]`).isVisible(),'New catalog card missing on historical report');
+    await context.close();
     console.log(`${width}px: route, home, keyboard, sources, copy/download, history and overflow verified`);
   }
   assert.equal(errors.length,0,errors.join('\n'));
