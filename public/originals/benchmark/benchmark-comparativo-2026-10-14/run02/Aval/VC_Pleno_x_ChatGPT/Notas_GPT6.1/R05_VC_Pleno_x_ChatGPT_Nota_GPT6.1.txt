@@ -1,0 +1,44 @@
+**Nota de revisão — Prompt 10 — Pleno × ChatGPT**
+
+B apresenta maior alinhamento nos requisitos da ficha-padrão. Contudo, **o parecer reconhece que não pode julgar a validade do cartão e, mesmo assim, declara vencedor**. Como esse é um ponto central da pergunta, o protocolo exige avaliação inconclusiva.
+
+**Registro original preservado**
+
+| Critério                               |                     A |        B |
+| -------------------------------------- | --------------------: | -------: |
+| Conclusão e orientação prática         |                   2/4 |      4/4 |
+| Fundamentação e informações essenciais |                   1/4 |      4/4 |
+| Condições, limites e ressalvas         |                   0/2 |      1/2 |
+| **Total**                              |              **3/10** | **9/10** |
+| **Classificação**                      | Parcialmente conforme | Conforme |
+
+**Resultado original: B venceu, por 9 a 3.**
+
+**Problemas demonstráveis**
+
+1. **A lacuna central não recebeu o tratamento obrigatório.**
+   A limitação final afirma que o prazo de validade “não pôde ser julgado”. O protocolo determina inconclusividade quando a referência não permite avaliar um ponto central. Não penalizar as respostas por esse tema é adequado, mas insuficiente: a ausência de informação também impede confirmar o julgamento global. Permanece possível comparar, com escopo limitado, conceito e requisitos de abertura.
+
+2. **Foi apontada uma omissão que a referência não exige suprir.**
+   O juiz observa que B não diferencia expressamente reconhecimento por autenticidade e por semelhança. Entretanto, a referência apenas menciona as modalidades, sem desenvolver essa distinção. B também as menciona. A ausência de explicação adicional não deve fundamentar desconto nesse teste. O parecer não esclarece se essa observação afetou a nota.
+
+3. **A exigência de documento original foi indevidamente apresentada como acerto confirmado.**
+   A referência exige os dados do documento oficial na ficha, mas não afirma expressamente sua apresentação em original. Esse requisito de B deve ser separado do conteúdo confirmado e tratado como não verificável. Também não há base para falar em “pequena divergência de numeração”: a referência menciona conjuntamente os arts. 471 e 472 e não localiza essa exigência específica.
+
+**Pontos que admitem interpretação**
+
+* **Fato obrigatório em B:** considerar atendida em substância a menção ao código, apesar da ausência de “Goiás”, é uma interpretação possível pela denominação e pelos dispositivos coincidentes. Essa correspondência, porém, não comprova isoladamente a identificação territorial.
+* **Biometria:** B menciona foto, digital e confirmação biométrica como procedimento local. Continua ausente a informação da referência de que a biometria é **recomendada, não obrigatória**. A regra local não pode ser considerada falsa apenas por não constar do gabarito, nem substituir automaticamente essa ressalva.
+* **Distribuição das notas:** reconhecer a presença e a regra etária de B, deixando outras ressalvas no critério 3, é defensável. Para A, o zero precisa considerar sua orientação de comparecimento e assinatura diante de funcionário autorizado. Não há elementos suficientes para demonstrar dupla penalização.
+
+**Aspectos consistentes**
+
+O parecer reconhece corretamente a superioridade de B na lista mínima, nas três assinaturas e na regra etária. Também identifica omissões reais de diligência e de limitação do reconhecimento à autoria. As somas estão corretas; as classificações correspondem às notas, embora a lacuna central comprometa a conclusão global.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Aplicar a regra de inconclusividade ao julgamento global; preservar apenas uma comparação delimitada dos requisitos; retirar exigências adicionais não presentes na referência e separar requisitos confirmados de acréscimos não verificáveis.
+
+**Conclusão**
+
+A preferência por B **nos requisitos de abertura** tem suporte. O resultado global, porém, não está consistente com a regra de insuficiência da referência. A reconsideração pode alterar o status para inconclusivo, sem demonstrar superioridade de A. As pontuações e o resultado originais permanecem preservados acima.

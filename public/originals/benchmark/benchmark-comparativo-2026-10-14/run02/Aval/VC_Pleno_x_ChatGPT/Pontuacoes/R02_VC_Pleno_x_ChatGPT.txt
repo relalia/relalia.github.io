@@ -1,0 +1,54 @@
+Avaliação feita apenas com base na pergunta, na referência humana e nas respostas A e B.
+
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 3 | 4 |
+| 2. Fundamentação e informações essenciais (0-4) | 3 | 3 |
+| 3. Condições, limites e ressalvas (0-2) | 1 | 2 |
+| **Nota total** | **7** | **9** |
+| **Classificação** | Parcialmente conforme | Conforme |
+
+## 2. Análise
+
+**Resposta A**
+
+*Acertos:*
+- Distingue corretamente o que exige especial atenção do que impõe comunicação obrigatória.
+- Identifica o art. 161 (pagamento em espécie ou por título ao portador igual ou superior a R$ 100.000,00, declarado pelas partes) como única hipótese de comunicação independente de análise, o que coincide com a referência.
+- Cobre os itens do art. 162 presentes na referência: doação sem vínculo familiar, transmissões sucessivas e diferença anormal de valores. Cobre também os itens da referência sobre recusa de informações, incompatibilidade patrimonial e dificuldade de identificar o beneficiário final, por meio do art. 155-A.
+
+*Omissões e falhas:*
+- A lista do art. 155-A mistura elementos de forma imprecisa. Por exemplo, inclui "fracionamento ou pagamento em espécie/título ao portador" e "substancial ganho de capital", que não aparecem na referência. Isso é não verificável pela referência, sem penalidade em si.
+- Não indica que a doação do art. 162, I tem condição de valor (valor venal de R$ 100.000,00 ou mais) como limite. Na verdade, a menciona, mas sem distinguir claramente a condição. Quanto à referência ("quando atendidos os requisitos previstos na norma"), a condição é citada, o que é aceitável.
+- Afirma que o art. 161 é "automático, independentemente de outros indícios". Isso está alinhado com a referência.
+- A ressalva sobre o art. 161 não ser aplicável a qualquer compra e venda de R$ 100.000,00 ou mais está ausente. Isso não consta na referência, portanto não pesa.
+
+*Não verificável pela referência:* arts. 139, 141 e 144 (política de PLD, oficial de cumprimento, treinamento), referência a normas estaduais e a base do cartório.
+
+*Descontos:* no critério 1, pontos perdidos porque a orientação prática é menos precisa em separar as categorias. No critério 2, não há menção expressa à diferença entre operações e meios de pagamento incompatíveis com práticas de mercado de forma sistematizada. No critério 3, as ressalvas são genéricas.
+
+**Resposta B**
+
+*Acertos:*
+- Separa com clareza a análise especial (arts. 155-A e 162) da comunicação obrigatória (art. 161), com a conclusão alinhada à referência.
+- Detalha os três elementos do art. 161: valor mínimo, meio de pagamento e declaração das partes no título.
+- Esclarece que o art. 161 não torna obrigatória toda compra e venda a partir de R$ 100.000,00, o que reforça o limite da regra e é compatível com a referência.
+- Aponta que a suspeição exige análise contextual e fundamentação concreta, e que suspeita não implica recusa automática do ato. Esses pontos são não verificáveis pela referência, mas compatíveis com ela.
+- Cobre todos os itens do art. 162 e os do art. 155-A que correspondem à referência.
+
+*Omissões e falhas:*
+- Não menciona de forma expressa "meios de pagamento incompatíveis com práticas de mercado" como item autônomo, embora isso resulte indiretamente da análise contextual.
+- Inclui histórico da redação anterior do art. 161 (R$ 30.000,00), art. 151, art. 171 do tabelião e Siscoaf. Tudo isso é não verificável pela referência, sem prêmio ou penalidade. A limitação da comparação é que a referência não trata dessas normas.
+- Mais extensa, mas isso não é critério de pontuação.
+
+*Descontos:* critério 2 com perda parcial pela ausência do item (f) da referência como hipótese nomeada. Critério 1 e critério 3 com pontuação máxima, pois a conclusão e as ressalvas estão plenamente alinhadas.
+
+## 3. Resultado
+
+**B venceu** (9 contra 7).
+
+## 4. Justificativa final
+
+Ambas chegam à conclusão central da referência: o art. 161 impõe comunicação independente de análise para pagamento em espécie ou por título ao portador a partir de R$ 100.000,00, e os arts. 155-A e 162 exigem análise especial. B se aproxima mais da referência por explicitar os elementos e limites do art. 161 e por separar de forma mais clara as duas categorias, enquanto A é correta nos pontos essenciais, mas menos precisa nas condições e ressalvas. As informações adicionais de ambas (outros artigos, histórico normativo) são não verificáveis pela referência e não influenciaram a pontuação.

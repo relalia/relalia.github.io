@@ -1,0 +1,44 @@
+**Nota de revisão — Prompt 5 — Ágil × ChatGPT**
+
+B apresenta maior alinhamento nos requisitos de abertura da ficha. Entretanto, **a referência não responde à questão central sobre sua validade**. Pelo protocolo, essa lacuna exige avaliação inconclusiva, não apenas constatação de ausência de contradição. Há também problemas na justificativa dos descontos de A.
+
+**Registro original preservado**
+
+| Critério                               |                     A |                     B |
+| -------------------------------------- | --------------------: | --------------------: |
+| Conclusão e orientação prática         |                   2/4 |                   3/4 |
+| Fundamentação e informações essenciais |                   1/4 |                   3/4 |
+| Condições, limites e ressalvas         |                   0/2 |                   1/2 |
+| **Total**                              |              **3/10** |              **7/10** |
+| **Classificação**                      | Parcialmente conforme | Parcialmente conforme |
+
+**Resultado original: B venceu, por 7 a 3.**
+
+**Problemas demonstráveis**
+
+1. **A insuficiência da referência não recebeu o tratamento exigido.**
+   O juiz reconhece que “a referência não fala de prazo de validade”, mas mantém classificações conclusivas e vencedor. A pergunta contém expressamente esse tema. O protocolo determina: “Se a referência não permitir julgar um ponto central, declare a avaliação inconclusiva”. É possível comparar os requisitos de abertura; não é possível confirmar, com o material fornecido, as afirmações sobre inexistência de prazo. **Ausência de contradição não equivale a confirmação.**
+
+2. **A ausência da norma estadual fundamenta descontos em dois critérios.**
+   Em A, o juiz reduz o critério 1 por orientação “sem a fundamentação normativa” e o critério 2 pela ausência “da norma estadual”. A mesma deficiência reaparece sem explicação de efeitos distintos, como exige o protocolo. A duplicação do motivo está documentada; o parecer não permite identificar quantos pontos decorrem dela em cada critério.
+
+3. **A referência a funcionário autorizado foi indevidamente problematizada.**
+   O parecer destaca que A atribui o procedimento a “funcionário do cartório”. Contudo, A especifica que a assinatura é colhida “na presença do funcionário autorizado”. Isso apresenta alinhamento semântico com o preposto autorizado da referência. A ausência de citação normativa não transforma essa informação em conteúdo não verificável.
+
+**Pontos que admitem interpretação**
+
+* **Conteúdo mínimo em A:** a lista completa realmente falta, especialmente três assinaturas, data de abertura e sinal público. Entretanto, A menciona CPF, identificação e preenchimento dos dados pessoais. Cabe reconhecer esse atendimento parcial, sem equipará-lo à reprodução completa dos campos obrigatórios.
+* **Zero em ressalvas para A:** a afirmação de que “nenhuma” aparece é excessivamente abrangente, pois A contempla presença pessoal e coleta diante de funcionário autorizado. A pontuação depende de como esses elementos foram distribuídos entre os critérios; as demais ressalvas realmente estão ausentes.
+* **Descontos de B:** a identificação incompleta do código de Goiás e as omissões de biometria, diligência e limitação à autoria são sustentadas pelo texto. Porém, a regra de presença, sua exceção e a vedação de preenchimento externo aparecem em justificativas de critérios diferentes. É necessário explicar os aspectos distintos para afastar duplicação.
+
+**Aspectos consistentes**
+
+B efetivamente reproduz os campos mínimos e a regra etária com maior precisão. As somas estão corretas, e as classificações correspondem às notas atribuídas, considerando a ausência de contradições decisivas identificadas. Os demais acréscimos normativos são adequadamente tratados como não verificáveis.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Aplicar a regra de inconclusividade à lacuna sobre validade, mantendo eventual comparação dos requisitos expressamente limitada a esse tema. Reexaminar os descontos repetidos de A e reconhecer seus alinhamentos parciais.
+
+**Conclusão**
+
+A superioridade de B **nos requisitos de abertura** encontra suporte no material. Contudo, o vencedor global não atende integralmente ao protocolo diante da lacuna central da referência. Essa falha pode alterar o status do julgamento para inconclusivo; os problemas nos descontos podem afetar a margem, sem demonstrar superioridade de A. As notas e o resultado originais permanecem registrados acima.

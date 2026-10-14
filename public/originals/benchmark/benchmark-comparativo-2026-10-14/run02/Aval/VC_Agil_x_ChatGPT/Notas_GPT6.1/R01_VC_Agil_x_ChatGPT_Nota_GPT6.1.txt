@@ -1,0 +1,39 @@
+**Nota de revisão — Prompt 1 — Ágil × ChatGPT**
+
+O parecer reconhece as principais diferenças entre as respostas, mas apresenta problemas na aplicação do protocolo: usa uma informação não verificável contra B, ignora parcialmente conteúdos presentes nas respostas e não vincula os descontos a cada critério. A preferência por A tem suporte no material; a precisão das notas exige reconsideração.
+
+**Registro original preservado**
+
+| Critério                               |                     A |                     B |
+| -------------------------------------- | --------------------: | --------------------: |
+| Conclusão e orientação prática         |                   2/4 |                   2/4 |
+| Fundamentação e informações essenciais |                   2/4 |                   1/4 |
+| Condições, limites e ressalvas         |                   1/2 |                   0/2 |
+| **Total**                              |              **5/10** |              **3/10** |
+| **Classificação**                      | Parcialmente conforme | Parcialmente conforme |
+
+**Resultado original: A venceu, por 5 a 3.**
+
+**Problemas demonstráveis**
+
+1. **Informação não verificável usada contra B.** A justificativa final afirma que B “se afasta da referência ao trazer […] a assinatura ‘a rogo’”. A referência não confirma nem contradiz essa possibilidade. Pelo protocolo, o acréscimo deve ser registrado como **não verificável pela referência**, sem penalidade por si só. A ausência de firma reconhecida ou ICP-Brasil é uma omissão distinta e pode fundamentar desconto.
+
+2. **Reconhecimento incompleto dos formatos tratados por A.** O parecer agrupa as formas de apresentação entre os requisitos não afirmados. Entretanto, A menciona documento “idôneo e passível de validação” e “certidão física ou eletrônica”. Isso não satisfaz integralmente a referência — faltam original e cópia autenticada explicitamente —, mas constitui alinhamento parcial. Também é impreciso afirmar que A declarou não conseguir confirmar todos esses requisitos: sua ressalva final identifica prazo, reconhecimento de firma e forma de assinatura.
+
+3. **Acerto de B omitido e conclusão excessivamente abrangente.** B afirma que a matrícula deve conter qualificação “completa, atual e correta” e prevê “inserção, atualização ou retificação desses dados, com a respectiva averbação”. Portanto, dizer que B “ignora […] a natureza da averbação” desconsidera conteúdo aproveitável. Continua válida a omissão específica de que a atualização não representa transmissão da propriedade.
+
+4. **Descontos sem correspondência explícita com os critérios.** O parecer enumera falhas, mas não explica quais justificam cada redução. Em particular, B recebe **0/2 em condições e ressalvas**, embora contemple alteração do nome condicionada ao casamento e regime de bens associado à outorga conjugal. A nota zero precisa explicar por que esses elementos não atendem ao conteúdo essencial desse critério. **Não é possível demonstrar dupla penalização**, mas a distribuição apresentada também não permite descartá-la.
+
+**Divergências razoáveis de interpretação**
+
+* **Prazo de 90 dias em A:** tratar a ressalva como omissão é defensável, pois A declara impossibilidade de confirmação. Contudo, “não seria correto afirmar categoricamente” também pode ser interpretado como contestação da exigência da referência. O parecer deveria justificar essa distinção, pois ela pode afetar a classificação.
+* **Procedimento do Registro Civil em B:** há desvio textual de foco, ao tratar de averbações nos registros de nascimento e casamento. Porém, B também determina que a averbação ocorra na matrícula imobiliária. Cabe avaliar a ambiguidade da orientação, sem concluir, apenas pela referência, que o encaminhamento mencionado é juridicamente falso.
+* **Artigos diferentes ou ausentes:** a ausência de citação expressa ao art. 167, II, em A não comprova, isoladamente, deficiência de fundamentação. O protocolo exige comparação de significado. Ambos mencionam a Lei nº 6.015/1973 e o Código goiano, atendendo ao fato obrigatório informado.
+
+**Recomendações de reconsideração — sem alterar o registro original**
+
+Retirar a assinatura “a rogo” dos motivos desfavoráveis; reconhecer os alinhamentos parciais identificados; e justificar os descontos individualmente, especialmente o **0/2 de B**, evitando contabilizar a mesma omissão em critérios diferentes sem explicação.
+
+**Conclusão**
+
+As somas, o vencedor pela maior nota e as classificações são formalmente consistentes com a leitura de ausência de contradição decisiva adotada pelo juiz. A referência é suficiente para a comparação. As falhas encontradas podem afetar as notas e a margem da vitória, mas **não demonstram que B deveria vencer ou que haveria empate**. A vantagem de A permanece sustentada pelo tratamento mais completo da ausência de transmissão, do regime de bens e do pacto antenupcial.

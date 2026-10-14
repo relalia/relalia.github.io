@@ -1,0 +1,41 @@
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0–4) | 1 | 1 |
+| 2. Fundamentação e informações essenciais (0–4) | 2 | 2 |
+| 3. Condições, limites e ressalvas (0–2) | 0 | 1 |
+| **Nota total** | **3** | **4** |
+| **Classificação** | Divergente | Divergente |
+
+## 2. Análise
+
+**Resposta A**
+
+- **Acertos:** Cita o art. 611 do CPC e o prazo de 2 meses da abertura da sucessão, o que coincide com a referência. Menciona legislação tributária estadual de Goiás (Lei nº 11.651/1991, art. 88-C), o que atende parcialmente ao fato obrigatório de citar o CPC e o código tributário estadual.
+- **Contradições e omissões:**
+  - A referência conclui que o marco é de 60 dias corridos contados do falecimento. A Resposta A não apresenta esse prazo.
+  - Afirma que a contagem do prazo para evitar a multa considera o "primeiro dia útil subsequente ao vencimento". Isso diverge da referência, que fala em dias corridos desde o óbito.
+  - Não identifica o conflito entre "2 meses" e "60 dias" nem o seu impacto prático (meses de 31 dias).
+  - Não menciona o sistema ITCD WEB nem a multa automática.
+- **Não verificável pela referência:** LC nº 005/2000, Código de Normas e Procedimentos, Resolução nº 35/2007, Resolução nº 695/2026, prazo de 5 dias para o tabelião informar o fisco, exigência de comprovação do ITCD para a escritura. A referência não permite confirmar nem refutar esses pontos. Não há prêmio nem penalidade por eles.
+
+**Resposta B**
+
+- **Acertos:**
+  - Usa dias corridos contados da data do óbito, como a referência.
+  - Reconhece o marco de 60 dias.
+  - Cita o art. 611 do CPC (2 meses).
+  - Distingue o prazo civil do prazo fiscal, o que se aproxima do conflito normativo descrito na referência.
+  - Orienta transmitir a declaração do ITCD o quanto antes.
+  - Cita o Código Tributário do Estado de Goiás (Lei nº 11.651/1991) e o CPC.
+- **Contradições:** A referência diz que a transmissão após os 60 dias gera multa automática imediata. A Resposta B conclui que a multa só incide a partir do 121º dia (10% após 60 dias e 20% após 120 dias, mas com a conclusão prática de que a referência é o prazo de 120 dias). Isso contraria a conclusão e a condição essencial da referência. Também não explica o problema dos meses de 31 dias nem o cálculo automático do ITCD WEB.
+- **Não verificável pela referência:** Percentuais de 10% e 20%, exemplo de datas de 2022, links da Secretaria da Economia, perguntas 62 e 65. O trecho sobre a distinção entre declaração e escritura não é contradito pela referência.
+
+## 3. Resultado
+
+**B venceu** (4 a 3). Ambas as respostas foram classificadas como Divergentes, então a vitória indica apenas maior proximidade com a referência.
+
+## 4. Justificativa final
+
+Nenhuma das respostas chega à conclusão da referência de que o prazo sem multa é de 60 dias corridos do óbito. A Resposta A diverge ao falar em contagem por dias úteis a partir do vencimento. A Resposta B diverge ao fixar 120 dias como referência prática para evitar a multa. A B fica ligeiramente à frente porque adota a contagem em dias corridos desde o óbito, reconhece o marco de 60 dias, distingue o prazo de 2 meses do CPC do prazo estadual e recomenda agir cedo.

@@ -1,0 +1,90 @@
+**Resposta direta**
+
+Nas operações de compra e venda de imóvel, o registrador de imóveis deve analisar com especial atenção situações que possam indicar lavagem de dinheiro ou financiamento do terrorismo (LD/FTP) e comunicar à Unidade de Inteligência Financeira (UIF) quando identificar indícios suspeitos ou em hipóteses que exigem comunicação obrigatória independentemente da análise. Os arts. 155-A, 161 e 162 do Código Nacional de Normas, instituído pelo Provimento CNJ nº 149/2023, com redação dada pelo Provimento CNJ nº 161/2024, estabelecem os critérios para essa análise e comunicação.
+
+---
+
+### 1. Situações que exigem análise com especial atenção
+
+O art. 155-A do Provimento nº 149/2023 determina que, na hipótese do art. 151, I, envolvendo dever de análise com especial atenção, o notário e o registrador devem atentar para operações, propostas ou situações que, a partir dos documentos apresentados, apresentem características como:
+
+- Não decorrerem de atividades ou negócios usuais do cliente, de outros envolvidos ou do seu ramo de atuação;
+- Terem origem ou fundamentação econômica ou legal não claramente aferíveis;
+- Serem incompatíveis com o patrimônio ou capacidade econômico-financeira do cliente ou de outros envolvidos;
+- Envolverem difícil ou inviável identificação de beneficiário(s) final(is);
+- Relacionarem-se a pessoa jurídica domiciliada em jurisdição listada pelo Grupo de Ação Financeira (Gafi) como de alto risco ou com deficiências estratégicas em matéria de PLD/FTP;
+- Envolverem países ou dependências listados pela Receita Federal do Brasil como de tributação favorecida e/ou regime fiscal privilegiado;
+- Relacionarem-se a pessoa jurídica cujos sócios, administradores, beneficiários finais, procuradores ou representantes legais mantenham domicílio em jurisdições consideradas pelo Gafi de alto risco ou com deficiências estratégicas em matéria de PLD/FTP;
+- Apresentarem resistência ao fornecimento de informação ou documentação solicitada para fins relacionados à prevenção à lavagem de dinheiro e financiamento do terrorismo;
+- Envolverem prestação de informação ou documentação falsa ou de difícil ou onerosa verificação;
+- Apresentarem operações injustificadamente mais complexas ou onerosas que o usual, dificultando o rastreamento de recursos ou a identificação do real propósito;
+- Apresentarem sinais de caráter fictício ou de relação com valores incompatíveis com os de mercado;
+- Envolverem cláusulas incompatíveis com as praticadas no mercado;
+- Aparentarem tentativa de burlar controles e registros exigidos pela legislação de PLD/FTP, inclusive mediante fracionamento ou pagamento em espécie, com título emitido ao portador ou por outros meios que dificultem a rastreabilidade;
+- Envolverem registro de documento de procedência estrangeira que ofereça dificuldade significativa para compreensão jurídica no contexto notarial ou registral;
+- Revelarem substancial ganho de capital em curto período;
+- Envolverem lavratura ou utilização de instrumento de procuração que outorgue amplos poderes de administração.
+
+Além disso, o art. 162 do mesmo Provimento determina que o oficial de registro de imóveis deve analisar com especial atenção, para fins de eventual comunicação à UIF, operações ou situações relacionadas a:
+
+- Doações de bens imóveis ou direitos reais sobre bens imóveis para terceiros sem vínculo familiar aparente com o doador, referente a bem imóvel com valor venal atribuído pelo município igual ou superior a R$ 100.000,00;
+- Concessão de empréstimos hipotecários ou com alienação fiduciária entre particulares;
+- Registro de negócios celebrados por sociedades dissolvidas que tenham regressado à atividade;
+- Registro de aquisição de imóveis por fundações e associações, quando as características do negócio não se coadunem com suas finalidades;
+- Registro de transmissões sucessivas do mesmo bem em período e com diferença de valor anormais;
+- Registro de título no qual conste valor declarado de bem com diferença anormal em relação a outros valores a ele associados, como avaliação fiscal ou valor patrimonial para fins sucessórios ou de integralização de capital.
+
+Nessas hipóteses, o registrador deve comunicar a operação à UIF caso a considere suspeita, no prazo previsto no art. 151 do Provimento nº 149/2023.
+
+---
+
+### 2. Situações que exigem comunicação obrigatória independentemente da análise
+
+O art. 161 do Provimento nº 149/2023 estabelece que o oficial de registro de imóveis deve comunicar à UIF, na forma do art. 151, II, o registro de documento ou título em que conste declaração das partes de pagamento em espécie ou por título ao portador, de valor igual ou superior a R$ 100.000,00 ou equivalente em outra moeda.
+
+Complementarmente, o art. 163 do mesmo Provimento determina que o oficial de registro de títulos e documentos e de registro civil das pessoas jurídicas deve comunicar à UIF qualquer operação que envolva pagamento ou recebimento em espécie, ou por título ao portador, de valor igual ou superior a R$ 100.000,00, inclusive quando relacionada à compra ou venda de bens móveis ou imóveis.
+
+---
+
+### 3. Outras regras específicas aplicáveis
+
+- **Indicação detalhada dos meios e formas de pagamento na escritura pública**: o art. 165-A do Provimento nº 149/2023 determina que toda escritura pública de constituição, alienação ou oneração de direitos reais sobre imóveis deve indicar, de forma precisa, os meios e formas de pagamento utilizados, incluindo pagamentos em espécie, transferências bancárias, cheques, outros meios (como cotas societárias, cessões de direitos, títulos, ativos virtuais, dações em pagamento, permutas ou prestações de serviço) e pagamentos parcelados. A recusa das partes em fornecer essas informações deve ser mencionada na escritura, sem prejuízo da comunicação prevista no art. 155, VIII.
+
+- **Política de prevenção à lavagem de dinheiro e financiamento do terrorismo**: conforme art. 143 do Provimento nº 149/2023, notários e registradores devem estabelecer e implementar políticas, procedimentos e controles internos compatíveis com o porte e volume de operações da serventia, abrangendo diligência razoável para qualificação dos clientes, obtenção de informações sobre o propósito da relação de negócios, identificação de operações suspeitas, mitigação de riscos e verificação periódica da eficácia das políticas.
+
+- **Responsabilidade do oficial de cumprimento, notário ou registrador**: o art. 144 do Provimento nº 149/2023 atribui a esses agentes a obrigação de informar à UIF qualquer operação suspeita, prestar informações e documentos requisitados pelos órgãos competentes, promover treinamentos e elaborar manuais internos sobre regras de conduta e sinais de alerta.
+
+---
+
+### Fundamentação legal
+
+- Análise com especial atenção e hipóteses indicativas de suspeita:  
+  [Provimento nº 149, de 30 de agosto de 2023., art. 155-A]  
+  [Provimento nº 149, de 30 de agosto de 2023., art. 162]
+
+- Comunicação obrigatória independentemente da análise:  
+  [Provimento nº 149, de 30 de agosto de 2023., art. 161]  
+  [Provimento nº 149, de 30 de agosto de 2023., art. 163]
+
+- Indicação detalhada dos meios de pagamento na escritura pública:  
+  [Provimento nº 149, de 30 de agosto de 2023., art. 165-A]
+
+- Política de prevenção e responsabilidades:  
+  [Provimento nº 149, de 30 de agosto de 2023., art. 143]  
+  [Provimento nº 149, de 30 de agosto de 2023., art. 144]
+
+---
+
+### No seu cartório
+
+Não localizei orientação específica deste cartório sobre comunicação ao COAF/UIF em casos de suspeita de lavagem de dinheiro em compra e venda de imóveis além do que consta nas normas federais acima.
+
+---
+
+### Na prática
+
+O registrador deve estar atento a sinais de operações atípicas ou incompatíveis com o perfil dos envolvidos, especialmente em valores elevados, pagamentos em espécie, ou situações que dificultem a identificação dos beneficiários finais. A comunicação à UIF é um dever legal que protege o sistema financeiro e imobiliário contra o uso indevido para lavagem de dinheiro e financiamento do terrorismo.
+
+---
+
+Se desejar, posso ajudar a elaborar um checklist prático para análise e comunicação em casos de compra e venda de imóveis.

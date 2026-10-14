@@ -1,0 +1,54 @@
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 3 | 4 |
+| 2. Fundamentação e informações essenciais (0-4) | 3 | 3 |
+| 3. Condições, limites e ressalvas (0-2) | 1 | 2 |
+| **Nota total** | **7** | **9** |
+| **Classificação** | Parcialmente conforme | Conforme |
+
+## 2. Análise
+
+**Resposta A**
+
+*Acertos:*
+- Separa corretamente a análise com especial atenção (arts. 155-A e 162) da comunicação obrigatória (art. 161).
+- Identifica o art. 161 como a hipótese de comunicação obrigatória: declaração das partes de pagamento em espécie ou por título ao portador de valor igual ou superior a R$ 100.000,00. Isso coincide com a referência.
+- Cobre os itens da referência que aparecem no art. 162: doação a terceiro sem vínculo familiar, transmissões sucessivas e diferença anormal de valores.
+- Cobre os itens do art. 155-A: recusa ou resistência em prestar informações, incompatibilidade com o patrimônio, dificuldade de identificar o beneficiário final, valores incompatíveis com o mercado.
+
+*Omissões e limites:*
+- Diz que as hipóteses do art. 162 levam à comunicação "caso a considere suspeita", mas não explica que o art. 161 dispensa o juízo de suspeição. Isso é sugerido, não desenvolvido.
+- Não esclarece que o limite de R$ 100.000,00 se refere ao meio de pagamento, e não ao preço do imóvel.
+- Os critérios do art. 155-A e do art. 162 aparecem em listas longas, sem uma síntese prática do que se aplica à compra e venda. A conclusão é por isso menos orientadora.
+
+*Não verificável pela referência:*
+- Citações aos arts. 143, 144, 163 e 165-A, e o trecho "No seu cartório".
+- A referência não confirma nem contradiz esses pontos. Sobre o art. 163, que trata de outra especialidade, a referência só confirma que o art. 161 é o dispositivo aplicável ao registrador de imóveis.
+
+**Resposta B**
+
+*Acertos:*
+- Distingue com clareza a análise especial (arts. 155-A e 162) da comunicação obrigatória (art. 161). Afirma expressamente que a comunicação do art. 161 "não depende de juízo adicional de suspeição", o que corresponde ao que a referência pede.
+- Apresenta o art. 161 com três elementos: valor mínimo, meio de pagamento e declaração das partes no título. Esclarece que o limite não se refere ao preço do imóvel.
+- Traz as hipóteses do art. 162, incluindo doação, transmissões sucessivas e diferença anormal de valores, e os critérios do art. 155-A.
+- Oferece uma síntese prática em tabela, útil para a orientação ao registrador.
+- Inclui as ressalvas de que a presença de um indicador não implica comunicação automática e de que a comunicação deve ser fundamentada.
+
+*Omissões e limites:*
+- A lista do art. 155-A aparece truncada nos incisos I a VIII. Não menciona expressamente itens como fracionamento ou cláusulas incompatíveis com o mercado.
+- Trata o pagamento em espécie apenas como hipótese do art. 161. A referência liga também a forma de pagamento ao tema da análise geral.
+
+*Não verificável pela referência:*
+- O histórico das alterações do Provimento nº 161/2024, como o antigo limite de R$ 30.000,00.
+- As referências aos arts. 141, 151 e 171, e a data de vigência.
+- Não há contradição com a referência nesses pontos.
+
+## 3. Resultado
+
+**B venceu** (9 contra 7).
+
+## 4. Justificativa final
+
+Ambas as respostas identificam corretamente o art. 161 como a única hipótese de comunicação obrigatória do registrador de imóveis e reproduzem os principais pontos do art. 162, em linha com a referência. B se destaca por deixar explícito que a comunicação do art. 161 independe de juízo de suspeição, por delimitar o alcance do limite de R$ 100.000,00 e por trazer ressalvas e uma síntese prática. A tem conteúdo aproveitável, mas é menos clara nessa distinção e nas ressalvas, e dispersa parte da resposta em dispositivos que a referência não permite confirmar.

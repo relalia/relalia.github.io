@@ -4494,6 +4494,223 @@
           "kind": "Benchmark exploratório"
         }
       ]
+    },
+    {
+      "id": "benchmark-comparativo-2026-10-14",
+      "date": "2026-10-14",
+      "dateNote": "Run 02",
+      "title": "Reteste VadeChat × ChatGPT — Run 02 comparado à execução inicial",
+      "module": "VadeChat",
+      "comparisonId": "benchmark-comparativo-2026-10-14",
+      "status": "Reteste comparativo",
+      "count": "5 perguntas · 10 pares de avaliações",
+      "summary": "O Ágil ganhou 1,2 ponto na média original; o Pleno perdeu 0,6. O avanço mais claro de cobertura ocorre em Q02 nos dois modos. A regressão mais forte aparece em Q04 do Pleno. As revisões questionam descontos e margens; aumento de nota, isoladamente, não demonstra melhoria do sistema.",
+      "highlights": [
+        "Q02 responde por +1,0 dos +1,2 pontos de aumento da média do Ágil (5 pontos ÷ 5 perguntas).",
+        "As respostas fixas do ChatGPT receberam notas diferentes em cinco dos dez embates entre as execuções.",
+        "O avanço de cobertura mais claro ocorre em Q02; a regressão mais clara ocorre em Q04 do Pleno. Isso não demonstra melhoria geral nem atribui toda variação ao VadeChat."
+      ],
+      "note": "Cinco perguntas, comparadas em dois modos em cada execução. As notas medem concordância com a referência humana, sem validação jurídica independente. As revisões não substituem os resultados originais.",
+      "files": [
+        {
+          "label": "Comparativo sucinto · PDF",
+          "path": "/reports/benchmark-comparativo-2026-10-14.pdf",
+          "kind": "pdf",
+          "origin": "generated"
+        }
+      ],
+      "findings": [
+        {
+          "id": "Q01-AGIL",
+          "title": "Q01 · Ágil",
+          "description": "Retira a extensa lista obrigatória de documentos e negativos; mantém mistura com Registro Civil e omite 90 dias, firma/ICP-Brasil e formatos.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 2,0 para 3,0. O juiz eleva orientação prática de 1 para 2, passando de Divergente a Parcialmente conforme, mas não explicita a ligação entre a retirada e o ponto ganho."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-2026-10-09",
+              "findingId": "Q01",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q01-PLENO",
+          "title": "Q01 · Pleno",
+          "description": "Passa a afirmar 90 dias e ausência de transmissão; perde firma reconhecida, regime de bens e pacto presentes antes.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 5,0 para 6,0. O juiz atribui vantagem pelos 90 dias e eleva orientação prática de 2 para 3. Resultado muda de empate para vitória do Pleno, embora omissões permaneçam."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-2026-10-09",
+              "findingId": "Q01",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q02-AGIL",
+          "title": "Q02 · Ágil",
+          "description": "Troca R$ 30 mil por R$ 100 mil, separa comunicação obrigatória de análise e acrescenta as hipóteses dos arts. 155-A e 162.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 2,0 para 7,0. Há mudança observável nos pontos centrais do gabarito. O juiz passa de Divergente a Parcialmente conforme e reconhece a nova cobertura, mas atribui omissões desmentidas pelo texto."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-2026-10-09",
+              "findingId": "Q02",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q02-PLENO",
+          "title": "Q02 · Pleno",
+          "description": "Mantém R$ 100 mil e passa a listar hipóteses dos arts. 155-A e 162, antes declaradas não recuperadas.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 4,0 para 7,0. O aumento acompanha a cobertura que faltava no legado. O juiz ainda prefere o ChatGPT por precisão e ressalvas, sem demonstrar suficientemente as diferenças."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-2026-10-09",
+              "findingId": "Q02",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q03-AGIL",
+          "title": "Q03 · Ágil",
+          "description": "Mantém 180 dias, deferimento e nova certidão; acrescenta distinção com certidões do RI e prazo de 30 dias não verificável.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 10,0 para 9,0. O único ponto perdido está em condições/ressalvas: o juiz interpreta risco de ambiguidade. A resposta distingue expressamente os documentos, então a queda não comprova piora de cobertura."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-2026-10-09",
+              "findingId": "Q03",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q03-PLENO",
+          "title": "Q03 · Pleno",
+          "description": "Preserva o núcleo de 180 dias; retira prenotação/nota devolutiva e acrescenta emissão em dois dias úteis e limite ao material recuperado.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 10,0 para 10,0. O juiz mantém 10 e empate: mudanças adicionais não alteram o núcleo verificável. Nota igual não significa resposta idêntica."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-2026-10-09",
+              "findingId": "Q03",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q04-AGIL",
+          "title": "Q04 · Ágil",
+          "description": "Acrescenta CPC e dois meses; segue tratando pagamento, agora com início do atraso no primeiro dia útil após vencimento, sem transmissão em 60 dias.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 1,0 para 3,0. O ganho de 1 para 3 acompanha CPC e fundamentação adicional. Ainda Divergente; a justificativa confunde início em dia útil com contagem integral em dias úteis."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-2026-10-09",
+              "findingId": "Q04",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q04-PLENO",
+          "title": "Q04 · Pleno",
+          "description": "Perde CPC e orientação de transmitir a declaração em 60 dias; passa a tratar pagamento e afirma 60 dias na abertura, mas depois diz prazo revogado.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 8,0 para 2,0. A queda de 8 para 2 e a derrota acompanham regressão observável de cobertura e contradição interna. O juiz omite a afirmação inicial dos 60 dias ao resumir a resposta como sem número concreto."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-2026-10-09",
+              "findingId": "Q04",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q05-AGIL",
+          "title": "Q05 · Ágil",
+          "description": "Acrescenta todos os campos mínimos da ficha; deixa de identificar expressamente Goiás e mantém omissões de biometria recomendada, diligência e alcance do reconhecimento.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 8,0 para 7,0. Apesar do ganho de campos, a nota cai de 8 para 7: conclusão perde um ponto e a nova análise penaliza identificação territorial. A queda não é uma regressão uniforme da resposta."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-2026-10-09",
+              "findingId": "Q05",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q05-PLENO",
+          "title": "Q05 · Pleno",
+          "description": "Acrescenta data de abertura e sinal público; perde vedação de envio externo/diligência e recomendação expressa de biometria, mantendo procedimento local com foto/digital.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 10,0 para 9,0. A nota cai de 10 para 9, em ressalvas, com omissões novas observáveis. O 10 anterior já era questionado por omissões reconhecidas; a variação não mede só alteração do produto."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-2026-10-09",
+              "findingId": "Q05",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        }
+      ]
     }
   ],
   "evidence": [

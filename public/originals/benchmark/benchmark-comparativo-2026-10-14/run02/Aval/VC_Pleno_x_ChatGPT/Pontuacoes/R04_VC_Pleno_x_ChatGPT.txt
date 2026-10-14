@@ -1,0 +1,34 @@
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0–4) | 1 | 2 |
+| 2. Fundamentação e informações essenciais (0–4) | 1 | 2 |
+| 3. Condições, limites e ressalvas (0–2) | 0 | 1 |
+| **Nota total** | **2** | **5** |
+| **Classificação** | Divergente | Divergente |
+
+## 2. Análise
+
+**Resposta A**
+
+- **Acertos:** menciona o marco inicial na data do óbito, o prazo de 60 dias (ainda que como "redação anterior revogada") e a existência de multa sobre o ITCD na legislação estadual (Lei nº 11.651/1991).
+- **Contradições:** a referência afirma que o prazo é de 60 dias corridos contados do óbito, com multa imediata após esse limite. A Resposta A diz que o inventário pode ser aberto "a qualquer tempo" e que o prazo de 60 dias "foi revogado", o que contraria a conclusão central da referência. Também não há multa imediata a partir do 61º dia em sua leitura, pois fala apenas em "prazo regulamentar" sem defini-lo.
+- **Omissões:** não cita o art. 611 do CPC nem o prazo de 2 meses, e não explica o conflito entre 2 meses e 60 dias. Isso afeta o "fato obrigatório" da referência (mencionar o CPC e o código tributário estadual). Cita a Lei nº 11.651/1991, mas não o CPC, então cumpre só metade do fato obrigatório.
+- **Não verificáveis pela referência:** art. 407 do Código de Normas, Resolução nº 35/2007 (CNJ), multa recolhida ao FUNDESP, art. 88-C da Lei nº 11.651. A referência não confirma nem contradiz esses pontos.
+- **Orientação prática:** vaga e sem número concreto; remete a consultar a Secretaria da Economia.
+
+**Resposta B**
+
+- **Acertos:** menciona o art. 611 do CPC (2 meses da abertura da sucessão) e o código tributário estadual (Lei nº 11.651/1991), cumprindo o fato obrigatório. Adota contagem em dias corridos a partir do óbito. Reconhece o marco de 60 dias como referência inicial e distingue o prazo civil (2 meses) do prazo fiscal estadual, que é o núcleo do conflito normativo descrito na referência.
+- **Contradições:** a referência diz que a multa incide imediatamente após os 60 dias. A Resposta B afirma que a multa só se aplica a partir do 121º dia (10% após 60 dias e 20% após 120 dias, com o exemplo das datas). Essa conclusão diverge da referência quanto ao momento de incidência da multa e à orientação final ("a referência prática é 120 dias"). Porém, sua recomendação prática de transmitir até o 60º dia e "o quanto antes" fica próxima da orientação da referência.
+- **Omissões:** não discute o efeito de meses de 31 dias nem a parametrização do sistema ITCD WEB (ponto de ressalva da referência).
+- **Não verificáveis pela referência:** percentuais de 10% e 20%, o exemplo de 21/05/2022 e as perguntas 62 e 65 do site da Secretaria. A referência não os confirma nem os contradiz, mas o corte de 120 dias conflita com a lógica da referência.
+
+## 3. Resultado
+
+**B venceu** (5 a 2).
+
+## 4. Justificativa final
+
+Ambas são divergentes da referência, pois nenhuma sustenta que a multa incide logo após os 60 dias corridos. A Resposta B, porém, fica mais próxima: cita CPC e código tributário estadual, usa dias corridos desde o óbito, destaca o marco de 60 dias e o conflito com os 2 meses do CPC. A Resposta A nega a existência do prazo de 60 dias, deixa a orientação sem prazo definido e omite o CPC.

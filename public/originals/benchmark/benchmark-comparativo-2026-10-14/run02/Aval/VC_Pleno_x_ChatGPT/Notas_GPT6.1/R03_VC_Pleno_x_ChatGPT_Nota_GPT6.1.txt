@@ -1,0 +1,37 @@
+**Nota de revisão — Prompt 8 — Pleno × ChatGPT**
+
+O parecer é consistente quanto ao núcleo da comparação e ao empate: ambas apresentam os 180 dias, o deferimento como início da contagem e o art. 65, § 1º. Há, porém, uma atribuição imprecisa a B e uma condição da referência que merece análise mais explícita antes de sustentar as notas máximas.
+
+**Registro original preservado**
+
+| Critério                               |         A |         B |
+| -------------------------------------- | --------: | --------: |
+| Conclusão e orientação prática         |       4/4 |       4/4 |
+| Fundamentação e informações essenciais |       4/4 |       4/4 |
+| Condições, limites e ressalvas         |       2/2 |       2/2 |
+| **Total**                              | **10/10** | **10/10** |
+| **Classificação**                      |  Conforme |  Conforme |
+
+**Resultado original: empate, por 10 a 10.**
+
+**Problemas demonstráveis**
+
+1. **O parecer transforma uma limitação de pesquisa em afirmação categórica.**
+   B diz: “Não há, **no material recuperado**, outro dispositivo […] que trate de prazo de validade diverso”. O juiz resume isso como afirmação de que “não há outro dispositivo municipal com prazo diverso”. A ressalva foi suprimida. Além disso, a referência confirma o fundamento no art. 65, mas não demonstra a inexistência de outros dispositivos. Esse ponto deve permanecer **não verificável pela referência**, sem prêmio ou penalidade.
+
+2. **A consequência confirmada deve ser separada dos detalhes adicionais.**
+   A referência exige **nova certidão** depois do prazo, na condição descrita. Não confirma expressamente proibição de revalidação nem necessidade de novo processo administrativo. O juiz reconhece essa limitação, mas também apresenta esses detalhes entre os acertos. A redação deveria distinguir o resultado alinhado — obtenção de nova certidão — do procedimento adicional não verificável. Não há evidência suficiente de que essa sobreposição tenha alterado a pontuação.
+
+**Divergência razoável de interpretação**
+
+A referência condiciona a prescrição ao decurso dos 180 dias **“sem o devido protocolo ou averbação”**. Nenhuma resposta explicita integralmente essa condição; ambas orientam o uso no Registro de Imóveis dentro do prazo, e A menciona protocolo na cautela final.
+
+É defensável considerar isso equivalente no contexto da pergunta. Contudo, “uso dentro do prazo” não esclarece necessariamente a diferença entre apresentação tempestiva e conclusão posterior do ato. A nota máxima em condições e ressalvas exige explicar por que essa diferença não constitui omissão relevante. Isso não autoriza presumir contradição.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Preservar a ressalva “no material recuperado” ao descrever B; manter neutros os detalhes administrativos não confirmados; e justificar expressamente o atendimento à condição de protocolo ou averbação.
+
+**Conclusão**
+
+As somas, as classificações e o empate estão internamente corretos. **Não foi demonstrada vantagem de uma resposta sobre a outra**, dupla penalização ou necessidade de inverter o resultado. A principal questão de pontuação poderia afetar ambas de modo semelhante, preservando o empate. A referência é suficiente para julgar o núcleo; as notas máximas demandam apenas justificativa mais precisa sobre a condição registral.

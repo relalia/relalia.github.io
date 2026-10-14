@@ -1,0 +1,44 @@
+**Nota de revisão — Prompt 4 — Ágil × ChatGPT**
+
+O parecer identifica corretamente a contradição central de B: a referência exige transmissão em até **60 dias**, enquanto B admite ausência de multa até **120 dias**. Entretanto, há uma descrição imprecisa de A e inconsistência entre os descontos e a regra de pontuação do protocolo.
+
+**Registro original preservado**
+
+| Critério                               |          A |          B |
+| -------------------------------------- | ---------: | ---------: |
+| Conclusão e orientação prática         |        1/4 |        1/4 |
+| Fundamentação e informações essenciais |        2/4 |        2/4 |
+| Condições, limites e ressalvas         |        0/2 |        1/2 |
+| **Total**                              |   **3/10** |   **4/10** |
+| **Classificação**                      | Divergente | Divergente |
+
+**Resultado original: B venceu, por 4 a 3.**
+
+**Problemas demonstráveis**
+
+1. **A não afirma contagem integral em dias úteis.**
+   A justificativa final descreve A como orientando “contagem por dias úteis”. Seu texto afirma que a contagem dos **dias de atraso no pagamento** começa no “primeiro dia útil […] subsequente ao vencimento”. Isso não significa que todos os dias contados sejam úteis. A deficiência relevante é outra: A substitui a orientação sobre **transmissão da declaração em 60 dias corridos desde o óbito** por uma regra sobre atraso no pagamento.
+
+2. **A pontuação do critério 1 não segue claramente a regra expressa.**
+   O protocolo determina zero quando o conteúdo essencial estiver ausente ou contrariar a referência. O juiz considera que ambas falham na conclusão essencial, mas atribui **1/4 a cada uma**. Os acertos periféricos podem ser reconhecidos, porém o parecer precisa explicar como essa pontuação parcial se compatibiliza com a regra aplicável ao critério.
+
+3. **A distribuição dos descontos não permite afastar dupla penalização.**
+   O prazo e a contagem aparecem como motivos desfavoráveis, mas não há vinculação suficiente entre cada falha e os três critérios. Não se demonstra dupla penalização; também não se explica quais aspectos distintos justificam eventual desconto da mesma falha em mais de um critério.
+
+**Pontos que admitem interpretação**
+
+* **Classificação de A como Divergente:** A não apresenta os 60 dias nem a transmissão da declaração. A classificação é defensável porque oferece outra orientação para evitar a multa. Contudo, a regra sobre atraso no pagamento não contradiz necessariamente, por si só, a regra sobre entrega da declaração: tratam de eventos diferentes. O juiz deveria distinguir **omissão da resposta exigida** e **substituição prática da orientação**, sem declarar incompatibilidade jurídica entre regras que a referência não permite comparar.
+* **Fato obrigatório em A:** ela menciona o CPC e identifica a Lei Estadual nº 11.651/1991, correspondente ao código tributário indicado na referência. Considerar esse atendimento apenas parcial exige justificativa, já que o protocolo privilegia significado, não reprodução literal do nome.
+* **Meses de 31 dias e ITCD WEB:** a ausência da explicação prática pode sustentar avaliação de incompletude. Entretanto, não se deve exigir o exemplo específico ou o nome do sistema quando o conteúdo equivalente estiver presente. B distingue os prazos civil e fiscal, embora erre a consequência tributária essencial.
+
+**Aspectos consistentes**
+
+O juiz reconhece os acertos de B sem neutralizar sua contradição decisiva. Também trata percentuais, referências adicionais e demais procedimentos não confirmados como não verificáveis. As somas estão corretas, e o protocolo permite que uma resposta **Divergente** vença outra pela maior nota; vitória não significa conformidade.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Corrigir a descrição da contagem em A; reexaminar a pontuação do critério 1 à luz da regra de zero; e justificar separadamente os descontos, inclusive o atendimento ao fato obrigatório.
+
+**Conclusão**
+
+A maior proximidade de B encontra apoio em sua contagem desde o óbito e no reconhecimento dos 60 dias. Contudo, **a margem de um ponto depende de uma pontuação insuficientemente explicada**. A revisão pode afetar notas, margem e eventualmente resultado, sem que os problemas demonstrados imponham automaticamente empate ou inversão. Não falta material essencial para a auditoria.

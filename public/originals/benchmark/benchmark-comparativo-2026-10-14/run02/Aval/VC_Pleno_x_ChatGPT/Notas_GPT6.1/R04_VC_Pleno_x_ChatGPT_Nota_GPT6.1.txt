@@ -1,0 +1,46 @@
+**Nota de revisão — Prompt 9 — Pleno × ChatGPT**
+
+A maior proximidade de B com a referência está sustentada, assim como a identificação de divergência nas duas respostas. Entretanto, **a pontuação do critério 1 não segue claramente a regra de zero para conclusão essencial contrariada**, e a análise de A omite uma contradição interna importante.
+
+**Registro original preservado**
+
+| Critério                               |          A |          B |
+| -------------------------------------- | ---------: | ---------: |
+| Conclusão e orientação prática         |        1/4 |        2/4 |
+| Fundamentação e informações essenciais |        1/4 |        2/4 |
+| Condições, limites e ressalvas         |        0/2 |        1/2 |
+| **Total**                              |   **2/10** |   **5/10** |
+| **Classificação**                      | Divergente | Divergente |
+
+**Resultado original: B venceu, por 5 a 2.**
+
+**Problemas demonstráveis**
+
+1. **Pontuação parcial apesar da conclusão essencial contrariada.**
+   O juiz afirma que ambas divergem sobre o limite para evitar a multa, mas concede **1/4 a A e 2/4 a B** em conclusão e orientação prática. O protocolo determina zero quando o conteúdo essencial do critério contrariar a referência. Os acertos sobre contagem e fundamentação podem ser reconhecidos nos critérios correspondentes; sua utilização para preservar pontos no critério 1 precisa ser compatibilizada com essa regra.
+
+2. **A contradição interna de A não foi explicitada.**
+   Na abertura, A afirma ser “fundamental observar o prazo de **60 dias contados da data do óbito para o pagamento**”. Depois, declara que o prazo de 60 dias “**foi revogado**”. O parecer menciona apenas o prazo revogado e descreve a orientação como “sem número concreto”. Há número concreto inicialmente, mas a resposta o torna inconsistente. Além disso, o ato indicado é pagamento, enquanto a referência exige transmissão da declaração.
+
+3. **A falta de afirmação sobre multa imediata foi apresentada como conclusão negativa.**
+   Sobre A, o juiz escreve que “não há multa imediata a partir do 61º dia em sua leitura”, porque ela menciona prazo regulamentar sem defini-lo. Esse trecho demonstra ausência de orientação sobre a incidência imediata, não uma afirmação expressa de que a multa inexiste nesse momento. A declaração de revogação constitui problema distinto e sustenta a divergência.
+
+4. **Os descontos não estão vinculados suficientemente aos critérios.**
+   O parecer identifica falhas concretas, mas não esclarece quais justificam cada redução nem se o erro sobre o prazo repercutiu repetidamente. **Não é possível confirmar dupla penalização**, porém falta a explicação dos aspectos distintos exigida pelo protocolo.
+
+**Divergências razoáveis de interpretação**
+
+* Dizer que a escritura pode ser lavrada “a qualquer tempo” não contradiz, isoladamente, um prazo para evitar multa. A referência trata da consequência tributária do atraso. Já a afirmação adicional de A de que não há prazo legal específico para abertura diverge do prazo de instauração apresentado na referência.
+* B recomenda agir até o 60º dia e transmitir o quanto antes. Esse é um acerto aproveitável, corretamente reconhecido, mas não neutraliza sua conclusão de que o limite sem multa seria de 120 dias.
+
+**Aspectos consistentes**
+
+B menciona CPC e código tributário estadual, utiliza dias corridos desde o óbito e aborda a declaração fiscal. A omite o CPC. O juiz distingue corretamente os percentuais não verificáveis da contradição verificável sobre o início da multa. As somas e a escolha do vencedor pela maior nota estão corretas.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Reexaminar o critério 1 conforme a regra de zero; registrar a contradição interna de A; separar omissão de negação; e justificar a distribuição dos descontos.
+
+**Conclusão**
+
+A preferência por B tem suporte no material, mas **as notas exatas e a margem de três pontos não estão plenamente justificadas pelo protocolo**. A reconsideração pode alterar a pontuação, sem que os problemas encontrados demonstrem necessidade de empate ou inversão. Não falta material essencial para a auditoria.

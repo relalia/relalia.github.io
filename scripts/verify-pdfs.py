@@ -22,6 +22,20 @@ for report in data['reports']:
         reader=PdfReader(root/'public'/file['path'].lstrip('/'))
         import re
         text=normalize(' '.join(re.sub(r'Relalia: O Relatório da Alia\s+Página \d+','',p.extract_text() or '') for p in reader.pages))
+        if report.get('comparisonId'):
+            c=json.loads((root/f"content/{report['comparisonId']}.json").read_text(encoding='utf8'))
+            assert normalize(c['title'].replace('—','-')) in text
+            for row in c['rows']:
+                assert normalize(row['question']+' · '+('Ágil' if row['mode']=='agil' else 'Pleno')) in text
+                assert normalize(row['review'].replace('→',' > ').replace('—','-').replace('–','-').replace('‑','-')) in text
+            assert '+1,0 dos +1,2' in text and 'cinco dos dez embates' in text
+            assert 'inconclusividade global em Q05' in text
+            assert 'campos estruturados vazios' in text
+            assert 'https://relalia.github.io/relatorios/'+c['id']+'/' in text
+            assert 'benchmark-2026-10-09' in text
+            assert 'NÃO PUBLICADO' not in text and 'Revisão local' not in text
+            print(f"{report['id']}: {len(reader.pages)} pages, all ten review summaries, highlights and evidence URLs verified")
+            continue
         for finding in report['findings']:
             for key in ['id','description','expected','verification','severity','hypothesis']:
                 if finding.get(key):

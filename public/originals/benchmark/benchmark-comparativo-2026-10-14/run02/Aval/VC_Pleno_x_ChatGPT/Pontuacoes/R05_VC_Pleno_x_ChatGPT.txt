@@ -1,0 +1,62 @@
+# Avaliação
+
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 2 | 4 |
+| 2. Fundamentação e informações essenciais (0-4) | 1 | 4 |
+| 3. Condições, limites e ressalvas (0-2) | 0 | 1 |
+| **Nota total** | **3** | **9** |
+| **Classificação** | Parcialmente conforme | Conforme |
+
+## 2. Análise
+
+### Resposta A
+
+**Acertos:**
+- Define a abertura de firma como o cadastro da assinatura no tabelionato, usado para conferência posterior, o que coincide com a referência.
+- Menciona o reconhecimento por semelhança e por autenticidade, que a referência também cita.
+- Exige o comparecimento pessoal e a assinatura na presença do funcionário autorizado.
+- Cita documento de identificação e CPF, o que é compatível com a referência.
+
+**Omissões:**
+- Não cita o Código de Normas do Foro Extrajudicial de Goiás, que é o fato obrigatório do gabarito. Também não cita nenhum dispositivo (arts. 471 a 476).
+- Não lista o conteúdo mínimo da ficha: filiação, telefone, e-mail, órgão emissor e data de expedição do documento, data de abertura e sinal público do tabelião ou preposto.
+- Diz que a assinatura é aposta "geralmente mais de uma vez", enquanto a referência exige no mínimo três vezes. É imprecisão, não contradição.
+- Não trata da possibilidade de abertura por maior de 16 anos com consignação da incapacidade relativa.
+- Não menciona a biometria (art. 473), a vedação de preenchimento fora da serventia ou por terceiros (art. 474) nem a exceção de diligência.
+- Não diz que o reconhecimento atesta só a autoria da assinatura, e não a legalidade do conteúdo (art. 476).
+
+**Contradições:** não há contradição frontal. A referência é silente sobre o prazo de validade, e a resposta diz que não há prazo predeterminado.
+
+**Não verificável pela referência:** lista de situações de atualização da ficha, referência à guarda administrativa pelo CNJ, documentos para estrangeiros, a fonte ANOREG/BR e o exemplo de documentos de veículos. Os trechos de citação (【turn…】) são ruído e não podem ser confirmados.
+
+### Resposta B
+
+**Acertos:**
+- Define a abertura como depósito da assinatura em ficha-padrão no tabelionato, o que coincide com a referência.
+- Cita expressamente o Código de Normas e Procedimentos do Foro Extrajudicial, atendendo em substância ao fato obrigatório. Não nomeia Goiás, mas o artigo e a numeração coincidem com os da referência.
+- Reproduz o conteúdo mínimo da ficha dos arts. 471 e 472, incluindo as três assinaturas, o sinal público e a identificação do preposto.
+- Aponta a assinatura presencial (art. 471, §2º) e a possibilidade de abertura por maior de 16 anos com consignação da incapacidade relativa (art. 472, §3º).
+- Exige a apresentação do documento original de identificação.
+
+**Omissões:**
+- Não menciona a biometria recomendada (art. 473).
+- Não menciona a vedação de envio da ficha a terceiros nem a exceção de diligência (art. 474).
+- Não menciona que o reconhecimento declara só a autoria, e não a legalidade do conteúdo (art. 476).
+- Não diferencia expressamente o reconhecimento por autenticidade e por semelhança, embora os mencione de passagem.
+
+**Contradições:** não há. A pequena divergência de numeração (documento original no art. 472) não contradiz a referência.
+
+**Não verificável pela referência:** vedação para pessoa jurídica, seção "No seu cartório" (MACEQ), citação da Lei 8.935/94 e ausência de prazo de validade. Os trechos que falam em "cartório" e "base" indicam contexto de um sistema específico.
+
+## 3. Resultado
+
+**B venceu** (9 contra 3).
+
+## 4. Justificativa final
+
+B reproduz a estrutura normativa da referência, com o conteúdo mínimo da ficha, as três assinaturas, a presença do tabelião, a idade de 16 anos e a citação do Código de Normas. A omissão dos arts. 473, 474 e 476 impede a nota máxima. A resposta A acerta no conceito geral, mas é genérica, não cita o Código de Normas nem os dispositivos e deixa de lado quase todo o detalhamento da referência.
+
+**Limitação da comparação:** a referência não trata do prazo de validade da ficha, então esse ponto não pôde ser julgado por ela. Nenhuma das respostas foi penalizada por ele.

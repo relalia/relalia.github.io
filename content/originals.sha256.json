@@ -964,5 +964,473 @@
     "originalName": "R05_VC_Pleno.txt",
     "bytes": 3340,
     "sha256": "f860f4659e382d2f680ee2e5a10a4759ec71977711e6638c95fff644da3b0f85"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run01/Config/Alternancia/Q01.txt",
+    "originalName": "Q01.txt",
+    "bytes": 8,
+    "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Perguntas/Q01.txt",
+    "originalName": "Q01.txt",
+    "bytes": 554,
+    "sha256": "218fdf14c1d390a728ac4024f7e4a0a5ebd22cbb6e78e41857112224f1428e2d"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Humano/R01_Humano.txt",
+    "originalName": "R01_Humano.txt",
+    "bytes": 2186,
+    "sha256": "96e23990807700bbcaa3ca3a4fc231453206a991141c38501f91b03997ddbc22"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/ChatGPT/R01_ChatGPT.txt",
+    "originalName": "R01_ChatGPT.txt",
+    "bytes": 9050,
+    "sha256": "ddc52d322642fb622be8b5298553885e7b0b21af1bccd5bd4b720ad8d6fed635"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Agil/R01_VC_Agil.txt",
+    "originalName": "R01_VC_Agil.txt",
+    "bytes": 5853,
+    "sha256": "262550376a8addc6144b5b58f903d356cef4fc44abaebb3757f0c4b79555d22b"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Config/Alternancia/Q01.txt",
+    "originalName": "Q01.txt",
+    "bytes": 8,
+    "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt",
+    "originalName": "R01_VC_Agil_x_ChatGPT.txt",
+    "bytes": 3688,
+    "sha256": "7abbf714cceee3a5c414cde05310e8577d4b9013b50b9478b957e3660bf53baa"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+    "originalName": "R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+    "bytes": 5126,
+    "sha256": "229fb6a89800c607da92768f9d4e90410b5dde908a38a60e68b6dd5f404c41be"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_001_v1_9bb2a0cb-bd4f-4477-bdc0-a52aa3795545.txt",
+    "originalName": "Prompt_001_v1_9bb2a0cb-bd4f-4477-bdc0-a52aa3795545.txt",
+    "bytes": 20734,
+    "sha256": "b576432599c2e52739c3378bed730633e26f42e9393682b4e89a88627916897e"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_001_v1_54671323-3c12-4026-901e-cc21036726f0.txt",
+    "originalName": "Prompt_001_v1_54671323-3c12-4026-901e-cc21036726f0.txt",
+    "bytes": 25844,
+    "sha256": "fa1958f26cb84502e89deab680561d2c6a91aa0cab316e798cf688071a22c5d9"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Pleno/R01_VC_Pleno.txt",
+    "originalName": "R01_VC_Pleno.txt",
+    "bytes": 5037,
+    "sha256": "3c1f7a7deb9215aecb4ae68b88882e2a0897597fe0d803c6d907b459adb460c5"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt",
+    "originalName": "R01_VC_Pleno_x_ChatGPT.txt",
+    "bytes": 3802,
+    "sha256": "1c47798ea82663b6d1363651c7a6f3a59ef3b6615efbc60e9dfd56c99a066af8"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+    "originalName": "R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+    "bytes": 4540,
+    "sha256": "f1a7577f705f6814cc133352fd5829b93f6ab011d8bb164d4f1135933aefe1b2"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_006_v1_2afd3f22-15a5-4890-ac11-4a94aa342f2f.txt",
+    "originalName": "Prompt_006_v1_2afd3f22-15a5-4890-ac11-4a94aa342f2f.txt",
+    "bytes": 19918,
+    "sha256": "bd14165813ad13d771ff0332d59ee1c9278ed77de85a6886c582b9007eaeabf7"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_006_v1_820ac2e2-051f-4ab4-91ff-9f165e0a2f42.txt",
+    "originalName": "Prompt_006_v1_820ac2e2-051f-4ab4-91ff-9f165e0a2f42.txt",
+    "bytes": 25142,
+    "sha256": "1d91f5fa4a828f0ca61db3d3863ee9cdf38d100e54f658ca9475d89282f519be"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run01/Config/Alternancia/Q02.txt",
+    "originalName": "Q02.txt",
+    "bytes": 8,
+    "sha256": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Perguntas/Q02.txt",
+    "originalName": "Q02.txt",
+    "bytes": 530,
+    "sha256": "b957d07fb81f614934b5d9905e1d9381e75273f605b13020f85e2db8db417289"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Humano/R02_Humano.txt",
+    "originalName": "R02_Humano.txt",
+    "bytes": 2274,
+    "sha256": "f5e0741acac442e7cf38d7186e7d5bada75c584a74faec3bc25b9fe354aff2f9"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/ChatGPT/R02_ChatGPT.txt",
+    "originalName": "R02_ChatGPT.txt",
+    "bytes": 12983,
+    "sha256": "5ba457b6a65e16657e7fb64dd5f54faa315b8a41562983e7753964e6d1b325f7"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Agil/R02_VC_Agil.txt",
+    "originalName": "R02_VC_Agil.txt",
+    "bytes": 8505,
+    "sha256": "d4eb4c37ca88e0b7e893e909cfbbad305fd7867e98e33dcf79def83dc7bc44c5"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Config/Alternancia/Q02.txt",
+    "originalName": "Q02.txt",
+    "bytes": 8,
+    "sha256": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt",
+    "originalName": "R02_VC_Agil_x_ChatGPT.txt",
+    "bytes": 4002,
+    "sha256": "80b32260ebc07225b96f9999fff3a4b10fa2cec4883d880df9033c56c064b721"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+    "originalName": "R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+    "bytes": 5018,
+    "sha256": "e24ac373ef444bc46a00d11025cc81cb126338aa14f7db20ab2550fbe43d6a0b"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_002_v1_cedd0c93-c4a3-403d-b4e7-06df185319c5.txt",
+    "originalName": "Prompt_002_v1_cedd0c93-c4a3-403d-b4e7-06df185319c5.txt",
+    "bytes": 27383,
+    "sha256": "1c4429c23a87ece7d58cf7f55f66694ab1a5960fb68c38774efe7ca550d50b84"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_002_v1_eec64e4d-f2d8-4567-953a-5bacdc7e4865.txt",
+    "originalName": "Prompt_002_v1_eec64e4d-f2d8-4567-953a-5bacdc7e4865.txt",
+    "bytes": 32807,
+    "sha256": "18a84a2ddaeb4f4e5190375206162e34aeb8e25940f101c650e470dd083e4cf0"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Pleno/R02_VC_Pleno.txt",
+    "originalName": "R02_VC_Pleno.txt",
+    "bytes": 5716,
+    "sha256": "0cec64fe619316dec0d1e5be33adec9cec465e26fc113d9d4b2a3c86f7542631"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt",
+    "originalName": "R02_VC_Pleno_x_ChatGPT.txt",
+    "bytes": 4729,
+    "sha256": "670e44946fca8807c327600be3c7ba9f5259efd8f44e4201640c75aece1ad53b"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+    "originalName": "R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+    "bytes": 4529,
+    "sha256": "0973d6e243ed768e9e04433b52e807e3db63b32bf241fe1c8779216025753daa"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_007_v1_fab2863a-05bb-41ac-a33b-fdbb4c75c91c.txt",
+    "originalName": "Prompt_007_v1_fab2863a-05bb-41ac-a33b-fdbb4c75c91c.txt",
+    "bytes": 24594,
+    "sha256": "fa56b0bec488639ad4c2234142683e926d04d36d591e8cbb08fe414a343c7422"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_007_v1_5fb1b410-b507-4512-bb5d-a63f18531c83.txt",
+    "originalName": "Prompt_007_v1_5fb1b410-b507-4512-bb5d-a63f18531c83.txt",
+    "bytes": 30745,
+    "sha256": "c2c85e9ba6130726fa20087f1000622d48e3c9cf207da0da88ac7050500b824b"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run01/Config/Alternancia/Q03.txt",
+    "originalName": "Q03.txt",
+    "bytes": 8,
+    "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Perguntas/Q03.txt",
+    "originalName": "Q03.txt",
+    "bytes": 314,
+    "sha256": "703ab5369563357ec12c768ebeb8d030ffef816420a0317bba51b30b0f7dbafa"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Humano/R03_Humano.txt",
+    "originalName": "R03_Humano.txt",
+    "bytes": 1072,
+    "sha256": "9b46580bb6e3882aef09ab5eb2b3728833fd88c88e291d6d1edec21f20b7a891"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/ChatGPT/R03_ChatGPT.txt",
+    "originalName": "R03_ChatGPT.txt",
+    "bytes": 3947,
+    "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Agil/R03_VC_Agil.txt",
+    "originalName": "R03_VC_Agil.txt",
+    "bytes": 2325,
+    "sha256": "2b43aaf616fb4b732080bf196c46706393706d819e7c6f5044ec43b6b5877520"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Config/Alternancia/Q03.txt",
+    "originalName": "Q03.txt",
+    "bytes": 8,
+    "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt",
+    "originalName": "R03_VC_Agil_x_ChatGPT.txt",
+    "bytes": 3266,
+    "sha256": "92b6a5ff99abc6098bfd1ef5cfc5ab6be11d487b9f1bc4d170b4f96ca4e3bf83"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+    "originalName": "R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+    "bytes": 4000,
+    "sha256": "e43e0cdbe0fca1f5468903e692ee9ec2476506b42e84fb914c13cd91432a4511"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_003_v1_7df47396-ae90-466c-b552-2b832051ab7d.txt",
+    "originalName": "Prompt_003_v1_7df47396-ae90-466c-b552-2b832051ab7d.txt",
+    "bytes": 10749,
+    "sha256": "8c477a760104f8376252046745aa6533ae6d4697bd2af94073906dbdf756594e"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_003_v1_103bec14-5f30-4806-8110-019d12297d8e.txt",
+    "originalName": "Prompt_003_v1_103bec14-5f30-4806-8110-019d12297d8e.txt",
+    "bytes": 15437,
+    "sha256": "835a78badf520b9aa6b507ad523a61ea4282089d53e354233282b3a6e858ee11"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Pleno/R03_VC_Pleno.txt",
+    "originalName": "R03_VC_Pleno.txt",
+    "bytes": 2536,
+    "sha256": "d65a4e5c2827ca2fe3c15a95360ee812d20b1f769d248a8824180f9ef941838c"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt",
+    "originalName": "R03_VC_Pleno_x_ChatGPT.txt",
+    "bytes": 2805,
+    "sha256": "e9e5df4cfa4887ed6780107dc178250281b225b2e6fd225eca23fab6e09dd74c"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+    "originalName": "R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+    "bytes": 3522,
+    "sha256": "243e2df00050145cc6f12760831ddf583943298db306cfb27b646a184642a769"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_008_v1_e3760bc6-97b9-438c-a3be-ba2613c77207.txt",
+    "originalName": "Prompt_008_v1_e3760bc6-97b9-438c-a3be-ba2613c77207.txt",
+    "bytes": 10960,
+    "sha256": "4cc7727059414df68ad2849668405db7f3143aee6d46f73e8d53c179bd0a69cd"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_008_v1_f73c9371-f78b-40b7-96e0-f6339db53cfe.txt",
+    "originalName": "Prompt_008_v1_f73c9371-f78b-40b7-96e0-f6339db53cfe.txt",
+    "bytes": 15187,
+    "sha256": "227db1f0e666adad0ad709c343787779c624b44d8c83e30ad1085bc003a6eda4"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run01/Config/Alternancia/Q04.txt",
+    "originalName": "Q04.txt",
+    "bytes": 8,
+    "sha256": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Perguntas/Q04.txt",
+    "originalName": "Q04.txt",
+    "bytes": 181,
+    "sha256": "c3dd1ee77b99db793f5101f5a83b8956f8dc1d26393b377f5f171fab7668e4b4"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Humano/R04_Humano.txt",
+    "originalName": "R04_Humano.txt",
+    "bytes": 2008,
+    "sha256": "e8132137b90bb75919686d231410dab083c9330cb295612503a1038bf21c1b40"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/ChatGPT/R04_ChatGPT.txt",
+    "originalName": "R04_ChatGPT.txt",
+    "bytes": 4162,
+    "sha256": "bb78f265d4e6b8054334275bf049a85c4033d68f282797eabcaf326f689f5863"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Agil/R04_VC_Agil.txt",
+    "originalName": "R04_VC_Agil.txt",
+    "bytes": 3339,
+    "sha256": "397148ff8c2ae3c28dc32822abb5f8c4f5d70192902285076a331b5ad7961ff1"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Config/Alternancia/Q04.txt",
+    "originalName": "Q04.txt",
+    "bytes": 8,
+    "sha256": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt",
+    "originalName": "R04_VC_Agil_x_ChatGPT.txt",
+    "bytes": 3350,
+    "sha256": "ef5c9ce3e1f3bd9d164507d413d9a27bfdc8c7eed29c3024a2e1b82770b61028"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+    "originalName": "R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+    "bytes": 4555,
+    "sha256": "27199ed53aad575bb4bf3e3d6e091daa41de09a835d4acee5cf0b9cf7ff1a58b"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_004_v1_058c6898-d2cb-4cf1-a6fa-9ada106112f6.txt",
+    "originalName": "Prompt_004_v1_058c6898-d2cb-4cf1-a6fa-9ada106112f6.txt",
+    "bytes": 12781,
+    "sha256": "c3f0c835f5a6a2aa2d2b4ef82041635992bfad30114938ed219e99d6e7423e37"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_004_v1_508fbebd-31fa-4171-82d6-e827faf40b5a.txt",
+    "originalName": "Prompt_004_v1_508fbebd-31fa-4171-82d6-e827faf40b5a.txt",
+    "bytes": 17553,
+    "sha256": "596107c9baf142a573bf58eb2e1e743c36e9dca7eb10bb7d15acc15a9f273758"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Pleno/R04_VC_Pleno.txt",
+    "originalName": "R04_VC_Pleno.txt",
+    "bytes": 3972,
+    "sha256": "fac47e414bde31cd29bf957aaa73cb1b2d564c7b7261847d3eb25987574c3318"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt",
+    "originalName": "R04_VC_Pleno_x_ChatGPT.txt",
+    "bytes": 3420,
+    "sha256": "85804075e3d9d32997c5341cff15e1dda6fc939b67e1b86b2b67e5546ebdbc80"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+    "originalName": "R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+    "bytes": 4347,
+    "sha256": "8f37edfb84d1b0d9f421b93bb5ce65bc388818b3d85e7a5ed18d0afd4f7aebbc"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_009_v1_761e7ac1-5bff-4cac-98ea-045b675ec91f.txt",
+    "originalName": "Prompt_009_v1_761e7ac1-5bff-4cac-98ea-045b675ec91f.txt",
+    "bytes": 13414,
+    "sha256": "de4d8aba31376a7f063df29cd59ea4175399d2f4c8721f9fca05cfcfc46230c1"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_009_v1_a0c925ce-e6f9-464c-be69-e76686e01e6c.txt",
+    "originalName": "Prompt_009_v1_a0c925ce-e6f9-464c-be69-e76686e01e6c.txt",
+    "bytes": 18256,
+    "sha256": "6095e907872b3fa220144b13089c9cf68ebf3a3034a6de6a06fee46b76adf932"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run01/Config/Alternancia/Q05.txt",
+    "originalName": "Q05.txt",
+    "bytes": 8,
+    "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Perguntas/Q05.txt",
+    "originalName": "Q05.txt",
+    "bytes": 175,
+    "sha256": "32dc74f40d5546886adae39db2b4e2244968de873792ca709d64c1ba73c0da0a"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Humano/R05_Humano.txt",
+    "originalName": "R05_Humano.txt",
+    "bytes": 2427,
+    "sha256": "3633ca7c708f08c17bb1709a7d7e55e44049b0fb5b619f8a304c695d96d68e81"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/ChatGPT/R05_ChatGPT.txt",
+    "originalName": "R05_ChatGPT.txt",
+    "bytes": 4525,
+    "sha256": "3dea083a8c8568cc0c3c024cfe037a52c854adc0a560d70d9fd97f573fb445e5"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Agil/R05_VC_Agil.txt",
+    "originalName": "R05_VC_Agil.txt",
+    "bytes": 4216,
+    "sha256": "ab4e38ab7b0d42ada5a7d174fa71062e1b119ab6e02fa4686e764b29dd62599a"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Config/Alternancia/Q05.txt",
+    "originalName": "Q05.txt",
+    "bytes": 8,
+    "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt",
+    "originalName": "R05_VC_Agil_x_ChatGPT.txt",
+    "bytes": 4663,
+    "sha256": "c41b5e4de1c5a8ba31347de5d55288a4fbf42347da0fd8940b76fa73a2b7910c"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+    "originalName": "R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+    "bytes": 4743,
+    "sha256": "af4479e3b68b9102ffbf43a7297d42a77c8806a8d9d6d3bdf65291e480778fda"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_005_v1_b7d58df4-f98c-46ee-8993-ccb00ddf5305.txt",
+    "originalName": "Prompt_005_v1_b7d58df4-f98c-46ee-8993-ccb00ddf5305.txt",
+    "bytes": 14434,
+    "sha256": "284475f4b5a1a23358e1e408791ba1200b7b5a9161389bd8c8812d976454f154"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_005_v1_0536126a-7a82-4cdf-a518-190f84c6af0d.txt",
+    "originalName": "Prompt_005_v1_0536126a-7a82-4cdf-a518-190f84c6af0d.txt",
+    "bytes": 20519,
+    "sha256": "b3458ecfd04a83f707e82efce2bfab620e82d9b0a877eee7bd6669c90b819d82"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Pleno/R05_VC_Pleno.txt",
+    "originalName": "R05_VC_Pleno.txt",
+    "bytes": 4700,
+    "sha256": "f4d2553b447de62013d11cdf4007bf0bbc7be6cfc72b4c88a799cbcf37018332"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt",
+    "originalName": "R05_VC_Pleno_x_ChatGPT.txt",
+    "bytes": 4349,
+    "sha256": "04cc21726dd0eb2c481826a9d5407692a561d499bfe29a1250b347e3405ce1a6"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+    "originalName": "R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+    "bytes": 4428,
+    "sha256": "ac72affe0c997724db38c0423541fb431e4226804e73acd9f360cbc8a175c6dd"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_010_v1_0883e93f-2f73-4026-9c0d-53a48efc38ae.txt",
+    "originalName": "Prompt_010_v1_0883e93f-2f73-4026-9c0d-53a48efc38ae.txt",
+    "bytes": 14918,
+    "sha256": "4ddd688b5ece8894c87415cb47b702b94953366013cf23c00cdc315504926ab5"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_010_v1_bc4b1b9c-82f2-4d86-bc58-dad37fc1e0cd.txt",
+    "originalName": "Prompt_010_v1_bc4b1b9c-82f2-4d86-bc58-dad37fc1e0cd.txt",
+    "bytes": 20690,
+    "sha256": "b28dc3728684565e44e8009b274b9519fc66cec6ee8e79a39ed92032f14d6c1c"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/global_prompt.txt",
+    "originalName": "global_prompt.txt",
+    "bytes": 3183,
+    "sha256": "804fd1fc570bdb21585cf577d67cfeaec1bdc5845e31aace0640ba8508e7c10b"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/answer_alternation.txt",
+    "originalName": "answer_alternation.txt",
+    "bytes": 317,
+    "sha256": "63e6d2e98673157773ca34806b3a086bcda60e3002c05ea7f4b960622b07b79c"
+  },
+  {
+    "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/review_prompt.txt",
+    "originalName": "review_prompt.txt",
+    "bytes": 1320,
+    "sha256": "a014888cca45bc9ea9c2ebad321945825476d35360ee47a40953e97e3714792d"
   }
 ]

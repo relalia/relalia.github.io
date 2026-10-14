@@ -1,0 +1,40 @@
+**Nota de revisão — Prompt 3 — Ágil × ChatGPT**
+
+O parecer identifica corretamente o alinhamento central das duas respostas, mas o único desconto que determina a vitória de A tem sustentação frágil: **B distingue expressamente o prazo da certidão municipal daquele atribuído às certidões do Registro de Imóveis**. A informação adicional não verificável não pode ser penalizada apenas por sua presença.
+
+**Registro original preservado**
+
+| Critério                               |         A |        B |
+| -------------------------------------- | --------: | -------: |
+| Conclusão e orientação prática         |       4/4 |      4/4 |
+| Fundamentação e informações essenciais |       4/4 |      4/4 |
+| Condições, limites e ressalvas         |       2/2 |      1/2 |
+| **Total**                              | **10/10** | **9/10** |
+| **Classificação**                      |  Conforme | Conforme |
+
+**Resultado original: A venceu, por 10 a 9.**
+
+**Problemas demonstráveis**
+
+1. **A justificativa do desconto desconsidera a distinção expressa em B.**
+   B afirma que o prazo municipal de 180 dias “não deve ser confundido com o prazo de validade das certidões expedidas pelo registro de imóveis”. Antes disso, confirma que a utilização da certidão municipal no Registro de Imóveis deve respeitar os **180 dias**. Portanto, o texto não atribui expressamente 30 dias à certidão municipal. O parecer precisava considerar esses trechos antes de sustentar a suposta confusão.
+
+2. **Tratamento desfavorável de informação reconhecida como não verificável.**
+   O juiz classifica o prazo de 30 dias como “não verificável pela referência”, mas o utiliza para descontar um ponto. Uma informação adicional pode prejudicar a orientação se produzir incompatibilidade demonstrável; aqui, o parecer aponta apenas uma possibilidade de confusão. A falta de confirmação pela referência, por si só, não autoriza o desconto.
+
+3. **A expressão “interrompe o prazo” acrescenta um efeito não demonstrado.**
+   A referência diz que o documento estará prescrito se decorrerem 180 dias **sem protocolo ou averbação**. Não explica um mecanismo jurídico de interrupção do prazo. O juiz deveria limitar sua análise à condição descrita, sem atribuir esse efeito técnico.
+
+**Pontos que admitem interpretação**
+
+* A frase de B sobre os 30 dias, “prazo que deve ser observado para apresentação no ato registral”, pode exigir atenção na leitura. Contudo, seu antecedente são as certidões expedidas pelo Registro de Imóveis, e B distingue os documentos. Considerar a redação menos clara é uma interpretação possível; considerá-la suficiente para desconto exige justificativa mais concreta.
+* Ambas deixam de reproduzir explicitamente a condição **“sem o devido protocolo ou averbação”**. O juiz reconhece essa omissão, mas concede pontuação máxima a A em ressalvas. É defensável entender que o contexto cobre o significado, porém o mesmo padrão deve ser aplicado a B.
+* A necessidade de nova certidão está alinhada à referência. Já a proibição de revalidação e a exigência de novo processo administrativo são detalhes adicionais não confirmados por ela e devem permanecer neutros para ambas.
+
+**Recomendação de reconsideração — separada do registro original**
+
+Reexaminar o desconto de B, considerando sua distinção expressa entre os documentos, e aplicar tratamento uniforme à condição de protocolo ou averbação. Não foi demonstrada dupla penalização.
+
+**Conclusão**
+
+As somas, as classificações e o vencedor são coerentes com as notas registradas. Entretanto, **a diferença de um ponto não está suficientemente justificada pelo protocolo**. Como o desconto questionado é o único diferencial, sua reconsideração pode eliminar a vantagem de A e resultar em empate, sem que esta revisão altere o resultado original. Não falta material essencial para a auditoria.

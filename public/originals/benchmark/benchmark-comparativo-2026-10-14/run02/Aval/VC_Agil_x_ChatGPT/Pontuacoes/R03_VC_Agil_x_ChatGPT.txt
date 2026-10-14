@@ -1,0 +1,33 @@
+## 1. Tabela de avaliação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 4 | 4 |
+| 2. Fundamentação e informações essenciais (0-4) | 4 | 4 |
+| 3. Condições, limites e ressalvas (0-2) | 2 | 1 |
+| **Nota total** | **10** | **9** |
+| **Classificação** | Conforme | Conforme |
+
+## 2. Análise breve
+
+**Resposta A**
+
+- **Acertos:** Responde que há prazo de validade de 180 dias, fundamentado no art. 65, § 1º, da LC Municipal nº 120/2024, contado da data do deferimento do pedido. Todos esses pontos coincidem com a referência. Também indica que, vencido o prazo, o Município não revalida a certidão e é necessário novo processo administrativo, o que equivale à exigência da referência de nova certidão para praticar o ato registral. Responde à pergunta sobre o dispositivo (art. 65, § 1º) e distingue a regra municipal de outros fundamentos.
+- **Omissões:** Não menciona expressamente o protocolo ou a averbação no Cartório de Registro de Imóveis como o ato que interrompe o prazo, mas a orientação final sobre protocolo e qualificação registral aponta nessa direção.
+- **Contradições:** Nenhuma com a referência.
+- **Não verificável pela referência:** Teor dos §§ 2º e 3º, referência ao art. 62, citação do art. 18 da Lei Federal nº 6.766/1979, a distinção entre a certidão urbanística e a Certidão de Inteiro Teor, e a recomendação de confirmar o marco temporal com a Prefeitura e o Registro. Nenhum desses pontos contradiz a referência, e não há prêmio nem penalidade por eles.
+
+**Resposta B**
+
+- **Acertos:** Conclui que há prazo de 180 dias, contado do deferimento, com base no art. 65 (§ 1º) da LC nº 120/2024, e que, vencido o prazo, não há revalidação e é preciso novo processo para emitir nova certidão. Isso está alinhado à referência.
+- **Omissões:** Também não menciona expressamente o protocolo ou a averbação no Cartório como marco de aproveitamento do prazo, e não detalha o ato registral que exige a certidão válida.
+- **Contradições:** Introduz o prazo de 30 dias das certidões do registro de imóveis (Código de Normas e Procedimentos, art. 973) e afirma que ele "deve ser observado para apresentação no ato registral". Isso não contradiz diretamente a referência, mas cria ambiguidade sobre o prazo aplicável à certidão municipal no registro, que a referência fixa em 180 dias. Por isso houve desconto de 1 ponto no critério 3.
+- **Não verificável pela referência:** Teor dos §§ 2º e 3º, referência aos arts. 62 e seguintes, e o prazo de 30 dias do Código de Normas e Procedimentos estadual.
+
+## 3. Resultado
+
+**A venceu** (10 contra 9).
+
+## 4. Justificativa final
+
+Ambas coincidem com a referência na conclusão (180 dias, contados do deferimento, com base no art. 65, § 1º) e na consequência do vencimento (nova certidão, sem revalidação). A diferença está nas ressalvas: A mantém o prazo de 180 dias como regra aplicável ao uso da certidão e trata a data do deferimento com cautela, enquanto B acrescenta um prazo de 30 dias de outra natureza, que a referência não confirma e que pode confundir a orientação sobre o uso da certidão municipal no Registro de Imóveis.

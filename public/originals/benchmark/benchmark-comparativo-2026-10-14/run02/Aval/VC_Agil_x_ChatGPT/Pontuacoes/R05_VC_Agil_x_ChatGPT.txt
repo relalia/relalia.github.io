@@ -1,0 +1,37 @@
+Avaliação feita exclusivamente com a pergunta, a referência humana e as respostas A e B.
+
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 2 | 3 |
+| 2. Fundamentação e informações essenciais (0-4) | 1 | 3 |
+| 3. Condições, limites e ressalvas (0-2) | 0 | 1 |
+| **Nota total** | **3** | **7** |
+| **Classificação** | Parcialmente conforme | Parcialmente conforme |
+
+## 2. Análise
+
+**Resposta A**
+
+- Acertos: define a abertura de firma como cadastro da assinatura no tabelionato, usado depois para conferência. Isso é compatível com a referência. Indica comparecimento pessoal e identificação, e diz que a assinatura é colhida na presença do funcionário, "geralmente mais de uma vez".
+- Omissões: não menciona o Código de Normas do Foro Extrajudicial de Goiás, que é o fato obrigatório indicado (peso 1,00). Não lista o conteúdo mínimo da ficha (qualificação completa, CPF, documento com órgão emissor e data, data de abertura, três assinaturas, sinal público do tabelião ou preposto). Não menciona a regra para maiores de 16 anos com consignação da incapacidade relativa. Não trata da vedação de enviar a ficha para preenchimento fora da serventia nem da exceção de diligência. Não menciona a biometria recomendada. Não cita que o reconhecimento atesta apenas a autoria da assinatura, e não o conteúdo do documento.
+- Contradições: a referência não fala de prazo de validade, então a resposta "não há prazo predeterminado" não é contradita. Também não há contradição aberta com a referência em outro ponto.
+- Não verificável pela referência: lista específica de documentos (RG, CIN, CNH, certidão de casamento, estrangeiros), situações de atualização da ficha, regras do CNJ sobre guarda e a fonte ANOREG/BR. A resposta ainda atribui a abertura a "funcionário do cartório" e apresenta as modalidades de reconhecimento de forma genérica, sem ancorar em norma específica.
+- Descontos: critério 1 perde pontos por orientação genérica e sem a fundamentação normativa que a referência usa. Critério 2 perde pontos pela ausência quase total do conteúdo mínimo e da norma estadual. Critério 3 recebe zero porque nenhuma das ressalvas da referência aparece.
+
+**Resposta B**
+
+- Acertos: define a abertura de firma como ficha-padrão com dados e assinatura, preenchida na presença do tabelião ou preposto, que confere e visa. Reproduz com alta fidelidade a lista mínima do art. 471: qualificação, CPF, documento com órgão emissor e data, data de abertura, assinatura aposta ao menos três vezes, sinal público e identificação de quem verificou. Menciona a abertura a partir dos 16 anos com consignação da incapacidade relativa. Cita os arts. 471 e 472.
+- Omissões: não nomeia expressamente o Código de Normas do Foro Extrajudicial de Goiás. Cita "Código de Normas e Procedimentos", denominação genérica e que não identifica Goiás. O fato obrigatório fica, portanto, só parcialmente atendido. Não menciona a vedação de entrega da ficha a terceiros ou fora da serventia, a exceção de diligência, a biometria recomendada nem a limitação do reconhecimento à autoria da assinatura.
+- Contradições: não há contradição direta com a referência. A resposta indica falta de previsão legal expressa de prazo de validade, o que a referência não contradiz.
+- Não verificável pela referência: recusa por documento com "caracteres morfológicos" que gerem insegurança, arquivamento de cópia do documento (art. 472, §2º), Provimento CNJ nº 149/2023 (art. 106) sobre certidão da ficha, e Lei nº 8.935/1994. A seção "No seu cartório" é irrelevante.
+- Descontos: critério 1 perde um ponto porque a resposta direta não fala do reconhecimento limitado à autoria nem da regra de presença com exceção. Critério 2 perde um ponto por não identificar Goiás, o fato obrigatório. Critério 3 recebe um ponto pelo limite de idade (16 anos e incapacidade relativa), mas perde o outro por não tratar da vedação de preenchimento fora da serventia nem da biometria.
+
+## 3. Resultado
+
+**B venceu** (7 contra 3).
+
+## 4. Justificativa final
+
+B reproduz o conteúdo mínimo da ficha e a regra dos 16 anos, que são os pontos centrais da referência, além de citar os arts. 471 e 472. Fica incompleta por não nomear o código de Goiás e por omitir a vedação de preenchimento fora da serventia. A genérica e sem base normativa e deixa de fora quase todo o conteúdo essencial, razão pela qual ambas são parcialmente conformes, mas com B claramente mais alinhada.

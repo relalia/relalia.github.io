@@ -4,6 +4,7 @@ import Timeline from './Timeline';
 import Downloads from './Downloads';
 import FindingFilters from './FindingFilters';
 import BenchmarkReport from './BenchmarkReport';
+import BenchmarkComparisonReport from './BenchmarkComparisonReport';
 
 export default function ReportView({ report }: { report: Report }) {
   return <div className="shell">
@@ -11,7 +12,7 @@ export default function ReportView({ report }: { report: Report }) {
     <section className="intro" aria-label="Sobre o portal"><p>Validações da plataforma Alia. Explore as rodadas, consulte os achados e acompanhe os retestes com seus documentos e evidências.</p></section>
     <main className="layout"><Timeline activeId={report.id} /><article className="pane detail">
       <div className="kicker">{report.module} · {formatDate(report.date)}</div><h2>{report.title}</h2>
-      {report.benchmarkId ? <BenchmarkReport report={report}/> : <>
+      {report.comparisonId ? <BenchmarkComparisonReport report={report}/> : report.benchmarkId ? <BenchmarkReport report={report}/> : <>
       <div className="meta"><span className="tag">{report.status}</span><span className="tag">{report.count}</span></div>
       <p className="summary">{report.summary}</p><ul className="highlights">{report.highlights.map(item => <li key={item}>{item}</li>)}</ul>
       <Downloads files={report.files} />

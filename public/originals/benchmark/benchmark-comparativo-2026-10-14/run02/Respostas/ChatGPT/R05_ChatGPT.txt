@@ -1,0 +1,64 @@
+No Brasil, a abertura de firma, também chamada de abertura de firma por semelhança, é o procedimento realizado no tabelionato de notas para cadastrar a assinatura de uma pessoa. Esse cadastro é feito por meio do cartão de autógrafos, também conhecido como ficha de firma ou ficha de assinatura.
+
+## 1. O que é a abertura de firma (cartão de autógrafo)?
+
+É o registro da assinatura de uma pessoa no tabelionato de notas, para que o cartório possa conferir posteriormente se uma assinatura em um documento corresponde àquela que foi cadastrada.
+
+Esse cadastro é utilizado, por exemplo, quando alguém precisa reconhecer firma em:
+
+- Contratos particulares;
+- Autorizações e declarações;
+- Recibos e outros documentos;
+- Documentos de veículos, quando exigido o reconhecimento de firma.
+
+Existem duas modalidades principais de reconhecimento de firma:
+
+- Por semelhança: o tabelião ou funcionário autorizado compara a assinatura do documento com a assinatura cadastrada no cartório.
+- Por autenticidade: a pessoa comparece ao tabelionato, identifica-se e assina o documento na presença do tabelião ou de um funcionário autorizado, conforme as regras aplicáveis.
+
+Importante: abrir firma não significa reconhecer firma automaticamente. A abertura cria o cadastro da assinatura; o reconhecimento é um serviço realizado posteriormente, quando necessário.
+
+## 2. O que é necessário para abrir firma no tabelionato?
+
+Em regra, a pessoa deve comparecer pessoalmente ao tabelionato de notas e apresentar os seguintes documentos originais: 【turn185801search0】
+
+- Documento oficial de identificação com foto, como RG, CIN, CNH ou carteira profissional admitida pelo cartório.
+- CPF, caso o número não conste no documento de identificação.
+- Certidão de casamento ou outro documento comprobatório da alteração do nome, quando necessário, especialmente se o documento de identidade ainda não estiver atualizado.
+- Documentos específicos para estrangeiros, conforme a situação migratória e as exigências aplicáveis.
+
+### Como é feito o procedimento?
+
+1. A pessoa apresenta os documentos para conferência.
+2. O funcionário do cartório preenche a ficha com os dados pessoais.
+3. A pessoa assina a ficha, geralmente mais de uma vez, na presença do funcionário autorizado.
+4. O tabelionato arquiva o padrão de assinatura para futuras comparações.
+
+Dica: leve o documento original em bom estado e confirme previamente com o tabelionato se há alguma exigência adicional. Os procedimentos específicos podem variar conforme as normas estaduais.
+
+## 3. O cartão de firma tem prazo de validade?
+
+Não. A ficha de firma não tem prazo de validade predeterminado. Em regra, ela continua sendo utilizada enquanto o cadastro permitir a identificação segura da assinatura. 【turn185801search0】
+
+Entretanto, existem situações em que pode ser necessário atualizar a ficha:
+
+- Mudança na assinatura: se a pessoa passar a assinar de maneira diferente da assinatura cadastrada.
+- Alteração do nome: por exemplo, em razão de casamento ou divórcio.
+- Dificuldade de comparação: quando a assinatura atual não corresponde suficientemente ao padrão arquivado.
+- Exigências específicas do tabelionato: conforme as normas e os procedimentos de segurança aplicáveis.
+
+Nessas situações, o cartório poderá solicitar a atualização dos dados ou uma nova coleta de assinatura antes de realizar o reconhecimento por semelhança.
+
+Vale destacar que o prazo de guarda administrativa dos registros pelo cartório é uma questão diferente da validade da ficha para fins de reconhecimento de firma. O Conselho Nacional de Justiça possui regras próprias sobre a guarda desses documentos. 【turn185801search3】
+
+## Resumindo
+
+| Dúvida | Resposta |
+| --- | --- |
+| O que é abrir firma? | Cadastrar o padrão de assinatura no tabelionato. |
+| Precisa comparecer ao cartório? | Em regra, sim, para identificação e coleta da assinatura. |
+| Quais documentos levar? | Documento oficial de identificação, CPF e documentos complementares, se necessários. |
+| A ficha tem prazo de validade? | Não possui prazo de validade predeterminado. |
+| Quando atualizar? | Quando houver mudança na assinatura, alteração de dados ou necessidade de nova identificação. |
+
+Fonte de referência: ANOREG/BR — [Abertura de Firmas](<https://www.anoreg.org.br/site/atos-extrajudiciais/tabelionato-de-notas/abertura-de-firmas/>).

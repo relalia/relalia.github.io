@@ -1,0 +1,7 @@
+Ordem de A e B no global prompt enviado para avaliação das respostas pelo juiz Claude Sonnet 5.5 Médio (vale tanto para Vadechat Ágil como Pleno):
+
+Q01: A (ChatGPT) x B (Vadechat)
+Q02: A (Vadechat) x B (ChatGPT)
+Q03: A (ChatGPT) x B (Vadechat)
+Q04: A (Vadechat) x B (ChatGPT)
+Q05: A (ChatGPT) x B (Vadechat)

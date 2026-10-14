@@ -1,0 +1,57 @@
+## 1. Tabela de pontuação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0-4) | 2 | 2 |
+| 2. Fundamentação e informações essenciais (0-4) | 2 | 1 |
+| 3. Condições, limites e ressalvas (0-2) | 1 | 0 |
+| **Nota total** | **5** | **3** |
+| **Classificação** | Parcialmente conforme | Parcialmente conforme |
+
+## 2. Análise
+
+**Resposta A**
+
+*Acertos:*
+- Prevê requerimento e certidão de casamento como documentos centrais.
+- Indica que a averbação atualiza o estado civil e a qualificação sem implicar transferência de propriedade, o que coincide com a referência.
+- Trata a alteração do nome civil como atualização da matrícula, comprovada pela certidão.
+- Menciona o regime de bens e o pacto antenupcial como relevantes para atos futuros, em linha com a referência.
+- Cita o art. 246 da Lei 6.015/1973, que também consta da referência.
+
+*Omissões e contradições:*
+- Não afirma os três pontos concretos da referência: validade de 90 dias da certidão, firma reconhecida ou assinatura digital ICP-Brasil, e certidão original, autenticada ou digital validável. A resposta declara expressamente que não conseguiu confirmá-los.
+- Não contradiz a referência nesses pontos. Apenas deixa de afirmá-los e recomenda confirmar com o cartório, o que é omissão e não divergência.
+- Não cita o art. 167, II, da Lei 6.015/1973.
+
+*Não verificável pela referência:*
+- Exigência de documento de identificação e CPF.
+- Citação do art. 176 da Lei 6.015/1973.
+- Observação de que o cônjuge não se torna coproprietário automaticamente. Ela é compatível com a referência, mas esta não a trata.
+
+**Resposta B**
+
+*Acertos:*
+- Afirma que a certidão de casamento deve ser atualizada, o que se aproxima da referência, embora sem o prazo de 90 dias.
+- Exige requerimento assinado pelo interessado ou procurador.
+- Indica que a alteração do nome decorrente do casamento deve constar na averbação.
+- Menciona o regime de bens e a data do casamento no ato.
+
+*Omissões e contradições:*
+- Não menciona firma reconhecida nem assinatura digital ICP-Brasil, e acrescenta a assinatura "a rogo" com testemunhas, que não aparece na referência.
+- Não indica o prazo de 90 dias nem as formas admitidas de apresentação (original, cópia autenticada, digital).
+- Não esclarece que a averbação não implica transmissão do direito de propriedade.
+- Não trata do pacto antenupcial.
+- Mistura o procedimento de averbação no Registro Civil com o do Registro de Imóveis, o que desvia do foco da referência.
+
+*Não verificável pela referência:*
+- Artigos específicos do Código de Normas goiano (160, 616, 618, 630, 828, 914), a dispensa de documentos do cônjuge não proprietário, o protocolo único com divórcio e as citações do MACEQ e do Código Civil.
+- Os fundamentos legais citados (art. 70 da Lei 6.015/1973) diferem dos da referência (arts. 167, II, e 246), e essa diferença é uma limitação da comparação, não prova de erro.
+
+## 3. Resultado
+
+**A venceu** (5 a 3).
+
+## 4. Justificativa final
+
+Nenhuma das respostas reproduz os requisitos formais da referência (firma reconhecida ou ICP-Brasil, validade de 90 dias, formatos da certidão). A venceu porque se alinha melhor ao núcleo conceitual da referência: a averbação é atualização de qualificação, sem transmissão de propriedade, com tratamento do novo nome, do regime de bens e do pacto antenupcial, além de citar o art. 246. B acerta ao exigir certidão atualizada, mas se afasta da referência ao trazer o rito do Registro Civil e a assinatura "a rogo", e ignora o pacto antenupcial e a natureza da averbação.

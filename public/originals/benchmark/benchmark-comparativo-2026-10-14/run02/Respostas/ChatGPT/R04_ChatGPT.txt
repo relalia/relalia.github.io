@@ -1,0 +1,53 @@
+No Estado de Goiás, é importante distinguir o prazo para abrir o inventário extrajudicial em cartório do prazo para apresentar a Declaração do ITCD (Imposto sobre Transmissão Causa Mortis e Doação). Para evitar a multa tributária, o marco mais importante é a data do falecimento e a contagem do prazo para entrega da declaração à Secretaria da Economia de Goiás.
+
+## 1\. Qual é o prazo para evitar a multa do ITCD?
+
+Segundo as orientações oficiais da Secretaria da Economia de Goiás, na sucessão por falecimento, a contagem para a aplicação da multa pela entrega em atraso da Declaração do ITCD é a seguinte: Secretaria da Economia
+
+- Do 1º ao 60º dia após o óbito: a declaração não é considerada atrasada para esse efeito.
+- Do 61º ao 120º dia: a declaração está atrasada, mas ainda não se aplica a multa por atraso prevista nessa regra.
+- A partir do 121º dia: passa a ser aplicável a multa por atraso na entrega da declaração, se ela ainda não tiver sido apresentada.
+
+A Secretaria informa as seguintes penalidades pela entrega tardia:
+
+- 10% do imposto devido, quando o atraso ultrapassa 60 dias.
+- 20% do imposto devido, quando o atraso ultrapassa 120 dias. Secretaria da Economia
+
+Atenção: esses prazos dizem respeito à declaração do ITCD, e não necessariamente ao prazo civil para a abertura do inventário.
+
+## 2\. Como fazer a contagem corretamente?
+
+A regra divulgada pela Secretaria utiliza dias corridos contados a partir da data do óbito, e não da data em que a família procura o cartório, contrata advogado ou inicia a reunião de documentos.
+
+Exemplo oficial: falecimento em 21 de maio de 2022. Secretaria da Economia
+
+| Marco | Data do exemplo |
+| --- | --- |
+| Falecimento | 21/05/2022 |
+| Último dia sem atraso | 19/07/2022 |
+| Último dia sem aplicação da multa por atraso | 17/09/2022 |
+| Primeiro dia com possibilidade de multa | 18/09/2022 |
+
+Portanto, para reduzir o risco tributário, a medida mais segura é transmitir a Declaração do ITCD o quanto antes, sem aguardar o limite de 120 dias.
+
+## 3\. E qual é o prazo legal para abrir o inventário extrajudicial?
+
+O art. 611 do Código de Processo Civil estabelece que o processo de inventário e partilha deve ser instaurado em até 2 meses contados da abertura da sucessão, ou seja, do falecimento. Esse prazo é distinto da regra estadual de aplicação da multa pela entrega tardia da declaração tributária.
+
+Na prática, convém observar os dois marcos:
+
+- Até 2 meses do óbito: providenciar a abertura do inventário, inclusive pela via extrajudicial, se preenchidos os requisitos legais.
+- Até o 60º dia: buscar apresentar a Declaração do ITCD dentro do prazo considerado regular pela orientação fiscal goiana.
+- Antes do 121º dia: evitar que a declaração permaneça pendente a ponto de incidir a multa por atraso.
+
+A escritura pública de inventário e partilha e a declaração fiscal são atos diferentes. Iniciar tratativas com o tabelionato, por si só, não equivale necessariamente à apresentação da declaração do imposto.
+
+## 4\. Fontes oficiais para conferência
+
+- [Secretaria da Economia de Goiás — Perguntas e respostas sobre ITCD](<https://goias.gov.br/economia/perguntas-e-respostas-11/>): questões 62 e 65, sobre os prazos e as multas.
+- [Código de Processo Civil — Lei nº 13.105/2015](<https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm>): art. 611, sobre o prazo para instauração do inventário.
+- [Código Tributário do Estado de Goiás — Lei nº 11.651/1991](<https://legisla.casacivil.go.gov.br/pesquisa_legislacao/81631/lei-14065>): legislação tributária estadual e regras relacionadas ao ITCD.
+
+Conclusão: para evitar a multa estadual pela entrega tardia da declaração, a referência prática é o prazo de 120 dias, com possibilidade de penalidade a partir do 121º dia após o óbito. Entretanto, o prazo civil para iniciar o inventário é de 2 meses.
+
+Se você me informar a data exata do falecimento, posso calcular as datas-limite para o caso concreto, considerando os dois prazos.

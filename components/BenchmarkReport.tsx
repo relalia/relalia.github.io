@@ -20,7 +20,7 @@ function useBenchmark() {
 }
 
 
-function TextEvidence({document, label}: {document: SourceDocument; label: string}) {
+export function TextEvidence({document, label}: {document: SourceDocument; label: string}) {
   const [raw,setRaw] = useState(false);
   const [message,setMessage] = useState('');
   async function copy() {

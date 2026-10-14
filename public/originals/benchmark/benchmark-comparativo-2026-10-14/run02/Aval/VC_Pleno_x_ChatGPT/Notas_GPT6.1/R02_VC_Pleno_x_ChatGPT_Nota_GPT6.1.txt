@@ -1,0 +1,43 @@
+**Nota de revisão — Prompt 7 — Pleno × ChatGPT**
+
+O parecer reconhece que ambas acertam a distinção central, mas **não demonstra as imprecisões que justificariam os dois pontos de vantagem de B**. Também exige organização e nomeação de conteúdos além do permitido pela comparação de significado.
+
+**Registro original preservado**
+
+| Critério                               |                     A |        B |
+| -------------------------------------- | --------------------: | -------: |
+| Conclusão e orientação prática         |                   3/4 |      4/4 |
+| Fundamentação e informações essenciais |                   3/4 |      3/4 |
+| Condições, limites e ressalvas         |                   1/2 |      2/2 |
+| **Total**                              |              **7/10** | **9/10** |
+| **Classificação**                      | Parcialmente conforme | Conforme |
+
+**Resultado original: B venceu, por 9 a 7.**
+
+**Problemas demonstráveis**
+
+1. **O desconto pela separação das categorias em A não encontra exemplo concreto.**
+   A divide a resposta em análise especial e comunicação obrigatória “independentemente de análise subjetiva”. Também afirma que, nas primeiras hipóteses, comunica-se **“caso, após análise, o registrador considere a operação suspeita”**. Seu resumo repete a distinção. O juiz reconhece esses acertos, mas desconta por separação “menos precisa” sem identificar qual orientação seria incompleta ou ambígua.
+
+2. **O tratamento do item f privilegia forma de apresentação.**
+   A menciona “valores incompatíveis com o mercado”, “cláusulas incompatíveis” e meios de pagamento ligados a tentativas de burlar controles. Esses trechos oferecem cobertura semântica relevante ao item **f**. O desconto por falta de apresentação “sistematizada” precisa demonstrar conteúdo essencial ausente; organização, isoladamente, não basta. Em B, exigir esse item como hipótese “nomeada” também contraria a regra de avaliar significado sem reprodução literal.
+
+3. **A suposta ausência da condição da doação é desmentida pelo próprio parecer.**
+   O juiz primeiro escreve que A “não indica” a condição de valor, depois reconhece que ela a menciona e considera isso aceitável. A efetivamente escreve “com valor venal igual ou superior a R$ 100.000,00”. A alegação de ausência deve ser retirada. Isso confirma a presença de uma condição no texto, **não sua correção jurídica**, pois a referência não especifica esse valor para doações.
+
+4. **Há tratamento assimétrico da advertência sobre o preço do imóvel.**
+   Para A, o juiz declara que a ausência dessa advertência “não pesa”, porque ela não consta da referência. Entretanto, destaca a explicitação desse limite como vantagem de B. A advertência pode esclarecer uma condição já presente na referência, mas A também vincula o limite ao pagamento declarado em espécie ou por título ao portador. Não foi demonstrado um erro de alcance em A que sustente essa diferença.
+
+**Pontos que admitem interpretação**
+
+* B desenvolve mais os elementos do art. 161, mas A já apresenta **declaração das partes, meios de pagamento e valor mínimo**. Maior desenvolvimento não equivale automaticamente a maior alinhamento.
+* O desconto de A por “ressalvas genéricas” não identifica qual condição relevante da referência falta. Sem essa indicação, não é possível verificar sua legitimidade nem afastar eventual repetição do desconto sobre a separação das categorias.
+* A expressão “única hipótese” excede a referência, que confirma a hipótese do art. 161 sem declarar exaustivamente inexistirem outras.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Reexaminar os descontos de A nos critérios 1 e 3; avaliar o item f pelo conteúdo efetivamente apresentado em ambas; e retirar a alegação de ausência da condição da doação. Eventuais descontos devem indicar falhas distintas e verificáveis.
+
+**Conclusão**
+
+As somas, as classificações pelas notas atribuídas e a escolha do vencedor estão formalmente coerentes. Contudo, **a vantagem de B não está suficientemente sustentada pelo protocolo**. A reconsideração pode reduzir ou eliminar essa diferença, sem que esta revisão estabeleça novas notas, empate ou inversão. A referência permite julgar o núcleo da comparação; os acréscimos permanecem sujeitos à limitação de verificabilidade.

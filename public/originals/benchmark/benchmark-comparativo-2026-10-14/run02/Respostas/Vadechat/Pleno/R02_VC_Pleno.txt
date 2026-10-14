@@ -1,0 +1,74 @@
+**Resposta direta**
+
+Na compra e venda de imóvel, o registrador de imóveis deve observar situações que possam indicar lavagem de dinheiro ou financiamento do terrorismo, conforme os arts. 155-A, 161 e 162 do Código Nacional de Normas (Provimento CNJ nº 149/2023, com redação do Provimento CNJ nº 161/2024). Há hipóteses que exigem análise com especial atenção e outras que impõem comunicação obrigatória ao COAF (UIF) independentemente de análise subjetiva.
+
+---
+
+## Fundamentação legal
+
+### 1. Situações que exigem análise com especial atenção
+
+O art. 155-A do Provimento nº 149/2023 (com redação do Provimento nº 161/2024) elenca situações em que o registrador deve analisar com especial atenção, pois podem indicar indícios de lavagem de dinheiro ou financiamento do terrorismo. Entre elas, destacam-se:
+
+- Operações que não decorrem de atividades ou negócios usuais do cliente ou de seu ramo de atuação;
+- Origem ou fundamentação econômica ou legal não claramente aferíveis;
+- Incompatibilidade com o patrimônio ou capacidade econômico-financeira do cliente;
+- Dificuldade ou inviabilidade de identificação de beneficiário(s) final(is);
+- Envolvimento de pessoas jurídicas domiciliadas em jurisdições de alto risco (GAFI) ou de tributação favorecida (RFB);
+- Resistência ao fornecimento de informações/documentação ou apresentação de informações falsas ou de difícil verificação;
+- Operações complexas ou onerosas sem justificativa, dificultando rastreamento de recursos;
+- Sinais de caráter fictício ou valores incompatíveis com o mercado;
+- Cláusulas incompatíveis com as praticadas no mercado;
+- Tentativas de burlar controles de PLD/FTP, inclusive fracionamento ou pagamento em espécie/título ao portador;
+- Registro de documento estrangeiro de difícil compreensão jurídica;
+- Substancial ganho de capital em curto período;
+- Lavratura ou uso de procuração com amplos poderes de administração de patrimônio, entre outros [Provimento nº 149, de 30 de agosto de 2023., art. 155-A].
+
+O art. 162 complementa, exigindo análise especial em hipóteses como:
+
+- Doações de imóveis para terceiros sem vínculo familiar aparente, com valor venal igual ou superior a R$ 100.000,00;
+- Empréstimos hipotecários ou alienação fiduciária entre particulares;
+- Negócios celebrados por sociedades dissolvidas e reativadas;
+- Aquisição de imóveis por fundações/associações incompatíveis com suas finalidades;
+- Transmissões sucessivas do mesmo bem em período e valores anormais;
+- Valor declarado de bem com diferença anormal em relação a outros valores associados (avaliação fiscal, valor patrimonial, etc.) [Provimento nº 149, de 30 de agosto de 2023., art. 162].
+
+Nessas hipóteses, a comunicação à UIF (COAF) é obrigatória caso, após análise, o registrador considere a operação suspeita, devendo documentar a análise e a conclusão [Provimento nº 149, de 30 de agosto de 2023., art. 162, parágrafo único; art. 141].
+
+---
+
+### 2. Situações que exigem comunicação obrigatória, independentemente de análise subjetiva
+
+O art. 161 determina comunicação obrigatória à UIF (COAF), sem necessidade de análise subjetiva, quando houver:
+
+- Registro de documento ou título em que conste declaração das partes de que foi realizado pagamento em espécie ou por título ao portador, de valor igual ou superior a R$ 100.000,00 (cem mil reais) ou equivalente em outra moeda [Provimento nº 149, de 30 de agosto de 2023., art. 161].
+
+Nesses casos, a comunicação é automática, independentemente de outros indícios ou da análise do registrador.
+
+---
+
+### 3. Outras regras específicas aplicáveis
+
+- O registrador deve implementar política de prevenção à lavagem de dinheiro e financiamento do terrorismo, com procedimentos de monitoramento, seleção e análise de operações, conforme o art. 141 [Provimento nº 149, de 30 de agosto de 2023., art. 141].
+- A análise deve ser documentada e estar disponível para fiscalização das corregedorias, mesmo que não resulte em comunicação à UIF [Provimento nº 149, de 30 de agosto de 2023., art. 141, §3º].
+- A política de prevenção deve ser compatível com o porte e volume de operações da serventia, orientada por abordagem baseada em risco, mas sem afastar o cumprimento das comunicações obrigatórias [Provimento nº 149, de 30 de agosto de 2023., art. 139].
+- O registrador é responsável por indicar oficial de cumprimento e por treinar a equipe para identificar e comunicar operações suspeitas [Provimento nº 149, de 30 de agosto de 2023., art. 144].
+
+---
+
+## Resumo prático
+
+- **Análise com especial atenção:** Situações listadas nos arts. 155-A e 162 exigem análise detalhada e, se consideradas suspeitas, comunicação à UIF.
+- **Comunicação obrigatória:** Pagamento em espécie ou por título ao portador igual ou superior a R$ 100.000,00 exige comunicação automática, independentemente de análise.
+- **Outras obrigações:** Implementação de política interna de PLD/FTP, documentação das análises, treinamento da equipe e indicação de oficial de cumprimento.
+
+---
+
+## ⚠️ Atenção
+
+- A lista acima segue o texto vigente do Provimento nº 149/2023, com redação do Provimento nº 161/2024, conforme recuperado na base deste cartório. Recomenda-se sempre conferir se houve alteração normativa posterior.
+- Normas estaduais ou locais podem complementar ou detalhar procedimentos — confira o Código de Normas do seu estado para exigências adicionais.
+
+---
+
+Se desejar, posso detalhar exemplos práticos de cada hipótese ou orientar sobre o procedimento de comunicação à UIF/COAF.

@@ -1,0 +1,3698 @@
+{
+  "id": "benchmark-comparativo-2026-10-14",
+  "title": "Reteste VadeChat × ChatGPT — Run 02 comparado à execução inicial",
+  "derivation": "Índice e vínculos extraídos dos manifestos e pareceres. Documento gerado; não é um manifesto original nem prova independente de envio.",
+  "benchmarkId": "96357887-d65d-4232-b7aa-308df599a7ce",
+  "runs": [
+    {
+      "id": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+      "identifier": "legado01",
+      "date": "2026-10-09",
+      "config": {
+        "benchmarkName": "Benchmark_Manual_VC_x_ChatGPT",
+        "runId": "legado01",
+        "date": "2026-10-09",
+        "notes": "",
+        "opponent": {
+          "id": "ChatGPT",
+          "platform": "ChatGPT",
+          "model": "",
+          "unidentified": false,
+          "access": "Grátis",
+          "mode": "",
+          "notes": ""
+        },
+        "judge": {
+          "id": "judge",
+          "platform": "Claude",
+          "model": "Sonnet 5.5",
+          "unidentified": false,
+          "access": "Grátis",
+          "mode": "Médio",
+          "notes": ""
+        },
+        "reviewer": {
+          "id": "GPT6.1",
+          "platform": "ChatGPT",
+          "model": "6.1 Sol",
+          "unidentified": false,
+          "access": "Pago",
+          "mode": "Alto",
+          "notes": ""
+        },
+        "agil": {
+          "id": "VC_Agil",
+          "platform": "VadeChat",
+          "model": "",
+          "unidentified": false,
+          "access": "",
+          "mode": "Ágil",
+          "notes": ""
+        },
+        "pleno": {
+          "id": "VC_Pleno",
+          "platform": "VadeChat",
+          "model": "",
+          "unidentified": false,
+          "access": "",
+          "mode": "Pleno",
+          "notes": ""
+        }
+      },
+      "manifest": {
+        "name": "benchmark.json",
+        "sha256": "fb65b0486a812f70b18662eb643405620957cc9b772a80168358cbc4469898b9"
+      }
+    },
+    {
+      "id": "679864c6-ef63-46b5-b8ac-ef1d4808d084",
+      "identifier": "run02",
+      "date": "2026-10-14",
+      "config": {
+        "benchmarkName": "Benchmark_Manual_VC_x_ChatGPT",
+        "runId": "run02",
+        "date": "2026-10-14",
+        "notes": "",
+        "previous": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+        "opponent": {
+          "id": "ChatGPT",
+          "platform": "ChatGPT",
+          "model": "",
+          "unidentified": false,
+          "access": "Grátis",
+          "mode": "",
+          "notes": ""
+        },
+        "judge": {
+          "id": "judge",
+          "platform": "Claude",
+          "model": "Sonnet 5.5",
+          "unidentified": false,
+          "access": "Grátis",
+          "mode": "Médio",
+          "notes": ""
+        },
+        "reviewer": {
+          "id": "GPT6.1",
+          "platform": "ChatGPT",
+          "model": "6.1 Sol",
+          "unidentified": false,
+          "access": "Pago",
+          "mode": "Alto",
+          "notes": ""
+        },
+        "agil": {
+          "id": "VC_Agil",
+          "platform": "VadeChat",
+          "model": "",
+          "unidentified": false,
+          "access": "",
+          "mode": "Ágil",
+          "notes": ""
+        },
+        "pleno": {
+          "id": "VC_Pleno",
+          "platform": "VadeChat",
+          "model": "",
+          "unidentified": false,
+          "access": "",
+          "mode": "Pleno",
+          "notes": ""
+        }
+      },
+      "manifest": {
+        "name": "benchmark.json",
+        "sha256": "316f94bfae9998eef5956fcdd72eb5281a82ff8bfdcc8bcd87bd4fdf21e464e3"
+      }
+    }
+  ],
+  "summary": {
+    "agil": {
+      "old": 4.6,
+      "new": 5.8,
+      "delta": 1.2,
+      "denominator": 5,
+      "up": 3,
+      "down": 2,
+      "same": 0,
+      "outcomes": {
+        "old": {
+          "vc": 1,
+          "opponent": 3,
+          "tie": 1,
+          "inconclusive": 0
+        },
+        "new": {
+          "vc": 1,
+          "opponent": 4,
+          "tie": 0,
+          "inconclusive": 0
+        }
+      }
+    },
+    "pleno": {
+      "old": 7.4,
+      "new": 6.8,
+      "delta": -0.6,
+      "denominator": 5,
+      "up": 2,
+      "down": 2,
+      "same": 1,
+      "outcomes": {
+        "old": {
+          "vc": 2,
+          "opponent": 1,
+          "tie": 2,
+          "inconclusive": 0
+        },
+        "new": {
+          "vc": 2,
+          "opponent": 2,
+          "tie": 1,
+          "inconclusive": 0
+        }
+      }
+    }
+  },
+  "highlights": [
+    "Q02 responde por +1,0 dos +1,2 pontos de aumento da média do Ágil (5 pontos ÷ 5 perguntas).",
+    "As respostas fixas do ChatGPT receberam notas diferentes em cinco dos dez embates entre as execuções.",
+    "O avanço de cobertura mais claro ocorre em Q02; a regressão mais clara ocorre em Q04 do Pleno. Isso não demonstra melhoria geral nem atribui toda variação ao VadeChat."
+  ],
+  "rows": [
+    {
+      "question": "Q01",
+      "mode": "agil",
+      "id": "Q01-AGIL",
+      "old": {
+        "ab": {
+          "A": {
+            "criteria": [
+              2,
+              2,
+              1
+            ],
+            "total": 5,
+            "classification": "Parcialmente conforme",
+            "sum": 5
+          },
+          "B": {
+            "criteria": [
+              1,
+              1,
+              0
+            ],
+            "total": 2,
+            "classification": "Divergente",
+            "sum": 2
+          }
+        },
+        "vc": {
+          "criteria": [
+            1,
+            1,
+            0
+          ],
+          "total": 2,
+          "classification": "Divergente",
+          "sum": 2
+        },
+        "opponent": {
+          "criteria": [
+            2,
+            2,
+            1
+          ],
+          "total": 5,
+          "classification": "Parcialmente conforme",
+          "sum": 5
+        },
+        "vcLetter": "B",
+        "result": "**A venceu** (5 a 2).",
+        "winner": "opponent"
+      },
+      "new": {
+        "ab": {
+          "A": {
+            "criteria": [
+              2,
+              2,
+              1
+            ],
+            "total": 5,
+            "classification": "Parcialmente conforme",
+            "sum": 5
+          },
+          "B": {
+            "criteria": [
+              2,
+              1,
+              0
+            ],
+            "total": 3,
+            "classification": "Parcialmente conforme",
+            "sum": 3
+          }
+        },
+        "vc": {
+          "criteria": [
+            2,
+            1,
+            0
+          ],
+          "total": 3,
+          "classification": "Parcialmente conforme",
+          "sum": 3
+        },
+        "opponent": {
+          "criteria": [
+            2,
+            2,
+            1
+          ],
+          "total": 5,
+          "classification": "Parcialmente conforme",
+          "sum": 5
+        },
+        "vcLetter": "B",
+        "result": "**A venceu** (5 a 3).",
+        "winner": "opponent"
+      },
+      "delta": 1,
+      "mapping": {
+        "A": "opponent",
+        "B": "agil"
+      },
+      "sources": {
+        "old": {
+          "question": "run01/Perguntas/Q01.txt",
+          "reference": "run01/Respostas/Humano/R01_Humano.txt",
+          "opponent": "run01/Respostas/ChatGPT/R01_ChatGPT.txt",
+          "agil": "run01/Respostas/Vadechat/Agil/R01_VC_Agil.txt",
+          "mapping": "run01/Config/Alternancia/Q01.txt",
+          "judgment:agil": "run01/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt",
+          "review:agil": "run01/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "new": {
+          "question": "run02/Perguntas/Q01.txt",
+          "reference": "run02/Respostas/Humano/R01_Humano.txt",
+          "opponent": "run02/Respostas/ChatGPT/R01_ChatGPT.txt",
+          "agil": "run02/Respostas/Vadechat/Agil/R01_VC_Agil.txt",
+          "mapping": "run02/Config/Alternancia/Q01.txt",
+          "judgment:agil": "run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt",
+          "review:agil": "run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "prompt": "run02/Prompts/Julgamentos/Prompt_001_v1_9bb2a0cb-bd4f-4477-bdc0-a52aa3795545.txt",
+      "reviewPrompt": "run02/Prompts/Revisoes/Prompt_001_v1_54671323-3c12-4026-901e-cc21036726f0.txt",
+      "promptId": "9bb2a0cb-bd4f-4477-bdc0-a52aa3795545",
+      "reviewPromptId": "54671323-3c12-4026-901e-cc21036726f0",
+      "promptSentDeclared": true,
+      "structured": {
+        "criteria": [],
+        "totalA": null,
+        "totalB": null,
+        "classA": "",
+        "classB": "",
+        "winner": "",
+        "checked": false
+      },
+      "identities": {
+        "oldQuestion": "254856dd-e3ac-4263-a43e-225dd8a95f25",
+        "newQuestion": "cb2ebc75-6f5d-48ce-8b68-4eecad2a94c6"
+      },
+      "integrity": {
+        "question": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "218fdf14c1d390a728ac4024f7e4a0a5ebd22cbb6e78e41857112224f1428e2d",
+          "newHash": "218fdf14c1d390a728ac4024f7e4a0a5ebd22cbb6e78e41857112224f1428e2d",
+          "oldPath": "Perguntas/Q01.txt",
+          "newPath": "Perguntas/Q01.txt"
+        },
+        "reference": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "96e23990807700bbcaa3ca3a4fc231453206a991141c38501f91b03997ddbc22",
+          "newHash": "96e23990807700bbcaa3ca3a4fc231453206a991141c38501f91b03997ddbc22",
+          "oldPath": "Respostas/Humano/R01_Humano.txt",
+          "newPath": "Respostas/Humano/R01_Humano.txt"
+        },
+        "facts": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "referencePrompt": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "opponent": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "ddc52d322642fb622be8b5298553885e7b0b21af1bccd5bd4b720ad8d6fed635",
+          "newHash": "ddc52d322642fb622be8b5298553885e7b0b21af1bccd5bd4b720ad8d6fed635",
+          "oldPath": "Respostas/ChatGPT/R01_ChatGPT.txt",
+          "newPath": "Respostas/ChatGPT/R01_ChatGPT.txt"
+        },
+        "mapping": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "newHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "oldPath": "Config/Alternancia/Q01.txt",
+          "newPath": "Config/Alternancia/Q01.txt"
+        },
+        "agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "3c0e4afd306d29871e2d29f1a99d58b0e5ff02c5bdf81d9f7f30096117d375ee",
+          "newHash": "262550376a8addc6144b5b58f903d356cef4fc44abaebb3757f0c4b79555d22b",
+          "oldPath": "Respostas/Vadechat/Agil/R01_VC_Agil.txt",
+          "newPath": "Respostas/Vadechat/Agil/R01_VC_Agil.txt"
+        },
+        "pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "720a4705b77049dabe11a652674238c065f07b61a5c63bbf88ab60c70cd845dd",
+          "newHash": "3c1f7a7deb9215aecb4ae68b88882e2a0897597fe0d803c6d907b459adb460c5",
+          "oldPath": "Respostas/Vadechat/Pleno/R01_VC_Pleno.txt",
+          "newPath": "Respostas/Vadechat/Pleno/R01_VC_Pleno.txt"
+        },
+        "judgment:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "0737824dd354910111c3700c413de819ab25705d43e17408b123796e5f61160e",
+          "newHash": "7abbf714cceee3a5c414cde05310e8577d4b9013b50b9478b957e3660bf53baa",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt"
+        },
+        "judgment:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "436455fb8ff4c9caa6e3273f88f8ac4983abfa23899d9a2aa2a1b001f4125cd6",
+          "newHash": "1c47798ea82663b6d1363651c7a6f3a59ef3b6615efbc60e9dfd56c99a066af8",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt"
+        },
+        "review:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "7e2432ec331ed0cd0ef233c388b7dfd26a9534b122b76fcd975538fee0d927a0",
+          "newHash": "229fb6a89800c607da92768f9d4e90410b5dde908a38a60e68b6dd5f404c41be",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "review:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "3259a0633b32f8e869fa6b165d7ed987e0714b98189aa302015160f125ad02f2",
+          "newHash": "f1a7577f705f6814cc133352fd5829b93f6ab011d8bb164d4f1135933aefe1b2",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "provenance": [
+        {
+          "version": "470e4d32-c898-4253-8b38-a7acece9fcdb",
+          "sha256": "ddc52d322642fb622be8b5298553885e7b0b21af1bccd5bd4b720ad8d6fed635",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "254856dd-e3ac-4263-a43e-225dd8a95f25/opponent",
+            "version": "564c0776-dba0-4c62-9c3e-2ef52c4a6175",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        }
+      ]
+    },
+    {
+      "question": "Q01",
+      "mode": "pleno",
+      "id": "Q01-PLENO",
+      "old": {
+        "ab": {
+          "A": {
+            "criteria": [
+              2,
+              2,
+              1
+            ],
+            "total": 5,
+            "classification": "Parcialmente conforme",
+            "sum": 5
+          },
+          "B": {
+            "criteria": [
+              2,
+              2,
+              1
+            ],
+            "total": 5,
+            "classification": "Parcialmente conforme",
+            "sum": 5
+          }
+        },
+        "vc": {
+          "criteria": [
+            2,
+            2,
+            1
+          ],
+          "total": 5,
+          "classification": "Parcialmente conforme",
+          "sum": 5
+        },
+        "opponent": {
+          "criteria": [
+            2,
+            2,
+            1
+          ],
+          "total": 5,
+          "classification": "Parcialmente conforme",
+          "sum": 5
+        },
+        "vcLetter": "B",
+        "result": "**Empate** (5 a 5).",
+        "winner": "tie"
+      },
+      "new": {
+        "ab": {
+          "A": {
+            "criteria": [
+              2,
+              2,
+              1
+            ],
+            "total": 5,
+            "classification": "Parcialmente conforme",
+            "sum": 5
+          },
+          "B": {
+            "criteria": [
+              3,
+              2,
+              1
+            ],
+            "total": 6,
+            "classification": "Parcialmente conforme",
+            "sum": 6
+          }
+        },
+        "vc": {
+          "criteria": [
+            3,
+            2,
+            1
+          ],
+          "total": 6,
+          "classification": "Parcialmente conforme",
+          "sum": 6
+        },
+        "opponent": {
+          "criteria": [
+            2,
+            2,
+            1
+          ],
+          "total": 5,
+          "classification": "Parcialmente conforme",
+          "sum": 5
+        },
+        "vcLetter": "B",
+        "result": "**B venceu** (6 contra 5).",
+        "winner": "vc"
+      },
+      "delta": 1,
+      "mapping": {
+        "A": "opponent",
+        "B": "pleno"
+      },
+      "sources": {
+        "old": {
+          "question": "run01/Perguntas/Q01.txt",
+          "reference": "run01/Respostas/Humano/R01_Humano.txt",
+          "opponent": "run01/Respostas/ChatGPT/R01_ChatGPT.txt",
+          "pleno": "run01/Respostas/Vadechat/Pleno/R01_VC_Pleno.txt",
+          "mapping": "run01/Config/Alternancia/Q01.txt",
+          "judgment:pleno": "run01/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt",
+          "review:pleno": "run01/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "new": {
+          "question": "run02/Perguntas/Q01.txt",
+          "reference": "run02/Respostas/Humano/R01_Humano.txt",
+          "opponent": "run02/Respostas/ChatGPT/R01_ChatGPT.txt",
+          "pleno": "run02/Respostas/Vadechat/Pleno/R01_VC_Pleno.txt",
+          "mapping": "run02/Config/Alternancia/Q01.txt",
+          "judgment:pleno": "run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt",
+          "review:pleno": "run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "prompt": "run02/Prompts/Julgamentos/Prompt_006_v1_2afd3f22-15a5-4890-ac11-4a94aa342f2f.txt",
+      "reviewPrompt": "run02/Prompts/Revisoes/Prompt_006_v1_820ac2e2-051f-4ab4-91ff-9f165e0a2f42.txt",
+      "promptId": "2afd3f22-15a5-4890-ac11-4a94aa342f2f",
+      "reviewPromptId": "820ac2e2-051f-4ab4-91ff-9f165e0a2f42",
+      "promptSentDeclared": true,
+      "structured": {
+        "criteria": [],
+        "totalA": null,
+        "totalB": null,
+        "classA": "",
+        "classB": "",
+        "winner": "",
+        "checked": false
+      },
+      "identities": {
+        "oldQuestion": "254856dd-e3ac-4263-a43e-225dd8a95f25",
+        "newQuestion": "cb2ebc75-6f5d-48ce-8b68-4eecad2a94c6"
+      },
+      "integrity": {
+        "question": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "218fdf14c1d390a728ac4024f7e4a0a5ebd22cbb6e78e41857112224f1428e2d",
+          "newHash": "218fdf14c1d390a728ac4024f7e4a0a5ebd22cbb6e78e41857112224f1428e2d",
+          "oldPath": "Perguntas/Q01.txt",
+          "newPath": "Perguntas/Q01.txt"
+        },
+        "reference": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "96e23990807700bbcaa3ca3a4fc231453206a991141c38501f91b03997ddbc22",
+          "newHash": "96e23990807700bbcaa3ca3a4fc231453206a991141c38501f91b03997ddbc22",
+          "oldPath": "Respostas/Humano/R01_Humano.txt",
+          "newPath": "Respostas/Humano/R01_Humano.txt"
+        },
+        "facts": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "referencePrompt": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "opponent": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "ddc52d322642fb622be8b5298553885e7b0b21af1bccd5bd4b720ad8d6fed635",
+          "newHash": "ddc52d322642fb622be8b5298553885e7b0b21af1bccd5bd4b720ad8d6fed635",
+          "oldPath": "Respostas/ChatGPT/R01_ChatGPT.txt",
+          "newPath": "Respostas/ChatGPT/R01_ChatGPT.txt"
+        },
+        "mapping": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "newHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "oldPath": "Config/Alternancia/Q01.txt",
+          "newPath": "Config/Alternancia/Q01.txt"
+        },
+        "agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "3c0e4afd306d29871e2d29f1a99d58b0e5ff02c5bdf81d9f7f30096117d375ee",
+          "newHash": "262550376a8addc6144b5b58f903d356cef4fc44abaebb3757f0c4b79555d22b",
+          "oldPath": "Respostas/Vadechat/Agil/R01_VC_Agil.txt",
+          "newPath": "Respostas/Vadechat/Agil/R01_VC_Agil.txt"
+        },
+        "pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "720a4705b77049dabe11a652674238c065f07b61a5c63bbf88ab60c70cd845dd",
+          "newHash": "3c1f7a7deb9215aecb4ae68b88882e2a0897597fe0d803c6d907b459adb460c5",
+          "oldPath": "Respostas/Vadechat/Pleno/R01_VC_Pleno.txt",
+          "newPath": "Respostas/Vadechat/Pleno/R01_VC_Pleno.txt"
+        },
+        "judgment:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "0737824dd354910111c3700c413de819ab25705d43e17408b123796e5f61160e",
+          "newHash": "7abbf714cceee3a5c414cde05310e8577d4b9013b50b9478b957e3660bf53baa",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt"
+        },
+        "judgment:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "436455fb8ff4c9caa6e3273f88f8ac4983abfa23899d9a2aa2a1b001f4125cd6",
+          "newHash": "1c47798ea82663b6d1363651c7a6f3a59ef3b6615efbc60e9dfd56c99a066af8",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt"
+        },
+        "review:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "7e2432ec331ed0cd0ef233c388b7dfd26a9534b122b76fcd975538fee0d927a0",
+          "newHash": "229fb6a89800c607da92768f9d4e90410b5dde908a38a60e68b6dd5f404c41be",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "review:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "3259a0633b32f8e869fa6b165d7ed987e0714b98189aa302015160f125ad02f2",
+          "newHash": "f1a7577f705f6814cc133352fd5829b93f6ab011d8bb164d4f1135933aefe1b2",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "provenance": [
+        {
+          "version": "470e4d32-c898-4253-8b38-a7acece9fcdb",
+          "sha256": "ddc52d322642fb622be8b5298553885e7b0b21af1bccd5bd4b720ad8d6fed635",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "254856dd-e3ac-4263-a43e-225dd8a95f25/opponent",
+            "version": "564c0776-dba0-4c62-9c3e-2ef52c4a6175",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        }
+      ]
+    },
+    {
+      "question": "Q02",
+      "mode": "agil",
+      "id": "Q02-AGIL",
+      "old": {
+        "ab": {
+          "A": {
+            "criteria": [
+              1,
+              1,
+              0
+            ],
+            "total": 2,
+            "classification": "Divergente",
+            "sum": 2
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              2
+            ],
+            "total": 10,
+            "classification": "Conforme",
+            "sum": 10
+          }
+        },
+        "vc": {
+          "criteria": [
+            1,
+            1,
+            0
+          ],
+          "total": 2,
+          "classification": "Divergente",
+          "sum": 2
+        },
+        "opponent": {
+          "criteria": [
+            4,
+            4,
+            2
+          ],
+          "total": 10,
+          "classification": "Conforme",
+          "sum": 10
+        },
+        "vcLetter": "A",
+        "result": "**B venceu** (10 a 2).",
+        "winner": "opponent"
+      },
+      "new": {
+        "ab": {
+          "A": {
+            "criteria": [
+              3,
+              3,
+              1
+            ],
+            "total": 7,
+            "classification": "Parcialmente conforme",
+            "sum": 7
+          },
+          "B": {
+            "criteria": [
+              4,
+              3,
+              2
+            ],
+            "total": 9,
+            "classification": "Conforme",
+            "sum": 9
+          }
+        },
+        "vc": {
+          "criteria": [
+            3,
+            3,
+            1
+          ],
+          "total": 7,
+          "classification": "Parcialmente conforme",
+          "sum": 7
+        },
+        "opponent": {
+          "criteria": [
+            4,
+            3,
+            2
+          ],
+          "total": 9,
+          "classification": "Conforme",
+          "sum": 9
+        },
+        "vcLetter": "A",
+        "result": "**B venceu** (9 contra 7).",
+        "winner": "opponent"
+      },
+      "delta": 5,
+      "mapping": {
+        "A": "agil",
+        "B": "opponent"
+      },
+      "sources": {
+        "old": {
+          "question": "run01/Perguntas/Q02.txt",
+          "reference": "run01/Respostas/Humano/R02_Humano.txt",
+          "opponent": "run01/Respostas/ChatGPT/R02_ChatGPT.txt",
+          "agil": "run01/Respostas/Vadechat/Agil/R02_VC_Agil.txt",
+          "mapping": "run01/Config/Alternancia/Q02.txt",
+          "judgment:agil": "run01/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt",
+          "review:agil": "run01/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "new": {
+          "question": "run02/Perguntas/Q02.txt",
+          "reference": "run02/Respostas/Humano/R02_Humano.txt",
+          "opponent": "run02/Respostas/ChatGPT/R02_ChatGPT.txt",
+          "agil": "run02/Respostas/Vadechat/Agil/R02_VC_Agil.txt",
+          "mapping": "run02/Config/Alternancia/Q02.txt",
+          "judgment:agil": "run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt",
+          "review:agil": "run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "prompt": "run02/Prompts/Julgamentos/Prompt_002_v1_cedd0c93-c4a3-403d-b4e7-06df185319c5.txt",
+      "reviewPrompt": "run02/Prompts/Revisoes/Prompt_002_v1_eec64e4d-f2d8-4567-953a-5bacdc7e4865.txt",
+      "promptId": "cedd0c93-c4a3-403d-b4e7-06df185319c5",
+      "reviewPromptId": "eec64e4d-f2d8-4567-953a-5bacdc7e4865",
+      "promptSentDeclared": true,
+      "structured": {
+        "criteria": [],
+        "totalA": null,
+        "totalB": null,
+        "classA": "",
+        "classB": "",
+        "winner": "",
+        "checked": false
+      },
+      "identities": {
+        "oldQuestion": "2fab577a-2495-4561-9359-26d944aee16f",
+        "newQuestion": "6fd9c9f8-46a6-47fe-9ee2-328d991bf4f8"
+      },
+      "integrity": {
+        "question": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "b957d07fb81f614934b5d9905e1d9381e75273f605b13020f85e2db8db417289",
+          "newHash": "b957d07fb81f614934b5d9905e1d9381e75273f605b13020f85e2db8db417289",
+          "oldPath": "Perguntas/Q02.txt",
+          "newPath": "Perguntas/Q02.txt"
+        },
+        "reference": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "f5e0741acac442e7cf38d7186e7d5bada75c584a74faec3bc25b9fe354aff2f9",
+          "newHash": "f5e0741acac442e7cf38d7186e7d5bada75c584a74faec3bc25b9fe354aff2f9",
+          "oldPath": "Respostas/Humano/R02_Humano.txt",
+          "newPath": "Respostas/Humano/R02_Humano.txt"
+        },
+        "facts": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "referencePrompt": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "opponent": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "5ba457b6a65e16657e7fb64dd5f54faa315b8a41562983e7753964e6d1b325f7",
+          "newHash": "5ba457b6a65e16657e7fb64dd5f54faa315b8a41562983e7753964e6d1b325f7",
+          "oldPath": "Respostas/ChatGPT/R02_ChatGPT.txt",
+          "newPath": "Respostas/ChatGPT/R02_ChatGPT.txt"
+        },
+        "mapping": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+          "newHash": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+          "oldPath": "Config/Alternancia/Q02.txt",
+          "newPath": "Config/Alternancia/Q02.txt"
+        },
+        "agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "58cad661c445f37c286de3388366145850b9a3d71391100764def9b4e17c4a6c",
+          "newHash": "d4eb4c37ca88e0b7e893e909cfbbad305fd7867e98e33dcf79def83dc7bc44c5",
+          "oldPath": "Respostas/Vadechat/Agil/R02_VC_Agil.txt",
+          "newPath": "Respostas/Vadechat/Agil/R02_VC_Agil.txt"
+        },
+        "pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "bc9da33ffbd9b9d35148d2176d4d7453d88dae34b0079bea71b6527d156c7a10",
+          "newHash": "0cec64fe619316dec0d1e5be33adec9cec465e26fc113d9d4b2a3c86f7542631",
+          "oldPath": "Respostas/Vadechat/Pleno/R02_VC_Pleno.txt",
+          "newPath": "Respostas/Vadechat/Pleno/R02_VC_Pleno.txt"
+        },
+        "judgment:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "dc42a56976a66d318176dd973a5d39a4f344cb852b4805008b18a599bb3b453f",
+          "newHash": "80b32260ebc07225b96f9999fff3a4b10fa2cec4883d880df9033c56c064b721",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt"
+        },
+        "judgment:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "56b081da5d7e5b9597f8a87d221e28667651ef962b568d83c202347fd280b923",
+          "newHash": "670e44946fca8807c327600be3c7ba9f5259efd8f44e4201640c75aece1ad53b",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt"
+        },
+        "review:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "c5f8bd9522357b83d209cef2054944bcdec26e6f1bd247600152dfff6a01f772",
+          "newHash": "e24ac373ef444bc46a00d11025cc81cb126338aa14f7db20ab2550fbe43d6a0b",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "review:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "0df4bd688f0effc5abd32643daa2eb9068db1de5342a4035a43308306428266c",
+          "newHash": "0973d6e243ed768e9e04433b52e807e3db63b32bf241fe1c8779216025753daa",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "provenance": [
+        {
+          "version": "12d9c4cc-280e-4369-a282-7124bcd4b983",
+          "sha256": "5ba457b6a65e16657e7fb64dd5f54faa315b8a41562983e7753964e6d1b325f7",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "2fab577a-2495-4561-9359-26d944aee16f/opponent",
+            "version": "3deba5b3-90c0-4cb4-9ace-5556dc378a15",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        }
+      ]
+    },
+    {
+      "question": "Q02",
+      "mode": "pleno",
+      "id": "Q02-PLENO",
+      "old": {
+        "ab": {
+          "A": {
+            "criteria": [
+              2,
+              1,
+              1
+            ],
+            "total": 4,
+            "classification": "Parcialmente conforme",
+            "sum": 4
+          },
+          "B": {
+            "criteria": [
+              4,
+              3,
+              2
+            ],
+            "total": 9,
+            "classification": "Conforme",
+            "sum": 9
+          }
+        },
+        "vc": {
+          "criteria": [
+            2,
+            1,
+            1
+          ],
+          "total": 4,
+          "classification": "Parcialmente conforme",
+          "sum": 4
+        },
+        "opponent": {
+          "criteria": [
+            4,
+            3,
+            2
+          ],
+          "total": 9,
+          "classification": "Conforme",
+          "sum": 9
+        },
+        "vcLetter": "A",
+        "result": "**B venceu** (9 a 4).",
+        "winner": "opponent"
+      },
+      "new": {
+        "ab": {
+          "A": {
+            "criteria": [
+              3,
+              3,
+              1
+            ],
+            "total": 7,
+            "classification": "Parcialmente conforme",
+            "sum": 7
+          },
+          "B": {
+            "criteria": [
+              4,
+              3,
+              2
+            ],
+            "total": 9,
+            "classification": "Conforme",
+            "sum": 9
+          }
+        },
+        "vc": {
+          "criteria": [
+            3,
+            3,
+            1
+          ],
+          "total": 7,
+          "classification": "Parcialmente conforme",
+          "sum": 7
+        },
+        "opponent": {
+          "criteria": [
+            4,
+            3,
+            2
+          ],
+          "total": 9,
+          "classification": "Conforme",
+          "sum": 9
+        },
+        "vcLetter": "A",
+        "result": "**B venceu** (9 contra 7).",
+        "winner": "opponent"
+      },
+      "delta": 3,
+      "mapping": {
+        "A": "pleno",
+        "B": "opponent"
+      },
+      "sources": {
+        "old": {
+          "question": "run01/Perguntas/Q02.txt",
+          "reference": "run01/Respostas/Humano/R02_Humano.txt",
+          "opponent": "run01/Respostas/ChatGPT/R02_ChatGPT.txt",
+          "pleno": "run01/Respostas/Vadechat/Pleno/R02_VC_Pleno.txt",
+          "mapping": "run01/Config/Alternancia/Q02.txt",
+          "judgment:pleno": "run01/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt",
+          "review:pleno": "run01/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "new": {
+          "question": "run02/Perguntas/Q02.txt",
+          "reference": "run02/Respostas/Humano/R02_Humano.txt",
+          "opponent": "run02/Respostas/ChatGPT/R02_ChatGPT.txt",
+          "pleno": "run02/Respostas/Vadechat/Pleno/R02_VC_Pleno.txt",
+          "mapping": "run02/Config/Alternancia/Q02.txt",
+          "judgment:pleno": "run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt",
+          "review:pleno": "run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "prompt": "run02/Prompts/Julgamentos/Prompt_007_v1_fab2863a-05bb-41ac-a33b-fdbb4c75c91c.txt",
+      "reviewPrompt": "run02/Prompts/Revisoes/Prompt_007_v1_5fb1b410-b507-4512-bb5d-a63f18531c83.txt",
+      "promptId": "fab2863a-05bb-41ac-a33b-fdbb4c75c91c",
+      "reviewPromptId": "5fb1b410-b507-4512-bb5d-a63f18531c83",
+      "promptSentDeclared": true,
+      "structured": {
+        "criteria": [],
+        "totalA": null,
+        "totalB": null,
+        "classA": "",
+        "classB": "",
+        "winner": "",
+        "checked": false
+      },
+      "identities": {
+        "oldQuestion": "2fab577a-2495-4561-9359-26d944aee16f",
+        "newQuestion": "6fd9c9f8-46a6-47fe-9ee2-328d991bf4f8"
+      },
+      "integrity": {
+        "question": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "b957d07fb81f614934b5d9905e1d9381e75273f605b13020f85e2db8db417289",
+          "newHash": "b957d07fb81f614934b5d9905e1d9381e75273f605b13020f85e2db8db417289",
+          "oldPath": "Perguntas/Q02.txt",
+          "newPath": "Perguntas/Q02.txt"
+        },
+        "reference": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "f5e0741acac442e7cf38d7186e7d5bada75c584a74faec3bc25b9fe354aff2f9",
+          "newHash": "f5e0741acac442e7cf38d7186e7d5bada75c584a74faec3bc25b9fe354aff2f9",
+          "oldPath": "Respostas/Humano/R02_Humano.txt",
+          "newPath": "Respostas/Humano/R02_Humano.txt"
+        },
+        "facts": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "referencePrompt": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "opponent": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "5ba457b6a65e16657e7fb64dd5f54faa315b8a41562983e7753964e6d1b325f7",
+          "newHash": "5ba457b6a65e16657e7fb64dd5f54faa315b8a41562983e7753964e6d1b325f7",
+          "oldPath": "Respostas/ChatGPT/R02_ChatGPT.txt",
+          "newPath": "Respostas/ChatGPT/R02_ChatGPT.txt"
+        },
+        "mapping": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+          "newHash": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+          "oldPath": "Config/Alternancia/Q02.txt",
+          "newPath": "Config/Alternancia/Q02.txt"
+        },
+        "agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "58cad661c445f37c286de3388366145850b9a3d71391100764def9b4e17c4a6c",
+          "newHash": "d4eb4c37ca88e0b7e893e909cfbbad305fd7867e98e33dcf79def83dc7bc44c5",
+          "oldPath": "Respostas/Vadechat/Agil/R02_VC_Agil.txt",
+          "newPath": "Respostas/Vadechat/Agil/R02_VC_Agil.txt"
+        },
+        "pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "bc9da33ffbd9b9d35148d2176d4d7453d88dae34b0079bea71b6527d156c7a10",
+          "newHash": "0cec64fe619316dec0d1e5be33adec9cec465e26fc113d9d4b2a3c86f7542631",
+          "oldPath": "Respostas/Vadechat/Pleno/R02_VC_Pleno.txt",
+          "newPath": "Respostas/Vadechat/Pleno/R02_VC_Pleno.txt"
+        },
+        "judgment:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "dc42a56976a66d318176dd973a5d39a4f344cb852b4805008b18a599bb3b453f",
+          "newHash": "80b32260ebc07225b96f9999fff3a4b10fa2cec4883d880df9033c56c064b721",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt"
+        },
+        "judgment:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "56b081da5d7e5b9597f8a87d221e28667651ef962b568d83c202347fd280b923",
+          "newHash": "670e44946fca8807c327600be3c7ba9f5259efd8f44e4201640c75aece1ad53b",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt"
+        },
+        "review:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "c5f8bd9522357b83d209cef2054944bcdec26e6f1bd247600152dfff6a01f772",
+          "newHash": "e24ac373ef444bc46a00d11025cc81cb126338aa14f7db20ab2550fbe43d6a0b",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "review:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "0df4bd688f0effc5abd32643daa2eb9068db1de5342a4035a43308306428266c",
+          "newHash": "0973d6e243ed768e9e04433b52e807e3db63b32bf241fe1c8779216025753daa",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "provenance": [
+        {
+          "version": "12d9c4cc-280e-4369-a282-7124bcd4b983",
+          "sha256": "5ba457b6a65e16657e7fb64dd5f54faa315b8a41562983e7753964e6d1b325f7",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "2fab577a-2495-4561-9359-26d944aee16f/opponent",
+            "version": "3deba5b3-90c0-4cb4-9ace-5556dc378a15",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        }
+      ]
+    },
+    {
+      "question": "Q03",
+      "mode": "agil",
+      "id": "Q03-AGIL",
+      "old": {
+        "ab": {
+          "A": {
+            "criteria": [
+              4,
+              4,
+              2
+            ],
+            "total": 10,
+            "classification": "Conforme",
+            "sum": 10
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              2
+            ],
+            "total": 10,
+            "classification": "Conforme",
+            "sum": 10
+          }
+        },
+        "vc": {
+          "criteria": [
+            4,
+            4,
+            2
+          ],
+          "total": 10,
+          "classification": "Conforme",
+          "sum": 10
+        },
+        "opponent": {
+          "criteria": [
+            4,
+            4,
+            2
+          ],
+          "total": 10,
+          "classification": "Conforme",
+          "sum": 10
+        },
+        "vcLetter": "B",
+        "result": "**Empate** (10 a 10).",
+        "winner": "tie"
+      },
+      "new": {
+        "ab": {
+          "A": {
+            "criteria": [
+              4,
+              4,
+              2
+            ],
+            "total": 10,
+            "classification": "Conforme",
+            "sum": 10
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              1
+            ],
+            "total": 9,
+            "classification": "Conforme",
+            "sum": 9
+          }
+        },
+        "vc": {
+          "criteria": [
+            4,
+            4,
+            1
+          ],
+          "total": 9,
+          "classification": "Conforme",
+          "sum": 9
+        },
+        "opponent": {
+          "criteria": [
+            4,
+            4,
+            2
+          ],
+          "total": 10,
+          "classification": "Conforme",
+          "sum": 10
+        },
+        "vcLetter": "B",
+        "result": "**A venceu** (10 contra 9).",
+        "winner": "opponent"
+      },
+      "delta": -1,
+      "mapping": {
+        "A": "opponent",
+        "B": "agil"
+      },
+      "sources": {
+        "old": {
+          "question": "run01/Perguntas/Q03.txt",
+          "reference": "run01/Respostas/Humano/R03_Humano.txt",
+          "opponent": "run01/Respostas/ChatGPT/R03_ChatGPT.txt",
+          "agil": "run01/Respostas/Vadechat/Agil/R03_VC_Agil.txt",
+          "mapping": "run01/Config/Alternancia/Q03.txt",
+          "judgment:agil": "run01/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt",
+          "review:agil": "run01/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "new": {
+          "question": "run02/Perguntas/Q03.txt",
+          "reference": "run02/Respostas/Humano/R03_Humano.txt",
+          "opponent": "run02/Respostas/ChatGPT/R03_ChatGPT.txt",
+          "agil": "run02/Respostas/Vadechat/Agil/R03_VC_Agil.txt",
+          "mapping": "run02/Config/Alternancia/Q03.txt",
+          "judgment:agil": "run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt",
+          "review:agil": "run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "prompt": "run02/Prompts/Julgamentos/Prompt_003_v1_7df47396-ae90-466c-b552-2b832051ab7d.txt",
+      "reviewPrompt": "run02/Prompts/Revisoes/Prompt_003_v1_103bec14-5f30-4806-8110-019d12297d8e.txt",
+      "promptId": "7df47396-ae90-466c-b552-2b832051ab7d",
+      "reviewPromptId": "103bec14-5f30-4806-8110-019d12297d8e",
+      "promptSentDeclared": true,
+      "structured": {
+        "criteria": [],
+        "totalA": null,
+        "totalB": null,
+        "classA": "",
+        "classB": "",
+        "winner": "",
+        "checked": false
+      },
+      "identities": {
+        "oldQuestion": "450b5824-3255-4455-adab-f6e4f588614e",
+        "newQuestion": "5d4799d5-de98-49d4-bccf-891c4b5d86d5"
+      },
+      "integrity": {
+        "question": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "703ab5369563357ec12c768ebeb8d030ffef816420a0317bba51b30b0f7dbafa",
+          "newHash": "703ab5369563357ec12c768ebeb8d030ffef816420a0317bba51b30b0f7dbafa",
+          "oldPath": "Perguntas/Q03.txt",
+          "newPath": "Perguntas/Q03.txt"
+        },
+        "reference": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "9b46580bb6e3882aef09ab5eb2b3728833fd88c88e291d6d1edec21f20b7a891",
+          "newHash": "9b46580bb6e3882aef09ab5eb2b3728833fd88c88e291d6d1edec21f20b7a891",
+          "oldPath": "Respostas/Humano/R03_Humano.txt",
+          "newPath": "Respostas/Humano/R03_Humano.txt"
+        },
+        "facts": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "referencePrompt": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "opponent": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "newHash": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "oldPath": "Respostas/ChatGPT/R03_ChatGPT.txt",
+          "newPath": "Respostas/ChatGPT/R03_ChatGPT.txt"
+        },
+        "mapping": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "newHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "oldPath": "Config/Alternancia/Q03.txt",
+          "newPath": "Config/Alternancia/Q03.txt"
+        },
+        "agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "176e58e42d0f2de3ee20eabc709471b83d0eee85e53ce059aad3224be1a070c0",
+          "newHash": "2b43aaf616fb4b732080bf196c46706393706d819e7c6f5044ec43b6b5877520",
+          "oldPath": "Respostas/Vadechat/Agil/R03_VC_Agil.txt",
+          "newPath": "Respostas/Vadechat/Agil/R03_VC_Agil.txt"
+        },
+        "pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "fa0c5e7c11b28044307812b10353c0dbf3d1607d982e4ddaca310101c7b6f8c3",
+          "newHash": "d65a4e5c2827ca2fe3c15a95360ee812d20b1f769d248a8824180f9ef941838c",
+          "oldPath": "Respostas/Vadechat/Pleno/R03_VC_Pleno.txt",
+          "newPath": "Respostas/Vadechat/Pleno/R03_VC_Pleno.txt"
+        },
+        "judgment:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "6af1e6d229e52ee9650cb822429afa10bf434c0acb07a0d8446e3c1072311a3c",
+          "newHash": "92b6a5ff99abc6098bfd1ef5cfc5ab6be11d487b9f1bc4d170b4f96ca4e3bf83",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt"
+        },
+        "judgment:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "2b2cf0c663b6c37cde316fcb02a6e276ce957d0f17ac3dd5a5988adb5c06266d",
+          "newHash": "e9e5df4cfa4887ed6780107dc178250281b225b2e6fd225eca23fab6e09dd74c",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt"
+        },
+        "review:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "da05ac5a31b187e1e9237cf4645aa4b0fe366f46bc114407da87c58adf19e073",
+          "newHash": "e43e0cdbe0fca1f5468903e692ee9ec2476506b42e84fb914c13cd91432a4511",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "review:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "26d84a902f39625c32892315a2ecd42bf87784bc6286410a7b013d89cbcdf222",
+          "newHash": "243e2df00050145cc6f12760831ddf583943298db306cfb27b646a184642a769",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "provenance": [
+        {
+          "version": "19ae080b-e42d-4698-a63e-e15964e98cc8",
+          "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "450b5824-3255-4455-adab-f6e4f588614e/opponent",
+            "version": "914d4780-e17e-4d3c-89a8-5361ea0e4e6b",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        },
+        {
+          "version": "982d5891-abbb-4f12-b609-f7ecc6317b0e",
+          "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "450b5824-3255-4455-adab-f6e4f588614e/opponent",
+            "version": "914d4780-e17e-4d3c-89a8-5361ea0e4e6b",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        },
+        {
+          "version": "f4b74119-094f-4614-b40c-d7af531cd55f",
+          "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "450b5824-3255-4455-adab-f6e4f588614e/opponent",
+            "version": "914d4780-e17e-4d3c-89a8-5361ea0e4e6b",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        },
+        {
+          "version": "2a259a77-d8fe-4c83-815c-06d97778fdfa",
+          "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "450b5824-3255-4455-adab-f6e4f588614e/opponent",
+            "version": "914d4780-e17e-4d3c-89a8-5361ea0e4e6b",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        }
+      ]
+    },
+    {
+      "question": "Q03",
+      "mode": "pleno",
+      "id": "Q03-PLENO",
+      "old": {
+        "ab": {
+          "A": {
+            "criteria": [
+              4,
+              4,
+              2
+            ],
+            "total": 10,
+            "classification": "Conforme",
+            "sum": 10
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              2
+            ],
+            "total": 10,
+            "classification": "Conforme",
+            "sum": 10
+          }
+        },
+        "vc": {
+          "criteria": [
+            4,
+            4,
+            2
+          ],
+          "total": 10,
+          "classification": "Conforme",
+          "sum": 10
+        },
+        "opponent": {
+          "criteria": [
+            4,
+            4,
+            2
+          ],
+          "total": 10,
+          "classification": "Conforme",
+          "sum": 10
+        },
+        "vcLetter": "B",
+        "result": "**Empate** (10 a 10).",
+        "winner": "tie"
+      },
+      "new": {
+        "ab": {
+          "A": {
+            "criteria": [
+              4,
+              4,
+              2
+            ],
+            "total": 10,
+            "classification": "Conforme",
+            "sum": 10
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              2
+            ],
+            "total": 10,
+            "classification": "Conforme",
+            "sum": 10
+          }
+        },
+        "vc": {
+          "criteria": [
+            4,
+            4,
+            2
+          ],
+          "total": 10,
+          "classification": "Conforme",
+          "sum": 10
+        },
+        "opponent": {
+          "criteria": [
+            4,
+            4,
+            2
+          ],
+          "total": 10,
+          "classification": "Conforme",
+          "sum": 10
+        },
+        "vcLetter": "B",
+        "result": "**Empate** (A: 10; B: 10).",
+        "winner": "tie"
+      },
+      "delta": 0,
+      "mapping": {
+        "A": "opponent",
+        "B": "pleno"
+      },
+      "sources": {
+        "old": {
+          "question": "run01/Perguntas/Q03.txt",
+          "reference": "run01/Respostas/Humano/R03_Humano.txt",
+          "opponent": "run01/Respostas/ChatGPT/R03_ChatGPT.txt",
+          "pleno": "run01/Respostas/Vadechat/Pleno/R03_VC_Pleno.txt",
+          "mapping": "run01/Config/Alternancia/Q03.txt",
+          "judgment:pleno": "run01/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt",
+          "review:pleno": "run01/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "new": {
+          "question": "run02/Perguntas/Q03.txt",
+          "reference": "run02/Respostas/Humano/R03_Humano.txt",
+          "opponent": "run02/Respostas/ChatGPT/R03_ChatGPT.txt",
+          "pleno": "run02/Respostas/Vadechat/Pleno/R03_VC_Pleno.txt",
+          "mapping": "run02/Config/Alternancia/Q03.txt",
+          "judgment:pleno": "run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt",
+          "review:pleno": "run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "prompt": "run02/Prompts/Julgamentos/Prompt_008_v1_e3760bc6-97b9-438c-a3be-ba2613c77207.txt",
+      "reviewPrompt": "run02/Prompts/Revisoes/Prompt_008_v1_f73c9371-f78b-40b7-96e0-f6339db53cfe.txt",
+      "promptId": "e3760bc6-97b9-438c-a3be-ba2613c77207",
+      "reviewPromptId": "f73c9371-f78b-40b7-96e0-f6339db53cfe",
+      "promptSentDeclared": true,
+      "structured": {
+        "criteria": [],
+        "totalA": null,
+        "totalB": null,
+        "classA": "",
+        "classB": "",
+        "winner": "",
+        "checked": false
+      },
+      "identities": {
+        "oldQuestion": "450b5824-3255-4455-adab-f6e4f588614e",
+        "newQuestion": "5d4799d5-de98-49d4-bccf-891c4b5d86d5"
+      },
+      "integrity": {
+        "question": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "703ab5369563357ec12c768ebeb8d030ffef816420a0317bba51b30b0f7dbafa",
+          "newHash": "703ab5369563357ec12c768ebeb8d030ffef816420a0317bba51b30b0f7dbafa",
+          "oldPath": "Perguntas/Q03.txt",
+          "newPath": "Perguntas/Q03.txt"
+        },
+        "reference": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "9b46580bb6e3882aef09ab5eb2b3728833fd88c88e291d6d1edec21f20b7a891",
+          "newHash": "9b46580bb6e3882aef09ab5eb2b3728833fd88c88e291d6d1edec21f20b7a891",
+          "oldPath": "Respostas/Humano/R03_Humano.txt",
+          "newPath": "Respostas/Humano/R03_Humano.txt"
+        },
+        "facts": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "referencePrompt": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "opponent": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "newHash": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "oldPath": "Respostas/ChatGPT/R03_ChatGPT.txt",
+          "newPath": "Respostas/ChatGPT/R03_ChatGPT.txt"
+        },
+        "mapping": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "newHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "oldPath": "Config/Alternancia/Q03.txt",
+          "newPath": "Config/Alternancia/Q03.txt"
+        },
+        "agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "176e58e42d0f2de3ee20eabc709471b83d0eee85e53ce059aad3224be1a070c0",
+          "newHash": "2b43aaf616fb4b732080bf196c46706393706d819e7c6f5044ec43b6b5877520",
+          "oldPath": "Respostas/Vadechat/Agil/R03_VC_Agil.txt",
+          "newPath": "Respostas/Vadechat/Agil/R03_VC_Agil.txt"
+        },
+        "pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "fa0c5e7c11b28044307812b10353c0dbf3d1607d982e4ddaca310101c7b6f8c3",
+          "newHash": "d65a4e5c2827ca2fe3c15a95360ee812d20b1f769d248a8824180f9ef941838c",
+          "oldPath": "Respostas/Vadechat/Pleno/R03_VC_Pleno.txt",
+          "newPath": "Respostas/Vadechat/Pleno/R03_VC_Pleno.txt"
+        },
+        "judgment:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "6af1e6d229e52ee9650cb822429afa10bf434c0acb07a0d8446e3c1072311a3c",
+          "newHash": "92b6a5ff99abc6098bfd1ef5cfc5ab6be11d487b9f1bc4d170b4f96ca4e3bf83",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt"
+        },
+        "judgment:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "2b2cf0c663b6c37cde316fcb02a6e276ce957d0f17ac3dd5a5988adb5c06266d",
+          "newHash": "e9e5df4cfa4887ed6780107dc178250281b225b2e6fd225eca23fab6e09dd74c",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt"
+        },
+        "review:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "da05ac5a31b187e1e9237cf4645aa4b0fe366f46bc114407da87c58adf19e073",
+          "newHash": "e43e0cdbe0fca1f5468903e692ee9ec2476506b42e84fb914c13cd91432a4511",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "review:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "26d84a902f39625c32892315a2ecd42bf87784bc6286410a7b013d89cbcdf222",
+          "newHash": "243e2df00050145cc6f12760831ddf583943298db306cfb27b646a184642a769",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "provenance": [
+        {
+          "version": "19ae080b-e42d-4698-a63e-e15964e98cc8",
+          "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "450b5824-3255-4455-adab-f6e4f588614e/opponent",
+            "version": "914d4780-e17e-4d3c-89a8-5361ea0e4e6b",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        },
+        {
+          "version": "982d5891-abbb-4f12-b609-f7ecc6317b0e",
+          "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "450b5824-3255-4455-adab-f6e4f588614e/opponent",
+            "version": "914d4780-e17e-4d3c-89a8-5361ea0e4e6b",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        },
+        {
+          "version": "f4b74119-094f-4614-b40c-d7af531cd55f",
+          "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "450b5824-3255-4455-adab-f6e4f588614e/opponent",
+            "version": "914d4780-e17e-4d3c-89a8-5361ea0e4e6b",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        },
+        {
+          "version": "2a259a77-d8fe-4c83-815c-06d97778fdfa",
+          "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "450b5824-3255-4455-adab-f6e4f588614e/opponent",
+            "version": "914d4780-e17e-4d3c-89a8-5361ea0e4e6b",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        }
+      ]
+    },
+    {
+      "question": "Q04",
+      "mode": "agil",
+      "id": "Q04-AGIL",
+      "old": {
+        "ab": {
+          "A": {
+            "criteria": [
+              0,
+              1,
+              0
+            ],
+            "total": 1,
+            "classification": "Divergente",
+            "sum": 1
+          },
+          "B": {
+            "criteria": [
+              2,
+              3,
+              1
+            ],
+            "total": 6,
+            "classification": "Parcialmente conforme",
+            "sum": 6
+          }
+        },
+        "vc": {
+          "criteria": [
+            0,
+            1,
+            0
+          ],
+          "total": 1,
+          "classification": "Divergente",
+          "sum": 1
+        },
+        "opponent": {
+          "criteria": [
+            2,
+            3,
+            1
+          ],
+          "total": 6,
+          "classification": "Parcialmente conforme",
+          "sum": 6
+        },
+        "vcLetter": "A",
+        "result": "**B venceu** (6 a 1).",
+        "winner": "opponent"
+      },
+      "new": {
+        "ab": {
+          "A": {
+            "criteria": [
+              1,
+              2,
+              0
+            ],
+            "total": 3,
+            "classification": "Divergente",
+            "sum": 3
+          },
+          "B": {
+            "criteria": [
+              1,
+              2,
+              1
+            ],
+            "total": 4,
+            "classification": "Divergente",
+            "sum": 4
+          }
+        },
+        "vc": {
+          "criteria": [
+            1,
+            2,
+            0
+          ],
+          "total": 3,
+          "classification": "Divergente",
+          "sum": 3
+        },
+        "opponent": {
+          "criteria": [
+            1,
+            2,
+            1
+          ],
+          "total": 4,
+          "classification": "Divergente",
+          "sum": 4
+        },
+        "vcLetter": "A",
+        "result": "**B venceu** (4 a 3). Ambas as respostas foram classificadas como Divergentes, então a vitória indica apenas maior proximidade com a referência.",
+        "winner": "opponent"
+      },
+      "delta": 2,
+      "mapping": {
+        "A": "agil",
+        "B": "opponent"
+      },
+      "sources": {
+        "old": {
+          "question": "run01/Perguntas/Q04.txt",
+          "reference": "run01/Respostas/Humano/R04_Humano.txt",
+          "opponent": "run01/Respostas/ChatGPT/R04_ChatGPT.txt",
+          "agil": "run01/Respostas/Vadechat/Agil/R04_VC_Agil.txt",
+          "mapping": "run01/Config/Alternancia/Q04.txt",
+          "judgment:agil": "run01/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt",
+          "review:agil": "run01/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "new": {
+          "question": "run02/Perguntas/Q04.txt",
+          "reference": "run02/Respostas/Humano/R04_Humano.txt",
+          "opponent": "run02/Respostas/ChatGPT/R04_ChatGPT.txt",
+          "agil": "run02/Respostas/Vadechat/Agil/R04_VC_Agil.txt",
+          "mapping": "run02/Config/Alternancia/Q04.txt",
+          "judgment:agil": "run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt",
+          "review:agil": "run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "prompt": "run02/Prompts/Julgamentos/Prompt_004_v1_058c6898-d2cb-4cf1-a6fa-9ada106112f6.txt",
+      "reviewPrompt": "run02/Prompts/Revisoes/Prompt_004_v1_508fbebd-31fa-4171-82d6-e827faf40b5a.txt",
+      "promptId": "058c6898-d2cb-4cf1-a6fa-9ada106112f6",
+      "reviewPromptId": "508fbebd-31fa-4171-82d6-e827faf40b5a",
+      "promptSentDeclared": true,
+      "structured": {
+        "criteria": [],
+        "totalA": null,
+        "totalB": null,
+        "classA": "",
+        "classB": "",
+        "winner": "",
+        "checked": false
+      },
+      "identities": {
+        "oldQuestion": "65440665-9086-4b28-9cb3-a7ce5221ac03",
+        "newQuestion": "376f5e7d-777b-4e24-bf49-fc608eb667f9"
+      },
+      "integrity": {
+        "question": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "c3dd1ee77b99db793f5101f5a83b8956f8dc1d26393b377f5f171fab7668e4b4",
+          "newHash": "c3dd1ee77b99db793f5101f5a83b8956f8dc1d26393b377f5f171fab7668e4b4",
+          "oldPath": "Perguntas/Q04.txt",
+          "newPath": "Perguntas/Q04.txt"
+        },
+        "reference": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "e8132137b90bb75919686d231410dab083c9330cb295612503a1038bf21c1b40",
+          "newHash": "e8132137b90bb75919686d231410dab083c9330cb295612503a1038bf21c1b40",
+          "oldPath": "Respostas/Humano/R04_Humano.txt",
+          "newPath": "Respostas/Humano/R04_Humano.txt"
+        },
+        "facts": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "referencePrompt": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "opponent": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "bb78f265d4e6b8054334275bf049a85c4033d68f282797eabcaf326f689f5863",
+          "newHash": "bb78f265d4e6b8054334275bf049a85c4033d68f282797eabcaf326f689f5863",
+          "oldPath": "Respostas/ChatGPT/R04_ChatGPT.txt",
+          "newPath": "Respostas/ChatGPT/R04_ChatGPT.txt"
+        },
+        "mapping": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+          "newHash": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+          "oldPath": "Config/Alternancia/Q04.txt",
+          "newPath": "Config/Alternancia/Q04.txt"
+        },
+        "agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "f91609255d0a9a2f25e1b791ee2794a9ace0cd95a4de6c139354173010180b32",
+          "newHash": "397148ff8c2ae3c28dc32822abb5f8c4f5d70192902285076a331b5ad7961ff1",
+          "oldPath": "Respostas/Vadechat/Agil/R04_VC_Agil.txt",
+          "newPath": "Respostas/Vadechat/Agil/R04_VC_Agil.txt"
+        },
+        "pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "4b6a558f17b7255644357d617b6c4b13c50c4af99bc669cd5046e46106f48a5f",
+          "newHash": "fac47e414bde31cd29bf957aaa73cb1b2d564c7b7261847d3eb25987574c3318",
+          "oldPath": "Respostas/Vadechat/Pleno/R04_VC_Pleno.txt",
+          "newPath": "Respostas/Vadechat/Pleno/R04_VC_Pleno.txt"
+        },
+        "judgment:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "ac4671592c1c62f3266f96aff18ab913a73ecc7259bb6468d92c1cdaf9853407",
+          "newHash": "ef5c9ce3e1f3bd9d164507d413d9a27bfdc8c7eed29c3024a2e1b82770b61028",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt"
+        },
+        "judgment:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "226b5841bd58055be1e02072e266d09d446c0e5a1f1e5d4d7a348b0888d69906",
+          "newHash": "85804075e3d9d32997c5341cff15e1dda6fc939b67e1b86b2b67e5546ebdbc80",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt"
+        },
+        "review:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "63cecf06ea616fc981eeb4bed8cfe04555b8de37093267404a10f73bcd540fda",
+          "newHash": "27199ed53aad575bb4bf3e3d6e091daa41de09a835d4acee5cf0b9cf7ff1a58b",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "review:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "840a089dde3f78e3598024ced41c0bd2c9bb180ea0a3eab4c6d1d51c07f9fd9b",
+          "newHash": "8f37edfb84d1b0d9f421b93bb5ce65bc388818b3d85e7a5ed18d0afd4f7aebbc",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "provenance": [
+        {
+          "version": "00f512a9-5376-4be4-8de0-c3404d03932b",
+          "sha256": "bb78f265d4e6b8054334275bf049a85c4033d68f282797eabcaf326f689f5863",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "65440665-9086-4b28-9cb3-a7ce5221ac03/opponent",
+            "version": "e6347887-4acb-4159-b049-742698a991c9",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        }
+      ]
+    },
+    {
+      "question": "Q04",
+      "mode": "pleno",
+      "id": "Q04-PLENO",
+      "old": {
+        "ab": {
+          "A": {
+            "criteria": [
+              4,
+              3,
+              1
+            ],
+            "total": 8,
+            "classification": "Conforme",
+            "sum": 8
+          },
+          "B": {
+            "criteria": [
+              1,
+              2,
+              0
+            ],
+            "total": 3,
+            "classification": "Divergente",
+            "sum": 3
+          }
+        },
+        "vc": {
+          "criteria": [
+            4,
+            3,
+            1
+          ],
+          "total": 8,
+          "classification": "Conforme",
+          "sum": 8
+        },
+        "opponent": {
+          "criteria": [
+            1,
+            2,
+            0
+          ],
+          "total": 3,
+          "classification": "Divergente",
+          "sum": 3
+        },
+        "vcLetter": "A",
+        "result": "**A venceu** (8 a 3).",
+        "winner": "vc"
+      },
+      "new": {
+        "ab": {
+          "A": {
+            "criteria": [
+              1,
+              1,
+              0
+            ],
+            "total": 2,
+            "classification": "Divergente",
+            "sum": 2
+          },
+          "B": {
+            "criteria": [
+              2,
+              2,
+              1
+            ],
+            "total": 5,
+            "classification": "Divergente",
+            "sum": 5
+          }
+        },
+        "vc": {
+          "criteria": [
+            1,
+            1,
+            0
+          ],
+          "total": 2,
+          "classification": "Divergente",
+          "sum": 2
+        },
+        "opponent": {
+          "criteria": [
+            2,
+            2,
+            1
+          ],
+          "total": 5,
+          "classification": "Divergente",
+          "sum": 5
+        },
+        "vcLetter": "A",
+        "result": "**B venceu** (5 a 2).",
+        "winner": "opponent"
+      },
+      "delta": -6,
+      "mapping": {
+        "A": "pleno",
+        "B": "opponent"
+      },
+      "sources": {
+        "old": {
+          "question": "run01/Perguntas/Q04.txt",
+          "reference": "run01/Respostas/Humano/R04_Humano.txt",
+          "opponent": "run01/Respostas/ChatGPT/R04_ChatGPT.txt",
+          "pleno": "run01/Respostas/Vadechat/Pleno/R04_VC_Pleno.txt",
+          "mapping": "run01/Config/Alternancia/Q04.txt",
+          "judgment:pleno": "run01/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt",
+          "review:pleno": "run01/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "new": {
+          "question": "run02/Perguntas/Q04.txt",
+          "reference": "run02/Respostas/Humano/R04_Humano.txt",
+          "opponent": "run02/Respostas/ChatGPT/R04_ChatGPT.txt",
+          "pleno": "run02/Respostas/Vadechat/Pleno/R04_VC_Pleno.txt",
+          "mapping": "run02/Config/Alternancia/Q04.txt",
+          "judgment:pleno": "run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt",
+          "review:pleno": "run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "prompt": "run02/Prompts/Julgamentos/Prompt_009_v1_761e7ac1-5bff-4cac-98ea-045b675ec91f.txt",
+      "reviewPrompt": "run02/Prompts/Revisoes/Prompt_009_v1_a0c925ce-e6f9-464c-be69-e76686e01e6c.txt",
+      "promptId": "761e7ac1-5bff-4cac-98ea-045b675ec91f",
+      "reviewPromptId": "a0c925ce-e6f9-464c-be69-e76686e01e6c",
+      "promptSentDeclared": true,
+      "structured": {
+        "criteria": [],
+        "totalA": null,
+        "totalB": null,
+        "classA": "",
+        "classB": "",
+        "winner": "",
+        "checked": false
+      },
+      "identities": {
+        "oldQuestion": "65440665-9086-4b28-9cb3-a7ce5221ac03",
+        "newQuestion": "376f5e7d-777b-4e24-bf49-fc608eb667f9"
+      },
+      "integrity": {
+        "question": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "c3dd1ee77b99db793f5101f5a83b8956f8dc1d26393b377f5f171fab7668e4b4",
+          "newHash": "c3dd1ee77b99db793f5101f5a83b8956f8dc1d26393b377f5f171fab7668e4b4",
+          "oldPath": "Perguntas/Q04.txt",
+          "newPath": "Perguntas/Q04.txt"
+        },
+        "reference": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "e8132137b90bb75919686d231410dab083c9330cb295612503a1038bf21c1b40",
+          "newHash": "e8132137b90bb75919686d231410dab083c9330cb295612503a1038bf21c1b40",
+          "oldPath": "Respostas/Humano/R04_Humano.txt",
+          "newPath": "Respostas/Humano/R04_Humano.txt"
+        },
+        "facts": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "referencePrompt": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "opponent": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "bb78f265d4e6b8054334275bf049a85c4033d68f282797eabcaf326f689f5863",
+          "newHash": "bb78f265d4e6b8054334275bf049a85c4033d68f282797eabcaf326f689f5863",
+          "oldPath": "Respostas/ChatGPT/R04_ChatGPT.txt",
+          "newPath": "Respostas/ChatGPT/R04_ChatGPT.txt"
+        },
+        "mapping": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+          "newHash": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+          "oldPath": "Config/Alternancia/Q04.txt",
+          "newPath": "Config/Alternancia/Q04.txt"
+        },
+        "agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "f91609255d0a9a2f25e1b791ee2794a9ace0cd95a4de6c139354173010180b32",
+          "newHash": "397148ff8c2ae3c28dc32822abb5f8c4f5d70192902285076a331b5ad7961ff1",
+          "oldPath": "Respostas/Vadechat/Agil/R04_VC_Agil.txt",
+          "newPath": "Respostas/Vadechat/Agil/R04_VC_Agil.txt"
+        },
+        "pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "4b6a558f17b7255644357d617b6c4b13c50c4af99bc669cd5046e46106f48a5f",
+          "newHash": "fac47e414bde31cd29bf957aaa73cb1b2d564c7b7261847d3eb25987574c3318",
+          "oldPath": "Respostas/Vadechat/Pleno/R04_VC_Pleno.txt",
+          "newPath": "Respostas/Vadechat/Pleno/R04_VC_Pleno.txt"
+        },
+        "judgment:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "ac4671592c1c62f3266f96aff18ab913a73ecc7259bb6468d92c1cdaf9853407",
+          "newHash": "ef5c9ce3e1f3bd9d164507d413d9a27bfdc8c7eed29c3024a2e1b82770b61028",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt"
+        },
+        "judgment:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "226b5841bd58055be1e02072e266d09d446c0e5a1f1e5d4d7a348b0888d69906",
+          "newHash": "85804075e3d9d32997c5341cff15e1dda6fc939b67e1b86b2b67e5546ebdbc80",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt"
+        },
+        "review:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "63cecf06ea616fc981eeb4bed8cfe04555b8de37093267404a10f73bcd540fda",
+          "newHash": "27199ed53aad575bb4bf3e3d6e091daa41de09a835d4acee5cf0b9cf7ff1a58b",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "review:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "840a089dde3f78e3598024ced41c0bd2c9bb180ea0a3eab4c6d1d51c07f9fd9b",
+          "newHash": "8f37edfb84d1b0d9f421b93bb5ce65bc388818b3d85e7a5ed18d0afd4f7aebbc",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "provenance": [
+        {
+          "version": "00f512a9-5376-4be4-8de0-c3404d03932b",
+          "sha256": "bb78f265d4e6b8054334275bf049a85c4033d68f282797eabcaf326f689f5863",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "65440665-9086-4b28-9cb3-a7ce5221ac03/opponent",
+            "version": "e6347887-4acb-4159-b049-742698a991c9",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        }
+      ]
+    },
+    {
+      "question": "Q05",
+      "mode": "agil",
+      "id": "Q05-AGIL",
+      "old": {
+        "ab": {
+          "A": {
+            "criteria": [
+              2,
+              1,
+              1
+            ],
+            "total": 4,
+            "classification": "Parcialmente conforme",
+            "sum": 4
+          },
+          "B": {
+            "criteria": [
+              4,
+              3,
+              1
+            ],
+            "total": 8,
+            "classification": "Conforme",
+            "sum": 8
+          }
+        },
+        "vc": {
+          "criteria": [
+            4,
+            3,
+            1
+          ],
+          "total": 8,
+          "classification": "Conforme",
+          "sum": 8
+        },
+        "opponent": {
+          "criteria": [
+            2,
+            1,
+            1
+          ],
+          "total": 4,
+          "classification": "Parcialmente conforme",
+          "sum": 4
+        },
+        "vcLetter": "B",
+        "result": "**B venceu** (8 contra 4).",
+        "winner": "vc"
+      },
+      "new": {
+        "ab": {
+          "A": {
+            "criteria": [
+              2,
+              1,
+              0
+            ],
+            "total": 3,
+            "classification": "Parcialmente conforme",
+            "sum": 3
+          },
+          "B": {
+            "criteria": [
+              3,
+              3,
+              1
+            ],
+            "total": 7,
+            "classification": "Parcialmente conforme",
+            "sum": 7
+          }
+        },
+        "vc": {
+          "criteria": [
+            3,
+            3,
+            1
+          ],
+          "total": 7,
+          "classification": "Parcialmente conforme",
+          "sum": 7
+        },
+        "opponent": {
+          "criteria": [
+            2,
+            1,
+            0
+          ],
+          "total": 3,
+          "classification": "Parcialmente conforme",
+          "sum": 3
+        },
+        "vcLetter": "B",
+        "result": "**B venceu** (7 contra 3).",
+        "winner": "vc"
+      },
+      "delta": -1,
+      "mapping": {
+        "A": "opponent",
+        "B": "agil"
+      },
+      "sources": {
+        "old": {
+          "question": "run01/Perguntas/Q05.txt",
+          "reference": "run01/Respostas/Humano/R05_Humano.txt",
+          "opponent": "run01/Respostas/ChatGPT/R05_ChatGPT.txt",
+          "agil": "run01/Respostas/Vadechat/Agil/R05_VC_Agil.txt",
+          "mapping": "run01/Config/Alternancia/Q05.txt",
+          "judgment:agil": "run01/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt",
+          "review:agil": "run01/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "new": {
+          "question": "run02/Perguntas/Q05.txt",
+          "reference": "run02/Respostas/Humano/R05_Humano.txt",
+          "opponent": "run02/Respostas/ChatGPT/R05_ChatGPT.txt",
+          "agil": "run02/Respostas/Vadechat/Agil/R05_VC_Agil.txt",
+          "mapping": "run02/Config/Alternancia/Q05.txt",
+          "judgment:agil": "run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt",
+          "review:agil": "run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "prompt": "run02/Prompts/Julgamentos/Prompt_005_v1_b7d58df4-f98c-46ee-8993-ccb00ddf5305.txt",
+      "reviewPrompt": "run02/Prompts/Revisoes/Prompt_005_v1_0536126a-7a82-4cdf-a518-190f84c6af0d.txt",
+      "promptId": "b7d58df4-f98c-46ee-8993-ccb00ddf5305",
+      "reviewPromptId": "0536126a-7a82-4cdf-a518-190f84c6af0d",
+      "promptSentDeclared": true,
+      "structured": {
+        "criteria": [],
+        "totalA": null,
+        "totalB": null,
+        "classA": "",
+        "classB": "",
+        "winner": "",
+        "checked": false
+      },
+      "identities": {
+        "oldQuestion": "52a90b65-d7b2-4a08-bbd7-5b3597cba32b",
+        "newQuestion": "8322cfdf-93df-48b3-b75a-b387483d3d8f"
+      },
+      "integrity": {
+        "question": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "32dc74f40d5546886adae39db2b4e2244968de873792ca709d64c1ba73c0da0a",
+          "newHash": "32dc74f40d5546886adae39db2b4e2244968de873792ca709d64c1ba73c0da0a",
+          "oldPath": "Perguntas/Q05.txt",
+          "newPath": "Perguntas/Q05.txt"
+        },
+        "reference": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "3633ca7c708f08c17bb1709a7d7e55e44049b0fb5b619f8a304c695d96d68e81",
+          "newHash": "3633ca7c708f08c17bb1709a7d7e55e44049b0fb5b619f8a304c695d96d68e81",
+          "oldPath": "Respostas/Humano/R05_Humano.txt",
+          "newPath": "Respostas/Humano/R05_Humano.txt"
+        },
+        "facts": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "referencePrompt": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "opponent": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "3dea083a8c8568cc0c3c024cfe037a52c854adc0a560d70d9fd97f573fb445e5",
+          "newHash": "3dea083a8c8568cc0c3c024cfe037a52c854adc0a560d70d9fd97f573fb445e5",
+          "oldPath": "Respostas/ChatGPT/R05_ChatGPT.txt",
+          "newPath": "Respostas/ChatGPT/R05_ChatGPT.txt"
+        },
+        "mapping": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "newHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "oldPath": "Config/Alternancia/Q05.txt",
+          "newPath": "Config/Alternancia/Q05.txt"
+        },
+        "agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "a5b6f4aadde7053b61df5d4c22461c2c31faf14afdbc8f61d7ed33aa5d00d015",
+          "newHash": "ab4e38ab7b0d42ada5a7d174fa71062e1b119ab6e02fa4686e764b29dd62599a",
+          "oldPath": "Respostas/Vadechat/Agil/R05_VC_Agil.txt",
+          "newPath": "Respostas/Vadechat/Agil/R05_VC_Agil.txt"
+        },
+        "pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "3d4ac3848fbf0c0ec7686dfd35e4de45d717a1054e333ca060a469729cb9bfae",
+          "newHash": "f4d2553b447de62013d11cdf4007bf0bbc7be6cfc72b4c88a799cbcf37018332",
+          "oldPath": "Respostas/Vadechat/Pleno/R05_VC_Pleno.txt",
+          "newPath": "Respostas/Vadechat/Pleno/R05_VC_Pleno.txt"
+        },
+        "judgment:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "7a79bc86173edfdb96dad5c84ddaba9dd7abc886cfa9039350e9179ff11b5b54",
+          "newHash": "c41b5e4de1c5a8ba31347de5d55288a4fbf42347da0fd8940b76fa73a2b7910c",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt"
+        },
+        "judgment:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "abac08fd8c0263140d6a17de3172d9082f966fbaf48eea7fa9c30a25d31558a1",
+          "newHash": "04cc21726dd0eb2c481826a9d5407692a561d499bfe29a1250b347e3405ce1a6",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt"
+        },
+        "review:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "ddfb07caaaa9b754a1da606fdbc561ce6ffaa482a2cb2bcdc14b8480d7747700",
+          "newHash": "af4479e3b68b9102ffbf43a7297d42a77c8806a8d9d6d3bdf65291e480778fda",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "review:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "5db6be949cb11430f37f46cbc995224bebc8bd2487b357213717981a87742499",
+          "newHash": "ac72affe0c997724db38c0423541fb431e4226804e73acd9f360cbc8a175c6dd",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "provenance": [
+        {
+          "version": "192069a0-96fe-4c13-bb28-e766ba900dc3",
+          "sha256": "3dea083a8c8568cc0c3c024cfe037a52c854adc0a560d70d9fd97f573fb445e5",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "52a90b65-d7b2-4a08-bbd7-5b3597cba32b/opponent",
+            "version": "2ed73e31-815d-4995-9306-18d60c29e316",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        }
+      ]
+    },
+    {
+      "question": "Q05",
+      "mode": "pleno",
+      "id": "Q05-PLENO",
+      "old": {
+        "ab": {
+          "A": {
+            "criteria": [
+              1,
+              1,
+              0
+            ],
+            "total": 2,
+            "classification": "Divergente",
+            "sum": 2
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              2
+            ],
+            "total": 10,
+            "classification": "Conforme",
+            "sum": 10
+          }
+        },
+        "vc": {
+          "criteria": [
+            4,
+            4,
+            2
+          ],
+          "total": 10,
+          "classification": "Conforme",
+          "sum": 10
+        },
+        "opponent": {
+          "criteria": [
+            1,
+            1,
+            0
+          ],
+          "total": 2,
+          "classification": "Divergente",
+          "sum": 2
+        },
+        "vcLetter": "B",
+        "result": "**B venceu** (10 a 2).",
+        "winner": "vc"
+      },
+      "new": {
+        "ab": {
+          "A": {
+            "criteria": [
+              2,
+              1,
+              0
+            ],
+            "total": 3,
+            "classification": "Parcialmente conforme",
+            "sum": 3
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              1
+            ],
+            "total": 9,
+            "classification": "Conforme",
+            "sum": 9
+          }
+        },
+        "vc": {
+          "criteria": [
+            4,
+            4,
+            1
+          ],
+          "total": 9,
+          "classification": "Conforme",
+          "sum": 9
+        },
+        "opponent": {
+          "criteria": [
+            2,
+            1,
+            0
+          ],
+          "total": 3,
+          "classification": "Parcialmente conforme",
+          "sum": 3
+        },
+        "vcLetter": "B",
+        "result": "**B venceu** (9 contra 3).",
+        "winner": "vc"
+      },
+      "delta": -1,
+      "mapping": {
+        "A": "opponent",
+        "B": "pleno"
+      },
+      "sources": {
+        "old": {
+          "question": "run01/Perguntas/Q05.txt",
+          "reference": "run01/Respostas/Humano/R05_Humano.txt",
+          "opponent": "run01/Respostas/ChatGPT/R05_ChatGPT.txt",
+          "pleno": "run01/Respostas/Vadechat/Pleno/R05_VC_Pleno.txt",
+          "mapping": "run01/Config/Alternancia/Q05.txt",
+          "judgment:pleno": "run01/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt",
+          "review:pleno": "run01/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "new": {
+          "question": "run02/Perguntas/Q05.txt",
+          "reference": "run02/Respostas/Humano/R05_Humano.txt",
+          "opponent": "run02/Respostas/ChatGPT/R05_ChatGPT.txt",
+          "pleno": "run02/Respostas/Vadechat/Pleno/R05_VC_Pleno.txt",
+          "mapping": "run02/Config/Alternancia/Q05.txt",
+          "judgment:pleno": "run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt",
+          "review:pleno": "run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "prompt": "run02/Prompts/Julgamentos/Prompt_010_v1_0883e93f-2f73-4026-9c0d-53a48efc38ae.txt",
+      "reviewPrompt": "run02/Prompts/Revisoes/Prompt_010_v1_bc4b1b9c-82f2-4d86-bc58-dad37fc1e0cd.txt",
+      "promptId": "0883e93f-2f73-4026-9c0d-53a48efc38ae",
+      "reviewPromptId": "bc4b1b9c-82f2-4d86-bc58-dad37fc1e0cd",
+      "promptSentDeclared": true,
+      "structured": {
+        "criteria": [],
+        "totalA": null,
+        "totalB": null,
+        "classA": "",
+        "classB": "",
+        "winner": "",
+        "checked": false
+      },
+      "identities": {
+        "oldQuestion": "52a90b65-d7b2-4a08-bbd7-5b3597cba32b",
+        "newQuestion": "8322cfdf-93df-48b3-b75a-b387483d3d8f"
+      },
+      "integrity": {
+        "question": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "32dc74f40d5546886adae39db2b4e2244968de873792ca709d64c1ba73c0da0a",
+          "newHash": "32dc74f40d5546886adae39db2b4e2244968de873792ca709d64c1ba73c0da0a",
+          "oldPath": "Perguntas/Q05.txt",
+          "newPath": "Perguntas/Q05.txt"
+        },
+        "reference": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "3633ca7c708f08c17bb1709a7d7e55e44049b0fb5b619f8a304c695d96d68e81",
+          "newHash": "3633ca7c708f08c17bb1709a7d7e55e44049b0fb5b619f8a304c695d96d68e81",
+          "oldPath": "Respostas/Humano/R05_Humano.txt",
+          "newPath": "Respostas/Humano/R05_Humano.txt"
+        },
+        "facts": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "referencePrompt": {
+          "oldPresent": false,
+          "newPresent": false
+        },
+        "opponent": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "3dea083a8c8568cc0c3c024cfe037a52c854adc0a560d70d9fd97f573fb445e5",
+          "newHash": "3dea083a8c8568cc0c3c024cfe037a52c854adc0a560d70d9fd97f573fb445e5",
+          "oldPath": "Respostas/ChatGPT/R05_ChatGPT.txt",
+          "newPath": "Respostas/ChatGPT/R05_ChatGPT.txt"
+        },
+        "mapping": {
+          "byteEqual": true,
+          "textEqual": true,
+          "oldHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "newHash": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+          "oldPath": "Config/Alternancia/Q05.txt",
+          "newPath": "Config/Alternancia/Q05.txt"
+        },
+        "agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "a5b6f4aadde7053b61df5d4c22461c2c31faf14afdbc8f61d7ed33aa5d00d015",
+          "newHash": "ab4e38ab7b0d42ada5a7d174fa71062e1b119ab6e02fa4686e764b29dd62599a",
+          "oldPath": "Respostas/Vadechat/Agil/R05_VC_Agil.txt",
+          "newPath": "Respostas/Vadechat/Agil/R05_VC_Agil.txt"
+        },
+        "pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "3d4ac3848fbf0c0ec7686dfd35e4de45d717a1054e333ca060a469729cb9bfae",
+          "newHash": "f4d2553b447de62013d11cdf4007bf0bbc7be6cfc72b4c88a799cbcf37018332",
+          "oldPath": "Respostas/Vadechat/Pleno/R05_VC_Pleno.txt",
+          "newPath": "Respostas/Vadechat/Pleno/R05_VC_Pleno.txt"
+        },
+        "judgment:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "7a79bc86173edfdb96dad5c84ddaba9dd7abc886cfa9039350e9179ff11b5b54",
+          "newHash": "c41b5e4de1c5a8ba31347de5d55288a4fbf42347da0fd8940b76fa73a2b7910c",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt"
+        },
+        "judgment:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "abac08fd8c0263140d6a17de3172d9082f966fbaf48eea7fa9c30a25d31558a1",
+          "newHash": "04cc21726dd0eb2c481826a9d5407692a561d499bfe29a1250b347e3405ce1a6",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt"
+        },
+        "review:agil": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "ddfb07caaaa9b754a1da606fdbc561ce6ffaa482a2cb2bcdc14b8480d7747700",
+          "newHash": "af4479e3b68b9102ffbf43a7297d42a77c8806a8d9d6d3bdf65291e480778fda",
+          "oldPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+        },
+        "review:pleno": {
+          "byteEqual": false,
+          "textEqual": false,
+          "oldHash": "5db6be949cb11430f37f46cbc995224bebc8bd2487b357213717981a87742499",
+          "newHash": "ac72affe0c997724db38c0423541fb431e4226804e73acd9f360cbc8a175c6dd",
+          "oldPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+          "newPath": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+        }
+      },
+      "provenance": [
+        {
+          "version": "192069a0-96fe-4c13-bb28-e766ba900dc3",
+          "sha256": "3dea083a8c8568cc0c3c024cfe037a52c854adc0a560d70d9fd97f573fb445e5",
+          "reused": {
+            "run": "f9f2925a-ba2c-4599-a0d0-44743cb9322c",
+            "record": "52a90b65-d7b2-4a08-bbd7-5b3597cba32b/opponent",
+            "version": "2ed73e31-815d-4995-9306-18d60c29e316",
+            "condition": "Irei testar novamente apenas o VadeChat após melhoria feita por Daniel Tri7."
+          }
+        }
+      ]
+    }
+  ],
+  "documents": {
+    "run01/Perguntas/Q01.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Perguntas/Q01.txt",
+      "originalName": "Q01.txt",
+      "bytes": 554,
+      "sha256": "218fdf14c1d390a728ac4024f7e4a0a5ebd22cbb6e78e41857112224f1428e2d",
+      "run": "Run 01 · legado01",
+      "relative": "Perguntas/Q01.txt"
+    },
+    "run01/Respostas/Humano/R01_Humano.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Humano/R01_Humano.txt",
+      "originalName": "R01_Humano.txt",
+      "bytes": 2186,
+      "sha256": "96e23990807700bbcaa3ca3a4fc231453206a991141c38501f91b03997ddbc22",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Humano/R01_Humano.txt"
+    },
+    "run01/Respostas/ChatGPT/R01_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/ChatGPT/R01_ChatGPT.txt",
+      "originalName": "R01_ChatGPT.txt",
+      "bytes": 9050,
+      "sha256": "ddc52d322642fb622be8b5298553885e7b0b21af1bccd5bd4b720ad8d6fed635",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/ChatGPT/R01_ChatGPT.txt"
+    },
+    "run01/Respostas/Vadechat/Agil/R01_VC_Agil.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Vadechat/Agil/R01_VC_Agil.txt",
+      "originalName": "R01_VC_Agil.txt",
+      "bytes": 4748,
+      "sha256": "3c0e4afd306d29871e2d29f1a99d58b0e5ff02c5bdf81d9f7f30096117d375ee",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Vadechat/Agil/R01_VC_Agil.txt"
+    },
+    "run01/Config/Alternancia/Q01.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run01/Config/Alternancia/Q01.txt",
+      "originalName": "Q01.txt",
+      "bytes": 8,
+      "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+      "run": "Run 01 · legado01",
+      "relative": "Config/Alternancia/Q01.txt"
+    },
+    "run01/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt",
+      "originalName": "R01_VC_Agil_x_ChatGPT.txt",
+      "bytes": 4286,
+      "sha256": "0737824dd354910111c3700c413de819ab25705d43e17408b123796e5f61160e",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt"
+    },
+    "run01/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 1718,
+      "sha256": "7e2432ec331ed0cd0ef233c388b7dfd26a9534b122b76fcd975538fee0d927a0",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Perguntas/Q01.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Perguntas/Q01.txt",
+      "originalName": "Q01.txt",
+      "bytes": 554,
+      "sha256": "218fdf14c1d390a728ac4024f7e4a0a5ebd22cbb6e78e41857112224f1428e2d",
+      "run": "Run 02",
+      "relative": "Perguntas/Q01.txt"
+    },
+    "run02/Respostas/Humano/R01_Humano.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Humano/R01_Humano.txt",
+      "originalName": "R01_Humano.txt",
+      "bytes": 2186,
+      "sha256": "96e23990807700bbcaa3ca3a4fc231453206a991141c38501f91b03997ddbc22",
+      "run": "Run 02",
+      "relative": "Respostas/Humano/R01_Humano.txt"
+    },
+    "run02/Respostas/ChatGPT/R01_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/ChatGPT/R01_ChatGPT.txt",
+      "originalName": "R01_ChatGPT.txt",
+      "bytes": 9050,
+      "sha256": "ddc52d322642fb622be8b5298553885e7b0b21af1bccd5bd4b720ad8d6fed635",
+      "run": "Run 02",
+      "relative": "Respostas/ChatGPT/R01_ChatGPT.txt"
+    },
+    "run02/Respostas/Vadechat/Agil/R01_VC_Agil.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Agil/R01_VC_Agil.txt",
+      "originalName": "R01_VC_Agil.txt",
+      "bytes": 5853,
+      "sha256": "262550376a8addc6144b5b58f903d356cef4fc44abaebb3757f0c4b79555d22b",
+      "run": "Run 02",
+      "relative": "Respostas/Vadechat/Agil/R01_VC_Agil.txt"
+    },
+    "run02/Config/Alternancia/Q01.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Config/Alternancia/Q01.txt",
+      "originalName": "Q01.txt",
+      "bytes": 8,
+      "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+      "run": "Run 02",
+      "relative": "Config/Alternancia/Q01.txt"
+    },
+    "run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt",
+      "originalName": "R01_VC_Agil_x_ChatGPT.txt",
+      "bytes": 3688,
+      "sha256": "7abbf714cceee3a5c414cde05310e8577d4b9013b50b9478b957e3660bf53baa",
+      "run": "Run 02",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R01_VC_Agil_x_ChatGPT.txt"
+    },
+    "run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 5126,
+      "sha256": "229fb6a89800c607da92768f9d4e90410b5dde908a38a60e68b6dd5f404c41be",
+      "run": "Run 02",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R01_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Prompts/Julgamentos/Prompt_001_v1_9bb2a0cb-bd4f-4477-bdc0-a52aa3795545.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_001_v1_9bb2a0cb-bd4f-4477-bdc0-a52aa3795545.txt",
+      "originalName": "Prompt_001_v1_9bb2a0cb-bd4f-4477-bdc0-a52aa3795545.txt",
+      "bytes": 20734,
+      "sha256": "b576432599c2e52739c3378bed730633e26f42e9393682b4e89a88627916897e",
+      "run": "Run 02",
+      "relative": "Prompts/Julgamentos/Prompt_001_v1_9bb2a0cb-bd4f-4477-bdc0-a52aa3795545.txt"
+    },
+    "run02/Prompts/Revisoes/Prompt_001_v1_54671323-3c12-4026-901e-cc21036726f0.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_001_v1_54671323-3c12-4026-901e-cc21036726f0.txt",
+      "originalName": "Prompt_001_v1_54671323-3c12-4026-901e-cc21036726f0.txt",
+      "bytes": 25844,
+      "sha256": "fa1958f26cb84502e89deab680561d2c6a91aa0cab316e798cf688071a22c5d9",
+      "run": "Run 02",
+      "relative": "Prompts/Revisoes/Prompt_001_v1_54671323-3c12-4026-901e-cc21036726f0.txt"
+    },
+    "run01/Respostas/Vadechat/Pleno/R01_VC_Pleno.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Vadechat/Pleno/R01_VC_Pleno.txt",
+      "originalName": "R01_VC_Pleno.txt",
+      "bytes": 3611,
+      "sha256": "720a4705b77049dabe11a652674238c065f07b61a5c63bbf88ab60c70cd845dd",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Vadechat/Pleno/R01_VC_Pleno.txt"
+    },
+    "run01/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt",
+      "originalName": "R01_VC_Pleno_x_ChatGPT.txt",
+      "bytes": 4293,
+      "sha256": "436455fb8ff4c9caa6e3273f88f8ac4983abfa23899d9a2aa2a1b001f4125cd6",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt"
+    },
+    "run01/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 1322,
+      "sha256": "3259a0633b32f8e869fa6b165d7ed987e0714b98189aa302015160f125ad02f2",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Respostas/Vadechat/Pleno/R01_VC_Pleno.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Pleno/R01_VC_Pleno.txt",
+      "originalName": "R01_VC_Pleno.txt",
+      "bytes": 5037,
+      "sha256": "3c1f7a7deb9215aecb4ae68b88882e2a0897597fe0d803c6d907b459adb460c5",
+      "run": "Run 02",
+      "relative": "Respostas/Vadechat/Pleno/R01_VC_Pleno.txt"
+    },
+    "run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt",
+      "originalName": "R01_VC_Pleno_x_ChatGPT.txt",
+      "bytes": 3802,
+      "sha256": "1c47798ea82663b6d1363651c7a6f3a59ef3b6615efbc60e9dfd56c99a066af8",
+      "run": "Run 02",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R01_VC_Pleno_x_ChatGPT.txt"
+    },
+    "run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 4540,
+      "sha256": "f1a7577f705f6814cc133352fd5829b93f6ab011d8bb164d4f1135933aefe1b2",
+      "run": "Run 02",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R01_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Prompts/Julgamentos/Prompt_006_v1_2afd3f22-15a5-4890-ac11-4a94aa342f2f.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_006_v1_2afd3f22-15a5-4890-ac11-4a94aa342f2f.txt",
+      "originalName": "Prompt_006_v1_2afd3f22-15a5-4890-ac11-4a94aa342f2f.txt",
+      "bytes": 19918,
+      "sha256": "bd14165813ad13d771ff0332d59ee1c9278ed77de85a6886c582b9007eaeabf7",
+      "run": "Run 02",
+      "relative": "Prompts/Julgamentos/Prompt_006_v1_2afd3f22-15a5-4890-ac11-4a94aa342f2f.txt"
+    },
+    "run02/Prompts/Revisoes/Prompt_006_v1_820ac2e2-051f-4ab4-91ff-9f165e0a2f42.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_006_v1_820ac2e2-051f-4ab4-91ff-9f165e0a2f42.txt",
+      "originalName": "Prompt_006_v1_820ac2e2-051f-4ab4-91ff-9f165e0a2f42.txt",
+      "bytes": 25142,
+      "sha256": "1d91f5fa4a828f0ca61db3d3863ee9cdf38d100e54f658ca9475d89282f519be",
+      "run": "Run 02",
+      "relative": "Prompts/Revisoes/Prompt_006_v1_820ac2e2-051f-4ab4-91ff-9f165e0a2f42.txt"
+    },
+    "run01/Perguntas/Q02.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Perguntas/Q02.txt",
+      "originalName": "Q02.txt",
+      "bytes": 530,
+      "sha256": "b957d07fb81f614934b5d9905e1d9381e75273f605b13020f85e2db8db417289",
+      "run": "Run 01 · legado01",
+      "relative": "Perguntas/Q02.txt"
+    },
+    "run01/Respostas/Humano/R02_Humano.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Humano/R02_Humano.txt",
+      "originalName": "R02_Humano.txt",
+      "bytes": 2274,
+      "sha256": "f5e0741acac442e7cf38d7186e7d5bada75c584a74faec3bc25b9fe354aff2f9",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Humano/R02_Humano.txt"
+    },
+    "run01/Respostas/ChatGPT/R02_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/ChatGPT/R02_ChatGPT.txt",
+      "originalName": "R02_ChatGPT.txt",
+      "bytes": 12983,
+      "sha256": "5ba457b6a65e16657e7fb64dd5f54faa315b8a41562983e7753964e6d1b325f7",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/ChatGPT/R02_ChatGPT.txt"
+    },
+    "run01/Respostas/Vadechat/Agil/R02_VC_Agil.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Vadechat/Agil/R02_VC_Agil.txt",
+      "originalName": "R02_VC_Agil.txt",
+      "bytes": 5305,
+      "sha256": "58cad661c445f37c286de3388366145850b9a3d71391100764def9b4e17c4a6c",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Vadechat/Agil/R02_VC_Agil.txt"
+    },
+    "run01/Config/Alternancia/Q02.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run01/Config/Alternancia/Q02.txt",
+      "originalName": "Q02.txt",
+      "bytes": 8,
+      "sha256": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+      "run": "Run 01 · legado01",
+      "relative": "Config/Alternancia/Q02.txt"
+    },
+    "run01/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt",
+      "originalName": "R02_VC_Agil_x_ChatGPT.txt",
+      "bytes": 3794,
+      "sha256": "dc42a56976a66d318176dd973a5d39a4f344cb852b4805008b18a599bb3b453f",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt"
+    },
+    "run01/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 1248,
+      "sha256": "c5f8bd9522357b83d209cef2054944bcdec26e6f1bd247600152dfff6a01f772",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Perguntas/Q02.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Perguntas/Q02.txt",
+      "originalName": "Q02.txt",
+      "bytes": 530,
+      "sha256": "b957d07fb81f614934b5d9905e1d9381e75273f605b13020f85e2db8db417289",
+      "run": "Run 02",
+      "relative": "Perguntas/Q02.txt"
+    },
+    "run02/Respostas/Humano/R02_Humano.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Humano/R02_Humano.txt",
+      "originalName": "R02_Humano.txt",
+      "bytes": 2274,
+      "sha256": "f5e0741acac442e7cf38d7186e7d5bada75c584a74faec3bc25b9fe354aff2f9",
+      "run": "Run 02",
+      "relative": "Respostas/Humano/R02_Humano.txt"
+    },
+    "run02/Respostas/ChatGPT/R02_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/ChatGPT/R02_ChatGPT.txt",
+      "originalName": "R02_ChatGPT.txt",
+      "bytes": 12983,
+      "sha256": "5ba457b6a65e16657e7fb64dd5f54faa315b8a41562983e7753964e6d1b325f7",
+      "run": "Run 02",
+      "relative": "Respostas/ChatGPT/R02_ChatGPT.txt"
+    },
+    "run02/Respostas/Vadechat/Agil/R02_VC_Agil.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Agil/R02_VC_Agil.txt",
+      "originalName": "R02_VC_Agil.txt",
+      "bytes": 8505,
+      "sha256": "d4eb4c37ca88e0b7e893e909cfbbad305fd7867e98e33dcf79def83dc7bc44c5",
+      "run": "Run 02",
+      "relative": "Respostas/Vadechat/Agil/R02_VC_Agil.txt"
+    },
+    "run02/Config/Alternancia/Q02.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Config/Alternancia/Q02.txt",
+      "originalName": "Q02.txt",
+      "bytes": 8,
+      "sha256": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+      "run": "Run 02",
+      "relative": "Config/Alternancia/Q02.txt"
+    },
+    "run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt",
+      "originalName": "R02_VC_Agil_x_ChatGPT.txt",
+      "bytes": 4002,
+      "sha256": "80b32260ebc07225b96f9999fff3a4b10fa2cec4883d880df9033c56c064b721",
+      "run": "Run 02",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R02_VC_Agil_x_ChatGPT.txt"
+    },
+    "run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 5018,
+      "sha256": "e24ac373ef444bc46a00d11025cc81cb126338aa14f7db20ab2550fbe43d6a0b",
+      "run": "Run 02",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R02_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Prompts/Julgamentos/Prompt_002_v1_cedd0c93-c4a3-403d-b4e7-06df185319c5.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_002_v1_cedd0c93-c4a3-403d-b4e7-06df185319c5.txt",
+      "originalName": "Prompt_002_v1_cedd0c93-c4a3-403d-b4e7-06df185319c5.txt",
+      "bytes": 27383,
+      "sha256": "1c4429c23a87ece7d58cf7f55f66694ab1a5960fb68c38774efe7ca550d50b84",
+      "run": "Run 02",
+      "relative": "Prompts/Julgamentos/Prompt_002_v1_cedd0c93-c4a3-403d-b4e7-06df185319c5.txt"
+    },
+    "run02/Prompts/Revisoes/Prompt_002_v1_eec64e4d-f2d8-4567-953a-5bacdc7e4865.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_002_v1_eec64e4d-f2d8-4567-953a-5bacdc7e4865.txt",
+      "originalName": "Prompt_002_v1_eec64e4d-f2d8-4567-953a-5bacdc7e4865.txt",
+      "bytes": 32807,
+      "sha256": "18a84a2ddaeb4f4e5190375206162e34aeb8e25940f101c650e470dd083e4cf0",
+      "run": "Run 02",
+      "relative": "Prompts/Revisoes/Prompt_002_v1_eec64e4d-f2d8-4567-953a-5bacdc7e4865.txt"
+    },
+    "run01/Respostas/Vadechat/Pleno/R02_VC_Pleno.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Vadechat/Pleno/R02_VC_Pleno.txt",
+      "originalName": "R02_VC_Pleno.txt",
+      "bytes": 3053,
+      "sha256": "bc9da33ffbd9b9d35148d2176d4d7453d88dae34b0079bea71b6527d156c7a10",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Vadechat/Pleno/R02_VC_Pleno.txt"
+    },
+    "run01/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt",
+      "originalName": "R02_VC_Pleno_x_ChatGPT.txt",
+      "bytes": 3953,
+      "sha256": "56b081da5d7e5b9597f8a87d221e28667651ef962b568d83c202347fd280b923",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt"
+    },
+    "run01/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 1397,
+      "sha256": "0df4bd688f0effc5abd32643daa2eb9068db1de5342a4035a43308306428266c",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Respostas/Vadechat/Pleno/R02_VC_Pleno.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Pleno/R02_VC_Pleno.txt",
+      "originalName": "R02_VC_Pleno.txt",
+      "bytes": 5716,
+      "sha256": "0cec64fe619316dec0d1e5be33adec9cec465e26fc113d9d4b2a3c86f7542631",
+      "run": "Run 02",
+      "relative": "Respostas/Vadechat/Pleno/R02_VC_Pleno.txt"
+    },
+    "run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt",
+      "originalName": "R02_VC_Pleno_x_ChatGPT.txt",
+      "bytes": 4729,
+      "sha256": "670e44946fca8807c327600be3c7ba9f5259efd8f44e4201640c75aece1ad53b",
+      "run": "Run 02",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R02_VC_Pleno_x_ChatGPT.txt"
+    },
+    "run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 4529,
+      "sha256": "0973d6e243ed768e9e04433b52e807e3db63b32bf241fe1c8779216025753daa",
+      "run": "Run 02",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R02_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Prompts/Julgamentos/Prompt_007_v1_fab2863a-05bb-41ac-a33b-fdbb4c75c91c.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_007_v1_fab2863a-05bb-41ac-a33b-fdbb4c75c91c.txt",
+      "originalName": "Prompt_007_v1_fab2863a-05bb-41ac-a33b-fdbb4c75c91c.txt",
+      "bytes": 24594,
+      "sha256": "fa56b0bec488639ad4c2234142683e926d04d36d591e8cbb08fe414a343c7422",
+      "run": "Run 02",
+      "relative": "Prompts/Julgamentos/Prompt_007_v1_fab2863a-05bb-41ac-a33b-fdbb4c75c91c.txt"
+    },
+    "run02/Prompts/Revisoes/Prompt_007_v1_5fb1b410-b507-4512-bb5d-a63f18531c83.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_007_v1_5fb1b410-b507-4512-bb5d-a63f18531c83.txt",
+      "originalName": "Prompt_007_v1_5fb1b410-b507-4512-bb5d-a63f18531c83.txt",
+      "bytes": 30745,
+      "sha256": "c2c85e9ba6130726fa20087f1000622d48e3c9cf207da0da88ac7050500b824b",
+      "run": "Run 02",
+      "relative": "Prompts/Revisoes/Prompt_007_v1_5fb1b410-b507-4512-bb5d-a63f18531c83.txt"
+    },
+    "run01/Perguntas/Q03.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Perguntas/Q03.txt",
+      "originalName": "Q03.txt",
+      "bytes": 314,
+      "sha256": "703ab5369563357ec12c768ebeb8d030ffef816420a0317bba51b30b0f7dbafa",
+      "run": "Run 01 · legado01",
+      "relative": "Perguntas/Q03.txt"
+    },
+    "run01/Respostas/Humano/R03_Humano.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Humano/R03_Humano.txt",
+      "originalName": "R03_Humano.txt",
+      "bytes": 1072,
+      "sha256": "9b46580bb6e3882aef09ab5eb2b3728833fd88c88e291d6d1edec21f20b7a891",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Humano/R03_Humano.txt"
+    },
+    "run01/Respostas/ChatGPT/R03_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/ChatGPT/R03_ChatGPT.txt",
+      "originalName": "R03_ChatGPT.txt",
+      "bytes": 3947,
+      "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/ChatGPT/R03_ChatGPT.txt"
+    },
+    "run01/Respostas/Vadechat/Agil/R03_VC_Agil.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Vadechat/Agil/R03_VC_Agil.txt",
+      "originalName": "R03_VC_Agil.txt",
+      "bytes": 1591,
+      "sha256": "176e58e42d0f2de3ee20eabc709471b83d0eee85e53ce059aad3224be1a070c0",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Vadechat/Agil/R03_VC_Agil.txt"
+    },
+    "run01/Config/Alternancia/Q03.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run01/Config/Alternancia/Q03.txt",
+      "originalName": "Q03.txt",
+      "bytes": 8,
+      "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+      "run": "Run 01 · legado01",
+      "relative": "Config/Alternancia/Q03.txt"
+    },
+    "run01/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt",
+      "originalName": "R03_VC_Agil_x_ChatGPT.txt",
+      "bytes": 2955,
+      "sha256": "6af1e6d229e52ee9650cb822429afa10bf434c0acb07a0d8446e3c1072311a3c",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt"
+    },
+    "run01/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 952,
+      "sha256": "da05ac5a31b187e1e9237cf4645aa4b0fe366f46bc114407da87c58adf19e073",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Perguntas/Q03.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Perguntas/Q03.txt",
+      "originalName": "Q03.txt",
+      "bytes": 314,
+      "sha256": "703ab5369563357ec12c768ebeb8d030ffef816420a0317bba51b30b0f7dbafa",
+      "run": "Run 02",
+      "relative": "Perguntas/Q03.txt"
+    },
+    "run02/Respostas/Humano/R03_Humano.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Humano/R03_Humano.txt",
+      "originalName": "R03_Humano.txt",
+      "bytes": 1072,
+      "sha256": "9b46580bb6e3882aef09ab5eb2b3728833fd88c88e291d6d1edec21f20b7a891",
+      "run": "Run 02",
+      "relative": "Respostas/Humano/R03_Humano.txt"
+    },
+    "run02/Respostas/ChatGPT/R03_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/ChatGPT/R03_ChatGPT.txt",
+      "originalName": "R03_ChatGPT.txt",
+      "bytes": 3947,
+      "sha256": "85770e656aa3fc9b0dfbb6e09a83c8850dc4144db97edccd07cf74c8869ddb46",
+      "run": "Run 02",
+      "relative": "Respostas/ChatGPT/R03_ChatGPT.txt"
+    },
+    "run02/Respostas/Vadechat/Agil/R03_VC_Agil.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Agil/R03_VC_Agil.txt",
+      "originalName": "R03_VC_Agil.txt",
+      "bytes": 2325,
+      "sha256": "2b43aaf616fb4b732080bf196c46706393706d819e7c6f5044ec43b6b5877520",
+      "run": "Run 02",
+      "relative": "Respostas/Vadechat/Agil/R03_VC_Agil.txt"
+    },
+    "run02/Config/Alternancia/Q03.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Config/Alternancia/Q03.txt",
+      "originalName": "Q03.txt",
+      "bytes": 8,
+      "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+      "run": "Run 02",
+      "relative": "Config/Alternancia/Q03.txt"
+    },
+    "run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt",
+      "originalName": "R03_VC_Agil_x_ChatGPT.txt",
+      "bytes": 3266,
+      "sha256": "92b6a5ff99abc6098bfd1ef5cfc5ab6be11d487b9f1bc4d170b4f96ca4e3bf83",
+      "run": "Run 02",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R03_VC_Agil_x_ChatGPT.txt"
+    },
+    "run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 4000,
+      "sha256": "e43e0cdbe0fca1f5468903e692ee9ec2476506b42e84fb914c13cd91432a4511",
+      "run": "Run 02",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R03_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Prompts/Julgamentos/Prompt_003_v1_7df47396-ae90-466c-b552-2b832051ab7d.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_003_v1_7df47396-ae90-466c-b552-2b832051ab7d.txt",
+      "originalName": "Prompt_003_v1_7df47396-ae90-466c-b552-2b832051ab7d.txt",
+      "bytes": 10749,
+      "sha256": "8c477a760104f8376252046745aa6533ae6d4697bd2af94073906dbdf756594e",
+      "run": "Run 02",
+      "relative": "Prompts/Julgamentos/Prompt_003_v1_7df47396-ae90-466c-b552-2b832051ab7d.txt"
+    },
+    "run02/Prompts/Revisoes/Prompt_003_v1_103bec14-5f30-4806-8110-019d12297d8e.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_003_v1_103bec14-5f30-4806-8110-019d12297d8e.txt",
+      "originalName": "Prompt_003_v1_103bec14-5f30-4806-8110-019d12297d8e.txt",
+      "bytes": 15437,
+      "sha256": "835a78badf520b9aa6b507ad523a61ea4282089d53e354233282b3a6e858ee11",
+      "run": "Run 02",
+      "relative": "Prompts/Revisoes/Prompt_003_v1_103bec14-5f30-4806-8110-019d12297d8e.txt"
+    },
+    "run01/Respostas/Vadechat/Pleno/R03_VC_Pleno.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Vadechat/Pleno/R03_VC_Pleno.txt",
+      "originalName": "R03_VC_Pleno.txt",
+      "bytes": 2193,
+      "sha256": "fa0c5e7c11b28044307812b10353c0dbf3d1607d982e4ddaca310101c7b6f8c3",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Vadechat/Pleno/R03_VC_Pleno.txt"
+    },
+    "run01/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt",
+      "originalName": "R03_VC_Pleno_x_ChatGPT.txt",
+      "bytes": 2745,
+      "sha256": "2b2cf0c663b6c37cde316fcb02a6e276ce957d0f17ac3dd5a5988adb5c06266d",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt"
+    },
+    "run01/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 1012,
+      "sha256": "26d84a902f39625c32892315a2ecd42bf87784bc6286410a7b013d89cbcdf222",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Respostas/Vadechat/Pleno/R03_VC_Pleno.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Pleno/R03_VC_Pleno.txt",
+      "originalName": "R03_VC_Pleno.txt",
+      "bytes": 2536,
+      "sha256": "d65a4e5c2827ca2fe3c15a95360ee812d20b1f769d248a8824180f9ef941838c",
+      "run": "Run 02",
+      "relative": "Respostas/Vadechat/Pleno/R03_VC_Pleno.txt"
+    },
+    "run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt",
+      "originalName": "R03_VC_Pleno_x_ChatGPT.txt",
+      "bytes": 2805,
+      "sha256": "e9e5df4cfa4887ed6780107dc178250281b225b2e6fd225eca23fab6e09dd74c",
+      "run": "Run 02",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R03_VC_Pleno_x_ChatGPT.txt"
+    },
+    "run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 3522,
+      "sha256": "243e2df00050145cc6f12760831ddf583943298db306cfb27b646a184642a769",
+      "run": "Run 02",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R03_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Prompts/Julgamentos/Prompt_008_v1_e3760bc6-97b9-438c-a3be-ba2613c77207.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_008_v1_e3760bc6-97b9-438c-a3be-ba2613c77207.txt",
+      "originalName": "Prompt_008_v1_e3760bc6-97b9-438c-a3be-ba2613c77207.txt",
+      "bytes": 10960,
+      "sha256": "4cc7727059414df68ad2849668405db7f3143aee6d46f73e8d53c179bd0a69cd",
+      "run": "Run 02",
+      "relative": "Prompts/Julgamentos/Prompt_008_v1_e3760bc6-97b9-438c-a3be-ba2613c77207.txt"
+    },
+    "run02/Prompts/Revisoes/Prompt_008_v1_f73c9371-f78b-40b7-96e0-f6339db53cfe.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_008_v1_f73c9371-f78b-40b7-96e0-f6339db53cfe.txt",
+      "originalName": "Prompt_008_v1_f73c9371-f78b-40b7-96e0-f6339db53cfe.txt",
+      "bytes": 15187,
+      "sha256": "227db1f0e666adad0ad709c343787779c624b44d8c83e30ad1085bc003a6eda4",
+      "run": "Run 02",
+      "relative": "Prompts/Revisoes/Prompt_008_v1_f73c9371-f78b-40b7-96e0-f6339db53cfe.txt"
+    },
+    "run01/Perguntas/Q04.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Perguntas/Q04.txt",
+      "originalName": "Q04.txt",
+      "bytes": 181,
+      "sha256": "c3dd1ee77b99db793f5101f5a83b8956f8dc1d26393b377f5f171fab7668e4b4",
+      "run": "Run 01 · legado01",
+      "relative": "Perguntas/Q04.txt"
+    },
+    "run01/Respostas/Humano/R04_Humano.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Humano/R04_Humano.txt",
+      "originalName": "R04_Humano.txt",
+      "bytes": 2008,
+      "sha256": "e8132137b90bb75919686d231410dab083c9330cb295612503a1038bf21c1b40",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Humano/R04_Humano.txt"
+    },
+    "run01/Respostas/ChatGPT/R04_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/ChatGPT/R04_ChatGPT.txt",
+      "originalName": "R04_ChatGPT.txt",
+      "bytes": 4162,
+      "sha256": "bb78f265d4e6b8054334275bf049a85c4033d68f282797eabcaf326f689f5863",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/ChatGPT/R04_ChatGPT.txt"
+    },
+    "run01/Respostas/Vadechat/Agil/R04_VC_Agil.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Vadechat/Agil/R04_VC_Agil.txt",
+      "originalName": "R04_VC_Agil.txt",
+      "bytes": 4343,
+      "sha256": "f91609255d0a9a2f25e1b791ee2794a9ace0cd95a4de6c139354173010180b32",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Vadechat/Agil/R04_VC_Agil.txt"
+    },
+    "run01/Config/Alternancia/Q04.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run01/Config/Alternancia/Q04.txt",
+      "originalName": "Q04.txt",
+      "bytes": 8,
+      "sha256": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+      "run": "Run 01 · legado01",
+      "relative": "Config/Alternancia/Q04.txt"
+    },
+    "run01/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt",
+      "originalName": "R04_VC_Agil_x_ChatGPT.txt",
+      "bytes": 3514,
+      "sha256": "ac4671592c1c62f3266f96aff18ab913a73ecc7259bb6468d92c1cdaf9853407",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt"
+    },
+    "run01/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 1642,
+      "sha256": "63cecf06ea616fc981eeb4bed8cfe04555b8de37093267404a10f73bcd540fda",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Perguntas/Q04.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Perguntas/Q04.txt",
+      "originalName": "Q04.txt",
+      "bytes": 181,
+      "sha256": "c3dd1ee77b99db793f5101f5a83b8956f8dc1d26393b377f5f171fab7668e4b4",
+      "run": "Run 02",
+      "relative": "Perguntas/Q04.txt"
+    },
+    "run02/Respostas/Humano/R04_Humano.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Humano/R04_Humano.txt",
+      "originalName": "R04_Humano.txt",
+      "bytes": 2008,
+      "sha256": "e8132137b90bb75919686d231410dab083c9330cb295612503a1038bf21c1b40",
+      "run": "Run 02",
+      "relative": "Respostas/Humano/R04_Humano.txt"
+    },
+    "run02/Respostas/ChatGPT/R04_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/ChatGPT/R04_ChatGPT.txt",
+      "originalName": "R04_ChatGPT.txt",
+      "bytes": 4162,
+      "sha256": "bb78f265d4e6b8054334275bf049a85c4033d68f282797eabcaf326f689f5863",
+      "run": "Run 02",
+      "relative": "Respostas/ChatGPT/R04_ChatGPT.txt"
+    },
+    "run02/Respostas/Vadechat/Agil/R04_VC_Agil.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Agil/R04_VC_Agil.txt",
+      "originalName": "R04_VC_Agil.txt",
+      "bytes": 3339,
+      "sha256": "397148ff8c2ae3c28dc32822abb5f8c4f5d70192902285076a331b5ad7961ff1",
+      "run": "Run 02",
+      "relative": "Respostas/Vadechat/Agil/R04_VC_Agil.txt"
+    },
+    "run02/Config/Alternancia/Q04.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Config/Alternancia/Q04.txt",
+      "originalName": "Q04.txt",
+      "bytes": 8,
+      "sha256": "ad4252473b8f180b60e1f5e2bd8a3bb49c9014f78d3a61e57b250346aee0f6fe",
+      "run": "Run 02",
+      "relative": "Config/Alternancia/Q04.txt"
+    },
+    "run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt",
+      "originalName": "R04_VC_Agil_x_ChatGPT.txt",
+      "bytes": 3350,
+      "sha256": "ef5c9ce3e1f3bd9d164507d413d9a27bfdc8c7eed29c3024a2e1b82770b61028",
+      "run": "Run 02",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R04_VC_Agil_x_ChatGPT.txt"
+    },
+    "run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 4555,
+      "sha256": "27199ed53aad575bb4bf3e3d6e091daa41de09a835d4acee5cf0b9cf7ff1a58b",
+      "run": "Run 02",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R04_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Prompts/Julgamentos/Prompt_004_v1_058c6898-d2cb-4cf1-a6fa-9ada106112f6.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_004_v1_058c6898-d2cb-4cf1-a6fa-9ada106112f6.txt",
+      "originalName": "Prompt_004_v1_058c6898-d2cb-4cf1-a6fa-9ada106112f6.txt",
+      "bytes": 12781,
+      "sha256": "c3f0c835f5a6a2aa2d2b4ef82041635992bfad30114938ed219e99d6e7423e37",
+      "run": "Run 02",
+      "relative": "Prompts/Julgamentos/Prompt_004_v1_058c6898-d2cb-4cf1-a6fa-9ada106112f6.txt"
+    },
+    "run02/Prompts/Revisoes/Prompt_004_v1_508fbebd-31fa-4171-82d6-e827faf40b5a.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_004_v1_508fbebd-31fa-4171-82d6-e827faf40b5a.txt",
+      "originalName": "Prompt_004_v1_508fbebd-31fa-4171-82d6-e827faf40b5a.txt",
+      "bytes": 17553,
+      "sha256": "596107c9baf142a573bf58eb2e1e743c36e9dca7eb10bb7d15acc15a9f273758",
+      "run": "Run 02",
+      "relative": "Prompts/Revisoes/Prompt_004_v1_508fbebd-31fa-4171-82d6-e827faf40b5a.txt"
+    },
+    "run01/Respostas/Vadechat/Pleno/R04_VC_Pleno.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Vadechat/Pleno/R04_VC_Pleno.txt",
+      "originalName": "R04_VC_Pleno.txt",
+      "bytes": 3524,
+      "sha256": "4b6a558f17b7255644357d617b6c4b13c50c4af99bc669cd5046e46106f48a5f",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Vadechat/Pleno/R04_VC_Pleno.txt"
+    },
+    "run01/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt",
+      "originalName": "R04_VC_Pleno_x_ChatGPT.txt",
+      "bytes": 4163,
+      "sha256": "226b5841bd58055be1e02072e266d09d446c0e5a1f1e5d4d7a348b0888d69906",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt"
+    },
+    "run01/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 1463,
+      "sha256": "840a089dde3f78e3598024ced41c0bd2c9bb180ea0a3eab4c6d1d51c07f9fd9b",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Respostas/Vadechat/Pleno/R04_VC_Pleno.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Pleno/R04_VC_Pleno.txt",
+      "originalName": "R04_VC_Pleno.txt",
+      "bytes": 3972,
+      "sha256": "fac47e414bde31cd29bf957aaa73cb1b2d564c7b7261847d3eb25987574c3318",
+      "run": "Run 02",
+      "relative": "Respostas/Vadechat/Pleno/R04_VC_Pleno.txt"
+    },
+    "run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt",
+      "originalName": "R04_VC_Pleno_x_ChatGPT.txt",
+      "bytes": 3420,
+      "sha256": "85804075e3d9d32997c5341cff15e1dda6fc939b67e1b86b2b67e5546ebdbc80",
+      "run": "Run 02",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R04_VC_Pleno_x_ChatGPT.txt"
+    },
+    "run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 4347,
+      "sha256": "8f37edfb84d1b0d9f421b93bb5ce65bc388818b3d85e7a5ed18d0afd4f7aebbc",
+      "run": "Run 02",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R04_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Prompts/Julgamentos/Prompt_009_v1_761e7ac1-5bff-4cac-98ea-045b675ec91f.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_009_v1_761e7ac1-5bff-4cac-98ea-045b675ec91f.txt",
+      "originalName": "Prompt_009_v1_761e7ac1-5bff-4cac-98ea-045b675ec91f.txt",
+      "bytes": 13414,
+      "sha256": "de4d8aba31376a7f063df29cd59ea4175399d2f4c8721f9fca05cfcfc46230c1",
+      "run": "Run 02",
+      "relative": "Prompts/Julgamentos/Prompt_009_v1_761e7ac1-5bff-4cac-98ea-045b675ec91f.txt"
+    },
+    "run02/Prompts/Revisoes/Prompt_009_v1_a0c925ce-e6f9-464c-be69-e76686e01e6c.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_009_v1_a0c925ce-e6f9-464c-be69-e76686e01e6c.txt",
+      "originalName": "Prompt_009_v1_a0c925ce-e6f9-464c-be69-e76686e01e6c.txt",
+      "bytes": 18256,
+      "sha256": "6095e907872b3fa220144b13089c9cf68ebf3a3034a6de6a06fee46b76adf932",
+      "run": "Run 02",
+      "relative": "Prompts/Revisoes/Prompt_009_v1_a0c925ce-e6f9-464c-be69-e76686e01e6c.txt"
+    },
+    "run01/Perguntas/Q05.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Perguntas/Q05.txt",
+      "originalName": "Q05.txt",
+      "bytes": 175,
+      "sha256": "32dc74f40d5546886adae39db2b4e2244968de873792ca709d64c1ba73c0da0a",
+      "run": "Run 01 · legado01",
+      "relative": "Perguntas/Q05.txt"
+    },
+    "run01/Respostas/Humano/R05_Humano.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Humano/R05_Humano.txt",
+      "originalName": "R05_Humano.txt",
+      "bytes": 2427,
+      "sha256": "3633ca7c708f08c17bb1709a7d7e55e44049b0fb5b619f8a304c695d96d68e81",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Humano/R05_Humano.txt"
+    },
+    "run01/Respostas/ChatGPT/R05_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/ChatGPT/R05_ChatGPT.txt",
+      "originalName": "R05_ChatGPT.txt",
+      "bytes": 4525,
+      "sha256": "3dea083a8c8568cc0c3c024cfe037a52c854adc0a560d70d9fd97f573fb445e5",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/ChatGPT/R05_ChatGPT.txt"
+    },
+    "run01/Respostas/Vadechat/Agil/R05_VC_Agil.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Vadechat/Agil/R05_VC_Agil.txt",
+      "originalName": "R05_VC_Agil.txt",
+      "bytes": 3142,
+      "sha256": "a5b6f4aadde7053b61df5d4c22461c2c31faf14afdbc8f61d7ed33aa5d00d015",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Vadechat/Agil/R05_VC_Agil.txt"
+    },
+    "run01/Config/Alternancia/Q05.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run01/Config/Alternancia/Q05.txt",
+      "originalName": "Q05.txt",
+      "bytes": 8,
+      "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+      "run": "Run 01 · legado01",
+      "relative": "Config/Alternancia/Q05.txt"
+    },
+    "run01/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt",
+      "originalName": "R05_VC_Agil_x_ChatGPT.txt",
+      "bytes": 3934,
+      "sha256": "7a79bc86173edfdb96dad5c84ddaba9dd7abc886cfa9039350e9179ff11b5b54",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt"
+    },
+    "run01/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 1767,
+      "sha256": "ddfb07caaaa9b754a1da606fdbc561ce6ffaa482a2cb2bcdc14b8480d7747700",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Perguntas/Q05.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Perguntas/Q05.txt",
+      "originalName": "Q05.txt",
+      "bytes": 175,
+      "sha256": "32dc74f40d5546886adae39db2b4e2244968de873792ca709d64c1ba73c0da0a",
+      "run": "Run 02",
+      "relative": "Perguntas/Q05.txt"
+    },
+    "run02/Respostas/Humano/R05_Humano.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Humano/R05_Humano.txt",
+      "originalName": "R05_Humano.txt",
+      "bytes": 2427,
+      "sha256": "3633ca7c708f08c17bb1709a7d7e55e44049b0fb5b619f8a304c695d96d68e81",
+      "run": "Run 02",
+      "relative": "Respostas/Humano/R05_Humano.txt"
+    },
+    "run02/Respostas/ChatGPT/R05_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/ChatGPT/R05_ChatGPT.txt",
+      "originalName": "R05_ChatGPT.txt",
+      "bytes": 4525,
+      "sha256": "3dea083a8c8568cc0c3c024cfe037a52c854adc0a560d70d9fd97f573fb445e5",
+      "run": "Run 02",
+      "relative": "Respostas/ChatGPT/R05_ChatGPT.txt"
+    },
+    "run02/Respostas/Vadechat/Agil/R05_VC_Agil.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Agil/R05_VC_Agil.txt",
+      "originalName": "R05_VC_Agil.txt",
+      "bytes": 4216,
+      "sha256": "ab4e38ab7b0d42ada5a7d174fa71062e1b119ab6e02fa4686e764b29dd62599a",
+      "run": "Run 02",
+      "relative": "Respostas/Vadechat/Agil/R05_VC_Agil.txt"
+    },
+    "run02/Config/Alternancia/Q05.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Config/Alternancia/Q05.txt",
+      "originalName": "Q05.txt",
+      "bytes": 8,
+      "sha256": "98c4e5a5e476681cd95a8760dd2e9f5fd6d260292aed7f2f3a509620c0823a1f",
+      "run": "Run 02",
+      "relative": "Config/Alternancia/Q05.txt"
+    },
+    "run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt",
+      "originalName": "R05_VC_Agil_x_ChatGPT.txt",
+      "bytes": 4663,
+      "sha256": "c41b5e4de1c5a8ba31347de5d55288a4fbf42347da0fd8940b76fa73a2b7910c",
+      "run": "Run 02",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Pontuacoes/R05_VC_Agil_x_ChatGPT.txt"
+    },
+    "run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 4743,
+      "sha256": "af4479e3b68b9102ffbf43a7297d42a77c8806a8d9d6d3bdf65291e480778fda",
+      "run": "Run 02",
+      "relative": "Aval/VC_Agil_x_ChatGPT/Notas_GPT6.1/R05_VC_Agil_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Prompts/Julgamentos/Prompt_005_v1_b7d58df4-f98c-46ee-8993-ccb00ddf5305.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_005_v1_b7d58df4-f98c-46ee-8993-ccb00ddf5305.txt",
+      "originalName": "Prompt_005_v1_b7d58df4-f98c-46ee-8993-ccb00ddf5305.txt",
+      "bytes": 14434,
+      "sha256": "284475f4b5a1a23358e1e408791ba1200b7b5a9161389bd8c8812d976454f154",
+      "run": "Run 02",
+      "relative": "Prompts/Julgamentos/Prompt_005_v1_b7d58df4-f98c-46ee-8993-ccb00ddf5305.txt"
+    },
+    "run02/Prompts/Revisoes/Prompt_005_v1_0536126a-7a82-4cdf-a518-190f84c6af0d.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_005_v1_0536126a-7a82-4cdf-a518-190f84c6af0d.txt",
+      "originalName": "Prompt_005_v1_0536126a-7a82-4cdf-a518-190f84c6af0d.txt",
+      "bytes": 20519,
+      "sha256": "b3458ecfd04a83f707e82efce2bfab620e82d9b0a877eee7bd6669c90b819d82",
+      "run": "Run 02",
+      "relative": "Prompts/Revisoes/Prompt_005_v1_0536126a-7a82-4cdf-a518-190f84c6af0d.txt"
+    },
+    "run01/Respostas/Vadechat/Pleno/R05_VC_Pleno.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Respostas/Vadechat/Pleno/R05_VC_Pleno.txt",
+      "originalName": "R05_VC_Pleno.txt",
+      "bytes": 4735,
+      "sha256": "3d4ac3848fbf0c0ec7686dfd35e4de45d717a1054e333ca060a469729cb9bfae",
+      "run": "Run 01 · legado01",
+      "relative": "Respostas/Vadechat/Pleno/R05_VC_Pleno.txt"
+    },
+    "run01/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt",
+      "originalName": "R05_VC_Pleno_x_ChatGPT.txt",
+      "bytes": 3651,
+      "sha256": "abac08fd8c0263140d6a17de3172d9082f966fbaf48eea7fa9c30a25d31558a1",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt"
+    },
+    "run01/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 2129,
+      "sha256": "5db6be949cb11430f37f46cbc995224bebc8bd2487b357213717981a87742499",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Respostas/Vadechat/Pleno/R05_VC_Pleno.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Respostas/Vadechat/Pleno/R05_VC_Pleno.txt",
+      "originalName": "R05_VC_Pleno.txt",
+      "bytes": 4700,
+      "sha256": "f4d2553b447de62013d11cdf4007bf0bbc7be6cfc72b4c88a799cbcf37018332",
+      "run": "Run 02",
+      "relative": "Respostas/Vadechat/Pleno/R05_VC_Pleno.txt"
+    },
+    "run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt",
+      "originalName": "R05_VC_Pleno_x_ChatGPT.txt",
+      "bytes": 4349,
+      "sha256": "04cc21726dd0eb2c481826a9d5407692a561d499bfe29a1250b347e3405ce1a6",
+      "run": "Run 02",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Pontuacoes/R05_VC_Pleno_x_ChatGPT.txt"
+    },
+    "run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "originalName": "R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt",
+      "bytes": 4428,
+      "sha256": "ac72affe0c997724db38c0423541fb431e4226804e73acd9f360cbc8a175c6dd",
+      "run": "Run 02",
+      "relative": "Aval/VC_Pleno_x_ChatGPT/Notas_GPT6.1/R05_VC_Pleno_x_ChatGPT_Nota_GPT6.1.txt"
+    },
+    "run02/Prompts/Julgamentos/Prompt_010_v1_0883e93f-2f73-4026-9c0d-53a48efc38ae.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Julgamentos/Prompt_010_v1_0883e93f-2f73-4026-9c0d-53a48efc38ae.txt",
+      "originalName": "Prompt_010_v1_0883e93f-2f73-4026-9c0d-53a48efc38ae.txt",
+      "bytes": 14918,
+      "sha256": "4ddd688b5ece8894c87415cb47b702b94953366013cf23c00cdc315504926ab5",
+      "run": "Run 02",
+      "relative": "Prompts/Julgamentos/Prompt_010_v1_0883e93f-2f73-4026-9c0d-53a48efc38ae.txt"
+    },
+    "run02/Prompts/Revisoes/Prompt_010_v1_bc4b1b9c-82f2-4d86-bc58-dad37fc1e0cd.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Prompts/Revisoes/Prompt_010_v1_bc4b1b9c-82f2-4d86-bc58-dad37fc1e0cd.txt",
+      "originalName": "Prompt_010_v1_bc4b1b9c-82f2-4d86-bc58-dad37fc1e0cd.txt",
+      "bytes": 20690,
+      "sha256": "b28dc3728684565e44e8009b274b9519fc66cec6ee8e79a39ed92032f14d6c1c",
+      "run": "Run 02",
+      "relative": "Prompts/Revisoes/Prompt_010_v1_bc4b1b9c-82f2-4d86-bc58-dad37fc1e0cd.txt"
+    },
+    "run01/Aval/global_prompt.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/global_prompt.txt",
+      "originalName": "global_prompt.txt",
+      "bytes": 3183,
+      "sha256": "804fd1fc570bdb21585cf577d67cfeaec1bdc5845e31aace0640ba8508e7c10b",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/global_prompt.txt"
+    },
+    "run01/Aval/answer_alternation.txt": {
+      "path": "/originals/benchmark/benchmark-2026-10-09/Aval/answer_alternation.txt",
+      "originalName": "answer_alternation.txt",
+      "bytes": 317,
+      "sha256": "63e6d2e98673157773ca34806b3a086bcda60e3002c05ea7f4b960622b07b79c",
+      "run": "Run 01 · legado01",
+      "relative": "Aval/answer_alternation.txt"
+    },
+    "run02/Aval/global_prompt.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/global_prompt.txt",
+      "originalName": "global_prompt.txt",
+      "bytes": 3183,
+      "sha256": "804fd1fc570bdb21585cf577d67cfeaec1bdc5845e31aace0640ba8508e7c10b",
+      "run": "Run 02",
+      "relative": "Aval/global_prompt.txt"
+    },
+    "run02/Aval/answer_alternation.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/answer_alternation.txt",
+      "originalName": "answer_alternation.txt",
+      "bytes": 317,
+      "sha256": "63e6d2e98673157773ca34806b3a086bcda60e3002c05ea7f4b960622b07b79c",
+      "run": "Run 02",
+      "relative": "Aval/answer_alternation.txt"
+    },
+    "run02/Aval/review_prompt.txt": {
+      "path": "/originals/benchmark/benchmark-comparativo-2026-10-14/run02/Aval/review_prompt.txt",
+      "originalName": "review_prompt.txt",
+      "bytes": 1320,
+      "sha256": "a014888cca45bc9ea9c2ebad321945825476d35360ee47a40953e97e3714792d",
+      "run": "Run 02",
+      "relative": "Aval/review_prompt.txt"
+    }
+  },
+  "protocol": {
+    "old": {
+      "global": "run01/Aval/global_prompt.txt",
+      "alternation": "run01/Aval/answer_alternation.txt"
+    },
+    "new": {
+      "global": "run02/Aval/global_prompt.txt",
+      "alternation": "run02/Aval/answer_alternation.txt",
+      "reviewInstructions": "run02/Aval/review_prompt.txt"
+    }
+  },
+  "limitations": "Lacunas metodológicas: prompts e instruções de revisão ausentes no legado; campos estruturados vazios no Run 02; descontos questionados e solicitação de inconclusividade global em Q05. As notas e os vencedores originais são preservados. Este relatório não produz novos julgamentos nem corrige o gabarito."
+}

@@ -1,0 +1,33 @@
+## 1. Tabela de avaliação
+
+| Critério | Resposta A | Resposta B |
+|---|---|---|
+| 1. Conclusão e orientação prática (0–4) | 4 | 4 |
+| 2. Fundamentação e informações essenciais (0–4) | 4 | 4 |
+| 3. Condições, limites e ressalvas (0–2) | 2 | 2 |
+| **Nota total** | **10** | **10** |
+| **Classificação** | Conforme | Conforme |
+
+## 2. Análise
+
+**Resposta A**
+- **Acertos:** Confirma que há prazo de validade de 180 dias e o fundamenta no art. 65, § 1º, da LC nº 120/2024. Indica que a contagem parte da data do deferimento do pedido. Explica que, vencido o prazo, é preciso instaurar novo processo, sem revalidação, o que corresponde à referência (necessidade de nova certidão junto à Prefeitura). Responde que a regra está no art. 65 e que esse é o fundamento municipal direto.
+- **Omissões:** Nenhuma relevante. A referência menciona "protocolo ou averbação" no Cartório. A Resposta A trata do uso no Registro de Imóveis na conclusão, de forma compatível.
+- **Contradições:** Nenhuma.
+- **Não verificável pela referência:** O conteúdo do § 2º e do § 3º, a menção ao art. 62, o art. 18 da Lei Federal nº 6.766/1979 e as distinções com outras certidões. A referência não confirma nem contradiz esses pontos. A recomendação de confirmar o marco temporal com a Prefeitura e o Registro também não é verificável, e é uma cautela prática sem conflito com a referência.
+
+**Resposta B**
+- **Acertos:** Confirma o prazo de 180 dias contados do deferimento, localiza a regra no art. 65, § 1º, e afirma que não há outro dispositivo municipal com prazo diverso. Esclarece que, após o vencimento, a certidão não pode ser revalidada e é preciso novo processo. Isso está alinhado à referência, que exige nova certidão após o prazo.
+- **Omissões:** Nenhuma relevante.
+- **Contradições:** Nenhuma.
+- **Não verificável pela referência:** O texto do § 2º, o art. 66 (prazo de 2 dias úteis para emissão da certidão) e o alerta sobre possíveis alterações legislativas posteriores. A referência não permite confirmar nem contradizer esses pontos.
+
+**Limitação da comparação:** A referência é curta e não trata dos §§ 2º e 3º, do art. 66 nem da lei federal. Esses elementos adicionais foram tratados como não verificáveis, sem prêmio nem penalidade.
+
+## 3. Resultado
+
+**Empate** (A: 10; B: 10).
+
+## 4. Justificativa final
+
+As duas respostas coincidem com a referência nos pontos centrais: existe prazo de validade; ele é de 180 dias contados do deferimento; a regra está no art. 65, § 1º, da LC nº 120/2024; e, vencido o prazo, é necessário novo procedimento junto à Prefeitura. Nenhuma contradiz a referência, e as informações adicionais de cada uma não são verificáveis por ela. As notas são iguais.

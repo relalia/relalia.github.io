@@ -2,6 +2,8 @@
 from pathlib import Path
 import json
 import os
+import subprocess
+import sys
 from xml.sax.saxutils import escape
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -49,6 +51,9 @@ def generate(data):
                 print(f'Preserved {target.relative_to(ROOT)}')
                 continue
             target.parent.mkdir(parents=True, exist_ok=True)
+            if report.get('comparisonId'):
+                subprocess.run([sys.executable, str(ROOT/'scripts/comparison-pdf.py'), str(target)], check=True)
+                continue
             doc = SimpleDocTemplate(str(target), pagesize=A4, leftMargin=46, rightMargin=46, topMargin=44, bottomMargin=44,
                 title=report['title'], author='Relalia', subject=attachment['label'], invariant=1)
             story = [p(report['title'], style='ReportTitle'), p(f"{report['module']} · {report['date']} · {report['status']}",style='Caption'),
