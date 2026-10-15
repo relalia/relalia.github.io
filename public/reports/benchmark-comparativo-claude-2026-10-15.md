@@ -25,8 +25,8 @@ Participantes: VadeChat Ágil, VadeChat Pleno e Claude gratuito. Referência: re
 | Q01 | Pleno | 9,5 | 9,0 | -0,5 | Mantém consulta à CNIB, ciência das partes e risco de não registro. A nova versão torna mais categórica a dependência de cancelamento ou autorização judicial para a transferência, em vez de desenvolver a qualificação registral. |
 | Q02 | Ágil | 7,5 | 7,5 | 0,0 | Mantém formalidades e assinaturas; amplia a explicação de dispensa para imóveis certificados e confrontações públicas. Não explicita a condição da matrícula nos marcos confrontantes e mistura declaração e anuência. |
 | Q02 | Pleno | 8,5 | 7,5 | -1,0 | Passa a distinguir retificação de área de georreferenciamento isolado e explicita o § 3º, I e II. Mantém assinaturas e deixa sem precisão a condição específica dos marcos confrontantes. |
-| Q03 | Ágil | 7,0 | 10,0 | +3,0 | Acrescenta certidão histórica do art. 809, § 4º, atos do art. 910, § 5º, prazo de 90 dias do art. 352, VII, e os 30 dias da incorporação. A versão anterior cobria apenas parte desse conjunto. |
-| Q03 | Pleno | 6,0 | 10,0 | +4,0 | A versão anterior não localizava três dispositivos. A nova organiza os quatro artigos, a certidão histórica, a transferência e os prazos de 90 e 30 dias; acrescenta dispensa documental do art. 808. |
+| Q03 | Ágil | 7,0 | 10,0 | +3,0 | Acrescenta certidão histórica do art. 809, § 4º, cobertura expressa do art. 910, § 5º, incluindo extinção, e prazo de 90 dias do art. 352, VII. Mantém o prazo de 30 dias da certidão simplificada para incorporação, já expresso no legado; esse prazo é distinto do atribuído à certidão específica pela referência e discutido na revisão. |
+| Q03 | Pleno | 6,0 | 10,0 | +4,0 | Passa a cobrir os três dispositivos antes não localizados, organizando certidão histórica, transferência e prazo de 90 dias. Mantém os 30 dias da certidão simplificada para incorporação. A dispensa do art. 808 já era desenvolvida no legado: foi reformulada na seção notarial, sem repetir a ressalva anterior para instrumentos particulares com atos já arquivados na Central ou na serventia. |
 | Q04 | Ágil | 8,0 | 9,0 | +1,0 | Passa a listar CIF e CIB e detalha saneamento e os arts. 440-AR/AS. Persistem omissões de CEP e controle societário rural; o georreferenciamento urbano é descrito como facultativo, inclusive na Reurb. |
 | Q04 | Pleno | 9,0 | 7,5 | -1,5 | Perde a nacionalidade do controlador da pessoa jurídica rural e a hipótese urbana da Reurb, antes presentes. Usa CIF ou CIB e condiciona dados de localização; a nova redação do momento do saneamento não supre essas perdas. |
 | Q05 | Ágil | 7,0 | 6,5 | -0,5 | A capacidade, expressa antes, deixa de aparecer. Mantém qualificação, assinaturas e Código Civil, mas enfatiza responsabilidade solidária e não desenvolve poderes diferentes individualizados nem compatibilidade do objeto. |
@@ -76,9 +76,9 @@ Revisões antiga e nova (síntese editorial): A revisão antiga já questionava 
 
 ### Q03 · Ágil
 
-Acrescenta certidão histórica do art. 809, § 4º, atos do art. 910, § 5º, prazo de 90 dias do art. 352, VII, e os 30 dias da incorporação. A versão anterior cobria apenas parte desse conjunto.
+Acrescenta certidão histórica do art. 809, § 4º, cobertura expressa do art. 910, § 5º, incluindo extinção, e prazo de 90 dias do art. 352, VII. Mantém o prazo de 30 dias da certidão simplificada para incorporação, já expresso no legado; esse prazo é distinto do atribuído à certidão específica pela referência e discutido na revisão.
 
-Justificativa do juiz (síntese editorial): Os critérios passam de 3,0/2,5/1,5 para 4,0/4,0/2,0. O juiz considera integral a cobertura e muda Parcialmente conforme para Conforme; o ganho de conteúdo é observável, mas a nota máxima é questionada.
+Justificativa do juiz (síntese editorial): Os critérios passam de 3,0/3,0/1,0 para 4,0/4,0/2,0. O juiz considera integral a cobertura e muda Parcialmente conforme para Conforme; o ganho de conteúdo é observável, mas a nota máxima é questionada.
 
 Revisões antiga e nova (síntese editorial): A revisão antiga ressalva calibragem e informações adicionais neutras. A nova aponta ausência explícita dos 30 dias para certidão específica, além da ambiguidade de alcance dessa exigência no gabarito; questiona o 10 e o tratamento das condições do Claude.
 
@@ -86,7 +86,7 @@ Revisões antiga e nova (síntese editorial): A revisão antiga ressalva calibra
 
 ### Q03 · Pleno
 
-A versão anterior não localizava três dispositivos. A nova organiza os quatro artigos, a certidão histórica, a transferência e os prazos de 90 e 30 dias; acrescenta dispensa documental do art. 808.
+Passa a cobrir os três dispositivos antes não localizados, organizando certidão histórica, transferência e prazo de 90 dias. Mantém os 30 dias da certidão simplificada para incorporação. A dispensa do art. 808 já era desenvolvida no legado: foi reformulada na seção notarial, sem repetir a ressalva anterior para instrumentos particulares com atos já arquivados na Central ou na serventia.
 
 Justificativa do juiz (síntese editorial): Passa de 2,5/2,0/1,5 para 4,0/4,0/2,0, de 6,0 para 10,0. Há avanço de cobertura, mas a justificativa de completude não enfrenta a lacuna apontada pelo revisor. O Claude idêntico cai de 5,5 para 3,5.
 

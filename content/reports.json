@@ -4816,13 +4816,13 @@
         {
           "id": "Q03-AGIL",
           "title": "Q03 · Ágil",
-          "description": "Acrescenta certidão histórica do art. 809, § 4º, atos do art. 910, § 5º, prazo de 90 dias do art. 352, VII, e os 30 dias da incorporação. A versão anterior cobria apenas parte desse conjunto.",
+          "description": "Acrescenta certidão histórica do art. 809, § 4º, cobertura expressa do art. 910, § 5º, incluindo extinção, e prazo de 90 dias do art. 352, VII. Mantém o prazo de 30 dias da certidão simplificada para incorporação, já expresso no legado; esse prazo é distinto do atribuído à certidão específica pela referência e discutido na revisão.",
           "kind": "Comparação de execuções",
           "status": "Resultados originais preservados",
           "evidenceIds": [],
           "retest": {
             "execution": "performed",
-            "result": "Notas originais do juiz: 7,0 para 10,0. Os critérios passam de 3,0/2,5/1,5 para 4,0/4,0/2,0. O juiz considera integral a cobertura e muda Parcialmente conforme para Conforme; o ganho de conteúdo é observável, mas a nota máxima é questionada."
+            "result": "Notas originais do juiz: 7,0 para 10,0. Os critérios passam de 3,0/3,0/1,0 para 4,0/4,0/2,0. O juiz considera integral a cobertura e muda Parcialmente conforme para Conforme; o ganho de conteúdo é observável, mas a nota máxima é questionada."
           },
           "comparisons": [
             {
@@ -4835,7 +4835,7 @@
         {
           "id": "Q03-PLENO",
           "title": "Q03 · Pleno",
-          "description": "A versão anterior não localizava três dispositivos. A nova organiza os quatro artigos, a certidão histórica, a transferência e os prazos de 90 e 30 dias; acrescenta dispensa documental do art. 808.",
+          "description": "Passa a cobrir os três dispositivos antes não localizados, organizando certidão histórica, transferência e prazo de 90 dias. Mantém os 30 dias da certidão simplificada para incorporação. A dispensa do art. 808 já era desenvolvida no legado: foi reformulada na seção notarial, sem repetir a ressalva anterior para instrumentos particulares com atos já arquivados na Central ou na serventia.",
           "kind": "Comparação de execuções",
           "status": "Resultados originais preservados",
           "evidenceIds": [],

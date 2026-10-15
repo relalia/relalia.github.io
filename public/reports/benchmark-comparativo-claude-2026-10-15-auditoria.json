@@ -3224,7 +3224,7 @@
     {
       "question": "Q03",
       "mode": "agil",
-      "shortChange": "Passa a cobrir os quatro artigos, certidão histórica e prazos de 90 e 30 dias.",
+      "shortChange": "Acrescenta certidão histórica e prazo de 90 dias; mantém os 30 dias da incorporação.",
       "id": "Q03-AGIL",
       "old": {
         "ab": {
@@ -3595,7 +3595,7 @@
     {
       "question": "Q03",
       "mode": "pleno",
-      "shortChange": "Substitui três dispositivos não localizados por cobertura dos quatro artigos e prazos.",
+      "shortChange": "Passa a cobrir três dispositivos; mantém 30 dias e reformula a dispensa já presente do art. 808.",
       "id": "Q03-PLENO",
       "old": {
         "ab": {
