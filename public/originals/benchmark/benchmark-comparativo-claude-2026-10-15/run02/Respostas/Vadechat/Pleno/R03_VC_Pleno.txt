@@ -1,0 +1,29 @@
+**Sim**, o Código de Normas e Procedimentos do Foro Extrajudicial de Goiás estabelece exigências distintas de documentos e certidões da Junta Comercial, graduando os requisitos conforme a finalidade prática do ato no cartório (comprovação incidental de representação, averbação de divergência cadastral, incorporação imobiliária ou título autônomo de transmissão de propriedade).
+
+---
+
+### **Fundamentação legal**
+
+Cumpre ao oficial verificar a autenticidade e a legitimidade dos signatários e a regularidade dos atos societários apresentados [Lei nº 10.406, de 10 de janeiro de 2002., art. 1153]. A norma estadual detalha as exigências para cada hipótese:
+
+- **Transferência e transmissão de propriedade (título causal):** a certidão dos atos de constituição, alteração ou extinção de sociedades empresárias emitida pela Junta Comercial é considerada documento hábil para a transferência dos bens [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 910, § 5º]. Essa regra espelha o regime federal, pelo qual a certidão da Junta é o próprio título para a transmissão dos bens com os quais o subscritor integralizar ou aumentar capital social [Lei nº 8.934, de 18 de novembro de 1994, art. 64].
+- **Divergência de qualificação entre o título e a matrícula (averbação prévia):** se houver divergência quanto ao nome ou outros dados de qualificação da pessoa jurídica, devem ser apresentados os atos constitutivos e demais alterações acompanhados de **certidão específica contendo o histórico de atos registrados**, emitida pela Junta Comercial no caso de sociedade empresária [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 809, § 4º].
+- **Registro de incorporação imobiliária:** sendo o incorporador pessoa jurídica, exige-se o contrato de constituição e posteriores alterações (ou estatuto acompanhado da ata da assembleia que elegeu a diretoria vigente) e, obrigatoriamente, a **Certidão Simplificada da Junta Comercial emitida em prazo não superior a 30 (trinta) dias** da protocolização, para conferência dos poderes de representação [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 1047].
+- **Esfera notarial (lavratura de escritura pública):** para a prática do ato notarial prévio, exige-se cópia do contrato social ou estatuto e **certidão simplificada emitida em até 90 (noventa) dias** [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 352, VII]. Ressalta-se que, levada a escritura ao Registro de Imóveis, não serão novamente exigidos os atos constitutivos e alterações se já estiverem identificados pelo tabelião e comprovada a outorga de poderes, salvo para resguardar a continuidade e a especialidade [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 808]. Todavia, em instrumentos particulares, a apresentação de tais atos societários é obrigatória [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 808, parágrafo único].
+
+---
+
+### **No seu cartório**
+
+O manual interno estabelece critério específico para a qualificação de instrumentos de pessoas jurídicas:
+
+- **Reconhecimento de firma e representação:** quando apresentado a registro título firmado por pessoa jurídica, exige-se cópia simples das procurações se a firma tiver sido reconhecida sob a cláusula "assina por"; tais instrumentos são dispensados quando a firma houver sido reconhecida como "representante da", em razão da responsabilidade atestada pelo notário [MACEQ – Manual de Condutas, Ética e Qualidade, versão 1.2, Janeiro/2021, item 3.4, p. 91].
+
+*Quer que eu detalhe o checklist/procedimento daqui?*
+
+---
+
+### **⚠️ Atenção**
+
+- **Certidão Simplificada × Certidão Específica:** não as confunda. Na averbação por divergência de dados [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 809, § 4º], a norma exige a certidão específica com histórico completo para garantir o encadeamento registral; já para a incorporação imobiliária [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 1047], requer-se a certidão simplificada.
+- **Prazos de validade:** atente-se para o prazo da certidão simplificada, que é de até **30 dias** na incorporação perante o RI [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 1047], divergindo do prazo de até **90 dias** previsto para os atos perante as Notas [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 352, VII].

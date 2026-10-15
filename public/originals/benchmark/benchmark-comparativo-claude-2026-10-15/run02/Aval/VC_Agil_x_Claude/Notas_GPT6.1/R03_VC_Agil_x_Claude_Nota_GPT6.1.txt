@@ -1,0 +1,40 @@
+**Nota de revisão — Prompt 3 — Ágil × Claude**
+
+A vitória de B está sustentada pela cobertura dos quatro dispositivos e dos prazos principais. Entretanto, **a nota máxima não considera uma exigência adicional da referência**, e A recebe pontuação por cautela que não corresponde, por si só, a alinhamento com o gabarito.
+
+**Registro original preservado**
+
+| Critério                               |                     A |         B |
+| -------------------------------------- | --------------------: | --------: |
+| Conclusão e orientação prática         |                 1,5/4 |       4/4 |
+| Fundamentação e informações essenciais |                 1,5/4 |       4/4 |
+| Condições, limites e ressalvas         |                 1,5/2 |       2/2 |
+| **Total**                              |            **4,5/10** | **10/10** |
+| **Classificação**                      | Parcialmente conforme |  Conforme |
+
+**Resultado original: B venceu, por 10 a 4,5.**
+
+**Problemas demonstráveis**
+
+1. **A extensão dos 30 dias à certidão específica não foi conferida.**
+   A referência acrescenta: “Essa mesma exigência de prazo de 30 […] dias para a certidão específica”. B associa expressamente os 30 dias à **certidão simplificada**, mas não faz essa associação específica para a certidão com todos os arquivamentos. O alerta genérico sobre “30 ou 90 dias, conforme o dispositivo” não resolve claramente essa lacuna. Assim, o atendimento integral das condições, usado para justificar **2/2**, não está demonstrado.
+
+2. **A cautela de A foi tratada como acerto pontuável.**
+   O juiz valoriza sua impossibilidade de confirmar os dispositivos no critério 1 e sua prudência no critério 3. Essa postura não substitui os documentos, prazos e condições presentes na referência. Os **1,5/2 em condições e ressalvas** precisam ser sustentados pelo conteúdo efetivamente correspondente ao gabarito, sem prêmio pela declaração de incerteza.
+
+3. **Os mesmos prazos ausentes aparecem em dois descontos de A.**
+   A omissão dos 90 e 30 dias fundamenta reduções nos critérios 2 e 3. O protocolo admite isso somente quando forem explicados efeitos distintos. O parecer repete a ausência, mas não explicita essa distinção. A repetição do motivo é verificável; seu efeito exato na nota não pode ser determinado.
+
+**Divergências razoáveis de interpretação**
+
+* **Alcance da última frase da referência:** a exigência de 30 dias para a certidão específica aparece sem delimitação totalmente clara de seu âmbito. O juiz deveria registrar essa ambiguidade e verificar seu atendimento, sem presumir que B a contemplou.
+* **Dispensa documental do art. 808:** B apresenta uma exceção à exigência de atos constitutivos, enquanto a referência formula uma exigência geral de apresentação. Pode tratar-se de situação específica não abrangida pelo gabarito, permanecendo não verificável. Contudo, a aparente tensão precisava ser examinada antes de afirmar ausência de contradição.
+* **Classificação de A:** “Parcialmente conforme” é defensável, pois ela oferece conteúdo substantivo sobre documentos, apesar de não resolver a aplicação dos dispositivos. A dificuldade de acesso relatada não caracteriza, sozinha, abstenção nem insuficiência da referência.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Reexaminar a nota máxima de B quanto ao prazo da certidão específica; separar a cautela de A dos conteúdos pontuáveis; esclarecer a possível exceção documental; e justificar eventuais descontos repetidos por aspectos distintos.
+
+**Conclusão**
+
+As somas e a escolha de B pela maior nota estão corretas. **A superioridade de B permanece bem sustentada**, mas as notas exatas — especialmente seus 10 pontos e os pontos de A por cautela — exigem fundamentação adicional. Os problemas encontrados podem alterar a margem, sem demonstrar necessidade de empate ou inversão. Não falta material essencial para a auditoria, embora haja ambiguidade localizada na referência.

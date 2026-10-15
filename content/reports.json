@@ -4711,6 +4711,223 @@
           ]
         }
       ]
+    },
+    {
+      "id": "benchmark-comparativo-claude-2026-10-15",
+      "date": "2026-10-15",
+      "dateNote": "Run 02",
+      "title": "Reteste VadeChat × Claude — Run 02 comparado à execução inicial",
+      "module": "VadeChat",
+      "comparisonId": "benchmark-comparativo-claude-2026-10-15",
+      "status": "Reteste comparativo",
+      "count": "5 perguntas · 10 pares de avaliações",
+      "summary": "A cobertura do gabarito cresce sobretudo em Q03, nos dois modos. O Ágil termina com média 7,5 e o Pleno com 8,4; as revisões questionam notas máximas, descontos e algumas margens de vitória. Mudança de nota não comprova, isoladamente, melhoria do sistema.",
+      "highlights": [
+        "Q03 responde por +0,6 ponto da média do Ágil e +0,8 do Pleno, acima dos ganhos líquidos de +0,5 e +0,6. As outras quatro perguntas, em conjunto, reduzem as médias em 0,1 e 0,2 ponto.",
+        "As respostas fixas do Claude receberam notas diferentes em quatro dos dez embates entre execuções. As séries contra Ágil e Pleno permanecem separadas.",
+        "O avanço de cobertura mais claro ocorre em Q03. No Pleno, Q04 perde requisitos antes presentes; em Q05, a revisão contesta o julgamento inicial e considera defensável a nova vantagem, com ressalvas."
+      ],
+      "note": "Execução exploratória com cinco perguntas. As notas medem concordância com a referência humana, sem validação jurídica independente ou demonstração de superioridade geral. As revisões por outra IA não constituem validação jurídica.",
+      "files": [
+        {
+          "label": "Comparativo sucinto · PDF",
+          "path": "/reports/benchmark-comparativo-claude-2026-10-15.pdf",
+          "kind": "pdf",
+          "origin": "generated"
+        }
+      ],
+      "findings": [
+        {
+          "id": "Q01-AGIL",
+          "title": "Q01 · Ágil",
+          "description": "A nova abertura condiciona a lavratura à comprovação de quitação anterior; acrescenta o risco de não registro, mantendo alegações sobre ato jurídico perfeito. A referência não exige que o tabelião decida a anterioridade da quitação.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 5,5 para 4,5. O juiz reduz conclusão de 2,5 para 2,0 e fundamentação de 2,5 para 2,0; ressalvas ficam em 0,5. A condição adicionada sustenta preocupação com a resposta, mas parte da redução se apoia em matéria que a referência não permite verificar."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-claude-2026-10-13",
+              "findingId": "Q01",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q01-PLENO",
+          "title": "Q01 · Pleno",
+          "description": "Mantém consulta à CNIB, ciência das partes e risco de não registro. A nova versão torna mais categórica a dependência de cancelamento ou autorização judicial para a transferência, em vez de desenvolver a qualificação registral.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 9,5 para 9,0. O único desconto novo é em ressalvas: 2,0 → 1,5. O empate em 9,5 torna-se vitória do Claude por 9,5 a 9,0; o juiz invoca a precisão das condições registrais."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-claude-2026-10-13",
+              "findingId": "Q01",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q02-AGIL",
+          "title": "Q02 · Ágil",
+          "description": "Mantém formalidades e assinaturas; amplia a explicação de dispensa para imóveis certificados e confrontações públicas. Não explicita a condição da matrícula nos marcos confrontantes e mistura declaração e anuência.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 7,5 para 7,5. A nota permanece 7,5, mas conclusão sobe de 3,0 para 3,5 e ressalvas caem de 1,5 para 1,0. A estabilidade do total esconde mudanças na distribuição dos critérios."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-claude-2026-10-13",
+              "findingId": "Q02",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q02-PLENO",
+          "title": "Q02 · Pleno",
+          "description": "Passa a distinguir retificação de área de georreferenciamento isolado e explicita o § 3º, I e II. Mantém assinaturas e deixa sem precisão a condição específica dos marcos confrontantes.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 8,5 para 7,5. O juiz reduz conclusão de 4,0 para 3,0 por considerar a orientação menos direta. Fundamentação e ressalvas permanecem em 3,0 e 1,5; Conforme torna-se Parcialmente conforme."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-claude-2026-10-13",
+              "findingId": "Q02",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q03-AGIL",
+          "title": "Q03 · Ágil",
+          "description": "Acrescenta certidão histórica do art. 809, § 4º, atos do art. 910, § 5º, prazo de 90 dias do art. 352, VII, e os 30 dias da incorporação. A versão anterior cobria apenas parte desse conjunto.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 7,0 para 10,0. Os critérios passam de 3,0/2,5/1,5 para 4,0/4,0/2,0. O juiz considera integral a cobertura e muda Parcialmente conforme para Conforme; o ganho de conteúdo é observável, mas a nota máxima é questionada."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-claude-2026-10-13",
+              "findingId": "Q03",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q03-PLENO",
+          "title": "Q03 · Pleno",
+          "description": "A versão anterior não localizava três dispositivos. A nova organiza os quatro artigos, a certidão histórica, a transferência e os prazos de 90 e 30 dias; acrescenta dispensa documental do art. 808.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 6,0 para 10,0. Passa de 2,5/2,0/1,5 para 4,0/4,0/2,0, de 6,0 para 10,0. Há avanço de cobertura, mas a justificativa de completude não enfrenta a lacuna apontada pelo revisor. O Claude idêntico cai de 5,5 para 3,5."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-claude-2026-10-13",
+              "findingId": "Q03",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q04-AGIL",
+          "title": "Q04 · Ágil",
+          "description": "Passa a listar CIF e CIB e detalha saneamento e os arts. 440-AR/AS. Persistem omissões de CEP e controle societário rural; o georreferenciamento urbano é descrito como facultativo, inclusive na Reurb.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 8,0 para 9,0. Conclusão e fundamentação sobem 0,5 cada; ressalvas permanecem em 1,5. O juiz valoriza cobertura cadastral, mas não enfrenta adequadamente a condição urbana contraposta à referência; Conforme é mantida."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-claude-2026-10-13",
+              "findingId": "Q04",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q04-PLENO",
+          "title": "Q04 · Pleno",
+          "description": "Perde a nacionalidade do controlador da pessoa jurídica rural e a hipótese urbana da Reurb, antes presentes. Usa CIF ou CIB e condiciona dados de localização; a nova redação do momento do saneamento não supre essas perdas.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 9,0 para 7,5. Os três critérios caem 0,5: 4,0/3,5/1,5 → 3,5/3,0/1,0; Conforme torna-se Parcialmente conforme. As perdas são observáveis, embora a distribuição dos descontos não seja inteiramente justificada."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-claude-2026-10-13",
+              "findingId": "Q04",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q05-AGIL",
+          "title": "Q05 · Ágil",
+          "description": "A capacidade, expressa antes, deixa de aparecer. Mantém qualificação, assinaturas e Código Civil, mas enfatiza responsabilidade solidária e não desenvolve poderes diferentes individualizados nem compatibilidade do objeto.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 7,0 para 6,5. Conclusão cai de 4,0 para 3,0, fundamentação sobe de 2,0 para 3,0 e ressalvas caem de 1,0 para 0,5. O Claude sobe de 7,5 para 8,0; sua vitória histórica é mantida."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-claude-2026-10-13",
+              "findingId": "Q05",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        },
+        {
+          "id": "Q05-PLENO",
+          "title": "Q05 · Pleno",
+          "description": "Retira a recomendação de instrumentos separados para negócios independentes, mantém capacidade e amplia exemplos. Continuam pouco desenvolvidas a compatibilidade do objeto e a individualização de poderes distintos.",
+          "kind": "Comparação de execuções",
+          "status": "Resultados originais preservados",
+          "evidenceIds": [],
+          "retest": {
+            "execution": "performed",
+            "result": "Notas originais do juiz: 6,0 para 8,0. Conclusão sobe de 3,0 para 4,0 e fundamentação de 2,0 para 3,0; ressalvas ficam em 1,0. O resultado passa de derrota por 6,0 a 7,5 para vitória por 8,0 a 7,5, sem substituir o julgamento inicial."
+          },
+          "comparisons": [
+            {
+              "reportId": "benchmark-claude-2026-10-13",
+              "findingId": "Q05",
+              "label": "Ver julgamento da execução inicial"
+            }
+          ]
+        }
+      ]
     }
   ],
   "evidence": [

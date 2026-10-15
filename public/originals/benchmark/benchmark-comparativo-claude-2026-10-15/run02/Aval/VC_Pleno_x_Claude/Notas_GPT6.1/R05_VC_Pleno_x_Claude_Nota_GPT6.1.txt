@@ -1,0 +1,43 @@
+**Nota de revisão — Prompt 10 — Pleno × Claude**
+
+O parecer é globalmente consistente: reconhece os alinhamentos e mantém neutra a responsabilidade solidária não verificável. A vitória de B é defensável, mas **a menção “expressa” ao Código Civil foi descrita incorretamente e um acerto sobre capacidade ficou sem reconhecimento específico**.
+
+**Registro original preservado**
+
+| Critério                               |                     A |        B |
+| -------------------------------------- | --------------------: | -------: |
+| Conclusão e orientação prática         |                   4/4 |      4/4 |
+| Fundamentação e informações essenciais |                   2/4 |      3/4 |
+| Condições, limites e ressalvas         |                 1,5/2 |      1/2 |
+| **Total**                              |            **7,5/10** | **8/10** |
+| **Classificação**                      | Parcialmente conforme | Conforme |
+
+**Resultado original: B venceu, por 8 a 7,5.**
+
+**Problemas demonstráveis**
+
+1. **B identifica o Código Civil por sua lei, mas não o nomeia expressamente.**
+   B menciona “legislação civil” e cita a **Lei nº 10.406/2002**. O juiz afirma que ela menciona “expressamente o Código Civil”, expressão que não aparece no texto. Considerar o fato obrigatório atendido **em substância** é defensável pelo protocolo de comparação de significado; o problema está na descrição literal, não necessariamente na pontuação.
+
+2. **A capacidade está expressamente contemplada em B.**
+   B afirma: “**Toda pessoa capaz é apta para outorgar procuração pública**”, associando isso à identificação e qualificação de cada outorgante. Esse acerto deveria ser reconhecido. Permanece correta a observação de que B não desenvolve todos os requisitos gerais do art. 104, mas essa incompletude não deve apagar o requisito de capacidade efetivamente apresentado.
+
+**Pontos que admitem interpretação**
+
+* **Artigos diferentes:** a ausência dos números 653 e 104 pode ser registrada, mas não constitui falha por si só. Os descontos devem decorrer dos conteúdos essenciais ausentes. O parecer reconhece essa regra para B, embora também enumere a ausência desses artigos entre suas omissões.
+* **“Fundamentação mais desenvolvida”:** essa justificativa só é válida quanto a conteúdo confirmado pela referência, como capacidade, identificação e assinatura. O desenvolvimento sobre solidariedade, classificado corretamente como não verificável, não pode gerar vantagem por extensão ou quantidade de citações.
+* **Distribuição das notas:** A orienta mais sobre poderes e bem específico; B explicita capacidade e formalidades individuais. Essas diferenças podem sustentar pontuações distintas, mas o parecer deveria relacioná-las mais claramente aos subtotais, especialmente diante da margem de meio ponto.
+
+**Aspectos consistentes**
+
+As duas respostas acertam a possibilidade de múltiplos outorgantes. São reais as lacunas sobre compatibilidade do objeto, individualização de poderes diferentes e limitações referentes a bens exclusivos. A ausência de fundamentação civil em A também é verificável. Não há contradição decisiva demonstrada nem dupla penalização comprovada.
+
+As somas estão corretas. Pelas notas registradas e pela ausência de contradição essencial identificada, as classificações e o vencedor atendem ao protocolo.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Corrigir a descrição da identificação normativa de B; reconhecer expressamente seu atendimento à capacidade; e justificar a vantagem em fundamentação apenas por conteúdos verificáveis, sem exigir coincidência dos números dos artigos.
+
+**Conclusão**
+
+**Não foi demonstrado erro que imponha mudança do vencedor.** As correções podem melhorar a justificativa e eventualmente afetar os subtotais, mas não autorizam presumir empate ou inversão. O resultado é defensável, com fundamentação da margem ainda aperfeiçoável. Não falta material essencial para a auditoria.

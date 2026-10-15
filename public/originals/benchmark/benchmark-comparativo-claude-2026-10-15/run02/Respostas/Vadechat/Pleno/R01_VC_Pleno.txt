@@ -1,0 +1,23 @@
+**Resposta direta**
+Sim, o tabelião pode lavrar a escritura pública de compra e venda. A existência de ordem ou gravame de indisponibilidade de bens não impede a prática do ato notarial, desde que cumpridos os deveres de consulta à CNIB, expressa cientificação das partes e consignação circunstanciada no corpo da escritura.
+
+---
+
+**Fundamentação legal**
+
+- **Consulta obrigatória à CNIB:** é dever de notários e registradores consultar previamente o banco de dados da Central Nacional de Indisponibilidade de Bens (CNIB) para a prática de seus atos de ofício, devendo o resultado da busca ser expressamente lançado no ato notarial [Provimento nº 149, de 30 de agosto de 2023, art. 320-F].
+- **Possibilidade de lavratura:** a indisponibilidade decretada contra o alienante não obsta a celebração da escritura representativa do negócio sobre o imóvel [Provimento nº 149, de 30 de agosto de 2023, art. 320-F, parágrafo único] e [Código de Normas e Procedimentos, de 18 de dezembro de 2020, art. 364].
+- **Dever de cientificação e consignação formal:** o tabelião é obrigado a dar ciência inequívoca às partes sobre a restrição e fazer constar no texto da escritura que elas foram expressamente advertidas da ordem de indisponibilidade existente [Provimento nº 149, de 30 de agosto de 2023, art. 320-F, parágrafo único].
+- **Ressalva quanto ao ingresso no Registro de Imóveis:** deve constar na escritura a advertência formal de que a indisponibilidade averbada poderá implicar a impossibilidade de registro do título perante o Registro de Imóveis competente enquanto vigorar a restrição judicial [Código de Normas e Procedimentos, de 18 de dezembro de 2020, art. 364, parágrafo único].
+
+---
+
+**Na prática**
+
+- **Quitação anterior e limites da via notarial:** a demonstração de que o promitente comprador celebrou a promessa e quitou o preço antes da decretação da indisponibilidade evidencia a boa-fé e o negócio prévio, podendo inclusive ser mencionada na escritura. Todavia, a averbação da indisponibilidade decorrente de ordem judicial impede que o registrador de imóveis promova a transferência definitiva da propriedade por mera apresentação da escritura; o tabelião não tem competência jurisdicional para afastar ou cancelar o gravame.
+- **Orientações às partes:** as partes devem ser orientadas de que, embora a escritura seja válida como negócio jurídico entre elas, a transferência do domínio no Registro de Imóveis dependerá do cancelamento ou da autorização específica perante o juízo que decretou a restrição (a Justiça Federal).
+
+---
+
+**⚠️ Atenção**
+A lavratura sem a expressa declaração de ciência das partes e sem a consignação do resultado da consulta à CNIB descumpre dever funcional do tabelião [Provimento nº 149, de 30 de agosto de 2023, art. 320-F]. Recomenda-se conferir se não houve alteração posterior nas normas correlatas.

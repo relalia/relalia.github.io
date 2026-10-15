@@ -1,0 +1,41 @@
+**Nota de revisão — Prompt 6 — Pleno × Claude**
+
+O parecer reconhece corretamente o alinhamento central das duas respostas. Contudo, **a vantagem de meio ponto depende de um desconto que mistura informação não verificável com deficiência de ressalva**, além de possível sobreposição com outro desconto aplicado a B.
+
+**Registro original preservado**
+
+| Critério                               |          A |        B |
+| -------------------------------------- | ---------: | -------: |
+| Conclusão e orientação prática         |        4/4 |      4/4 |
+| Fundamentação e informações essenciais |      3,5/4 |    3,5/4 |
+| Condições, limites e ressalvas         |        2/2 |    1,5/2 |
+| **Total**                              | **9,5/10** | **9/10** |
+| **Classificação**                      |   Conforme | Conforme |
+
+**Resultado original: A venceu, por 9,5 a 9.**
+
+**Problemas demonstráveis**
+
+1. **A necessidade de autorização judicial recebe tratamentos incompatíveis.**
+   O juiz classifica a “necessidade de autorização específica da Justiça Federal” em B como não verificável e afirma que não a penaliza por si só. Entretanto, desconta no critério 3 justamente pela formulação categórica de dependência de cancelamento ou autorização judicial. É necessário separar uma eventual omissão sobre a competência registral da informação adicional cuja correção a referência não permite confirmar. A falta de confirmação não sustenta penalidade.
+
+2. **O desconto de A não identifica claramente conteúdo essencial ausente.**
+   O parecer afirma que a distribuição de competências está “substancialmente contemplada”, mas retira meio ponto por menor explicitação. A menciona o Registro de Imóveis, a possibilidade de o registrador exigir autorização judicial e declara: “O tabelião não decide esse mérito”. Pelo protocolo, diferença de explicitação só justifica desconto se corresponder a uma lacuna de significado demonstrável, não à ausência de reprodução da formulação humana.
+
+**Pontos que admitem interpretação**
+
+* **Há diferença real entre as redações:** A diz que o registrador “pode exigir autorização”; B afirma que a transferência “dependerá do cancelamento ou da autorização específica”. B é mais categórica sobre a solução necessária. Isso pode sustentar discussão sobre fidelidade à referência, que prevê intervenção judicial **“se necessário”**, mas o juiz precisa explicar essa relação sem simultaneamente tratar o mesmo conteúdo como neutro.
+* **Possível dupla penalização em B:** a insuficiência na distribuição de competências aparece nos descontos dos critérios 2 e 3. Podem existir aspectos distintos — ausência da análise registral e imposição de solução judicial —, porém essa separação precisa ficar explícita. Não é possível confirmar duplicação apenas pelos subtotais.
+* **Categorização em A:** ela também afirma que a indisponibilidade “continua impedindo o registro”, enquanto a referência fala em possibilidade de não registro. Essa formulação merece exame contextual, considerando que A admite avaliação registral e judicial.
+
+**Aspectos consistentes**
+
+Ambas contemplam consulta à CNIB, ciência das partes, consignação da restrição e separação entre escritura e registro. O juiz reconhece esses acertos e mantém neutros os demais acréscimos não verificáveis. As somas, as classificações e o vencedor pela maior nota estão formalmente corretos.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Esclarecer o fundamento do desconto adicional de B, distinguindo informação não verificável de efetiva incompatibilidade; justificar os aspectos separados dos descontos; e indicar qual conteúdo semântico falta em A para a redução em fundamentação.
+
+**Conclusão**
+
+O alinhamento elevado de ambas está sustentado. **A vantagem de 0,5 ponto de A não está suficientemente justificada na forma apresentada.** Sua reconsideração pode eliminar a diferença, mas esta revisão não atribui novas notas nem determina empate ou inversão. Não falta material essencial para a auditoria.

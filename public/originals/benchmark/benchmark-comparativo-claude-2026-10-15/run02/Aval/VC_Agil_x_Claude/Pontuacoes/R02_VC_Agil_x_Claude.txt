@@ -1,0 +1,99 @@
+## 1. Tabela de avaliação
+
+A avaliação considera exclusivamente a pergunta, a resposta humana de referência e as respostas A e B fornecidas. O critério central é a concordância com a referência, especialmente quanto à obrigatoriedade da declaração, às assinaturas exigidas e à hipótese de dispensa de anuência dos confrontantes.
+
+| Critério | Máximo | Resposta A | Resposta B |
+| --- | --- | --- | --- |
+| Conclusão e orientação prática | 4,0 | 3,5 | 2,0 |
+| Fundamentação e informações essenciais | 4,0 | 3,0 | 3,0 |
+| Condições, limites e ressalvas | 2,0 | 1,0 | 1,5 |
+| Nota total | 10,0 | 7,5 | 6,5 |
+| Classificação | — | Parcialmente conforme | Divergente |
+
+## 2. Análise da resposta A
+
+### Critério 1 — Conclusão e orientação prática: 3,5/4,0
+
+Acertos:
+
+- Responde afirmativamente à pergunta.
+- Reconhece a exigência de declaração expressa sobre o respeito aos limites divisórios no contexto da retificação de área.
+- Explica a necessidade de formalização das assinaturas.
+
+Omissão: não explicita suficientemente que a declaração do próprio requerente deve afirmar o respeito aos limites e às confrontações, como exige a referência humana.
+
+Contradição relevante: afirma que a declaração não é sempre exigida e associa essa ressalva às hipóteses de dispensa de anuência. Isso aproxima indevidamente duas questões distintas: a declaração de respeito aos limites e a anuência dos confrontantes.
+
+### Critério 2 — Fundamentação e informações essenciais: 3,0/4,0
+
+Acertos:
+
+- Identifica corretamente o art. 440-AX e seus §§ 1º e 2º como dispositivos pertinentes à forma das declarações e às assinaturas.
+- Menciona as declarações do proprietário, do profissional técnico e dos confinantes.
+
+Omissões:
+
+- Não apresenta com clareza o conjunto de assinaturas descrito na referência, incluindo a do responsável técnico.
+- Não identifica expressamente o § 3º, inciso I, como fundamento da dispensa de anuência nas condições descritas pela referência humana.
+
+A menção ao Provimento nº 149/2023 e a outras normas constitui informação adicional não verificável pela referência, sem penalização autônoma.
+
+### Critério 3 — Condições, limites e ressalvas: 1,0/2,0
+
+A resposta reconhece que há hipóteses específicas de dispensa de anuência. Entretanto, não reproduz com precisão a condição destacada na referência: o imóvel confrontante já deve estar georreferenciado e certificado, e a matrícula do imóvel objeto deve aparecer expressamente como confrontante em seus marcos.
+
+A afirmação de que a declaração não seria sempre exigida também prejudica a distinção entre declaração e anuência.
+
+Classificação: Parcialmente conforme. A resposta acompanha a conclusão afirmativa geral, mas apresenta ressalvas que confundem exigências diferentes.
+
+## 3. Análise da resposta B
+
+### Critério 1 — Conclusão e orientação prática: 2,0/4,0
+
+Acerto: distingue a declaração de respeito aos limites da anuência dos confrontantes e reconhece que os §§ 1º e 2º tratam da forma e das assinaturas das declarações.
+
+Problema central: começa com “Não”, negando que os §§ 1º e 2º tratem da obrigatoriedade da declaração. Essa conclusão é excessivamente categórica diante da referência humana, que responde afirmativamente e cita esses parágrafos como parte da fundamentação.
+
+A distinção entre a declaração do requerente e a declaração dos confinantes é relevante, mas não justifica, por si só, a negação integral da resposta de referência.
+
+### Critério 2 — Fundamentação e informações essenciais: 3,0/4,0
+
+Acertos:
+
+- Identifica o conteúdo dos §§ 1º e 2º como relacionado ao formato e à assinatura das declarações.
+- Reconhece a participação do proprietário, do profissional técnico e dos confinantes nas declarações.
+- Identifica expressamente o § 3º, inciso I, como dispositivo relativo à dispensa de anuência.
+
+Omissão: não apresenta uma resposta afirmativa à questão central tal como formulada na referência, nem consolida os requisitos de declaração e assinatura descritos pelo profissional.
+
+As referências ao § 13 do art. 213 da LRP, aos §§ 7º a 9º e à crítica doutrinária são informações adicionais não verificáveis pela referência. Não recebem prêmio nem penalização por si mesmas.
+
+### Critério 3 — Condições, limites e ressalvas: 1,5/2,0
+
+A resposta oferece distinções úteis entre retificação de área, georreferenciamento e anuência, além de explicitar hipóteses de dispensa.
+
+Contudo, não apresenta exatamente a condição indicada na referência humana para a dispensa: a matrícula do imóvel objeto deve identificar expressamente esse imóvel como confrontante nos marcos do imóvel já georreferenciado e certificado.
+
+A alegação de que o texto consultado pode ter sido alterado é uma ressalva sobre a fonte utilizada, mas não resolve a divergência com a referência.
+
+Classificação: Divergente. A resposta contém informações aproveitáveis, mas sua negativa inicial contraria a conclusão expressa da referência.
+
+## 4. Resultado
+
+## A venceu
+
+Maior nota
+
+Resposta A
+
+# 7,5/10
+
+Parcialmente conforme
+
+Resposta B
+
+# 6,5/10
+
+Divergente
+
+Justificativa final: a resposta A vence porque preserva a conclusão afirmativa da referência e reconhece a exigência de declaração expressa, apesar de confundir parcialmente a declaração com a anuência. A resposta B identifica distinções relevantes, mas sua negativa inicial contraria a conclusão do profissional. Ambas deixam incompleta a condição específica de dispensa de anuência descrita na referência.

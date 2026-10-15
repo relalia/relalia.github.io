@@ -1,0 +1,40 @@
+**Nota de revisão — Prompt 1 — Ágil × Claude**
+
+A preferência por A tem suporte na distinção entre lavratura e registro e nos limites da atuação do tabelião. Entretanto, **o parecer utiliza afirmações não verificáveis contra B e não compatibiliza sua classificação com a contradição essencial que identifica**. Isso compromete a sustentação das notas exatas.
+
+**Registro original preservado**
+
+| Critério                               |         A |                     B |
+| -------------------------------------- | --------: | --------------------: |
+| Conclusão e orientação prática         |       4/4 |                   2/4 |
+| Fundamentação e informações essenciais |       4/4 |                   2/4 |
+| Condições, limites e ressalvas         |       2/2 |                 0,5/2 |
+| **Total**                              | **10/10** |            **4,5/10** |
+| **Classificação**                      |  Conforme | Parcialmente conforme |
+
+**Resultado original: A venceu, por 10 a 4,5. Diferença: 5,5 pontos.**
+
+**Problemas demonstráveis**
+
+1. **Informações não verificáveis fundamentam desconto em B.**
+   No critério 2, o juiz usa contra B as afirmações sobre preservação do negócio anterior e ato jurídico perfeito porque “a referência não sustenta” essas conclusões. Depois, classifica esses mesmos conteúdos como não verificáveis. O protocolo exige neutralidade quando a referência não confirma nem contradiz uma informação. A omissão sobre a competência do registrador e do juízo é um fundamento distinto e verificável para desconto.
+
+2. **Validade do negócio e registrabilidade foram aproximadas sem demonstração suficiente.**
+   B afirma que a restrição não invalida o negócio anterior, mas também adverte que ela “pode impedir o registro posterior”. Portanto, a primeira afirmação não demonstra, isoladamente, que B considere o título automaticamente registrável ou autorize afastar a restrição. A sugestão desse efeito é uma interpretação possível, não uma contradição textual comprovada.
+
+3. **A classificação de B não acompanha a gravidade atribuída à condição de quitação.**
+   B começa com “desde que o comprador comprove” a quitação anterior. O juiz considera isso uma condição indevida para permitir a lavratura. Se essa leitura caracteriza contradição de uma condição essencial, o protocolo prevê **Divergente**, e determina zero no critério cujo conteúdo essencial seja contrariado. O parecer mantém **Parcialmente conforme** e **2/4 no critério 1**, sem explicar essa compatibilidade.
+
+**Divergências razoáveis de interpretação**
+
+* **Alcance do “desde que”:** pode ser entendido como requisito indevidamente acrescentado ou como referência às circunstâncias do caso. A segunda leitura encontra algum apoio na fundamentação de B, que afirma genericamente que a indisponibilidade não impede a escritura. O juiz deve resolver essa tensão antes de definir classificação e desconto.
+* **Nota máxima de A:** A diz que a indisponibilidade “continua impedindo o registro”, formulação mais categórica que a referência, que fala em possibilidade de não registro e remete a avaliação ao registrador e ao juízo. A reconhece essas competências, o que favorece uma leitura contextual compatível; ainda assim, a diferença merece exame no critério de ressalvas.
+* **Dupla penalização:** não está demonstrada. Os descontos de B abordam aspectos potencialmente distintos — requisito para lavratura, fundamentação e limites de atuação —, mas precisam excluir o uso desfavorável de conteúdo apenas não verificável.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Reexaminar o desconto do critério 2 de B; separar validade do negócio de registrabilidade; esclarecer a interpretação da condição de quitação e compatibilizar classificação e pontuação. Examinar também a formulação categórica de A sobre o registro.
+
+**Conclusão**
+
+As somas e o vencedor pela maior nota estão corretos. **A vantagem qualitativa de A permanece sustentada**, mas a diferença de 5,5 pontos e a classificação de B exigem reconsideração. Os problemas encontrados não demonstram automaticamente empate ou inversão. Não falta material essencial para a auditoria.

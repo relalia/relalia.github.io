@@ -1,0 +1,92 @@
+## 1. Tabela de avaliação
+
+A avaliação considera exclusivamente a concordância de cada resposta com a resposta humana de referência, sem verificar a correção jurídica independente das afirmações.
+
+| Critério | Máximo | Resposta A | Resposta B |
+| --- | --- | --- | --- |
+| 1. Conclusão e orientação prática | 4,0 | 1,5 | 4,0 |
+| 2. Fundamentação e informações essenciais | 4,0 | 1,5 | 4,0 |
+| 3. Condições, limites e ressalvas | 2,0 | 1,5 | 2,0 |
+| Nota total | 10,0 | 4,5 | 10,0 |
+| Classificação |  | Parcialmente conforme | Conforme |
+
+## 2. Análise da resposta A
+
+### Critério 1 — Conclusão e orientação prática: 1,5/4,0
+
+Acertos:
+
+- Reconhece a impossibilidade de confirmar os dispositivos e evita apresentar como certa uma interpretação que declara não ter conseguido verificar.
+- Distingue certidão simplificada de certidão específica ou de inteiro teor.
+- Aponta a relevância de comprovar os atos societários e os poderes de representação.
+
+Omissões:
+
+- Não apresenta diretamente a orientação central da referência: os atos constitutivos e suas alterações devem ser acompanhados de certidão emitida pelo órgão de registro.
+- Não explica concretamente a aplicação dos quatro dispositivos indicados na pergunta.
+
+Limitação: a resposta oferece orientações gerais, mas não resolve a questão específica conforme os parâmetros da referência.
+
+### Critério 2 — Fundamentação e informações essenciais: 1,5/4,0
+
+A resposta não reproduz as distinções centrais estabelecidas pela referência:
+
+- Art. 910, § 5º: não identifica expressamente a certidão dos atos de constituição, alteração ou extinção como documento hábil para transferência de bens no Registro de Imóveis.
+- Art. 809, § 4º: não apresenta a exigência de certidão específica com o histórico dos atos registrados como regra atribuída ao dispositivo.
+- Art. 352, VII: não informa o prazo de até 90 dias para a certidão simplificada.
+- Art. 1.047: não informa a exigência de prazo de até 30 dias para a certidão simplificada nos casos de incorporação imobiliária.
+
+A resposta admite que não conseguiu confirmar o conteúdo normativo. Isso explica as omissões, mas não as supre para fins de concordância com a referência.
+
+### Critério 3 — Condições, limites e ressalvas: 1,5/2,0
+
+A resposta é cautelosa quanto à falta de confirmação dos dispositivos e reconhece que o tipo de certidão e sua atualidade podem variar conforme o ato.
+
+Entretanto, não explicita os prazos de 90 e 30 dias nem a aplicação específica deste último à incorporação imobiliária.
+
+Informações adicionais não verificáveis pela referência: as afirmações sobre cisão, fusão, cessão de quotas, poderes de representação e pessoas jurídicas registradas fora da Junta Comercial não podem ser confirmadas nem contraditas com base apenas no gabarito.
+
+Classificação: Parcialmente conforme. Há conteúdo útil, mas a resposta não fornece as distinções normativas essenciais esperadas.
+
+## 3. Análise da resposta B
+
+### Critério 1 — Conclusão e orientação prática: 4,0/4,0
+
+A resposta apresenta a orientação central da referência: atos constitutivos e alterações arquivados, acompanhados da certidão pertinente emitida pela Junta Comercial, no caso de sociedade empresária.
+
+Também responde diretamente que as exigências variam conforme o ato e organiza a orientação por dispositivo normativo.
+
+### Critério 2 — Fundamentação e informações essenciais: 4,0/4,0
+
+A resposta contempla os quatro pontos centrais da referência:
+
+- Art. 809, § 4º: certidão específica com o histórico dos atos registrados.
+- Art. 910, § 5º: certidão dos atos de constituição, alteração ou extinção como documento hábil à transferência de bens no Registro de Imóveis.
+- Art. 352, VII: certidão simplificada emitida em até 90 dias para a lavratura de escrituras públicas.
+- Art. 1.047: certidão simplificada emitida em até 30 dias da protocolização nos casos de incorporação imobiliária.
+
+A resposta, portanto, reproduz tanto a orientação documental quanto as diferenças entre os dispositivos, em consonância com a referência.
+
+### Critério 3 — Condições, limites e ressalvas: 2,0/2,0
+
+A resposta preserva a distinção entre os prazos de 90 e 30 dias e associa o prazo mais restrito à incorporação imobiliária.
+
+Também menciona a certidão específica contendo todos os arquivamentos e diferencia as finalidades dos dispositivos, sem apresentar contradição identificável com a referência.
+
+Informações adicionais não verificáveis pela referência: as afirmações sobre procuração com firma reconhecida, sociedades de advogados, dispensa de documentos prevista no art. 808 e legislação complementar não são confirmadas nem contraditas pelo gabarito. Não recebem penalidade por si só.
+
+Classificação: Conforme. A resposta atende aos pontos centrais da referência e preserva as condições relevantes.
+
+## 4. Resultado
+
+## B venceu
+
+Resposta A
+
+# 4,5/10
+
+Resposta B
+
+# 10,0/10
+
+Justificativa final: a resposta B é mais alinhada à referência porque identifica os documentos exigidos, relaciona corretamente os quatro dispositivos às respectivas finalidades e preserva os prazos de 90 e 30 dias. A resposta A é cautelosa, mas deixa de apresentar justamente essas distinções essenciais. A vitória de B decorre da concordância com o gabarito fornecido, não de uma verificação jurídica independente.

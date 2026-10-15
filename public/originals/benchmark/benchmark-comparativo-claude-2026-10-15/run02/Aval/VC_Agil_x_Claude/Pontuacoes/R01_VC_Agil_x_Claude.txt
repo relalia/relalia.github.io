@@ -1,0 +1,49 @@
+## 1. Tabela de avaliação
+
+| Critério | Resposta A | Resposta B |
+| --- | --- | --- |
+| 1. Conclusão e orientação prática (0–4) | 4,0 | 2,0 |
+| 2. Fundamentação e informações essenciais (0–4) | 4,0 | 2,0 |
+| 3. Condições, limites e ressalvas (0–2) | 2,0 | 0,5 |
+| Nota total | 10,0 | 4,5 |
+| Classificação | Conforme | Parcialmente conforme |
+
+## 2. Análise da resposta A
+
+Classificação: Conforme — 10,0/10.
+
+- Conclusão e orientação prática (4/4): afirma corretamente, em relação à referência, que o tabelião pode lavrar a escritura, mas ressalva que isso não significa que o registro será possível. Orienta consultar a CNIB, cientificar as partes e consignar a restrição na escritura.
+- Fundamentação e informações essenciais (4/4): identifica o art. 320-F, parágrafo único, do Provimento CNJ nº 149/2023 e contempla os elementos centrais da referência: possibilidade de lavratura, ciência expressa e menção à indisponibilidade no ato notarial.
+- Condições, limites e ressalvas (2/2): esclarece que o tabelião não decide sobre o mérito da alegação de aquisição anterior e que a discussão sobre o registro compete ao Registro de Imóveis e, se necessário, ao juízo competente.
+
+Informações adicionais não verificáveis pela referência: a menção à CNIB 2.0, ao Provimento nº 188/2024, à Súmula 375/STJ, à adjudicação compulsória e à documentação da anterioridade. Esses pontos não são necessários para a avaliação de concordância e não recebem prêmio nem penalidade.
+
+A resposta também apresenta detalhes normativos adicionais que não podem ser confirmados nem contraditados apenas pela referência. Isso não altera sua forte concordância com a orientação central.
+
+## 3. Análise da resposta B
+
+Classificação: Parcialmente conforme — 4,5/10.
+
+- Conclusão e orientação prática (2/4): acerta ao afirmar que a escritura pode ser lavrada e que a indisponibilidade deve ser informada e consignada no ato. Entretanto, condiciona a possibilidade de lavratura à comprovação da quitação anterior, condição que não consta da referência humana. A referência permite a lavratura independentemente dessa comprovação, sem autorizar que a quitação afaste a restrição.
+- Fundamentação e informações essenciais (2/4): cita corretamente, em relação à referência, o art. 320-F, parágrafo único, e menciona a consulta à CNIB. Contudo, afirma que a restrição não torna inválido o negócio anterior e invoca o ato jurídico perfeito, conclusões que a referência não sustenta. Também não explicita suficientemente que a avaliação da possibilidade de registro não compete ao tabelião.
+- Condições, limites e ressalvas (0,5/2): reconhece que a indisponibilidade pode impedir o registro posterior. Porém, não esclarece adequadamente que a quitação anterior não autoriza o tabelião a desconsiderar a restrição nem permite concluir que o título é registrável. Essa é uma ressalva central da referência.
+
+Informações adicionais não verificáveis pela referência: a interpretação atribuída ao art. 247 da Lei nº 6.015/1973, o princípio da continuidade registral, o ato jurídico perfeito e a referência a um guia de serventia. Não é possível validar essas afirmações com base exclusiva no material fornecido.
+
+A principal divergência é transformar a quitação anterior em condição que sustenta a lavratura e, ao mesmo tempo, sugerir que ela preserva a eficácia do negócio perante a indisponibilidade. A referência distingue expressamente a possibilidade de lavrar a escritura da possibilidade de registrá-la.
+
+## 4. Resultado
+
+## A venceu
+
+Resposta A
+
+## 10,0/10
+
+Resposta B
+
+## 4,5/10
+
+A diferença é de 5,5 pontos.
+
+Justificativa final: A resposta A reproduz os elementos essenciais da referência e preserva a distinção entre lavratura e registro, inclusive quanto à competência para analisar os efeitos da indisponibilidade. A resposta B acerta a possibilidade de lavratura e os deveres de ciência, mas atribui à quitação anterior um efeito que a referência não reconhece e omite limites importantes sobre a atuação do tabelião.

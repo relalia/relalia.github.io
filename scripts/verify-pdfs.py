@@ -28,11 +28,18 @@ for report in data['reports']:
             for row in c['rows']:
                 assert normalize(row['question']+' · '+('Ágil' if row['mode']=='agil' else 'Pleno')) in text
                 assert normalize(row['review'].replace('→',' > ').replace('—','-').replace('–','-').replace('‑','-')) in text
-            assert '+1,0 dos +1,2' in text and 'cinco dos dez embates' in text
-            assert 'inconclusividade global em Q05' in text
+            for highlight in c['highlights']:
+                assert normalize(highlight.replace('→',' > ').replace('—','-').replace('–','-')) in text
+            if c.get('alternativeLabel'):
+                assert c['alternativeLabel'] in text and 'ChatGPT Grátis' in text
+                assert 'modelo não identificado' in text
+                assert len(reader.pages)<=3,'Succinct comparison exceeded three pages'
+                assert normalize(c['editorial']['outcomeNote'].replace('→',' > ')) in text
+            else:
+                assert 'inconclusividade global em Q05' in text
             assert 'campos estruturados vazios' in text
             assert 'https://relalia.github.io/relatorios/'+c['id']+'/' in text
-            assert 'benchmark-2026-10-09' in text
+            assert c['related'][0]['id'] in text
             assert 'NÃO PUBLICADO' not in text and 'Revisão local' not in text
             print(f"{report['id']}: {len(reader.pages)} pages, all ten review summaries, highlights and evidence URLs verified")
             continue

@@ -1,0 +1,49 @@
+## 1. Tabela de avaliação
+
+A comparação considera exclusivamente a resposta humana de referência. Informações adicionais das respostas A e B que não possam ser confirmadas nem contraditas pela referência não recebem prêmio nem penalidade por si só.
+
+| Critério | Máximo | Resposta A | Resposta B |
+| --- | --- | --- | --- |
+| 1. Conclusão e orientação prática | 4 | 1,5 | 4,0 |
+| 2. Fundamentação e informações essenciais | 4 | 1,0 | 4,0 |
+| 3. Condições, limites e ressalvas | 2 | 1,0 | 2,0 |
+| Nota total | 10 | 3,5 | 10,0 |
+| Classificação |  | Parcialmente conforme | Conforme |
+
+## 2. Análise da resposta A
+
+Nota: 3,5/10 — Parcialmente conforme.
+
+- Acertos: reconhece que não conseguiu confirmar o conteúdo dos dispositivos e evita afirmar que verificou normas cujo texto não conseguiu acessar. Ao mencionar certidões simplificadas, específicas e de inteiro teor, apresenta distinções documentais relacionadas ao tema.
+- Omissões: não fornece a orientação central da referência: apresentar os atos constitutivos e suas alterações acompanhados da certidão emitida pelo órgão de registro. Também não identifica as exigências específicas atribuídas pela referência aos arts. 809, § 4º, 910, § 5º, 352, VII, e 1.047.
+- Limitação da conclusão: afirma que não pode dizer se os dispositivos impõem exigências diferentes, embora a referência fornecida permita identificar essas diferenças. Isso reduz a utilidade da resposta para a pergunta formulada.
+- Informações não verificáveis pela referência: as afirmações sobre documentos normalmente aceitos em diferentes situações, sociedades não empresárias, representação e alterações posteriores do Código não podem ser confirmadas nem contraditas pelo gabarito.
+
+A resposta demonstra cautela, mas não entrega a síntese normativa e prática que a referência exige. A principal perda de pontos decorre da ausência dessa orientação, e não da cautela em si.
+
+## 3. Análise da resposta B
+
+Nota: 10/10 — Conforme.
+
+- Acertos: apresenta a conclusão central de que há exigências documentais distintas conforme o ato. Identifica corretamente, em relação à referência, as seguintes correspondências:
+  - Art. 910, § 5º: certidão dos atos de constituição, alteração ou extinção emitida pela Junta Comercial como documento hábil para a transferência de bens.
+  - Art. 809, § 4º: certidão específica contendo o histórico dos atos registrados.
+  - Art. 352, VII: certidão simplificada emitida em até 90 dias para a lavratura de escrituras públicas.
+  - Art. 1.047: certidão simplificada emitida em prazo não superior a 30 dias para a incorporação imobiliária.
+- Fundamentação: organiza as exigências por finalidade e distingue a certidão específica da simplificada, em linha com as informações essenciais da referência.
+- Condições e ressalvas: preserva a diferença entre os prazos de 90 e 30 dias e identifica a exigência adicional de certidão específica com histórico dos arquivamentos. Esses pontos correspondem diretamente ao conteúdo do gabarito.
+- Informações não verificáveis pela referência: as afirmações sobre o art. 808, a Lei nº 10.406/2002, a Lei nº 8.934/1994, o manual interno do cartório e os procedimentos relativos a procurações não podem ser confirmadas nem contraditas pela resposta humana. Não há fundamento, nesta comparação, para premiá-las ou penalizá-las.
+
+A resposta B contempla os elementos centrais da referência e diferencia as exigências por ato e finalidade. A nota máxima decorre dessa correspondência, não da quantidade de citações ou da extensão da resposta.
+
+## 4. Resultado
+
+## B venceu
+
+Resposta A### 3,5/10
+
+Resposta B### 10/10
+
+Diferença: 6,5 pontos.
+
+Justificativa final: a resposta B reproduz substancialmente a conclusão, os documentos exigidos e os prazos específicos apresentados na referência. A resposta A reconhece suas limitações de verificação, mas não oferece as distinções normativas essenciais que a pergunta solicita e que o gabarito permite avaliar. O resultado mede concordância com a referência humana, sem atestar a correção jurídica independente das afirmações adicionais.

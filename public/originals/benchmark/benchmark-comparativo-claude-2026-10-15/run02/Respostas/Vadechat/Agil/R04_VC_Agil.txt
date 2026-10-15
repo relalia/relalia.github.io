@@ -1,0 +1,79 @@
+**Resposta direta**
+
+Para que a identificação do imóvel esteja regular na matrícula, devem constar informações específicas conforme a natureza urbana ou rural do imóvel, incluindo características, confrontações, localização, área, e dados cadastrais obrigatórios. O cartório deve exigir a atualização ou saneamento desses dados sempre que houver omissões, incorreções ou necessidade de adequação para garantir a identificação inequívoca do imóvel e dos titulares, especialmente antes da prática de atos registrais que dependam dessa regularização.
+
+---
+
+**Fundamentação legal**
+
+### 1. Informações obrigatórias na matrícula do imóvel (arts. 176 e 225 da Lei nº 6.015/1973)
+
+O artigo 176 da Lei nº 6.015/1973 disciplina os requisitos da matrícula no Livro nº 2 - Registro Geral:
+
+- Cada imóvel terá matrícula própria aberta no primeiro ato de registro ou averbação, desde que a transcrição possua todos os requisitos para abertura [Lei nº 6.015/1973, art. 176, §1º, I].
+
+- São requisitos da matrícula (art. 176, §1º, II):
+
+  - Número de ordem e data;
+
+  - Identificação do imóvel, que deve conter:
+
+    - Para imóvel rural: código do imóvel, dados do CCIR, denominação, características, confrontações, localização e área;
+
+    - Para imóvel urbano: características, confrontações, localização, área, logradouro, número e designação cadastral, se houver;
+
+  - Nome, domicílio e nacionalidade do proprietário, com qualificação detalhada:
+
+    - Pessoa física: estado civil, profissão, CPF ou documento de identidade, ou filiação na falta destes;
+
+    - Pessoa jurídica: sede social e número de inscrição no CNPJ;
+
+  - Número do registro anterior;
+
+  - Indicação da existência de matrículas em regime de multipropriedade, quando aplicável [Lei nº 6.015/1973, art. 176, §1º, II].
+
+O artigo 225 da mesma lei reforça que nas escrituras e autos judiciais as partes devem indicar com precisão os característicos, confrontações e localização do imóvel, mencionando os nomes dos confrontantes e detalhes como lado par ou ímpar do logradouro, quadra e distância métrica da edificação ou esquina mais próxima, exigindo certidão do registro imobiliário. Títulos com caracterização divergente da matrícula anterior são considerados irregulares para efeito de matrícula [Lei nº 6.015/1973, art. 225, caput e §§ 1º e 2º].
+
+Para imóveis rurais em autos judiciais, a localização, limites e confrontações devem ser obtidos a partir de memorial descritivo assinado por profissional habilitado com ART, contendo coordenadas georreferenciadas conforme o Sistema Geodésico Brasileiro e precisão fixada pelo INCRA, com isenção para proprietários com área até quatro módulos fiscais [Lei nº 6.015/1973, art. 225, §3º].
+
+### 2. Atualização e saneamento dos dados da matrícula (Provimento nº 149/2023 do CNJ)
+
+O Provimento nº 149/2023 detalha procedimentos para garantir a regularidade da identificação do imóvel:
+
+- A matrícula deve conter, além dos requisitos do art. 176 da Lei nº 6.015/1973, o Código Nacional de Matrícula (CNM), indicação da área em metros quadrados (urbano) ou hectares (rural), descrição perimetral georreferenciada para imóveis rurais com certificação do INCRA e, facultativamente, para imóveis urbanos em casos específicos (requerimento do interessado, regularização fundiária urbana - Reurb) [Provimento nº 149/2023, art. 440-AQ].
+
+- Devem constar também os códigos dos cadastros imobiliários obrigatórios, como CIF, CIB, CCIR, NIRF e CAR, conforme aplicável [Provimento nº 149/2023, art. 440-AQ, IV].
+
+- O oficial de registro deve verificar se a matrícula está omissa quanto à caracterização do imóvel ou qualificação do titular. Em caso de erro material, pode fazer retificação de ofício se houver informação no acervo; caso contrário, deve emitir nota devolutiva fundamentada em até 10 dias, indicando as averbações de saneamento necessárias, documentos e emolumentos para regularização antes de proceder ao registro ou averbação [Provimento nº 149/2023, art. 440-AR].
+
+- Para atos de constituição, transferência, modificação ou renúncia de direitos reais, parcelamento do solo, unificação, fusão ou instituição de condomínio, o oficial deve exigir previamente as averbações de saneamento dos elementos de especialidade objetiva e subjetiva omissos, incorretos ou não noticiados na matrícula, incluindo dados pessoais do proprietário, alterações de estado civil, descrição do imóvel e cadastros imobiliários obrigatórios [Provimento nº 149/2023, art. 440-AS].
+
+- Em caso de duplicidade ou multiplicidade de matrículas, o oficial deve promover saneamento administrativo, averbações de cancelamento e abertura de nova matrícula saneada, conforme previsto no Provimento [Provimento nº 149/2023, arts. 440-BB e 440-BA].
+
+- Os cartórios devem comunicar às prefeituras, até o último dia útil do mês subsequente, todas as mudanças na titularidade de imóveis para atualização cadastral dos contribuintes municipais, sem cobrança de custas ou emolumentos [Provimento nº 149/2023, art. 184-A; Resolução nº 547/2024, art. 4].
+
+### 3. Observações sobre dados pessoais e proteção
+
+O Provimento nº 149/2023 também estabelece que as serventias devem manter cadastro atualizado dos envolvidos nos atos notariais e registrais, observando normas de privacidade e proteção de dados pessoais, com procedimentos para revisão e auditoria dos contratos e compartilhamento de dados [Provimento nº 149/2023, art. 86; art. 145].
+
+---
+
+**No seu cartório**
+
+Não localizei orientação específica deste cartório sobre a exigência de atualização ou saneamento da matrícula além do que consta nas normas federais acima.
+
+---
+
+**Resumo prático**
+
+- A matrícula deve conter identificação completa e precisa do imóvel, diferenciando-se entre urbano e rural, com dados cadastrais, confrontações, localização e área.
+
+- O cartório deve exigir atualização ou saneamento da matrícula sempre que houver omissão, erro ou divergência na caracterização do imóvel ou na qualificação do titular, especialmente antes de atos que dependam da regularidade da matrícula.
+
+- O saneamento pode ser feito por averbações específicas, retificações de ofício ou mediante nota devolutiva fundamentada, com indicação dos documentos e emolumentos necessários.
+
+- A comunicação das alterações de titularidade deve ser feita às prefeituras para atualização cadastral municipal.
+
+---
+
+Quer que eu detalhe o procedimento prático para emissão da nota devolutiva e averbações de saneamento conforme o Provimento nº 149/2023?

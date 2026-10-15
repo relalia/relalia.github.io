@@ -1,0 +1,20 @@
+Não. Os §§ 1º e 2º do art. 440-AX não tratam da obrigatoriedade da "declaração de respeito de limites" no georreferenciamento. Eles regulam a forma e a assinatura das declarações no procedimento de **retificação de área**.
+
+**O que dizem os dispositivos** (acrescentados pelo Provimento CNJ 195/2025, conforme a redação consolidada no LegJur, atualizada até 28/01/2026):
+
+- **§ 1º:** a declaração expressa dos **confinantes** de que os limites divisórios foram respeitados pode constar da planta, do memorial descritivo ou de instrumento apartado, observado o art. 220 do Código Civil.
+- **§ 2º:** as declarações do proprietário, do profissional técnico e dos confinantes devem ter firma reconhecida ou assinatura eletrônica avançada ou qualificada.
+
+**Pontos de atenção:**
+
+1. **Âmbito.** O art. 440-AX trata da retificação de área de imóveis urbanos e rurais, nos moldes dos arts. 212 e 213 da Lei 6.015/1973. Não é uma norma específica sobre a averbação de georreferenciamento em si.
+2. **Quem declara.** O § 1º fala em declaração dos *confinantes*. A "declaração do requerente de que respeitou os limites e as confrontações" aparece em outra regra, o § 13 do art. 213 da LRP. As fontes que consultei a mencionam apenas indiretamente, então não consegui confirmar o texto exato desse § 13 por aqui.
+3. **Dispensa de anuência (§ 3º).** O § 3º, I, dispensa a anuência do confinante em imóveis rurais quando o imóvel confrontante e a nova descrição estiverem certificados pelo Incra, nos termos do § 5º do art. 176 da LRP. O § 3º, II, dispensa a anuência quando o confrontante for bem público, como águas públicas ou vias de circulação. Esse dispositivo é objeto de crítica doutrinária, por exemplo de Sérgio Jacomino, que sustenta que a certificação do Incra não substitui o juízo registral sobre limites e confrontações.
+4. **Controle do registrador.** Os §§ 7º e 8º condicionam o deferimento ao convencimento do oficial. Na recusa, ele deve emitir nota devolutiva fundamentada e pode exigir declarações, laudos ou outros documentos complementares.
+5. **Falsidade.** Pelo § 9º, havendo indícios de declaração falsa ou grilagem, o oficial comunica o juízo competente e o Ministério Público.
+
+A base que usei é uma compilação privada e o texto pode ter sido alterado depois. Para uso em peça ou parecer, confirme a redação vigente no texto oficial do Provimento 149/2023 no site do CNJ. Se quiser, posso verificar também a redação do art. 213, § 13, da Lei 6.015/73 e como as corregedorias estaduais têm aplicado a regra.
+
+Sources:
+- [LegJur – Art. 440-AX do Provimento CNJ 149/2023](https://www.legjur.com/legislacao/art/out_2026020900001492023-440-AX)
+- [IRIB – Comentário de Sérgio Jacomino ao art. 440-AX, §3º, I](https://www.irib.org.br/?p=157502)

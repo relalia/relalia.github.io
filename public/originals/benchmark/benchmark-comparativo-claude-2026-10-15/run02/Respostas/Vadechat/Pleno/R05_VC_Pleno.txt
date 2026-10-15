@@ -1,0 +1,20 @@
+**Sim**, uma procuração pública pode ser assinada por mais de uma pessoa como outorgante no mesmo instrumento.
+
+---
+
+### **Fundamentação legal**
+
+- **Previsão legal do mandato com múltiplos mandantes:** A legislação civil admite expressamente a outorga de procuração conjunta por duas ou mais pessoas. Quando o mandato é outorgado conjuntamente para um negócio comum, os outorgantes ficam solidariamente responsáveis perante o procurador (mandatário) por todos os compromissos e efeitos decorrentes do mandato, ressalvado o direito de regresso contra os demais mandantes pelas quantias pagas [Lei nº 10.406, de 10 de janeiro de 2002., art. 680].
+- **Capacidade e identificação:** Toda pessoa capaz é apta para outorgar procuração pública, devendo cada um dos outorgantes ser pessoalmente identificado e qualificado pelo tabelião de notas ou preposto autorizado, com a aposição de sua assinatura por autenticidade [Lei nº 10.406, de 10 de janeiro de 2002., art. 654] [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 450].
+- **Qualificação e documentação dos outorgantes:** Tratando-se de ato notarial, o tabelião colherá os documentos de identificação e qualificação de todos os outorgantes comparecentes, bem como certidão de casamento e comprovante de residência (especialmente se envolver constituição, modificação ou extinção de direito real sobre bem imóvel) [Código de Normas e Procedimentos, de 18 de dezembro de 2020., art. 455].
+
+---
+
+### **Na prática**
+
+- **Situações usuais:** É muito frequente a existência de múltiplos outorgantes em uma mesma procuração pública quando há comunhão de interesses, tais como cônjuges outorgando poderes conjuntos, coproprietários/condôminos outorgando poderes sobre o mesmo imóvel ou coerdeiros representados para inventário.
+- **Assinaturas:** Todos os que figurarem como outorgantes devem assinar o livro de notas (ou assinar eletronicamente via plataforma e-Notariado, caso o ato seja eletrônico), pois a procuração só terá validade e eficácia em relação a quem efetivamente a assinou.
+
+---
+
+*Ressalva de vigência: Recomenda-se verificar se não houve alteração posterior nas normas locais da Corregedoria-Geral de Justiça quanto a formalidades e emolumentos específicos para atos com multiplicidade de partes.*

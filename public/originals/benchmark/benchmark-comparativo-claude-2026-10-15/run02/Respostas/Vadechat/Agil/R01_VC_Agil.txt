@@ -1,0 +1,41 @@
+**Resposta direta**
+
+O tabelião poderá lavrar normalmente a escritura pública de compra e venda do imóvel, mesmo havendo indisponibilidade de bens na matrícula em nome do vendedor, desde que o comprador comprove que quitou o preço por promessa de compra e venda antes da decretação da indisponibilidade. Contudo, as partes devem ser cientificadas da existência da indisponibilidade, e essa circunstância deve constar expressamente no ato notarial.
+
+---
+
+**Fundamentação legal**
+
+- O artigo 320-F, parágrafo único, do *Provimento nº 149, de 30 de agosto de 2023*, estabelece que a existência de ordem de indisponibilidade não impede a lavratura da escritura pública, mas obriga que as partes sejam cientificadas e que a situação seja consignada no ato notarial. Isso significa que o tabelião deve informar as partes sobre a indisponibilidade e registrar essa informação na escritura, garantindo transparência e segurança jurídica no ato.  
+  [Provimento nº 149, de 30 de agosto de 2023., art. 320-F, parágrafo único]
+
+- A indisponibilidade de bens é uma averbação feita na matrícula do imóvel, conforme previsto na legislação registral, e tem por objetivo comunicar restrições judiciais sobre os bens do titular. Todavia, essa restrição não torna inválido o negócio jurídico já aperfeiçoado antes da decretação da indisponibilidade, especialmente quando o comprador comprova a quitação do preço em momento anterior à restrição.  
+  [Lei nº 6.015, de 31 de dezembro de 1973., art. 247]
+
+- O tabelião deve observar o princípio da continuidade registral e a validade do ato jurídico perfeito, que não se desfaz por fatos supervenientes, como a indisponibilidade decretada após a quitação do preço pelo comprador.  
+  [Guia da serventia — Registro de Imóveis — Compreensão registral]
+
+- Além disso, as normas da Central Nacional de Indisponibilidade de Bens (CNIB) orientam a consulta obrigatória para verificar a existência de indisponibilidade, que deve ser consignada no ato notarial, conforme o mesmo provimento.  
+  [Provimento nº 149, de 30 de agosto de 2023., art. 320-F]
+
+---
+
+**No seu cartório**
+
+Não localizei orientação específica deste cartório sobre o procedimento prático do tabelião nesse caso, além do que já consta na norma federal mencionada.
+
+---
+
+**Na prática**
+
+O tabelião deve realizar a consulta obrigatória à CNIB para verificar a indisponibilidade, informar as partes da existência dessa restrição e consignar essa informação na escritura. Se o comprador demonstrar que quitou o preço antes da indisponibilidade, o tabelião pode lavrar a escritura normalmente, respeitando a ciência das partes e a transparência do ato.
+
+---
+
+**⚠️ Atenção**
+
+A ciência das partes sobre a indisponibilidade é obrigatória para evitar futuras alegações de desconhecimento que possam comprometer a segurança jurídica do ato. A indisponibilidade não impede o ato, mas pode impedir o registro posterior, conforme a situação concreta.
+
+---
+
+Se desejar, posso ajudar a detalhar o texto da cláusula de ciência da indisponibilidade a ser incluída na escritura pública.

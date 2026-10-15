@@ -1,0 +1,89 @@
+## 1. Tabela de avaliação
+
+A avaliação considera exclusivamente a pergunta, a resposta humana de referência e as respostas A e B fornecidas. O ponto central é a concordância com a referência, especialmente quanto à obrigatoriedade da declaração e à identificação dos dispositivos que tratam da dispensa de anuência dos confrontantes.
+
+| Critério | Máximo | Resposta A | Resposta B |
+| --- | --- | --- | --- |
+| 1. Conclusão e orientação prática | 4,0 | 3,0 | 2,0 |
+| 2. Fundamentação e informações essenciais | 4,0 | 3,0 | 3,0 |
+| 3. Condições, limites e ressalvas | 2,0 | 1,5 | 1,5 |
+| Nota total | 10,0 | 7,5 | 6,5 |
+| Classificação | — | Parcialmente conforme | Parcialmente conforme |
+
+## 2. Análise da resposta A
+
+### Critério 1 — Conclusão e orientação prática: 3,0/4,0
+
+Acertos:
+
+- Reconhece a relevância da declaração de respeito aos limites no procedimento de retificação de área.
+- Explica que as declarações devem observar requisitos de apresentação e assinatura.
+- Identifica a existência de hipóteses de dispensa de anuência dos confrontantes.
+
+Omissão: não responde de maneira suficientemente direta à pergunta sobre a obrigatoriedade da declaração no georreferenciamento. Concentra-se na retificação de área, sem explicitar com a mesma clareza da referência a declaração do próprio requerente e a assinatura do responsável técnico.
+
+### Critério 2 — Fundamentação e informações essenciais: 3,0/4,0
+
+Acertos:
+
+- Identifica os §§ 1º e 2º como dispositivos relativos à apresentação das declarações e às formalidades de assinatura.
+- Menciona o § 3º, I, ao tratar da dispensa de anuência dos confrontantes.
+- Distingue a retificação de área do georreferenciamento considerado isoladamente.
+
+Limitação: a resposta amplia a fundamentação com outras normas e orientações cartorárias que não são necessárias para avaliar a concordância com a referência.
+
+A informação sobre os requisitos adicionais do manual interno e sobre outras normas é não verificável pela referência. Não deve gerar desconto por si só.
+
+### Critério 3 — Condições, limites e ressalvas: 1,5/2,0
+
+A resposta apresenta condições para a dispensa de anuência, incluindo imóveis rurais certificados e confrontações com bens públicos.
+
+A referência, entretanto, destaca especificamente a hipótese do § 3º, I, e a condição de o imóvel objeto do georreferenciamento aparecer expressamente como confrontante nos marcos do imóvel vizinho. A resposta não reproduz essa condição com a mesma precisão.
+
+Resultado de A: parcialmente conforme. Seu principal mérito é identificar corretamente a relevância do § 3º, I, para a dispensa de anuência, mas faltam elementos da orientação prática descrita na referência.
+
+## 3. Análise da resposta B
+
+### Critério 1 — Conclusão e orientação prática: 2,0/4,0
+
+Acerto: a resposta diferencia a declaração dos confrontantes da declaração do requerente e explica que os §§ 1º e 2º tratam da forma e da assinatura das declarações.
+
+Problema central: inicia com “Não”, respondendo negativamente à pergunta sobre a obrigatoriedade da declaração de respeito aos limites. Embora depois esclareça que esses parágrafos regulam aspectos formais, não estabelece de maneira suficientemente clara a conclusão afirmativa apresentada pela referência para os casos abrangidos.
+
+Essa formulação reduz a concordância com a orientação prática do gabarito.
+
+### Critério 2 — Fundamentação e informações essenciais: 3,0/4,0
+
+Acertos:
+
+- Distingue a declaração dos confinantes daquela atribuída ao requerente.
+- Identifica os §§ 1º e 2º como dispositivos sobre a forma de apresentação e as assinaturas.
+- Reconhece que a dispensa de anuência está prevista no § 3º, I, e também menciona o inciso II.
+
+Limitação: a resposta não confirma o conteúdo exato do art. 213, § 13, da Lei de Registros Públicos, reconhecendo expressamente essa limitação. Além disso, não apresenta com clareza a orientação completa da referência sobre a assinatura do requerente, dos confrontantes e do responsável técnico.
+
+A crítica doutrinária citada e os detalhes adicionais sobre a atuação do registrador são não verificáveis pela referência e, portanto, não recebem prêmio nem penalidade.
+
+### Critério 3 — Condições, limites e ressalvas: 1,5/2,0
+
+A resposta apresenta hipóteses de dispensa de anuência e ressalva que a compilação consultada pode ter sido alterada. Isso demonstra cautela quanto à fonte utilizada.
+
+Contudo, não explicita a condição indicada pela referência de que a matrícula do imóvel objeto deve aparecer expressamente como confrontante nos marcos do imóvel já georreferenciado. Essa omissão reduz a precisão na exposição da exceção.
+
+Resultado de B: parcialmente conforme. A resposta é útil para distinguir os assuntos tratados pelos dispositivos, mas sua conclusão inicial é menos alinhada à referência e sua orientação prática fica incompleta.
+
+## 4. Resultado
+
+## A venceu
+
+Resposta A
+
+# 7,5/10
+
+Resposta B
+
+# 6,5/10
+
+Diferença: 1,0 ponto.
+
+Justificativa final: A resposta A vence por apresentar maior alinhamento geral com a orientação prática da referência e por reconhecer a hipótese de dispensa de anuência prevista no § 3º, I. A resposta B identifica adequadamente a distinção entre os dispositivos, mas sua negativa inicial e a exposição incompleta da obrigatoriedade descrita na referência diminuem sua pontuação. Ambas permanecem parcialmente conformes; a avaliação não representa verificação jurídica independente das informações apresentadas.

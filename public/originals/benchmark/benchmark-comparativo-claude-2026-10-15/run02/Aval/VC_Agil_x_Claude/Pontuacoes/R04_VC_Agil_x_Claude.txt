@@ -1,0 +1,82 @@
+## 1. Tabela de avaliação
+
+A comparação considera exclusivamente a resposta humana de referência e os textos A e B fornecidos. A ausência de um dado na referência é tratada como limitação de comparação, e não como prova de incorreção.
+
+| Critério | Máximo | Resposta A | Resposta B |
+| --- | --- | --- | --- |
+| 1. Conclusão e orientação prática | 4,0 | 4,0 | 3,0 |
+| 2. Fundamentação e informações essenciais | 4,0 | 3,5 | 2,0 |
+| 3. Condições, limites e ressalvas | 2,0 | 1,5 | 1,0 |
+| Nota total | 10,0 | 9,0 | 6,0 |
+| Classificação | — | Conforme | Parcialmente conforme |
+
+## 2. Análise da resposta A
+
+Nota: 9,0/10 — Conforme.
+
+### Acertos
+
+- Conclusão e orientação prática: identifica a necessidade de regularização da matrícula e afirma que o saneamento deve ser exigido diante de omissões, incorreções ou divergências, especialmente antes de atos registrais que dependam da regularidade dos dados.
+- Informações essenciais: menciona o Código Nacional de Matrícula (CNM), a área em metros quadrados para imóveis urbanos e em hectares para imóveis rurais, a descrição perimetral georreferenciada e os códigos cadastrais pertinentes.
+- Distinção entre imóveis urbanos e rurais: contempla as diferenças de identificação e as exigências relacionadas ao georreferenciamento.
+- Momento do saneamento: prevê averbações prévias de regularização e descreve a atuação do oficial diante de omissões ou erros.
+- Fundamentação: identifica os arts. 176 e 225 da Lei nº 6.015/1973 e os dispositivos específicos do Provimento nº 149/2023, incluindo os arts. 440-AQ, 440-AR e 440-AS, em consonância com a referência.
+
+### Omissões e limitações
+
+- Não explicita todos os detalhes de localização destacados na referência, especialmente o bairro e o CEP para imóveis urbanos e rurais.
+- Não menciona expressamente a nacionalidade de quem detém a maioria do capital social de pessoa jurídica proprietária de imóvel rural.
+- Não reproduz integralmente a ressalva de que a certificação da poligonal no Incra permanece facultativa para os demais imóveis rurais, a critério do proprietário.
+- Não destaca expressamente a abertura de novas matrículas como momento para inclusão dos dados, nem o primeiro registro voluntário como ocasião para saneamento das matrículas existentes.
+
+Essas omissões justificam descontos, sobretudo no critério de informações essenciais e ressalvas, mas não comprometem a orientação central.
+
+### Informações não verificáveis pela referência
+
+A resposta acrescenta detalhes sobre nota devolutiva em até dez dias, retificação de ofício, comunicação às prefeituras, duplicidade de matrículas e proteção de dados. A referência não confirma nem contradiz especificamente esses pontos. Portanto, não cabe atribuir bônus ou penalidade por eles.
+
+## 3. Análise da resposta B
+
+Nota: 6,0/10 — Parcialmente conforme.
+
+### Acertos
+
+- Conclusão geral: reconhece a necessidade de identificação adequada do imóvel e de saneamento quando existem divergências ou imprecisões.
+- Informações essenciais: apresenta características, confrontações, localização e área, diferenciando imóveis urbanos e rurais.
+- Georreferenciamento: aborda a exigência de memorial descritivo georreferenciado para imóveis rurais nos casos aplicáveis.
+- Saneamento: menciona a correção de descrições divergentes, a retificação e a regularização prévia quando necessária.
+
+### Omissões e limitações
+
+- Não apresenta expressamente o CNM como informação obrigatória na matrícula.
+- Não especifica os detalhes de localização e o CEP destacados pela referência.
+- Não enumera integralmente os cadastros obrigatórios: CCIR, NIRF ou CIB e CAR para imóveis rurais; CIF e CIB para imóveis urbanos.
+- Não menciona a nacionalidade do controlador majoritário de pessoa jurídica proprietária de imóvel rural.
+- Não reproduz o procedimento de inclusão dos dados na abertura de novas matrículas e de saneamento das existentes por ocasião do primeiro registro voluntário.
+- Não identifica os dispositivos específicos do Provimento nº 149/2023 indicados na referência. A própria resposta reconhece que não consegue citar com segurança os artigos exatos.
+
+As omissões dos códigos cadastrais, do CNM e das regras específicas do provimento reduzem a pontuação de fundamentação. A ressalva da própria resposta sobre a impossibilidade de indicar os artigos exatos também evidencia que a abordagem da regulamentação é incompleta.
+
+### Contradições e informações não verificáveis
+
+Não há contradição decisiva demonstrada pela referência quanto à orientação geral da resposta B. A referência, porém, estabelece condições específicas para o georreferenciamento e para a certificação da poligonal que não são reproduzidas integralmente.
+
+A resposta também acrescenta informações sobre prazos escalonados, retificação, continuidade registral e normas estaduais. Esses pontos não podem ser confirmados nem contraditos apenas com a referência fornecida e, por isso, não recebem penalidade autônoma.
+
+## 4. Resultado
+
+## A venceu
+
+Resposta A
+
+# 9,0/10
+
+Resposta B
+
+# 6,0/10
+
+Diferença: 3,0 pontos.
+
+## 5. Justificativa final
+
+A resposta A é a mais alinhada à referência porque contempla os principais requisitos de identificação, os códigos cadastrais, o CNM e os procedimentos de saneamento, além de indicar os dispositivos específicos do Provimento nº 149/2023. A resposta B acerta a orientação geral e parte dos requisitos legais, mas omite informações essenciais e não identifica com precisão a regulamentação específica. A vitória de A decorre da maior concordância com o conteúdo da referência, não de uma verificação jurídica independente.

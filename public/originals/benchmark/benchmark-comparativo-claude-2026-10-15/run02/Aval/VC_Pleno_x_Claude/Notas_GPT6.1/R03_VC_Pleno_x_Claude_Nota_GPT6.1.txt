@@ -1,0 +1,44 @@
+**Nota de revisão — Prompt 8 — Pleno × Claude**
+
+A vitória de B tem suporte na cobertura dos quatro dispositivos e dos prazos principais. Entretanto, **a nota máxima desconsidera o prazo atribuído pela referência à certidão específica**, e a análise não enfrenta possíveis restrições introduzidas por B na exigência documental.
+
+**Registro original preservado**
+
+| Critério                               |                     A |         B |
+| -------------------------------------- | --------------------: | --------: |
+| Conclusão e orientação prática         |                 1,5/4 |       4/4 |
+| Fundamentação e informações essenciais |                   1/4 |       4/4 |
+| Condições, limites e ressalvas         |                   1/2 |       2/2 |
+| **Total**                              |            **3,5/10** | **10/10** |
+| **Classificação**                      | Parcialmente conforme |  Conforme |
+
+**Resultado original: B venceu, por 10 a 3,5. Diferença: 6,5 pontos.**
+
+**Problemas demonstráveis**
+
+1. **B não apresenta os 30 dias para a certidão específica.**
+   A referência termina estendendo “essa mesma exigência de prazo de 30 […] dias” à certidão específica contendo todos os arquivamentos. B associa os 30 dias apenas à **simplificada**, enquanto trata a específica como documento de histórico. Reconhecer ambas as certidões não equivale a contemplar essa condição temporal. O parecer não justifica, portanto, o atendimento integral usado para conceder **2/2 em condições e ressalvas**.
+
+2. **O tratamento global das orientações de A como não verificáveis é amplo demais.**
+   A menciona contrato social ou estatuto, certidões e comprovação de atos societários — elementos também presentes na referência. Esses são alinhamentos parciais verificáveis, embora não componham a orientação documental completa exigida. Devem ser separados das afirmações adicionais sobre tipos societários, representação e documentos alternativos.
+
+3. **Os subtotais de A não têm justificativa individualizada suficiente.**
+   O parecer explica sua deficiência geral, mas não identifica quais conteúdos sustentam especificamente **1/4 em fundamentação** e **1/2 em condições**, nem distribui os descontos. Isso limita a conferência de eventual dupla penalização, que não pode ser afirmada apenas pelas notas.
+
+**Divergências razoáveis de interpretação**
+
+* **Alcance da certidão específica:** B associa sua exigência à divergência de qualificação, enquanto a referência a apresenta de forma mais geral para pessoas jurídicas. A contextualização pode ser informação adicional, mas também pode restringir a orientação. O juiz deveria esclarecer essa leitura antes de afirmar correspondência integral.
+* **Dispensa do art. 808:** B dispensa nova apresentação de atos societários em determinadas escrituras. A referência exige os atos acompanhados de certidão. Não se pode presumir que a exceção seja falsa, mas é necessário verificar se ela apenas trata de situação adicional ou modifica uma exigência abrangida pelo gabarito.
+* **Última frase da referência:** seu âmbito é pouco desenvolvido. Isso exige registrar a ambiguidade do prazo da certidão específica, sem simplesmente ignorá-lo.
+
+**Aspectos consistentes**
+
+B efetivamente relaciona os quatro dispositivos às finalidades principais e diferencia os prazos da certidão simplificada. A não resolve essa aplicação específica, mas oferece resposta substantiva, justificando a leitura de conformidade parcial. As somas e a escolha de B pela maior nota estão corretas.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Reexaminar a nota máxima de B diante da condição temporal omitida; esclarecer o alcance das exceções documentais; reconhecer os alinhamentos parciais de A; e justificar os descontos por critério.
+
+**Conclusão**
+
+**A superioridade de B permanece sustentada**, mas seus 10 pontos e a margem exata de 6,5 pontos exigem reconsideração. Os problemas encontrados não demonstram necessidade de empate ou inversão. O material permite a auditoria, com ambiguidade localizada no alcance do prazo da certidão específica.

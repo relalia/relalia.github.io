@@ -5,7 +5,11 @@ import assert from 'node:assert/strict';
 import {randomBytes,randomUUID,pbkdf2Sync,createHash} from 'node:crypto';
 import {spawn} from 'node:child_process';
 import {once} from 'node:events';
-import d from '../content/benchmark-comparativo-2026-10-14.json' with {type:'json'};
+const id=process.argv[2]||'benchmark-comparativo-2026-10-14';
+assert(/^[a-z0-9-]+$/.test(id));
+const d=JSON.parse(fs.readFileSync(`content/${id}.json`,'utf8'));
+const catalog=JSON.parse(fs.readFileSync('content/reports.json','utf8'));
+const latest=[...catalog.reports].sort((a,b)=>b.date.localeCompare(a.date))[0];
 const base=process.env.RELALIA_TEST_URL||'http://127.0.0.1:4175';
 const server=process.env.RELALIA_TEST_URL?null:spawn(process.execPath,['scripts/serve.mjs'],{env:{...process.env,RELALIA_PORT:'4175'},stdio:['ignore','pipe','inherit']});
 if(server)await Promise.race([once(server.stdout,'data'),once(server,'exit').then(([code])=>{throw Error(`Preview exited ${code}`);})]);
@@ -25,7 +29,8 @@ try{
     await page.locator('.benchmark-comparison').waitFor();
     assert(await page.getByRole('heading',{name:d.title,exact:true}).isVisible());
     assert.equal(await page.locator('#comparison-table tbody tr').count(),10);
-    assert((await page.locator('#comparison-results').innerText()).includes('+1,0 dos +1,2'));
+    assert((await page.locator('#comparison-results').innerText()).includes(d.highlights[0]));
+    if(d.alternativeLabel)assert(!(await page.locator('.benchmark-comparison').innerText()).includes('inconclusividade global'));
     const noOverflow=async()=>assert(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+1),`${width}: horizontal overflow`);
     await noOverflow();
     if(width<=768){const a=await page.locator('article').boundingBox(),t=await page.locator('.timeline-pane').boundingBox();assert(a.y<t.y);}
@@ -52,11 +57,12 @@ try{
     assert.equal(norm(await page.evaluate(()=>navigator.clipboard.readText())),norm(d.documents[d.rows.find(r=>r.id==='Q04-PLENO').sources.new.question].text));
     const downloadPromise=page.waitForEvent('download');await copy.getByRole('link',{name:'Baixar arquivo de origem'}).click();assert((await downloadPromise).suggestedFilename().endsWith('.txt'));
     await card.evaluate(el=>el.open=false);
-    await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`tmp/comparison-ui/comparison-${width}.png`});
+    await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`tmp/comparison-ui/${d.id}-${width}.png`});
     await page.reload();await page.locator('.benchmark-comparison').waitFor();
-    await page.goto(base+'/');await page.locator('.benchmark-comparison').waitFor();assert(await page.locator('.timeline a[aria-current="page"]').getAttribute('href')===`/relatorios/${d.id}/`);
-    await page.getByRole('link',{name:'Execução inicial · 09/10/2026',exact:true}).click();await page.locator('.benchmark:not(.benchmark-comparison)').waitFor();
-    assert(page.url().includes('benchmark-2026-10-09'));
+    await page.goto(base+'/');await page.locator('.benchmark-comparison').waitFor();assert(await page.locator('.timeline a[aria-current="page"]').getAttribute('href')===`/relatorios/${latest.id}/`);
+    if(d.id!==latest.id){await page.locator(`.timeline a[href="/relatorios/${d.id}/"]`).click();await page.getByRole('heading',{name:d.title,exact:true}).waitFor();}
+    await page.getByRole('link',{name:d.related[0].label,exact:true}).click();await page.locator('.benchmark:not(.benchmark-comparison)').waitFor();
+    assert(page.url().includes(d.related[0].id));
     assert(await page.locator(`.timeline a[href="/relatorios/${d.id}/"]`).isVisible(),'New catalog card missing on historical report');
     await context.close();
     console.log(`${width}px: route, home, keyboard, sources, copy/download, history and overflow verified`);

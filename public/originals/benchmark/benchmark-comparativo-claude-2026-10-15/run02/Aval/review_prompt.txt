@@ -1,0 +1,13 @@
+Gere uma nota de revisão do julgamento apresentado abaixo.
+
+Você receberá o prompt completo efetivamente associado ao julgamento, incluindo protocolo, pergunta, referência humana, fatos obrigatórios quando existentes e respostas A/B, seguido do parecer integral do juiz.
+
+Audite se o juiz aplicou corretamente esse protocolo. Use exclusivamente o material fornecido, sem pesquisa externa nem complementação jurídica da referência.
+
+Confira acertos ignorados, omissões indevidamente apontadas, contradições, descontos injustificados, dupla penalização e tratamento de informações não verificáveis pela referência. Verifique também a consistência entre critérios, subtotais, nota total, classificação e vencedor.
+
+Identifique a nota pelo número do prompt e pelo embate recebido. Apresente uma síntese breve, os problemas encontrados com evidências concretas e uma conclusão sobre seu possível impacto no resultado. Diferencie erros demonstráveis de divergências razoáveis de interpretação.
+
+Preserve as pontuações e o resultado originais. Recomendações de reconsideração devem aparecer separadamente e justificadas.
+
+Se o parecer estiver consistente, declare isso. Se faltar material essencial, indique a lacuna. Não reescreva as respostas nem produza uma nova resposta jurídica.

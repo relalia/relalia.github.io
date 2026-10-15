@@ -1,0 +1,46 @@
+## 1. Tabela de avaliação
+
+| Critério | Resposta A | Resposta B |
+| --- | --- | --- |
+| 1. Conclusão e orientação prática (0–4) | 4,0 | 3,0 |
+| 2. Fundamentação e informações essenciais (0–4) | 2,5 | 3,0 |
+| 3. Condições, limites e ressalvas (0–2) | 1,5 | 0,5 |
+| Nota total | 8,0/10 | 6,5/10 |
+| Classificação | Conforme | Parcialmente conforme |
+
+## 2. Análise individual
+
+### Resposta A — 8,0/10
+
+Classificação: Conforme
+
+- Acertos: responde diretamente que a procuração pública pode ter vários outorgantes. Os exemplos de casais, herdeiros e coproprietários são compatíveis com a referência. Também recomenda identificar os poderes conferidos e descrever o bem ou ato pertinente, em consonância com a orientação prática humana.
+- Omissão de fundamentação: não menciona expressamente o Código Civil, embora esse seja um fato obrigatório. A ausência justifica desconto no critério 2, pois a referência fundamenta a resposta nos arts. 653 e 104.
+- Omissões de condições: não explicita os requisitos de capacidade dos outorgantes nem a necessidade de compatibilidade quanto ao objeto da representação. Também não desenvolve a individualização dos poderes de cada outorgante quando forem diferentes.
+- Informações adicionais não verificáveis pela referência: os procedimentos relativos ao e-Notariado, a possibilidade de revogação individual e as preferências de bancos ou registros por procuração conjunta não podem ser confirmados nem contraditos com base no texto de referência. Não recebem penalidade por si só.
+
+Justificativa da nota: a resposta está alinhada à conclusão e oferece orientação prática pertinente. Perde pontos principalmente pela ausência da referência expressa ao Código Civil e pela apresentação incompleta das condições jurídicas destacadas no gabarito.
+
+### Resposta B — 6,5/10
+
+Classificação: Parcialmente conforme
+
+- Acertos: responde afirmativamente à pergunta e menciona expressamente o Código Civil, cumprindo o fato obrigatório. Também contempla a qualificação dos outorgantes, a coleta de assinaturas e a descrição dos poderes, aspectos presentes na referência humana.
+- Omissões: não explicita os requisitos de capacidade de cada outorgante, a identidade ou compatibilidade do objeto da representação nem a possibilidade de conferir poderes idênticos ou distintos, desde que individualizados. Também não apresenta os exemplos práticos da referência.
+- Contradição ou extrapolação relevante: afirma que os outorgantes assumem “responsabilidade solidária pelos atos praticados” e reforça que todos respondem pelos atos do mandatário. A referência humana não estabelece essa consequência. Portanto, a afirmação é não verificável pela referência, e não pode ser classificada como falsa apenas com base na comparação. Entretanto, ela é apresentada como regra geral e pode transmitir uma condição jurídica essencial que o gabarito não confirma. Isso reduz a pontuação de condições e ressalvas, sem presumir que a afirmação seja juridicamente incorreta.
+- Informações adicionais não verificáveis pela referência: as referências aos arts. 449, 450, 453 e 455, § 1º, de um Código de Normas e Procedimentos, bem como as regras sobre pluralidade de procuradores e eficácia dos atos praticados, não são avaliáveis com base no material fornecido. A referência humana não permite confirmar nem contradizer esses pontos.
+- Limitação da comparação normativa: a resposta menciona o art. 680 do Código Civil, enquanto a referência cita os arts. 653 e 104. A diferença de dispositivos não constitui, por si só, erro ou motivo de desconto; o problema avaliativo está na impossibilidade de confirmar pela referência a consequência de solidariedade afirmada pela resposta.
+
+Justificativa da nota: a resposta acerta a conclusão, menciona o Código Civil e oferece orientações notariais pertinentes. Perde pontos por omitir condições essenciais enfatizadas no gabarito e por apresentar a responsabilidade solidária como consequência geral sem respaldo verificável na referência.
+
+## 3. Resultado
+
+## A venceu
+
+## 8,0 × 6,5
+
+A resposta A obtém a maior nota e atende ao limiar de conformidade. A resposta B apresenta conteúdo aproveitável, mas não alcança 8 pontos.
+
+## 4. Justificativa final
+
+A resposta A é mais fiel ao conjunto da referência, sobretudo na conclusão, nos exemplos e na orientação prática. A resposta B cumpre o requisito de mencionar o Código Civil e traz orientações pertinentes, mas omite condições importantes e apresenta a responsabilidade solidária como regra geral, ponto que a referência não permite validar. A comparação não determina a correção jurídica independente de nenhuma das respostas.

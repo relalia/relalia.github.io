@@ -1,0 +1,40 @@
+**Nota de revisão — Prompt 5 — Ágil × Claude**
+
+O parecer aplica um desconto **expressamente vedado pelo protocolo**: penaliza B pela responsabilidade solidária depois de reconhecer que essa informação não pode ser confirmada nem contradita pela referência. Como ambas omitem condições semelhantes, esse tratamento compromete a sustentação da vantagem de A.
+
+**Registro original preservado**
+
+| Critério                               |        A |                     B |
+| -------------------------------------- | -------: | --------------------: |
+| Conclusão e orientação prática         |      4/4 |                   3/4 |
+| Fundamentação e informações essenciais |    2,5/4 |                   3/4 |
+| Condições, limites e ressalvas         |    1,5/2 |                 0,5/2 |
+| **Total**                              | **8/10** |            **6,5/10** |
+| **Classificação**                      | Conforme | Parcialmente conforme |
+
+**Resultado original: A venceu, por 8 a 6,5.**
+
+**Problemas demonstráveis**
+
+1. **Informação não verificável foi penalizada.**
+   O juiz reconhece que a solidariedade é “não verificável pela referência”, mas declara que sua apresentação como regra geral “reduz a pontuação de condições e ressalvas”. A justificativa final repete esse motivo desfavorável. O protocolo não permite desconto pela falta de confirmação, mesmo quando a informação é apresentada categoricamente. Seria necessário demonstrar contradição com a referência, o que o parecer não faz.
+
+2. **Condições semelhantes recebem tratamento desigual sem justificativa válida suficiente.**
+   O juiz aponta em ambas ausência de capacidade, compatibilidade do objeto e desenvolvimento da individualização dos poderes. Mesmo assim, concede **1,5/2 a A e 0,5/2 a B**, apoiando a diferença na solidariedade não verificável. A oferece alguma orientação adicional sobre os poderes e o bem específico, mas o parecer precisa explicar quanto isso supre as condições da referência, independentemente do desconto proibido.
+
+3. **A ausência de exemplos em B foi tratada como omissão sem demonstrar perda de conteúdo essencial.**
+   Cônjuges, coproprietários e herdeiros são exemplos ilustrativos da referência. Não reproduzi-los não constitui, por si só, deficiência de concordância. Sua presença em A pode ajudar a esclarecer a regra, mas não deve gerar vantagem automática quando ambas respondem afirmativamente à possibilidade de múltiplos outorgantes.
+
+**Pontos que exigem esclarecimento**
+
+* **Diferença no critério 1:** ambas acertam a conclusão e oferecem orientação notarial. O parecer não vincula claramente o **3/4 de B** a uma falha distinta das omissões já utilizadas nos demais critérios ou da solidariedade indevidamente penalizada.
+* **Possível dupla penalização:** as condições omitidas aparecem na justificativa geral dos descontos, sem distribuição precisa entre critérios. Não é possível confirmar duplicação efetiva, mas falta explicação para afastá-la.
+* **Classificação de A:** a ausência do Código Civil é real e corretamente identificada. Entretanto, o protocolo não estabelece que descumprir esse fato obrigatório impeça automaticamente a classificação Conforme. Com os oito pontos registrados e sem contradição decisiva demonstrada, a classificação é formalmente compatível.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Retirar a solidariedade dos motivos desfavoráveis; comparar uniformemente as condições omitidas; separar exemplos ilustrativos de requisitos essenciais; e justificar cada desconto sem repetição indevida.
+
+**Conclusão**
+
+As somas e o vencedor pela maior nota estão corretos. Contudo, **a vantagem de 1,5 ponto de A não está suficientemente sustentada**, pois depende parcialmente de um desconto contrário ao protocolo. A reconsideração pode afetar notas, classificação e resultado, sem determinar automaticamente empate ou inversão. Não falta material essencial para a auditoria.

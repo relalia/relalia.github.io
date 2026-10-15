@@ -1,0 +1,44 @@
+**Nota de revisão — Prompt 4 — Ágil × Claude**
+
+A maior cobertura de A está demonstrada, mas **o parecer deixa de examinar uma possível contradição em condição essencial do georreferenciamento urbano**. Isso pode afetar sua classificação como Conforme, além da pontuação em ressalvas.
+
+**Registro original preservado**
+
+| Critério                               |        A |                     B |
+| -------------------------------------- | -------: | --------------------: |
+| Conclusão e orientação prática         |      4/4 |                   3/4 |
+| Fundamentação e informações essenciais |    3,5/4 |                   2/4 |
+| Condições, limites e ressalvas         |    1,5/2 |                   1/2 |
+| **Total**                              | **9/10** |              **6/10** |
+| **Classificação**                      | Conforme | Parcialmente conforme |
+
+**Resultado original: A venceu, por 9 a 6. Diferença: 3 pontos.**
+
+**Problemas demonstráveis**
+
+1. **A divergência sobre georreferenciamento urbano não foi analisada.**
+   A referência apresenta a descrição georreferenciada como obrigatória para imóveis urbanos em situações de Reurb ou por requerimento do interessado. A escreve: **“facultativamente, para imóveis urbanos em casos específicos (requerimento do interessado, […] Reurb)”**. O juiz registra genericamente que A contempla as exigências, sem enfrentar essa diferença entre obrigação e faculdade. Se a redação de A for entendida como facultatividade também na Reurb, há contradição de condição essencial, incompatível com a classificação Conforme pelo protocolo.
+
+2. **A análise das omissões de B está incompleta.**
+   Além dos pontos corretamente identificados pelo juiz, B não especifica as unidades **m² para urbanos e hectares para rurais**, nem a hipótese urbana de georreferenciamento ligada à Reurb ou ao requerimento. Essas ausências são verificáveis pela referência e precisam integrar a justificativa das notas, sem criação automática de novos descontos.
+
+3. **A menção ao CNM em B exige descrição precisa.**
+   B menciona “Cadastro Nacional de Matrícula (CNM)” e integração com CCIR e CIB/NIRF. O parecer acerta ao dizer que ela não apresenta expressamente o CNM **como informação obrigatória na matrícula**. A deficiência é essa falta de enquadramento, acompanhada da denominação diferente; não a ausência completa de menção ao CNM.
+
+**Divergências razoáveis de interpretação**
+
+* **Alcance de “facultativamente” em A:** pode estar tentando descrever a iniciativa voluntária do interessado. Contudo, a frase abrange também Reurb. O parecer deveria resolver essa ambiguidade, distinguindo-a de uma simples omissão.
+* **Momento de abertura em A:** ela menciona a abertura de matrícula no primeiro ato de registro ou averbação, mas não relaciona claramente esse momento à inclusão de todos os dados da referência. Há atendimento parcial, sem reprodução integral da regra sobre novas matrículas e primeiro registro voluntário.
+* **Magnitude dos descontos:** a lista de omissões de A é relevante, mas o protocolo não fixa desconto por item. Não é possível demonstrar apenas pela quantidade de faltas que 9 seria matematicamente incorreto. É necessário justificar seu impacto em cada critério. Também não há elementos suficientes para confirmar dupla penalização.
+
+**Aspectos consistentes**
+
+O juiz reconhece corretamente a maior cobertura documental de A e as omissões de bairro, CEP, nacionalidade do controlador e condições de certificação. Trata adequadamente os acréscimos não verificáveis como neutros. As somas e o vencedor pela maior nota estão corretos.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Examinar expressamente a oposição entre obrigatório e facultativo em A; compatibilizar classificação e pontuação com a interpretação adotada; e completar a análise das omissões de B, preservando os alinhamentos parciais existentes.
+
+**Conclusão**
+
+A preferência por A tem suporte na cobertura mais ampla, mas **sua classificação como Conforme não está suficientemente sustentada sem resolver a questão da Reurb**. A reconsideração pode alterar classificação, notas e margem; não demonstra automaticamente empate ou inversão. Não falta material essencial para a auditoria.

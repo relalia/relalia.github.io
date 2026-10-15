@@ -1,0 +1,43 @@
+**Nota de revisão — Prompt 7 — Pleno × Claude**
+
+A diferença de um ponto não está suficientemente sustentada: **o juiz penaliza a negativa inicial de B sem enfrentar a observação de revisão**, que confirma o caráter formal dos §§ 1º e 2º. Também atribui insuficiência à menção das assinaturas que ambas apresentam expressamente.
+
+**Registro original preservado**
+
+| Critério                               |                     A |                     B |
+| -------------------------------------- | --------------------: | --------------------: |
+| Conclusão e orientação prática         |                   3/4 |                   2/4 |
+| Fundamentação e informações essenciais |                   3/4 |                   3/4 |
+| Condições, limites e ressalvas         |                 1,5/2 |                 1,5/2 |
+| **Total**                              |            **7,5/10** |            **6,5/10** |
+| **Classificação**                      | Parcialmente conforme | Parcialmente conforme |
+
+**Resultado original: A venceu, por 7,5 a 6,5.**
+
+**Problemas demonstráveis**
+
+1. **A negativa de B não foi avaliada pelo significado completo.**
+   B nega que os §§ 1º e 2º estabeleçam a obrigatoriedade e explica que regulam forma e assinatura. A observação fornecida afirma que esses parágrafos “tratam apenas do formato e do reconhecimento de assinaturas”. A também distingue retificação de área de georreferenciamento isolado. Portanto, o “Não” não demonstra, sozinho, menor alinhamento de B. É necessário separar o alcance dos dispositivos da exigência material descrita pela referência.
+
+2. **As assinaturas dos três participantes estão presentes nas duas respostas.**
+   A afirma que as declarações do “proprietário, […] profissional técnico e […] confinantes devem ser assinadas”. B apresenta o mesmo conjunto e suas formalidades. Assim, a falta de indicação da assinatura do responsável técnico não está demonstrada. Permanece uma questão distinta: ambas deixam pouco explícito o conteúdo específico da declaração do requerente de que respeitou limites e confrontações.
+
+3. **O desconto em fundamentação de A não tem motivo verificável identificado.**
+   No critério 2, o juiz lista acertos e aponta como limitação apenas a ampliação com normas e orientações adicionais, imediatamente reconhecidas como não penalizáveis por si. Isso não explica a retirada de um ponto. Em B, a impossibilidade de confirmar o art. 213, § 13, também não fundamenta desconto autônomo: esse dispositivo não integra a referência fornecida.
+
+4. **O § 3º, I, não diferencia A de B.**
+   A justificativa final associa a vitória de A ao reconhecimento desse fundamento de dispensa. B também o identifica expressamente, como o próprio juiz reconhece. Esse acerto compartilhado não explica a vantagem atribuída a A.
+
+**Divergências razoáveis de interpretação**
+
+* A referência responde afirmativamente, enquanto sua observação restringe o conteúdo dos parágrafos. Isso exige leitura conjunta; não autoriza privilegiar automaticamente uma resposta afirmativa nem dispensar a apresentação dos requisitos materiais.
+* É correta a identificação, em ambas, da ausência da condição específica de a matrícula aparecer expressamente como confrontante nos marcos do imóvel certificado. A menciona marcos no procedimento local, mas não estabelece essa condição de dispensa.
+* A cautela sobre fontes não substitui condições da referência. Não há demonstração suficiente de dupla penalização, embora os descontos precisem de motivos mais precisos.
+
+**Recomendações de reconsideração — separadas do registro original**
+
+Reexaminar a diferença no critério 1 considerando a observação de revisão; reconhecer as assinaturas expressamente indicadas; justificar os descontos em fundamentação por lacunas reais; e retirar acertos compartilhados da justificativa de superioridade.
+
+**Conclusão**
+
+As somas, as classificações pelas notas atribuídas e o vencedor pela maior nota estão formalmente corretos. Contudo, **a vantagem de A depende de uma distinção insuficientemente demonstrada**. A reconsideração pode eliminar ou alterar essa diferença, sem que esta revisão determine novas notas ou vencedor. Não falta material essencial; a tensão interpretativa interna da referência precisava ser enfrentada.

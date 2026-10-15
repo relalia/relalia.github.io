@@ -1,0 +1,35 @@
+## 1. Tabela de avaliação
+
+| Critério | Resposta A | Resposta B |
+| --- | --- | --- |
+| 1. Conclusão e orientação prática (0–4) | 4,0 | 4,0 |
+| 2. Fundamentação e informações essenciais (0–4) | 3,5 | 3,5 |
+| 3. Condições, limites e ressalvas (0–2) | 2,0 | 1,5 |
+| Nota total | 9,5/10 | 9,0/10 |
+| Classificação | Conforme | Conforme |
+
+## 2. Análise individual
+
+### Resposta A — 9,5/10
+
+- Acertos: responde corretamente, em relação à referência, que o tabelião pode lavrar a escritura. Explicita os deveres de consulta à CNIB, cientificação das partes e consignação da indisponibilidade no ato notarial.
+- Limites e ressalvas: distingue adequadamente a lavratura da escritura de seu registro imobiliário e afirma que o tabelião não decide sobre o afastamento da restrição. Também esclarece que a quitação anterior não garante, por si só, o registro.
+- Omissão parcial: não reproduz tão explicitamente quanto a referência a ressalva de que a análise de eventual direito adquirido ou da eficácia da promessa anterior cabe ao Registro de Imóveis e, se necessário, ao juízo competente. Essa ideia, porém, está substancialmente contemplada.
+- Informações adicionais não verificáveis pela referência: a menção ao Provimento CNJ nº 188/2024, à CNIB 2.0, à Súmula 375/STJ, à documentação com data certa e às regras específicas de adjudicação compulsória não pode ser validada nem invalidada com base exclusivamente no gabarito. Não há penalização por essas informações em si.
+- Desconto: 0,5 ponto em fundamentação, pela menor explicitação de alguns aspectos da competência para análise da eficácia da promessa de compra e venda. Não há desconto no critério de ressalvas, pois a resposta contempla substancialmente os limites essenciais.
+
+### Resposta B — 9,0/10
+
+- Acertos: apresenta a mesma conclusão central da referência e menciona expressamente a consulta à CNIB, a ciência inequívoca das partes e o registro da restrição na escritura. Também orienta que o tabelião não pode afastar ou cancelar o gravame por iniciativa própria.
+- Limites e ressalvas: reconhece que a quitação anterior não permite ao tabelião desconsiderar a indisponibilidade e destaca a necessidade de tratar a restrição na esfera registral ou judicial.
+- Omissão relevante: embora indique que a transferência dependerá de cancelamento ou autorização judicial, não explicita com a mesma precisão da referência que cabe ao Registro de Imóveis analisar eventual direito do comprador decorrente da promessa anterior, recorrendo-se ao juízo se necessário.
+- Informações adicionais não verificáveis pela referência: as referências ao art. 364 do Código de Normas e Procedimentos de 2020, à validade do negócio jurídico entre as partes e à necessidade de autorização específica da Justiça Federal não podem ser confirmadas ou contraditas pelo texto de referência. Não são penalizadas por si só.
+- Desconto: 0,5 ponto em fundamentação, pela explicação menos completa sobre a análise da eficácia da promessa anterior, e 0,5 ponto em ressalvas, pela formulação mais categórica sobre a necessidade de cancelamento ou autorização judicial, sem reproduzir integralmente a distribuição de competências apresentada na referência.
+
+## 3. Resultado
+
+A venceu, com 9,5 pontos contra 9,0 pontos da resposta B.
+
+## 4. Justificativa final
+
+As duas respostas estão alinhadas à conclusão central da referência: a escritura pode ser lavrada, mas a indisponibilidade deve ser consultada, comunicada às partes e consignada no ato, sem garantia de registro em razão da quitação anterior. A resposta A se aproxima ligeiramente mais do gabarito ao delimitar com maior clareza o alcance da atuação notarial e a distinção entre escritura, registro e eventual afastamento judicial da restrição. As informações normativas adicionais de ambas não foram tratadas como erros, pois não são verificáveis pela referência fornecida.

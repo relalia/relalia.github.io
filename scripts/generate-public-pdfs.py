@@ -52,7 +52,7 @@ def generate(data):
                 continue
             target.parent.mkdir(parents=True, exist_ok=True)
             if report.get('comparisonId'):
-                subprocess.run([sys.executable, str(ROOT/'scripts/comparison-pdf.py'), str(target)], check=True)
+                subprocess.run([sys.executable, str(ROOT/'scripts/comparison-pdf.py'), str(target), report['comparisonId']], check=True)
                 continue
             doc = SimpleDocTemplate(str(target), pagesize=A4, leftMargin=46, rightMargin=46, topMargin=44, bottomMargin=44,
                 title=report['title'], author='Relalia', subject=attachment['label'], invariant=1)

@@ -1,0 +1,97 @@
+## 1. Tabela de avaliação
+
+A comparação considera exclusivamente a resposta humana de referência fornecida, sem verificar a correção jurídica independente das respostas.
+
+| Critério | Resposta A | Resposta B |
+| --- | --- | --- |
+| 1. Conclusão e orientação prática (0–4) | 3,5 | 2,5 |
+| 2. Fundamentação e informações essenciais (0–4) | 3,0 | 2,0 |
+| 3. Condições, limites e ressalvas (0–2) | 1,0 | 0,5 |
+| Nota total | 7,5/10 | 5,0/10 |
+| Classificação | Parcialmente conforme | Parcialmente conforme |
+
+## 2. Análise da resposta A
+
+Critério 1 — Conclusão e orientação prática: 3,5/4
+
+A resposta identifica corretamente, em relação à referência, a necessidade de individualização do imóvel e de saneamento das informações registrais. Também indica como momento relevante a qualificação do primeiro ato registral solicitado, em linha com a orientação humana de realizar o saneamento quando da prática do primeiro registro voluntário.
+
+A resposta, contudo, amplia a orientação para diversas hipóteses e procedimentos que não estão integralmente descritos na referência. Essas informações adicionais não podem ser confirmadas nem contraditas pelo gabarito e, por si sós, não justificam penalização.
+
+Critério 2 — Fundamentação e informações essenciais: 3,0/4
+
+Acertos relevantes:
+
+- Identifica o CNM e a área em unidades distintas para imóveis urbanos e rurais.
+- Apresenta os cadastros rurais CCIR, NIRF ou CIB e CAR, além do CIF e do CIB para imóveis urbanos.
+- Aborda o georreferenciamento rural e as características, confrontações e localização do imóvel.
+- Reconhece a necessidade de saneamento das informações omissas ou divergentes.
+
+O desconto decorre de omissões específicas em relação à referência:
+
+- Não destaca expressamente o CEP como dado comum a imóveis urbanos e rurais.
+- Não menciona a nacionalidade de quem detém a maioria do capital social quando o imóvel rural pertence a pessoa jurídica.
+- Não reproduz a distinção da referência sobre a certificação da poligonal no Incra permanecer facultativa, a critério do proprietário, para os demais imóveis rurais.
+
+Além disso, a resposta apresenta elementos como número de ordem, proprietário atual, número predial e informações técnicas complementares. São informações adicionais não verificáveis pela referência, sem penalização autônoma.
+
+Critério 3 — Condições, limites e ressalvas: 1,0/2
+
+A resposta apresenta ressalvas e exceções para determinados atos e descreve situações em que o saneamento pode ser exigido. Entretanto, não explicita integralmente a condição da referência relativa à georreferência de imóveis urbanos em situações de Reurb ou por requerimento do interessado. Também não reproduz claramente a regra de abertura de novas matrículas ou averbação de saneamento nas existentes, associada ao primeiro registro voluntário.
+
+As exceções adicionais relativas a garantias, constrições e extratos eletrônicos não são verificáveis pela referência e não recebem penalização por si mesmas.
+
+Classificação: Parcialmente conforme. A resposta cobre boa parte do conteúdo essencial, mas omite condições e informações específicas exigidas pelo gabarito.
+
+## 3. Análise da resposta B
+
+Critério 1 — Conclusão e orientação prática: 2,5/4
+
+A resposta oferece orientações úteis sobre divergências entre títulos e registro anterior, retificação e exigência de georreferenciamento. Também reconhece que o saneamento pode ser necessário antes de determinados atos registrais.
+
+Perde pontos por não apresentar de forma suficientemente completa a orientação central da referência sobre a inclusão dos dados na abertura de novas matrículas ou por averbação de saneamento nas existentes, quando da prática do primeiro registro voluntário.
+
+Critério 2 — Fundamentação e informações essenciais: 2,0/4
+
+Acertos relevantes:
+
+- Descreve características, confrontações, localização e área para imóveis urbanos e rurais.
+- Menciona o CCIR e a denominação do imóvel rural.
+- Aborda o georreferenciamento rural e a divergência entre a descrição do título e a do registro anterior.
+
+O desconto decorre das seguintes omissões em comparação com a referência:
+
+- Não menciona expressamente o CNM como dado obrigatório da matrícula.
+- Não indica as unidades de área exigidas para cada categoria de imóvel.
+- Não relaciona integralmente os cadastros obrigatórios: CAR, CIF e CIB, além das referências ao NIRF e ao CCIR.
+- Não menciona o CEP nem os detalhes específicos de localização indicados na referência, como bairro para imóveis urbanos e vila ou povoado para imóveis rurais.
+- Não contempla a nacionalidade da pessoa que detém a maioria do capital social de pessoa jurídica proprietária de imóvel rural.
+- Não apresenta a regra específica sobre a certificação facultativa da poligonal no Incra para os demais imóveis rurais.
+
+A resposta cita outros dispositivos e procedimentos, como continuidade registral e retificação. Esses pontos adicionais são não verificáveis pela referência, não sendo penalizados isoladamente.
+
+Critério 3 — Condições, limites e ressalvas: 0,5/2
+
+A resposta ressalva que a exigência de georreferenciamento depende dos casos e prazos aplicáveis, o que demonstra atenção a condições relevantes. Entretanto, não distingue adequadamente todas as hipóteses de georreferenciamento indicadas na referência, especialmente para imóveis urbanos, nem apresenta as condições completas para o saneamento cadastral e descritivo.
+
+A afirmação de que não consegue citar com segurança os números exatos dos artigos do Provimento demonstra transparência quanto à própria limitação, mas não supre a fundamentação normativa específica solicitada e presente no gabarito.
+
+Classificação: Parcialmente conforme. A resposta é aproveitável nos aspectos gerais de identificação, divergência descritiva e georreferenciamento rural, mas deixa de fora parcela substancial das informações exigidas pela referência.
+
+## 4. Resultado
+
+## A venceu
+
+Maior nota
+
+Resposta A
+
+### 7,5/10
+
+Resposta B
+
+### 5,0/10
+
+A resposta A está mais alinhada à referência porque contempla maior número de requisitos cadastrais e descritivos, além de desenvolver mais claramente o momento e o procedimento de saneamento. A resposta B omite mais elementos expressamente exigidos pelo gabarito, sobretudo os códigos cadastrais e as condições específicas de identificação.
+
+Justificativa final: A vence por maior concordância material com a resposta humana, apesar de também apresentar omissões relevantes. Nenhuma das duas alcança a classificação de conforme, e as informações adicionais de ambas que não podem ser verificadas pela referência não foram tratadas como erros jurídicos.

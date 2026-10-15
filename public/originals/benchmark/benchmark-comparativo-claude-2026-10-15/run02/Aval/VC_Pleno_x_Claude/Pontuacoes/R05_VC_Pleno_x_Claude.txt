@@ -1,0 +1,72 @@
+## 1. Tabela de avaliação
+
+| Critério | Máximo | Resposta A | Resposta B |
+| --- | --- | --- | --- |
+| 1. Conclusão e orientação prática | 4,0 | 4,0 | 4,0 |
+| 2. Fundamentação e informações essenciais | 4,0 | 2,0 | 3,0 |
+| 3. Condições, limites e ressalvas | 2,0 | 1,5 | 1,0 |
+| Nota total | 10,0 | 7,5 | 8,0 |
+| Classificação | — | Parcialmente conforme | Conforme |
+
+## 2. Análise individual
+
+### Resposta A — 7,5/10
+
+Acertos
+
+- Responde afirmativamente que uma procuração pública pode ter múltiplos outorgantes, em alinhamento direto com a referência.
+- Apresenta exemplos compatíveis com os indicados na resposta humana, como casais, coproprietários e herdeiros.
+- Recomenda identificar os poderes conferidos e descrever claramente os bens envolvidos, aproximando-se das orientações práticas da referência.
+- Reconhece a necessidade de observar as particularidades do ato notarial.
+
+Omissões
+
+- Não menciona expressamente o Código Civil, deixando de cumprir o fato obrigatório indicado na avaliação.
+- Não apresenta a fundamentação pelos artigos 653 e 104 do Código Civil, nem explicita os requisitos de validade do negócio jurídico.
+- Não destaca de forma suficiente a necessidade de capacidade de todos os outorgantes e de manifestação individual de vontade colhida pelo tabelião.
+
+Informações adicionais não verificáveis pela referência
+
+- A possibilidade de assinatura por canais notariais eletrônicos, a revogação individual dos poderes e a eventual preferência de bancos ou registros por um instrumento único.
+- A possibilidade de lavrar procurações separadas.
+
+Esses pontos não recebem penalidade por si só. A afirmação sobre a revogação individual não é confirmada nem contradita pela referência.
+
+Justificativa da nota: a conclusão e a orientação prática são boas, mas a ausência de menção ao Código Civil e a fundamentação jurídica insuficiente reduzem a pontuação.
+
+### Resposta B — 8,0/10
+
+Acertos
+
+- Responde diretamente que o instrumento pode conter vários outorgantes.
+- Menciona expressamente o Código Civil, cumprindo o fato obrigatório.
+- Apresenta exemplos compatíveis com a referência: cônjuges, coproprietários e coerdeiros.
+- Destaca a identificação e qualificação dos outorgantes e a necessidade de suas assinaturas, em consonância com a preocupação da referência com a individualização dos participantes.
+
+Omissões
+
+- Não menciona os artigos 653 e 104 do Código Civil destacados na referência, nem desenvolve os requisitos gerais de validade do negócio jurídico.
+- Não explica claramente que os poderes podem ser idênticos ou distintos para cada outorgante, devendo ser individualizados quando necessário.
+- Não aborda expressamente a compatibilidade do objeto da representação nem as limitações relativas a bens ou direitos pertencentes apenas a determinado outorgante.
+
+Informações adicionais não verificáveis pela referência
+
+- A alegação de responsabilidade solidária dos mandantes, com referência ao artigo 680 do Código Civil.
+- As exigências documentais específicas, a assinatura por autenticidade e as referências a normas notariais locais.
+- A ressalva sobre possíveis alterações posteriores nas normas locais.
+
+Essas afirmações não podem ser validadas nem refutadas com base exclusiva na resposta humana. A referência a dispositivos normativos diferentes não constitui, por si só, erro de alinhamento. Entretanto, a fundamentação adicional não substitui integralmente os elementos essenciais que a referência enfatiza.
+
+Justificativa da nota: a resposta atende à conclusão, menciona o Código Civil e contempla formalidades relevantes, mas deixa de explicitar condições essenciais e orientações de individualização dos poderes. A pontuação não pressupõe a veracidade jurídica independente das citações adicionais.
+
+## 3. Resultado
+
+## B venceu
+
+# 8,0 × 7,5
+
+A resposta B obteve nota superior por mencionar expressamente o Código Civil e apresentar uma fundamentação mais desenvolvida, embora não reproduza todos os requisitos e orientações essenciais da referência.
+
+## 4. Justificativa final
+
+A resposta B está mais alinhada à referência humana, principalmente por cumprir o requisito obrigatório de mencionar o Código Civil e por abordar a identificação dos outorgantes. A resposta A também acerta a conclusão e oferece orientações úteis, mas omite a referência expressa ao Código Civil. Nenhuma das respostas contempla integralmente os requisitos de capacidade, compatibilidade do objeto e individualização dos poderes destacados no gabarito. As informações adicionais de ambas que não podem ser verificadas pela referência não foram penalizadas por si só.
