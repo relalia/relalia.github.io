@@ -54,6 +54,7 @@ export interface Finding {
 }
 
 export interface Report {
+  overviewId?: string;
   comparisonId?: string;
   benchmarkId?: string;
   id: string;

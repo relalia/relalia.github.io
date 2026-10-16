@@ -59,7 +59,7 @@ try{
     await card.evaluate(el=>el.open=false);
     await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`tmp/comparison-ui/${d.id}-${width}.png`});
     await page.reload();await page.locator('.benchmark-comparison').waitFor();
-    await page.goto(base+'/');await page.locator('.benchmark-comparison').waitFor();assert(await page.locator('.timeline a[aria-current="page"]').getAttribute('href')===`/relatorios/${latest.id}/`);
+    await page.goto(base+'/');await page.locator('.timeline a[aria-current="page"]').waitFor();assert(await page.locator('.timeline a[aria-current="page"]').getAttribute('href')===`/relatorios/${latest.id}/`);
     if(d.id!==latest.id){await page.locator(`.timeline a[href="/relatorios/${d.id}/"]`).click();await page.getByRole('heading',{name:d.title,exact:true}).waitFor();}
     await page.getByRole('link',{name:d.related[0].label,exact:true}).click();await page.locator('.benchmark:not(.benchmark-comparison)').waitFor();
     assert(page.url().includes(d.related[0].id));

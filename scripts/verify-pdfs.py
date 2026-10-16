@@ -22,6 +22,24 @@ for report in data['reports']:
         reader=PdfReader(root/'public'/file['path'].lstrip('/'))
         import re
         text=normalize(' '.join(re.sub(r'Relalia: O Relatório da Alia\s+Página \d+','',p.extract_text() or '') for p in reader.pages))
+        if report.get('overviewId'):
+            overview=json.loads((root/f"content/{report['overviewId']}.json").read_text(encoding='utf8'))
+            assert normalize(overview['title'].replace('—','-')) in text
+            assert len(reader.pages)<=5,'Visual synthesis should fit five readable pages'
+            assert sum(len(p.images) for p in reader.pages)==6,'Expected six original screenshots'
+            for b in overview['benchmarks']:
+                assert b['label'] in text and normalize(b['concentration'].replace('−','-')) in text
+                for s in b['series']:
+                    assert s['label'] in text
+                    for score in s['values']:assert f'{score:.1f}'.replace('.',',') in text
+                for r in b['rows']:
+                    for run in ['old','new']:assert f"{r[run]['vc']['total']:.1f}".replace('.',',') in text
+            for item in overview['improvements']:
+                assert item['id'] in text and normalize(item['description']) in text
+            for image in overview['images']:assert image['id'] in text and image['sha256'][:16] in text
+            assert overview['id']+'-dados.json' in text and overview['id']+'-fontes.json' in text
+            print(f"{report['id']}: {len(reader.pages)} pages, six screenshots, eight series and UI captions verified")
+            continue
         if report.get('comparisonId'):
             c=json.loads((root/f"content/{report['comparisonId']}.json").read_text(encoding='utf8'))
             assert normalize(c['title'].replace('—','-')) in text

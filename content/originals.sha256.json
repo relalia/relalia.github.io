@@ -1900,5 +1900,41 @@
     "originalName": "review_prompt.txt",
     "bytes": 1320,
     "sha256": "a014888cca45bc9ea9c2ebad321945825476d35360ee47a40953e97e3714792d"
+  },
+  {
+    "path": "/originals/2026-10-16/captura-01.png",
+    "originalName": "codex-clipboard-1f02ae98-20c8-4a58-b119-aab4ff4a94cc.png",
+    "bytes": 62211,
+    "sha256": "f9600d80575fda6feabfb1ea483494a4899e4a0f944ec00c5eba1809a79b8849"
+  },
+  {
+    "path": "/originals/2026-10-16/captura-02.png",
+    "originalName": "codex-clipboard-472c297d-8ae6-4359-8ec4-8be629d6e942.png",
+    "bytes": 60774,
+    "sha256": "579e8eb95d5e5517378776b8df9fead56612a9356a5d244beb765158639a02b5"
+  },
+  {
+    "path": "/originals/2026-10-16/captura-03.png",
+    "originalName": "codex-clipboard-0626ffbf-530a-4294-bb4c-dcd821ed78fb.png",
+    "bytes": 173182,
+    "sha256": "9dac089ded86ebe4fbedc61f07623e6e53ced1cb2aa6e383a32b0e869b34fb81"
+  },
+  {
+    "path": "/originals/2026-10-16/captura-04.png",
+    "originalName": "codex-clipboard-1f3ffbed-d944-48ad-9662-1a18ce22beb9.png",
+    "bytes": 224085,
+    "sha256": "25320905d230022707f338e7a06a1c5fe59dc3532668bf49c275de87b04f5d55"
+  },
+  {
+    "path": "/originals/2026-10-16/captura-05.png",
+    "originalName": "codex-clipboard-7d83df2c-a636-48a0-97aa-dfbc64d2e99e.png",
+    "bytes": 258904,
+    "sha256": "aa705f8eec06980e7f53bcf340b8ca008616bf68f97947340e098dc0c38ae489"
+  },
+  {
+    "path": "/originals/2026-10-16/captura-06.png",
+    "originalName": "codex-clipboard-3f5de951-96ba-4958-aa4f-ea354ac7f967.png",
+    "bytes": 32363,
+    "sha256": "1e5f52943a423d304685f14de3fcb3c23635d07ac2ceabf9a08e4efeb98d6552"
   }
 ]

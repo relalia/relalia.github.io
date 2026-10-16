@@ -51,6 +51,9 @@ def generate(data):
                 print(f'Preserved {target.relative_to(ROOT)}')
                 continue
             target.parent.mkdir(parents=True, exist_ok=True)
+            if report.get('overviewId'):
+                subprocess.run([sys.executable, str(ROOT/'scripts/overview-pdf.py'), str(target)], check=True)
+                continue
             if report.get('comparisonId'):
                 subprocess.run([sys.executable, str(ROOT/'scripts/comparison-pdf.py'), str(target), report['comparisonId']], check=True)
                 continue

@@ -4928,6 +4928,184 @@
           ]
         }
       ]
+    },
+    {
+      "id": "sintese-benchmarks-interface-2026-10-16",
+      "date": "2026-10-16",
+      "title": "Benchmarks e melhorias de interface — síntese de 16/10/2026",
+      "module": "Alia",
+      "overviewId": "sintese-benchmarks-interface-2026-10-16",
+      "status": "Síntese e acompanhamento",
+      "count": "2 benchmarks · 6 capturas",
+      "summary": "As médias dos quatro recortes seguiram trajetórias diferentes. Os ganhos se concentram em poucas perguntas e os adversários fixos também mudaram de nota. Em paralelo, seis capturas documentam avanços de interface, sem demonstrar relação causal com os resultados dos benchmarks.",
+      "highlights": [
+        "VadeChat × ChatGPT · Ágil: 4,6 → 5,8 (+1,2).",
+        "VadeChat × ChatGPT · Pleno: 7,4 → 6,8 (-0,6).",
+        "VadeChat × Claude · Ágil: 7,0 → 7,5 (+0,5).",
+        "VadeChat × Claude · Pleno: 7,8 → 8,4 (+0,6)."
+      ],
+      "note": "Cinco perguntas por benchmark. Notas de concordância com referências humanas, sem validação jurídica independente. Conjuntos e juízes diferentes; esta figura não representa um confronto direto entre ChatGPT e Claude nem um ranking geral.",
+      "files": [
+        {
+          "label": "Síntese visual · PDF",
+          "path": "/reports/sintese-benchmarks-interface-2026-10-16.pdf",
+          "kind": "pdf",
+          "origin": "generated"
+        }
+      ],
+      "findings": [
+        {
+          "id": "VC-UI-16A",
+          "title": "Modo identificado em cada resposta",
+          "kind": "VadeChat / rastreabilidade",
+          "status": "Atendimento parcial documentado",
+          "description": "As capturas 1 e 2 exibem Pleno e Ágil junto aos controles das respectivas respostas. Na captura 1, a resposta indica Pleno enquanto o compositor está em Ágil.",
+          "evidenceIds": [
+            "ALIA16-EV-01",
+            "ALIA16-EV-02"
+          ],
+          "comparisons": [
+            {
+              "reportId": "alia-2026-10-08",
+              "findingId": "VC-TRACE-14",
+              "label": "Escopo anterior: modo, modelo e regeneração"
+            }
+          ],
+          "retest": {
+            "execution": "not-performed",
+            "result": "Capturas e relato do usuário; sem reteste independente do produto nesta rodada."
+          },
+          "observationLabel": "Capturas da interface",
+          "sourceFields": [
+            {
+              "label": "Relato do usuário",
+              "value": "O usuário informa que as respostas agora apresentam o modo utilizado. As imagens mostram os rótulos, sem comprovar a configuração efetiva do backend."
+            },
+            {
+              "label": "Utilidade esperada",
+              "value": "Permite reconhecer o modo associado a cada resposta mesmo após mudar a seleção do compositor; melhora a rastreabilidade para o usuário."
+            },
+            {
+              "label": "Limites e escopo histórico",
+              "value": "Atende à indicação do modo no escopo de VC-TRACE-14. Modelo interno, regeneração, persistência ao reabrir e execução do backend não são demonstrados."
+            }
+          ]
+        },
+        {
+          "id": "GIRO-UI-16B",
+          "title": "Resumo expansível e ação do VadeChat em destaque",
+          "kind": "GIRO / leitura e interação",
+          "status": "Atendimento parcial documentado",
+          "description": "A captura 3 mostra o controle Mostrar mais e um botão rotulado Perguntar ao VadeChat, visualmente maior que a ação compacta documentada anteriormente.",
+          "evidenceIds": [
+            "ALIA16-EV-03"
+          ],
+          "comparisons": [
+            {
+              "reportId": "alia-2026-10-08",
+              "findingId": "GIRO-UX-01",
+              "label": "Escopo anterior dos cards e da ação de consulta"
+            }
+          ],
+          "retest": {
+            "execution": "not-performed",
+            "result": "Controle e destaque visual documentados; comportamento de expansão informado pelo usuário."
+          },
+          "observationLabel": "Capturas da interface",
+          "sourceFields": [
+            {
+              "label": "Relato do usuário",
+              "value": "O usuário informa que Mostrar mais expande o resumo e que o botão ganhou área de interação. A imagem isolada não mostra a expansão nem mede a área acionável."
+            },
+            {
+              "label": "Utilidade esperada",
+              "value": "Facilita encontrar a continuação do resumo e reconhecer a ação de consulta; espera-se facilitar o toque, sem medição de velocidade ou taxa de cliques."
+            },
+            {
+              "label": "Limites e escopo histórico",
+              "value": "Atendimento parcial de GIRO-UX-01: detalhe pelo card, resumo integral, teclado, ajuda contextual e tratamento de casos especiais não foram verificados."
+            }
+          ]
+        },
+        {
+          "id": "VC-UI-16C",
+          "title": "Compositor ampliado para o texto vindo do GIRO",
+          "kind": "VadeChat / composição de mensagem",
+          "status": "Atendimento parcial documentado",
+          "description": "A captura 4 mostra a mensagem pré-inserida sobre a notícia em um campo ampliado, com rolagem interna. Parte do conteúdo continua fora da área visível.",
+          "evidenceIds": [
+            "ALIA16-EV-04"
+          ],
+          "comparisons": [
+            {
+              "reportId": "vadechat-2026-10-06",
+              "findingId": "VC-UX-05",
+              "label": "Escopo anterior da altura após envio e limpeza"
+            },
+            {
+              "reportId": "vadechat-2026-10-06",
+              "findingId": "VC-FLOW-06",
+              "label": "Escopo anterior do fluxo GIRO → VadeChat"
+            }
+          ],
+          "retest": {
+            "execution": "not-performed",
+            "result": "Estado preenchido documentado; sequência de envio e limpeza não demonstrada."
+          },
+          "observationLabel": "Capturas da interface",
+          "sourceFields": [
+            {
+              "label": "Relato do usuário",
+              "value": "O usuário informa a adequação da altura do campo quando a consulta vem do GIRO; a imagem mostra esse estado preenchido."
+            },
+            {
+              "label": "Utilidade esperada",
+              "value": "Oferece mais espaço para conferir e editar o contexto antes de enviar, mantendo a rolagem para textos extensos."
+            },
+            {
+              "label": "Limites e escopo histórico",
+              "value": "Não demonstra que todo o texto fica visível, crescimento ilimitado, envio automático do GIRO ou retorno à altura inicial após limpar/enviar. Esses pontos dos escopos anteriores permanecem sem confirmação."
+            }
+          ]
+        },
+        {
+          "id": "VC-UI-16D",
+          "title": "Chip do hero inicia a consulta",
+          "kind": "Alia / início de conversa",
+          "status": "Atendimento parcial documentado",
+          "description": "As capturas 5 e 6 mostram o chip Prazo da prenotação na tela inicial, sua mensagem enviada na conversa e o estado Pesquisando na base.",
+          "evidenceIds": [
+            "ALIA16-EV-05",
+            "ALIA16-EV-06"
+          ],
+          "comparisons": [
+            {
+              "reportId": "today",
+              "findingId": "VC-UX-02",
+              "label": "Escopo anterior do início com um único envio"
+            }
+          ],
+          "retest": {
+            "execution": "not-performed",
+            "result": "Fluxo de chip relatado pelo usuário e estados documentados; sem prova de conclusão ou solicitação única."
+          },
+          "observationLabel": "Capturas da interface",
+          "sourceFields": [
+            {
+              "label": "Relato do usuário",
+              "value": "Segundo o usuário, clicar no chip já inicia a conversa com seu conteúdo. As imagens são compatíveis com essa sequência, mas não registram o clique em si."
+            },
+            {
+              "label": "Utilidade esperada",
+              "value": "Reduz as etapas para iniciar a consulta com uma sugestão, sem medição de tempo."
+            },
+            {
+              "label": "Limites e escopo histórico",
+              "value": "O carregamento não comprova resposta concluída. O achado VC-UX-02 também abrangia texto digitado, Enter, envio único e recuperação de erro; seu escopo completo não pode ser marcado como resolvido."
+            }
+          ]
+        }
+      ]
     }
   ],
   "evidence": [
@@ -5773,6 +5951,78 @@
       "path": "/originals/evidence/alia-2026-10-08/vc-abst-13-referencia-1976.jpeg",
       "originalName": "abstencao.jpeg",
       "sha256": "90a9c1f62dd798aa53087e78a1c179cd2c8b67ac416c89c1af1c3ebe55b3b523"
+    },
+    {
+      "id": "ALIA16-EV-01",
+      "reportId": "sintese-benchmarks-interface-2026-10-16",
+      "findingIds": [
+        "VC-UI-16A"
+      ],
+      "description": "Captura 1 · Resposta identificada como Pleno; o compositor está selecionado em Ágil.",
+      "kind": "image",
+      "path": "/originals/2026-10-16/captura-01.png",
+      "originalName": "codex-clipboard-1f02ae98-20c8-4a58-b119-aab4ff4a94cc.png",
+      "sha256": "f9600d80575fda6feabfb1ea483494a4899e4a0f944ec00c5eba1809a79b8849"
+    },
+    {
+      "id": "ALIA16-EV-02",
+      "reportId": "sintese-benchmarks-interface-2026-10-16",
+      "findingIds": [
+        "VC-UI-16A"
+      ],
+      "description": "Captura 2 · Rótulo Ágil junto aos controles da resposta.",
+      "kind": "image",
+      "path": "/originals/2026-10-16/captura-02.png",
+      "originalName": "codex-clipboard-472c297d-8ae6-4359-8ec4-8be629d6e942.png",
+      "sha256": "579e8eb95d5e5517378776b8df9fead56612a9356a5d244beb765158639a02b5"
+    },
+    {
+      "id": "ALIA16-EV-03",
+      "reportId": "sintese-benchmarks-interface-2026-10-16",
+      "findingIds": [
+        "GIRO-UI-16B"
+      ],
+      "description": "Captura 3 · GIRO: controle Mostrar mais e botão rotulado Perguntar ao VadeChat em destaque.",
+      "kind": "image",
+      "path": "/originals/2026-10-16/captura-03.png",
+      "originalName": "codex-clipboard-0626ffbf-530a-4294-bb4c-dcd821ed78fb.png",
+      "sha256": "9dac089ded86ebe4fbedc61f07623e6e53ced1cb2aa6e383a32b0e869b34fb81"
+    },
+    {
+      "id": "ALIA16-EV-04",
+      "reportId": "sintese-benchmarks-interface-2026-10-16",
+      "findingIds": [
+        "VC-UI-16C"
+      ],
+      "description": "Captura 4 · Texto pré-inserido sobre a notícia em um compositor ampliado, com rolagem interna.",
+      "kind": "image",
+      "path": "/originals/2026-10-16/captura-04.png",
+      "originalName": "codex-clipboard-1f3ffbed-d944-48ad-9662-1a18ce22beb9.png",
+      "sha256": "25320905d230022707f338e7a06a1c5fe59dc3532668bf49c275de87b04f5d55"
+    },
+    {
+      "id": "ALIA16-EV-05",
+      "reportId": "sintese-benchmarks-interface-2026-10-16",
+      "findingIds": [
+        "VC-UI-16D"
+      ],
+      "description": "Captura 5 · Tela inicial: chip Prazo da prenotação no hero.",
+      "kind": "image",
+      "path": "/originals/2026-10-16/captura-05.png",
+      "originalName": "codex-clipboard-7d83df2c-a636-48a0-97aa-dfbc64d2e99e.png",
+      "sha256": "aa705f8eec06980e7f53bcf340b8ca008616bf68f97947340e098dc0c38ae489"
+    },
+    {
+      "id": "ALIA16-EV-06",
+      "reportId": "sintese-benchmarks-interface-2026-10-16",
+      "findingIds": [
+        "VC-UI-16D"
+      ],
+      "description": "Captura 6 · Mensagem Prazo da prenotação enviada e pesquisa na base em andamento; sem resposta concluída.",
+      "kind": "image",
+      "path": "/originals/2026-10-16/captura-06.png",
+      "originalName": "codex-clipboard-3f5de951-96ba-4958-aa4f-ea354ac7f967.png",
+      "sha256": "1e5f52943a423d304685f14de3fcb3c23635d07ac2ceabf9a08e4efeb98d6552"
     }
   ],
   "notes": {
