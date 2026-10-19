@@ -5106,6 +5106,402 @@
           ]
         }
       ]
+    },
+    {
+      "id": "alia-atlas-2026-10-19",
+      "date": "2026-10-19",
+      "title": "Alia/Atlas · leitura, fluxos e gestão de conversas",
+      "module": "Alia",
+      "status": "Registro final · pendências e propostas de melhoria",
+      "count": "14 achados",
+      "summary": "Relatório de 19/10/2026 com 14 achados do Alia/Atlas: leitura dos atos e documentos, titularidade, Registro Auxiliar, estados de leitura e clareza das decisões, mensagens, resumos e navegação. A proposta de gestão de conversas abrange também Alia/VadeChat. São seis ocorrências aguardando reteste e oito propostas de melhoria, documentadas por 21 capturas originais. O fechamento do relatório não significa correção dos produtos ou retestes executados.",
+      "highlights": [
+        "Leitura: separar os atos da matrícula, recuperar o texto dos documentos e tornar coerentes os estados de releitura no cartão e na janela do fólio.",
+        "Titularidade: conferir titulares e frações nos atos; na matrícula 4.466, o Atlas mostra apenas Max no quadro atual e 58,33% na conferência, enquanto o Desktop cadastra Alacir e Max com 50% cada.",
+        "Registro Auxiliar: preservar o tipo e o número escolhidos, sem reinterpretar a seleção como matrícula de mesmo número.",
+        "Decisões: organizar os blocos por matrícula e ato, dar nomes claros às alternativas e explicar códigos sem repeti-los.",
+        "Clareza: explicar os pontos na leitura, propor contadores expansíveis por categoria e concentrar informações repetidas sem perder dados exclusivos.",
+        "Navegação e conversas: explicitar atalhos internos do protocolo; propor exclusão, renomeação e agrupamento de chats com permissões por serventia para Atlas e VadeChat.",
+        "14 achados e 21 capturas originais, com vínculos internos e históricos. Observações, relatos, hipóteses e propostas permanecem identificados; nenhum reteste dos produtos foi executado nesta rodada."
+      ],
+      "note": "Capturas fornecidas em 19/10/2026; datas, versões e condições das execuções não foram verificadas independentemente. As imagens registram estados da interface; cliques e seus efeitos vêm dos relatos quando não demonstrados. Contagens, percentuais e mensagens citados são dados exibidos nas telas, sem validação independente dos documentos ou dos resultados. Este relatório documenta ocorrências e propostas para Alia/Atlas e VadeChat; não implementa funcionalidades nos produtos nem confirma causas técnicas. Registros e evidências históricos preservados.",
+      "files": [
+        {
+          "label": "Relatório de 19/10/2026 · PDF com achados e evidências",
+          "path": "/reports/alia-atlas-2026-10-19.pdf",
+          "kind": "pdf",
+          "origin": "generated"
+        }
+      ],
+      "findings": [
+        {
+          "id": "ATLAS-SEG-01",
+          "title": "AV.01 e AV.02 ficam dentro de Mat.0, sem itens próprios na linha do tempo",
+          "kind": "Atlas / leitura do fólio / segmentação de atos",
+          "context": "Alia/Atlas · linha do tempo dos atos · matrícula 39.953 identificada nos cabeçalhos AV.01.39.953 e AV.02.39.953. Capturas recebidas em 19/10/2026; execução e versão não informadas.",
+          "observationLabel": "Observado nas capturas e relatado",
+          "description": "A linha do tempo apresentada contém os componentes Mat.0 (Abertura de matrícula) e Av.3 (Alteração de cadastro do imóvel), com o indicador “2 classificado”. Na primeira captura, o texto expandido de Mat.0 inclui uma linha de hífens seguida de “AV.01.39.953 - Data: 25.09.2026” e “TRASLADO/PRESERVAÇÃO FLORESTAL”. Na segunda, a área de Mat.0 mostra “AV.02.39.953 - Data: 25.09.2026” e “TRASLADO/RESERVA LEGAL”. Av.3 aparece logo abaixo como componente separado nas duas imagens. AV.01 e AV.02 estão presentes no texto exibido, mas não foram separadas em componentes próprios no trecho capturado. O usuário solicita revisar o método de divisão dos atos.",
+          "hypothesis": "Pode haver falha no reconhecimento dos limites ou cabeçalhos dos atos. As imagens não revelam o método atual de segmentação nem permitem atribuir a falha ao uso de “--------”, ao formato AV.01.39.953 ou a uma etapa específica do processamento.",
+          "expected": "Identificar AV.01 e AV.02 como atos autônomos e criar seus componentes expansíveis entre Mat.0 e Av.3. No trecho apresentado, manter a sequência Mat.0, Av.1, Av.2 e Av.3, cada qual com o texto correspondente, sem absorver atos subsequentes na abertura nem duplicar ou omitir conteúdo. A identificação de cada ato deve permitir sua análise e classificação próprias; este registro não define códigos LNA.",
+          "suggestion": "Revisar o método atual de divisão dos atos. Considerar linhas de separação como indício complementar, combinadas com cabeçalhos de início de ato, número do ato, matrícula e continuidade textual. Verificar variações como “AV.01.39.953” e “AV.03-39.953”, espaços e quebras de linha, sem dividir indiscriminadamente em todo hífen ou em menções a outros atos no corpo do texto. Conferir a sequência numérica e sinalizar possíveis lacunas para revisão, sem inventar atos ausentes.",
+          "verification": "Retestar no Atlas com o documento original deste caso, quando disponível, registrando versão e data da execução. Conferir a extração integral e os limites antes e depois de cada cabeçalho. No trecho documentado, verificar quatro itens independentes na ordem Mat.0, Av.1, Av.2 e Av.3; abrir e recolher cada um e comparar seu conteúdo com o original, sem omissões, duplicações ou texto de outro ato. Testar documentos com e sem linhas de hífens, diferentes pontuações e quebras de linha, além de referências a AV/R no corpo que não iniciem novo ato. Registrar separadamente o resultado da segmentação e da classificação. As duas capturas, isoladamente, não substituem esse reteste.",
+          "evidenceIds": [
+            "ATLAS19-EV-01",
+            "ATLAS19-EV-02"
+          ],
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          },
+          "comparisons": [
+            {
+              "reportId": "atlas",
+              "findingId": "AC-042",
+              "label": "Mesmo caso documentado no checklist Atlas · AC-042"
+            }
+          ]
+        },
+        {
+          "id": "ATLAS-UX-02",
+          "title": "Reorganizar as telas de matrícula e protocolo para tornar as informações mais claras",
+          "kind": "Atlas / interface / arquitetura da informação",
+          "context": "Alia/Atlas · tela da matrícula 35000 e tela do protocolo 186648, com matrículas 33663 e 9060. São dois exemplos de organização visual; não representam o mesmo processo.",
+          "observationLabel": "Observado nas capturas e relatado",
+          "description": "O usuário relata excesso e desorganização das informações nas duas telas e solicita reestruturar seus componentes. Na matrícula 35000, aparecem em sequência “O que falta conferir” (quatro pendências), “Indicador real”, “Proprietário atual”, “Ônus e ocorrências vigentes” e “Conferência com o sistema Tri7”. Alertas de leitura incompleta coexistem com dados de titularidade e com “Nenhum vigente. Fólio livre.”, exigindo que o usuário relacione ressalvas e resultados espalhados pela página. Na segunda captura, “Decisão necessária” reúne blocos com mensagens e botões de confirmação semelhantes, códigos e “Alterar a natureza”; abaixo ficam “Resumo do protocolo” e “Título recebido”, enquanto uma coluna lateral está parcialmente visível. O problema registrado é de hierarquia, agrupamento e clareza; as capturas não demonstram o efeito dos botões nem comprovam duplicação de atos ou incorreção dos dados.",
+          "expected": "Permitir entender rapidamente o contexto, o que está confirmado, o que permanece incerto e qual ação é necessária. Manter dados da matrícula, pendências de leitura, decisões por ato e conferência cadastral em grupos distintos e identificáveis. Destacar as ressalvas junto ao dado afetado, evitando que uma informação não confirmada pareça conclusiva. Oferecer acesso ao conteúdo completo sem concentrar todos os detalhes e ações no mesmo nível visual.",
+          "suggestion": "Revisar a composição das duas telas. Na matrícula, adotar um resumo curto de situação e pendências, com navegação para os blocos de dados, titularidade, ônus e comparação com a Tri7; manter visíveis os alertas pertinentes e recolher detalhes secundários. No protocolo, exibir um contexto compacto e agrupar as decisões por ato e matrícula, com título, motivo da pendência, opções nomeadas e ação principal inequívoca. Evitar mensagens e controles repetitivos sem identificação do objeto a que se aplicam; permitir expandir fundamentos, documentos e informações complementares. Usar espaçamento, tipografia e rótulos consistentes para distinguir síntese, alerta e ação, sem depender apenas de cores. Preservar todos os dados e avisos relevantes; a proposta é reorganizá-los, sem ocultar incertezas.",
+          "verification": "Após a reorganização, retestar as duas telas com seus respectivos documentos e protocolos, registrando versão e data. Verificar se é possível identificar o contexto, localizar cada pendência, distinguir dado confirmado de leitura incompleta e reconhecer a matrícula e o ato de cada decisão antes de confirmar. Conferir que nenhuma informação, opção ou ressalva foi perdida; que expansões revelam os detalhes corretos; e que os botões atuam apenas no item identificado. Testar teclado, foco visível, nomes acessíveis e telas estreitas, sem sobreposição, cortes ou rolagem horizontal da página. Registrar o resultado; não foram realizadas medições de compreensão ou de tempo nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-03",
+            "ATLAS19-EV-04"
+          ],
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "comparisons": [
+            {
+              "reportId": "atlas",
+              "findingId": "AC-005",
+              "label": "Antecedente de clareza nas decisões · AC-005"
+            }
+          ],
+          "relatedIds": [
+            "ATLAS-TIT-03",
+            "ATLAS-UX-06",
+            "ATLAS-UX-07",
+            "ATLAS-NAV-09",
+            "ATLAS-UX-13",
+            "ATLAS-UX-14"
+          ]
+        },
+        {
+          "id": "ATLAS-TIT-03",
+          "title": "Apurar proprietários atuais e frações com base nos atos, distinguindo divergência de erro cadastral",
+          "kind": "Atlas / leitura da matrícula / titularidade e frações",
+          "context": "Matrícula 4.466 · comparação entre Atlas e a aba “Proprietário Atual” do Tri7 Registro de Imóveis Desktop. Capturas recebidas em 19/10/2026.",
+          "observationLabel": "Observado nas capturas e relatado",
+          "description": "O usuário relata dificuldades variadas na identificação dos proprietários, incluindo cônjuge como coproprietário e vendas parciais, e situações em que a IA se contradiz ao confrontar a leitura com o cadastro. No exemplo capturado, o Atlas mostra apenas Max Teixeira de Barros em “Proprietário atual”, com “propriedade plena · desde R.15”, e alerta que as frações não somam 100%. Na tabela de conferência, Alacir Teixeira de Barros consta apenas no cadastro; Max aparece com 50,0% (R.17) no cadastro e 58,3300% (R.15) na leitura do Atlas. A segunda captura, do Desktop para a mesma matrícula 4.466, mostra Alacir Teixeira de Barros e Max Teixeira de Barros com 50% cada, totalizando 100%, e indica R-17 como último ato verificado. Há divergência visível entre as telas; o texto integral e os atos da matrícula não foram anexados a este item, portanto as imagens não determinam qual apuração está correta. Elas também não comprovam vínculo conjugal ou venda parcial neste caso específico.",
+          "expected": "Apurar os titulares e as frações atuais a partir dos atos pertinentes, preservando a participação remanescente quando houver transmissão parcial e distinguindo o papel de cônjuge do de titular conforme o texto. Confrontar essa apuração com o cadastro e apontar possíveis erros com os atos e trechos que os sustentam. Se faltarem elementos, indicar leitura inconclusiva e necessidade de conferência, sem tratar o cadastro como automaticamente errado ou correto. Manter o quadro atual, os percentuais, os alertas e a tabela de comparação coerentes entre si.",
+          "suggestion": "Revisar a leitura sequencial das aquisições, transmissões e demais alterações de titularidade, vinculando cada pessoa e fração ao ato de origem e às alterações posteriores. Distinguir fração transmitida, remanescente e participação no imóvel inteiro antes de calcular totais; não atribuir copropriedade apenas pela menção ao cônjuge. Expor o percurso da apuração e os trechos de suporte ao apontar divergência. No caso 4.466, investigar por que a leitura remete a R.15 e a conferência cadastral a R.17, sem assumir que essa diferença explica a falha. Se os atos confirmarem dois titulares com 50% cada, refletir ambos; caso contrário, explicitar a evidência que sustenta a divergência. Uma soma de 100% é uma checagem aritmética, não prova de titularidade correta.",
+          "verification": "Retestar com o texto integral da matrícula 4.466 e o cadastro correspondente à mesma data de referência. Conferir os atos pertinentes, inclusive R.15 e R.17, identificar titulares, papéis e frações e comparar com as duas telas. Verificar por que Alacir não aparece na leitura e a origem dos 58,33% atribuídos a Max. Confirmar que quadro atual, tabela, alertas e histórico usam a mesma apuração; diferenciar eventual erro de extração, atualização ou cadastro somente quando houver evidência. Incluir casos documentados de cônjuge titular e apenas qualificado, venda parcial com remanescente, múltiplos titulares e informação insuficiente. Registrar versão, documentos, data e resultado por caso; não foram executados esses retestes nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-05",
+            "ATLAS19-EV-06"
+          ],
+          "relatedIds": [
+            "ATLAS-UX-02",
+            "ATLAS-UX-12"
+          ],
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          },
+          "comparisons": [
+            {
+              "reportId": "atlas",
+              "findingId": "AC-001",
+              "label": "Antecedente de apuração dos titulares · AC-001"
+            },
+            {
+              "reportId": "atlas",
+              "findingId": "AC-038",
+              "label": "Antecedente de confronto entre leitura e cadastro · AC-038"
+            }
+          ]
+        },
+        {
+          "id": "ATLAS-FLOW-04",
+          "title": "Seleção de Registro Auxiliar retorna a perguntas sobre matrícula e não conclui o fluxo",
+          "kind": "Atlas / seleção de registro / fluxo de navegação",
+          "context": "Registro Auxiliar 4.466 · conversa do Atlas e cadastro no Tri7 Registro de Imóveis Desktop. O mesmo número também aparece como matrícula na conversa; são tipos de registro distintos.",
+          "observationLabel": "Observado nas capturas e relatado",
+          "description": "O usuário relata que, após acionar duas vezes a opção de Registro Auxiliar oferecida pelo próprio Atlas, o sistema não seguiu o fluxo convencional de seleção e passou a questionar o significado do termo. Na captura da conversa, o Atlas oferece “Ler a matrícula 4466”, “Ler o registro auxiliar 4466” e “Analisar o protocolo 4466”. Em seguida, aparecem mensagens repetidas “Ler o registro auxiliar 4466”, respostas “Você quer ler a matrícula número 4466?” e, ao final, “Registro auxiliar é matrícula?”. O recorte não mostra a abertura do Registro Auxiliar solicitado. A outra captura mostra o Desktop com a seleção “Reg Auxiliar”, o cabeçalho “Reg. Auxiliar: 4.466 · Cédula Rural Pignoratícia” e o texto desse registro. O usuário informa que o registro está ativo; não há um indicador explícito de situação ativa visível nesse recorte. O selo “Ativa” na conversa pertence ao cartão da matrícula 4466, não comprova a situação do Registro Auxiliar.",
+          "expected": "Ao selecionar “Ler o registro auxiliar 4466”, manter o tipo Registro Auxiliar e o número escolhido, consultar o cadastro correspondente e apresentar sua abertura ou leitura no fluxo previsto. Distinguir matrícula, Registro Auxiliar e protocolo mesmo quando compartilham o número. Não trocar a escolha explícita por outra categoria nem solicitar que o usuário defina uma opção fornecida pela própria interface. Quando o registro não puder ser acessado, informar a dificuldade e oferecer uma ação de recuperação coerente.",
+          "suggestion": "Revisar o vínculo entre cada opção apresentada, o tipo de registro, seu identificador e a ação executada. Preservar essa seleção nos passos seguintes e no retorno da consulta, evitando reinterpretar apenas o número ou perder a categoria expressamente indicada. Usar rótulos de confirmação específicos, como “Registro Auxiliar 4.466”, quando uma confirmação for necessária. Tratar repetição da mesma solicitação sem entrar em ciclo de perguntas sobre matrícula. As imagens não determinam em qual etapa o contexto foi perdido.",
+          "verification": "Retestar a seleção do Registro Auxiliar 4.466 a partir da opção oferecida pelo Atlas e pela solicitação textual explícita. Conferir o tipo e o número consultados e comparar o registro aberto com o cadastro exibido no Desktop, sem substituir pela matrícula 4.466. Testar também matrícula e protocolo com o mesmo número, registrando os destinos de cada escolha. Repetir a solicitação e conferir que não há troca de categoria ou ciclo de confirmação; testar registro indisponível, com mensagem de recuperação adequada. Registrar versão, data, sequência de ações e resultado. Os dois cliques vêm do relato; a captura estática registra as mensagens, sem demonstrar como cada envio foi acionado. Nenhum desses retestes foi executado nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-07",
+            "ATLAS19-EV-08"
+          ],
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          },
+          "comparisons": [
+            {
+              "reportId": "atlas",
+              "findingId": "AC-045",
+              "label": "Antecedente sobre distinção de Registro Auxiliar · AC-045"
+            }
+          ]
+        },
+        {
+          "id": "ALIA-CHAT-05",
+          "title": "Gerenciar conversas com exclusão, renomeação e agrupamentos, sob permissões da serventia",
+          "kind": "Alia / Atlas e VadeChat / gestão de conversas e permissões",
+          "context": "Barra lateral de conversas do Alia/Atlas como exemplo capturado; proposta aplicável também ao Alia/VadeChat.",
+          "observationLabel": "Proposta do usuário e referência visual",
+          "description": "O usuário solicita controles para excluir e renomear chats e organizá-los em agrupamentos semelhantes a projetos, conforme o assunto ou o escopo analisado. Propõe que uma conta master/admin possa habilitar ou desabilitar essas funcionalidades nas configurações da serventia, permitindo, por exemplo, manter a exclusão bloqueada para um cartório. A solicitação abrange Alia/Atlas e Alia/VadeChat. A captura mostra “Nova análise” e a lista “Análises recentes”, com títulos truncados, datas e rolagem; não há controles de gestão visíveis no recorte. Ela serve de referência da barra lateral do Atlas, sem demonstrar a ausência das ações em todos os menus nem o estado da interface do VadeChat.",
+          "expected": "Oferecer ações identificáveis por conversa para renomear, excluir e mover para agrupamentos, além de criar e nomear os grupos. Preservar a identificação do chat e seu conteúdo ao renomear ou reorganizar. Permitir à conta master/admin configurar, por serventia, quais operações ficam disponíveis, incluindo desabilitar a exclusão sem necessariamente desabilitar a organização. Aplicar a mesma política no Atlas e no VadeChat, respeitando as permissões do usuário.",
+          "suggestion": "Usar um menu de ações por conversa e grupos expansíveis na barra lateral. Nas configurações da serventia, oferecer controles separados para excluir, renomear e agrupar, com efeito explicado. Validar a permissão ao executar a ação, sem depender apenas de ocultar o botão. Se permitida, confirmar a exclusão identificando o chat; distinguir remoção de grupo de exclusão das conversas. Explicar restrições de forma compreensível.",
+          "verification": "Após implementação, testar Atlas e VadeChat: renomear, criar grupos, mover chats e conferir persistência após recarregar. Com conta master/admin, alternar cada permissão e conferir o efeito para usuários comuns, inclusive em menus já abertos. Verificar que usuários sem autorização não alteram configurações nem executam ações bloqueadas; manter isolamento entre serventias. Testar confirmação e cancelamento da exclusão, teclado e telas pequenas. Registrar resultados por módulo; nenhum reteste desta proposta foi executado.",
+          "evidenceIds": [
+            "ALIA19-EV-09"
+          ],
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          }
+        },
+        {
+          "id": "ATLAS-UX-06",
+          "title": "Explicar códigos e remover sua repetição nos botões de decisão",
+          "kind": "Atlas / interface / rótulos das decisões",
+          "context": "Alia/Atlas · bloco “Decisão necessária”, com opções de confirmação de natureza do ato.",
+          "observationLabel": "Observado na captura e relatado",
+          "description": "O usuário relata números de significado desconhecido nos botões destacados e considera que possam ser controles internos. A captura mostra “Confirmar Alienação fiduciária” acompanhado de 2.04.01.001; outras alternativas apresentam “Confirmar 2.04.01.003” e “Confirmar 3.01.01.001”, com o mesmo código repetido ao lado em cada botão, sem nome do ato nessas opções. O problema visível é a falta de identificação compreensível de parte das alternativas e a duplicação dos códigos. Sua origem como controle interno não está comprovada pela imagem; é necessário confirmar se são códigos de classificação dos atos ou outro identificador antes de rotulá-los.",
+          "expected": "Identificar cada alternativa por um nome compreensível, permitindo distinguir o que será confirmado. Quando o código for útil à conferência, apresentá-lo uma única vez como informação complementar, com sua finalidade identificada. Não exigir que o usuário conheça uma sequência numérica para entender o efeito da ação.",
+          "suggestion": "Revisar a composição dos rótulos no bloco “Decisão necessária”. Usar “Confirmar [nome do ato]” como texto principal e, após confirmar a origem dos códigos, exibir código e descrição correspondentes sem repetição. Indicar livro ou categoria quando necessário para diferenciar alternativas, com dados conferidos na fonte de classificação usada pelo sistema. Oferecer detalhes acessíveis por teclado, sem depender exclusivamente de passar o mouse. Não inventar o nome das opções 2.04.01.003 e 3.01.01.001 a partir desta captura.",
+          "verification": "Conferir a fonte e a correspondência de cada código com o nome, a categoria e a ação executada. No caso capturado, verificar que as três alternativas tenham nomes claros e códigos não duplicados e que a seleção confirme exatamente o ato identificado. Testar nomes extensos, foco e leitura por tecnologia assistiva, além de telas pequenas, sem corte dos rótulos ou sobreposição. Registrar o resultado após a alteração; a proposta ainda não foi implementada nem retestada nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-10"
+          ],
+          "relatedIds": [
+            "ATLAS-UX-02",
+            "ATLAS-UX-07"
+          ],
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "comparisons": [
+            {
+              "reportId": "atlas",
+              "findingId": "AC-006",
+              "label": "Antecedente sobre códigos sem identificação clara · AC-006"
+            }
+          ]
+        },
+        {
+          "id": "ATLAS-UX-07",
+          "title": "Destacar a matrícula e delimitar o grupo de ações de cada decisão",
+          "kind": "Atlas / leitura de protocolos / hierarquia visual das ações",
+          "context": "Alia/Atlas · bloco “Decisão necessária” na leitura de protocolo, com referências às matrículas 33663 e 9060. O número do protocolo não está visível neste recorte.",
+          "observationLabel": "Observado na captura e relatado",
+          "description": "O usuário relata que os números das matrículas ficam escondidos entre as informações e dificultam entender a hierarquia dos botões. Na captura, 33663 e 9060 estão legíveis, destacados pelas marcações fornecidas pelo usuário, mas aparecem dentro de parágrafos explicativos em texto secundário. Os blocos repetem “O pedido não declara expressamente o ato”, “Confirmar Alienação fiduciária” e “Alterar a natureza”, sem destacar a matrícula em um cabeçalho próprio. Há também um grupo de alternativas acima. Essa composição dificulta associar cada ação ao seu objeto; a imagem não demonstra corte dos números nem o efeito de clicar nos botões.",
+          "expected": "Permitir reconhecer, antes de agir, a matrícula e o ato a que cada decisão se aplica. Identificar visualmente cada grupo, mantendo seus botões próximos do respectivo cabeçalho e distinguindo alternativas de confirmação da ação de alterar a natureza. Quando houver decisões gerais do protocolo e decisões específicas por matrícula, explicitar a abrangência de cada uma.",
+          "suggestion": "Criar blocos ou cartões separados com cabeçalhos destacados, como “Matrícula 33663” e “Matrícula 9060”, acompanhados da decisão ou ato correspondente. Manter justificativa e ações dentro do bloco, com espaçamento e rótulos consistentes. Dar destaque à ação principal e apresentar ações alternativas com hierarquia clara. Associar também os nomes acessíveis dos controles à matrícula, para que botões com texto semelhante sejam distinguíveis por teclado e tecnologia assistiva. Não depender apenas de cor nem do número embutido no parágrafo.",
+          "verification": "Retestar protocolos com uma e várias matrículas. Verificar se cada decisão e botão pode ser associado à matrícula correta sem procurar no texto explicativo; conferir também o destino efetivo da ação e sua abrangência. Testar títulos extensos, teclado e telas pequenas, mantendo cabeçalhos, justificativas e botões agrupados, sem sobreposição ou corte. Registrar o resultado após a reorganização; a proposta ainda não foi implementada nem retestada nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-11"
+          ],
+          "relatedIds": [
+            "ATLAS-UX-02",
+            "ATLAS-UX-06"
+          ],
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          },
+          "comparisons": [
+            {
+              "reportId": "atlas",
+              "findingId": "AC-005",
+              "label": "Antecedente de identificação do objeto de cada decisão · AC-005"
+            }
+          ]
+        },
+        {
+          "id": "ATLAS-DOC-08",
+          "title": "Texto lido do expediente mostra apenas números de página, sem o conteúdo da imagem",
+          "kind": "Atlas / expediente / extração e exibição do texto documental",
+          "context": "Alia/Atlas · expediente do protocolo 186648 · “Cédula”, selecionada como documento de 36 páginas, com indicação “OCR” na interface.",
+          "observationLabel": "Observado nas capturas e relatado",
+          "description": "O usuário relata que a leitura do expediente mostra apenas números das páginas, sem recuperar o texto da imagem. Em “Imagem + texto”, a cédula contém texto visível, mas “Texto lido” mostra somente “Página 1 de 36” e marcadores seguintes, até a página 16 no recorte. Em “Só texto”, há apenas marcadores até a página 18 visível. A interface informa “36 pág. · OCR”. As capturas não mostram as demais páginas nem a etapa em que o conteúdo deixou de aparecer.",
+          "hypothesis": "Investigar extração/OCR, vínculo com o documento, persistência, carregamento e exibição. O rótulo “OCR” não comprova reconhecimento bem-sucedido; as capturas não identificam a causa nem o conteúdo efetivamente usado na análise do protocolo.",
+          "expected": "Exibir o texto reconhecido de cada página, associado à imagem e ao documento corretos. Marcadores devem organizar o conteúdo, sem substituí-lo. Informar claramente leitura pendente, incompleta ou com falha, em vez de apresentar só paginação como resultado.",
+          "suggestion": "Conferir o percurso entre arquivo, reconhecimento e painel, validando conteúdo útil além dos marcadores e o vínculo com cada página. Garantir conteúdo consistente em “Imagem + texto” e “Só texto”. Aplicar ou refazer OCR quando necessário, preservando o original, e oferecer nova tentativa com estado de leitura compreensível.",
+          "verification": "Retestar a cédula de 36 páginas do protocolo 186648 com o arquivo original. Comparar imagem e texto em todas as páginas e nos dois modos; conferir vínculo entre documento, página e trecho. Verificar separadamente os demais documentos, sem presumir a mesma falha. Testar recarga e nova tentativa, registrando falhas e conteúdo usado na análise. Nenhum reteste ou novo OCR foi executado nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-12",
+            "ATLAS19-EV-13"
+          ],
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          },
+          "comparisons": [
+            {
+              "reportId": "atlas",
+              "findingId": "AC-022",
+              "label": "Antecedente de texto lido sem conteúdo da imagem · AC-022"
+            }
+          ],
+          "relatedIds": [
+            "ATLAS-DOC-10"
+          ]
+        },
+        {
+          "id": "ATLAS-NAV-09",
+          "title": "Identificar os controles laterais do protocolo como atalhos dentro da página",
+          "kind": "Atlas / leitura de protocolos / navegação interna",
+          "context": "Alia/Atlas · painel lateral “Situação do protocolo”, ao lado de “Decisão necessária”. O número do protocolo não está visível neste recorte.",
+          "observationLabel": "Observado na captura e comportamento relatado",
+          "description": "O usuário relata que os controles laterais parecem abrir outra tela, mas apenas rolam a página atual até seções do protocolo. Na captura, “Situação do protocolo” reúne cartões de atos a confirmar, atos não lançados, ônus vigentes e pontos na leitura do fólio, com setas para a direita destacadas pelo usuário. Essa apresentação não explica expressamente a navegação dentro da própria página. A ação “ver o resumo do protocolo ↑” aparece abaixo. A captura mostra os controles; o efeito de rolagem e a percepção de confusão vêm do relato, sem uma sequência de cliques registrada nesta evidência.",
+          "expected": "Permitir antecipar que cada controle leva a uma seção do protocolo na mesma página, identificando seu destino. Manter clara a diferença entre atalhos internos e ações que abrem outra tela ou documento.",
+          "suggestion": "Rotular o grupo como “Atalhos desta página” ou acrescentar uma indicação equivalente em “Situação do protocolo”. Usar textos como “Ir para a seção” ou “Ver nesta página”, acompanhados de ícone coerente com a navegação interna, em vez de depender apenas da seta lateral. Conferir o destino de cada cartão antes de nomeá-lo. Ao chegar à seção, deixá-la identificável por título e destaque de destino; preservar o contexto e posicionar o conteúdo sem encobri-lo pelo cabeçalho.",
+          "verification": "Retestar cada controle e conferir que rótulo e seção alcançada correspondem, sem sugerir abertura de nova tela. Verificar a posição de chegada e o retorno ao resumo. Testar teclado, nomes acessíveis, foco no destino e celular; respeitar a preferência por movimento reduzido se houver rolagem animada. Registrar os resultados e distinguir a navegação interna de links para documentos ou outras telas. Nenhum desses retestes foi executado nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-14"
+          ],
+          "relatedIds": [
+            "ATLAS-UX-02",
+            "ATLAS-UX-13"
+          ],
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          }
+        },
+        {
+          "id": "ATLAS-DOC-10",
+          "title": "Orientação para usar “Reler” não recupera o texto do fólio, segundo o relato",
+          "kind": "Atlas / leitura de protocolos / releitura do fólio",
+          "context": "Alia/Atlas · expediente do protocolo 186648 · fólios das matrículas 33663 e 9060 e comando de releitura na tela do protocolo.",
+          "observationLabel": "Observado nas capturas e sequência relatada",
+          "description": "O usuário relata que abriu o fólio na janela lateral, recebeu a orientação para usar “Reler”, voltou à tela anterior e acionou o comando, mas o texto continuou indisponível. Na janela, a matrícula 33663 aparece com “0 atos lidos” e “Este fólio ainda não foi lido pelo Atlas. Use ‘Reler’ na página para lê-lo”; os dois fólios estão marcados como “não lida”. Na outra captura, o comando está em “Lendo…”, a matrícula 33663 mantém a orientação para reler e a 9060 aparece como “Ativa”, com zero atos lidos e “nenhum — fólio livre”. Há avisos “sem_marcador_de_ato” e “verificacao_nao_executada”. As imagens registram esses estados; a tentativa sem recuperação vem do relato, sem comprovação do término do processamento ou do tempo de espera.",
+          "hypothesis": "Conferir qual matrícula é alvo de “Reler”: o cabeçalho da captura identifica 9060, enquanto o bloco 33663 orienta usar o comando acima. Investigar o acionamento, a leitura e segmentação, a conclusão da verificação e a atualização do resultado na janela lateral. Os avisos são mensagens do sistema, não prova independente de matrícula manuscrita, layout irregular ou de uma causa específica.",
+          "expected": "Reler o fólio solicitado e atualizar seu texto, atos e estado tanto na tela do protocolo quanto na janela lateral. Identificar claramente o alvo e o resultado da tentativa. Em caso de falha ou leitura incompleta, apresentar motivo e recuperação coerentes, sem repetir apenas a mesma orientação. Não apresentar ausência de ônus como conclusão confirmada a partir de uma leitura ainda não concluída.",
+          "suggestion": "Revisar o fluxo completo de “Reler”, vinculando a solicitação ao fólio correto e distinguindo leitura em andamento, concluída e com falha. Conferir os avisos e o resultado retornado antes de atualizar os cartões. Se o comando for compartilhado entre vários fólios, explicitar sua abrangência ou oferecer a ação por matrícula. Sincronizar a janela lateral com o resultado mais recente e indicar o próximo passo quando a nova tentativa falhar.",
+          "verification": "Retestar no protocolo 186648: abrir cada fólio, seguir a orientação de releitura, registrar a matrícula efetivamente consultada e aguardar o resultado. Conferir logs e respostas do processamento, avisos, texto e atos retornados; reabrir a janela e comparar o estado com a tela principal. Verificar que uma falha encerra o carregamento com mensagem útil e não produz conclusão de fólio livre. Não equiparar zero atos a ausência confirmada de ônus. Registrar versão, sequência e tempos observados; nenhum desses retestes foi executado nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-15",
+            "ATLAS19-EV-16"
+          ],
+          "relatedIds": [
+            "ATLAS-DOC-08",
+            "ATLAS-DOC-11",
+            "ATLAS-UX-12"
+          ],
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          }
+        },
+        {
+          "id": "ATLAS-DOC-11",
+          "title": "Cartão apresenta dados de leitura, mas a janela mantém o fólio 9060 como não lido",
+          "kind": "Atlas / leitura de protocolos / coerência do estado e do resultado do fólio",
+          "context": "Alia/Atlas · protocolo 186648 · matrícula 9060, comparando o cartão na tela principal com a janela lateral do fólio.",
+          "observationLabel": "Observado nas capturas e percepção relatada",
+          "description": "O usuário relata que a presença de mais informações sugere uma leitura bem-sucedida, mas a abertura do fólio retorna ao mesmo aviso de falta de leitura. O cartão da matrícula 9060 mostra “Ativa”, Livro 2, “Lida em 19/10/2026, 14:48”, zero atos e “nenhum — fólio livre”. Também exibe “sem_marcador_de_ato” e “verificacao_nao_executada”, com a informação de que a cobertura do documento não foi verificada. Na janela da mesma matrícula, aparecem “não lida”, “0 atos lidos” e a orientação para usar “Reler”. As duas telas mantêm zero atos; a diferença está na apresentação dos dados e do estado. As capturas não comprovam que a leitura tenha sido concluída com sucesso.",
+          "hypothesis": "Investigar se o cartão apresenta dados cadastrais ou de uma tentativa parcial enquanto a janela depende de outro estado ou resultado. Conferir também vínculo, versão do resultado e atualização entre as telas. A maior quantidade de campos, a data e o selo “Ativa” não comprovam reconhecimento completo do texto; a origem de cada dado precisa ser verificada.",
+          "expected": "Apresentar um estado de leitura coerente no cartão e no fólio, distinguindo dados cadastrais, tentativa realizada, conteúdo recuperado e verificação concluída. Se houver resultado disponível, exibi-lo no fólio; se incompleto ou indisponível, explicar essa condição em ambas as telas, sem sugerir sucesso nem ausência confirmada de ônus.",
+          "suggestion": "Revisar os critérios que alimentam os estados e os campos das duas telas. Identificar a origem dos dados e a última tentativa, separando leitura iniciada ou parcial de leitura concluída e verificada. Garantir que a abertura do fólio consulte o resultado correspondente à matrícula e à tentativa mostradas no cartão. Evitar usar somente data, preenchimento de campos ou situação cadastral como sinal de sucesso da leitura.",
+          "verification": "Retestar a matrícula 9060 no protocolo 186648: registrar os estados e identificadores disponíveis antes e após a leitura e comparar cartão, resultado retornado e janela lateral. Conferir a origem dos campos, o texto recuperado e a conclusão da verificação. Testar resultado parcial, falha e sucesso real, recarga e reabertura do fólio. Confirmar que os avisos e as conclusões refletem a cobertura efetiva do documento. Nenhum desses retestes foi executado nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-17",
+            "ATLAS19-EV-18"
+          ],
+          "relatedIds": [
+            "ATLAS-DOC-10",
+            "ATLAS-UX-12"
+          ],
+          "status": "Aguardando reteste",
+          "retest": {
+            "execution": "not-performed"
+          }
+        },
+        {
+          "id": "ATLAS-UX-12",
+          "title": "Explicar os pontos na leitura com motivo, impacto e próximo passo compreensíveis",
+          "kind": "Atlas / leitura do fólio / mensagens e orientação ao usuário",
+          "context": "Alia/Atlas · seção “Pontos na leitura”, com códigos técnicos e avisos sobre segmentação, verificação e titulares.",
+          "observationLabel": "Observado na captura e dificuldade relatada",
+          "description": "O usuário relata dificuldade para interpretar “Pontos na leitura”. A captura reúne “sem_marcador_de_ato”, a informação de que nenhum marcador Ab/R/AV foi encontrado, “verificacao_nao_executada”, alternativas como ausência de segundo leitor, falta de resposta ou resposta ilegível, e “nenhum proprietário apurado na leitura”. O texto mistura códigos, motivos possíveis e consequências, sem distinguir claramente qual condição ocorreu neste caso e o que o usuário deve fazer. A mensagem sobre matrícula manuscrita ou layout irregular é informação do sistema, não uma causa comprovada pela captura.",
+          "expected": "Explicar em linguagem simples o que não foi identificado ou concluído, qual informação ficou pendente e qual ação é recomendada. Distinguir erro confirmado, hipótese e condição não verificada. Deixar claro que não apurar um proprietário na leitura não significa que o imóvel não tenha proprietário.",
+          "suggestion": "Apresentar cada ponto em bloco curto com “O que aconteceu”, “O que isso afeta” e “Como conferir ou tentar novamente”. Usar o motivo específico quando conhecido; se não houver diagnóstico, informar que a causa ainda precisa ser verificada. Manter códigos e detalhes de processamento em seção técnica expansível. Evitar listar possibilidades como se todas tivessem ocorrido e não atribuir culpa ao documento sem evidência.",
+          "verification": "Após a revisão, conferir mensagens para falta de marcadores, leitura parcial e verificação não concluída. Validar a correspondência entre mensagem, motivo registrado e ação de recuperação disponível. Confirmar que a ausência de extração não vira afirmação de inexistência de titulares. Testar leitura dos avisos por teclado, tecnologia assistiva e celular. Nenhum reteste foi executado nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-19"
+          ],
+          "relatedIds": [
+            "ATLAS-DOC-10",
+            "ATLAS-DOC-11",
+            "ATLAS-TIT-03"
+          ],
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          }
+        },
+        {
+          "id": "ATLAS-UX-13",
+          "title": "Transformar contadores do Exame em caixas expansíveis com os itens de cada categoria",
+          "kind": "Atlas / exame do protocolo / navegação e expansão de categorias",
+          "context": "Alia/Atlas · resumo “Revisão necessária” do Exame, com contadores de exigência, itens a decidir, atenção e itens em ordem.",
+          "observationLabel": "Observado na captura e comportamento relatado",
+          "description": "A captura mostra 6 em “Exigência”, 14 em “A decidir”, 14 em “Atenção” e 37 em “Em ordem”, além de “37 de 71 itens em ordem”. Segundo o usuário, acionar esses controles rola a tela até o agrupamento correspondente, causando uma ação inesperada. Ele propõe que os números sejam caixas recolhíveis que, ao abrir, mostrem todos os itens daquele tipo. A imagem mostra os contadores; o efeito atual do clique vem do relato. Os valores são transcritos da tela, sem reavaliação dos itens.",
+          "expected": "Permitir abrir e recolher cada categoria do resumo para consultar os respectivos itens, com comportamento explícito. Manter visíveis o nome e a quantidade da categoria e indicar se ela está expandida. A proposta se refere aos contadores do Exame, distinguindo-os dos atalhos laterais tratados em ATLAS-NAV-09.",
+          "suggestion": "Usar cartões ou cabeçalhos de acordeão com nome, contador e indicador de expansão. Ao abrir uma categoria, mostrar os seus itens em uma lista identificada, com acesso ao detalhe e sem salto inesperado pela página. Manter o total e a lista sincronizados e permitir recolher o grupo sem perder o contexto. Comunicar listas vazias e o estado expandido de forma acessível, sem depender apenas de cores.",
+          "verification": "Após implementação, abrir e recolher cada categoria e conferir sua lista e quantidade contra os itens reais do mesmo protocolo e estado. Verificar que todos os itens do tipo ficam acessíveis, sem mistura entre categorias ou duplicação causada pela expansão. Testar teclado, foco, leitores de tela, listas longas e celular. Confirmar que o controle não realiza rolagem surpresa. Nenhum reteste foi executado nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-20"
+          ],
+          "relatedIds": [
+            "ATLAS-NAV-09",
+            "ATLAS-UX-02",
+            "ATLAS-UX-14"
+          ],
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          }
+        },
+        {
+          "id": "ATLAS-UX-14",
+          "title": "Reduzir a repetição simultânea dos mesmos indicadores no Exame",
+          "kind": "Atlas / exame do protocolo / síntese e redundância visual",
+          "context": "Alia/Atlas · etapa “Exame”, resumo “Revisão necessária” e painel lateral “Estado do caso”.",
+          "observationLabel": "Observado na captura e sobrecarga relatada",
+          "description": "O usuário relata excesso causado pela apresentação simultânea dos mesmos valores. A captura mostra 6 exigências, 14 itens a decidir, 14 de atenção e 37/71 em ordem no resumo principal e no painel “Estado do caso”; a etapa “Exame” também repete parte dos números. Os destaques fornecidos marcam os dois resumos. A repetição ocupa espaço e compete com o conteúdo útil. A imagem não demonstra divergência entre os valores nem permite concluir que todos os dados do painel lateral sejam redundantes: “Decisões 0” e “Banca nota 5 · ver o parecer” são informações adicionais visíveis.",
+          "expected": "Priorizar uma síntese clara do estado do caso e evitar repetir indicadores no mesmo campo de visão sem uma finalidade distinta. Preservar informações exclusivas, ações e ressalvas importantes. Não confundir redução de repetição com exclusão de dados necessários à análise.",
+          "suggestion": "Definir onde ficará a síntese principal e reservar os demais componentes para contexto, pendências ou informações complementares. Integrar essa decisão aos contadores expansíveis de ATLAS-UX-13. Quando um resumo auxiliar for necessário em outra posição ou etapa, explicar sua função e manter valores consistentes. Preservar dados exclusivos e acesso ao parecer; usar detalhes recolhíveis para conteúdo secundário, sem esconder alertas essenciais.",
+          "verification": "Após reorganização, conferir o mesmo protocolo nas etapas e larguras relevantes. Verificar se os números têm uma apresentação principal clara, se eventuais repetições cumprem função específica e se as informações exclusivas continuam acessíveis. Conferir que a atualização de estado mantém os indicadores coerentes, sem perder categorias, pareceres ou ações. Nenhum reteste foi executado nesta rodada.",
+          "evidenceIds": [
+            "ATLAS19-EV-21"
+          ],
+          "relatedIds": [
+            "ATLAS-UX-02",
+            "ATLAS-UX-13"
+          ],
+          "status": "Proposta de melhoria",
+          "retest": {
+            "execution": "not-applicable"
+          }
+        }
+      ]
     }
   ],
   "evidence": [
@@ -6023,6 +6419,258 @@
       "path": "/originals/2026-10-16/captura-06.png",
       "originalName": "codex-clipboard-3f5de951-96ba-4958-aa4f-ea354ac7f967.png",
       "sha256": "1e5f52943a423d304685f14de3fcb3c23635d07ac2ceabf9a08e4efeb98d6552"
+    },
+    {
+      "id": "ATLAS19-EV-01",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-SEG-01"
+      ],
+      "description": "Captura 1: Mat.0 expandido contém linha de hífens e o cabeçalho AV.01.39.953 (TRASLADO/PRESERVAÇÃO FLORESTAL); Av.3 aparece logo abaixo como item separado. Setas fornecidas pelo usuário destacam a ausência de um componente próprio para AV.01.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/av01-dentro-mat0.png",
+      "originalName": "codex-clipboard-9f60efe1-6186-4955-8aa5-21dac510fab1.png",
+      "sha256": "d5c1c97cceb21ae1f5b4d4613aa3abe43885523a557ed35ce4b69cce1aa34cdb"
+    },
+    {
+      "id": "ATLAS19-EV-02",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-SEG-01"
+      ],
+      "description": "Captura 2: a área expandida de Mat.0 contém o cabeçalho AV.02.39.953 (TRASLADO/RESERVA LEGAL); Av.3 permanece como item separado abaixo. As setas fornecidas pelo usuário destacam a ausência de um componente próprio para AV.02.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/av02-dentro-mat0.png",
+      "originalName": "codex-clipboard-9a12911d-181a-4e60-823e-d314f90c6b32.png",
+      "sha256": "27bcf786424316a9b6b0b8d712ce8b300c814a4798b68f629999765320d0f6db"
+    },
+    {
+      "id": "ATLAS19-EV-03",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-UX-02"
+      ],
+      "description": "Tela da matrícula 35000: pendências em “O que falta conferir”, dados do indicador real, titularidade, ônus e comparação com o sistema Tri7. O recorte mostra a coexistência de alertas de leitura incompleta com informações apresentadas nos cartões; documenta o pedido de reorganização visual.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/organizacao-matricula.png",
+      "originalName": "2.png",
+      "sha256": "4196b4f157d1aa45195c853b4605a2d5565e937e6fff53f1aeff2a6c56d46c54"
+    },
+    {
+      "id": "ATLAS19-EV-04",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-UX-02"
+      ],
+      "description": "Tela do protocolo 186648: blocos de decisão com opções de confirmação, resumo com matrículas 33663 e 9060 e dados do título recebido. A coluna à direita aparece parcialmente no recorte; a imagem não permite concluir que haja corte ou overflow na tela original.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/organizacao-protocolo.jpeg",
+      "originalName": "2_b.jpeg",
+      "sha256": "5b6b027b3337161de8101f401806732e4c8700e5fe363c3348c94b623b8c3f89"
+    },
+    {
+      "id": "ATLAS19-EV-05",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-TIT-03"
+      ],
+      "description": "Atlas, matrícula 4466: quadro atual com Max Teixeira de Barros, alertas de titularidade e frações incompletas e tabela que confronta cadastro e leitura. Alacir aparece apenas no cadastro; Max, com 50,0% (R.17) no cadastro e 58,3300% (R.15) na leitura.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/titularidade-atlas-4466.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.21.02.jpeg",
+      "sha256": "688ef202bfa781018e8632ab39e1c6823deae2a7f0139741ebbe21f5bc9d2892"
+    },
+    {
+      "id": "ATLAS19-EV-06",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-TIT-03"
+      ],
+      "description": "Tri7 Registro de Imóveis Desktop, matrícula 4.466, aba “Proprietário Atual”: Alacir Teixeira de Barros e Max Teixeira de Barros, 50% cada e total 100%; R-17 como último ato verificado. É evidência do cadastro exibido, sem validação independente frente ao texto da matrícula.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/titularidade-desktop-4466.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.21.25.jpeg",
+      "sha256": "e8d8503f0e3b2463d4acd22b0e9e78e11b17df795ad2475e2015b90780764dbf"
+    },
+    {
+      "id": "ATLAS19-EV-07",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-FLOW-04"
+      ],
+      "description": "Desktop: seleção “Reg Auxiliar”, cabeçalho “Reg. Auxiliar: 4.466 · Cédula Rural Pignoratícia” e texto do registro aberto. O usuário informa situação ativa; o recorte não contém indicador explícito dessa situação. Esta é a captura do Desktop, primeira imagem na ordem dos anexos deste item.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/registro-auxiliar-4466-desktop.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.24.30.jpeg",
+      "sha256": "d1d9018769dc17ee0bdfb567cafc07f4c7d26590cedf0fcfe4d6adc92bce02b7"
+    },
+    {
+      "id": "ATLAS19-EV-08",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-FLOW-04"
+      ],
+      "description": "Conversa do Atlas: opção “Ler o registro auxiliar 4466”, solicitações explícitas repetidas, respostas sobre ler a matrícula e pergunta final “Registro auxiliar é matrícula?”. O cartão de matrícula exibido acima não deve ser confundido com o Registro Auxiliar solicitado. Esta é a segunda imagem na ordem dos anexos deste item.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/registro-auxiliar-4466-conversa.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.23.31.jpeg",
+      "sha256": "b311d699590383f9ce57b425a8aff20c4d196b0613a7cafd98a8a78b206954e7"
+    },
+    {
+      "id": "ALIA19-EV-09",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ALIA-CHAT-05"
+      ],
+      "description": "Barra lateral do Alia/Atlas com “Nova análise” e “Análises recentes”, títulos truncados, datas e barra de rolagem. Referência visual para a proposta de gerir conversas e agrupamentos; o recorte não mostra controles de exclusão ou renomeação. A extensão ao VadeChat e os controles por conta master/admin são solicitações do usuário.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/barra-lateral-gestao-conversas.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.29.19.jpeg",
+      "sha256": "76a9c2663904be4c37b656bd99db8a50f377e8e5f294545e2b36c53c3d0f6aaf"
+    },
+    {
+      "id": "ATLAS19-EV-10",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-UX-06"
+      ],
+      "description": "Bloco “Decisão necessária”: destaques fornecidos pelo usuário nos códigos 2.04.01.001, 2.04.01.003 e 3.01.01.001. As duas últimas opções exibem o respectivo código duas vezes e não apresentam o nome do ato no botão. A origem dos códigos não é comprovada pela captura.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/codigos-botoes-decisao.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.34.49.jpeg",
+      "sha256": "bf32d0066d60e5fc753c9a02c1d63304f0c61d028dde9b4c91b9c62f6fce5d1a"
+    },
+    {
+      "id": "ATLAS19-EV-11",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-UX-07"
+      ],
+      "description": "“Decisão necessária” com matrículas 33663 e 9060 dentro de parágrafos explicativos, marcadas em vermelho pelo usuário, e grupos com botões semelhantes. Os números estão visíveis, mas não aparecem como cabeçalhos destacados dos respectivos grupos de ações.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/hierarquia-matriculas-decisoes.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.37.27.jpeg",
+      "sha256": "a54fc4ec14b2376835567858558f2b8b2729760cd23126e3568717f76c8b9583"
+    },
+    {
+      "id": "ATLAS19-EV-12",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-DOC-08"
+      ],
+      "description": "Modo “Imagem + texto”, com “Cédula” de 36 páginas selecionada: conteúdo textual visível na imagem da página 1, mas apenas marcadores de páginas 1 a 16 na área visível de “Texto lido”. O rótulo “OCR” é metadado exibido pela interface, não comprovação de sucesso do reconhecimento.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/expediente-imagem-texto-paginacao.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.43.26.jpeg",
+      "sha256": "e07e835f8652b966654e16941e8c68c0ad760a4be79218b71ab62e3cedb29b79"
+    },
+    {
+      "id": "ATLAS19-EV-13",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-DOC-08"
+      ],
+      "description": "Expediente do protocolo 186648, modo “Só texto”: “Cédula” de 36 páginas e painel “Texto lido” com somente marcadores de páginas 1 a 18 no recorte. A captura não mostra as demais páginas nem o arquivo original.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/expediente-so-texto-paginacao.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.42.37.jpeg",
+      "sha256": "c5d4a0f83b8da18ee1dfb1745d2b3320b4be2d23a2b60c14c117ed3963c5549c"
+    },
+    {
+      "id": "ATLAS19-EV-14",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-NAV-09"
+      ],
+      "description": "Painel “Situação do protocolo” com quatro cartões e setas para a direita, destacadas pelo usuário, e ação “ver o resumo do protocolo ↑”. Segundo o relato, os cartões apenas rolam a página até seções do protocolo; a imagem estática não demonstra o resultado de um clique.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/atalhos-protocolo-rolagem.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.45.06.jpeg",
+      "sha256": "e185b13b77570856f25b74d4ca913e7ba1c7ec00df506f5597649f5c34771e06"
+    },
+    {
+      "id": "ATLAS19-EV-15",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-DOC-10"
+      ],
+      "description": "Janela do expediente, protocolo 186648: matrícula 33663 selecionada, zero atos lidos e orientação para usar “Reler” na página; matrículas 33663 e 9060 marcadas como “não lida”.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/folio-nao-lido-orientacao-reler.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.49.36.jpeg",
+      "sha256": "fc375f6287dcf524ae9a2c21c101a6a4405888a45dbd6ee4fba5d34c9884d7ae"
+    },
+    {
+      "id": "ATLAS19-EV-16",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-DOC-10"
+      ],
+      "description": "Tela do protocolo com comando em “Lendo…”, orientação de releitura no bloco 33663 e bloco 9060 com zero atos, “nenhum — fólio livre” e avisos “sem_marcador_de_ato” e “verificacao_nao_executada”. O estado capturado não comprova o término da tentativa.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/folio-releitura-avisos-lendo.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.48.38.jpeg",
+      "sha256": "ddb8ac8535320b2f072683b14990f5bdfd13d67d0260a1249a65acc1aacca0f1"
+    },
+    {
+      "id": "ATLAS19-EV-17",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-DOC-11"
+      ],
+      "description": "Janela do fólio da matrícula 9060 no protocolo 186648: Livro 2, zero atos, estado “não lida” e orientação para usar “Reler”. As marcações em vermelho fazem parte da captura fornecida.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/folio-9060-nao-lido-janela.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.51.52.jpeg",
+      "sha256": "34da5d9a274f6a46644654685706673e813a3ef2ab0de61efbb5112bcc536eba"
+    },
+    {
+      "id": "ATLAS19-EV-18",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-DOC-11"
+      ],
+      "description": "Cartão da matrícula 9060: “Ativa”, Livro 2, zero atos, “Lida em 19/10/2026, 14:48”, “nenhum — fólio livre” e avisos de falta de marcadores e verificação não executada. O volume de informações não comprova leitura bem-sucedida.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/folio-9060-cartao-dados-avisos.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.51.25.jpeg",
+      "sha256": "ec98fcca07725f356ad28dceb5b9ed9e1bb50885ca8e38af41475b74a8e908dc"
+    },
+    {
+      "id": "ATLAS19-EV-19",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-UX-12"
+      ],
+      "description": "Recorte de “Pontos na leitura” com códigos “sem_marcador_de_ato” e “verificacao_nao_executada”, possíveis motivos e “nenhum proprietário apurado na leitura”. A captura não comprova qual causa ocorreu.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/pontos-leitura-mensagens-tecnicas.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.54.19.jpeg",
+      "sha256": "edadc4f567c28d8fc73f54296cfea789f3e8001ba0f463e9bf8d22349669c6b7"
+    },
+    {
+      "id": "ATLAS19-EV-20",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-UX-13"
+      ],
+      "description": "Resumo do Exame com contadores 6 Exigência, 14 A decidir, 14 Atenção e 37 Em ordem. Segundo o usuário, os controles rolam até grupos da página; a proposta é abrir e recolher a lista completa de cada categoria.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/resumo-exame-contadores-expansiveis.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 14.56.58.jpeg",
+      "sha256": "bc6ade5de02c9c8528d1b0a139bfe8be93c9ece206d5f4315d6142cdfa67e3d8"
+    },
+    {
+      "id": "ATLAS19-EV-21",
+      "reportId": "alia-atlas-2026-10-19",
+      "findingIds": [
+        "ATLAS-UX-14"
+      ],
+      "description": "Resumo principal e painel “Estado do caso” exibem os mesmos indicadores em simultâneo, destacados pelo usuário. O painel também contém informações adicionais de decisões e banca, que devem ser preservadas na reorganização.",
+      "kind": "image",
+      "path": "/originals/evidence/alia-atlas-2026-10-19/exame-valores-repetidos-resumos.jpeg",
+      "originalName": "WhatsApp Image 2026-10-19 at 15.02.03.jpeg",
+      "sha256": "6ef929f182c30c01d8e09d8d9b20785bff15a3208a3724bd8c5f2b65ad0ac3da"
     }
   ],
   "notes": {

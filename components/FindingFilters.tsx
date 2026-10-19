@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { Report } from '@/lib/types';
 import FindingCard from './FindingCard';
 import SelectFilter from './SelectFilter';
@@ -12,16 +12,20 @@ export default function FindingFilters({ report }: { report: Report }) {
   const [context, setContext] = useState('all');
   const severities = useMemo(() => [...new Set(report.findings.map(f => f.severity).filter(Boolean))] as string[], [report]);
   const contexts = useMemo(() => [...new Set(report.findings.map(f => f.context).filter(Boolean))] as string[], [report]);
+  const openFinding = useCallback((id: string) => {
+    if (!report.findings.some(f => f.id === id)) return;
+    setQuery(''); setSeverity('all'); setContext('all');
+    requestAnimationFrame(() => {
+      const target = document.getElementById(id);
+      if (target instanceof HTMLDetailsElement) {
+        target.open = true;
+        target.querySelector<HTMLElement>(':scope > summary')?.focus({ preventScroll: true });
+        target.scrollIntoView({ block: 'start' });
+      }
+    });
+  }, [report]);
   useEffect(() => {
-    const openTarget = () => {
-      const id = decodeURIComponent(location.hash.slice(1));
-      if (!report.findings.some(f => f.id === id)) return;
-      setQuery(''); setSeverity('all'); setContext('all');
-      requestAnimationFrame(() => {
-        const target = document.getElementById(id);
-        if (target instanceof HTMLDetailsElement) { target.open = true; target.scrollIntoView({block:'start'}); }
-      });
-    };
+    const openTarget = () => openFinding(decodeURIComponent(location.hash.slice(1)));
     let previousOpen: HTMLDetailsElement[] = [];
     const expandForPrint = () => { previousOpen = [...document.querySelectorAll<HTMLDetailsElement>('.finding')].filter(item => !item.open); previousOpen.forEach(item => item.open = true); };
     const restoreAfterPrint = () => previousOpen.forEach(item => item.open = false);
@@ -30,7 +34,7 @@ export default function FindingFilters({ report }: { report: Report }) {
     window.addEventListener('beforeprint', expandForPrint);
     window.addEventListener('afterprint', restoreAfterPrint);
     return () => { window.removeEventListener('hashchange', openTarget); window.removeEventListener('beforeprint', expandForPrint); window.removeEventListener('afterprint', restoreAfterPrint); };
-  }, [report.id]);
+  }, [openFinding]);
   const filtered = report.findings.filter(f => {
     const haystack = [f.id, f.title, f.kind, f.description, f.hypothesis, f.expected, f.suggestion, f.verification, f.basis, f.status, f.context, ...f.evidenceIds.map(id => `${id} ${evidenceById.get(id)?.description || ''}`), ...(f.relatedIds || [])].join(' ').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase('pt-BR');
     return haystack.includes(query.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase('pt-BR')) && (severity === 'all' || f.severity === severity) && (context === 'all' || f.context === context);
@@ -42,7 +46,7 @@ export default function FindingFilters({ report }: { report: Report }) {
       <SelectFilter label="Contexto" value={context} onChange={setContext} options={[{value:'all',label:'Todos'}, ...contexts.map(value=>({value,label:value}))]} /></>}
     </div>
     <p className="result-count" aria-live="polite">{filtered.length} de {report.findings.length} achados</p>
-    {report.findings.map(f => <FindingCard key={f.id} finding={f} report={report} hidden={!filtered.some(item=>item.id===f.id)} />)}
+    {report.findings.map(f => <FindingCard key={f.id} finding={f} report={report} hidden={!filtered.some(item=>item.id===f.id)} onNavigate={openFinding} />)}
     {!filtered.length && <p className="empty">Nenhum achado corresponde aos filtros.</p>}
   </>;
 }

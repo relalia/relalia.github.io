@@ -6,6 +6,8 @@ import {spawn} from 'node:child_process';
 import {once} from 'node:events';
 import {randomBytes,randomUUID,pbkdf2Sync,createHash} from 'node:crypto';
 import d from '../content/sintese-benchmarks-interface-2026-10-16.json' with {type:'json'};
+import catalog from '../content/reports.json' with {type:'json'};
+const latest=[...catalog.reports].sort((a,b)=>b.date.localeCompare(a.date))[0];
 const base=process.env.RELALIA_TEST_URL||'http://127.0.0.1:4178';
 const server=process.env.RELALIA_TEST_URL?null:spawn(process.execPath,['scripts/serve.mjs'],{env:{...process.env,RELALIA_PORT:'4178'},stdio:['ignore','pipe','inherit']});
 if(server)await Promise.race([once(server.stdout,'data'),once(server,'exit').then(([c])=>{throw Error(`Preview failed ${c}`);})]);
@@ -57,7 +59,7 @@ try{
       assert(page.url().includes(b.comparisonId));assert(await page.locator(`.timeline a[href="/relatorios/${d.id}/"]`).isVisible());
       await page.locator(`.timeline a[href="/relatorios/${d.id}/"]`).click();await page.locator('.benchmark-overview').waitFor();
     }
-    await page.goto(base+'/');await page.locator('.benchmark-overview').waitFor();assert.equal(await page.locator('.timeline a[aria-current="page"]').getAttribute('href'),`/relatorios/${d.id}/`);
+    await page.goto(base+'/');await page.locator('.timeline a[aria-current="page"]').waitFor();assert.equal(await page.locator('.timeline a[aria-current="page"]').getAttribute('href'),`/relatorios/${latest.id}/`);
     await page.getByRole('combobox',{name:'Módulo'}).focus();await page.keyboard.press('Enter');
     await page.waitForFunction(()=>document.activeElement?.getAttribute('role')==='option');
     await page.keyboard.press('End');

@@ -1936,5 +1936,131 @@
     "originalName": "codex-clipboard-3f5de951-96ba-4958-aa4f-ea354ac7f967.png",
     "bytes": 32363,
     "sha256": "1e5f52943a423d304685f14de3fcb3c23635d07ac2ceabf9a08e4efeb98d6552"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/av01-dentro-mat0.png",
+    "originalName": "codex-clipboard-9f60efe1-6186-4955-8aa5-21dac510fab1.png",
+    "bytes": 166074,
+    "sha256": "d5c1c97cceb21ae1f5b4d4613aa3abe43885523a557ed35ce4b69cce1aa34cdb"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/av02-dentro-mat0.png",
+    "originalName": "codex-clipboard-9a12911d-181a-4e60-823e-d314f90c6b32.png",
+    "bytes": 137440,
+    "sha256": "27bcf786424316a9b6b0b8d712ce8b300c814a4798b68f629999765320d0f6db"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/organizacao-matricula.png",
+    "originalName": "2.png",
+    "bytes": 96529,
+    "sha256": "4196b4f157d1aa45195c853b4605a2d5565e937e6fff53f1aeff2a6c56d46c54"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/organizacao-protocolo.jpeg",
+    "originalName": "2_b.jpeg",
+    "bytes": 112241,
+    "sha256": "5b6b027b3337161de8101f401806732e4c8700e5fe363c3348c94b623b8c3f89"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/titularidade-atlas-4466.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.21.02.jpeg",
+    "bytes": 78011,
+    "sha256": "688ef202bfa781018e8632ab39e1c6823deae2a7f0139741ebbe21f5bc9d2892"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/titularidade-desktop-4466.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.21.25.jpeg",
+    "bytes": 116406,
+    "sha256": "e8d8503f0e3b2463d4acd22b0e9e78e11b17df795ad2475e2015b90780764dbf"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/registro-auxiliar-4466-desktop.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.24.30.jpeg",
+    "bytes": 295546,
+    "sha256": "d1d9018769dc17ee0bdfb567cafc07f4c7d26590cedf0fcfe4d6adc92bce02b7"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/registro-auxiliar-4466-conversa.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.23.31.jpeg",
+    "bytes": 74262,
+    "sha256": "b311d699590383f9ce57b425a8aff20c4d196b0613a7cafd98a8a78b206954e7"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/barra-lateral-gestao-conversas.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.29.19.jpeg",
+    "bytes": 24469,
+    "sha256": "76a9c2663904be4c37b656bd99db8a50f377e8e5f294545e2b36c53c3d0f6aaf"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/codigos-botoes-decisao.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.34.49.jpeg",
+    "bytes": 110318,
+    "sha256": "bf32d0066d60e5fc753c9a02c1d63304f0c61d028dde9b4c91b9c62f6fce5d1a"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/hierarquia-matriculas-decisoes.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.37.27.jpeg",
+    "bytes": 101755,
+    "sha256": "a54fc4ec14b2376835567858558f2b8b2729760cd23126e3568717f76c8b9583"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/expediente-imagem-texto-paginacao.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.43.26.jpeg",
+    "bytes": 148614,
+    "sha256": "e07e835f8652b966654e16941e8c68c0ad760a4be79218b71ab62e3cedb29b79"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/expediente-so-texto-paginacao.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.42.37.jpeg",
+    "bytes": 72294,
+    "sha256": "c5d4a0f83b8da18ee1dfb1745d2b3320b4be2d23a2b60c14c117ed3963c5549c"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/atalhos-protocolo-rolagem.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.45.06.jpeg",
+    "bytes": 160567,
+    "sha256": "e185b13b77570856f25b74d4ca913e7ba1c7ec00df506f5597649f5c34771e06"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/folio-nao-lido-orientacao-reler.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.49.36.jpeg",
+    "bytes": 52330,
+    "sha256": "fc375f6287dcf524ae9a2c21c101a6a4405888a45dbd6ee4fba5d34c9884d7ae"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/folio-releitura-avisos-lendo.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.48.38.jpeg",
+    "bytes": 119285,
+    "sha256": "ddb8ac8535320b2f072683b14990f5bdfd13d67d0260a1249a65acc1aacca0f1"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/folio-9060-nao-lido-janela.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.51.52.jpeg",
+    "bytes": 51159,
+    "sha256": "34da5d9a274f6a46644654685706673e813a3ef2ab0de61efbb5112bcc536eba"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/folio-9060-cartao-dados-avisos.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.51.25.jpeg",
+    "bytes": 107776,
+    "sha256": "ec98fcca07725f356ad28dceb5b9ed9e1bb50885ca8e38af41475b74a8e908dc"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/pontos-leitura-mensagens-tecnicas.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.54.19.jpeg",
+    "bytes": 57287,
+    "sha256": "edadc4f567c28d8fc73f54296cfea789f3e8001ba0f463e9bf8d22349669c6b7"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/resumo-exame-contadores-expansiveis.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 14.56.58.jpeg",
+    "bytes": 46956,
+    "sha256": "bc6ade5de02c9c8528d1b0a139bfe8be93c9ece206d5f4315d6142cdfa67e3d8"
+  },
+  {
+    "path": "/originals/evidence/alia-atlas-2026-10-19/exame-valores-repetidos-resumos.jpeg",
+    "originalName": "WhatsApp Image 2026-10-19 at 15.02.03.jpeg",
+    "bytes": 94450,
+    "sha256": "6ef929f182c30c01d8e09d8d9b20785bff15a3208a3724bd8c5f2b65ad0ac3da"
   }
 ]

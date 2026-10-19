@@ -130,7 +130,7 @@ try {
     await page.reload();
     await page.locator('.benchmark').waitFor();
     await page.goto(`${base}/`);
-    await page.locator('.benchmark').waitFor();
+    await page.locator('.timeline a[aria-current="page"]').waitFor();
     await page.locator('.timeline a[href="/relatorios/alia-2026-10-08/"]').click();
     await page.getByRole('heading',{name:'Achados e resultados',exact:true}).waitFor();
     assert.equal(await page.locator('.benchmark').count(),0);

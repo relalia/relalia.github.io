@@ -13,7 +13,8 @@
     "test": "node --test scripts/data.test.mjs scripts/access.test.mjs scripts/benchmark.test.mjs scripts/claude-benchmark.test.mjs scripts/comparison-benchmark.test.mjs scripts/claude-comparison.test.mjs scripts/overview.test.mjs",
     "test:comparison-ui": "node scripts/verify-comparison-ui.mjs",
     "check": "pnpm test && pnpm typecheck && pnpm build && pnpm verify",
-    "test:overview-ui": "node scripts/verify-overview-ui.mjs"
+    "test:overview-ui": "node scripts/verify-overview-ui.mjs",
+    "test:atlas-ui": "node scripts/verify-atlas-ui.mjs"
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.3.7",
