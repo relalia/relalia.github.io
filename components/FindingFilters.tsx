@@ -45,7 +45,7 @@ export default function FindingFilters({ report }: { report: Report }) {
       {report.module === 'Atlas' && <><SelectFilter label="Criticidade" value={severity} onChange={setSeverity} options={[{value:'all',label:'Todas'}, ...severities.map(value=>({value,label:value}))]} />
       <SelectFilter label="Contexto" value={context} onChange={setContext} options={[{value:'all',label:'Todos'}, ...contexts.map(value=>({value,label:value}))]} /></>}
     </div>
-    <p className="result-count" aria-live="polite">{filtered.length} de {report.findings.length} achados</p>
+    <p className="result-count" aria-live="polite">{filtered.length} de {report.findings.length} {report.findings.length === 1 ? 'achado' : 'achados'}</p>
     {report.findings.map(f => <FindingCard key={f.id} finding={f} report={report} hidden={!filtered.some(item=>item.id===f.id)} onNavigate={openFinding} />)}
     {!filtered.length && <p className="empty">Nenhum achado corresponde aos filtros.</p>}
   </>;

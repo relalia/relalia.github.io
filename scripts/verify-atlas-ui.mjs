@@ -7,6 +7,7 @@ import {once} from 'node:events';
 import {randomBytes,randomUUID,pbkdf2Sync,createHash} from 'node:crypto';
 const id='alia-atlas-2026-10-19',base=process.env.RELALIA_TEST_URL||'http://127.0.0.1:4182';
 const data=JSON.parse(fs.readFileSync('content/reports.json','utf8')),report=data.reports.find(r=>r.id===id),evidence=data.evidence.filter(e=>e.reportId===id);
+const latest=[...data.reports].sort((a,b)=>b.date.localeCompare(a.date))[0];
 fs.mkdirSync('tmp/alia-atlas-2026-10-19',{recursive:true});
 const server=process.env.RELALIA_TEST_URL?null:spawn(process.execPath,['scripts/serve.mjs'],{env:{...process.env,RELALIA_PORT:'4182'},windowsHide:true,stdio:['ignore','pipe','inherit']});
 if(server)await once(server.stdout,'data');
@@ -53,7 +54,7 @@ try{
   await page.locator('#ATLAS-UX-06 .compare').click();await page.waitForFunction(()=>document.querySelector('#AC-006')?.open);
   await page.locator('.timeline a[href="/relatorios/'+id+'/"]').click();await page.getByRole('heading',{name:report.title,exact:true}).waitFor();
   await page.reload();await page.getByRole('heading',{name:report.title,exact:true}).waitFor();
-  await page.goto(base+'/');await page.locator('.timeline a[aria-current="page"]').waitFor();assert.equal(await page.locator('.timeline a[aria-current="page"]').getAttribute('href'),'/relatorios/'+id+'/');
+  await page.goto(base+'/');await page.locator('.timeline a[aria-current="page"]').waitFor();assert.equal(await page.locator('.timeline a[aria-current="page"]').getAttribute('href'),'/relatorios/'+latest.id+'/');
   const filter=page.getByRole('combobox',{name:'Módulo'});await filter.focus();await page.keyboard.press('Enter');const option=page.getByRole('option',{name:'Alia',exact:true});await option.focus();await page.keyboard.press('Enter');
   assert((await filter.innerText()).includes('Alia'));assert(await page.locator('.timeline a[href="/relatorios/'+id+'/"]').isVisible());
   await overflow();await context.close();console.log(`${prefix} ${width}px: 14 findings, 21 keyboard dialogs, search/filter, links, reload/home, downloads and no overflow verified.`);

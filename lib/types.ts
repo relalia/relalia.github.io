@@ -54,6 +54,7 @@ export interface Finding {
 }
 
 export interface Report {
+  executive?: ExecutiveBenchmark;
   overviewId?: string;
   comparisonId?: string;
   benchmarkId?: string;
@@ -69,4 +70,59 @@ export interface Report {
   note?: string;
   files: Attachment[];
   findings: Finding[];
+}
+
+export interface ExecutiveCriterion {
+  code: string;
+  label: string;
+  max: number;
+  vc: number;
+  opponent: number;
+  n: number;
+}
+
+export interface ExecutiveMode {
+  key: string;
+  label: string;
+  n: number;
+  vcMean: number;
+  opponentMean: number;
+  wins: number;
+  ties: number;
+  losses: number;
+  coverageTotal: number;
+  pendingJudgments: number;
+  inconclusive: number;
+  outdated: number;
+  contradictionsVc: number;
+  contradictionsOpponent: number;
+  abstentionsVc: number;
+  abstentionsOpponent: number;
+  reviewsCompleted: number;
+  reviewsTotal: number;
+  pendingReviews: number;
+  contests: number;
+  pendingDecisions: number;
+  criteria: ExecutiveCriterion[];
+}
+
+export interface ExecutiveBenchmark {
+  title: string;
+  runDate: string;
+  questions: number;
+  scaleMax: number;
+  opponent: string;
+  roles: { role: string; platform: string; model: string | null; note?: string }[];
+  modes: ExecutiveMode[];
+  insights: { title: string; text: string }[];
+  precisionNote: string;
+  caveat: string;
+  limitations: string[];
+  source: { path: string; sha256: string; pages: number; series: string; runId: string; executionId: string; revision: number };
+  operations: {
+    rows: { role: string; attempts: number; failedOrUncertain: number; tokensIn: number; tokensOut: number; tokensTotal: number; providerCostUsd: number; seconds: number }[];
+    generation: { mode: string; attempts: number; tokensIn: null; tokensOut: null; costUsd: null; seconds: null }[];
+    budget: { limitUsd: number; consumedReservedUsd: number; remainingUsd: number };
+    note: string;
+  };
 }

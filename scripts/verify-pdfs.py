@@ -69,6 +69,25 @@ for report in data['reports']:
                 assert normalize(finding['retest']['result']) in text
             for evidence_id in finding['evidenceIds']:
                 assert evidence_id in text
+        if report.get('executive'):
+            source_spec=spec_from_file_location('executive_source',root/'scripts/verify-executive-source.py')
+            source_module=module_from_spec(source_spec)
+            source_spec.loader.exec_module(source_module)
+            source_module.verify(report)
+            executive=report['executive']
+            assert len(reader.pages)<=4,'Executive results and UX should fit four pages'
+            assert normalize(executive['caveat']) in text
+            assert executive['source']['path'] in text
+            for mode in executive['modes']:
+                for value in [mode['vcMean'],mode['opponentMean']]:
+                    assert f'{value:.2f}'.replace('.',',') in text
+                assert f"{mode['wins']} / {mode['ties']} / {mode['losses']}" in text
+                for criterion in mode['criteria']:
+                    assert f"{criterion['vc']:.1f} / {criterion['opponent']:.1f}".replace('.',',') in text
+            for insight in executive['insights']:
+                assert normalize(insight['text']) in text
+            for role in executive['roles']:
+                if role['model']:assert role['model'] in text
         if report['id']=='vadechat-2026-10-06':
             assert sum(len(p.images) for p in reader.pages)>=7,'Missing new screenshots in PDF'
             assert 'WhatsApp Video 2026-10-06 at 09.56.57.mp4' in text,'Missing video reference'

@@ -6,6 +6,7 @@ import FindingFilters from './FindingFilters';
 import BenchmarkReport from './BenchmarkReport';
 import BenchmarkComparisonReport from './BenchmarkComparisonReport';
 import BenchmarkOverviewReport from './BenchmarkOverviewReport';
+import ExecutiveBenchmarkResults from './ExecutiveBenchmarkResults';
 
 export default function ReportView({ report }: { report: Report }) {
   return <div className="shell">
@@ -15,9 +16,10 @@ export default function ReportView({ report }: { report: Report }) {
       <div className="kicker">{report.module} · {formatDate(report.date)}</div><h2>{report.title}</h2>
       {report.overviewId ? <BenchmarkOverviewReport report={report}/> : report.comparisonId ? <BenchmarkComparisonReport report={report}/> : report.benchmarkId ? <BenchmarkReport report={report}/> : <>
       <div className="meta"><span className="tag">{report.status}</span><span className="tag">{report.count}</span></div>
-      <p className="summary">{report.summary}</p><ul className="highlights">{report.highlights.map(item => <li key={item}>{item}</li>)}</ul>
+      <p className="summary">{report.summary}</p>
+      {report.executive ? <ExecutiveBenchmarkResults data={report.executive}/> : <ul className="highlights">{report.highlights.map(item => <li key={item}>{item}</li>)}</ul>}
       <Downloads files={report.files} />
-      <div className="section-head"><h3>Achados e resultados</h3><p>Abra um item para consultar o resumo e seus vínculos.</p></div>
+      <div className="section-head"><h3>{report.executive ? 'UX do VadeChat' : 'Achados e resultados'}</h3><p>Abra um item para consultar o resumo e seus vínculos.</p></div>
       <FindingFilters key={report.id} report={report} />
       <p className="note">{report.note || 'Os achados refletem a validação realizada. Propostas e critérios de verificação não representam funcionalidades implementadas nem retestes executados.'}</p>
       </>}

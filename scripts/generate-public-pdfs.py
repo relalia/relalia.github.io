@@ -61,8 +61,14 @@ def generate(data):
                 title=report['title'], author='Relalia', subject=attachment['label'], invariant=1)
             story = [p(report['title'], style='ReportTitle'), p(f"{report['module']} · {report['date']} · {report['status']}",style='Caption'),
                 p(attachment['label'],style='Caption'), p(report['summary'])]
-            for highlight in report['highlights']:
-                story.append(p('• ' + highlight))
+            if report.get('executive'):
+                spec = spec_from_file_location('executive_pdf', ROOT/'scripts/executive-pdf.py')
+                executive_pdf = module_from_spec(spec)
+                spec.loader.exec_module(executive_pdf)
+                story += executive_pdf.executive_story(report['executive'], p)
+            else:
+                for highlight in report['highlights']:
+                    story.append(p('• ' + highlight))
             if report.get('benchmarkId'):
                 spec = spec_from_file_location('benchmark_pdf', ROOT/'scripts/benchmark-pdf.py')
                 benchmark_pdf = module_from_spec(spec)
@@ -73,7 +79,7 @@ def generate(data):
                 continue
             if any(f['origin'] == 'original' for f in report['files']):
                 story.append(p('Esta ficha é complementar. Os documentos originais estão disponíveis separadamente, com bytes preservados.', style='Caption'))
-            story.append(p(f"{len(report['findings'])} achados",style='FindingTitle'))
+            story.append(p('UX do VadeChat · 1 proposta' if report.get('executive') else f"{len(report['findings'])} {'achado' if len(report['findings']) == 1 else 'achados'}",style='FindingTitle'))
             for finding in report['findings']:
                 story.append(KeepTogether([p(f"{finding['id']} · {finding['title']}",style='FindingTitle'), p(finding['description'],finding.get('observationLabel','Observado'))]))
                 for key,label in [('kind','Categoria'),('severity','Criticidade'),('context','Contexto'),('hypothesis','Hipótese'),('expected','Melhoria esperada'),('suggestion','Sugestão registrada'),('verification','Como verificar'),('basis','Fundamento registrado'),('status','Situação')]:

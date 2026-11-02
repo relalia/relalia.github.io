@@ -342,3 +342,6 @@ ec98fcca07725f356ad28dceb5b9ed9e1bb50885ca8e38af41475b74a8e908dc  evidence/alia-
 edadc4f567c28d8fc73f54296cfea789f3e8001ba0f463e9bf8d22349669c6b7  evidence/alia-atlas-2026-10-19/pontos-leitura-mensagens-tecnicas.jpeg
 bc6ade5de02c9c8528d1b0a139bfe8be93c9ece206d5f4315d6142cdfa67e3d8  evidence/alia-atlas-2026-10-19/resumo-exame-contadores-expansiveis.jpeg
 6ef929f182c30c01d8e09d8d9b20785bff15a3208a3724bd8c5f2b65ad0ac3da  evidence/alia-atlas-2026-10-19/exame-valores-repetidos-resumos.jpeg
+26f6f04036ec849b19547b4c2fff77235ef51fad3fb71b6022f96c0f6e3b97bf  evidence/vadechat-ux-2026-11-02/mensagem-longa-rolagem.mp4
+e95e3fbf008e1d838b7831e51265f1e48b276d6420c51af0050c24a644effb30  evidence/vadechat-ux-2026-11-02/mensagem-recolhida-referencia.png
+ff7b435cc4e26f8e0bc1106b5616e1cb0295b84c75b055bfa8addb028c9b3492  reports/benchmark-2026-10-28-results.pdf
