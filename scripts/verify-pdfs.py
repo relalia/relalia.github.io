@@ -77,6 +77,11 @@ for report in data['reports']:
             executive=report['executive']
             assert len(reader.pages)<=4,'Executive results and UX should fit four pages'
             assert normalize(executive['caveat']) in text
+            if executive.get('pendingNotice'):
+                assert normalize(executive['pendingNotice']) in text
+                assert len(reader.pages)<=2,'Results-only executive should fit two pages'
+                for mode in executive['modes']:
+                    assert f"contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}" in text
             assert executive['source']['path'] in text
             for mode in executive['modes']:
                 for value in [mode['vcMean'],mode['opponentMean']]:

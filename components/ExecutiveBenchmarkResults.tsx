@@ -8,6 +8,7 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
   return <section className="benchmark executive-results" id="benchmark-resultados" aria-labelledby="executive-heading">
     <div className="section-head"><h3 id="executive-heading">Resultados do benchmark</h3><p>Rodada datada de {formatDate(data.runDate)} na fonte · {data.questions} perguntas · {data.modes.reduce((n, mode) => n + mode.n, 0)} embates comparáveis · escala 0–{data.scaleMax}</p></div>
     <p className="executive-source-title">{data.title}</p>
+    {data.pendingNotice && <p className="benchmark-caveat"><strong>{data.pendingNotice}</strong></p>}
     <div className="executive-cards">
       {data.modes.map(mode => <article className="executive-card" key={mode.key} aria-labelledby={`executive-${mode.key}`}>
         <div className="executive-card-heading"><h4 id={`executive-${mode.key}`}>VadeChat {mode.label}</h4><span className="tag">n = {mode.n}</span></div>

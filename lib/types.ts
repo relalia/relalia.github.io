@@ -107,6 +107,7 @@ export interface ExecutiveMode {
 }
 
 export interface ExecutiveBenchmark {
+  pendingNotice?: string;
   title: string;
   runDate: string;
   questions: number;

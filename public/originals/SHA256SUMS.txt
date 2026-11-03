@@ -345,3 +345,4 @@ bc6ade5de02c9c8528d1b0a139bfe8be93c9ece206d5f4315d6142cdfa67e3d8  evidence/alia-
 26f6f04036ec849b19547b4c2fff77235ef51fad3fb71b6022f96c0f6e3b97bf  evidence/vadechat-ux-2026-11-02/mensagem-longa-rolagem.mp4
 e95e3fbf008e1d838b7831e51265f1e48b276d6420c51af0050c24a644effb30  evidence/vadechat-ux-2026-11-02/mensagem-recolhida-referencia.png
 ff7b435cc4e26f8e0bc1106b5616e1cb0295b84c75b055bfa8addb028c9b3492  reports/benchmark-2026-10-28-results.pdf
+042d7ccaef7c30cdcd49ff807e64781b9a93f6873890916df06ea9f3d2617102  reports/benchmark-chatgpt-sol-2026-11-03-results.pdf

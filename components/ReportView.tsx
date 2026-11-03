@@ -19,8 +19,8 @@ export default function ReportView({ report }: { report: Report }) {
       <p className="summary">{report.summary}</p>
       {report.executive ? <ExecutiveBenchmarkResults data={report.executive}/> : <ul className="highlights">{report.highlights.map(item => <li key={item}>{item}</li>)}</ul>}
       <Downloads files={report.files} />
-      <div className="section-head"><h3>{report.executive ? 'UX do VadeChat' : 'Achados e resultados'}</h3><p>Abra um item para consultar o resumo e seus vínculos.</p></div>
-      <FindingFilters key={report.id} report={report} />
+      {report.findings.length > 0 && <><div className="section-head"><h3>{report.executive ? 'UX do VadeChat' : 'Achados e resultados'}</h3><p>Abra um item para consultar o resumo e seus vínculos.</p></div>
+      <FindingFilters key={report.id} report={report} /></>}
       <p className="note">{report.note || 'Os achados refletem a validação realizada. Propostas e critérios de verificação não representam funcionalidades implementadas nem retestes executados.'}</p>
       </>}
     </article></main>

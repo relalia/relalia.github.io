@@ -66,6 +66,13 @@ def generate(data):
                 executive_pdf = module_from_spec(spec)
                 spec.loader.exec_module(executive_pdf)
                 story += executive_pdf.executive_story(report['executive'], p)
+                if report['findings']:
+                    from reportlab.platypus import PageBreak
+                    story.append(PageBreak())
+                else:
+                    doc.build(story,onFirstPage=page_footer,onLaterPages=page_footer)
+                    print(target.relative_to(ROOT))
+                    continue
             else:
                 for highlight in report['highlights']:
                     story.append(p('• ' + highlight))

@@ -5777,6 +5777,262 @@
           "note": "Subtotais disponíveis do plano atual, com falhas de consumo registrado incluídas e adversário compartilhado contado uma vez por tentativa. Duração é a soma das tentativas, não latência da resposta. Tokens de cache e raciocínio não são somados novamente. Custos, tokens e duração da geração Tri7 são desconhecidos; estes valores não representam o custo total do VadeChat."
         }
       }
+    },
+    {
+      "id": "benchmark-chatgpt-sol-2026-11-03",
+      "date": "2026-11-03",
+      "title": "Benchmark VadeChat × ChatGPT 6.1 Sol",
+      "module": "VadeChat",
+      "status": "Resultados parciais · 3 decisões pendentes",
+      "count": "5 perguntas · 10 embates comparáveis",
+      "summary": "Resultados da rodada de 03/11/2026: o VadeChat apresenta média 0,20 ponto acima do GPT-6.1 Sol nos dois modos, com vitórias e derrotas em ambos. A síntese destaca os critérios e as prioridades para a equipe de IA. A fonte permanece parcial por três contestações aguardando decisão.",
+      "highlights": [
+        "Ágil: 7,20 contra 7,00; duas vitórias, um empate e duas derrotas em cinco embates.",
+        "Pleno: 7,40 contra 7,20; três vitórias e duas derrotas em cinco embates.",
+        "C1 abaixo do adversário nos dois modos; C2 e C3 compensam a diferença nas médias totais.",
+        "Dez revisões concluídas; duas contestações no Ágil e uma no Pleno aguardam decisão."
+      ],
+      "note": "Síntese dos resultados originais do PDF executivo de 03/11/2026, preservado integralmente como anexo. Publicação do retrato parcial da rodada, sem substituir notas, resolver contestações ou produzir novo julgamento. Perguntas, pareceres individuais e comentários das revisões não vieram neste anexo.",
+      "files": [
+        {
+          "label": "Síntese de resultados · complementar ao original",
+          "kind": "pdf",
+          "origin": "generated",
+          "path": "/reports/benchmark-chatgpt-sol-2026-11-03.pdf"
+        },
+        {
+          "label": "Benchmark · PDF executivo original de 03/11/2026",
+          "kind": "pdf",
+          "origin": "original",
+          "path": "/originals/reports/benchmark-chatgpt-sol-2026-11-03-results.pdf",
+          "originalName": "Relalia-run-2026-11-03-44ef15f6-2b46-409e-b888-73c4b3775aeb-results.pdf",
+          "sha256": "042d7ccaef7c30cdcd49ff807e64781b9a93f6873890916df06ea9f3d2617102"
+        }
+      ],
+      "findings": [],
+      "executive": {
+        "title": "OpenAI / openai/gpt-6.1-sol · Ágil e Pleno · Rodada 1",
+        "runDate": "2026-11-03",
+        "questions": 5,
+        "scaleMax": 10,
+        "opponent": "GPT-6.1 Sol",
+        "pendingNotice": "Rodada parcial na fonte: três contestações aguardam decisão, duas no Ágil e uma no Pleno. As dez avaliações entram nas médias originais; as revisões não substituem as notas.",
+        "roles": [
+          {
+            "role": "Produto avaliado · Ágil e Pleno",
+            "platform": "VadeChat",
+            "model": null
+          },
+          {
+            "role": "Adversário",
+            "platform": "OpenAI",
+            "model": "openai/gpt-6.1-sol",
+            "note": "Identificado no título desta publicação como ChatGPT 6.1 Sol. Modalidade de acesso, login e nível de raciocínio não informados no anexo."
+          },
+          {
+            "role": "Juiz",
+            "platform": "Anthropic",
+            "model": "anthropic/claude-sonnet-5.5"
+          },
+          {
+            "role": "Revisor",
+            "platform": "OpenAI",
+            "model": "openai/gpt-5.4-mini",
+            "note": "Papel separado do adversário. As dez revisões estão concluídas; há três decisões de contestação pendentes."
+          }
+        ],
+        "modes": [
+          {
+            "key": "agil",
+            "label": "Ágil",
+            "n": 5,
+            "vcMean": 7.2,
+            "opponentMean": 7,
+            "wins": 2,
+            "ties": 1,
+            "losses": 2,
+            "coverageTotal": 5,
+            "pendingJudgments": 0,
+            "inconclusive": 0,
+            "outdated": 0,
+            "contradictionsVc": 0,
+            "contradictionsOpponent": 0,
+            "abstentionsVc": 0,
+            "abstentionsOpponent": 0,
+            "reviewsCompleted": 5,
+            "reviewsTotal": 5,
+            "pendingReviews": 0,
+            "contests": 2,
+            "pendingDecisions": 2,
+            "criteria": [
+              {
+                "code": "C1",
+                "label": "Conclusão e orientação prática",
+                "max": 4,
+                "vc": 3,
+                "opponent": 3.2,
+                "n": 5
+              },
+              {
+                "code": "C2",
+                "label": "Fundamentação e informações essenciais",
+                "max": 4,
+                "vc": 2.8,
+                "opponent": 2.6,
+                "n": 5
+              },
+              {
+                "code": "C3",
+                "label": "Condições, limites e ressalvas",
+                "max": 2,
+                "vc": 1.4,
+                "opponent": 1.2,
+                "n": 5
+              }
+            ]
+          },
+          {
+            "key": "pleno",
+            "label": "Pleno",
+            "n": 5,
+            "vcMean": 7.4,
+            "opponentMean": 7.2,
+            "wins": 3,
+            "ties": 0,
+            "losses": 2,
+            "coverageTotal": 5,
+            "pendingJudgments": 0,
+            "inconclusive": 0,
+            "outdated": 0,
+            "contradictionsVc": 0,
+            "contradictionsOpponent": 0,
+            "abstentionsVc": 0,
+            "abstentionsOpponent": 0,
+            "reviewsCompleted": 5,
+            "reviewsTotal": 5,
+            "pendingReviews": 0,
+            "contests": 1,
+            "pendingDecisions": 1,
+            "criteria": [
+              {
+                "code": "C1",
+                "label": "Conclusão e orientação prática",
+                "max": 4,
+                "vc": 2.8,
+                "opponent": 3.4,
+                "n": 5
+              },
+              {
+                "code": "C2",
+                "label": "Fundamentação e informações essenciais",
+                "max": 4,
+                "vc": 3,
+                "opponent": 2.6,
+                "n": 5
+              },
+              {
+                "code": "C3",
+                "label": "Condições, limites e ressalvas",
+                "max": 2,
+                "vc": 1.6,
+                "opponent": 1.2,
+                "n": 5
+              }
+            ]
+          }
+        ],
+        "insights": [
+          {
+            "title": "Conclusão e orientação prática",
+            "text": "Em C1, o VadeChat ficou abaixo do adversário: 3,0 contra 3,2 no Ágil e 2,8 contra 3,4 no Pleno, de 4 pontos possíveis. C2 e C3 compensam essa diferença nos totais. A prioridade editorial é examinar as orientações práticas nos pareceres individuais antes de propor ajustes."
+          },
+          {
+            "title": "Resolver as três contestações",
+            "text": "As cinco revisões de cada modo estão concluídas, mas há duas decisões pendentes no Ágil e uma no Pleno. O executivo não traz o teor das contestações nem identifica as perguntas afetadas. Os resultados publicados permanecem os originais, com a rodada marcada como parcial."
+          },
+          {
+            "title": "Média maior com resultados mistos",
+            "text": "A diferença das médias é de +0,20 ponto nos dois modos. O Ágil tem duas vitórias, um empate e duas derrotas; o Pleno, três vitórias e duas derrotas. Esses agregados não indicam ganho uniforme. Para explicar as quatro derrotas nos dez embates, são necessários os pareceres e as respostas correspondentes."
+          }
+        ],
+        "precisionNote": "Médias com duas casas conforme as conclusões da p. 3. Diferenças calculadas sobre as médias publicadas, com cinco embates por modo. Critérios arredondados na fonte; não recalculamos os totais a partir desses valores.",
+        "caveat": "Amostra de cinco perguntas, sem validação jurídica independente nesta síntese. Diferença de média não demonstra superioridade geral. A rodada permanece parcial por decisões de contestação pendentes.",
+        "limitations": [
+          "O anexo contém agregados: não inclui perguntas, referências, notas por pergunta, classificações individuais, pareceres ou textos das contestações. Não foi produzido novo julgamento.",
+          "As séries do adversário são preservadas separadamente contra Ágil e Pleno. Não há média geral entre modos nem comparação de evolução com outras rodadas, cujos conjuntos não foram conferidos neste anexo.",
+          "São dez revisões concluídas e nenhuma revisão pendente. As três pendências são decisões de contestações. Sem os comentários individuais, não é possível atribuir a causa dessas contestações ou estimar uma pontuação corrigida.",
+          "As plataformas e modelos são declarados no PDF. Modelos internos do VadeChat, nível de raciocínio, login e modalidade de acesso do adversário não são informados. Envio manual é declaração, sem prova independente de execução.",
+          "Zero contradições essenciais ou abstenções registradas não comprova ausência de erros jurídicos. Vencer por pontos não equivale à classificação Conforme. Informação adicional não verificável não é tratada como erro na fonte.",
+          "O PDF registra um identificador de rodada e outro de execução no rodapé. Ambos são preservados com seus rótulos; manifestos e histórico técnico não foram fornecidos para conferência adicional dos vínculos."
+        ],
+        "source": {
+          "path": "/originals/reports/benchmark-chatgpt-sol-2026-11-03-results.pdf",
+          "sha256": "042d7ccaef7c30cdcd49ff807e64781b9a93f6873890916df06ea9f3d2617102",
+          "pages": 3,
+          "series": "relalia-442-pair/1",
+          "runId": "run-2026-11-03-44ef15f6-2b46-409e-b888-73c4b3775aeb",
+          "executionId": "45c7b893-4b1b-4c44-ad41-49fc80f8c445",
+          "revision": 347
+        },
+        "operations": {
+          "rows": [
+            {
+              "role": "Adversário",
+              "attempts": 5,
+              "failedOrUncertain": 0,
+              "tokensIn": 198,
+              "tokensOut": 4351,
+              "tokensTotal": 4549,
+              "providerCostUsd": 0.043906,
+              "seconds": 136.4
+            },
+            {
+              "role": "Juiz",
+              "attempts": 10,
+              "failedOrUncertain": 0,
+              "tokensIn": 109013,
+              "tokensOut": 27293,
+              "tokensTotal": 136306,
+              "providerCostUsd": 0.490956,
+              "seconds": 188.7
+            },
+            {
+              "role": "Revisor",
+              "attempts": 13,
+              "failedOrUncertain": 3,
+              "tokensIn": 84105,
+              "tokensOut": 2357,
+              "tokensTotal": 86462,
+              "providerCostUsd": 0.045519,
+              "seconds": 38.4
+            }
+          ],
+          "generation": [
+            {
+              "mode": "Ágil",
+              "attempts": 5,
+              "tokensIn": null,
+              "tokensOut": null,
+              "costUsd": null,
+              "seconds": null
+            },
+            {
+              "mode": "Pleno",
+              "attempts": 5,
+              "tokensIn": null,
+              "tokensOut": null,
+              "costUsd": null,
+              "seconds": null
+            }
+          ],
+          "budget": {
+            "limitUsd": 1,
+            "consumedReservedUsd": 0.580381,
+            "remainingUsd": 0.419619
+          },
+          "note": "Subtotais disponíveis do plano atual, com falhas de consumo registrado incluídas e adversário compartilhado contado uma vez por tentativa. Duração é a soma das tentativas, não latência da resposta. Tokens de cache e raciocínio não são somados novamente. Custos, tokens e duração da geração Tri7 são desconhecidos; estes valores não representam o custo total do VadeChat."
+        }
+      }
     }
   ],
   "evidence": [

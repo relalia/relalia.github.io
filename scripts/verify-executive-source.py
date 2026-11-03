@@ -25,7 +25,7 @@ def verify(report):
             assert role['platform'] == 'VadeChat'
             assert 'Ágil VadeChat Pleno VadeChat Resultados' in pages[0]
     for mode in data['modes']:
-        match = re.search(rf"{mode['label']}: média ([\d,]+) contra ([\d,]+) em (\d+) embates; (\d+) vitórias, (\d+) empates e (\d+) derrotas?", pages[2])
+        match = re.search(rf"{mode['label']}: média ([\d,]+) contra ([\d,]+) em (\d+) embates; (\d+) vitórias, (\d+) empates? e (\d+) derrotas?", pages[2])
         assert match, mode['label']
         values = match.groups()
         assert (num(values[0]), num(values[1])) == (mode['vcMean'], mode['opponentMean'])
@@ -54,6 +54,10 @@ def verify(report):
     for key in ['series','runId','executionId']:
         assert data['source'][key] in ' '.join(pages)
     assert str(data['source']['revision']) in pages[2] and data['runDate'] in pages[0]
+    if data.get('pendingNotice'):
+        assert 'Rodada parcial' in pages[0]
+        decisions=sum(m['pendingDecisions'] for m in data['modes'])
+        assert f'{decisions} revisões ou decisões pendentes' in pages[2]
     print(f"{report['id']}: source PDF hash, roles, means, denominators, outcomes, criteria, quality and operations verified")
 
 if __name__ == '__main__':

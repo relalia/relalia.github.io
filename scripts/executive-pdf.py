@@ -18,7 +18,7 @@ def executive_story(data, p):
             ('LINEBELOW', (0,0), (-1,-1), .4, colors.HexColor('#dce8e0')),
         ]))
         return t
-    story = [p(f"Resultados do benchmark · fonte de {data['runDate'][8:10]}/{data['runDate'][5:7]}/{data['runDate'][:4]}", style='FindingTitle'),
+    story = ([p(data['pendingNotice'])] if data.get('pendingNotice') else []) + [p(f"Resultados do benchmark · fonte de {data['runDate'][8:10]}/{data['runDate'][5:7]}/{data['runDate'][:4]}", style='FindingTitle'),
              p(data['title']), p(f"{data['questions']} perguntas · {sum(m['n'] for m in data['modes'])} embates comparáveis · escala 0-10. Médias e resultados originais do juiz.", style='Caption')]
     chart = Drawing(500, 151)
     for i, mode in enumerate(data['modes']):
@@ -37,20 +37,21 @@ def executive_story(data, p):
         table([['Critério', 'Máximo', 'Ágil · VC / adversário', 'Pleno · VC / adversário']]+[
             [f"{c['code']} · {c['label']}",str(c['max'])]+[f"{number(m['criteria'][i]['vc'],1)} / {number(m['criteria'][i]['opponent'],1)}" for m in data['modes']]
             for i,c in enumerate(data['modes'][0]['criteria'])], [200,50,126,127]),
-        p('n = 3 por modo e critério. Médias arredondadas por critério não devem ser somadas para reconstruir os totais.', style='Caption'),
+        p('Base por modo e critério: '+ '; '.join(f"{m['label']} n = {m['n']}" for m in data['modes'])+'. Médias arredondadas por critério não devem ser somadas para reconstruir os totais.', style='Caption'),
         PageBreak(), p('Prioridades para a equipe de IA', style='FindingTitle'), p('Síntese editorial dos agregados; não constitui novo julgamento.', style='Caption')]
     for insight in data['insights']:
-        story.append(KeepTogether([p(insight['title'], style='FindingTitle'), p(insight['text'])]))
+        story.append(p(insight['text'], insight['title']))
     story += [p('Papéis e limites', style='FindingTitle')]
     for role in data['roles']:
         story.append(p(f"{role['platform']} · {role['model'] or 'modelo interno não informado'}. {role.get('note','')}", role['role'], style='Caption'))
-    story += [p('Revisões: 3/3 por modo; nenhuma pendente. Contradições essenciais e abstenções registradas: 0 para ambos os participantes, nos dois modos. Contestações, decisões pendentes e julgamentos pendentes, inconclusivos ou desatualizados: 0. Vencer em pontos não equivale à classificação Conforme. Ausência de sinalização não comprova ausência de erros.', style='Caption'),
+    for mode in data['modes']:
+        story.append(p(f"Revisões {mode['reviewsCompleted']}/{mode['reviewsTotal']} ({mode['pendingReviews']} pendentes); contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}. Contradições essenciais VC/adversário: {mode['contradictionsVc']}/{mode['contradictionsOpponent']}; abstenções: {mode['abstentionsVc']}/{mode['abstentionsOpponent']}. Julgamentos pendentes/inconclusivos/desatualizados: {mode['pendingJudgments']}/{mode['inconclusive']}/{mode['outdated']}.", mode['label'], style='Caption'))
+    story += [p('Revisões não substituem as notas originais. Vencer em pontos não equivale à classificação Conforme. Ausência de sinalização não comprova ausência de erros.', style='Caption'),
         p('Operação e consumo', style='FindingTitle'),
         table([['Papel', 'Tentativas / falhas ou incertas', 'Tokens totais', 'US$ provedor', 'Durações somadas']]+[
             [r['role'],f"{r['attempts']} / {r['failedOrUncertain']}",f"{r['tokensTotal']:,}".replace(',','.'),number(r['providerCostUsd'],6),number(r['seconds'],1)+' s'] for r in data['operations']['rows']], [80,125,90,105,103]),
         p('Geração Tri7: '+ '; '.join(f"{r['mode']} {r['attempts']} tentativas" for r in data['operations']['generation'])+'. Tokens, custo e duração não informados. Tentativas não representam perguntas avaliadas.',style='Caption'),
         p(data['operations']['note'],style='Caption'),
         p('Fonte preservada: https://relalia.github.io'+data['source']['path'],style='Caption'),
-        p('A fonte executiva não inclui textos das perguntas, referências, pareceres individuais, comentários dos revisores ou histórico das tentativas. Esses registros são necessários para explicar causas e propor correções específicas. Declarações de envio não são prova independente de execução; a revisão também não é validação jurídica independente.',style='Caption'),
-        PageBreak()]
+        p('A fonte executiva não inclui textos das perguntas, referências, pareceres individuais, comentários dos revisores ou histórico das tentativas. Esses registros são necessários para explicar causas e propor correções específicas. Declarações de envio não são prova independente de execução; a revisão também não é validação jurídica independente.',style='Caption')]
     return story
