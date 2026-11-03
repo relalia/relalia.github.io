@@ -20,6 +20,8 @@ def executive_story(data, p):
         return t
     story = ([p(data['pendingNotice'])] if data.get('pendingNotice') else []) + [p(f"Resultados do benchmark · fonte de {data['runDate'][8:10]}/{data['runDate'][5:7]}/{data['runDate'][:4]}", style='FindingTitle'),
              p(data['title']), p(f"{data['questions']} perguntas · {sum(m['n'] for m in data['modes'])} embates comparáveis · escala 0-10. Médias e resultados originais do juiz.", style='Caption')]
+    if data.get('completionNote'):
+        story.insert(0, p(data['completionNote'], style='Caption'))
     chart = Drawing(500, 151)
     for i, mode in enumerate(data['modes']):
         x = i*254
@@ -45,7 +47,7 @@ def executive_story(data, p):
     for role in data['roles']:
         story.append(p(f"{role['platform']} · {role['model'] or 'modelo interno não informado'}. {role.get('note','')}", role['role'], style='Caption'))
     for mode in data['modes']:
-        story.append(p(f"Revisões {mode['reviewsCompleted']}/{mode['reviewsTotal']} ({mode['pendingReviews']} pendentes); contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}. Contradições essenciais VC/adversário: {mode['contradictionsVc']}/{mode['contradictionsOpponent']}; abstenções: {mode['abstentionsVc']}/{mode['abstentionsOpponent']}. Julgamentos pendentes/inconclusivos/desatualizados: {mode['pendingJudgments']}/{mode['inconclusive']}/{mode['outdated']}.", mode['label'], style='Caption'))
+        story.append(p(f"Revisões {mode['reviewsCompleted']}/{mode['reviewsTotal']} ({mode['pendingReviews']} pendentes); contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}. Contradições essenciais VC/adversário: {mode['contradictionsVc']}/{mode['contradictionsOpponent']}; abstenções: {mode['abstentionsVc']}/{mode['abstentionsOpponent']}. Julgamentos pendentes/inconclusivos/desatualizados: {mode['pendingJudgments']}/{mode['inconclusive']}/{mode['outdated']}.", mode['label']+' · registro do PDF', style='Caption'))
     story += [p('Revisões não substituem as notas originais. Vencer em pontos não equivale à classificação Conforme. Ausência de sinalização não comprova ausência de erros.', style='Caption'),
         p('Operação e consumo', style='FindingTitle'),
         table([['Papel', 'Tentativas / falhas ou incertas', 'Tokens totais', 'US$ provedor', 'Durações somadas']]+[
@@ -53,5 +55,5 @@ def executive_story(data, p):
         p('Geração Tri7: '+ '; '.join(f"{r['mode']} {r['attempts']} tentativas" for r in data['operations']['generation'])+'. Tokens, custo e duração não informados. Tentativas não representam perguntas avaliadas.',style='Caption'),
         p(data['operations']['note'],style='Caption'),
         p('Fonte preservada: https://relalia.github.io'+data['source']['path'],style='Caption'),
-        p('A fonte executiva não inclui textos das perguntas, referências, pareceres individuais, comentários dos revisores ou histórico das tentativas. Esses registros são necessários para explicar causas e propor correções específicas. Declarações de envio não são prova independente de execução; a revisão também não é validação jurídica independente.',style='Caption')]
+        p(data.get('sourceStatusNote') or 'A fonte executiva não inclui textos das perguntas, referências, pareceres individuais, comentários dos revisores ou histórico das tentativas. Esses registros são necessários para explicar causas e propor correções específicas. Declarações de envio não são prova independente de execução; a revisão também não é validação jurídica independente.',style='Caption')]
     return story

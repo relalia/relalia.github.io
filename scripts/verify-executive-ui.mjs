@@ -12,7 +12,7 @@ const before=JSON.parse(execFileSync('git',['show','HEAD:content/reports.json'],
 for(const previous of before.reports.filter(r=>r.id!==id))assert.deepEqual(data.reports.find(r=>r.id===previous.id),previous);
 for(const previous of before.evidence.filter(e=>e.reportId!==id))assert.deepEqual(data.evidence.find(e=>e.id===previous.id),previous);
 const hash=b=>createHash('sha256').update(b).digest('hex');
-for(const report of before.reports)for(const f of report.files)assert.equal(hash(fs.readFileSync('public'+f.path)),hash(execFileSync('git',['show','HEAD:public'+f.path],{maxBuffer:40*1024*1024})));
+for(const report of before.reports)for(const f of report.files){if(report.id===id&&f.origin==='generated')continue;assert.equal(hash(fs.readFileSync('public'+f.path)),hash(execFileSync('git',['show','HEAD:public'+f.path],{maxBuffer:40*1024*1024})));}
 // Historical inputs may have left Windows Temp; use the hash-registered originals.
 const sources=ev.map(e=>'public'+e.path);
 for(let i=0;i<ev.length;i++){assert.equal(hash(fs.readFileSync(sources[i])),ev[i].sha256);assert.equal(hash(fs.readFileSync('public'+ev[i].path)),ev[i].sha256);}
@@ -29,6 +29,7 @@ try{
   await page.getByRole('heading',{name:'Resultados do benchmark',exact:true}).waitFor();
   assert.equal(await page.locator('.executive-card').count(),2);
   if(r.executive.pendingNotice)await page.getByText(r.executive.pendingNotice,{exact:true}).waitFor();
+  if(r.executive.completionNote){await page.getByText(r.executive.completionNote,{exact:true}).waitFor();assert.equal(await page.locator('.meta .tag').first().innerText(),'Execução finalizada');}
   for(const [i,m] of r.executive.modes.entries()){
    const card=page.locator('.executive-card').nth(i);
    assert.equal(await card.locator('.executive-score>strong').innerText(),m.vcMean.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}));

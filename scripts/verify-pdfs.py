@@ -77,6 +77,12 @@ for report in data['reports']:
             executive=report['executive']
             assert len(reader.pages)<=4,'Executive results and UX should fit four pages'
             assert normalize(executive['caveat']) in text
+            if executive.get('completionNote'):
+                assert normalize(executive['completionNote']) in text
+                assert normalize(executive['sourceStatusNote']) in text
+                assert report['status']=='Execução finalizada'
+                assert not executive.get('pendingNotice')
+                assert len(reader.pages)<=2
             if executive.get('pendingNotice'):
                 assert normalize(executive['pendingNotice']) in text
                 assert len(reader.pages)<=2,'Results-only executive should fit two pages'

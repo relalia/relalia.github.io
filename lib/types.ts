@@ -107,6 +107,8 @@ export interface ExecutiveMode {
 }
 
 export interface ExecutiveBenchmark {
+  completionNote?: string;
+  sourceStatusNote?: string;
   pendingNotice?: string;
   title: string;
   runDate: string;
@@ -119,7 +121,7 @@ export interface ExecutiveBenchmark {
   precisionNote: string;
   caveat: string;
   limitations: string[];
-  source: { path: string; sha256: string; pages: number; series: string; runId: string; executionId: string; revision: number };
+  source: { path: string; sha256: string; pages: number; conclusionsPage?: number; series: string; runId: string; executionId: string; revision: number };
   operations: {
     rows: { role: string; attempts: number; failedOrUncertain: number; tokensIn: number; tokensOut: number; tokensTotal: number; providerCostUsd: number; seconds: number }[];
     generation: { mode: string; attempts: number; tokensIn: null; tokensOut: null; costUsd: null; seconds: null }[];

@@ -8,6 +8,7 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
   return <section className="benchmark executive-results" id="benchmark-resultados" aria-labelledby="executive-heading">
     <div className="section-head"><h3 id="executive-heading">Resultados do benchmark</h3><p>Rodada datada de {formatDate(data.runDate)} na fonte · {data.questions} perguntas · {data.modes.reduce((n, mode) => n + mode.n, 0)} embates comparáveis · escala 0–{data.scaleMax}</p></div>
     <p className="executive-source-title">{data.title}</p>
+    {data.completionNote && <p className="executive-caption">{data.completionNote}</p>}
     {data.pendingNotice && <p className="benchmark-caveat"><strong>{data.pendingNotice}</strong></p>}
     <div className="executive-cards">
       {data.modes.map(mode => <article className="executive-card" key={mode.key} aria-labelledby={`executive-${mode.key}`}>
@@ -41,7 +42,8 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
 
     <details className="executive-detail"><summary>Qualidade, revisão e papéis da avaliação</summary>
       <p>Vencer por pontos não significa classificação Conforme. As revisões são contabilizadas separadamente e não substituem as notas originais.</p>
-      <div className="benchmark-table-wrap" role="region" aria-label="Qualidade e revisão" tabIndex={0}><table><caption>Indicadores informados · V = VadeChat, A = adversário</caption><thead><tr><th>Modo</th><th>Contradições essenciais V / A</th><th>Abstenções V / A</th><th>Revisões</th><th>Contestações / decisões pendentes</th></tr></thead><tbody>{data.modes.map(mode => <tr key={mode.key}><th scope="row">{mode.label}</th><td>{mode.contradictionsVc} / {mode.contradictionsOpponent}</td><td>{mode.abstentionsVc} / {mode.abstentionsOpponent}</td><td>{mode.reviewsCompleted}/{mode.reviewsTotal}<small>{mode.pendingReviews} pendentes</small></td><td>{mode.contests} / {mode.pendingDecisions}</td></tr>)}</tbody></table></div>
+      {data.sourceStatusNote && <p>{data.sourceStatusNote}</p>}
+      <div className="benchmark-table-wrap" role="region" aria-label="Qualidade e revisão" tabIndex={0}><table><caption>Indicadores do PDF · V = VadeChat, A = adversário</caption><thead><tr><th>Modo</th><th>Contradições essenciais V / A</th><th>Abstenções V / A</th><th>Revisões</th><th>Contestações / decisões pendentes no PDF</th></tr></thead><tbody>{data.modes.map(mode => <tr key={mode.key}><th scope="row">{mode.label}</th><td>{mode.contradictionsVc} / {mode.contradictionsOpponent}</td><td>{mode.abstentionsVc} / {mode.abstentionsOpponent}</td><td>{mode.reviewsCompleted}/{mode.reviewsTotal}<small>{mode.pendingReviews} pendentes</small></td><td>{mode.contests} / {mode.pendingDecisions}</td></tr>)}</tbody></table></div>
       <dl className="executive-roles">{data.roles.map(role => <div key={role.role}><dt>{role.role}</dt><dd><strong>{role.model || 'Modelo interno não informado'}</strong><br/>{role.platform}{role.note && <p>{role.note}</p>}</dd></div>)}</dl>
     </details>
 
@@ -53,7 +55,7 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
 
     <details className="executive-detail"><summary>Limites e rastreabilidade da síntese</summary>
       <ul>{data.limitations.map(item => <li key={item}>{item}</li>)}</ul>
-      <p>Fonte: <a href={data.source.path} target="_blank" rel="noreferrer">PDF executivo original · {data.source.pages} páginas</a>. Resultados: p. 1 e conclusões da p. 3; critérios e revisão: p. 2; consumo: p. 3.</p>
+      <p>Fonte: <a href={data.source.path} target="_blank" rel="noreferrer">PDF executivo original · {data.source.pages} páginas</a>. Resultados: p. 1 e conclusões da p. {data.source.conclusionsPage || 3}; critérios e revisão: p. 2; consumo: p. {data.source.conclusionsPage || 3}.</p>
       <p>Série: <code>{data.source.series}</code><br/>Rodada: <code>{data.source.runId}</code><br/>Execução informada no rodapé: <code>{data.source.executionId}</code> · revisão {data.source.revision}.</p>
       <p className="benchmark-filename">SHA-256 do original: <code>{data.source.sha256}</code></p>
     </details>
