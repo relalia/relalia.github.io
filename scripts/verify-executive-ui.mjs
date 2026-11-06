@@ -33,6 +33,8 @@ try{
   for(const [i,m] of r.executive.modes.entries()){
    const card=page.locator('.executive-card').nth(i);
    assert.equal(await card.locator('.executive-score>strong').innerText(),m.vcMean.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}));
+   const delta=(m.vcMean-m.opponentMean).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2,signDisplay:'exceptZero'});
+   assert.equal(await card.locator('.executive-difference').innerText(),`${delta} pontos`);
    assert((await card.innerText()).includes(m.wins+' '+(m.wins===1?'vitória':'vitórias')+' · '+m.ties+' '+(m.ties===1?'empate':'empates')+' · '+m.losses+' '+(m.losses===1?'derrota':'derrotas')));
   }
   const tables=page.locator('.executive-results .benchmark-table-wrap');
@@ -57,6 +59,22 @@ try{
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+1));
   await page.reload();await page.getByRole('heading',{name:r.title,exact:true}).waitFor();
   await page.goto(base+'/');await page.getByRole('heading',{name:latest.title,exact:true}).waitFor();assert.equal(await page.locator('.timeline a[aria-current="page"]').getAttribute('href'),'/relatorios/'+latest.id+'/');
+  const timeline=page.getByRole('navigation',{name:'Relatórios',exact:true});
+  await timeline.evaluate(nav=>nav.scrollIntoView({block:'center',behavior:'instant'}));
+  await timeline.focus();
+  const reportY=await page.evaluate(()=>window.scrollY);
+  const panelHeading=page.getByRole('heading',{name:'Linha do tempo',exact:true});
+  const headingY=await panelHeading.evaluate(heading=>heading.getBoundingClientRect().top);
+  await page.keyboard.press('PageDown');
+  await page.waitForFunction(()=>document.querySelector('.timeline').scrollTop>0);
+  assert.equal(await page.evaluate(()=>window.scrollY),reportY);
+  assert.equal(await panelHeading.evaluate(heading=>heading.getBoundingClientRect().top),headingY);
+  await timeline.hover();
+  const timelineY=await timeline.evaluate(nav=>nav.scrollTop);
+  await page.mouse.wheel(0,120);
+  await page.waitForFunction(previous=>document.querySelector('.timeline').scrollTop>previous,timelineY);
+  assert.equal(await page.evaluate(()=>window.scrollY),reportY);
+  await page.locator('.timeline-pane').screenshot({path:output+'/timeline-'+width+'.png'});
   await page.locator('.timeline a[href="/relatorios/'+id+'/"]').click();await page.getByRole('heading',{name:r.title,exact:true}).waitFor();
   await ctx.close();console.log(width+'px: results, keyboard tables/details, PDF downloads, direct route/reload, timeline, homepage and overflow verified'+(ev.length?'; video playback/seek and image zoom verified.':'.'));
  }

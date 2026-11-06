@@ -2092,5 +2092,11 @@
     "originalName": "Relalia-run-2026-11-03-44ef15f6-2b46-409e-b888-73c4b3775aeb-results.pdf",
     "bytes": 84536,
     "sha256": "94587f28139fcce48f615defe8637a10a96b72a886fe55ee3dae2537727e67a6"
+  },
+  {
+    "path": "/originals/reports/benchmark-claude-sonnet-5-5-2026-11-04-results.pdf",
+    "originalName": "Relalia-run-2026-11-04-1f77e6ea-affb-40ae-83a1-9d79610986e4-results.pdf",
+    "bytes": 95039,
+    "sha256": "1879937663b213db238e53782d3d21246a5bc4fd587a05583b1302f41cd5f691"
   }
 ]

@@ -1,5 +1,6 @@
 """Verify catalog aggregates against the supplied PDF, not individual judgments."""
 from pathlib import Path
+from decimal import Decimal, ROUND_HALF_UP
 import hashlib
 import json
 import re
@@ -8,7 +9,8 @@ from pypdf import PdfReader
 ROOT = Path(__file__).resolve().parents[1]
 compact = lambda text: ' '.join(text.split())
 num = lambda text: float(text.replace('.', '').replace(',', '.'))
-fmt = lambda value, digits=1: f'{value:.{digits}f}'.replace('.', ',')
+def fmt(value, digits=1):
+    return str(Decimal(str(value)).quantize(Decimal(1).scaleb(-digits), rounding=ROUND_HALF_UP)).replace('.', ',')
 
 def verify(report):
     data = report['executive']
@@ -19,6 +21,7 @@ def verify(report):
     pages = [compact(p.extract_text()) for p in PdfReader(path).pages]
     assert len(pages) == data['source']['pages']
     conclusions = pages[data['source'].get('conclusionsPage',3)-1]
+    quality_page = pages[data['source'].get('qualityPage',2)-1]
     for role in data['roles']:
         if role['model']:
             assert f"{role['role']} {role['platform']} {role['model']}" in pages[0]
@@ -26,26 +29,29 @@ def verify(report):
             assert role['platform'] == 'VadeChat'
             assert 'Ágil VadeChat Pleno VadeChat Resultados' in pages[0]
     for mode in data['modes']:
-        match = re.search(rf"{mode['label']}: média ([\d,]+) contra ([\d,]+) em (\d+) embates; (\d+) vitórias, (\d+) empates? e (\d+) derrotas?", conclusions)
+        match = re.search(rf"{mode['label']}: média ([\d,]+) contra ([\d,]+) em (\d+) embates; (\d+) vitórias?, (\d+) empates? e (\d+) derrotas?", conclusions)
         assert match, mode['label']
         values = match.groups()
         assert (num(values[0]), num(values[1])) == (mode['vcMean'], mode['opponentMean'])
         assert tuple(map(int,values[2:])) == (mode['n'],mode['wins'],mode['ties'],mode['losses'])
-        assert mode['wins']+mode['ties']+mode['losses'] == mode['n'] == data['questions']
-        assert f"{mode['label']} {fmt(mode['vcMean'])} / {fmt(mode['opponentMean'])} {mode['wins']} / {mode['ties']} / {mode['losses']} {mode['n']}/{mode['coverageTotal']} (100%) {mode['pendingJudgments']} / {mode['inconclusive']} / {mode['outdated']}" in pages[0]
+        assert mode['wins']+mode['ties']+mode['losses'] == mode['n'] <= mode['coverageTotal'] == data['questions']
+        coverage = f"{mode['n']}/{mode['coverageTotal']} ({mode['n']/mode['coverageTotal']:.0%})"
+        assert f"{mode['label']} {fmt(mode['vcMean'])} / {fmt(mode['opponentMean'])} {mode['wins']} / {mode['ties']} / {mode['losses']} {coverage} {mode['pendingJudgments']} / {mode['inconclusive']} / {mode['outdated']}" in pages[0]
         for criterion in mode['criteria']:
             expected = f"{mode['label']} · {criterion['code']} /{criterion['max']} n = {criterion['n']} VadeChat {fmt(criterion['vc'])} / {criterion['max']} Adversário {fmt(criterion['opponent'])} / {criterion['max']}"
-            assert expected in pages[1], expected
+            assert expected in quality_page, expected
             assert 0 <= criterion['vc'] <= criterion['max'] and 0 <= criterion['opponent'] <= criterion['max']
         quality = f"{mode['label']} {mode['contradictionsVc']} / {mode['contradictionsOpponent']} {mode['abstentionsVc']} / {mode['abstentionsOpponent']} {mode['reviewsCompleted']}/{mode['reviewsTotal']}; {mode['pendingReviews']} pendentes {mode['contests']} / {mode['pendingDecisions']}"
-        assert quality in pages[1], quality
+        assert quality in quality_page, quality
     for row in data['operations']['rows']:
         part = conclusions.split(row['role']+' ')[1].split('Subtotais')[0]
         assert f"{row['attempts']} tentativas; {row['failedOrUncertain']} falhas/incertas" in part
         token = lambda value: f'{value:,}'.replace(',','.')
         assert f"{token(row['tokensIn'])} / {token(row['tokensOut'])} / {token(row['tokensTotal'])}" in part
         assert row['tokensIn']+row['tokensOut'] == row['tokensTotal']
-        assert f"US$ {fmt(row['providerCostUsd'],6)}" in part and f"{fmt(row['seconds'])} s" in part
+        assert f"US$ {fmt(row['providerCostUsd'],6)}" in part
+        duration = re.search(r'([\d.,]+) s\b', part)
+        assert duration and num(duration[1]) == row['seconds']
     for row in data['operations']['generation']:
         assert f"{row['mode']}: {row['attempts']} tentativas; tokens entrada/saída desconhecido/desconhecido; duração desconhecida; custo desconhecido" in conclusions
         assert all(row[field] is None for field in ['tokensIn','tokensOut','costUsd','seconds'])

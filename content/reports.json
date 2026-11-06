@@ -6043,6 +6043,261 @@
         "completionNote": "Execução finalizada, conforme confirmação do executor em 03/11/2026, após sucesso na reexecução das três verificações afetadas por erro inicial.",
         "sourceStatusNote": "O PDF reenviado ainda registra o rótulo de parcial e três decisões como pendentes. O executor informou que a primeira tentativa teve erro, as três verificações passaram na reexecução e a rodada foi concluída. As contagens desta seção reproduzem o registro do PDF; o status de execução da publicação segue a confirmação do executor. Não foram fornecidos pareceres individuais ou registros de decisões para uma conferência adicional."
       }
+    },
+    {
+      "id": "benchmark-claude-sonnet-5-5-2026-11-04",
+      "date": "2026-11-04",
+      "title": "Benchmark VadeChat × Claude Sonnet 5.5",
+      "module": "VadeChat",
+      "status": "Rodada parcial",
+      "count": "5 perguntas · 9 embates diretos",
+      "summary": "Na rodada de 04/11/2026, o Claude Sonnet 5.5 teve média maior contra o VadeChat Ágil. O VadeChat Pleno obteve média maior em quatro embates diretos, com duas vitórias e duas derrotas.",
+      "highlights": [
+        "Ágil · 7,20 contra 7,80. Uma vitória e quatro derrotas em cinco embates diretos.",
+        "Pleno · 9,00 contra 7,25. Duas vitórias e duas derrotas em quatro embates diretos.",
+        "Q04 Pleno · empate derivado de 9,00 a 9,00, com revisão endossada e cobertura separada.",
+        "Nove revisões na série direta. Cinco contestações aguardam decisão."
+      ],
+      "note": "Síntese dos agregados do PDF executivo de 04/11/2026. O anexo inclui as condições das recuperações seletivas e o registro do julgamento derivado da Q04 Pleno.",
+      "files": [
+        {
+          "label": "Síntese de resultados · complementar ao original",
+          "kind": "pdf",
+          "origin": "generated",
+          "path": "/reports/benchmark-claude-sonnet-5-5-2026-11-04.pdf"
+        },
+        {
+          "label": "Benchmark · PDF executivo original",
+          "kind": "pdf",
+          "origin": "original",
+          "path": "/originals/reports/benchmark-claude-sonnet-5-5-2026-11-04-results.pdf",
+          "originalName": "Relalia-run-2026-11-04-1f77e6ea-affb-40ae-83a1-9d79610986e4-results.pdf",
+          "sha256": "1879937663b213db238e53782d3d21246a5bc4fd587a05583b1302f41cd5f691"
+        }
+      ],
+      "findings": [],
+      "executive": {
+        "pendingNotice": "Rodada parcial. Cinco contestações aguardam decisão. O empate derivado da Q04 Pleno (9,00 a 9,00) está fora das médias e do placar diretos.",
+        "title": "Anthropic / anthropic/claude-sonnet-5.5 · Ágil e Pleno · Rodada 1",
+        "runDate": "2026-11-04",
+        "questions": 5,
+        "scaleMax": 10,
+        "opponent": "Claude Sonnet 5.5",
+        "roles": [
+          {
+            "role": "Produto avaliado · Ágil e Pleno",
+            "platform": "VadeChat",
+            "model": null
+          },
+          {
+            "role": "Adversário",
+            "platform": "Anthropic",
+            "model": "anthropic/claude-sonnet-5.5"
+          },
+          {
+            "role": "Juiz",
+            "platform": "OpenAI",
+            "model": "openai/gpt-5.6-sol"
+          },
+          {
+            "role": "Revisor",
+            "platform": "OpenAI",
+            "model": "openai/gpt-5.6-sol"
+          }
+        ],
+        "modes": [
+          {
+            "key": "agil",
+            "label": "Ágil",
+            "n": 5,
+            "vcMean": 7.2,
+            "opponentMean": 7.8,
+            "wins": 1,
+            "ties": 0,
+            "losses": 4,
+            "coverageTotal": 5,
+            "pendingJudgments": 0,
+            "inconclusive": 0,
+            "outdated": 0,
+            "contradictionsVc": 0,
+            "contradictionsOpponent": 0,
+            "abstentionsVc": 0,
+            "abstentionsOpponent": 0,
+            "reviewsCompleted": 5,
+            "reviewsTotal": 5,
+            "pendingReviews": 0,
+            "contests": 3,
+            "pendingDecisions": 3,
+            "criteria": [
+              {
+                "code": "C1",
+                "label": "Conclusão e orientação prática",
+                "max": 4,
+                "vc": 3.2,
+                "opponent": 3.2,
+                "n": 5
+              },
+              {
+                "code": "C2",
+                "label": "Fundamentação e informações essenciais",
+                "max": 4,
+                "vc": 2.8,
+                "opponent": 3.4,
+                "n": 5
+              },
+              {
+                "code": "C3",
+                "label": "Condições, limites e ressalvas",
+                "max": 2,
+                "vc": 1.2,
+                "opponent": 1.2,
+                "n": 5
+              }
+            ]
+          },
+          {
+            "key": "pleno",
+            "label": "Pleno",
+            "n": 4,
+            "vcMean": 9,
+            "opponentMean": 7.25,
+            "wins": 2,
+            "ties": 0,
+            "losses": 2,
+            "coverageTotal": 5,
+            "pendingJudgments": 0,
+            "inconclusive": 0,
+            "outdated": 0,
+            "contradictionsVc": 0,
+            "contradictionsOpponent": 0,
+            "abstentionsVc": 0,
+            "abstentionsOpponent": 0,
+            "reviewsCompleted": 4,
+            "reviewsTotal": 4,
+            "pendingReviews": 0,
+            "contests": 2,
+            "pendingDecisions": 2,
+            "criteria": [
+              {
+                "code": "C1",
+                "label": "Conclusão e orientação prática",
+                "max": 4,
+                "vc": 3.8,
+                "opponent": 3,
+                "n": 4
+              },
+              {
+                "code": "C2",
+                "label": "Fundamentação e informações essenciais",
+                "max": 4,
+                "vc": 3.8,
+                "opponent": 3,
+                "n": 4
+              },
+              {
+                "code": "C3",
+                "label": "Condições, limites e ressalvas",
+                "max": 2,
+                "vc": 1.5,
+                "opponent": 1.3,
+                "n": 4
+              }
+            ]
+          }
+        ],
+        "insights": [
+          {
+            "title": "Fundamentação no Ágil",
+            "text": "A diferença nas médias por critério está em C2, com 2,8 para o VadeChat e 3,4 para o Claude. Os dois lados têm a mesma média em C1 e C3."
+          },
+          {
+            "title": "Cobertura do Pleno",
+            "text": "O VadeChat liderou a média por 1,75 ponto, com duas vitórias e duas derrotas. A fonte registra a Q04 separadamente após corrigir a inicial de uma citação literal. A cobertura passa de 4/5 diretos para 5/5 com o derivado."
+          },
+          {
+            "title": "Contestações em aberto",
+            "text": "As nove revisões da série direta foram concluídas. Três contestações do Ágil e duas do Pleno aguardam decisão. As notas publicadas seguem o registro do juiz."
+          }
+        ],
+        "precisionNote": "Médias com duas casas conforme as conclusões da p. 5. Os valores por critério seguem o arredondamento da fonte e podem somar valores diferentes das médias totais.",
+        "caveat": "Amostra de cinco perguntas com condições de execução que variaram durante a recuperação seletiva. Os resultados descrevem esta rodada.",
+        "limitations": [
+          "Cada modo usa sua própria série de embates diretos. A Q04 Pleno derivada tem revisão endossada e fica fora dos agregados diretos.",
+          "A recuperação seletiva mudou condições de prompt e de teto de saída em trabalhos identificados na p. 2. As condições variam entre tentativas.",
+          "A fonte executiva consolida notas e indicadores. Uma avaliação jurídica das respostas exige as perguntas, referências, respostas e pareceres individuais.",
+          "Zero contradições essenciais e abstenções é a contagem dos embates comparáveis segundo o protocolo da fonte. Envio manual é declarado no relatório."
+        ],
+        "sourceStatusNote": "A p. 2 do PDF executivo registra as condições da recuperação seletiva. O resultado derivado da Q04 Pleno e a revisão endossada têm cobertura separada.",
+        "source": {
+          "path": "/originals/reports/benchmark-claude-sonnet-5-5-2026-11-04-results.pdf",
+          "sha256": "1879937663b213db238e53782d3d21246a5bc4fd587a05583b1302f41cd5f691",
+          "pages": 5,
+          "qualityPage": 3,
+          "conclusionsPage": 5,
+          "series": "relalia-442-pair/1",
+          "runId": "run-2026-11-04-1f77e6ea-affb-40ae-83a1-9d79610986e4",
+          "executionId": "d90728ec-7acd-4237-bb22-702cddbc2987",
+          "revision": 887
+        },
+        "operations": {
+          "rows": [
+            {
+              "role": "Adversário",
+              "attempts": 8,
+              "failedOrUncertain": 0,
+              "tokensIn": 1094,
+              "tokensOut": 25208,
+              "tokensTotal": 26302,
+              "providerCostUsd": 0.254268,
+              "seconds": 222.4
+            },
+            {
+              "role": "Juiz",
+              "attempts": 20,
+              "failedOrUncertain": 11,
+              "tokensIn": 117765,
+              "tokensOut": 46329,
+              "tokensTotal": 164094,
+              "providerCostUsd": 1.321657,
+              "seconds": 458.6
+            },
+            {
+              "role": "Revisor",
+              "attempts": 10,
+              "failedOrUncertain": 0,
+              "tokensIn": 74638,
+              "tokensOut": 12294,
+              "tokensTotal": 86932,
+              "providerCostUsd": 0.61904,
+              "seconds": 170
+            }
+          ],
+          "generation": [
+            {
+              "mode": "Ágil",
+              "attempts": 5,
+              "tokensIn": null,
+              "tokensOut": null,
+              "costUsd": null,
+              "seconds": null
+            },
+            {
+              "mode": "Pleno",
+              "attempts": 5,
+              "tokensIn": null,
+              "tokensOut": null,
+              "costUsd": null,
+              "seconds": null
+            }
+          ],
+          "budget": {
+            "limitUsd": 8,
+            "consumedReservedUsd": 3.003178,
+            "remainingUsd": 4.996822
+          },
+          "note": "Os subtotais cobrem as tentativas do plano atual, inclusive as falhas com consumo registrado. A duração é a soma das tentativas. Os custos da geração Tri7 são desconhecidos."
+        }
+      }
     }
   ],
   "evidence": [

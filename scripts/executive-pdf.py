@@ -31,7 +31,9 @@ def executive_story(data, p):
             chart.add(String(x, y, f'{label} · {number(value)} / 10', fontName='Helvetica', fontSize=9, fillColor=color))
             chart.add(Rect(x, y-17, 225, 9, fillColor=colors.HexColor('#e4ece8'), strokeColor=None))
             chart.add(Rect(x, y-17, 225*value/data['scaleMax'], 9, fillColor=color, strokeColor=None))
-        chart.add(String(x, 18, f"Diferença: +{number(mode['vcMean']-mode['opponentMean'])} pontos · n = {mode['n']}", fontName='Helvetica', fontSize=9, fillColor=GREEN))
+        difference = round(mode['vcMean'] - mode['opponentMean'], 2)
+        signed_difference = ('+' if difference > 0 else '') + number(difference)
+        chart.add(String(x, 18, f"Diferença: {signed_difference} pontos · n = {mode['n']}", fontName='Helvetica', fontSize=9, fillColor=GREEN))
     story += [chart, table([['Modo', 'VadeChat', data['opponent'], 'V / E / D', 'Comparáveis']]+[
         [m['label'], number(m['vcMean']), number(m['opponentMean']), f"{m['wins']} / {m['ties']} / {m['losses']}", f"{m['n']}/{m['coverageTotal']}"] for m in data['modes']], [65,80,135,95,128]),
         Spacer(1,10), p(data['precisionNote'], style='Caption'), p(data['caveat']),

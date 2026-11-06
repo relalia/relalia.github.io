@@ -2,6 +2,7 @@ import type { ExecutiveBenchmark } from '@/lib/types';
 import { formatDate } from '@/lib/reports';
 
 const score = (value: number, digits = 2) => value.toLocaleString('pt-BR', { minimumFractionDigits: digits, maximumFractionDigits: digits });
+const signedScore = (value: number) => value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2, signDisplay: 'exceptZero' });
 const count = (value: number) => value.toLocaleString('pt-BR');
 
 export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBenchmark }) {
@@ -13,7 +14,7 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
     <div className="executive-cards">
       {data.modes.map(mode => <article className="executive-card" key={mode.key} aria-labelledby={`executive-${mode.key}`}>
         <div className="executive-card-heading"><h4 id={`executive-${mode.key}`}>VadeChat {mode.label}</h4><span className="tag">n = {mode.n}</span></div>
-        <div className="executive-score"><strong>{score(mode.vcMean)}</strong><span>/ {data.scaleMax}</span><span className="executive-difference">+{score(mode.vcMean - mode.opponentMean)} pontos</span></div>
+        <div className="executive-score"><strong>{score(mode.vcMean)}</strong><span>/ {data.scaleMax}</span><span className="executive-difference">{signedScore(mode.vcMean - mode.opponentMean)} pontos</span></div>
         <p className="executive-against">{data.opponent}: <strong>{score(mode.opponentMean)}</strong> / {data.scaleMax}</p>
         {[{ label: `VadeChat ${mode.label}`, value: mode.vcMean, vc: true }, { label: `${data.opponent} contra ${mode.label}`, value: mode.opponentMean, vc: false }].map(series => <div className="executive-bar" key={series.label}>
           <div><span>{series.label}</span><strong>{score(series.value)}</strong></div><div className="executive-track" aria-hidden="true"><span className={series.vc ? 'executive-vc' : 'executive-opponent'} style={{ width: `${series.value / data.scaleMax * 100}%` }} /></div>
@@ -55,7 +56,7 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
 
     <details className="executive-detail"><summary>Limites e rastreabilidade da síntese</summary>
       <ul>{data.limitations.map(item => <li key={item}>{item}</li>)}</ul>
-      <p>Fonte: <a href={data.source.path} target="_blank" rel="noreferrer">PDF executivo original · {data.source.pages} páginas</a>. Resultados: p. 1 e conclusões da p. {data.source.conclusionsPage || 3}; critérios e revisão: p. 2; consumo: p. {data.source.conclusionsPage || 3}.</p>
+      <p>Fonte: <a href={data.source.path} target="_blank" rel="noreferrer">PDF executivo original · {data.source.pages} páginas</a>. Resultados: p. 1 e conclusões da p. {data.source.conclusionsPage || 3}; critérios e revisão: p. {data.source.qualityPage || 2}; consumo: p. {data.source.conclusionsPage || 3}.</p>
       <p>Série: <code>{data.source.series}</code><br/>Rodada: <code>{data.source.runId}</code><br/>Execução informada no rodapé: <code>{data.source.executionId}</code> · revisão {data.source.revision}.</p>
       <p className="benchmark-filename">SHA-256 do original: <code>{data.source.sha256}</code></p>
     </details>
