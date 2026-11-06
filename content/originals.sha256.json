@@ -2098,5 +2098,11 @@
     "originalName": "Relalia-run-2026-11-04-1f77e6ea-affb-40ae-83a1-9d79610986e4-results.pdf",
     "bytes": 95034,
     "sha256": "1a179405b9e8dcf45b277e952b9b7bc8ccae4575074e8c5511381779da2064af"
+  },
+  {
+    "path": "/originals/reports/benchmark-gemini-3-8-flash-2026-11-06-results.pdf",
+    "originalName": "Relalia-run-2026-11-06-8ee15979-872e-46e5-8fe1-e56ef730e5d6-results.pdf",
+    "bytes": 84156,
+    "sha256": "cbd78d76e44f6eeb6b6bb18f22ad67657d5a638c51dfc68898744d8f876ab1d0"
   }
 ]

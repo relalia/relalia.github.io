@@ -6298,6 +6298,257 @@
         },
         "completionNote": "Rodada final na revisão 892 do PDF executivo, com zero revisões ou decisões pendentes. O empate derivado da Q04 Pleno (9,00 a 9,00) segue separado das médias e do placar diretos."
       }
+    },
+    {
+      "id": "benchmark-gemini-3-8-flash-2026-11-06",
+      "date": "2026-11-06",
+      "title": "Benchmark VadeChat × Gemini 3.8 Flash",
+      "module": "VadeChat",
+      "status": "Rodada final",
+      "count": "5 perguntas · 10 embates comparáveis",
+      "summary": "Na rodada de 06/11/2026, VadeChat Ágil e Gemini 3.8 Flash empataram na média. O VadeChat Pleno ficou 1,00 ponto acima na média. Cada modo registrou duas vitórias, um empate e duas derrotas em cinco embates.",
+      "highlights": [
+        "Ágil · 8,00 a 8,00, com cobertura de 5/5.",
+        "Pleno · 9,20 a 8,20, com cobertura de 5/5.",
+        "Dez revisões concluídas e três contestações registradas, com zero decisões pendentes."
+      ],
+      "note": "Síntese dos agregados do PDF executivo de 06/11/2026. Os resultados de cada modo usam a série correspondente do adversário.",
+      "files": [
+        {
+          "label": "Síntese de resultados · complementar ao original",
+          "kind": "pdf",
+          "origin": "generated",
+          "path": "/reports/benchmark-gemini-3-8-flash-2026-11-06.pdf"
+        },
+        {
+          "label": "Benchmark · PDF executivo original",
+          "kind": "pdf",
+          "origin": "original",
+          "path": "/originals/reports/benchmark-gemini-3-8-flash-2026-11-06-results.pdf",
+          "originalName": "Relalia-run-2026-11-06-8ee15979-872e-46e5-8fe1-e56ef730e5d6-results.pdf",
+          "sha256": "cbd78d76e44f6eeb6b6bb18f22ad67657d5a638c51dfc68898744d8f876ab1d0"
+        }
+      ],
+      "findings": [],
+      "executive": {
+        "title": "Google / google/gemini-3.8-flash · Ágil e Pleno · Rodada 1",
+        "runDate": "2026-11-06",
+        "questions": 5,
+        "scaleMax": 10,
+        "opponent": "Gemini 3.8 Flash",
+        "roles": [
+          {
+            "role": "Produto avaliado · Ágil e Pleno",
+            "platform": "VadeChat",
+            "model": null
+          },
+          {
+            "role": "Adversário",
+            "platform": "google",
+            "model": "google/gemini-3.8-flash"
+          },
+          {
+            "role": "Juiz",
+            "platform": "OpenAI",
+            "model": "openai/gpt-6.1-sol"
+          },
+          {
+            "role": "Revisor",
+            "platform": "Anthropic",
+            "model": "anthropic/claude-sonnet-5.5"
+          }
+        ],
+        "modes": [
+          {
+            "key": "agil",
+            "label": "Ágil",
+            "n": 5,
+            "vcMean": 8,
+            "opponentMean": 8,
+            "wins": 2,
+            "ties": 1,
+            "losses": 2,
+            "coverageTotal": 5,
+            "pendingJudgments": 0,
+            "inconclusive": 0,
+            "outdated": 0,
+            "contradictionsVc": 0,
+            "contradictionsOpponent": 0,
+            "abstentionsVc": 0,
+            "abstentionsOpponent": 0,
+            "reviewsCompleted": 5,
+            "reviewsTotal": 5,
+            "pendingReviews": 0,
+            "contests": 2,
+            "pendingDecisions": 0,
+            "criteria": [
+              {
+                "code": "C1",
+                "label": "Conclusão e orientação prática",
+                "max": 4,
+                "vc": 3.6,
+                "opponent": 3.8,
+                "n": 5
+              },
+              {
+                "code": "C2",
+                "label": "Fundamentação e informações essenciais",
+                "max": 4,
+                "vc": 3.4,
+                "opponent": 3,
+                "n": 5
+              },
+              {
+                "code": "C3",
+                "label": "Condições, limites e ressalvas",
+                "max": 2,
+                "vc": 1,
+                "opponent": 1.2,
+                "n": 5
+              }
+            ]
+          },
+          {
+            "key": "pleno",
+            "label": "Pleno",
+            "n": 5,
+            "vcMean": 9.2,
+            "opponentMean": 8.2,
+            "wins": 2,
+            "ties": 1,
+            "losses": 2,
+            "coverageTotal": 5,
+            "pendingJudgments": 0,
+            "inconclusive": 0,
+            "outdated": 0,
+            "contradictionsVc": 0,
+            "contradictionsOpponent": 0,
+            "abstentionsVc": 0,
+            "abstentionsOpponent": 0,
+            "reviewsCompleted": 5,
+            "reviewsTotal": 5,
+            "pendingReviews": 0,
+            "contests": 1,
+            "pendingDecisions": 0,
+            "criteria": [
+              {
+                "code": "C1",
+                "label": "Conclusão e orientação prática",
+                "max": 4,
+                "vc": 4,
+                "opponent": 3.8,
+                "n": 5
+              },
+              {
+                "code": "C2",
+                "label": "Fundamentação e informações essenciais",
+                "max": 4,
+                "vc": 3.4,
+                "opponent": 3,
+                "n": 5
+              },
+              {
+                "code": "C3",
+                "label": "Condições, limites e ressalvas",
+                "max": 2,
+                "vc": 1.8,
+                "opponent": 1.4,
+                "n": 5
+              }
+            ]
+          }
+        ],
+        "insights": [
+          {
+            "title": "Empate na média do Ágil",
+            "text": "A vantagem do VadeChat em C2 foi de 0,4 ponto. O Gemini teve 0,2 ponto a mais em C1 e 0,2 ponto a mais em C3, levando ao empate de 8,00 na média."
+          },
+          {
+            "title": "Diferença de média no Pleno",
+            "text": "O VadeChat obteve média maior nos três critérios. A vantagem total foi de 1,00 ponto, com placar de duas vitórias, um empate e duas derrotas."
+          },
+          {
+            "title": "Revisões concluídas",
+            "text": "As dez revisões foram concluídas. O executivo registra duas contestações no Ágil e uma no Pleno, com zero decisões pendentes."
+          }
+        ],
+        "precisionNote": "Médias com duas casas conforme as conclusões da p. 4. Os valores por critério seguem o arredondamento da fonte.",
+        "caveat": "Os resultados descrevem os dez embates destas cinco perguntas. Cada modo tem sua própria série de notas do adversário.",
+        "limitations": [
+          "A fonte executiva apresenta os resultados agregados. A avaliação jurídica das respostas exige as perguntas, referências, respostas e pareceres individuais.",
+          "Zero contradições essenciais e abstenções é a contagem dos embates comparáveis segundo o protocolo da fonte. O relatório registra o envio manual como declaração."
+        ],
+        "sourceStatusNote": "A fonte executiva consolida notas, cobertura e contestações. O anexo remete ao aplicativo e ao relatório técnico completo para evidências, versões, prompts e histórico.",
+        "source": {
+          "path": "/originals/reports/benchmark-gemini-3-8-flash-2026-11-06-results.pdf",
+          "sha256": "cbd78d76e44f6eeb6b6bb18f22ad67657d5a638c51dfc68898744d8f876ab1d0",
+          "pages": 4,
+          "conclusionsPage": 4,
+          "series": "relalia-442-pair/1",
+          "runId": "run-2026-11-06-8ee15979-872e-46e5-8fe1-e56ef730e5d6",
+          "executionId": "04d25e25-0763-4586-93e3-d36bb6b6082b",
+          "revision": 331
+        },
+        "operations": {
+          "rows": [
+            {
+              "role": "Adversário",
+              "attempts": 5,
+              "failedOrUncertain": 0,
+              "tokensIn": 191,
+              "tokensOut": 9670,
+              "tokensTotal": 9861,
+              "providerCostUsd": 0.036406,
+              "seconds": 96.4
+            },
+            {
+              "role": "Juiz",
+              "attempts": 10,
+              "failedOrUncertain": 0,
+              "tokensIn": 52561,
+              "tokensOut": 10043,
+              "tokensTotal": 62604,
+              "providerCostUsd": 0.231817,
+              "seconds": 158.2
+            },
+            {
+              "role": "Revisor",
+              "attempts": 10,
+              "failedOrUncertain": 0,
+              "tokensIn": 87149,
+              "tokensOut": 10342,
+              "tokensTotal": 97491,
+              "providerCostUsd": 0.277718,
+              "seconds": 125
+            }
+          ],
+          "generation": [
+            {
+              "mode": "Ágil",
+              "attempts": 5,
+              "tokensIn": null,
+              "tokensOut": null,
+              "costUsd": null,
+              "seconds": null
+            },
+            {
+              "mode": "Pleno",
+              "attempts": 5,
+              "tokensIn": null,
+              "tokensOut": null,
+              "costUsd": null,
+              "seconds": null
+            }
+          ],
+          "budget": {
+            "limitUsd": 8,
+            "consumedReservedUsd": 0.545941,
+            "remainingUsd": 7.454059
+          },
+          "note": "Os subtotais cobrem as tentativas do plano atual. A duração é a soma das tentativas. Os custos da geração Tri7 são desconhecidos."
+        },
+        "completionNote": "Rodada final na revisão 331 do PDF executivo, com os dez embates incluídos nas médias e zero revisões ou decisões pendentes."
+      }
     }
   ],
   "evidence": [
