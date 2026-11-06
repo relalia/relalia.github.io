@@ -55,6 +55,7 @@ export interface Finding {
 
 export interface Report {
   executive?: ExecutiveBenchmark;
+  benchmarkSources?: { reportId: string; label: string }[];
   overviewId?: string;
   comparisonId?: string;
   benchmarkId?: string;

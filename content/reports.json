@@ -6300,6 +6300,32 @@
       }
     },
     {
+      "id": "resumo-benchmarks-vadechat-2026-11-06",
+      "date": "2026-11-06",
+      "title": "Resumo da semana · VadeChat × 3 IAs",
+      "module": "VadeChat",
+      "status": "Síntese visual",
+      "count": "3 benchmarks · 29 embates comparáveis",
+      "summary": "Comparação das notas médias do VadeChat Ágil e Pleno contra ChatGPT 6.1 Sol, Claude Sonnet 5.5 e Gemini 3.8 Flash nas rodadas de 03, 04 e 06/11/2026.",
+      "highlights": [],
+      "files": [],
+      "findings": [],
+      "benchmarkSources": [
+        {
+          "reportId": "benchmark-chatgpt-sol-2026-11-03",
+          "label": "ChatGPT 6.1 Sol"
+        },
+        {
+          "reportId": "benchmark-claude-sonnet-5-5-2026-11-04",
+          "label": "Claude Sonnet 5.5"
+        },
+        {
+          "reportId": "benchmark-gemini-3-8-flash-2026-11-06",
+          "label": "Gemini 3.8 Flash"
+        }
+      ]
+    },
+    {
       "id": "benchmark-gemini-3-8-flash-2026-11-06",
       "date": "2026-11-06",
       "title": "Benchmark VadeChat × Gemini 3.8 Flash",

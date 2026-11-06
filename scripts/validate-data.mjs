@@ -18,7 +18,7 @@ export function validateData(data,assetExists=()=>true) {
     assert(/^\d{4}-\d{2}-\d{2}$/.test(report.date) && !isNaN(Date.parse(report.date)),`Invalid date ${report.id}`);
     assert(['Atlas','VadeChat','Base de Conhecimento','Alia'].includes(report.module),`Invalid module ${report.id}`);
     assert(Array.isArray(report.highlights) && report.highlights.every(text),`Invalid highlights ${report.id}`);
-    assert(Array.isArray(report.findings) && Array.isArray(report.files) && report.files.some(f=>f.kind==='pdf'),`Missing findings/PDF ${report.id}`);
+    assert(Array.isArray(report.findings) && Array.isArray(report.files) && (report.benchmarkSources || report.files.some(f=>f.kind==='pdf')),`Missing findings/PDF ${report.id}`);
     const ids=new Set();
     for(const finding of report.findings) {
       assert(/^[A-Z0-9]+(?:-[A-Z0-9]+)*$/.test(finding.id),`Invalid finding ID ${finding.id}`);
@@ -36,6 +36,16 @@ export function validateData(data,assetExists=()=>true) {
       assert(file.path.endsWith(`.${file.kind}`),`Attachment type mismatch ${file.path}`);
       if(file.origin==='generated') assert(file.path.startsWith('/reports/') && file.kind==='pdf',`Generated PDF must stay in /reports/: ${file.path}`);
       if(file.origin==='original') assert(/^[a-f0-9]{64}$/.test(file.sha256) && text(file.originalName),`Original needs SHA-256 and name ${file.path}`);
+    }
+  }
+  for(const report of data.reports.filter(report=>report.benchmarkSources)) {
+    const sources=report.benchmarkSources;
+    assert(Array.isArray(sources) && sources.length>=2,`Missing benchmark sources ${report.id}`);
+    assert(new Set(sources.map(source=>source.reportId)).size===sources.length,`Duplicate benchmark source ${report.id}`);
+    for(const source of sources) {
+      const benchmark=reports.get(source.reportId)?.executive;
+      assert(text(source.label) && source.reportId!==report.id && benchmark?.scaleMax===10 &&
+        ['agil','pleno'].every(key=>benchmark.modes.some(mode=>mode.key===key)),`Invalid benchmark source ${report.id}/${source.reportId}`);
     }
   }
   const evidence = new Map();
