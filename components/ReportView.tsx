@@ -10,9 +10,8 @@ import ExecutiveBenchmarkResults from './ExecutiveBenchmarkResults';
 
 export default function ReportView({ report }: { report: Report }) {
   return <div className="shell">
-    <header><h1>Relalia: O Relatório da Alia</h1></header>
-    <section className="intro" aria-label="Sobre o portal"><p>Validações da plataforma Alia. Explore as rodadas, consulte os achados e acompanhe os retestes com seus documentos e evidências.</p></section>
-    <main className="layout"><Timeline activeId={report.id} /><article className="pane detail">
+    <Timeline activeId={report.id} intro={<section className="intro" aria-label="Sobre o portal"><p>Validações da plataforma Alia. Explore as rodadas, consulte os achados e acompanhe os retestes com seus documentos e evidências.</p></section>}>
+    <article className="pane detail">
       <div className="kicker">{report.module} · {formatDate(report.date)}</div><h2>{report.title}</h2>
       {report.overviewId ? <BenchmarkOverviewReport report={report}/> : report.comparisonId ? <BenchmarkComparisonReport report={report}/> : report.benchmarkId ? <BenchmarkReport report={report}/> : <>
       <div className="meta"><span className="tag">{report.status}</span><span className="tag">{report.count}</span></div>
@@ -23,7 +22,7 @@ export default function ReportView({ report }: { report: Report }) {
       <FindingFilters key={report.id} report={report} /></>}
       <p className="note">{report.note || 'Os achados refletem a validação realizada. Propostas e critérios de verificação não representam funcionalidades implementadas nem retestes executados.'}</p>
       </>}
-    </article></main>
+    </article></Timeline>
     <footer>Relalia · Histórico de validação da Tri7 Alia · <a href="/originals/SHA256SUMS.txt">Integridade dos originais (SHA-256)</a></footer>
   </div>;
 }

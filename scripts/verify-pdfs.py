@@ -80,7 +80,7 @@ for report in data['reports']:
             if executive.get('completionNote'):
                 assert normalize(executive['completionNote']) in text
                 assert normalize(executive['sourceStatusNote']) in text
-                assert report['status']=='Execução finalizada'
+                assert normalize(report['status']) in text
                 assert not executive.get('pendingNotice')
                 assert len(reader.pages)<=2
             if executive.get('pendingNotice'):

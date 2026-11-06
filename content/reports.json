@@ -6049,14 +6049,14 @@
       "date": "2026-11-04",
       "title": "Benchmark VadeChat × Claude Sonnet 5.5",
       "module": "VadeChat",
-      "status": "Rodada parcial",
+      "status": "Rodada final",
       "count": "5 perguntas · 9 embates diretos",
       "summary": "Na rodada de 04/11/2026, o Claude Sonnet 5.5 teve média maior contra o VadeChat Ágil. O VadeChat Pleno obteve média maior em quatro embates diretos, com duas vitórias e duas derrotas.",
       "highlights": [
         "Ágil · 7,20 contra 7,80. Uma vitória e quatro derrotas em cinco embates diretos.",
         "Pleno · 9,00 contra 7,25. Duas vitórias e duas derrotas em quatro embates diretos.",
         "Q04 Pleno · empate derivado de 9,00 a 9,00, com revisão endossada e cobertura separada.",
-        "Nove revisões na série direta. Cinco contestações aguardam decisão."
+        "Nove revisões na série direta e cinco contestações registradas, com zero decisões pendentes."
       ],
       "note": "Síntese dos agregados do PDF executivo de 04/11/2026. O anexo inclui as condições das recuperações seletivas e o registro do julgamento derivado da Q04 Pleno.",
       "files": [
@@ -6072,12 +6072,11 @@
           "origin": "original",
           "path": "/originals/reports/benchmark-claude-sonnet-5-5-2026-11-04-results.pdf",
           "originalName": "Relalia-run-2026-11-04-1f77e6ea-affb-40ae-83a1-9d79610986e4-results.pdf",
-          "sha256": "1879937663b213db238e53782d3d21246a5bc4fd587a05583b1302f41cd5f691"
+          "sha256": "1a179405b9e8dcf45b277e952b9b7bc8ccae4575074e8c5511381779da2064af"
         }
       ],
       "findings": [],
       "executive": {
-        "pendingNotice": "Rodada parcial. Cinco contestações aguardam decisão. O empate derivado da Q04 Pleno (9,00 a 9,00) está fora das médias e do placar diretos.",
         "title": "Anthropic / anthropic/claude-sonnet-5.5 · Ágil e Pleno · Rodada 1",
         "runDate": "2026-11-04",
         "questions": 5,
@@ -6127,7 +6126,7 @@
             "reviewsTotal": 5,
             "pendingReviews": 0,
             "contests": 3,
-            "pendingDecisions": 3,
+            "pendingDecisions": 0,
             "criteria": [
               {
                 "code": "C1",
@@ -6176,7 +6175,7 @@
             "reviewsTotal": 4,
             "pendingReviews": 0,
             "contests": 2,
-            "pendingDecisions": 2,
+            "pendingDecisions": 0,
             "criteria": [
               {
                 "code": "C1",
@@ -6215,8 +6214,8 @@
             "text": "O VadeChat liderou a média por 1,75 ponto, com duas vitórias e duas derrotas. A fonte registra a Q04 separadamente após corrigir a inicial de uma citação literal. A cobertura passa de 4/5 diretos para 5/5 com o derivado."
           },
           {
-            "title": "Contestações em aberto",
-            "text": "As nove revisões da série direta foram concluídas. Três contestações do Ágil e duas do Pleno aguardam decisão. As notas publicadas seguem o registro do juiz."
+            "title": "Decisões concluídas",
+            "text": "As nove revisões da série direta foram concluídas. O PDF final registra três contestações do Ágil e duas do Pleno, com zero decisões pendentes. As notas publicadas seguem o registro do juiz."
           }
         ],
         "precisionNote": "Médias com duas casas conforme as conclusões da p. 5. Os valores por critério seguem o arredondamento da fonte e podem somar valores diferentes das médias totais.",
@@ -6230,14 +6229,14 @@
         "sourceStatusNote": "A p. 2 do PDF executivo registra as condições da recuperação seletiva. O resultado derivado da Q04 Pleno e a revisão endossada têm cobertura separada.",
         "source": {
           "path": "/originals/reports/benchmark-claude-sonnet-5-5-2026-11-04-results.pdf",
-          "sha256": "1879937663b213db238e53782d3d21246a5bc4fd587a05583b1302f41cd5f691",
+          "sha256": "1a179405b9e8dcf45b277e952b9b7bc8ccae4575074e8c5511381779da2064af",
           "pages": 5,
           "qualityPage": 3,
           "conclusionsPage": 5,
           "series": "relalia-442-pair/1",
           "runId": "run-2026-11-04-1f77e6ea-affb-40ae-83a1-9d79610986e4",
           "executionId": "d90728ec-7acd-4237-bb22-702cddbc2987",
-          "revision": 887
+          "revision": 892
         },
         "operations": {
           "rows": [
@@ -6296,7 +6295,8 @@
             "remainingUsd": 4.996822
           },
           "note": "Os subtotais cobrem as tentativas do plano atual, inclusive as falhas com consumo registrado. A duração é a soma das tentativas. Os custos da geração Tri7 são desconhecidos."
-        }
+        },
+        "completionNote": "Rodada final na revisão 892 do PDF executivo, com zero revisões ou decisões pendentes. O empate derivado da Q04 Pleno (9,00 a 9,00) segue separado das médias e do placar diretos."
       }
     }
   ],

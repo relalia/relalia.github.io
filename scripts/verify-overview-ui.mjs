@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {spawn} from 'node:child_process';
 import {once} from 'node:events';
+import {openTimeline} from './timeline-ui.mjs';
 import {randomBytes,randomUUID,pbkdf2Sync,createHash} from 'node:crypto';
 import d from '../content/sintese-benchmarks-interface-2026-10-16.json' with {type:'json'};
 import catalog from '../content/reports.json' with {type:'json'};
@@ -56,10 +57,11 @@ try{
     const download=page.waitForEvent('download');await page.locator('#overview-ui .evidence-download').first().click();assert((await download).suggestedFilename().endsWith('.png'));
     for(const b of d.benchmarks){
       await page.getByRole('link',{name:`Comparativo completo · ${b.label} →`,exact:true}).click();await page.locator('.benchmark-comparison').waitFor();
+      await openTimeline(page,width);
       assert(page.url().includes(b.comparisonId));assert(await page.locator(`.timeline a[href="/relatorios/${d.id}/"]`).isVisible());
       await page.locator(`.timeline a[href="/relatorios/${d.id}/"]`).click();await page.locator('.benchmark-overview').waitFor();
     }
-    await page.goto(base+'/');await page.locator('.timeline a[aria-current="page"]').waitFor();assert.equal(await page.locator('.timeline a[aria-current="page"]').getAttribute('href'),`/relatorios/${latest.id}/`);
+    await page.goto(base+'/');await openTimeline(page,width);assert.equal(await page.locator('.timeline a[aria-current="page"]').getAttribute('href'),`/relatorios/${latest.id}/`);
     await page.getByRole('combobox',{name:'Módulo'}).focus();await page.keyboard.press('Enter');
     await page.waitForFunction(()=>document.activeElement?.getAttribute('role')==='option');
     await page.keyboard.press('End');

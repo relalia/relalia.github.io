@@ -65,6 +65,10 @@ def verify(report):
         assert 'Rodada parcial' in pages[0]
         decisions=sum(m['pendingDecisions'] for m in data['modes'])
         assert f'{decisions} revisões ou decisões pendentes' in conclusions
+    if report['status'] == 'Rodada final':
+        assert 'Rodada final' in pages[0]
+        assert '0 revisões ou decisões pendentes' in conclusions
+        assert all(not mode['pendingDecisions'] and not mode['pendingReviews'] for mode in data['modes'])
     print(f"{report['id']}: source PDF hash, roles, means, denominators, outcomes, criteria, quality and operations verified")
 
 if __name__ == '__main__':

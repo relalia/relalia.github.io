@@ -4,6 +4,7 @@ import {createHash,randomBytes,randomUUID,pbkdf2Sync} from 'node:crypto';
 import {execFileSync,spawn} from 'node:child_process';
 import {once} from 'node:events';
 import {chromium} from 'playwright';
+import {openTimeline} from './timeline-ui.mjs';
 const id=process.argv[2]||'vadechat-ux-2026-11-02',base=process.env.RELALIA_TEST_URL||'http://127.0.0.1:4185';
 const data=JSON.parse(fs.readFileSync('content/reports.json','utf8')),r=data.reports.find(r=>r.id===id),ev=data.evidence.filter(e=>e.reportId===id);
 assert(r?.executive,'Select an executive report');
@@ -12,7 +13,7 @@ const before=JSON.parse(execFileSync('git',['show','HEAD:content/reports.json'],
 for(const previous of before.reports.filter(r=>r.id!==id))assert.deepEqual(data.reports.find(r=>r.id===previous.id),previous);
 for(const previous of before.evidence.filter(e=>e.reportId!==id))assert.deepEqual(data.evidence.find(e=>e.id===previous.id),previous);
 const hash=b=>createHash('sha256').update(b).digest('hex');
-for(const report of before.reports)for(const f of report.files){if(report.id===id&&f.origin==='generated')continue;assert.equal(hash(fs.readFileSync('public'+f.path)),hash(execFileSync('git',['show','HEAD:public'+f.path],{maxBuffer:40*1024*1024})));}
+for(const report of before.reports.filter(report=>report.id!==id))for(const f of report.files){assert.equal(hash(fs.readFileSync('public'+f.path)),hash(execFileSync('git',['show','HEAD:public'+f.path],{maxBuffer:40*1024*1024})));}
 // Historical inputs may have left Windows Temp; use the hash-registered originals.
 const sources=ev.map(e=>'public'+e.path);
 for(let i=0;i<ev.length;i++){assert.equal(hash(fs.readFileSync(sources[i])),ev[i].sha256);assert.equal(hash(fs.readFileSync('public'+ev[i].path)),ev[i].sha256);}
@@ -23,13 +24,14 @@ const password=randomBytes(24).toString('base64'),salt=randomBytes(16),config={a
 const errors=[];
 try{
  for(const width of [320,390,768,1440]){
-  const ctx=await browser.newContext({viewport:{width,height:1000}});await ctx.route('**/access-config.json?*',route=>route.fulfill({json:config}));
+  const mobile=width<=800;
+  const ctx=await browser.newContext({viewport:{width,height:1000},hasTouch:mobile,isMobile:mobile,reducedMotion:'reduce'});await ctx.route('**/access-config.json?*',route=>route.fulfill({json:config}));
   const page=await ctx.newPage();page.on('pageerror',e=>errors.push(e.message));
   await page.goto(base+'/relatorios/'+id+'/');await page.getByLabel('Senha',{exact:true}).fill(password);await page.getByRole('button',{name:'Entrar',exact:true}).click();
   await page.getByRole('heading',{name:'Resultados do benchmark',exact:true}).waitFor();
   assert.equal(await page.locator('.executive-card').count(),2);
   if(r.executive.pendingNotice)await page.getByText(r.executive.pendingNotice,{exact:true}).waitFor();
-  if(r.executive.completionNote){await page.getByText(r.executive.completionNote,{exact:true}).waitFor();assert.equal(await page.locator('.meta .tag').first().innerText(),'Execução finalizada');}
+  if(r.executive.completionNote){await page.getByText(r.executive.completionNote,{exact:true}).waitFor();assert.equal(await page.locator('.meta .tag').first().innerText(),r.status);}
   for(const [i,m] of r.executive.modes.entries()){
    const card=page.locator('.executive-card').nth(i);
    assert.equal(await card.locator('.executive-score>strong').innerText(),m.vcMean.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}));
@@ -58,9 +60,49 @@ try{
   const [source]=await Promise.all([page.waitForEvent('download'),page.locator('.downloads a[download][href="'+r.executive.source.path+'"]').click()]);assert.equal(hash(fs.readFileSync(await source.path())),r.executive.source.sha256);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+1));
   await page.reload();await page.getByRole('heading',{name:r.title,exact:true}).waitFor();
-  await page.goto(base+'/');await page.getByRole('heading',{name:latest.title,exact:true}).waitFor();assert.equal(await page.locator('.timeline a[aria-current="page"]').getAttribute('href'),'/relatorios/'+latest.id+'/');
-  const timeline=page.getByRole('navigation',{name:'Relatórios',exact:true});
-  await timeline.evaluate(nav=>nav.scrollIntoView({block:'center',behavior:'instant'}));
+  await page.goto(base+'/');await page.getByRole('heading',{name:latest.title,exact:true}).waitFor();
+  const drawer=page.getByRole('dialog',{name:'Linha do tempo',exact:true});
+  const menu=page.getByRole('button',{name:'Abrir linha do tempo',exact:true});
+  if(mobile){
+   assert(!(await drawer.isVisible()));
+   await page.evaluate(()=>window.scrollTo(0,250));
+   assert((await menu.boundingBox()).y>=0 && (await menu.boundingBox()).y<64);
+   const beforeOpenY=await page.evaluate(()=>window.scrollY);
+   await openTimeline(page,width);
+   assert(await drawer.isVisible());
+   assert.equal(await menu.getAttribute('aria-expanded'),'true');
+   const filter=drawer.getByRole('combobox',{name:'Módulo'});
+   await filter.click();await drawer.getByRole('option',{name:'Alia',exact:true}).click();
+   assert((await filter.innerText()).includes('Alia'));
+   await filter.click();await drawer.getByRole('option',{name:'Todos os módulos',exact:true}).click();
+   await page.keyboard.press('Escape');await drawer.waitFor({state:'hidden'});
+   assert(await menu.evaluate(el=>el===document.activeElement));
+   assert.equal(await page.evaluate(()=>window.scrollY),beforeOpenY);
+   await openTimeline(page,width);
+   const panel=page.locator('.timeline-drawer-panel');
+   const box=await panel.boundingBox();
+   await page.mouse.click(Math.round((width+box.width)/2),150);
+   await drawer.waitFor({state:'hidden'});
+   const nav=await openTimeline(page,width);
+   const cdp=await ctx.newCDPSession(page);
+   const navBox=await nav.boundingBox();
+   const x=Math.round(navBox.x+navBox.width*0.72), y=Math.round(navBox.y+navBox.height*0.55);
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
+   for(let distance=20;distance<=120;distance+=20)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y:y-distance}]});
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+   await page.waitForFunction(()=>document.querySelector('.timeline').scrollTop>0);
+   assert(await drawer.isVisible());
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
+   for(let distance=20;distance<=120;distance+=20)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x-distance,y}]});
+   assert((await panel.boundingBox()).x < -50);
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+   await drawer.waitFor({state:'hidden'});
+   assert.equal(await page.evaluate(()=>window.scrollY),beforeOpenY);
+  }else assert(!(await menu.isVisible()));
+  const timeline=await openTimeline(page,width);
+  assert.equal(await timeline.locator('a[aria-current="page"]').getAttribute('href'),'/relatorios/'+latest.id+'/');
+  if(!mobile)await timeline.evaluate(nav=>nav.scrollIntoView({block:'center',behavior:'instant'}));
+  await timeline.evaluate(nav=>{nav.scrollTop=0;});
   await timeline.focus();
   const reportY=await page.evaluate(()=>window.scrollY);
   const panelHeading=page.getByRole('heading',{name:'Linha do tempo',exact:true});
@@ -74,8 +116,9 @@ try{
   await page.mouse.wheel(0,120);
   await page.waitForFunction(previous=>document.querySelector('.timeline').scrollTop>previous,timelineY);
   assert.equal(await page.evaluate(()=>window.scrollY),reportY);
-  await page.locator('.timeline-pane').screenshot({path:output+'/timeline-'+width+'.png'});
+  await page.locator(mobile?'.timeline-drawer-panel':'.timeline-pane').screenshot({path:output+'/timeline-'+width+'.png'});
   await page.locator('.timeline a[href="/relatorios/'+id+'/"]').click();await page.getByRole('heading',{name:r.title,exact:true}).waitFor();
+  if(mobile)await drawer.waitFor({state:'hidden'});
   await ctx.close();console.log(width+'px: results, keyboard tables/details, PDF downloads, direct route/reload, timeline, homepage and overflow verified'+(ev.length?'; video playback/seek and image zoom verified.':'.'));
  }
  assert.deepEqual(errors,[]);

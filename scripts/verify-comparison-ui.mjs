@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import {randomBytes,randomUUID,pbkdf2Sync,createHash} from 'node:crypto';
 import {spawn} from 'node:child_process';
 import {once} from 'node:events';
+import {openTimeline} from './timeline-ui.mjs';
 const id=process.argv[2]||'benchmark-comparativo-2026-10-14';
 assert(/^[a-z0-9-]+$/.test(id));
 const d=JSON.parse(fs.readFileSync(`content/${id}.json`,'utf8'));
@@ -33,7 +34,7 @@ try{
     if(d.alternativeLabel)assert(!(await page.locator('.benchmark-comparison').innerText()).includes('inconclusividade global'));
     const noOverflow=async()=>assert(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+1),`${width}: horizontal overflow`);
     await noOverflow();
-    if(width<=768){const a=await page.locator('article').boundingBox(),t=await page.locator('.timeline-pane').boundingBox();assert(a.y<t.y);}
+    if(width<=800)assert(!(await page.getByRole('navigation',{name:'Relatórios'}).isVisible()));
     const card=page.locator('#Q04-PLENO');
     await card.locator(':scope > summary').focus();await page.keyboard.press('Enter');assert(await card.evaluate(el=>el.open));
     const widthDocs=width===1440?d.rows:[d.rows.find(r=>r.id==='Q04-PLENO')];
@@ -59,10 +60,12 @@ try{
     await card.evaluate(el=>el.open=false);
     await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`tmp/comparison-ui/${d.id}-${width}.png`});
     await page.reload();await page.locator('.benchmark-comparison').waitFor();
-    await page.goto(base+'/');await page.locator('.timeline a[aria-current="page"]').waitFor();assert(await page.locator('.timeline a[aria-current="page"]').getAttribute('href')===`/relatorios/${latest.id}/`);
+    await page.goto(base+'/');await openTimeline(page,width);assert(await page.locator('.timeline a[aria-current="page"]').getAttribute('href')===`/relatorios/${latest.id}/`);
     if(d.id!==latest.id){await page.locator(`.timeline a[href="/relatorios/${d.id}/"]`).click();await page.getByRole('heading',{name:d.title,exact:true}).waitFor();}
+    else if(width<=800)await page.keyboard.press('Escape');
     await page.getByRole('link',{name:d.related[0].label,exact:true}).click();await page.locator('.benchmark:not(.benchmark-comparison)').waitFor();
     assert(page.url().includes(d.related[0].id));
+    await openTimeline(page,width);
     assert(await page.locator(`.timeline a[href="/relatorios/${d.id}/"]`).isVisible(),'New catalog card missing on historical report');
     await context.close();
     console.log(`${width}px: route, home, keyboard, sources, copy/download, history and overflow verified`);

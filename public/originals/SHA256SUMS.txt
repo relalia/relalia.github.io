@@ -347,4 +347,4 @@ e95e3fbf008e1d838b7831e51265f1e48b276d6420c51af0050c24a644effb30  evidence/vadec
 ff7b435cc4e26f8e0bc1106b5616e1cb0295b84c75b055bfa8addb028c9b3492  reports/benchmark-2026-10-28-results.pdf
 042d7ccaef7c30cdcd49ff807e64781b9a93f6873890916df06ea9f3d2617102  reports/benchmark-chatgpt-sol-2026-11-03-results.pdf
 94587f28139fcce48f615defe8637a10a96b72a886fe55ee3dae2537727e67a6  reports/benchmark-chatgpt-sol-2026-11-03-results-reexportado.pdf
-1879937663b213db238e53782d3d21246a5bc4fd587a05583b1302f41cd5f691  reports/benchmark-claude-sonnet-5-5-2026-11-04-results.pdf
+1a179405b9e8dcf45b277e952b9b7bc8ccae4575074e8c5511381779da2064af  reports/benchmark-claude-sonnet-5-5-2026-11-04-results.pdf

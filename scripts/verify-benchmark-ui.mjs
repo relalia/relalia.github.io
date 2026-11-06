@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import {randomBytes,randomUUID,pbkdf2Sync} from 'node:crypto';
 import {spawn} from 'node:child_process';
 import {once} from 'node:events';
+import {openTimeline} from './timeline-ui.mjs';
 const benchmarkId=process.argv[2] || 'benchmark-2026-10-09';
 const benchmark=JSON.parse(fs.readFileSync(`content/${benchmarkId}.json`,'utf8'));
 const alternativeLabel=benchmark.alternativeLabel || 'ChatGPT gratuito';
@@ -39,8 +40,8 @@ try {
     };
     await noOverflow('initial');
     if(width<=800) {
-      const article=await page.locator('article').boundingBox(),timeline=await page.locator('.timeline-pane').boundingBox();
-      assert.ok(article.y<timeline.y,'Mobile report results must precede timeline');
+      assert(await page.getByRole('button',{name:'Abrir linha do tempo'}).isVisible());
+      assert(!(await page.getByRole('navigation',{name:'Relatórios'}).isVisible()));
     }
     // Keyboard tooltips and their accessible name include the entire question and original class.
     const point=page.locator('.benchmark-point').first();
@@ -130,7 +131,7 @@ try {
     await page.reload();
     await page.locator('.benchmark').waitFor();
     await page.goto(`${base}/`);
-    await page.locator('.timeline a[aria-current="page"]').waitFor();
+    await openTimeline(page,width);
     await page.locator('.timeline a[href="/relatorios/alia-2026-10-08/"]').click();
     await page.getByRole('heading',{name:'Achados e resultados',exact:true}).waitFor();
     assert.equal(await page.locator('.benchmark').count(),0);
