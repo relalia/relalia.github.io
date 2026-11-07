@@ -25,7 +25,7 @@ const errors=[];
 try{
  for(const width of [320,390,768,1440]){
   const mobile=width<=800;
-  const ctx=await browser.newContext({viewport:{width,height:1000},hasTouch:mobile,isMobile:mobile,reducedMotion:'reduce'});await ctx.route('**/access-config.json?*',route=>route.fulfill({json:config}));
+  const ctx=await browser.newContext({viewport:{width,height:1000},hasTouch:mobile,isMobile:mobile,reducedMotion:'reduce',timezoneId:'Pacific/Kiritimati'});await ctx.route('**/access-config.json?*',route=>route.fulfill({json:config}));
   const page=await ctx.newPage();page.on('pageerror',e=>errors.push(e.message));
   await page.goto(base+'/relatorios/'+id+'/');await page.getByLabel('Senha',{exact:true}).fill(password);await page.getByRole('button',{name:'Entrar',exact:true}).click();
   await page.getByRole('heading',{name:'Resultados do benchmark',exact:true}).waitFor();
@@ -37,6 +37,8 @@ try{
    assert.equal(await card.locator('.executive-score>strong').innerText(),m.vcMean.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}));
    const delta=(m.vcMean-m.opponentMean).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2,signDisplay:'exceptZero'});
    assert.equal(await card.locator('.executive-difference').innerText(),`${delta} pontos`);
+   const summaryRow=page.getByRole('region',{name:'Médias e resultados exatos'}).locator('tbody tr').nth(i);
+   assert.equal(await summaryRow.locator('td').nth(2).innerText(),delta);
    assert((await card.innerText()).includes(m.wins+' '+(m.wins===1?'vitória':'vitórias')+' · '+m.ties+' '+(m.ties===1?'empate':'empates')+' · '+m.losses+' '+(m.losses===1?'derrota':'derrotas')));
   }
   const tables=page.locator('.executive-results .benchmark-table-wrap');
@@ -47,6 +49,8 @@ try{
   }
   await page.locator('.executive-results').screenshot({path:output+'/results-'+width+'.png'});
   if(ev.length){
+  await page.evaluate(()=>history.replaceState(null,'','#%E0%A4%A'));
+  await page.reload();await page.getByRole('heading',{name:r.title,exact:true}).waitFor();
   const finding=page.locator('#VC-MSG-01');await finding.waitFor();await finding.locator(':scope > summary').focus();await page.keyboard.press('Enter');assert(await finding.evaluate(e=>e.open));
   assert.equal(await page.locator('video').count(),1);const video=page.locator('video');assert.notEqual(await video.getAttribute('controls'),null);await video.evaluate(v=>{v.muted=true;return v.play();});
   await page.waitForFunction(()=>document.querySelector('video')?.currentTime>0.3);
@@ -101,6 +105,7 @@ try{
   }else assert(!(await menu.isVisible()));
   const timeline=await openTimeline(page,width);
   assert.equal(await timeline.locator('a[aria-current="page"]').getAttribute('href'),'/relatorios/'+latest.id+'/');
+  assert((await timeline.locator('a[aria-current="page"] time').innerText()).startsWith(new Date(`${latest.date}T12:00:00Z`).toLocaleDateString('pt-BR',{day:'2-digit',month:'long',year:'numeric',timeZone:'UTC'})));
   if(!mobile)await timeline.evaluate(nav=>nav.scrollIntoView({block:'center',behavior:'instant'}));
   await timeline.evaluate(nav=>{nav.scrollTop=0;});
   await timeline.focus();
@@ -122,7 +127,19 @@ try{
   await ctx.close();console.log(width+'px: results, keyboard tables/details, PDF downloads, direct route/reload, timeline, homepage and overflow verified'+(ev.length?'; video playback/seek and image zoom verified.':'.'));
  }
  assert.deepEqual(errors,[]);
- if(ev.length){const response=await fetch(base+ev[0].path,{headers:{Range:'bytes=0-1023'}});assert.equal(response.status,206);assert.equal(response.headers.get('content-range'),'bytes 0-1023/10172616');assert.equal(hash(Buffer.from(await response.arrayBuffer())),hash(fs.readFileSync(sources[0]).subarray(0,1024)));}
+ if(ev.length){
+  const videoPath=base+ev[0].path, video=fs.readFileSync(sources[0]);
+  const response=await fetch(videoPath,{headers:{Range:'bytes=0-1023'}});
+  assert.equal(response.status,206);assert.equal(response.headers.get('content-range'),`bytes 0-1023/${video.length}`);
+  assert.deepEqual(Buffer.from(await response.arrayBuffer()),video.subarray(0,1024));
+  if(server){
+   const end=video.length-1, start=end-3;
+   const tail=await fetch(videoPath,{headers:{Range:`bytes=${start}-${end+10}`}});
+   assert.equal(tail.status,206);assert.equal(tail.headers.get('content-range'),`bytes ${start}-${end}/${video.length}`);
+   assert.deepEqual(Buffer.from(await tail.arrayBuffer()),video.subarray(start));
+   assert.equal((await fetch(videoPath,{headers:{Range:'bytes=-'}})).status,416);
+  }
+ }
  const original=await fetch(base+r.executive.source.path);assert.equal(original.status,200);assert.equal(hash(Buffer.from(await original.arrayBuffer())),r.executive.source.sha256);
  console.log('Original PDF SHA-256 verified; earlier catalog records and attachments unchanged.');
 }finally{await browser.close();server?.kill();}

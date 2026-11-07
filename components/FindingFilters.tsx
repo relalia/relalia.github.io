@@ -1,15 +1,14 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import type { Report } from '@/lib/types';
+import type { Evidence, Report } from '@/lib/types';
 import FindingCard from './FindingCard';
 import SelectFilter from './SelectFilter';
-import { evidenceById } from '@/lib/reports';
-
-export default function FindingFilters({ report }: { report: Report }) {
+export default function FindingFilters({ report, evidence }: { report: Report; evidence: Evidence[] }) {
   const [query, setQuery] = useState('');
   const [severity, setSeverity] = useState('all');
   const [context, setContext] = useState('all');
+  const evidenceById = useMemo(() => new Map(evidence.map(item => [item.id, item])), [evidence]);
   const severities = useMemo(() => [...new Set(report.findings.map(f => f.severity).filter(Boolean))] as string[], [report]);
   const contexts = useMemo(() => [...new Set(report.findings.map(f => f.context).filter(Boolean))] as string[], [report]);
   const openFinding = useCallback((id: string) => {
@@ -25,7 +24,12 @@ export default function FindingFilters({ report }: { report: Report }) {
     });
   }, [report]);
   useEffect(() => {
-    const openTarget = () => openFinding(decodeURIComponent(location.hash.slice(1)));
+    const openTarget = () => {
+      let id: string;
+      try { id = decodeURIComponent(location.hash.slice(1)); }
+      catch { return; }
+      openFinding(id);
+    };
     let previousOpen: HTMLDetailsElement[] = [];
     const expandForPrint = () => { previousOpen = [...document.querySelectorAll<HTMLDetailsElement>('.finding')].filter(item => !item.open); previousOpen.forEach(item => item.open = true); };
     const restoreAfterPrint = () => previousOpen.forEach(item => item.open = false);
@@ -46,7 +50,7 @@ export default function FindingFilters({ report }: { report: Report }) {
       <SelectFilter label="Contexto" value={context} onChange={setContext} options={[{value:'all',label:'Todos'}, ...contexts.map(value=>({value,label:value}))]} /></>}
     </div>
     <p className="result-count" aria-live="polite">{filtered.length} de {report.findings.length} {report.findings.length === 1 ? 'achado' : 'achados'}</p>
-    {report.findings.map(f => <FindingCard key={f.id} finding={f} report={report} hidden={!filtered.some(item=>item.id===f.id)} onNavigate={openFinding} />)}
+    {report.findings.map(f => <FindingCard key={f.id} finding={f} report={report} evidenceById={evidenceById} hidden={!filtered.some(item=>item.id===f.id)} onNavigate={openFinding} />)}
     {!filtered.length && <p className="empty">Nenhum achado corresponde aos filtros.</p>}
   </>;
 }

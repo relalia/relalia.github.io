@@ -18,6 +18,10 @@ def executive_story(data, p):
             ('LINEBELOW', (0,0), (-1,-1), .4, colors.HexColor('#dce8e0')),
         ]))
         return t
+    def criterion_cell(mode, index):
+        criterion = mode['criteria'][index]
+        values = f"{number(criterion['vc'],1)} / {number(criterion['opponent'],1)}"
+        return values if criterion['n'] == mode['n'] else f"{values} · n = {criterion['n']}"
     story = ([p(data['pendingNotice'])] if data.get('pendingNotice') else []) + [p(f"Resultados do benchmark · fonte de {data['runDate'][8:10]}/{data['runDate'][5:7]}/{data['runDate'][:4]}", style='FindingTitle'),
              p(data['title']), p(f"{data['questions']} perguntas · {sum(m['n'] for m in data['modes'])} embates comparáveis · escala 0-10. Médias e resultados originais do juiz.", style='Caption')]
     if data.get('completionNote'):
@@ -39,7 +43,7 @@ def executive_story(data, p):
         Spacer(1,10), p(data['precisionNote'], style='Caption'), p(data['caveat']),
         p('Onde os pontos foram obtidos', style='FindingTitle'),
         table([['Critério', 'Máximo', 'Ágil · VC / adversário', 'Pleno · VC / adversário']]+[
-            [f"{c['code']} · {c['label']}",str(c['max'])]+[f"{number(m['criteria'][i]['vc'],1)} / {number(m['criteria'][i]['opponent'],1)}" for m in data['modes']]
+            [f"{c['code']} · {c['label']}",str(c['max'])]+[criterion_cell(m,i) for m in data['modes']]
             for i,c in enumerate(data['modes'][0]['criteria'])], [200,50,126,127]),
         p('Base por modo e critério: '+ '; '.join(f"{m['label']} n = {m['n']}" for m in data['modes'])+'. Médias arredondadas por critério não devem ser somadas para reconstruir os totais.', style='Caption'),
         PageBreak(), p('Prioridades para a equipe de IA', style='FindingTitle'), p('Síntese editorial dos agregados; não constitui novo julgamento.', style='Caption')]

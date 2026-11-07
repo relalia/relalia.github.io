@@ -6,6 +6,33 @@ import manifest from '../content/originals.sha256.json' with {type:'json'};
 const assert = (condition,message) => {if (!condition) throw Error(message);};
 const text = value => typeof value === 'string' && value.trim().length > 0;
 const assetPath = value => text(value) && value.startsWith('/') && !value.includes('..') && !/[?#\\]/.test(value);
+const natural = value => Number.isSafeInteger(value) && value >= 0;
+const score = (value, max) => Number.isFinite(value) && value >= 0 && value <= max;
+
+function validateExecutive(report) {
+  const {scaleMax, questions, modes, source} = report.executive;
+  assert(scaleMax===10 && natural(questions) && questions>0,`Invalid benchmark scale or question count ${report.id}`);
+  assert(Array.isArray(modes) && modes.length===2 && ['agil','pleno'].every(key=>modes.some(mode=>mode.key===key)),`Invalid benchmark modes ${report.id}`);
+  assert(source && report.files.some(file=>file.origin==='original' && file.kind==='pdf' && file.path===source.path && file.sha256===source.sha256),`Invalid benchmark PDF source ${report.id}`);
+  assert(natural(source.pages) && [source.qualityPage ?? 2,source.conclusionsPage ?? 3].every(page=>natural(page) && page>=1 && page<=source.pages),`Invalid benchmark source pages ${report.id}`);
+
+  for(const mode of modes) {
+    const label=`${report.id}/${mode.key}`;
+    assert([mode.wins,mode.ties,mode.losses,mode.n,mode.coverageTotal].every(natural) &&
+      mode.wins+mode.ties+mode.losses===mode.n && mode.n>0 && mode.n<=mode.coverageTotal && mode.coverageTotal<=questions,`Invalid benchmark coverage or outcomes ${label}`);
+    assert(score(mode.vcMean,scaleMax) && score(mode.opponentMean,scaleMax),`Invalid benchmark mean ${label}`);
+    assert([mode.reviewsCompleted,mode.reviewsTotal,mode.pendingReviews,mode.contests,mode.pendingDecisions].every(natural) &&
+      mode.reviewsCompleted+mode.pendingReviews===mode.reviewsTotal && mode.contests<=mode.reviewsCompleted && mode.pendingDecisions<=mode.contests,`Invalid benchmark review counts ${label}`);
+    assert(Array.isArray(mode.criteria) && mode.criteria.length>0 && mode.criteria.every(criterion=>
+      text(criterion.code) && text(criterion.label) && natural(criterion.max) && criterion.max>0 && natural(criterion.n) && criterion.n>0 && criterion.n<=mode.n &&
+      score(criterion.vc,criterion.max) && score(criterion.opponent,criterion.max)),`Invalid benchmark criteria ${label}`);
+    assert(new Set(mode.criteria.map(criterion=>criterion.code)).size===mode.criteria.length &&
+      mode.criteria.reduce((total,criterion)=>total+criterion.max,0)===scaleMax,`Invalid benchmark criterion scale ${label}`);
+  }
+  const criteriaSignature=mode=>mode.criteria.map(({code,label,max})=>JSON.stringify([code,label,max])).join('|');
+  assert(criteriaSignature(modes[0])===criteriaSignature(modes[1]),`Mismatched benchmark criteria ${report.id}`);
+}
+
 export function validateData(data,assetExists=()=>true) {
   assert(Array.isArray(data.reports) && data.reports.length>0,'Catalog needs reports');
   assert(Array.isArray(data.evidence),'Catalog needs evidence');
@@ -37,15 +64,15 @@ export function validateData(data,assetExists=()=>true) {
       if(file.origin==='generated') assert(file.path.startsWith('/reports/') && file.kind==='pdf',`Generated PDF must stay in /reports/: ${file.path}`);
       if(file.origin==='original') assert(/^[a-f0-9]{64}$/.test(file.sha256) && text(file.originalName),`Original needs SHA-256 and name ${file.path}`);
     }
+    if(report.executive) validateExecutive(report);
   }
   for(const report of data.reports.filter(report=>report.benchmarkSources)) {
     const sources=report.benchmarkSources;
-    assert(Array.isArray(sources) && sources.length>=2,`Missing benchmark sources ${report.id}`);
+    assert(Array.isArray(sources) && sources.length===3,`Expected three benchmark sources ${report.id}`);
     assert(new Set(sources.map(source=>source.reportId)).size===sources.length,`Duplicate benchmark source ${report.id}`);
     for(const source of sources) {
-      const benchmark=reports.get(source.reportId)?.executive;
-      assert(text(source.label) && source.reportId!==report.id && benchmark?.scaleMax===10 &&
-        ['agil','pleno'].every(key=>benchmark.modes.some(mode=>mode.key===key)),`Invalid benchmark source ${report.id}/${source.reportId}`);
+      const benchmark=reports.get(source.reportId);
+      assert(text(source.label) && source.reportId!==report.id && benchmark?.executive && benchmark.date<=report.date,`Invalid benchmark source ${report.id}/${source.reportId}`);
     }
   }
   const evidence = new Map();

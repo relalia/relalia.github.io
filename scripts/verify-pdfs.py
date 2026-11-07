@@ -89,12 +89,24 @@ for report in data['reports']:
                 for mode in executive['modes']:
                     assert f"contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}" in text
             assert executive['source']['path'] in text
+            assert normalize(report['summary']) in text
             for mode in executive['modes']:
-                for value in [mode['vcMean'],mode['opponentMean']]:
-                    assert f'{value:.2f}'.replace('.',',') in text
-                assert f"{mode['wins']} / {mode['ties']} / {mode['losses']}" in text
+                vc,opponent=(f'{mode[key]:.2f}'.replace('.',',') for key in ('vcMean','opponentMean'))
+                assert f"{mode['label']} {vc} {opponent} {mode['wins']} / {mode['ties']} / {mode['losses']} {mode['n']}/{mode['coverageTotal']}" in text
+                review_prefix=f"{mode['label']} · registro do PDF: Revisões"
+                if review_prefix in text:
+                    assert f"{review_prefix} {mode['reviewsCompleted']}/{mode['reviewsTotal']} ({mode['pendingReviews']} pendentes); contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}" in text
+                else:
+                    assert mode['pendingReviews']==mode['contests']==mode['pendingDecisions']==0
+                    assert f"Revisões: {mode['reviewsCompleted']}/{mode['reviewsTotal']} por modo; nenhuma pendente." in text
+                    assert 'Contestações, decisões pendentes e julgamentos pendentes, inconclusivos ou desatualizados: 0.' in text
                 for criterion in mode['criteria']:
                     assert f"{criterion['vc']:.1f} / {criterion['opponent']:.1f}".replace('.',',') in text
+            for row in executive['operations']['rows']:
+                tokens=f"{row['tokensTotal']:,}".replace(',','.')
+                cost=f"{row['providerCostUsd']:.6f}".replace('.',',')
+                seconds=f"{row['seconds']:.1f}".replace('.',',')
+                assert f"{row['role']} {row['attempts']} / {row['failedOrUncertain']} {tokens} {cost} {seconds} s" in text
             for insight in executive['insights']:
                 assert normalize(insight['text']) in text
             for role in executive['roles']:

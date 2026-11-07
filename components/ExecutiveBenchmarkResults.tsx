@@ -26,7 +26,7 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
     <div className="benchmark-table-wrap" role="region" aria-label="Médias e resultados exatos" tabIndex={0}><table>
       <caption>Médias e resultados originais · adversário separado contra cada modo</caption>
       <thead><tr><th scope="col">Modo</th><th scope="col">VadeChat</th><th scope="col">{data.opponent}</th><th scope="col">Diferença</th><th scope="col">Vitórias / empates / derrotas</th><th scope="col">Comparáveis</th></tr></thead>
-      <tbody>{data.modes.map(mode => <tr key={mode.key}><th scope="row">{mode.label}</th><td>{score(mode.vcMean)}</td><td>{score(mode.opponentMean)}</td><td>+{score(mode.vcMean - mode.opponentMean)}</td><td>{mode.wins} / {mode.ties} / {mode.losses}</td><td>{mode.n}/{mode.coverageTotal}</td></tr>)}</tbody>
+      <tbody>{data.modes.map(mode => <tr key={mode.key}><th scope="row">{mode.label}</th><td>{score(mode.vcMean)}</td><td>{score(mode.opponentMean)}</td><td>{signedScore(mode.vcMean - mode.opponentMean)}</td><td>{mode.wins} / {mode.ties} / {mode.losses}</td><td>{mode.n}/{mode.coverageTotal}</td></tr>)}</tbody>
     </table></div>
     <div className="benchmark-caveat">{data.caveat}</div>
 
@@ -36,8 +36,11 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
 
     <section className="benchmark-section" aria-labelledby="executive-criteria"><h4 id="executive-criteria">Onde os pontos foram obtidos</h4>
       <div className="benchmark-table-wrap" role="region" aria-label="Médias por critério" tabIndex={0}><table>
-        <caption>Médias por critério · VadeChat / adversário</caption><thead><tr><th scope="col">Critério</th>{data.modes.map(mode => <th scope="col" key={mode.key}>{mode.label}<small>n = {mode.n} em cada critério</small></th>)}</tr></thead>
-        <tbody>{data.modes[0].criteria.map((criterion, index) => <tr key={criterion.code}><th scope="row">{criterion.code} · {criterion.label}<small>Máximo: {criterion.max}</small></th>{data.modes.map(mode => <td key={mode.key}>{score(mode.criteria[index].vc, 1)} / {score(mode.criteria[index].opponent, 1)}</td>)}</tr>)}</tbody>
+        <caption>Médias por critério · VadeChat / adversário</caption><thead><tr><th scope="col">Critério</th>{data.modes.map(mode => <th scope="col" key={mode.key}>{mode.label}<small>{mode.n} embates comparáveis</small></th>)}</tr></thead>
+        <tbody>{data.modes[0].criteria.map((criterion, index) => <tr key={criterion.code}><th scope="row">{criterion.code} · {criterion.label}<small>Máximo: {criterion.max}</small></th>{data.modes.map(mode => {
+          const values = mode.criteria[index];
+          return <td key={mode.key}>{score(values.vc, 1)} / {score(values.opponent, 1)}{values.n !== mode.n && <small>n = {values.n}</small>}</td>;
+        })}</tr>)}</tbody>
       </table></div>
     </section>
 

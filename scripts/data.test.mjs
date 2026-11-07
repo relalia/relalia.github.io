@@ -17,6 +17,23 @@ test('duplicate findings and evidence IDs rejected',()=>{
   const duplicate=structuredClone(data);duplicate.reports[0].findings.push(duplicate.reports[0].findings[0]);assert.throws(()=>validateData(duplicate),/Duplicate finding/);
   const ev=structuredClone(data);ev.evidence.push(ev.evidence[0]);assert.throws(()=>validateData(ev),/Duplicate\/invalid evidence/);
 });
+test('executive reports reject wrong totals, reordered criteria and broken sources',()=>{
+  const next=structuredClone(data);
+  const report=next.reports.find(report=>report.executive);
+  const mode=report.executive.modes[0];
+  mode.wins++;
+  assert.throws(()=>validateData(next),/Invalid benchmark coverage or outcomes/);
+  mode.wins--;
+  mode.criteria.reverse();
+  assert.throws(()=>validateData(next),/Mismatched benchmark criteria/);
+  mode.criteria.reverse();
+  report.executive.source.conclusionsPage=report.executive.source.pages+1;
+  assert.throws(()=>validateData(next),/Invalid benchmark source pages/);
+  const summary=next.reports.find(report=>report.benchmarkSources);
+  summary.benchmarkSources.pop();
+  report.executive.source.conclusionsPage=report.executive.source.pages;
+  assert.throws(()=>validateData(next),/Expected three benchmark sources/);
+});
 test('original Atlas images and description-only EV-27 preserved',()=>{
   const atlas=data.evidence.filter(e=>e.reportId==='atlas');assert.equal(atlas.filter(e=>e.kind==='image').length,43);assert.equal(atlas.find(e=>e.id==='EV-27').path,null);
   assert.equal(data.reports.find(r=>r.id==='today').findings.length,4);

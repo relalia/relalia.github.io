@@ -42,12 +42,17 @@ function MeanChart({ mode, rows }: { mode: string; rows: ReturnType<typeof modeR
       {rows.map(({ reportId, date, label, result }, i) => {
         const vcY = y(result.vcMean), opponentY = y(result.opponentMean), at = x(i);
         const vcAbove = vcY <= opponentY;
+        const upper = Math.min(vcY, opponentY), lower = Math.max(vcY, opponentY);
+        const nearAxis = lower + 21 > 200;
+        const stackAbove = nearAxis && lower - upper < 25;
+        const lowerLabel = stackAbove ? upper - 11 : lower + (nearAxis ? -11 : 21);
+        const upperLabel = upper - (stackAbove ? 27 : 11);
         const diamond = vcY === opponentY ? 3 : 4.5;
         return <g key={reportId} textAnchor="middle">
           <circle className="weekly-marker weekly-vc" cx={at} cy={vcY} r="5.5"/>
           <path className="weekly-marker weekly-opponent" d={`M ${at} ${opponentY - diamond} l ${diamond} ${diamond} -${diamond} ${diamond} -${diamond} -${diamond} Z`}/>
-          <text className="weekly-value weekly-vc" x={at} y={vcY + (vcAbove ? -11 : 21)}>{score(result.vcMean)}</text>
-          <text className="weekly-value weekly-opponent" x={at} y={opponentY + (vcAbove ? 21 : -11)}>{score(result.opponentMean)}</text>
+          <text className="weekly-value weekly-vc" x={at} y={vcAbove ? upperLabel : lowerLabel}>{score(result.vcMean)}</text>
+          <text className="weekly-value weekly-opponent" x={at} y={vcAbove ? lowerLabel : upperLabel}>{score(result.opponentMean)}</text>
           <text className="weekly-category" x={at} y="211">{label.split(' ')[0]}</text>
           <text className="weekly-axis" x={at} y="228">{shortDate(date)}</text>
           <text className={result.n < result.coverageTotal ? 'weekly-coverage' : 'weekly-axis'} x={at} y="244">{result.n}/{result.coverageTotal}</text>

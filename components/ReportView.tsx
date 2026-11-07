@@ -1,5 +1,7 @@
 import type { Report } from '@/lib/types';
-import { formatDate } from '@/lib/reports';
+import { evidence, formatDate, timelineReports } from '@/lib/reports';
+import { getBenchmark } from '@/lib/benchmark-data';
+import { getComparison } from '@/lib/comparisons';
 import Timeline from './Timeline';
 import Downloads from './Downloads';
 import FindingFilters from './FindingFilters';
@@ -11,16 +13,16 @@ import WeeklyBenchmarkReport from './WeeklyBenchmarkReport';
 
 export default function ReportView({ report }: { report: Report }) {
   return <div className="shell">
-    <Timeline activeId={report.id} intro={<section className="intro" aria-label="Sobre o portal"><p>Validações da plataforma Alia. Explore as rodadas, consulte os achados e acompanhe os retestes com seus documentos e evidências.</p></section>}>
+    <Timeline activeId={report.id} reports={timelineReports} intro={<section className="intro" aria-label="Sobre o portal"><p>Validações da plataforma Alia. Explore as rodadas, consulte os achados e acompanhe os retestes com seus documentos e evidências.</p></section>}>
     <article className="pane detail">
       <div className="kicker">{report.module} · {formatDate(report.date)}</div><h2>{report.title}</h2>
-      {report.benchmarkSources ? <WeeklyBenchmarkReport report={report} sources={report.benchmarkSources}/> : report.overviewId ? <BenchmarkOverviewReport report={report}/> : report.comparisonId ? <BenchmarkComparisonReport report={report}/> : report.benchmarkId ? <BenchmarkReport report={report}/> : <>
+      {report.benchmarkSources ? <WeeklyBenchmarkReport report={report} sources={report.benchmarkSources}/> : report.overviewId ? <BenchmarkOverviewReport report={report}/> : report.comparisonId ? <BenchmarkComparisonReport report={report} data={getComparison(report.comparisonId)}/> : report.benchmarkId ? <BenchmarkReport report={report} benchmark={getBenchmark(report.benchmarkId)}/> : <>
       <div className="meta"><span className="tag">{report.status}</span><span className="tag">{report.count}</span></div>
       <p className="summary">{report.summary}</p>
       {report.executive ? <ExecutiveBenchmarkResults data={report.executive}/> : <ul className="highlights">{report.highlights.map(item => <li key={item}>{item}</li>)}</ul>}
       <Downloads files={report.files} />
       {report.findings.length > 0 && <><div className="section-head"><h3>{report.executive ? 'UX do VadeChat' : 'Achados e resultados'}</h3><p>Abra um item para consultar o resumo e seus vínculos.</p></div>
-      <FindingFilters key={report.id} report={report} /></>}
+      <FindingFilters key={report.id} report={report} evidence={evidence.filter(item => item.reportId === report.id)} /></>}
       <p className="note">{report.note || 'Os achados refletem a validação realizada. Propostas e critérios de verificação não representam funcionalidades implementadas nem retestes executados.'}</p>
       </>}
     </article></Timeline>

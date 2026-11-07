@@ -20,9 +20,9 @@ http.createServer((request, response) => {
   if(request.headers.range) {
     const match = /^bytes=(\d*)-(\d*)$/.exec(request.headers.range);
     let start = match?.[1] ? Number(match[1]) : 0;
-    let end = match?.[2] ? Number(match[2]) : size-1;
+    let end = match?.[2] ? Math.min(Number(match[2]), size-1) : size-1;
     if(match && !match[1] && match[2]) {start=Math.max(0,size-Number(match[2]));end=size-1;}
-    if(!match || start> end || start>=size || end>=size) {response.writeHead(416,{'Content-Range':`bytes */${size}`}).end();return;}
+    if(!match || (!match[1] && !match[2]) || start>end || start>=size) {response.writeHead(416,{'Content-Range':`bytes */${size}`}).end();return;}
     response.writeHead(206,{'Content-Range':`bytes ${start}-${end}/${size}`,'Content-Length':end-start+1});
     if(request.method==='HEAD') response.end();else fs.createReadStream(selected,{start,end}).pipe(response);
     return;

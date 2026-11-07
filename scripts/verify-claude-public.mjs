@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 import b from '../content/benchmark-claude-2026-10-13.json' with {type:'json'};
 import catalog from '../content/reports.json' with {type:'json'};
+import {assertStaticReport} from './static-report.mjs';
 const base='https://relalia.github.io';
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const docs=[b.protocol,b.alternation,...b.questions.flatMap(q=>[q.question,q.human,q.alternative,...['agil','pleno'].flatMap(m=>[q.comparisons[m].response,q.comparisons[m].document,q.comparisons[m].review])])];
@@ -22,11 +23,9 @@ for(let i=0;i<files.length;i+=8) {
 for(const route of ['/',`/relatorios/${b.id}/`,'/relatorios/benchmark-2026-10-09/']) {
   const response=await fetch(base+route,{signal:AbortSignal.timeout(30000),cache:'no-store'});
   assert.equal(response.status,200,route);const html=await response.text();
-  assert.ok(html.includes('access-password'),`Existing access gate missing ${route}`);
-  assert.ok(html.includes(route.includes('2026-10-09')?'benchmark-2026-10-09':b.id),`Report/card absent from exported payload ${route}`);
-  // The model label is rendered from the client bundle after the gate opens;
-  // verify-benchmark-ui checks it in the deployed DOM, not in initial static HTML.
-  if(!route.includes('2026-10-09'))assert.ok(html.includes('ChatGPT Grátis') && html.includes('GPT-6.1 Alta'));
+  const reportId=route==='/'?[...catalog.reports].sort((a,b)=>b.date.localeCompare(a.date))[0].id:route.split('/')[2];
+  assertStaticReport(html,reportId,route);
+  if(reportId===b.id)assert.ok(html.includes('ChatGPT Grátis') && html.includes('GPT-6.1 Alta'));
   proofs.push({url:base+route,status:response.status});
 }
 fs.mkdirSync('tmp/benchmark-ui',{recursive:true});fs.writeFileSync('tmp/benchmark-ui/claude-public-proof.json',JSON.stringify(proofs,null,2)+'\n');

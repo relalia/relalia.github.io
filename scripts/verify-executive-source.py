@@ -58,9 +58,11 @@ def verify(report):
     budget=data['operations']['budget']
     assert f"Orçamento local OpenRouter: US$ {fmt(budget['limitUsd'],6)} · consumo/reservas: US$ {fmt(budget['consumedReservedUsd'],6)} · saldo após reservas: US$ {fmt(budget['remainingUsd'],6)}" in conclusions
     assert abs(budget['limitUsd']-budget['consumedReservedUsd']-budget['remainingUsd']) < 1e-10
-    for key in ['series','runId','executionId']:
-        assert data['source'][key] in ' '.join(pages)
-    assert str(data['source']['revision']) in conclusions and data['runDate'] in pages[0]
+    for key in ['series','runId']:
+        assert data['source'][key] in pages[0]
+    assert f"Execução {data['source']['executionId']}" in conclusions
+    assert re.search(rf"\brevisão {data['source']['revision']}\b", conclusions)
+    assert data['runDate'] in pages[0]
     if data.get('pendingNotice'):
         assert 'Rodada parcial' in pages[0]
         decisions=sum(m['pendingDecisions'] for m in data['modes'])

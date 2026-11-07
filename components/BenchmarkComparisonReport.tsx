@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import {getComparison, type ComparisonData} from '@/lib/comparisons';
+import type {ComparisonData} from '@/lib/comparisons';
 import type {Report} from '@/lib/types';
 import type {SourceDocument} from '@/lib/benchmark';
 import {TextEvidence} from './BenchmarkReport';
@@ -46,8 +46,7 @@ function ComparisonDetail({row,data}:{row:Row;data:ComparisonData}) {
   </details>;
 }
 
-export default function BenchmarkComparisonReport({report}:{report:Report}) {
-  const data=getComparison(report.comparisonId);
+export default function BenchmarkComparisonReport({report, data}:{report:Report; data:ComparisonData}) {
   const docs:Record<string,SourceDocument>=data.documents;
   const alternative=data.alternativeLabel??'ChatGPT gratuito';
   const modes=['agil','pleno'] as const;

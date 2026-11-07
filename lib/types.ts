@@ -73,6 +73,8 @@ export interface Report {
   findings: Finding[];
 }
 
+export type TimelineReport = Pick<Report, 'id' | 'date' | 'dateNote' | 'title' | 'module' | 'count'> & { dateLabel: string };
+
 export interface ExecutiveCriterion {
   code: string;
   label: string;

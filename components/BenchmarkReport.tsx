@@ -3,7 +3,7 @@
 import {createContext, useContext, useState} from 'react';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import {getBenchmark, modeLabel, participantLabel as labelParticipant, reconstructPrompt, resultLabel as labelResult} from '@/lib/benchmark';
+import {modeLabel, participantLabel as labelParticipant, reconstructPrompt, resultLabel as labelResult} from '@/lib/benchmark';
 import type {Mode, Participant, SourceDocument, BenchmarkQuestion, Benchmark} from '@/lib/benchmark';
 import {formatScore, statistics, classificationCounts, outcomeCounts} from '@/lib/benchmark-math.mjs';
 import Downloads from './Downloads';
@@ -220,6 +220,6 @@ function BenchmarkBody({report}:{report:Report}) {
   </div>;
 }
 
-export default function BenchmarkReport({report}:{report:Report}) {
-  return <BenchmarkContext.Provider value={getBenchmark(report.benchmarkId!)}><BenchmarkBody key={report.id} report={report}/></BenchmarkContext.Provider>;
+export default function BenchmarkReport({report, benchmark}:{report:Report; benchmark:Benchmark}) {
+  return <BenchmarkContext.Provider value={benchmark}><BenchmarkBody key={report.id} report={report}/></BenchmarkContext.Provider>;
 }

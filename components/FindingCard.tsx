@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import type { MouseEvent } from 'react';
-import type { Finding, Report } from '@/lib/types';
+import type { Evidence, Finding, Report } from '@/lib/types';
 import EvidenceGallery from './EvidenceGallery';
 
-export default function FindingCard({ finding, report, hidden, onNavigate }: { finding: Finding; report: Report; hidden?: boolean; onNavigate: (id: string) => void }) {
+export default function FindingCard({ finding, report, evidenceById, hidden, onNavigate }: { finding: Finding; report: Report; evidenceById: Map<string, Evidence>; hidden?: boolean; onNavigate: (id: string) => void }) {
   const retestLabel = finding.retest.execution === 'performed' ? 'Executado' : finding.retest.execution === 'not-applicable' ? 'Ainda não aplicável à proposta' : 'Não executado';
   const navigate = (event: MouseEvent<HTMLAnchorElement>, id: string) => {
     if (event.button === 0 && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) onNavigate(id);
@@ -24,7 +24,7 @@ export default function FindingCard({ finding, report, hidden, onNavigate }: { f
       {finding.relatedIds?.length ? <p className="related"><strong>Achados vinculados:</strong> {finding.relatedIds.map(id => <Link key={id} href={`/relatorios/${report.id}/#${id}`} onClick={event => navigate(event, id)}>{id}</Link>)}</p> : null}
       <p><strong>Situação:</strong> {finding.status}</p><p><strong>Reteste:</strong> {retestLabel}{finding.retest.result && ` · Resultado registrado: ${finding.retest.result}`}</p>
       {!finding.evidenceIds.length && <p className="note">Sem evidência visual anexada a este item. Consulte também o documento da rodada.</p>}
-      <EvidenceGallery ids={finding.evidenceIds} />
+      <EvidenceGallery items={finding.evidenceIds.flatMap(id => evidenceById.get(id) ?? [])} />
       <div className="finding-links"><Link href={`/relatorios/${report.id}/#${finding.id}`} onClick={event => navigate(event, finding.id)}>Link direto para {finding.id}</Link>{finding.comparisons?.map(comparison => <Link className="action compare" key={`${comparison.reportId}/${comparison.findingId}`} href={`/relatorios/${comparison.reportId}/#${comparison.findingId}`}>{comparison.label} →</Link>)}</div>
     </div>
   </details>;
