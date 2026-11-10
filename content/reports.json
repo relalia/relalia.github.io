@@ -6575,9 +6575,92 @@
         },
         "completionNote": "Rodada final na revisão 331 do PDF executivo, com os dez embates incluídos nas médias e zero revisões ou decisões pendentes."
       }
+    },
+    {
+      "id": "vadechat-latencia-2026-11-10",
+      "date": "2026-11-10",
+      "title": "Tempo de resposta · Ágil × GPT-5.6 Sol",
+      "module": "VadeChat",
+      "status": "Teste encerrado",
+      "count": "5 perguntas · 10 respostas completas",
+      "summary": "O VadeChat Ágil levou 28,704 s em média para entregar a resposta completa, ante 13,910 s do GPT-5.6 Sol via OpenRouter. O Ágil demorou mais nas cinco perguntas e levou 2,06 vezes o tempo do concorrente na média da rodada.",
+      "highlights": [
+        "Diferença média de 14,794 s por pergunta. O PDF registra 143,522 s de tempo total para o Ágil e 69,550 s para o GPT-5.6 Sol.",
+        "A maior diferença ocorreu na pergunta sobre documentos para edificação. O Ágil levou 31,303 s, ante 7,715 s do GPT-5.6 Sol.",
+        "Em duas gravações à parte, o ChatGPT grátis sem login começou a exibir texto em poucos segundos. O modelo usado nessas sessões não foi identificado."
+      ],
+      "files": [
+        {
+          "label": "Teste de tempo de resposta · PDF original",
+          "kind": "pdf",
+          "origin": "original",
+          "path": "/originals/reports/vadechat-latencia-2026-11-10-resultados.pdf",
+          "originalName": "Relalia-tempo-de-resposta-6d2d78a5.pdf",
+          "sha256": "e094145ab65071a9ae3e55d38d147ddea8245d3566042c5848da9796deb57922"
+        },
+        {
+          "label": "Ficha complementar · PDF",
+          "kind": "pdf",
+          "origin": "generated",
+          "path": "/reports/vadechat-latencia-2026-11-10.pdf"
+        }
+      ],
+      "findings": [
+        {
+          "id": "VC-LAT-01",
+          "title": "O Ágil demorou mais nas cinco consultas via API",
+          "description": "O teste mediu do envio pela API até a confirmação de que o texto estava completo. Os dois participantes completaram as cinco consultas de registro de imóveis e tabelionato de notas. O app enviou cada pergunta literalmente, em uma conversa nova, de forma sequencial e sem reenvios.",
+          "kind": "Desempenho",
+          "sourceFields": [
+            { "label": "Tempos por pergunta", "value": "VadeChat Ágil × GPT-5.6 Sol (OpenRouter, openai/gpt-5.6-sol)" },
+            { "label": "1 · Comunicação ao COAF", "value": "31,715 s × 30,448 s" },
+            { "label": "2 · Diligência fora do município", "value": "24,329 s × 11,913 s" },
+            { "label": "3 · Documentos para edificação", "value": "31,303 s × 7,715 s" },
+            { "label": "4 · Tributação de bem de família voluntário", "value": "25,839 s × 8,056 s" },
+            { "label": "5 · Inventário extrajudicial", "value": "30,335 s × 11,418 s" }
+          ],
+          "expected": "Reduzir o tempo até a resposta completa para corresponder à expectativa de rapidez criada pelo nome Ágil.",
+          "verification": "Repetir as cinco perguntas nas mesmas condições e comparar a cobertura e os tempos por pergunta com esta rodada.",
+          "status": "Observado no teste",
+          "evidenceIds": [],
+          "retest": { "execution": "not-performed" }
+        },
+        {
+          "id": "VC-LAT-02",
+          "title": "O ChatGPT grátis começou a mostrar texto em poucos segundos",
+          "description": "Nas duas gravações, o ChatGPT grátis começou a exibir a resposta enquanto ainda gerava o restante do texto. O Ágil manteve mensagens de processamento visíveis por mais tempo antes de mostrar o texto. Cada gravação usa uma pergunta diferente das cinco do teste via API.",
+          "kind": "Tempo percebido na interface",
+          "expected": "Reduzir a espera até o primeiro trecho útil da resposta no modo Ágil.",
+          "verification": "Cronometrar o envio, a exibição do primeiro trecho de resposta e o término da geração separadamente para a mesma pergunta em cada interface.",
+          "status": "Observado nos vídeos",
+          "evidenceIds": ["VC-LAT-EV-01", "VC-LAT-EV-02"],
+          "retest": { "execution": "not-performed" }
+        }
+      ],
+      "note": "O teste mede tempo até a resposta completa em cinco perguntas. Os vídeos ilustram a espera até o texto aparecer na tela em outras consultas. A qualidade das respostas está fora do escopo desta rodada."
     }
   ],
   "evidence": [
+    {
+      "id": "VC-LAT-EV-01",
+      "reportId": "vadechat-latencia-2026-11-10",
+      "findingIds": ["VC-LAT-02"],
+      "description": "Intimação de credores concorrentes. O Ágil ainda mostra processamento aos 34 s do vídeo, que começa com a consulta em andamento. No ChatGPT grátis, aparecem fontes de busca após cerca de 3 s do envio e texto da resposta após cerca de 7 s.",
+      "kind": "video",
+      "path": "/originals/evidence/vadechat-latencia-2026-11-10/credores-concorrentes.mp4",
+      "originalName": "Agil_x_ChatGPT_Gratis_respondendo_instantaneamente_2.mp4",
+      "sha256": "266de043e5da50267dc1db7a662b6ae77de4f55a9aa64540e0d785498e7d6a2a"
+    },
+    {
+      "id": "VC-LAT-EV-02",
+      "reportId": "vadechat-latencia-2026-11-10",
+      "findingIds": ["VC-LAT-02"],
+      "description": "Segurança da informação nas serventias. O Ágil ainda mostra processamento em 1 min 29 s de vídeo, que começa com a consulta em andamento. No ChatGPT grátis, o primeiro trecho aparece em cerca de 5 s após o envio.",
+      "kind": "video",
+      "path": "/originals/evidence/vadechat-latencia-2026-11-10/seguranca-da-informacao.mp4",
+      "originalName": "Agil_x_ChatGPT_Gratis_1min_x_5_segundos.mp4",
+      "sha256": "c48825be0cf80b38bb33bda5caf7f9732e6473d5c7474af0fc407590e3636709"
+    },
     {
       "id": "EV-01",
       "reportId": "atlas",

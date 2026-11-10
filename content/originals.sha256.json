@@ -2104,5 +2104,23 @@
     "originalName": "Relalia-run-2026-11-06-8ee15979-872e-46e5-8fe1-e56ef730e5d6-results.pdf",
     "bytes": 84156,
     "sha256": "cbd78d76e44f6eeb6b6bb18f22ad67657d5a638c51dfc68898744d8f876ab1d0"
+  },
+  {
+    "path": "/originals/reports/vadechat-latencia-2026-11-10-resultados.pdf",
+    "originalName": "Relalia-tempo-de-resposta-6d2d78a5.pdf",
+    "bytes": 67402,
+    "sha256": "e094145ab65071a9ae3e55d38d147ddea8245d3566042c5848da9796deb57922"
+  },
+  {
+    "path": "/originals/evidence/vadechat-latencia-2026-11-10/credores-concorrentes.mp4",
+    "originalName": "Agil_x_ChatGPT_Gratis_respondendo_instantaneamente_2.mp4",
+    "bytes": 22330984,
+    "sha256": "266de043e5da50267dc1db7a662b6ae77de4f55a9aa64540e0d785498e7d6a2a"
+  },
+  {
+    "path": "/originals/evidence/vadechat-latencia-2026-11-10/seguranca-da-informacao.mp4",
+    "originalName": "Agil_x_ChatGPT_Gratis_1min_x_5_segundos.mp4",
+    "bytes": 36243001,
+    "sha256": "c48825be0cf80b38bb33bda5caf7f9732e6473d5c7474af0fc407590e3636709"
   }
 ]

@@ -349,3 +349,6 @@ ff7b435cc4e26f8e0bc1106b5616e1cb0295b84c75b055bfa8addb028c9b3492  reports/benchm
 94587f28139fcce48f615defe8637a10a96b72a886fe55ee3dae2537727e67a6  reports/benchmark-chatgpt-sol-2026-11-03-results-reexportado.pdf
 1a179405b9e8dcf45b277e952b9b7bc8ccae4575074e8c5511381779da2064af  reports/benchmark-claude-sonnet-5-5-2026-11-04-results.pdf
 cbd78d76e44f6eeb6b6bb18f22ad67657d5a638c51dfc68898744d8f876ab1d0  reports/benchmark-gemini-3-8-flash-2026-11-06-results.pdf
+e094145ab65071a9ae3e55d38d147ddea8245d3566042c5848da9796deb57922  reports/vadechat-latencia-2026-11-10-resultados.pdf
+266de043e5da50267dc1db7a662b6ae77de4f55a9aa64540e0d785498e7d6a2a  evidence/vadechat-latencia-2026-11-10/credores-concorrentes.mp4
+c48825be0cf80b38bb33bda5caf7f9732e6473d5c7474af0fc407590e3636709  evidence/vadechat-latencia-2026-11-10/seguranca-da-informacao.mp4
