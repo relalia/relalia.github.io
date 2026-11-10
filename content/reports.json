@@ -6609,7 +6609,7 @@
         {
           "id": "VC-LAT-01",
           "title": "O Ágil demorou mais nas cinco consultas via API",
-          "description": "O teste mediu do envio pela API até a confirmação de que o texto estava completo. Os dois participantes completaram as cinco consultas de registro de imóveis e tabelionato de notas. O app enviou cada pergunta literalmente, em uma conversa nova, de forma sequencial e sem reenvios.",
+          "description": "O teste mediu do envio pela API até o recebimento do texto completo com confirmação de encerramento. Cada participante respondeu às cinco perguntas de registro de imóveis e tabelionato de notas. O app enviou as perguntas sem alterações, uma por vez e sem reenvios, em uma conversa nova a cada pergunta e para cada participante.",
           "kind": "Desempenho",
           "sourceFields": [
             { "label": "Tempos por pergunta", "value": "VadeChat Ágil × GPT-5.6 Sol (OpenRouter, openai/gpt-5.6-sol)" },
@@ -6637,7 +6637,7 @@
           "retest": { "execution": "not-performed" }
         }
       ],
-      "note": "O teste mede tempo até a resposta completa em cinco perguntas. Os vídeos ilustram a espera até o texto aparecer na tela em outras consultas. A qualidade das respostas está fora do escopo desta rodada."
+      "note": "O total do Ágil informado pelo PDF (143,522 s) difere em 0,001 s da soma dos tempos exibidos por pergunta (143,521 s). O teste mede tempo até a resposta completa. Os vídeos ilustram a espera até o primeiro trecho em outras consultas."
     }
   ],
   "evidence": [

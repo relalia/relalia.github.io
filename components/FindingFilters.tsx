@@ -40,7 +40,12 @@ export default function FindingFilters({ report, evidence }: { report: Report; e
     return () => { window.removeEventListener('hashchange', openTarget); window.removeEventListener('beforeprint', expandForPrint); window.removeEventListener('afterprint', restoreAfterPrint); };
   }, [openFinding]);
   const filtered = report.findings.filter(f => {
-    const haystack = [f.id, f.title, f.kind, f.description, f.hypothesis, f.expected, f.suggestion, f.verification, f.basis, f.status, f.context, ...f.evidenceIds.map(id => `${id} ${evidenceById.get(id)?.description || ''}`), ...(f.relatedIds || [])].join(' ').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase('pt-BR');
+    const haystack = [
+      f.id, f.title, f.kind, f.description, f.hypothesis, f.expected, f.suggestion, f.verification, f.basis, f.status, f.context,
+      ...(f.sourceFields ?? []).map(({ label, value }) => `${label} ${value}`),
+      ...f.evidenceIds.map(id => `${id} ${evidenceById.get(id)?.description || ''}`),
+      ...(f.relatedIds || []),
+    ].join(' ').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase('pt-BR');
     return haystack.includes(query.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase('pt-BR')) && (severity === 'all' || f.severity === severity) && (context === 'all' || f.context === context);
   });
   return <>

@@ -104,5 +104,8 @@ export function verifyOriginals(directory,data) {
   if(data) for(const file of [...data.reports.flatMap(r=>r.files.filter(f=>f.origin==='original')), ...data.evidence.filter(e=>e.path)]) {
     assert(entries.get(file.path)?.sha256===file.sha256,`Missing/mismatched manifest record ${file.path}`);
   }
+  const checksums=fs.readFileSync(path.join(directory,'originals','SHA256SUMS.txt'),'utf8').replaceAll('\r\n','\n');
+  const expected=manifest.map(item=>`${item.sha256}  ${item.path.slice('/originals/'.length)}`).join('\n')+'\n';
+  assert(checksums===expected,'Published SHA-256 list differs from the catalog manifest');
   return manifest.length;
 }
