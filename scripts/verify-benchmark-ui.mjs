@@ -133,9 +133,9 @@ try {
     await page.goto(`${base}/`);
     await openTimeline(page,width);
     await page.locator('.timeline a[href="/relatorios/alia-2026-10-08/"]').click();
-    await page.getByRole('heading',{name:'Achados e resultados',exact:true}).waitFor();
+    await page.waitForURL('**/relatorios/alia-2026-10-08/');
+    await page.locator('#GIRO-UX-01').waitFor();
     assert.equal(await page.locator('.benchmark').count(),0);
-    assert.ok(await page.locator('#GIRO-UX-01').count());
     console.log(`${width}px: no overflow; both modes, 60 evidence panels, keyboard, copy/download, reconstruction, direct route/reload/home/history verified`);
     await context.close();
   }
