@@ -71,8 +71,11 @@
 }
 
 @media print {
-  .chart { break-inside: avoid; }
+  .chart { break-inside: avoid; padding: 11px; }
+  .questions { gap: 6px; }
+  .barRow { min-height: 14px; }
   .metric, .advantage, .legend span, .track span { print-color-adjust: exact; }
   details.method { display: none; }
-  .printMethod { display: block; }
+  .printMethod { display: block; break-inside: avoid; }
+  .printMethod p { margin: 4px 0; }
 }
