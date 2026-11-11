@@ -1,6 +1,5 @@
 """Check extractable generated PDF content and protect original paths."""
 from pathlib import Path
-from decimal import Decimal
 import json
 import re
 from pypdf import PdfReader
@@ -20,29 +19,37 @@ data=json.loads((root/'content/reports.json').read_text(encoding='utf-8'))
 normalize=lambda s:' '.join(s.split())
 evidence = {item['id']: item for item in data['evidence']}
 
-def verify_latency_source(report):
+def verify_latency(report, visual, page_count):
+    data = report['latency']
     original = next(file for file in report['files'] if file['origin'] == 'original')
     source = '\n'.join(page.extract_text() for page in PdfReader(root/'public'/original['path'].lstrip('/')).pages)
-    aggregates = re.findall(r'(?:VadeChat Ágil|openai/gpt-5\.6-sol)\s+(\d+,\d{3}) s (\d+,\d{3}) s (\d+/\d+)', normalize(source))
-    assert len(aggregates) == 2, 'Missing participant totals, means or coverage in latency source'
-    (agil_total, agil_mean, agil_coverage), (sol_total, sol_mean, sol_coverage) = aggregates
-    assert agil_coverage == sol_coverage == '5/5' and '10/10 tentativas encerradas' in source
-    assert all(f'{value} s' in report['summary'] for value in (agil_mean, sol_mean))
-    highlights = ' '.join(report['highlights'])
-    assert all(f'{value} s' in highlights for value in (agil_total, sol_total))
-    seconds = lambda value: Decimal(value.replace(',', '.'))
-    delta = str(seconds(agil_mean) - seconds(sol_mean)).replace('.', ',')
-    ratio = f'{seconds(agil_mean) / seconds(sol_mean):.2f}'.replace('.', ',')
-    assert f'{delta} s' in highlights and f'{ratio} vezes' in report['summary']
+    source_line = normalize(source)
+    assert report['date'][8:10] + '/' + report['date'][5:7] + '/' + report['date'][:4] in source_line
+    seconds = lambda value: f'{value / 1000:.3f}'.replace('.', ',') + ' s'
+    questions = data['questions']
+    count = len(questions)
+    assert f'{2 * count}/{2 * count} tentativas encerradas' in source_line
+    for key, source_label in [('vadechat', data['vadechat']['label']), ('opponent', data['opponent']['model'])]:
+        participant = data[key]
+        total, mean = seconds(participant['totalMs']), seconds(participant['meanMs'])
+        assert f'{source_label} {total} {mean} {count}/{count}' in source_line, f'Invalid source aggregate for {source_label}'
+        assert f"{participant['label']} {mean} {total} no total" in visual, f'Missing chart aggregate for {source_label}'
 
+    assert 'Tempo por pergunta' in visual and f"{data['scaleSeconds']} s" in visual
+    assert data['opponent']['model'] in visual
+    assert page_count <= (2 if report['findings'] else 1), 'Latency summary exceeded its page budget'
     blocks = re.split(r'\n(\d+) · ID [^\n]+\n', source)
-    rows = []
-    for number, block in zip(blocks[1::2], blocks[2::2]):
-        pair = re.findall(r'^(\d+,\d{3}) s\nCompleta$', block, re.M)
-        assert len(pair) == 2 and seconds(pair[0]) > seconds(pair[1]), f'Unexpected latency source result for question {number}'
-        rows.append((number, ' × '.join(f'{value} s' for value in pair)))
-    timing_fields = next(f for f in report['findings'] if f['id'] == 'VC-LAT-01')['sourceFields'][1:]
-    assert len(rows) == 5 and rows == [(field['label'].split(' · ')[0], field['value']) for field in timing_fields], 'Catalog timings differ from the source PDF'
+    assert len(blocks) == 2 * count + 1
+    for index, (number, block, question) in enumerate(zip(blocks[1::2], blocks[2::2], questions), 1):
+        pair = [seconds(question[key]) for key in ('vadechatMs', 'opponentMs')]
+        assert number == str(index) and pair == re.findall(r'^(\d+,\d{3} s)\nCompleta$', block, re.M), f'Invalid source times for question {number}'
+        assert f"{question['label']} {' '.join(pair)}" in visual, f'Missing chart values for question {number}'
+    for finding in report['findings']:
+        fields = finding.get('sourceFields')
+        if fields:
+            assert [field['value'] for field in fields[1:]] == [
+                f"{seconds(question['vadechatMs'])} × {seconds(question['opponentMs'])}" for question in questions
+            ], 'Searchable finding times differ from the chart'
 
 for report in data['reports']:
     for file in report['files']:
@@ -89,16 +96,17 @@ for report in data['reports']:
             print(f"{report['id']}: {len(reader.pages)} pages, all ten review summaries, highlights and evidence URLs verified")
             continue
         if not report.get('executive') and not report.get('benchmarkId'):
-            expected = [report['summary'], *report['highlights']]
+            expected = [] if report.get('latency') else [report['summary'], *report['highlights']]
             if report.get('note'):
                 expected.append(report['note'])
             for finding in report['findings']:
-                expected.extend(f"{field['label']}: {field['value']}" for field in finding.get('sourceFields', []))
+                if not report.get('latency'):
+                    expected.extend(f"{field['label']}: {field['value']}" for field in finding.get('sourceFields', []))
                 expected.extend(evidence[evidence_id]['description'] for evidence_id in finding['evidenceIds'])
             for paragraph in expected:
                 assert normalize(paragraph) in text, f"Stale or incomplete PDF {report['id']}: {paragraph}"
-        if report['id'] == 'vadechat-latencia-2026-11-10':
-            verify_latency_source(report)
+        if report.get('latency'):
+            verify_latency(report, text, len(reader.pages))
         for finding in report['findings']:
             for key in ['id','description','expected','verification','severity','hypothesis']:
                 if finding.get(key):

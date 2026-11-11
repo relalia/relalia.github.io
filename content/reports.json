@@ -6583,6 +6583,18 @@
       "module": "VadeChat",
       "status": "Teste encerrado",
       "count": "5 perguntas · 10 respostas completas",
+      "latency": {
+        "vadechat": { "label": "VadeChat Ágil", "meanMs": 28704, "totalMs": 143522 },
+        "opponent": { "label": "GPT-5.6 Sol", "model": "openai/gpt-5.6-sol", "meanMs": 13910, "totalMs": 69550 },
+        "scaleSeconds": 80,
+        "questions": [
+          { "label": "Comunicação ao COAF", "vadechatMs": 31715, "opponentMs": 30448 },
+          { "label": "Diligência fora do município", "vadechatMs": 24329, "opponentMs": 11913 },
+          { "label": "Documentos para edificação", "vadechatMs": 31303, "opponentMs": 7715 },
+          { "label": "Tributação de bem de família voluntário", "vadechatMs": 25839, "opponentMs": 8056 },
+          { "label": "Inventário extrajudicial", "vadechatMs": 30335, "opponentMs": 11418 }
+        ]
+      },
       "summary": "O VadeChat Ágil levou 28,704 s em média para entregar a resposta completa, ante 13,910 s do GPT-5.6 Sol via OpenRouter. O Ágil demorou mais nas cinco perguntas e levou 2,06 vezes o tempo do concorrente na média da rodada.",
       "highlights": [
         "Diferença média de 14,794 s por pergunta. O PDF registra 143,522 s de tempo total para o Ágil e 69,550 s para o GPT-5.6 Sol.",
@@ -6637,7 +6649,47 @@
           "retest": { "execution": "not-performed" }
         }
       ],
-      "note": "O total do Ágil informado pelo PDF (143,522 s) difere em 0,001 s da soma dos tempos exibidos por pergunta (143,521 s). O teste mede tempo até a resposta completa. Os vídeos ilustram a espera até o primeiro trecho em outras consultas."
+      "note": "O total do Ágil informado pelo PDF (143,522 s) difere em 0,001 s da soma dos tempos exibidos por pergunta (143,521 s). Os vídeos ilustram a espera até o primeiro trecho em outras consultas."
+    },
+    {
+      "id": "vadechat-latencia-2026-11-11",
+      "date": "2026-11-11",
+      "title": "Tempo de resposta · Pleno × GPT-6.1 Sol",
+      "module": "VadeChat",
+      "status": "Teste encerrado",
+      "count": "5 perguntas · 10 respostas completas",
+      "summary": "O VadeChat Pleno levou 54,599 s em média até a resposta completa, ante 17,755 s do GPT-6.1 Sol via OpenRouter. O GPT-6.1 Sol terminou primeiro nas cinco perguntas.",
+      "highlights": [],
+      "latency": {
+        "vadechat": { "label": "VadeChat Pleno", "meanMs": 54599, "totalMs": 272994 },
+        "opponent": { "label": "GPT-6.1 Sol", "model": "openai/gpt-6.1-sol", "meanMs": 17755, "totalMs": 88775 },
+        "scaleSeconds": 80,
+        "questions": [
+          { "label": "Princípio da especialidade", "vadechatMs": 53510, "opponentMs": 11747 },
+          { "label": "Retificação do registro ou da averbação", "vadechatMs": 40637, "opponentMs": 9877 },
+          { "label": "Fiscalização do tabelionato de notas", "vadechatMs": 40671, "opponentMs": 8854 },
+          { "label": "Consolidação da propriedade", "vadechatMs": 73730, "opponentMs": 31645 },
+          { "label": "Dissolução de união estável", "vadechatMs": 64445, "opponentMs": 26652 }
+        ]
+      },
+      "files": [
+        {
+          "label": "Teste de tempo de resposta · PDF original",
+          "kind": "pdf",
+          "origin": "original",
+          "path": "/originals/reports/vadechat-latencia-2026-11-11-resultados.pdf",
+          "originalName": "Relalia-tempo-de-resposta-cf03f582.pdf",
+          "sha256": "afd7d8e4a8244cfa832857d0b39da3a234cf186b39bd5c0fbb2ad4abed80b6fb"
+        },
+        {
+          "label": "Ficha complementar · PDF",
+          "kind": "pdf",
+          "origin": "generated",
+          "path": "/reports/vadechat-latencia-2026-11-11.pdf"
+        }
+      ],
+      "findings": [],
+      "note": "O total do Pleno informado pelo PDF (272,994 s) difere em 0,001 s da soma dos tempos exibidos por pergunta (272,993 s)."
     }
   ],
   "evidence": [

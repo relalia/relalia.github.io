@@ -21,11 +21,25 @@ export default function Timeline({ activeId, intro, children, reports }: { activ
   const drawer = useRef<HTMLDialogElement>(null);
   const panel = useRef<HTMLDivElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
+  const list = useRef<HTMLElement>(null);
+  const activeCard = useRef<HTMLAnchorElement>(null);
   const gesture = useRef<{ id: number; x: number; y: number; dragging: boolean } | null>(null);
 
   useEffect(() => {
     if (!mobile) drawer.current?.close();
   }, [mobile]);
+
+  useEffect(() => {
+    if ((mobile && !open) || !list.current || !activeCard.current) return;
+    const viewport = list.current.getBoundingClientRect();
+    const card = activeCard.current.getBoundingClientRect();
+    const inset = 6;
+    if (card.top < viewport.top + inset) {
+      list.current.scrollTop += card.top - viewport.top - inset;
+    } else if (card.bottom > viewport.bottom - inset) {
+      list.current.scrollTop += card.bottom - viewport.bottom + inset;
+    }
+  }, [activeId, mobile, module, open]);
 
   function openDrawer() {
     if (!drawer.current || drawer.current.open) return;
@@ -89,9 +103,9 @@ export default function Timeline({ activeId, intro, children, reports }: { activ
       </button>}
     </div>
     <SelectFilter label="Módulo" value={module} onChange={setModule} options={moduleOptions} portalContainer={open ? drawer.current : undefined} />
-    <nav className="timeline" aria-label="Relatórios" tabIndex={0}>
+    <nav ref={list} className="timeline" aria-label="Relatórios" tabIndex={0}>
       <div className="timeline-list">
-        {visible.map(report => <Link className="node" aria-current={report.id === activeId ? 'page' : undefined} href={`/relatorios/${report.id}/`} prefetch={false} onNavigate={mobile ? closeDrawer : undefined} key={report.id}>
+        {visible.map(report => <Link ref={report.id === activeId ? activeCard : undefined} className="node" aria-current={report.id === activeId ? 'page' : undefined} href={`/relatorios/${report.id}/`} prefetch={false} onNavigate={mobile ? closeDrawer : undefined} key={report.id}>
           <time dateTime={report.date}>{report.dateLabel}{report.dateNote && ` · ${report.dateNote}`}</time>
           <strong>{report.title}</strong><small>{report.module} · {report.count}</small>
         </Link>)}

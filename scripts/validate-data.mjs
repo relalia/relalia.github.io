@@ -33,6 +33,17 @@ function validateExecutive(report) {
   assert(criteriaSignature(modes[0])===criteriaSignature(modes[1]),`Mismatched benchmark criteria ${report.id}`);
 }
 
+function validateLatency(report) {
+  const { vadechat, opponent, scaleSeconds, questions } = report.latency;
+  assert([vadechat, opponent].every(participant => participant && text(participant.label) &&
+    natural(participant.meanMs) && natural(participant.totalMs)), `Invalid latency participants ${report.id}`);
+  assert(text(opponent.model) && natural(scaleSeconds) && scaleSeconds > 0 && scaleSeconds % 4 === 0, `Invalid latency model or scale ${report.id}`);
+  assert(Array.isArray(questions) && questions.length > 0 && questions.every(question =>
+    text(question.label) && [question.vadechatMs, question.opponentMs].every(ms => natural(ms) && ms <= scaleSeconds * 1000)), `Invalid latency questions ${report.id}`);
+  assert(new Set(questions.map(question => question.label)).size === questions.length, `Duplicate latency questions ${report.id}`);
+  assert(report.files.some(file => file.kind === 'pdf' && file.origin === 'original'), `Missing latency source ${report.id}`);
+}
+
 export function validateData(data,assetExists=()=>true) {
   assert(Array.isArray(data.reports) && data.reports.length>0,'Catalog needs reports');
   assert(Array.isArray(data.evidence),'Catalog needs evidence');
@@ -65,6 +76,7 @@ export function validateData(data,assetExists=()=>true) {
       if(file.origin==='original') assert(/^[a-f0-9]{64}$/.test(file.sha256) && text(file.originalName),`Original needs SHA-256 and name ${file.path}`);
     }
     if(report.executive) validateExecutive(report);
+    if(report.latency) validateLatency(report);
   }
   for(const report of data.reports.filter(report=>report.benchmarkSources)) {
     const sources=report.benchmarkSources;

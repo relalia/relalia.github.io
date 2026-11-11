@@ -55,6 +55,7 @@ export interface Finding {
 
 export interface Report {
   executive?: ExecutiveBenchmark;
+  latency?: LatencyBenchmark;
   benchmarkSources?: { reportId: string; label: string }[];
   overviewId?: string;
   comparisonId?: string;
@@ -71,6 +72,19 @@ export interface Report {
   note?: string;
   files: Attachment[];
   findings: Finding[];
+}
+
+interface LatencyParticipant {
+  label: string;
+  meanMs: number;
+  totalMs: number;
+}
+
+export interface LatencyBenchmark {
+  vadechat: LatencyParticipant;
+  opponent: LatencyParticipant & { model: string };
+  scaleSeconds: number;
+  questions: { label: string; vadechatMs: number; opponentMs: number }[];
 }
 
 export type TimelineReport = Pick<Report, 'id' | 'date' | 'dateNote' | 'title' | 'module' | 'count'> & { dateLabel: string };

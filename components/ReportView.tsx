@@ -10,6 +10,7 @@ import BenchmarkComparisonReport from './BenchmarkComparisonReport';
 import BenchmarkOverviewReport from './BenchmarkOverviewReport';
 import ExecutiveBenchmarkResults from './ExecutiveBenchmarkResults';
 import WeeklyBenchmarkReport from './WeeklyBenchmarkReport';
+import LatencyBenchmarkResults from './LatencyBenchmarkResults';
 
 export default function ReportView({ report }: { report: Report }) {
   return <div className="shell">
@@ -18,12 +19,14 @@ export default function ReportView({ report }: { report: Report }) {
       <div className="kicker">{report.module} · {formatDate(report.date)}</div><h2>{report.title}</h2>
       {report.benchmarkSources ? <WeeklyBenchmarkReport report={report} sources={report.benchmarkSources}/> : report.overviewId ? <BenchmarkOverviewReport report={report}/> : report.comparisonId ? <BenchmarkComparisonReport report={report} data={getComparison(report.comparisonId)}/> : report.benchmarkId ? <BenchmarkReport report={report} benchmark={getBenchmark(report.benchmarkId)}/> : <>
       <div className="meta"><span className="tag">{report.status}</span><span className="tag">{report.count}</span></div>
-      <p className="summary">{report.summary}</p>
-      {report.executive ? <ExecutiveBenchmarkResults data={report.executive}/> : <ul className="highlights">{report.highlights.map(item => <li key={item}>{item}</li>)}</ul>}
+      {report.latency ? <LatencyBenchmarkResults data={report.latency} note={report.note}/> : <>
+        <p className="summary">{report.summary}</p>
+        {report.executive ? <ExecutiveBenchmarkResults data={report.executive}/> : <ul className="highlights">{report.highlights.map(item => <li key={item}>{item}</li>)}</ul>}
+      </>}
       <Downloads files={report.files} />
       {report.findings.length > 0 && <><div className="section-head"><h3>{report.executive ? 'UX do VadeChat' : 'Achados e resultados'}</h3><p>Abra um item para consultar o resumo e seus vínculos.</p></div>
       <FindingFilters key={report.id} report={report} evidence={evidence.filter(item => item.reportId === report.id)} /></>}
-      <p className="note">{report.note || 'Os achados refletem a validação realizada. Propostas e critérios de verificação não representam funcionalidades implementadas nem retestes executados.'}</p>
+      {!report.latency && <p className="note">{report.note || 'Os achados refletem a validação realizada. Propostas e critérios de verificação não representam funcionalidades implementadas nem retestes executados.'}</p>}
       </>}
     </article></Timeline>
     <footer>Relalia · Histórico de validação da Tri7 Alia · <a href="/originals/SHA256SUMS.txt">Integridade dos originais (SHA-256)</a></footer>

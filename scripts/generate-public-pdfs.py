@@ -8,7 +8,7 @@ from xml.sax.saxutils import escape
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.pagesizes import A4
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, KeepTogether
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, KeepTogether, PageBreak
 from importlib.util import spec_from_file_location, module_from_spec
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -60,20 +60,29 @@ def generate(data):
             doc = SimpleDocTemplate(str(target), pagesize=A4, leftMargin=46, rightMargin=46, topMargin=44, bottomMargin=44,
                 title=report['title'], author='Relalia', subject=attachment['label'], invariant=1)
             story = [p(report['title'], style='ReportTitle'), p(f"{report['module']} · {report['date']} · {report['status']}",style='Caption'),
-                p(attachment['label'],style='Caption'), p(report['summary'])]
+                p(attachment['label'],style='Caption')]
+            if report.get('latency'):
+                spec = spec_from_file_location('latency_pdf', ROOT/'scripts/latency-pdf.py')
+                latency_pdf = module_from_spec(spec)
+                spec.loader.exec_module(latency_pdf)
+                story.append(p(report['count'], style='Caption'))
+                story += latency_pdf.latency_story(report['latency'], p)
+                if report.get('note'):
+                    story.append(p(report['note'], style='Caption'))
+            else:
+                story.append(p(report['summary']))
             if report.get('executive'):
                 spec = spec_from_file_location('executive_pdf', ROOT/'scripts/executive-pdf.py')
                 executive_pdf = module_from_spec(spec)
                 spec.loader.exec_module(executive_pdf)
                 story += executive_pdf.executive_story(report['executive'], p)
                 if report['findings']:
-                    from reportlab.platypus import PageBreak
                     story.append(PageBreak())
                 else:
                     doc.build(story,onFirstPage=page_footer,onLaterPages=page_footer)
                     print(target.relative_to(ROOT))
                     continue
-            else:
+            elif not report.get('latency'):
                 for highlight in report['highlights']:
                     story.append(p('• ' + highlight))
             if report.get('benchmarkId'):
@@ -86,7 +95,10 @@ def generate(data):
                 continue
             if any(f['origin'] == 'original' for f in report['files']):
                 story.append(p('Esta ficha é complementar. Os documentos originais estão disponíveis separadamente, com bytes preservados.', style='Caption'))
-            story.append(p('UX do VadeChat · 1 proposta' if report.get('executive') else f"{len(report['findings'])} {'achado' if len(report['findings']) == 1 else 'achados'}",style='FindingTitle'))
+            if report.get('latency') and report['findings']:
+                story.append(PageBreak())
+            if report['findings'] or not report.get('latency'):
+                story.append(p('UX do VadeChat · 1 proposta' if report.get('executive') else f"{len(report['findings'])} {'achado' if len(report['findings']) == 1 else 'achados'}",style='FindingTitle'))
             for finding in report['findings']:
                 story.append(KeepTogether([p(f"{finding['id']} · {finding['title']}",style='FindingTitle'), p(finding['description'],finding.get('observationLabel','Observado'))]))
                 for key,label in [('kind','Categoria'),('severity','Criticidade'),('context','Contexto'),('hypothesis','Hipótese'),('expected','Melhoria esperada'),('suggestion','Sugestão registrada'),('verification','Como verificar'),('basis','Fundamento registrado'),('status','Situação')]:
@@ -94,16 +106,18 @@ def generate(data):
                         story.append(p(finding[key],label))
                 if finding.get('hypothesis') and finding.get('originalRecord'):
                     story.append(p(finding['originalRecord']['descricao'],'Texto original do checklist'))
-                for field in finding.get('sourceFields',[]):
-                    story.append(p(field['value'],field['label']))
+                if not report.get('latency'):
+                    for field in finding.get('sourceFields', []):
+                        story.append(p(field['value'],field['label']))
                 execution = {'performed':'Executado','not-performed':'Não executado','not-applicable':'Ainda não aplicável à proposta'}[finding['retest']['execution']]
                 story.append(p(execution,'Reteste'))
-                story.append(p(finding['retest'].get('result') or 'Sem resultado de reteste registrado','Resultado do reteste'))
+                if finding['retest'].get('result') or not report.get('latency'):
+                    story.append(p(finding['retest'].get('result') or 'Sem resultado de reteste registrado','Resultado do reteste'))
                 if finding.get('relatedIds'):
                     story.append(p(', '.join(finding['relatedIds']),'Achados vinculados'))
                 for comparison in finding.get('comparisons',[]):
                     story.append(p(f"{comparison['label']}: https://relalia.github.io/relatorios/{comparison['reportId']}/#{comparison['findingId']}",'Comparação',style='Caption'))
-                if not finding['evidenceIds']:
+                if not finding['evidenceIds'] and not report.get('latency'):
                     story.append(p('Sem evidência visual anexada a este item. Consulte também os documentos da rodada.',style='Caption'))
                 for evidence_id in finding['evidenceIds']:
                     item = evidence[evidence_id]
@@ -119,7 +133,8 @@ def generate(data):
                         story.append(p(f"Vídeo original · {evidence_id} · {item['originalName']}. Consulte o MP4 no portal; este PDF não contém quadros extraídos.",style='Caption'))
                     if item['path']:
                         story.append(p('https://relalia.github.io' + item['path'].replace(' ','%20'),style='Caption'))
-            story += [Spacer(1,14),p(report.get('note') or 'Propostas e critérios de verificação não representam funcionalidades implementadas nem retestes executados.',style='Caption')]
+            if not report.get('latency'):
+                story += [Spacer(1,14),p(report.get('note') or 'Propostas e critérios de verificação não representam funcionalidades implementadas nem retestes executados.',style='Caption')]
             doc.build(story,onFirstPage=page_footer,onLaterPages=page_footer)
             print(target.relative_to(ROOT))
 
