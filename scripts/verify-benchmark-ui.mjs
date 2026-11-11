@@ -137,13 +137,18 @@ try {
     await page.locator('#GIRO-UX-01').waitFor();
     assert.equal(await page.locator('.benchmark').count(),0);
     await openTimeline(page,width);
-    await page.waitForFunction(() => {
+    const activeCardVisible = () => {
       const card = document.querySelector('.timeline .node[aria-current="page"]');
       if (card?.getAttribute('href') !== '/relatorios/alia-2026-10-08/') return false;
       const bounds = card.getBoundingClientRect();
       const viewport = card.closest('.timeline').getBoundingClientRect();
       return bounds.top >= viewport.top - 1 && bounds.bottom <= viewport.bottom + 1;
-    });
+    };
+    await page.waitForFunction(activeCardVisible);
+    if (width > 800) {
+      await page.setViewportSize({width,height:510});
+      await page.waitForFunction(activeCardVisible);
+    }
     console.log(`${width}px: no overflow; both modes, 60 evidence panels, keyboard, copy/download, reconstruction, direct route/reload/home/history verified`);
     await context.close();
   }

@@ -35,6 +35,7 @@ function validateExecutive(report) {
 
 function validateLatency(report) {
   const { vadechat, opponent, scaleSeconds, questions } = report.latency;
+  assert(!['executive', 'benchmarkSources', 'overviewId', 'comparisonId', 'benchmarkId'].some(key => report[key]), `Conflicting latency layout ${report.id}`);
   assert([vadechat, opponent].every(participant => participant && text(participant.label) &&
     natural(participant.meanMs) && natural(participant.totalMs)), `Invalid latency participants ${report.id}`);
   assert(text(opponent.model) && natural(scaleSeconds) && scaleSeconds > 0 && scaleSeconds % 4 === 0, `Invalid latency model or scale ${report.id}`);

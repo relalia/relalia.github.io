@@ -10,6 +10,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, KeepTogether, PageBreak
 from importlib.util import spec_from_file_location, module_from_spec
+from latency_pdf import latency_story, timing_fields
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -42,6 +43,7 @@ def generate(data):
         selected_report = os.environ.get('RELALIA_PDF_REPORT')
         if selected_report and report['id'] != selected_report:
             continue
+        chart_fields = timing_fields(report['latency']) if report.get('latency') else {}
         for attachment in report['files']:
             if attachment['origin'] != 'generated':
                 continue
@@ -62,11 +64,8 @@ def generate(data):
             story = [p(report['title'], style='ReportTitle'), p(f"{report['module']} · {report['date']} · {report['status']}",style='Caption'),
                 p(attachment['label'],style='Caption')]
             if report.get('latency'):
-                spec = spec_from_file_location('latency_pdf', ROOT/'scripts/latency-pdf.py')
-                latency_pdf = module_from_spec(spec)
-                spec.loader.exec_module(latency_pdf)
                 story.append(p(report['count'], style='Caption'))
-                story += latency_pdf.latency_story(report['latency'], p)
+                story += latency_story(report['latency'], p)
                 if report.get('note'):
                     story.append(p(report['note'], style='Caption'))
             else:
@@ -106,8 +105,8 @@ def generate(data):
                         story.append(p(finding[key],label))
                 if finding.get('hypothesis') and finding.get('originalRecord'):
                     story.append(p(finding['originalRecord']['descricao'],'Texto original do checklist'))
-                if not report.get('latency'):
-                    for field in finding.get('sourceFields', []):
+                for field in finding.get('sourceFields', []):
+                    if chart_fields.get(field['label']) != field['value']:
                         story.append(p(field['value'],field['label']))
                 execution = {'performed':'Executado','not-performed':'Não executado','not-applicable':'Ainda não aplicável à proposta'}[finding['retest']['execution']]
                 story.append(p(execution,'Reteste'))

@@ -4,6 +4,7 @@ import json
 import re
 from pypdf import PdfReader
 from importlib.util import spec_from_file_location, module_from_spec
+from latency_pdf import multiplier, percentage, seconds as latency_seconds, timing_fields
 root=Path(__file__).resolve().parents[1]
 spec=spec_from_file_location('pdf_generator',root/'scripts/generate-public-pdfs.py')
 generator=module_from_spec(spec)
@@ -19,39 +20,63 @@ data=json.loads((root/'content/reports.json').read_text(encoding='utf-8'))
 normalize=lambda s:' '.join(s.split())
 evidence = {item['id']: item for item in data['evidence']}
 
-def verify_latency(report, visual, page_count):
+def verify_latency_source(report):
     data = report['latency']
-    original = next(file for file in report['files'] if file['origin'] == 'original')
+    original = next(file for file in report['files'] if file['origin'] == 'original' and file['kind'] == 'pdf')
     source = '\n'.join(page.extract_text() for page in PdfReader(root/'public'/original['path'].lstrip('/')).pages)
     source_line = normalize(source)
     assert report['date'][8:10] + '/' + report['date'][5:7] + '/' + report['date'][:4] in source_line
-    seconds = lambda value: f'{value / 1000:.3f}'.replace('.', ',') + ' s'
     questions = data['questions']
     count = len(questions)
     assert f'{2 * count}/{2 * count} tentativas encerradas' in source_line
     for key, source_label in [('vadechat', data['vadechat']['label']), ('opponent', data['opponent']['model'])]:
         participant = data[key]
-        total, mean = seconds(participant['totalMs']), seconds(participant['meanMs'])
+        total, mean = latency_seconds(participant['totalMs']), latency_seconds(participant['meanMs'])
         assert f'{source_label} {total} {mean} {count}/{count}' in source_line, f'Invalid source aggregate for {source_label}'
-        assert f"{participant['label']} {mean} {total} no total" in visual, f'Missing chart aggregate for {source_label}'
 
-    assert 'Tempo por pergunta' in visual and f"{data['scaleSeconds']} s" in visual
-    assert data['opponent']['model'] in visual
-    assert page_count <= (2 if report['findings'] else 1), 'Latency summary exceeded its page budget'
     blocks = re.split(r'\n(\d+) · ID [^\n]+\n', source)
     assert len(blocks) == 2 * count + 1
     for index, (number, block, question) in enumerate(zip(blocks[1::2], blocks[2::2], questions), 1):
-        pair = [seconds(question[key]) for key in ('vadechatMs', 'opponentMs')]
-        assert number == str(index) and pair == re.findall(r'^(\d+,\d{3} s)\nCompleta$', block, re.M), f'Invalid source times for question {number}'
-        assert f"{question['label']} {' '.join(pair)}" in visual, f'Missing chart values for question {number}'
+        pair = [latency_seconds(question[key]) for key in ('vadechatMs', 'opponentMs')]
+        assert number == str(index) and pair == re.findall(r'^([\d.]+,\d{3} s)\nCompleta$', block, re.M), f'Invalid source times for question {number}'
+    chart_fields = timing_fields(data)
     for finding in report['findings']:
-        fields = finding.get('sourceFields')
-        if fields:
-            assert [field['value'] for field in fields[1:]] == [
-                f"{seconds(question['vadechatMs'])} × {seconds(question['opponentMs'])}" for question in questions
-            ], 'Searchable finding times differ from the chart'
+        for field in finding.get('sourceFields', []):
+            if field['label'] in chart_fields:
+                assert field['value'] == chart_fields[field['label']], 'Searchable finding times differ from the chart'
+
+
+def verify_latency_pdf(report, visual, page_count):
+    data = report['latency']
+    questions = data['questions']
+    assert 'Tempo por pergunta' in visual and f"{data['scaleSeconds']} s" in visual
+    assert data['opponent']['model'] in visual
+    if len(questions) == 5:
+        assert page_count <= (2 if report['findings'] else 1), 'Latency summary exceeded its page budget'
+    for key in ('vadechat', 'opponent'):
+        participant = data[key]
+        mean, total = latency_seconds(participant['meanMs']), latency_seconds(participant['totalMs'])
+        assert f"{participant['label']} {mean} {total} no total" in visual, f'Missing chart aggregate for {key}'
+    for question in questions:
+        pair = ' '.join(latency_seconds(question[key]) for key in ('vadechatMs', 'opponentMs'))
+        assert f"{question['label']} {pair}" in visual, f"Missing chart values for {question['label']}"
+
+    faster, slower = sorted(('vadechat', 'opponent'), key=lambda key: data[key]['meanMs'])
+    minimum, maximum = data[faster]['meanMs'], data[slower]['meanMs']
+    assert f'Diferença média de {latency_seconds(maximum - minimum)} por pergunta.' in visual
+    if maximum > minimum:
+        assert f"{data[faster]['label']} teve o menor tempo médio" in visual
+        if minimum:
+            assert f'{multiplier(maximum, minimum)} Maior média ÷ menor média' in visual
+        assert f"{percentage(maximum - minimum, maximum)} Menos tempo que {data[slower]['label']}" in visual
+        first = sum(q[f'{faster}Ms'] < q[f'{slower}Ms'] for q in questions)
+        assert f'{percentage(first, len(questions))} Terminou primeiro em {first} de {len(questions)} perguntas' in visual
 
 for report in data['reports']:
+    latency = report.get('latency')
+    if latency:
+        verify_latency_source(report)
+    chart_fields = timing_fields(latency) if latency else {}
     for file in report['files']:
         if file['origin']!='generated':continue
         reader=PdfReader(root/'public'/file['path'].lstrip('/'))
@@ -100,13 +125,13 @@ for report in data['reports']:
             if report.get('note'):
                 expected.append(report['note'])
             for finding in report['findings']:
-                if not report.get('latency'):
-                    expected.extend(f"{field['label']}: {field['value']}" for field in finding.get('sourceFields', []))
+                expected.extend(f"{field['label']}: {field['value']}" for field in finding.get('sourceFields', [])
+                                if chart_fields.get(field['label']) != field['value'])
                 expected.extend(evidence[evidence_id]['description'] for evidence_id in finding['evidenceIds'])
             for paragraph in expected:
                 assert normalize(paragraph) in text, f"Stale or incomplete PDF {report['id']}: {paragraph}"
-        if report.get('latency'):
-            verify_latency(report, text, len(reader.pages))
+        if latency:
+            verify_latency_pdf(report, text, len(reader.pages))
         for finding in report['findings']:
             for key in ['id','description','expected','verification','severity','hypothesis']:
                 if finding.get(key):

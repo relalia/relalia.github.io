@@ -30,15 +30,27 @@ export default function Timeline({ activeId, intro, children, reports }: { activ
   }, [mobile]);
 
   useEffect(() => {
-    if ((mobile && !open) || !list.current || !activeCard.current) return;
-    const viewport = list.current.getBoundingClientRect();
-    const card = activeCard.current.getBoundingClientRect();
-    const inset = 6;
-    if (card.top < viewport.top + inset) {
-      list.current.scrollTop += card.top - viewport.top - inset;
-    } else if (card.bottom > viewport.bottom - inset) {
-      list.current.scrollTop += card.bottom - viewport.bottom + inset;
-    }
+    const nav = list.current;
+    const selected = activeCard.current;
+    if ((mobile && !open) || !nav || !selected) return;
+
+    const revealSelected = () => {
+      if (!nav.clientHeight) return;
+      const viewport = nav.getBoundingClientRect();
+      const card = selected.getBoundingClientRect();
+      const inset = 6;
+      if (card.top < viewport.top + inset || card.height > viewport.height - inset * 2) {
+        nav.scrollTop += card.top - viewport.top - inset;
+      } else if (card.bottom > viewport.bottom - inset) {
+        nav.scrollTop += card.bottom - viewport.bottom + inset;
+      }
+    };
+
+    revealSelected();
+    const resize = new ResizeObserver(revealSelected);
+    resize.observe(nav);
+    resize.observe(selected);
+    return () => resize.disconnect();
   }, [activeId, mobile, module, open]);
 
   function openDrawer() {
