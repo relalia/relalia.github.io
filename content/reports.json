@@ -6690,6 +6690,64 @@
       ],
       "findings": [],
       "note": "O total do Pleno informado pelo PDF (272,994 s) difere em 0,001 s da soma dos tempos exibidos por pergunta (272,993 s)."
+    },
+    {
+      "id": "estrutura-vadechat-2026-11-12",
+      "date": "2026-11-12",
+      "title": "Chat e GIRO · estrutura das páginas",
+      "module": "Alia",
+      "status": "Proposta para avaliação",
+      "count": "2 páginas · protótipos locais",
+      "summary": "Propostas para usar melhor a largura da tela no Chat e no GIRO.",
+      "highlights": [
+        "Chat: ampliar a área de conversa e evitar rolagens concorrentes.",
+        "GIRO: remover os limites de largura e adaptar a grade de cards."
+      ],
+      "files": [
+        {
+          "label": "Relatório com as duas demonstrações · HTML autocontido",
+          "kind": "html",
+          "origin": "generated",
+          "path": "/reports/estrutura-vadechat-2026-11-12.html"
+        },
+        {
+          "label": "Cópia do Chat · HTML autocontido",
+          "kind": "html",
+          "origin": "generated",
+          "path": "/reports/prototipo-vadechat-estrutura-2026-11-12.html"
+        },
+        {
+          "label": "Cópia do GIRO · HTML autocontido",
+          "kind": "html",
+          "origin": "generated",
+          "path": "/reports/prototipo-giro-estrutura-2026-11-12.html"
+        }
+      ],
+      "findings": [
+        {
+          "id": "VC-EST-01",
+          "title": "Chat: ampliar a área de conversa",
+          "description": "A gravação mostra o Chat limitado a uma área central; a cópia utiliza a largura restante da janela.",
+          "kind": "Estrutura",
+          "expected": "Remover o limite do contêiner, evitar rolagens concorrentes e manter o campo acessível.",
+          "verification": "Testar conversa longa, teclado e diferentes larguras e níveis de zoom.",
+          "status": "Proposta de melhoria",
+          "evidenceIds": [],
+          "retest": { "execution": "not-applicable" }
+        },
+        {
+          "id": "GIRO-EST-01",
+          "title": "GIRO: ampliar a grade de cards",
+          "description": "O HTML fornecido contém dois limites de largura e uma grade de três colunas em desktop.",
+          "kind": "Estrutura",
+          "expected": "Remover os limites dos contêineres e usar uma grade responsiva com largura mínima para os cards.",
+          "verification": "Conferir a grade e a leitura em desktop, tablet, celular e zoom ampliado.",
+          "status": "Proposta de melhoria",
+          "evidenceIds": [],
+          "retest": { "execution": "not-applicable" }
+        }
+      ],
+      "note": "O relatório reúne as duas cópias e o vídeo do Chat. As propostas ainda não representam alterações publicadas ou reteste da plataforma."
     }
   ],
   "evidence": [

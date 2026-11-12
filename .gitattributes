@@ -6,3 +6,8 @@
 *.mp4 binary
 *.xlsx binary
 public/originals/benchmark/** -text
+# The standalone report embeds an exact byte copy of this prototype.  Keep both
+# files unchanged across Windows and Unix checkouts.
+public/reports/estrutura-vadechat-2026-11-12.html -text
+public/reports/prototipo-vadechat-estrutura-2026-11-12.html -text
+public/reports/prototipo-giro-estrutura-2026-11-12.html -text

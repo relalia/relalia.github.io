@@ -45,7 +45,7 @@ def generate(data):
             continue
         chart_fields = timing_fields(report['latency']) if report.get('latency') else {}
         for attachment in report['files']:
-            if attachment['origin'] != 'generated':
+            if attachment['origin'] != 'generated' or attachment['kind'] != 'pdf':
                 continue
             target = generated_target(attachment)
             # Preserve already published derivatives. Rebuild a selected report explicitly.

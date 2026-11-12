@@ -5,7 +5,8 @@ import manifest from '../content/originals.sha256.json' with {type:'json'};
 
 const assert = (condition,message) => {if (!condition) throw Error(message);};
 const text = value => typeof value === 'string' && value.trim().length > 0;
-const assetPath = value => text(value) && value.startsWith('/') && !value.includes('..') && !/[?#\\]/.test(value);
+const assetPath = value => text(value) && value.startsWith('/') && !value.includes('..') &&
+  !value.includes('//') && !value.split('/').includes('.') && !/[?#\\%\x00-\x1f\x7f]/.test(value);
 const natural = value => Number.isSafeInteger(value) && value >= 0;
 const score = (value, max) => Number.isFinite(value) && value >= 0 && value <= max;
 
@@ -57,7 +58,7 @@ export function validateData(data,assetExists=()=>true) {
     assert(/^\d{4}-\d{2}-\d{2}$/.test(report.date) && !isNaN(Date.parse(report.date)),`Invalid date ${report.id}`);
     assert(['Atlas','VadeChat','Base de Conhecimento','Alia'].includes(report.module),`Invalid module ${report.id}`);
     assert(Array.isArray(report.highlights) && report.highlights.every(text),`Invalid highlights ${report.id}`);
-    assert(Array.isArray(report.findings) && Array.isArray(report.files) && (report.benchmarkSources || report.files.some(f=>f.kind==='pdf')),`Missing findings/PDF ${report.id}`);
+    assert(Array.isArray(report.findings) && Array.isArray(report.files) && (report.benchmarkSources || report.files.some(f=>['pdf','html'].includes(f.kind))),`Missing findings/document ${report.id}`);
     const ids=new Set();
     for(const finding of report.findings) {
       assert(/^[A-Z0-9]+(?:-[A-Z0-9]+)*$/.test(finding.id),`Invalid finding ID ${finding.id}`);
@@ -69,11 +70,12 @@ export function validateData(data,assetExists=()=>true) {
     }
     const filePaths=new Set();
     for(const file of report.files) {
-      assert(text(file.label) && ['pdf','xlsx'].includes(file.kind) && ['original','generated'].includes(file.origin),`Invalid attachment ${report.id}`);
+      assert(text(file.label) && ['pdf','xlsx','html'].includes(file.kind) && ['original','generated'].includes(file.origin),`Invalid attachment ${report.id}`);
       assert(assetPath(file.path) && assetExists(file.path),`Missing/invalid attachment ${file.path}`);
       assert(!filePaths.has(file.path),`Duplicate attachment ${file.path}`); filePaths.add(file.path);
       assert(file.path.endsWith(`.${file.kind}`),`Attachment type mismatch ${file.path}`);
-      if(file.origin==='generated') assert(file.path.startsWith('/reports/') && file.kind==='pdf',`Generated PDF must stay in /reports/: ${file.path}`);
+      if(file.origin==='generated') assert(file.path.startsWith('/reports/') && ['pdf','html'].includes(file.kind),`Generated document must stay in /reports/: ${file.path}`);
+      if(file.kind==='html') assert(file.origin==='generated',`HTML attachment must be generated: ${file.path}`);
       if(file.origin==='original') assert(/^[a-f0-9]{64}$/.test(file.sha256) && text(file.originalName),`Original needs SHA-256 and name ${file.path}`);
     }
     if(report.executive) validateExecutive(report);

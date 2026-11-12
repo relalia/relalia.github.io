@@ -7,7 +7,7 @@ export interface RetestState {
 export interface Attachment {
   label: string;
   path: string;
-  kind: 'pdf' | 'xlsx';
+  kind: 'pdf' | 'xlsx' | 'html';
   origin: 'original' | 'generated';
   originalName?: string;
   sha256?: string;

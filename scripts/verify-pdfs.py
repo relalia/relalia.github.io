@@ -78,7 +78,7 @@ for report in data['reports']:
         verify_latency_source(report)
     chart_fields = timing_fields(latency) if latency else {}
     for file in report['files']:
-        if file['origin']!='generated':continue
+        if file['origin']!='generated' or file['kind']!='pdf':continue
         reader=PdfReader(root/'public'/file['path'].lstrip('/'))
         text=normalize(' '.join(re.sub(r'Relalia: O Relatório da Alia\s+Página \d+','',p.extract_text() or '') for p in reader.pages))
         if report.get('overviewId'):
