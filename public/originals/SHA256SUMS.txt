@@ -353,3 +353,4 @@ e094145ab65071a9ae3e55d38d147ddea8245d3566042c5848da9796deb57922  reports/vadech
 266de043e5da50267dc1db7a662b6ae77de4f55a9aa64540e0d785498e7d6a2a  evidence/vadechat-latencia-2026-11-10/credores-concorrentes.mp4
 c48825be0cf80b38bb33bda5caf7f9732e6473d5c7474af0fc407590e3636709  evidence/vadechat-latencia-2026-11-10/seguranca-da-informacao.mp4
 afd7d8e4a8244cfa832857d0b39da3a234cf186b39bd5c0fbb2ad4abed80b6fb  reports/vadechat-latencia-2026-11-11-resultados.pdf
+818c7d7115918fda8b7d6798d5a3a1b0561b9928cdb514d9a21f342d7221fcf1  evidence/estrutura-2026-11-12/comparacao-chat.mp4
