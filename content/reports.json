@@ -6748,6 +6748,28 @@
         }
       ],
       "note": "O relatório reúne as duas cópias e o vídeo do Chat. As propostas ainda não representam alterações publicadas ou reteste da plataforma."
+    },
+    {
+      "id": "atlas-estrutura-2026-11-13",
+      "date": "2026-11-13",
+      "title": "Atlas · nova tela da matrícula 40.048",
+      "module": "Atlas",
+      "status": "Proposta para avaliação",
+      "count": "9 recortes · demonstração interativa",
+      "summary": "Proposta de navegação, conferência e visualização da cadeia dominial da Fazenda Lajeado.",
+      "highlights": [
+        "Resumo de achados e diligências com acesso direto às fontes.",
+        "Cadeia completa e vintenária, com fluxo de sucessão e divisão."
+      ],
+      "files": [
+        {
+          "label": "Abrir tela completa do Atlas · demonstração pública",
+          "kind": "html",
+          "origin": "generated",
+          "path": "/reports/prototipo-atlas-2026-11-13.html"
+        }
+      ],
+      "findings": []
     }
   ],
   "evidence": [
