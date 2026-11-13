@@ -9,7 +9,7 @@ const previews = [
   { id: 'sucessao', title: 'Sucessão, doação e divisão', section: 'sucessao', description: 'O recorte mostra como as frações foram transmitidas e quais glebas resultaram da divisão. A vista completa começa nos inventários e destaca a matrícula em análise.' },
   { id: 'imovel', title: 'Imóvel, titulares e ônus', section: 'imovel', description: 'O indicador real agrupa os campos cadastrais. Titularidade e ônus ficam em blocos próprios, com o CAR identificado pelo ato de origem.' },
   { id: 'atos', title: 'Atos e fontes', section: 'atos', description: 'Cada ato tem um resumo e abre o texto da captura sob demanda. As fontes consultadas aparecem ao lado para facilitar a conferência.' },
-  { id: 'conferencia', title: 'Conferência com o Tri7', section: 'conferencia', description: 'O quadro compara o cadastro, a leitura do Atlas e a revisão documental. A leitura original permanece acessível em um bloco recolhido.' },
+  { id: 'conferencia', title: 'Conferência com a Tri7', section: 'conferencia', description: 'O quadro compara o cadastro, a leitura do Atlas e a revisão documental. A leitura original permanece acessível em um bloco recolhido.' },
   { id: 'celular', title: 'Navegação no celular', section: 'cadeia', description: 'Em telas estreitas, o gráfico tem uma vista em lista que explicita o próximo elo. O detalhe do registro abre abaixo e mantém o caminho de volta.' },
 ] as const;
 

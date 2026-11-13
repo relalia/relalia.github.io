@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <!-- Atualize os hashes SHA-256 desta política ao editar os blocos de estilo ou script. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ED+GocgzsDQOvp0xRZuHsrbJz97uKvmdtKTKizDVZRc='; style-src 'sha256-9xb1q2VTFPabRIztEfLVDv0dGW3eRWlcO4mu8b+QSy8='; img-src data:; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-TyxYKiEdbDGqTr/AIgNMs/5WHhEbLOk+r47dH/zar4c='; style-src 'sha256-+CFyVixWUwPgIOAU2yxZ5v0F8MsUt51MHb2PwPJdKYU='; img-src data:; base-uri 'none'; form-action 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#f4f7f5">
@@ -229,6 +229,7 @@
       position: relative; display: flex; flex-direction: column; align-items: flex-start; min-width: 0;
       gap: .13rem; text-align: left; color: var(--ink); background: var(--paper); border: 1px solid #cbded4;
       padding: .55rem .63rem; border-radius: 10px; box-shadow: 0 1px 3px #17392c0c;
+      scroll-margin: .45rem;
     }
     .node:hover { border-color: #649684; background: #f3f9f5; }
     .node[aria-pressed="true"] { outline: 2px solid var(--teal); outline-offset: 1px; background: #edf8f0; }
@@ -463,7 +464,7 @@
               <div><dt>Ônus vigentes</dt><dd>Nenhum identificado na Mat. 40.048</dd></div>
               <div><dt>AV.01</dt><dd>Traslado da inscrição no CAR</dd></div>
             </dl>
-            <div class="card-foot"><a class="text-link" href="#conferencia">Ver conferência com o Tri7 <span class="arrow" aria-hidden="true">&nbsp;→</span></a></div>
+            <div class="card-foot"><a class="text-link" href="#conferencia">Ver conferência com a Tri7 <span class="arrow" aria-hidden="true">&nbsp;→</span></a></div>
           </article>
         </div>
         <div class="scope-grid" role="group" aria-label="Recortes da cadeia dominial" data-interactive>
@@ -662,7 +663,7 @@
         </div>
       </section>
       <section id="conferencia" data-section tabindex="-1" aria-labelledby="heading-conferencia">
-        <div class="section-heading"><div><h2 id="heading-conferencia">Conferência com o Tri7</h2><p>Compare o cadastro, a leitura original e o resultado da revisão documental.</p></div></div>
+        <div class="section-heading"><div><h2 id="heading-conferencia">Conferência com a Tri7</h2><p>Compare o cadastro, a leitura original e o resultado da revisão documental.</p></div></div>
         <div class="stack">
           <article class="card" data-interactive>
             <div class="findings-toolbar row between">
@@ -733,11 +734,11 @@
                 <ul><li><span class="archive-value">Ocorrência relacionada ao imóvel</span><span class="archive-value"> · Av.1</span></li>
                 </ul></div>
               </details>
-              <details class="archive-item"><summary>Conferência original com o Tri7</summary>
+              <details class="archive-item"><summary>Conferência original com a Tri7</summary>
                 <div><div><p class="archive-heading">Conferência com o sistema Tri7</p>
                 <span class="archive-control">Atualizar</span></div>
                 <div><p><span class="archive-value"><span></span>5 conferem</span><span class="archive-value"><span></span>0 divergem</span><span class="archive-value"><span></span>5 só de um lado</span></p>
-                <div class="archive-table-scroll" role="region" aria-label="Comparação original com o Tri7" tabindex="0"><table><thead><tr><th>Campo</th><th>Cadastro Tri7</th><th>Leitura do Atlas</th><th>Veredito</th></tr>
+                <div class="archive-table-scroll" role="region" aria-label="Comparação original com a Tri7" tabindex="0"><table><thead><tr><th>Campo</th><th>Cadastro Tri7</th><th>Leitura do Atlas</th><th>Veredito</th></tr>
                 </thead><tbody><tr><td>Situação</td></tr>
                 <tr><td>Situação da matrícula</td><td>Ativo</td><td>ATIVA</td><td><span class="archive-value"><span></span>Confere</span></td></tr>
                 </tbody>
@@ -932,7 +933,7 @@
         id: 'precisao-area', type: 'attention', title: 'Área comparada com precisões diferentes',
         impact: 'A captura exibe 13,39 ha no cadastro e 13,3908 ha na leitura. Se os números forem exatos, a diferença equivale a 8 m².',
         action: 'Conferir o valor armazenado e eventual arredondamento antes de marcar como igual.',
-        source: 'Captura Atlas · Conferência com o Tri7', link: '#conferencia', linkLabel: 'Ver comparação'
+        source: 'Captura Atlas · Conferência com a Tri7', link: '#conferencia', linkLabel: 'Ver comparação'
       },
       {
         id: 'qualificacao-pessoas', type: 'attention', title: 'Erros materiais de nome e RG',
@@ -1245,6 +1246,7 @@
     const sections = [...document.querySelectorAll('[data-section]')];
     const smallDetail = matchMedia('(max-width: 1080px)');
     const mobile = matchMedia('(max-width: 710px)');
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
     const state = { scope: 'completa', node: 'm40048', view: null, filter: 'risk', compare: 'review', expanded: false };
     const filters = [
       ['all', 'Todos'], ['block', 'Impeditivos'], ['risk', 'Podem impedir'],
@@ -1510,22 +1512,25 @@
       drawRequest = requestAnimationFrame(drawEdges);
     }
 
-    function focusTarget(target, block = 'start') {
+    function focusTarget(target, block = 'start', smooth = false) {
       target.focus({ preventScroll: true });
-      if (block) target.scrollIntoView({ block });
+      if (block) target.scrollIntoView({
+        block, inline: 'nearest', behavior: smooth && !reducedMotion.matches ? 'smooth' : 'auto'
+      });
     }
 
     function selectNode(id) {
       state.node = id;
       if (!setRoute(`#cadeia/${state.scope}/${id}`, true)) return;
       renderNodeDetail(true);
-      if (smallDetail.matches) focusTarget(get('node-detail'));
+      if (smallDetail.matches) focusTarget(get('node-detail'), 'start', true);
+      else focusNode(id, 'nearest');
     }
 
-    function focusSelectedNode() {
+    function focusNode(id = state.node, block = 'center') {
       const container = get('flow-list').hidden ? get('diagram') : get('flow-list');
-      const node = container.querySelector(`[data-id="${state.node}"]`);
-      node?.focus();
+      const node = container.querySelector(`[data-id="${id}"]`);
+      if (node) focusTarget(node, block, true);
     }
 
     function setRoute(hash, replace = false) {
@@ -1591,8 +1596,11 @@
         state.node = isNode ? chainTarget : chainTarget === 'sucessao' || target?.id === 'sucessao' ? 'm34997' : 'm40048';
         if (Object.hasOwn(earlyNodes, state.node)) state.expanded = true;
         renderChain();
-        if (isNode) target = get('node-detail');
-        else if (chainAnchors.has(chainTarget)) target = get(chainAnchors.get(chainTarget));
+        if (isNode && !keepPosition && !sectionStart) {
+          focusNode();
+          return;
+        }
+        if (chainAnchors.has(chainTarget)) target = get(chainAnchors.get(chainTarget));
       } else if (section.id === 'achados') {
         const item = findings.find((finding) => finding.id === detail || `achado-${finding.id}` === target?.id);
         if (item) state.filter = item.type;
@@ -1677,7 +1685,7 @@
     get('cadeia').addEventListener('click', (event) => {
       const node = event.target.closest('.node[data-id]');
       if (node) selectNode(node.dataset.id);
-      if (event.target.closest('.return-to-node')) focusSelectedNode();
+      if (event.target.closest('.return-to-node')) focusNode();
     });
     get('copy-summary').addEventListener('click', openSummary);
     get('copy-text').addEventListener('click', copySummary);
@@ -1687,7 +1695,12 @@
       event.preventDefault();
       navigate(link.hash);
     });
-    mobile.addEventListener('change', () => { if (activeSection?.id === 'cadeia') renderView(); });
+    mobile.addEventListener('change', () => {
+      if (activeSection?.id !== 'cadeia' || state.view) return;
+      const focused = document.activeElement.closest('.node[data-id]');
+      renderView();
+      if (focused && !focused.isConnected) focusNode(focused.dataset.id, 'nearest');
+    });
     function onHistoryChange() {
       if (lastHistoryHash === location.hash) return;
       lastHistoryHash = location.hash;
