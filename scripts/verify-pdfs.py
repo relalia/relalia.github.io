@@ -148,6 +148,20 @@ for report in data['reports']:
             executive=report['executive']
             assert len(reader.pages)<=4,'Executive results and UX should fit four pages'
             assert normalize(executive['caveat']) in text
+            final_scores = executive.get('scoreBasis') == 'final'
+            if final_scores:
+                assert 'Médias e resultados finais com correções validadas.' in text
+                assert 'As notas finais incluem as correções validadas.' in text
+                assert 'Médias e resultados originais do juiz.' not in text
+                for index, criterion in enumerate(executive['modes'][0]['criteria']):
+                    cells = [f"{criterion['code']} · {criterion['label']}", str(criterion['max'])]
+                    for mode in executive['modes']:
+                        values = mode['criteria'][index]
+                        cell = f"{source_module.fmt(values['vc'])} / {source_module.fmt(values['opponent'])}"
+                        if values['n'] != mode['n']:
+                            cell += f" · n = {values['n']}"
+                        cells.append(cell)
+                    assert normalize(' '.join(cells)) in text, f"Wrong criterion row for {criterion['code']}"
             if executive.get('completionNote'):
                 assert normalize(executive['completionNote']) in text
                 assert normalize(executive['sourceStatusNote']) in text
@@ -166,8 +180,12 @@ for report in data['reports']:
                 assert f"{mode['label']} {vc} {opponent} {mode['wins']} / {mode['ties']} / {mode['losses']} {mode['n']}/{mode['coverageTotal']}" in text
                 review_prefix=f"{mode['label']} · registro do PDF: Revisões"
                 if review_prefix in text:
-                    assert f"{review_prefix} {mode['reviewsCompleted']}/{mode['reviewsTotal']} ({mode['pendingReviews']} pendentes); contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}" in text
+                    review = f"{review_prefix} {mode['reviewsCompleted']}/{mode['reviewsTotal']} ({mode['pendingReviews']} pendentes); contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}"
+                    if final_scores:
+                        review += f". {source_module.corrected_label(mode['correctedBouts'])}."
+                    assert review in text
                 else:
+                    assert not final_scores, f"Missing review record for {mode['label']}"
                     assert mode['pendingReviews']==mode['contests']==mode['pendingDecisions']==0
                     assert f"Revisões: {mode['reviewsCompleted']}/{mode['reviewsTotal']} por modo; nenhuma pendente." in text
                     assert 'Contestações, decisões pendentes e julgamentos pendentes, inconclusivos ou desatualizados: 0.' in text

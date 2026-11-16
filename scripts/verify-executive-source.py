@@ -22,12 +22,21 @@ def verify(report):
     assert len(pages) == data['source']['pages']
     conclusions = pages[data['source'].get('conclusionsPage',3)-1]
     quality_page = pages[data['source'].get('qualityPage',2)-1]
+    final_scores = 'Notas finais por modo' in pages[0]
+    assert data.get('scoreBasis') == ('final' if final_scores else None), 'Score basis differs from the source'
+    if final_scores:
+        assert data['title'] in pages[0]
+        assert f"· {data['questions']} perguntas ·" in pages[0]
+        for criterion in data['modes'][0]['criteria']:
+            label = f"{criterion['code']}: {criterion['label']} /{criterion['max']}"
+            assert label.casefold() in quality_page.casefold(), label
     for role in data['roles']:
         if role['model']:
             assert f"{role['role']} {role['platform']} {role['model']}" in pages[0]
         else:
             assert role['platform'] == 'VadeChat'
-            assert re.search(r'Ágil VadeChat Pleno VadeChat (Resultados|Notas finais por modo)', pages[0])
+            heading = 'Notas finais por modo' if final_scores else 'Resultados'
+            assert f'Ágil VadeChat Pleno VadeChat {heading}' in pages[0]
     for mode in data['modes']:
         match = re.search(rf"{mode['label']}: média ([\d,]+) contra ([\d,]+) em (\d+) embates; (\d+) vitórias?, (\d+) empates? e (\d+) derrotas?", conclusions)
         assert match, mode['label']
@@ -37,9 +46,8 @@ def verify(report):
         assert mode['wins']+mode['ties']+mode['losses'] == mode['n'] <= mode['coverageTotal'] == data['questions']
         coverage = f"{mode['n']}/{mode['coverageTotal']} ({mode['n']/mode['coverageTotal']:.0%})"
         assert f"{mode['label']} {fmt(mode['vcMean'])} / {fmt(mode['opponentMean'])} {mode['wins']} / {mode['ties']} / {mode['losses']} {coverage} {mode['pendingJudgments']} / {mode['inconclusive']} / {mode['outdated']}" in pages[0]
-        if 'correctedBouts' in mode:
-            count = mode['correctedBouts']
-            corrected = f"{count} {'embate corrigido' if count == 1 else 'embates corrigidos'}"
+        if final_scores:
+            corrected = corrected_label(mode['correctedBouts'])
             assert f"{mode['label']} · {mode['n']}/{mode['coverageTotal']} embates com nota final · {corrected}" in pages[0]
             assert f"{mode['label']} · {corrected} · {mode['pendingDecisions']} decisões pendentes" in quality_page
         for criterion in mode['criteria']:
@@ -68,7 +76,7 @@ def verify(report):
     assert f"Execução {data['source']['executionId']}" in conclusions
     assert re.search(rf"\brevisão {data['source']['revision']}\b", conclusions)
     assert data['runDate'] in pages[0]
-    if data.get('scoreBasis') == 'final':
+    if final_scores:
         assert 'As notas finais incluem as correções validadas.' in conclusions
     if data.get('pendingNotice'):
         assert 'Rodada parcial' in pages[0]
@@ -79,6 +87,9 @@ def verify(report):
         assert '0 revisões ou decisões pendentes' in conclusions
         assert all(not mode['pendingDecisions'] and not mode['pendingReviews'] for mode in data['modes'])
     print(f"{report['id']}: source PDF hash, roles, means, denominators, outcomes, criteria, quality and operations verified")
+
+def corrected_label(count):
+    return f"{count} {'embate corrigido' if count == 1 else 'embates corrigidos'}"
 
 if __name__ == '__main__':
     catalog=json.loads((ROOT/'content/reports.json').read_text(encoding='utf8'))

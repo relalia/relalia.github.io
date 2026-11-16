@@ -36,7 +36,7 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
     </section>
 
     <section className="benchmark-section" aria-labelledby="executive-criteria"><h4 id="executive-criteria">Onde os pontos foram obtidos</h4>
-      <div className="benchmark-table-wrap" role="region" aria-label="Médias por critério" tabIndex={0}><table>
+      <div className="benchmark-table-wrap" role="region" aria-label="Médias por critério" tabIndex={0}><table className={finalScores ? 'executive-criteria-table' : undefined}>
         <caption>Médias por critério · VadeChat / adversário</caption><thead><tr><th scope="col">Critério</th>{data.modes.map(mode => <th scope="col" key={mode.key}>{mode.label}<small>{mode.n} embates comparáveis</small></th>)}</tr></thead>
         <tbody>{data.modes[0].criteria.map((criterion, index) => <tr key={criterion.code}><th scope="row">{criterion.code} · {criterion.label}<small>Máximo: {criterion.max}</small></th>{data.modes.map(mode => {
           const values = mode.criteria[index];
@@ -52,7 +52,7 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
     </section>
 
     <details className="executive-detail"><summary>Qualidade, revisão e papéis da avaliação</summary>
-      <p>{finalScores ? 'A conformidade segue a classificação do protocolo. As notas finais incluem as correções validadas.' : 'Vencer por pontos não significa classificação Conforme. As revisões são contabilizadas separadamente e não substituem as notas originais.'}</p>
+      <p>{finalScores ? 'As notas finais incluem as correções validadas. A classificação de conformidade tem critérios próprios no protocolo.' : 'Vencer por pontos não significa classificação Conforme. As revisões são contabilizadas separadamente e não substituem as notas originais.'}</p>
       {data.sourceStatusNote && <p>{data.sourceStatusNote}</p>}
       <div className="benchmark-table-wrap" role="region" aria-label="Qualidade e revisão" tabIndex={0}><table><caption>Indicadores do PDF · V = VadeChat, A = adversário</caption><thead><tr><th>Modo</th><th>Contradições essenciais V / A</th><th>Abstenções V / A</th><th>Revisões</th><th>Contestações / decisões pendentes no PDF</th></tr></thead><tbody>{data.modes.map(mode => <tr key={mode.key}><th scope="row">{mode.label}</th><td>{mode.contradictionsVc} / {mode.contradictionsOpponent}</td><td>{mode.abstentionsVc} / {mode.abstentionsOpponent}</td><td>{mode.reviewsCompleted}/{mode.reviewsTotal}<small>{mode.pendingReviews} pendentes</small>{mode.correctedBouts !== undefined && <small>{mode.correctedBouts} {mode.correctedBouts === 1 ? 'embate corrigido' : 'embates corrigidos'}</small>}</td><td>{mode.contests} / {mode.pendingDecisions}</td></tr>)}</tbody></table></div>
       <dl className="executive-roles">{data.roles.map(role => <div key={role.role}><dt>{role.role}</dt><dd><strong>{role.model || 'Modelo interno não informado'}</strong><br/>{role.platform}{role.note && <p>{role.note}</p>}</dd></div>)}</dl>

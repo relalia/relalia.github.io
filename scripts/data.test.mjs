@@ -165,6 +165,21 @@ test('executive reports reject wrong totals, reordered criteria and broken sourc
   report.executive.source.conclusionsPage=report.executive.source.pages;
   assert.throws(()=>validateData(next),/Expected three benchmark sources/);
 });
+test('final benchmark scores require a valid count of corrected bouts for each mode',()=>{
+  const next=structuredClone(data);
+  const {executive}=next.reports.find(report=>report.executive?.scoreBasis==='final');
+  const [mode]=executive.modes;
+  const original=mode.correctedBouts;
+  for (const invalid of [undefined, null, -1, 1.5, mode.n+1]) {
+    mode.correctedBouts=invalid;
+    assert.throws(()=>validateData(next),/Invalid corrected bout count/);
+  }
+  mode.correctedBouts=original;
+  delete executive.scoreBasis;
+  assert.throws(()=>validateData(next),/Invalid corrected bout count/);
+  executive.scoreBasis='unknown';
+  assert.throws(()=>validateData(next),/Invalid benchmark score basis/);
+});
 test('original Atlas images and description-only EV-27 preserved',()=>{
   const atlas=data.evidence.filter(e=>e.reportId==='atlas');assert.equal(atlas.filter(e=>e.kind==='image').length,43);assert.equal(atlas.find(e=>e.id==='EV-27').path,null);
   assert.equal(data.reports.find(r=>r.id==='today').findings.length,4);

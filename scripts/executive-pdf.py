@@ -55,11 +55,13 @@ def executive_story(data, p):
     for role in data['roles']:
         story.append(p(f"{role['platform']} · {role['model'] or 'modelo interno não informado'}. {role.get('note','')}", role['role'], style='Caption'))
     for mode in data['modes']:
-        story.append(p(f"Revisões {mode['reviewsCompleted']}/{mode['reviewsTotal']} ({mode['pendingReviews']} pendentes); contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}. Contradições essenciais VC/adversário: {mode['contradictionsVc']}/{mode['contradictionsOpponent']}; abstenções: {mode['abstentionsVc']}/{mode['abstentionsOpponent']}. Julgamentos pendentes/inconclusivos/desatualizados: {mode['pendingJudgments']}/{mode['inconclusive']}/{mode['outdated']}.", mode['label']+' · registro do PDF', style='Caption'))
-        if 'correctedBouts' in mode:
+        review = f"Revisões {mode['reviewsCompleted']}/{mode['reviewsTotal']} ({mode['pendingReviews']} pendentes); contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}."
+        if final_scores:
             corrected = mode['correctedBouts']
-            story.append(p(f"{corrected} {'embate corrigido' if corrected == 1 else 'embates corrigidos'}.", style='Caption'))
-    story += [p('A conformidade segue a classificação do protocolo. As notas finais incluem as correções validadas.' if final_scores else 'Revisões não substituem as notas originais. Vencer em pontos não equivale à classificação Conforme. Ausência de sinalização não comprova ausência de erros.', style='Caption'),
+            review += f" {corrected} {'embate corrigido' if corrected == 1 else 'embates corrigidos'}."
+        quality = f"Contradições essenciais VC/adversário: {mode['contradictionsVc']}/{mode['contradictionsOpponent']}; abstenções: {mode['abstentionsVc']}/{mode['abstentionsOpponent']}. Julgamentos pendentes/inconclusivos/desatualizados: {mode['pendingJudgments']}/{mode['inconclusive']}/{mode['outdated']}."
+        story.append(p(f"{review} {quality}", mode['label']+' · registro do PDF', style='Caption'))
+    story += [p('As notas finais incluem as correções validadas. A classificação de conformidade tem critérios próprios no protocolo.' if final_scores else 'Revisões não substituem as notas originais. Vencer em pontos não equivale à classificação Conforme. Ausência de sinalização não comprova ausência de erros.', style='Caption'),
         p('Operação e consumo', style='FindingTitle'),
         table([['Papel', 'Tentativas / falhas ou incertas', 'Tokens totais', 'US$ provedor', 'Durações somadas']]+[
             [r['role'],f"{r['attempts']} / {r['failedOrUncertain']}",f"{r['tokensTotal']:,}".replace(',','.'),number(r['providerCostUsd'],6),number(r['seconds'],1)+' s'] for r in data['operations']['rows']], [80,125,90,105,103]),

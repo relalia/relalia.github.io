@@ -6947,7 +6947,7 @@
           }
         ],
         "precisionNote": "Médias finais com duas casas conforme a p. 4. Médias por critério com uma casa, conforme a p. 2.",
-        "caveat": "As médias usam os mesmos dez embates comparáveis, cinco por modo. Cada modo tem sua própria série de notas do adversário.",
+        "caveat": "Cada comparação usa cinco embates com notas finais dos dois participantes. A média do Grok é calculada separadamente para cada modo.",
         "limitations": [
           "A comparação se limita às cinco perguntas desta rodada. A avaliação jurídica depende das respostas, referências e pareceres individuais.",
           "As médias usam embates concluídos pela revisão ou por decisão registrada. As identidades dos modelos internos do VadeChat estão em branco na fonte.",

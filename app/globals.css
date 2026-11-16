@@ -240,3 +240,12 @@
 @media print{.executive-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.executive-card,.executive-insights article{break-inside:avoid}.executive-results table{min-width:0}.executive-detail{break-inside:avoid}}
 .executive-results th small{display:block;font-size:11px;margin-top:4px;font-weight:400}
 .executive-criterion-bars .executive-track{height:5px}
+.executive-results .executive-criteria-table { min-width: 0; table-layout: fixed; }
+.executive-criteria-table thead th:first-child { width: 42%; }
+.executive-criteria-table th, .executive-criteria-table td { overflow-wrap: anywhere; }
+@media screen and (max-width:1000px) {
+  .executive-criteria-table th, .executive-criteria-table td { padding: 8px 6px; }
+}
+@media print {
+  .executive-results .executive-track { print-color-adjust: exact; }
+}

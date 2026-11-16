@@ -23,7 +23,8 @@ const browser=await chromium.launch({channel:'chrome',headless:true});
 const password=randomBytes(24).toString('base64'),salt=randomBytes(16),config={algorithm:'PBKDF2',hash:'SHA-256',iterations:600000,length:256,salt:salt.toString('base64'),verifier:pbkdf2Sync(password,salt,600000,32,'sha256').toString('base64'),version:randomUUID()};
 const errors=[];
 try{
- for(const width of [320,390,768,1440]){
+ const widths=r.executive.scoreBasis==='final'?[320,390,768,801,1440]:[320,390,768,1440];
+ for(const width of widths){
   const mobile=width<=800;
   const ctx=await browser.newContext({viewport:{width,height:1000},hasTouch:mobile,isMobile:mobile,reducedMotion:'reduce',timezoneId:'Pacific/Kiritimati'});await ctx.route('**/access-config.json?*',route=>route.fulfill({json:config}));
   const page=await ctx.newPage();page.on('pageerror',e=>errors.push(e.message));
@@ -43,8 +44,41 @@ try{
   }
   const tables=page.locator('.executive-results .benchmark-table-wrap');
   for(let i=0;i<2;i++){await tables.nth(i).focus();assert(await tables.nth(i).evaluate(e=>e===document.activeElement));}
+  const criteria=page.getByRole('region',{name:'Médias por critério',exact:true});
+  if(r.executive.scoreBasis==='final'){
+   await tables.first().getByText('Médias e resultados finais',{exact:false}).waitFor();
+   assert(await criteria.evaluate(e=>e.scrollWidth<=e.clientWidth+1),`Criterion table clips at ${width}px`);
+   for(const [modeIndex,mode] of r.executive.modes.entries()){
+    for(const [criterionIndex,value] of mode.criteria.entries()){
+     const cell=criteria.getByRole('row').nth(criterionIndex+1).getByRole('cell').nth(modeIndex);
+     const score=number=>number.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1});
+     const baseSize=value.n===mode.n?'':`n = ${value.n}`;
+     assert.equal((await cell.textContent()).trim(),`${score(value.vc)} / ${score(value.opponent)}${baseSize}`);
+     const bars=await cell.locator('.executive-track').evaluateAll(tracks=>tracks.map(track=>({
+      trackWidth:track.getBoundingClientRect().width,
+      barWidth:track.firstElementChild.getBoundingClientRect().width,
+     })));
+     assert.equal(bars.length,2);
+     for(const [i,points] of [value.vc,value.opponent].entries()){
+      const {trackWidth,barWidth}=bars[i];
+      assert(trackWidth>0 && Math.abs(barWidth-trackWidth*points/value.max)<0.5);
+     }
+    }
+   }
+   await page.emulateMedia({media:'print'});
+   assert.equal(await criteria.locator('.executive-track').first().evaluate(e=>getComputedStyle(e).printColorAdjust),'exact');
+   await page.emulateMedia({media:'screen'});
+  }else{
+   assert.equal(await criteria.locator('.executive-criterion-bars').count(),0);
+  }
   for(const detail of await page.locator('.executive-detail').all()){
    assert.equal(await detail.evaluate(e=>e.open),false);await detail.locator('summary').focus();await page.keyboard.press('Enter');assert(await detail.evaluate(e=>e.open));
+   if(r.executive.scoreBasis==='final' && await detail.getByRole('region',{name:'Qualidade e revisão',exact:true}).count()){
+    for(const [i,mode] of r.executive.modes.entries()){
+     const corrections=`${mode.correctedBouts} ${mode.correctedBouts===1?'embate corrigido':'embates corrigidos'}`;
+     await detail.getByRole('row').nth(i+1).getByText(corrections,{exact:true}).waitFor();
+    }
+   }
    await detail.locator('summary').focus();await page.keyboard.press('Enter');assert.equal(await detail.evaluate(e=>e.open),false);
   }
   await page.locator('.executive-results').screenshot({path:output+'/results-'+width+'.png'});
