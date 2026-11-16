@@ -6,6 +6,7 @@ const signedScore = (value: number) => value.toLocaleString('pt-BR', { minimumFr
 const count = (value: number) => value.toLocaleString('pt-BR');
 
 export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBenchmark }) {
+  const finalScores = data.scoreBasis === 'final';
   return <section className="benchmark executive-results" id="benchmark-resultados" aria-labelledby="executive-heading">
     <div className="section-head"><h3 id="executive-heading">Resultados do benchmark</h3><p>Rodada datada de {formatDate(data.runDate)} na fonte · {data.questions} perguntas · {data.modes.reduce((n, mode) => n + mode.n, 0)} embates comparáveis · escala 0–{data.scaleMax}</p></div>
     <p className="executive-source-title">{data.title}</p>
@@ -24,7 +25,7 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
     </div>
     <p className="executive-caption">{data.precisionNote}</p>
     <div className="benchmark-table-wrap" role="region" aria-label="Médias e resultados exatos" tabIndex={0}><table>
-      <caption>Médias e resultados originais · adversário separado contra cada modo</caption>
+      <caption>{finalScores ? 'Médias e resultados finais' : 'Médias e resultados originais'} · adversário separado contra cada modo</caption>
       <thead><tr><th scope="col">Modo</th><th scope="col">VadeChat</th><th scope="col">{data.opponent}</th><th scope="col">Diferença</th><th scope="col">Vitórias / empates / derrotas</th><th scope="col">Comparáveis</th></tr></thead>
       <tbody>{data.modes.map(mode => <tr key={mode.key}><th scope="row">{mode.label}</th><td>{score(mode.vcMean)}</td><td>{score(mode.opponentMean)}</td><td>{signedScore(mode.vcMean - mode.opponentMean)}</td><td>{mode.wins} / {mode.ties} / {mode.losses}</td><td>{mode.n}/{mode.coverageTotal}</td></tr>)}</tbody>
     </table></div>
@@ -39,15 +40,21 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
         <caption>Médias por critério · VadeChat / adversário</caption><thead><tr><th scope="col">Critério</th>{data.modes.map(mode => <th scope="col" key={mode.key}>{mode.label}<small>{mode.n} embates comparáveis</small></th>)}</tr></thead>
         <tbody>{data.modes[0].criteria.map((criterion, index) => <tr key={criterion.code}><th scope="row">{criterion.code} · {criterion.label}<small>Máximo: {criterion.max}</small></th>{data.modes.map(mode => {
           const values = mode.criteria[index];
-          return <td key={mode.key}>{score(values.vc, 1)} / {score(values.opponent, 1)}{values.n !== mode.n && <small>n = {values.n}</small>}</td>;
+          return <td key={mode.key}>
+            {score(values.vc, 1)} / {score(values.opponent, 1)}{values.n !== mode.n && <small>n = {values.n}</small>}
+            {finalScores && <div className="executive-criterion-bars" aria-hidden="true">
+              <div className="executive-track"><span className="executive-vc" style={{ width: `${values.vc / values.max * 100}%` }}/></div>
+              <div className="executive-track"><span className="executive-opponent" style={{ width: `${values.opponent / values.max * 100}%` }}/></div>
+            </div>}
+          </td>;
         })}</tr>)}</tbody>
       </table></div>
     </section>
 
     <details className="executive-detail"><summary>Qualidade, revisão e papéis da avaliação</summary>
-      <p>Vencer por pontos não significa classificação Conforme. As revisões são contabilizadas separadamente e não substituem as notas originais.</p>
+      <p>{finalScores ? 'A conformidade segue a classificação do protocolo. As notas finais incluem as correções validadas.' : 'Vencer por pontos não significa classificação Conforme. As revisões são contabilizadas separadamente e não substituem as notas originais.'}</p>
       {data.sourceStatusNote && <p>{data.sourceStatusNote}</p>}
-      <div className="benchmark-table-wrap" role="region" aria-label="Qualidade e revisão" tabIndex={0}><table><caption>Indicadores do PDF · V = VadeChat, A = adversário</caption><thead><tr><th>Modo</th><th>Contradições essenciais V / A</th><th>Abstenções V / A</th><th>Revisões</th><th>Contestações / decisões pendentes no PDF</th></tr></thead><tbody>{data.modes.map(mode => <tr key={mode.key}><th scope="row">{mode.label}</th><td>{mode.contradictionsVc} / {mode.contradictionsOpponent}</td><td>{mode.abstentionsVc} / {mode.abstentionsOpponent}</td><td>{mode.reviewsCompleted}/{mode.reviewsTotal}<small>{mode.pendingReviews} pendentes</small></td><td>{mode.contests} / {mode.pendingDecisions}</td></tr>)}</tbody></table></div>
+      <div className="benchmark-table-wrap" role="region" aria-label="Qualidade e revisão" tabIndex={0}><table><caption>Indicadores do PDF · V = VadeChat, A = adversário</caption><thead><tr><th>Modo</th><th>Contradições essenciais V / A</th><th>Abstenções V / A</th><th>Revisões</th><th>Contestações / decisões pendentes no PDF</th></tr></thead><tbody>{data.modes.map(mode => <tr key={mode.key}><th scope="row">{mode.label}</th><td>{mode.contradictionsVc} / {mode.contradictionsOpponent}</td><td>{mode.abstentionsVc} / {mode.abstentionsOpponent}</td><td>{mode.reviewsCompleted}/{mode.reviewsTotal}<small>{mode.pendingReviews} pendentes</small>{mode.correctedBouts !== undefined && <small>{mode.correctedBouts} {mode.correctedBouts === 1 ? 'embate corrigido' : 'embates corrigidos'}</small>}</td><td>{mode.contests} / {mode.pendingDecisions}</td></tr>)}</tbody></table></div>
       <dl className="executive-roles">{data.roles.map(role => <div key={role.role}><dt>{role.role}</dt><dd><strong>{role.model || 'Modelo interno não informado'}</strong><br/>{role.platform}{role.note && <p>{role.note}</p>}</dd></div>)}</dl>
     </details>
 

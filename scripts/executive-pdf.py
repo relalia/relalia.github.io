@@ -7,6 +7,8 @@ GREEN = colors.HexColor('#17645b')
 BLUE = colors.HexColor('#275f9d')
 
 def executive_story(data, p):
+    final_scores = data.get('scoreBasis') == 'final'
+    score_description = 'Médias e resultados finais com correções validadas.' if final_scores else 'Médias e resultados originais do juiz.'
     number = lambda value, digits=2: f'{value:.{digits}f}'.replace('.', ',')
     def table(rows, widths):
         t = Table([[p(cell, style='Caption') for cell in row] for row in rows], colWidths=widths, repeatRows=1, hAlign='LEFT')
@@ -23,7 +25,7 @@ def executive_story(data, p):
         values = f"{number(criterion['vc'],1)} / {number(criterion['opponent'],1)}"
         return values if criterion['n'] == mode['n'] else f"{values} · n = {criterion['n']}"
     story = ([p(data['pendingNotice'])] if data.get('pendingNotice') else []) + [p(f"Resultados do benchmark · fonte de {data['runDate'][8:10]}/{data['runDate'][5:7]}/{data['runDate'][:4]}", style='FindingTitle'),
-             p(data['title']), p(f"{data['questions']} perguntas · {sum(m['n'] for m in data['modes'])} embates comparáveis · escala 0-10. Médias e resultados originais do juiz.", style='Caption')]
+             p(data['title']), p(f"{data['questions']} perguntas · {sum(m['n'] for m in data['modes'])} embates comparáveis · escala 0-10. {score_description}", style='Caption')]
     if data.get('completionNote'):
         story.insert(0, p(data['completionNote'], style='Caption'))
     chart = Drawing(500, 151)
@@ -54,7 +56,10 @@ def executive_story(data, p):
         story.append(p(f"{role['platform']} · {role['model'] or 'modelo interno não informado'}. {role.get('note','')}", role['role'], style='Caption'))
     for mode in data['modes']:
         story.append(p(f"Revisões {mode['reviewsCompleted']}/{mode['reviewsTotal']} ({mode['pendingReviews']} pendentes); contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}. Contradições essenciais VC/adversário: {mode['contradictionsVc']}/{mode['contradictionsOpponent']}; abstenções: {mode['abstentionsVc']}/{mode['abstentionsOpponent']}. Julgamentos pendentes/inconclusivos/desatualizados: {mode['pendingJudgments']}/{mode['inconclusive']}/{mode['outdated']}.", mode['label']+' · registro do PDF', style='Caption'))
-    story += [p('Revisões não substituem as notas originais. Vencer em pontos não equivale à classificação Conforme. Ausência de sinalização não comprova ausência de erros.', style='Caption'),
+        if 'correctedBouts' in mode:
+            corrected = mode['correctedBouts']
+            story.append(p(f"{corrected} {'embate corrigido' if corrected == 1 else 'embates corrigidos'}.", style='Caption'))
+    story += [p('A conformidade segue a classificação do protocolo. As notas finais incluem as correções validadas.' if final_scores else 'Revisões não substituem as notas originais. Vencer em pontos não equivale à classificação Conforme. Ausência de sinalização não comprova ausência de erros.', style='Caption'),
         p('Operação e consumo', style='FindingTitle'),
         table([['Papel', 'Tentativas / falhas ou incertas', 'Tokens totais', 'US$ provedor', 'Durações somadas']]+[
             [r['role'],f"{r['attempts']} / {r['failedOrUncertain']}",f"{r['tokensTotal']:,}".replace(',','.'),number(r['providerCostUsd'],6),number(r['seconds'],1)+' s'] for r in data['operations']['rows']], [80,125,90,105,103]),

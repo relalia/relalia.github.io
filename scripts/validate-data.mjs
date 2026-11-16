@@ -22,6 +22,7 @@ function validateExecutive(report) {
     assert([mode.wins,mode.ties,mode.losses,mode.n,mode.coverageTotal].every(natural) &&
       mode.wins+mode.ties+mode.losses===mode.n && mode.n>0 && mode.n<=mode.coverageTotal && mode.coverageTotal<=questions,`Invalid benchmark coverage or outcomes ${label}`);
     assert(score(mode.vcMean,scaleMax) && score(mode.opponentMean,scaleMax),`Invalid benchmark mean ${label}`);
+    if (mode.correctedBouts !== undefined) assert(report.executive.scoreBasis === 'final' && natural(mode.correctedBouts) && mode.correctedBouts <= mode.n,`Invalid corrected bout count ${label}`);
     assert([mode.reviewsCompleted,mode.reviewsTotal,mode.pendingReviews,mode.contests,mode.pendingDecisions].every(natural) &&
       mode.reviewsCompleted+mode.pendingReviews===mode.reviewsTotal && mode.contests<=mode.reviewsCompleted && mode.pendingDecisions<=mode.contests,`Invalid benchmark review counts ${label}`);
     assert(Array.isArray(mode.criteria) && mode.criteria.length>0 && mode.criteria.every(criterion=>

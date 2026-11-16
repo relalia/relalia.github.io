@@ -354,3 +354,4 @@ e094145ab65071a9ae3e55d38d147ddea8245d3566042c5848da9796deb57922  reports/vadech
 c48825be0cf80b38bb33bda5caf7f9732e6473d5c7474af0fc407590e3636709  evidence/vadechat-latencia-2026-11-10/seguranca-da-informacao.mp4
 afd7d8e4a8244cfa832857d0b39da3a234cf186b39bd5c0fbb2ad4abed80b6fb  reports/vadechat-latencia-2026-11-11-resultados.pdf
 818c7d7115918fda8b7d6798d5a3a1b0561b9928cdb514d9a21f342d7221fcf1  evidence/estrutura-2026-11-12/comparacao-chat.mp4
+978a14951c5b699f39d76d5c1f36098eeeebc05eba8f27126e9aa53af8c24e30  reports/benchmark-grok-4-7-2026-11-16-results.pdf

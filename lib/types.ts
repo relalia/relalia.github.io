@@ -120,6 +120,7 @@ export interface ExecutiveMode {
   pendingReviews: number;
   contests: number;
   pendingDecisions: number;
+  correctedBouts?: number;
   criteria: ExecutiveCriterion[];
 }
 
@@ -127,6 +128,7 @@ export interface ExecutiveBenchmark {
   completionNote?: string;
   sourceStatusNote?: string;
   pendingNotice?: string;
+  scoreBasis?: 'final';
   title: string;
   runDate: string;
   questions: number;

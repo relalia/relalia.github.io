@@ -239,3 +239,4 @@
 @media(max-width:620px){.executive-cards,.executive-roles{grid-template-columns:1fr}.executive-card{padding:16px}}
 @media print{.executive-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.executive-card,.executive-insights article{break-inside:avoid}.executive-results table{min-width:0}.executive-detail{break-inside:avoid}}
 .executive-results th small{display:block;font-size:11px;margin-top:4px;font-weight:400}
+.executive-criterion-bars .executive-track{height:5px}

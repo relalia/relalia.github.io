@@ -27,7 +27,7 @@ def verify(report):
             assert f"{role['role']} {role['platform']} {role['model']}" in pages[0]
         else:
             assert role['platform'] == 'VadeChat'
-            assert 'Ágil VadeChat Pleno VadeChat Resultados' in pages[0]
+            assert re.search(r'Ágil VadeChat Pleno VadeChat (Resultados|Notas finais por modo)', pages[0])
     for mode in data['modes']:
         match = re.search(rf"{mode['label']}: média ([\d,]+) contra ([\d,]+) em (\d+) embates; (\d+) vitórias?, (\d+) empates? e (\d+) derrotas?", conclusions)
         assert match, mode['label']
@@ -37,6 +37,11 @@ def verify(report):
         assert mode['wins']+mode['ties']+mode['losses'] == mode['n'] <= mode['coverageTotal'] == data['questions']
         coverage = f"{mode['n']}/{mode['coverageTotal']} ({mode['n']/mode['coverageTotal']:.0%})"
         assert f"{mode['label']} {fmt(mode['vcMean'])} / {fmt(mode['opponentMean'])} {mode['wins']} / {mode['ties']} / {mode['losses']} {coverage} {mode['pendingJudgments']} / {mode['inconclusive']} / {mode['outdated']}" in pages[0]
+        if 'correctedBouts' in mode:
+            count = mode['correctedBouts']
+            corrected = f"{count} {'embate corrigido' if count == 1 else 'embates corrigidos'}"
+            assert f"{mode['label']} · {mode['n']}/{mode['coverageTotal']} embates com nota final · {corrected}" in pages[0]
+            assert f"{mode['label']} · {corrected} · {mode['pendingDecisions']} decisões pendentes" in quality_page
         for criterion in mode['criteria']:
             expected = f"{mode['label']} · {criterion['code']} /{criterion['max']} n = {criterion['n']} VadeChat {fmt(criterion['vc'])} / {criterion['max']} Adversário {fmt(criterion['opponent'])} / {criterion['max']}"
             assert expected in quality_page, expected
@@ -63,6 +68,8 @@ def verify(report):
     assert f"Execução {data['source']['executionId']}" in conclusions
     assert re.search(rf"\brevisão {data['source']['revision']}\b", conclusions)
     assert data['runDate'] in pages[0]
+    if data.get('scoreBasis') == 'final':
+        assert 'As notas finais incluem as correções validadas.' in conclusions
     if data.get('pendingNotice'):
         assert 'Rodada parcial' in pages[0]
         decisions=sum(m['pendingDecisions'] for m in data['modes'])
