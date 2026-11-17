@@ -1,4 +1,5 @@
 """Results-first PDF section, using the same catalog aggregates as the page."""
+from decimal import Decimal, ROUND_HALF_UP
 from reportlab.lib import colors
 from reportlab.platypus import Table, TableStyle, PageBreak, Spacer, KeepTogether
 from reportlab.graphics.shapes import Drawing, Rect, String
@@ -9,7 +10,9 @@ BLUE = colors.HexColor('#275f9d')
 def executive_story(data, p):
     final_scores = data.get('scoreBasis') == 'final'
     score_description = 'Médias e resultados finais com correções validadas.' if final_scores else 'Médias e resultados originais do juiz.'
-    number = lambda value, digits=2: f'{value:.{digits}f}'.replace('.', ',')
+    def number(value, digits=2):
+        rounded = Decimal(str(value)).quantize(Decimal(1).scaleb(-digits), rounding=ROUND_HALF_UP)
+        return format(rounded, 'f').replace('.', ',')
     def operation_value(value, format_value):
         return 'Não informado' if value is None else format_value(value)
     def table(rows, widths):

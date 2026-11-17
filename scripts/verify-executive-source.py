@@ -57,10 +57,14 @@ def verify(report):
         quality = f"{mode['label']} {mode['contradictionsVc']} / {mode['contradictionsOpponent']} {mode['abstentionsVc']} / {mode['abstentionsOpponent']} {mode['reviewsCompleted']}/{mode['reviewsTotal']}; {mode['pendingReviews']} pendentes {mode['contests']} / {mode['pendingDecisions']}"
         assert quality in quality_page, quality
     operations = conclusions.split('Subtotais',1)[0]
-    operation_rows = dict(re.findall(r'\b(Adversário|Juiz|Revisor) (\d+ tentativas; .*? \d+ sem duração)', operations))
-    for row in data['operations']['rows']:
-        part = operation_rows[row['role']]
-        assert f"{row['attempts']} tentativas; {row['failedOrUncertain']} falhas/incertas" in part
+    parts = re.split(r'\b(Adversário|Juiz|Revisor) (?=\d+ tentativas?;)', operations)
+    source_roles = parts[1::2]
+    rows = data['operations']['rows']
+    assert source_roles == [row['role'] for row in rows], 'Operation roles and order differ from the source'
+    assert len(set(source_roles)) == len(source_roles) > 0, 'Missing or duplicate operation roles in the source'
+    for row, part in zip(rows, parts[2::2], strict=True):
+        counts = re.match(r'(\d+) tentativas?; (\d+) falhas/incertas ', part)
+        assert counts and tuple(map(int, counts.groups())) == (row['attempts'], row['failedOrUncertain']), row['role']
         tokens = [row[field] for field in ('tokensIn','tokensOut','tokensTotal')]
         expected_tokens = ' / '.join('desconhecido' if token is None else f'{token:,}'.replace(',','.') for token in tokens)
         assert f'falhas/incertas {expected_tokens} ' in part
@@ -68,7 +72,7 @@ def verify(report):
             assert tokens[0]+tokens[1] == tokens[2]
         cost = 'desconhecido' if row['providerCostUsd'] is None else f"US$ {fmt(row['providerCostUsd'],6)}"
         assert re.search(rf'dados incompletos {re.escape(cost)} \d+ custos? desconhecidos?', part)
-        duration = re.search(r'(desconhecida|[\d.,]+ s) \d+ sem duração$', part)
+        duration = re.search(r'(desconhecida|[\d.,]+ s) \d+ sem duração$', part.strip())
         assert duration
         assert (None if duration[1] == 'desconhecida' else num(duration[1][:-2])) == row['seconds']
     for row in data['operations']['generation']:

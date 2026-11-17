@@ -11,7 +11,7 @@ const natural = value => Number.isSafeInteger(value) && value >= 0;
 const score = (value, max) => Number.isFinite(value) && value >= 0 && value <= max;
 
 function validateExecutive(report) {
-  const {scaleMax, questions, modes, source, scoreBasis} = report.executive;
+  const {scaleMax, questions, modes, source, scoreBasis, operations} = report.executive;
   assert(scaleMax===10 && natural(questions) && questions>0,`Invalid benchmark scale or question count ${report.id}`);
   assert(scoreBasis===undefined || scoreBasis==='final',`Invalid benchmark score basis ${report.id}`);
   assert(Array.isArray(modes) && modes.length===2 && ['agil','pleno'].every(key=>modes.some(mode=>mode.key===key)),`Invalid benchmark modes ${report.id}`);
@@ -35,6 +35,23 @@ function validateExecutive(report) {
   }
   const criteriaSignature=mode=>mode.criteria.map(({code,label,max})=>JSON.stringify([code,label,max])).join('|');
   assert(criteriaSignature(modes[0])===criteriaSignature(modes[1]),`Mismatched benchmark criteria ${report.id}`);
+
+  assert(Array.isArray(operations?.rows) && operations.rows.length>0,`Missing benchmark operations ${report.id}`);
+  const roles = new Set();
+  for (const row of operations.rows) {
+    assert(row && text(row.role) && !roles.has(row.role),`Invalid or duplicate benchmark operation role ${report.id}`);
+    roles.add(row.role);
+    const {attempts, failedOrUncertain, tokensIn, tokensOut, tokensTotal, providerCostUsd, seconds} = row;
+    const label = `${report.id}/${row.role}`;
+    assert(natural(attempts) && natural(failedOrUncertain) && failedOrUncertain<=attempts,`Invalid benchmark operation counts ${label}`);
+    const tokens = [tokensIn,tokensOut,tokensTotal];
+    assert(tokens.every(value=>value===null || natural(value)),`Invalid benchmark operation tokens ${label}`);
+    if (tokens.every(value=>value!==null)) {
+      assert(tokensIn+tokensOut===tokensTotal,`Inconsistent benchmark operation token total ${label}`);
+    }
+    assert([providerCostUsd,seconds].every(value=>value===null || (Number.isFinite(value) && value>=0)),
+      `Invalid benchmark operation cost or duration ${label}`);
+  }
 }
 
 function validateLatency(report) {

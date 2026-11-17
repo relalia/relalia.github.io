@@ -180,6 +180,28 @@ test('final benchmark scores require a valid count of corrected bouts for each m
   executive.scoreBasis='unknown';
   assert.throws(()=>validateData(next),/Invalid benchmark score basis/);
 });
+test('benchmark operations distinguish unknown values from missing fields and zero counts',()=>{
+  const next=structuredClone(data);
+  const {rows}=next.reports.find(report=>report.id==='benchmark-sabia-5-2026-11-17').executive.operations;
+  const [opponent,judge]=rows;
+  assert.doesNotThrow(()=>validateData(next));
+  delete opponent.seconds;
+  assert.throws(()=>validateData(next),/Invalid benchmark operation cost or duration/);
+  opponent.seconds=0;
+  assert.doesNotThrow(()=>validateData(next));
+  opponent.seconds=null;
+  opponent.tokensOut='0';
+  assert.throws(()=>validateData(next),/Invalid benchmark operation tokens/);
+  opponent.tokensOut=null;
+  opponent.failedOrUncertain=1;
+  assert.throws(()=>validateData(next),/Invalid benchmark operation counts/);
+  opponent.failedOrUncertain=0;
+  judge.tokensTotal++;
+  assert.throws(()=>validateData(next),/Inconsistent benchmark operation token total/);
+  judge.tokensTotal--;
+  rows.push({...opponent});
+  assert.throws(()=>validateData(next),/Invalid or duplicate benchmark operation role/);
+});
 test('original Atlas images and description-only EV-27 preserved',()=>{
   const atlas=data.evidence.filter(e=>e.reportId==='atlas');assert.equal(atlas.filter(e=>e.kind==='image').length,43);assert.equal(atlas.find(e=>e.id==='EV-27').path,null);
   assert.equal(data.reports.find(r=>r.id==='today').findings.length,4);

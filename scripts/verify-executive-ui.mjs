@@ -79,21 +79,25 @@ try{
      await detail.getByRole('row').nth(i+1).getByText(corrections,{exact:true}).waitFor();
     }
    }
-   const operations=detail.getByRole('region',{name:'Consumo por papel',exact:true});
-   if(await operations.count()){
+   if(await detail.getByText('Operação e consumo disponíveis',{exact:true}).count()){
+    const operations=detail.getByRole('region',{name:'Consumo por papel',exact:true});
+    assert.equal(await operations.getByRole('row').count(),r.executive.operations.rows.length+1);
     const format=(value,digits,suffix='')=>value===null?'Não informado':value.toLocaleString('pt-BR',{
      minimumFractionDigits:digits,maximumFractionDigits:digits,
     })+suffix;
     for(const [i,row] of r.executive.operations.rows.entries()){
      const tokens=[row.tokensIn,row.tokensOut,row.tokensTotal];
      const expectedTokens=tokens.every(value=>value===null)?'Não informado':tokens.map(value=>format(value,0)).join(' / ');
-     const cells=operations.getByRole('row').nth(i+1).getByRole('cell');
+     const renderedRow=operations.getByRole('row').nth(i+1);
+     assert.equal(await renderedRow.getByRole('rowheader').innerText(),row.role);
+     const cells=renderedRow.getByRole('cell');
      assert.deepEqual(await cells.allTextContents(),[`${row.attempts} / ${row.failedOrUncertain}`,
       expectedTokens,format(row.providerCostUsd,6),format(row.seconds,1,' s')]);
     }
    }
    await detail.locator('summary').focus();await page.keyboard.press('Enter');assert.equal(await detail.evaluate(e=>e.open),false);
   }
+  await page.getByText('Operação e consumo disponíveis',{exact:true}).waitFor();
   await page.locator('.executive-results').screenshot({path:output+'/results-'+width+'.png'});
   if(ev.length){
   await page.evaluate(()=>history.replaceState(null,'','#%E0%A4%A'));
