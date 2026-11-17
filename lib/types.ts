@@ -142,7 +142,7 @@ export interface ExecutiveBenchmark {
   limitations: string[];
   source: { path: string; sha256: string; pages: number; qualityPage?: number; conclusionsPage?: number; series: string; runId: string; executionId: string; revision: number };
   operations: {
-    rows: { role: string; attempts: number; failedOrUncertain: number; tokensIn: number; tokensOut: number; tokensTotal: number; providerCostUsd: number; seconds: number }[];
+    rows: { role: string; attempts: number; failedOrUncertain: number; tokensIn: number | null; tokensOut: number | null; tokensTotal: number | null; providerCostUsd: number | null; seconds: number | null }[];
     generation: { mode: string; attempts: number; tokensIn: null; tokensOut: null; costUsd: null; seconds: null }[];
     budget: { limitUsd: number; consumedReservedUsd: number; remainingUsd: number };
     note: string;

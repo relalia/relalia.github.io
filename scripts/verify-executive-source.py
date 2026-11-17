@@ -56,15 +56,21 @@ def verify(report):
             assert 0 <= criterion['vc'] <= criterion['max'] and 0 <= criterion['opponent'] <= criterion['max']
         quality = f"{mode['label']} {mode['contradictionsVc']} / {mode['contradictionsOpponent']} {mode['abstentionsVc']} / {mode['abstentionsOpponent']} {mode['reviewsCompleted']}/{mode['reviewsTotal']}; {mode['pendingReviews']} pendentes {mode['contests']} / {mode['pendingDecisions']}"
         assert quality in quality_page, quality
+    operations = conclusions.split('Subtotais',1)[0]
+    operation_rows = dict(re.findall(r'\b(Adversário|Juiz|Revisor) (\d+ tentativas; .*? \d+ sem duração)', operations))
     for row in data['operations']['rows']:
-        part = conclusions.split(row['role']+' ')[1].split('Subtotais')[0]
+        part = operation_rows[row['role']]
         assert f"{row['attempts']} tentativas; {row['failedOrUncertain']} falhas/incertas" in part
-        token = lambda value: f'{value:,}'.replace(',','.')
-        assert f"{token(row['tokensIn'])} / {token(row['tokensOut'])} / {token(row['tokensTotal'])}" in part
-        assert row['tokensIn']+row['tokensOut'] == row['tokensTotal']
-        assert f"US$ {fmt(row['providerCostUsd'],6)}" in part
-        duration = re.search(r'([\d.,]+) s\b', part)
-        assert duration and num(duration[1]) == row['seconds']
+        tokens = [row[field] for field in ('tokensIn','tokensOut','tokensTotal')]
+        expected_tokens = ' / '.join('desconhecido' if token is None else f'{token:,}'.replace(',','.') for token in tokens)
+        assert f'falhas/incertas {expected_tokens} ' in part
+        if all(token is not None for token in tokens):
+            assert tokens[0]+tokens[1] == tokens[2]
+        cost = 'desconhecido' if row['providerCostUsd'] is None else f"US$ {fmt(row['providerCostUsd'],6)}"
+        assert re.search(rf'dados incompletos {re.escape(cost)} \d+ custos? desconhecidos?', part)
+        duration = re.search(r'(desconhecida|[\d.,]+ s) \d+ sem duração$', part)
+        assert duration
+        assert (None if duration[1] == 'desconhecida' else num(duration[1][:-2])) == row['seconds']
     for row in data['operations']['generation']:
         assert f"{row['mode']}: {row['attempts']} tentativas; tokens entrada/saída desconhecido/desconhecido; duração desconhecida; custo desconhecido" in conclusions
         assert all(row[field] is None for field in ['tokensIn','tokensOut','costUsd','seconds'])

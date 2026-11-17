@@ -10,6 +10,8 @@ def executive_story(data, p):
     final_scores = data.get('scoreBasis') == 'final'
     score_description = 'Médias e resultados finais com correções validadas.' if final_scores else 'Médias e resultados originais do juiz.'
     number = lambda value, digits=2: f'{value:.{digits}f}'.replace('.', ',')
+    def operation_value(value, format_value):
+        return 'Não informado' if value is None else format_value(value)
     def table(rows, widths):
         t = Table([[p(cell, style='Caption') for cell in row] for row in rows], colWidths=widths, repeatRows=1, hAlign='LEFT')
         t.setStyle(TableStyle([
@@ -64,7 +66,10 @@ def executive_story(data, p):
     story += [p('As notas finais incluem as correções validadas. A classificação de conformidade tem critérios próprios no protocolo.' if final_scores else 'Revisões não substituem as notas originais. Vencer em pontos não equivale à classificação Conforme. Ausência de sinalização não comprova ausência de erros.', style='Caption'),
         p('Operação e consumo', style='FindingTitle'),
         table([['Papel', 'Tentativas / falhas ou incertas', 'Tokens totais', 'US$ provedor', 'Durações somadas']]+[
-            [r['role'],f"{r['attempts']} / {r['failedOrUncertain']}",f"{r['tokensTotal']:,}".replace(',','.'),number(r['providerCostUsd'],6),number(r['seconds'],1)+' s'] for r in data['operations']['rows']], [80,125,90,105,103]),
+            [r['role'], f"{r['attempts']} / {r['failedOrUncertain']}",
+             operation_value(r['tokensTotal'], lambda value: f'{value:,}'.replace(',','.')),
+             operation_value(r['providerCostUsd'], lambda value: number(value,6)),
+             operation_value(r['seconds'], lambda value: number(value,1)+' s')] for r in data['operations']['rows']], [80,125,90,105,103]),
         p('Geração Tri7: '+ '; '.join(f"{r['mode']} {r['attempts']} tentativas" for r in data['operations']['generation'])+'. Tokens, custo e duração não informados. Tentativas não representam perguntas avaliadas.',style='Caption'),
         p(data['operations']['note'],style='Caption'),
         p('Fonte preservada: https://relalia.github.io'+data['source']['path'],style='Caption'),

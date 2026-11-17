@@ -355,3 +355,4 @@ c48825be0cf80b38bb33bda5caf7f9732e6473d5c7474af0fc407590e3636709  evidence/vadec
 afd7d8e4a8244cfa832857d0b39da3a234cf186b39bd5c0fbb2ad4abed80b6fb  reports/vadechat-latencia-2026-11-11-resultados.pdf
 818c7d7115918fda8b7d6798d5a3a1b0561b9928cdb514d9a21f342d7221fcf1  evidence/estrutura-2026-11-12/comparacao-chat.mp4
 978a14951c5b699f39d76d5c1f36098eeeebc05eba8f27126e9aa53af8c24e30  reports/benchmark-grok-4-7-2026-11-16-results.pdf
+e14b79b10714df220ce3e3ed0de587fd597e204438c09bfaa58e47708b18d89e  reports/benchmark-sabia-5-2026-11-17-results.pdf

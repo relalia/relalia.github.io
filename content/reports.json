@@ -7023,6 +7023,259 @@
           "note": "Os subtotais referem-se ao plano atual. Cada tentativa compartilhada do adversário é contada uma vez. A duração é a soma das tentativas por papel."
         }
       }
+    },
+    {
+      "id": "benchmark-sabia-5-2026-11-17",
+      "date": "2026-11-17",
+      "title": "Benchmark VadeChat × Sabiá 5",
+      "module": "VadeChat",
+      "status": "Rodada final",
+      "count": "5 perguntas · 10 embates comparáveis",
+      "summary": "O VadeChat Ágil marcou 7,80 ante 6,40 do Sabiá 5, com duas vitórias, um empate e duas derrotas. O Pleno marcou 9,20 ante 7,00, com três vitórias e dois empates.",
+      "highlights": [
+        "Ágil · vantagem de 1,40 ponto na média, com cobertura de 5/5.",
+        "Pleno · vantagem de 2,20 pontos na média, com cobertura de 5/5.",
+        "Dez revisões concluídas, com três embates corrigidos no Ágil e quatro no Pleno."
+      ],
+      "files": [
+        {
+          "label": "Síntese de resultados · complementar ao original",
+          "kind": "pdf",
+          "origin": "generated",
+          "path": "/reports/benchmark-sabia-5-2026-11-17.pdf"
+        },
+        {
+          "label": "Benchmark · PDF executivo original",
+          "kind": "pdf",
+          "origin": "original",
+          "path": "/originals/reports/benchmark-sabia-5-2026-11-17-results.pdf",
+          "originalName": "Relalia-run-2026-11-17-1fcf48e2-3cfa-49dc-936c-0ab017b1691f-results.pdf",
+          "sha256": "e14b79b10714df220ce3e3ed0de587fd597e204438c09bfaa58e47708b18d89e"
+        }
+      ],
+      "findings": [],
+      "executive": {
+        "scoreBasis": "final",
+        "title": "Maritaca / maritaca/sabia-5 · Ágil e Pleno · Rodada 1",
+        "runDate": "2026-11-17",
+        "questions": 5,
+        "scaleMax": 10,
+        "opponent": "Sabiá 5",
+        "roles": [
+          {
+            "role": "Produto avaliado · Ágil e Pleno",
+            "platform": "VadeChat",
+            "model": null
+          },
+          {
+            "role": "Adversário",
+            "platform": "Maritaca",
+            "model": "maritaca/sabia-5"
+          },
+          {
+            "role": "Juiz",
+            "platform": "Anthropic",
+            "model": "anthropic/claude-sonnet-5.5"
+          },
+          {
+            "role": "Revisor",
+            "platform": "OpenAI",
+            "model": "openai/gpt-5.6-sol"
+          }
+        ],
+        "modes": [
+          {
+            "key": "agil",
+            "label": "Ágil",
+            "n": 5,
+            "vcMean": 7.8,
+            "opponentMean": 6.4,
+            "wins": 2,
+            "ties": 1,
+            "losses": 2,
+            "coverageTotal": 5,
+            "pendingJudgments": 0,
+            "inconclusive": 0,
+            "outdated": 0,
+            "contradictionsVc": 0,
+            "contradictionsOpponent": 0,
+            "abstentionsVc": 0,
+            "abstentionsOpponent": 0,
+            "reviewsCompleted": 5,
+            "reviewsTotal": 5,
+            "pendingReviews": 0,
+            "contests": 0,
+            "pendingDecisions": 0,
+            "correctedBouts": 3,
+            "criteria": [
+              {
+                "code": "C1",
+                "label": "Conclusão e orientação prática",
+                "max": 4,
+                "vc": 3.2,
+                "opponent": 2.8,
+                "n": 5
+              },
+              {
+                "code": "C2",
+                "label": "Fundamentação e informações essenciais",
+                "max": 4,
+                "vc": 3.2,
+                "opponent": 2.6,
+                "n": 5
+              },
+              {
+                "code": "C3",
+                "label": "Condições, limites e ressalvas",
+                "max": 2,
+                "vc": 1.4,
+                "opponent": 1,
+                "n": 5
+              }
+            ]
+          },
+          {
+            "key": "pleno",
+            "label": "Pleno",
+            "n": 5,
+            "vcMean": 9.2,
+            "opponentMean": 7,
+            "wins": 3,
+            "ties": 2,
+            "losses": 0,
+            "coverageTotal": 5,
+            "pendingJudgments": 0,
+            "inconclusive": 0,
+            "outdated": 0,
+            "contradictionsVc": 0,
+            "contradictionsOpponent": 0,
+            "abstentionsVc": 0,
+            "abstentionsOpponent": 0,
+            "reviewsCompleted": 5,
+            "reviewsTotal": 5,
+            "pendingReviews": 0,
+            "contests": 0,
+            "pendingDecisions": 0,
+            "correctedBouts": 4,
+            "criteria": [
+              {
+                "code": "C1",
+                "label": "Conclusão e orientação prática",
+                "max": 4,
+                "vc": 3.8,
+                "opponent": 2.8,
+                "n": 5
+              },
+              {
+                "code": "C2",
+                "label": "Fundamentação e informações essenciais",
+                "max": 4,
+                "vc": 3.8,
+                "opponent": 2.8,
+                "n": 5
+              },
+              {
+                "code": "C3",
+                "label": "Condições, limites e ressalvas",
+                "max": 2,
+                "vc": 1.6,
+                "opponent": 1.4,
+                "n": 5
+              }
+            ]
+          }
+        ],
+        "insights": [
+          {
+            "title": "Ágil com vantagem na média",
+            "text": "O VadeChat ficou 1,40 ponto à frente na média, com duas vitórias para cada lado e um empate. A maior diferença por critério foi de 0,6 ponto em fundamentação (C2)."
+          },
+          {
+            "title": "Pleno à frente em C1 e C2",
+            "text": "O VadeChat obteve 3,8 de 4 ante 2,8 do Sabiá 5 em conclusão e orientação prática (C1) e em fundamentação (C2)."
+          },
+          {
+            "title": "Revisões concluídas",
+            "text": "O PDF registra três embates corrigidos no Ágil e quatro no Pleno. As dez revisões foram concluídas, sem contestações ou decisões pendentes."
+          }
+        ],
+        "precisionNote": "Médias finais com duas casas conforme a p. 4. Médias por critério com uma casa, conforme a p. 2.",
+        "caveat": "Cada comparação usa cinco embates com notas finais dos dois participantes. A média do Sabiá 5 é calculada separadamente para cada modo.",
+        "limitations": [
+          "A comparação se limita às cinco perguntas desta rodada. A avaliação jurídica depende das respostas, referências e pareceres individuais.",
+          "As médias usam embates concluídos pela revisão ou por decisão registrada. As identidades dos modelos internos do VadeChat estão em branco na fonte.",
+          "O PDF registra o envio manual como declaração do usuário. O aplicativo e o relatório técnico completo reúnem as evidências, versões, prompts e histórico."
+        ],
+        "sourceStatusNote": "O PDF executivo reúne os resultados agregados. As notas provisórias e os registros por pergunta ficam no aplicativo e no relatório técnico completo.",
+        "source": {
+          "path": "/originals/reports/benchmark-sabia-5-2026-11-17-results.pdf",
+          "sha256": "e14b79b10714df220ce3e3ed0de587fd597e204438c09bfaa58e47708b18d89e",
+          "pages": 4,
+          "conclusionsPage": 4,
+          "series": "relalia-442-pair/1",
+          "runId": "run-2026-11-17-1fcf48e2-3cfa-49dc-936c-0ab017b1691f",
+          "executionId": "b6fbf17c-76d1-480b-9739-b4bb34f9ef21",
+          "revision": 287
+        },
+        "operations": {
+          "rows": [
+            {
+              "role": "Adversário",
+              "attempts": 0,
+              "failedOrUncertain": 0,
+              "tokensIn": null,
+              "tokensOut": null,
+              "tokensTotal": null,
+              "providerCostUsd": null,
+              "seconds": null
+            },
+            {
+              "role": "Juiz",
+              "attempts": 11,
+              "failedOrUncertain": 0,
+              "tokensIn": 88593,
+              "tokensOut": 7373,
+              "tokensTotal": 95966,
+              "providerCostUsd": 0.250916,
+              "seconds": 79.3
+            },
+            {
+              "role": "Revisor",
+              "attempts": 10,
+              "failedOrUncertain": 0,
+              "tokensIn": 42186,
+              "tokensOut": 13222,
+              "tokensTotal": 55408,
+              "providerCostUsd": 0.47534,
+              "seconds": 201.7
+            }
+          ],
+          "generation": [
+            {
+              "mode": "Ágil",
+              "attempts": 5,
+              "tokensIn": null,
+              "tokensOut": null,
+              "costUsd": null,
+              "seconds": null
+            },
+            {
+              "mode": "Pleno",
+              "attempts": 6,
+              "tokensIn": null,
+              "tokensOut": null,
+              "costUsd": null,
+              "seconds": null
+            }
+          ],
+          "budget": {
+            "limitUsd": 8,
+            "consumedReservedUsd": 0.726256,
+            "remainingUsd": 7.273744
+          },
+          "note": "Os subtotais referem-se ao plano atual. A duração é a soma das tentativas por papel. O PDF registra zero tentativas e dados de consumo indisponíveis para o adversário."
+        }
+      }
     }
   ],
   "evidence": [

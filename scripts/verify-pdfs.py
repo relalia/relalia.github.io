@@ -192,10 +192,10 @@ for report in data['reports']:
                 for criterion in mode['criteria']:
                     assert f"{criterion['vc']:.1f} / {criterion['opponent']:.1f}".replace('.',',') in text
             for row in executive['operations']['rows']:
-                tokens=f"{row['tokensTotal']:,}".replace(',','.')
-                cost=f"{row['providerCostUsd']:.6f}".replace('.',',')
-                seconds=f"{row['seconds']:.1f}".replace('.',',')
-                assert f"{row['role']} {row['attempts']} / {row['failedOrUncertain']} {tokens} {cost} {seconds} s" in text
+                tokens='Não informado' if row['tokensTotal'] is None else f"{row['tokensTotal']:,}".replace(',','.')
+                cost='Não informado' if row['providerCostUsd'] is None else source_module.fmt(row['providerCostUsd'],6)
+                duration='Não informado' if row['seconds'] is None else source_module.fmt(row['seconds'])+' s'
+                assert f"{row['role']} {row['attempts']} / {row['failedOrUncertain']} {tokens} {cost} {duration}" in text
             for insight in executive['insights']:
                 assert normalize(insight['text']) in text
             for role in executive['roles']:

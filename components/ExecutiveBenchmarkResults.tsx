@@ -4,6 +4,7 @@ import { formatDate } from '@/lib/reports';
 const score = (value: number, digits = 2) => value.toLocaleString('pt-BR', { minimumFractionDigits: digits, maximumFractionDigits: digits });
 const signedScore = (value: number) => value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2, signDisplay: 'exceptZero' });
 const count = (value: number) => value.toLocaleString('pt-BR');
+const operationValue = (value: number | null, format: (value: number) => string) => value === null ? 'Não informado' : format(value);
 
 export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBenchmark }) {
   const finalScores = data.scoreBasis === 'final';
@@ -59,7 +60,13 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
     </details>
 
     <details className="executive-detail"><summary>Operação e consumo disponíveis</summary>
-      <div className="benchmark-table-wrap" role="region" aria-label="Consumo por papel" tabIndex={0}><table><caption>Dados informados pelo provedor · incluem falhas com consumo registrado</caption><thead><tr><th>Papel</th><th>Tentativas / falhas ou incertas</th><th>Tokens entrada / saída / total</th><th>US$ informado</th><th>Soma das durações</th></tr></thead><tbody>{data.operations.rows.map(row => <tr key={row.role}><th scope="row">{row.role}</th><td>{row.attempts} / {row.failedOrUncertain}</td><td>{count(row.tokensIn)} / {count(row.tokensOut)} / {count(row.tokensTotal)}</td><td>{score(row.providerCostUsd, 6)}</td><td>{score(row.seconds, 1)} s</td></tr>)}</tbody></table></div>
+      <div className="benchmark-table-wrap" role="region" aria-label="Consumo por papel" tabIndex={0}><table><caption>Dados informados pelo provedor · incluem falhas com consumo registrado</caption><thead><tr><th>Papel</th><th>Tentativas / falhas ou incertas</th><th>Tokens entrada / saída / total</th><th>US$ informado</th><th>Soma das durações</th></tr></thead><tbody>{data.operations.rows.map(row => {
+        const tokens = [row.tokensIn, row.tokensOut, row.tokensTotal];
+        return <tr key={row.role}><th scope="row">{row.role}</th><td>{row.attempts} / {row.failedOrUncertain}</td>
+          <td>{tokens.every(value => value === null) ? 'Não informado' : tokens.map(value => operationValue(value, count)).join(' / ')}</td>
+          <td>{operationValue(row.providerCostUsd, value => score(value, 6))}</td>
+          <td>{operationValue(row.seconds, value => `${score(value, 1)} s`)}</td></tr>;
+      })}</tbody></table></div>
       {data.operations.generation.map(row => <p key={row.mode}><strong>Geração Tri7 {row.mode}:</strong> {row.attempts} tentativas; tokens, duração e custo não informados.</p>)}
       <p>{data.operations.note}</p><p><strong>Controle local OpenRouter:</strong> orçamento US$ {score(data.operations.budget.limitUsd, 6)}; consumo/reservas US$ {score(data.operations.budget.consumedReservedUsd, 6)}; saldo após reservas US$ {score(data.operations.budget.remainingUsd, 6)}. Inclui todas as tentativas e planos anteriores; não representa saldo consultado da conta do provedor.</p>
     </details>
