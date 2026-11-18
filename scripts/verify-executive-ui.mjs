@@ -31,6 +31,7 @@ try{
   await page.goto(base+'/relatorios/'+id+'/');await page.getByLabel('Senha',{exact:true}).fill(password);await page.getByRole('button',{name:'Entrar',exact:true}).click();
   await page.getByRole('heading',{name:'Resultados do benchmark',exact:true}).waitFor();
   assert.equal(await page.locator('.executive-card').count(),2);
+  assert.deepEqual(await page.locator('.meta .tag').allTextContents(),[r.status,r.count]);
   if(r.executive.pendingNotice)await page.getByText(r.executive.pendingNotice,{exact:true}).waitFor();
   if(r.executive.completionNote){await page.getByText(r.executive.completionNote,{exact:true}).waitFor();assert.equal(await page.locator('.meta .tag').first().innerText(),r.status);}
   for(const [i,m] of r.executive.modes.entries()){
@@ -93,6 +94,9 @@ try{
      const cells=renderedRow.getByRole('cell');
      assert.deepEqual(await cells.allTextContents(),[`${row.attempts} / ${row.failedOrUncertain}`,
       expectedTokens,format(row.providerCostUsd,6),format(row.seconds,1,' s')]);
+    }
+    for(const row of r.executive.operations.generation){
+     await detail.getByText(`Geração Tri7 ${row.mode}: ${row.attempts} tentativas; tokens, duração e custo não informados.`,{exact:true}).waitFor();
     }
    }
    await detail.locator('summary').focus();await page.keyboard.press('Enter');assert.equal(await detail.evaluate(e=>e.open),false);

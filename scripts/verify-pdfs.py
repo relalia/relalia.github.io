@@ -150,9 +150,13 @@ for report in data['reports']:
             assert normalize(executive['caveat']) in text
             final_scores = executive.get('scoreBasis') == 'final'
             if final_scores:
+                assert normalize(f"{report['module']} · {report['date']} · {report['status']}") in text
                 assert 'Médias e resultados finais com correções validadas.' in text
                 assert 'As notas finais incluem as correções validadas.' in text
                 assert 'Médias e resultados originais do juiz.' not in text
+                generation = '; '.join(f"{row['mode']} {row['attempts']} tentativas" for row in executive['operations']['generation'])
+                assert f'Geração Tri7: {generation}.' in text
+                assert normalize(executive['operations']['note']) in text
                 for index, criterion in enumerate(executive['modes'][0]['criteria']):
                     cells = [f"{criterion['code']} · {criterion['label']}", str(criterion['max'])]
                     for mode in executive['modes']:

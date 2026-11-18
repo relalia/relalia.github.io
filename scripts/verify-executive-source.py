@@ -26,7 +26,15 @@ def verify(report):
     assert data.get('scoreBasis') == ('final' if final_scores else None), 'Score basis differs from the source'
     if final_scores:
         assert data['title'] in pages[0]
-        assert f"· {data['questions']} perguntas ·" in pages[0]
+        status = re.search(rf"\bRodada (final|parcial) · {data['questions']} perguntas ·", pages[0])
+        assert status, 'Status or question count missing from the source'
+        if report['status'] == 'Execução finalizada':
+            assert data.get('completionNote') and data.get('sourceStatusNote'), 'Document the confirmed completion and the source status'
+        else:
+            assert f'Rodada {status[1]}' == report['status'], 'Status differs from the source'
+        roles = data['roles']
+        assert len(roles) == 4, 'Expected the product, opponent, judge and reviewer roles'
+        assert {role['role'] for role in roles if role['model']} == {'Adversário', 'Juiz', 'Revisor'}, 'Incomplete benchmark roles'
         for criterion in data['modes'][0]['criteria']:
             label = f"{criterion['code']}: {criterion['label']} /{criterion['max']}"
             assert label.casefold() in quality_page.casefold(), label
@@ -75,8 +83,14 @@ def verify(report):
         duration = re.search(r'(desconhecida|[\d.,]+ s) \d+ sem duração$', part.strip())
         assert duration
         assert (None if duration[1] == 'desconhecida' else num(duration[1][:-2])) == row['seconds']
-    for row in data['operations']['generation']:
-        assert f"{row['mode']}: {row['attempts']} tentativas; tokens entrada/saída desconhecido/desconhecido; duração desconhecida; custo desconhecido" in conclusions
+    generation = re.findall(
+        r'(Ágil|Pleno): (\d+) tentativas?; tokens entrada/saída desconhecido/desconhecido; duração desconhecida; custo desconhecido',
+        conclusions.partition('Geração Tri7:')[2].partition('Conclusões deste benchmark')[0],
+    )
+    generation_rows = data['operations']['generation']
+    assert generation == [(row['mode'], str(row['attempts'])) for row in generation_rows], 'Generation modes or attempts differ from the source'
+    assert len({mode for mode, _ in generation}) == len(generation) == len(data['modes']), 'Missing or duplicate generation modes'
+    for row in generation_rows:
         assert all(row[field] is None for field in ['tokensIn','tokensOut','costUsd','seconds'])
     budget=data['operations']['budget']
     assert f"Orçamento local OpenRouter: US$ {fmt(budget['limitUsd'],6)} · consumo/reservas: US$ {fmt(budget['consumedReservedUsd'],6)} · saldo após reservas: US$ {fmt(budget['remainingUsd'],6)}" in conclusions

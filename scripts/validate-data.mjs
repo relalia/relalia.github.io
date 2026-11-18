@@ -52,6 +52,12 @@ function validateExecutive(report) {
     assert([providerCostUsd,seconds].every(value=>value===null || (Number.isFinite(value) && value>=0)),
       `Invalid benchmark operation cost or duration ${label}`);
   }
+  assert(Array.isArray(operations.generation) && operations.generation.length===modes.length &&
+    modes.every(mode=>operations.generation.some(row=>row?.mode===mode.label)),`Invalid benchmark generation modes ${report.id}`);
+  for (const row of operations.generation) {
+    assert(natural(row.attempts) && [row.tokensIn,row.tokensOut,row.costUsd,row.seconds].every(value=>value===null),
+      `Invalid benchmark generation metrics ${report.id}/${row.mode}`);
+  }
 }
 
 function validateLatency(report) {

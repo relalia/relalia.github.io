@@ -202,6 +202,20 @@ test('benchmark operations distinguish unknown values from missing fields and ze
   rows.push({...opponent});
   assert.throws(()=>validateData(next),/Invalid or duplicate benchmark operation role/);
 });
+test('benchmark generation preserves a valid record for each mode',()=>{
+  const next=structuredClone(data);
+  const {generation}=next.reports.find(report=>report.id==='benchmark-deepseek-v4-1-flash-2026-11-18').executive.operations;
+  const pleno=generation.pop();
+  assert.throws(()=>validateData(next),/Invalid benchmark generation modes/);
+  generation.push({...generation[0]});
+  assert.throws(()=>validateData(next),/Invalid benchmark generation modes/);
+  generation[1]=pleno;
+  delete pleno.seconds;
+  assert.throws(()=>validateData(next),/Invalid benchmark generation metrics/);
+  pleno.seconds=null;
+  pleno.attempts=-1;
+  assert.throws(()=>validateData(next),/Invalid benchmark generation metrics/);
+});
 test('original Atlas images and description-only EV-27 preserved',()=>{
   const atlas=data.evidence.filter(e=>e.reportId==='atlas');assert.equal(atlas.filter(e=>e.kind==='image').length,43);assert.equal(atlas.find(e=>e.id==='EV-27').path,null);
   assert.equal(data.reports.find(r=>r.id==='today').findings.length,4);
