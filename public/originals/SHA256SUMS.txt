@@ -356,3 +356,4 @@ afd7d8e4a8244cfa832857d0b39da3a234cf186b39bd5c0fbb2ad4abed80b6fb  reports/vadech
 818c7d7115918fda8b7d6798d5a3a1b0561b9928cdb514d9a21f342d7221fcf1  evidence/estrutura-2026-11-12/comparacao-chat.mp4
 978a14951c5b699f39d76d5c1f36098eeeebc05eba8f27126e9aa53af8c24e30  reports/benchmark-grok-4-7-2026-11-16-results.pdf
 e14b79b10714df220ce3e3ed0de587fd597e204438c09bfaa58e47708b18d89e  reports/benchmark-sabia-5-2026-11-17-results.pdf
+9dd9330fdfc28b49b219abf2f0e996bd33b4825115c86b649cad60ae41fec692  reports/benchmark-deepseek-v4-1-flash-2026-11-18-results.pdf

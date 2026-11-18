@@ -7276,6 +7276,259 @@
           "note": "Os subtotais referem-se ao plano atual. A duração é a soma das tentativas por papel. O PDF registra zero tentativas e dados de consumo indisponíveis para o adversário."
         }
       }
+    },
+    {
+      "id": "benchmark-deepseek-v4-1-flash-2026-11-18",
+      "date": "2026-11-18",
+      "title": "Benchmark VadeChat × DeepSeek V4.1 Flash",
+      "module": "VadeChat",
+      "status": "Rodada final",
+      "count": "5 perguntas · 10 embates comparáveis",
+      "summary": "O VadeChat Ágil obteve média de 7,20 ante 6,80 do DeepSeek, com duas vitórias e três derrotas. O Pleno obteve média de 8,80 ante 6,00, com duas vitórias, um empate e duas derrotas.",
+      "highlights": [
+        "Ágil · 0,40 ponto a mais na média, com duas vitórias e três derrotas.",
+        "Pleno · 2,80 pontos a mais na média, com duas vitórias, um empate e duas derrotas.",
+        "Dez revisões concluídas, com dois embates corrigidos no Ágil e três no Pleno."
+      ],
+      "files": [
+        {
+          "label": "Síntese de resultados · complementar ao original",
+          "kind": "pdf",
+          "origin": "generated",
+          "path": "/reports/benchmark-deepseek-v4-1-flash-2026-11-18.pdf"
+        },
+        {
+          "label": "Benchmark · PDF executivo original",
+          "kind": "pdf",
+          "origin": "original",
+          "path": "/originals/reports/benchmark-deepseek-v4-1-flash-2026-11-18-results.pdf",
+          "originalName": "Relalia-run-2026-11-18-9f350375-815b-4646-b46d-3ab0a87b4d15-results.pdf",
+          "sha256": "9dd9330fdfc28b49b219abf2f0e996bd33b4825115c86b649cad60ae41fec692"
+        }
+      ],
+      "findings": [],
+      "executive": {
+        "scoreBasis": "final",
+        "title": "DeepSeek / deepseek/deepseek-v4.1-flash · Ágil e Pleno · Rodada 1",
+        "runDate": "2026-11-18",
+        "questions": 5,
+        "scaleMax": 10,
+        "opponent": "DeepSeek V4.1 Flash",
+        "roles": [
+          {
+            "role": "Produto avaliado · Ágil e Pleno",
+            "platform": "VadeChat",
+            "model": null
+          },
+          {
+            "role": "Adversário",
+            "platform": "deepseek",
+            "model": "deepseek/deepseek-v4.1-flash"
+          },
+          {
+            "role": "Juiz",
+            "platform": "Anthropic",
+            "model": "anthropic/claude-sonnet-5.5"
+          },
+          {
+            "role": "Revisor",
+            "platform": "OpenAI",
+            "model": "openai/gpt-5.6-sol"
+          }
+        ],
+        "modes": [
+          {
+            "key": "agil",
+            "label": "Ágil",
+            "n": 5,
+            "vcMean": 7.2,
+            "opponentMean": 6.8,
+            "wins": 2,
+            "ties": 0,
+            "losses": 3,
+            "coverageTotal": 5,
+            "pendingJudgments": 0,
+            "inconclusive": 0,
+            "outdated": 0,
+            "contradictionsVc": 0,
+            "contradictionsOpponent": 0,
+            "abstentionsVc": 0,
+            "abstentionsOpponent": 0,
+            "reviewsCompleted": 5,
+            "reviewsTotal": 5,
+            "pendingReviews": 0,
+            "contests": 0,
+            "pendingDecisions": 0,
+            "correctedBouts": 2,
+            "criteria": [
+              {
+                "code": "C1",
+                "label": "Conclusão e orientação prática",
+                "max": 4,
+                "vc": 3.6,
+                "opponent": 2.8,
+                "n": 5
+              },
+              {
+                "code": "C2",
+                "label": "Fundamentação e informações essenciais",
+                "max": 4,
+                "vc": 2.8,
+                "opponent": 2.8,
+                "n": 5
+              },
+              {
+                "code": "C3",
+                "label": "Condições, limites e ressalvas",
+                "max": 2,
+                "vc": 0.8,
+                "opponent": 1.2,
+                "n": 5
+              }
+            ]
+          },
+          {
+            "key": "pleno",
+            "label": "Pleno",
+            "n": 5,
+            "vcMean": 8.8,
+            "opponentMean": 6,
+            "wins": 2,
+            "ties": 1,
+            "losses": 2,
+            "coverageTotal": 5,
+            "pendingJudgments": 0,
+            "inconclusive": 0,
+            "outdated": 0,
+            "contradictionsVc": 0,
+            "contradictionsOpponent": 0,
+            "abstentionsVc": 0,
+            "abstentionsOpponent": 0,
+            "reviewsCompleted": 5,
+            "reviewsTotal": 5,
+            "pendingReviews": 0,
+            "contests": 0,
+            "pendingDecisions": 0,
+            "correctedBouts": 3,
+            "criteria": [
+              {
+                "code": "C1",
+                "label": "Conclusão e orientação prática",
+                "max": 4,
+                "vc": 4,
+                "opponent": 2.6,
+                "n": 5
+              },
+              {
+                "code": "C2",
+                "label": "Fundamentação e informações essenciais",
+                "max": 4,
+                "vc": 3.4,
+                "opponent": 2.2,
+                "n": 5
+              },
+              {
+                "code": "C3",
+                "label": "Condições, limites e ressalvas",
+                "max": 2,
+                "vc": 1.4,
+                "opponent": 1.2,
+                "n": 5
+              }
+            ]
+          }
+        ],
+        "insights": [
+          {
+            "title": "Ágil com média maior e três derrotas",
+            "text": "O VadeChat ficou 0,40 ponto à frente na média e venceu dois dos cinco embates. Em condições, limites e ressalvas (C3), o DeepSeek marcou 1,2 de 2 ante 0,8 do Ágil."
+          },
+          {
+            "title": "Pleno com nota máxima em C1",
+            "text": "Em conclusão e orientação prática, o VadeChat marcou 4,0 de 4 ante 2,6 do DeepSeek. O Pleno teve média maior nos três critérios e terminou com duas vitórias, um empate e duas derrotas."
+          },
+          {
+            "title": "Cinco embates corrigidos",
+            "text": "As dez revisões foram concluídas, com dois embates corrigidos no Ágil e três no Pleno. A fonte registra zero contestações e decisões pendentes."
+          }
+        ],
+        "precisionNote": "Médias finais com duas casas conforme a p. 4. Médias por critério com uma casa, conforme a p. 2.",
+        "caveat": "Cada comparação usa cinco embates com notas finais dos dois participantes. A média do DeepSeek é calculada separadamente para cada modo.",
+        "limitations": [
+          "A comparação se limita às cinco perguntas desta rodada. A avaliação jurídica depende das respostas, referências e pareceres individuais.",
+          "As médias usam embates concluídos pela revisão ou por decisão registrada. As identidades dos modelos internos do VadeChat estão em branco na fonte.",
+          "O PDF registra o envio manual como declaração do usuário. O aplicativo e o relatório técnico completo reúnem as evidências, versões, prompts e histórico."
+        ],
+        "sourceStatusNote": "O PDF executivo reúne os resultados agregados. As notas provisórias e os registros por pergunta ficam no aplicativo e no relatório técnico completo.",
+        "source": {
+          "path": "/originals/reports/benchmark-deepseek-v4-1-flash-2026-11-18-results.pdf",
+          "sha256": "9dd9330fdfc28b49b219abf2f0e996bd33b4825115c86b649cad60ae41fec692",
+          "pages": 4,
+          "conclusionsPage": 4,
+          "series": "relalia-442-pair/1",
+          "runId": "run-2026-11-18-9f350375-815b-4646-b46d-3ab0a87b4d15",
+          "executionId": "29dc7816-fe1f-4a55-bcbb-9a120ceaa1e7",
+          "revision": 693
+        },
+        "operations": {
+          "rows": [
+            {
+              "role": "Adversário",
+              "attempts": 16,
+              "failedOrUncertain": 11,
+              "tokensIn": 1269,
+              "tokensOut": 98996,
+              "tokensTotal": 100265,
+              "providerCostUsd": 0.041756,
+              "seconds": 882.2
+            },
+            {
+              "role": "Juiz",
+              "attempts": 13,
+              "failedOrUncertain": 0,
+              "tokensIn": 77872,
+              "tokensOut": 8379,
+              "tokensTotal": 86251,
+              "providerCostUsd": 0.239534,
+              "seconds": 104.9
+            },
+            {
+              "role": "Revisor",
+              "attempts": 10,
+              "failedOrUncertain": 0,
+              "tokensIn": 27828,
+              "tokensOut": 9096,
+              "tokensTotal": 36924,
+              "providerCostUsd": 0.32103,
+              "seconds": 142.4
+            }
+          ],
+          "generation": [
+            {
+              "mode": "Ágil",
+              "attempts": 5,
+              "tokensIn": null,
+              "tokensOut": null,
+              "costUsd": null,
+              "seconds": null
+            },
+            {
+              "mode": "Pleno",
+              "attempts": 5,
+              "tokensIn": null,
+              "tokensOut": null,
+              "costUsd": null,
+              "seconds": null
+            }
+          ],
+          "budget": {
+            "limitUsd": 6,
+            "consumedReservedUsd": 0.60232,
+            "remainingUsd": 5.39768
+          },
+          "note": "Os subtotais referem-se ao plano atual e incluem falhas com consumo registrado. O adversário teve 16 tentativas, das quais 11 foram classificadas como falhas ou incertas. A duração soma as tentativas de cada papel."
+        }
+      }
     }
   ],
   "evidence": [
