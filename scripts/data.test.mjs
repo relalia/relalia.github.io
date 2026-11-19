@@ -19,6 +19,32 @@ test('duplicate report IDs and missing comparison targets rejected',()=>{
   const duplicate=structuredClone(data);duplicate.reports.push(duplicate.reports[0]);assert.throws(()=>validateData(duplicate),/Duplicate report/);
   const missing=structuredClone(data);missing.reports[0].findings[0].comparisons[0].findingId='ABSENT';assert.throws(()=>validateData(missing),/Missing comparison/);
 });
+test('weekly editions reject misdated sources, inconsistent totals and invalid notes',()=>{
+  const next=structuredClone(data);
+  const edition=next.reports.find(report=>report.id==='resumo-benchmarks-vadechat-2026-11-19');
+  const benchmark=next.reports.find(report=>report.id===edition.benchmarkSources[0].reportId);
+  const originalDate=benchmark.executive.runDate;
+  for(const date of ['2026-11-31','2026-11-20',undefined]){
+    benchmark.executive.runDate=date;
+    assert.throws(()=>validateData(next),/Invalid benchmark run date/);
+  }
+  benchmark.executive.runDate=originalDate;
+  const originalCount=edition.count;
+  edition.count='3 benchmarks · 29 embates comparáveis';
+  assert.throws(()=>validateData(next),/Invalid weekly benchmark count/);
+  edition.count=originalCount;
+  edition.note={text:'Nota inválida'};
+  assert.throws(()=>validateData(next),/Invalid weekly benchmark note/);
+  edition.note='Observação pertinente à edição.';
+  edition.comparisonId='benchmark-comparativo-2026-10-14';
+  assert.throws(()=>validateData(next),/Conflicting weekly benchmark layout/);
+  delete edition.comparisonId;
+  const originalEditionDate=edition.date;
+  edition.date='2026-11-31';
+  assert.throws(()=>validateData(next),/Invalid date/);
+  edition.date=originalEditionDate;
+  assert.doesNotThrow(()=>validateData(next));
+});
 test('standalone HTML attachments must be generated inside reports',()=>{
   const copy=structuredClone(data);
   const file=copy.reports.find(report=>report.id==='estrutura-vadechat-2026-11-12').files[0];

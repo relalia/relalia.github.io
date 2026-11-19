@@ -10,7 +10,7 @@ const id=process.argv[2]||'vadechat-ux-2026-11-02',base=process.env.RELALIA_TEST
 const data=JSON.parse(fs.readFileSync('content/reports.json','utf8')),r=data.reports.find(r=>r.id===id),ev=data.evidence.filter(e=>e.reportId===id);
 assert(r?.executive,'Select an executive report');
 const latest=[...data.reports].sort((a,b)=>b.date.localeCompare(a.date))[0];
-const weekly=data.reports.find(report=>report.benchmarkSources?.some(source=>source.reportId===id));
+const weeklies=data.reports.filter(report=>report.benchmarkSources?.some(source=>source.reportId===id));
 const formatMean=(value,digits=2)=>value===null?'Não informada':value.toLocaleString('pt-BR',{minimumFractionDigits:digits,maximumFractionDigits:digits});
 function expectedOutcome(mode, benchmark, labels=benchmark.opponent) {
  const outcome=executiveOutcome(mode,benchmark.executionConfirmed);
@@ -198,13 +198,14 @@ try{
   await page.locator(mobile?'.timeline-drawer-panel':'.timeline-pane').screenshot({path:output+'/timeline-'+width+'.png'});
   await page.locator('.timeline a[href="/relatorios/'+id+'/"]').click();await page.getByRole('heading',{name:r.title,exact:true}).waitFor();
   if(mobile)await drawer.waitFor({state:'hidden'});
-  if(weekly){
+  for(const weekly of weeklies){
    await page.goto(base+'/relatorios/'+weekly.id+'/');
    const region=page.getByRole('region',{name:'Valores exatos das três rodadas'});
    await region.getByRole('columnheader',{name:'Resultado por vitórias'}).waitFor();
+   const sourceLabel=weekly.benchmarkSources.find(source=>source.reportId===id).label;
    for(const mode of r.executive.modes){
     const expected=expectedOutcome(mode,r.executive);
-    const row=region.getByRole('row').filter({hasText:r.executive.opponent}).filter({hasText:mode.label});
+    const row=region.getByRole('row').filter({hasText:sourceLabel}).filter({hasText:mode.label});
     assert.deepEqual(await row.getByRole('cell').allTextContents(),
      [expected.result,expected.record,`${formatMean(mode.vcMean)} × ${formatMean(mode.opponentMean)}`,`${mode.n}/${mode.coverageTotal}`]);
    }

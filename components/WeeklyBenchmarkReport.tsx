@@ -89,7 +89,7 @@ export default function WeeklyBenchmarkReport({ report, sources }: { report: Rep
         <span className="weekly-scale">Escala 0–10</span>
       </div>
       <div className="weekly-charts">{results.map(mode => <MeanChart key={mode.key} mode={mode.label} rows={mode.rows}/>)}</div>
-      <p className="weekly-reading">{report.note ?? 'As linhas conectam rodadas com adversários diferentes. A cobertura aparece abaixo de cada data.'}</p>
+      <p className="weekly-reading">{report.note ?? 'As linhas conectam os resultados das rodadas. A cobertura aparece abaixo de cada data.'}</p>
     </section>
     <section aria-labelledby="weekly-outcomes">
       <h3 id="weekly-outcomes">Resultados por rodada e modo</h3>

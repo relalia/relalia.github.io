@@ -5,6 +5,11 @@ import manifest from '../content/originals.sha256.json' with {type:'json'};
 
 const assert = (condition,message) => {if (!condition) throw Error(message);};
 const text = value => typeof value === 'string' && value.trim().length > 0;
+const validDate = value => {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const time = Date.parse(value);
+  return Number.isFinite(time) && new Date(time).toISOString().slice(0,10) === value;
+};
 const assetPath = value => text(value) && value.startsWith('/') && !value.includes('..') &&
   !value.includes('//') && !value.split('/').includes('.') && !/[?#\\%\x00-\x1f\x7f]/.test(value);
 const natural = value => Number.isSafeInteger(value) && value >= 0;
@@ -12,7 +17,8 @@ const score = (value, max) => Number.isFinite(value) && value >= 0 && value <= m
 const reportedScore = (value, max) => value === null || score(value, max);
 
 function validateExecutive(report) {
-  const {scaleMax, questions, modes, source, scoreBasis, operations} = report.executive;
+  const {scaleMax, questions, modes, source, scoreBasis, operations, runDate} = report.executive;
+  assert(validDate(runDate) && runDate<=report.date,`Invalid benchmark run date ${report.id}`);
   assert(scaleMax===10 && natural(questions) && questions>0,`Invalid benchmark scale or question count ${report.id}`);
   assert(scoreBasis===undefined || scoreBasis==='final',`Invalid benchmark score basis ${report.id}`);
   assert(report.executive.executionConfirmed===undefined ||
@@ -96,7 +102,7 @@ export function validateData(data,assetExists=()=>true) {
     assert(!reports.has(report.id),`Duplicate report ${report.id}`);
     reports.set(report.id,report);
     for(const key of ['title','summary','status','count']) assert(text(report[key]),`Missing ${report.id}.${key}`);
-    assert(/^\d{4}-\d{2}-\d{2}$/.test(report.date) && !isNaN(Date.parse(report.date)),`Invalid date ${report.id}`);
+    assert(validDate(report.date),`Invalid date ${report.id}`);
     assert(['Atlas','VadeChat','Base de Conhecimento','Alia'].includes(report.module),`Invalid module ${report.id}`);
     assert(Array.isArray(report.highlights) && report.highlights.every(text),`Invalid highlights ${report.id}`);
     assert(Array.isArray(report.findings) && Array.isArray(report.files) && (report.benchmarkSources || report.files.some(f=>['pdf','html'].includes(f.kind))),`Missing findings/document ${report.id}`);
@@ -124,12 +130,19 @@ export function validateData(data,assetExists=()=>true) {
   }
   for(const report of data.reports.filter(report=>report.benchmarkSources)) {
     const sources=report.benchmarkSources;
+    assert(!['executive', 'latency', 'overviewId', 'comparisonId', 'benchmarkId'].some(key=>report[key]), `Conflicting weekly benchmark layout ${report.id}`);
+    assert(report.note == null || text(report.note), `Invalid weekly benchmark note ${report.id}`);
     assert(Array.isArray(sources) && sources.length===3,`Expected three benchmark sources ${report.id}`);
+    assert(sources.every(source=>text(source?.reportId) && text(source.label)), `Invalid benchmark source in ${report.id}`);
     assert(new Set(sources.map(source=>source.reportId)).size===sources.length,`Duplicate benchmark source ${report.id}`);
+    let comparable=0;
     for(const source of sources) {
       const benchmark=reports.get(source.reportId);
-      assert(text(source.label) && source.reportId!==report.id && benchmark?.executive && benchmark.date<=report.date,`Invalid benchmark source ${report.id}/${source.reportId}`);
+      assert(source.reportId!==report.id && benchmark?.executive && benchmark.date<=report.date,`Invalid benchmark source ${report.id}/${source.reportId}`);
+      comparable+=benchmark.executive.modes.reduce((total, mode)=>total+mode.n,0);
     }
+    const bouts=comparable===1?'embate comparável':'embates comparáveis';
+    assert(report.count===`${sources.length} benchmarks · ${comparable} ${bouts}`, `Invalid weekly benchmark count ${report.id}`);
   }
   const evidence = new Map();
   for(const item of data.evidence) {
