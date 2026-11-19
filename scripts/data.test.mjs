@@ -11,7 +11,8 @@ import {validateData,verifyOriginals} from './validate-data.mjs';
 test('catalog and original attachments have valid links and bytes',()=>{validateData(data);assert.equal(verifyOriginals('public',data),manifest.length);});
 test('additional rounds accepted without fixed count or initial/retest logic',()=>{
   const next=structuredClone(data);
-  next.reports.push({...structuredClone(data.reports.at(-1)),id:'future-round',date:'2026-10-07',findings:[{id:'NEW-001',title:'Novo registro',description:'Observação',status:'Aguardando reteste',evidenceIds:[],retest:{execution:'not-performed'},comparisons:[{reportId:'vadechat-2026-10-06',findingId:'VC-UX-05',label:'Comparar'}]}]});
+  const template=next.reports.find(report=>report.id==='vadechat-2026-10-06');
+  next.reports.push({...template,id:'future-round',date:'2026-10-07',findings:[{id:'NEW-001',title:'Novo registro',description:'Observação',status:'Aguardando reteste',evidenceIds:[],retest:{execution:'not-performed'},comparisons:[{reportId:'vadechat-2026-10-06',findingId:'VC-UX-05',label:'Comparar'}]}]});
   assert.doesNotThrow(()=>validateData(next));
 });
 test('duplicate report IDs and missing comparison targets rejected',()=>{

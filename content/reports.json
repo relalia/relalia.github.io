@@ -6308,6 +6308,7 @@
       "status": "Síntese visual",
       "count": "3 benchmarks · 29 embates comparáveis",
       "summary": "Comparação das notas médias do VadeChat Ágil e Pleno contra ChatGPT 6.1 Sol, Claude Sonnet 5.5 e Gemini 3.8 Flash nas rodadas de 03, 04 e 06/11/2026.",
+      "note": "As linhas conectam rodadas com adversários e juízes diferentes. A cobertura aparece abaixo de cada data. No Pleno contra Claude, a média usa os 4 embates diretos e o empate derivado da Q04 fica separado.",
       "highlights": [],
       "files": [],
       "findings": [],
@@ -7530,6 +7531,32 @@
           "note": "Os subtotais referem-se ao plano atual e incluem falhas com consumo registrado. O adversário teve 16 tentativas, das quais 11 foram classificadas como falhas ou incertas. A duração soma as tentativas de cada papel."
         }
       }
+    },
+    {
+      "id": "resumo-benchmarks-vadechat-2026-11-19",
+      "date": "2026-11-19",
+      "title": "Resumo da semana · VadeChat × 3 IAs",
+      "module": "VadeChat",
+      "status": "Síntese visual",
+      "count": "3 benchmarks · 30 embates comparáveis",
+      "summary": "Comparação das notas médias e dos resultados por vitórias do VadeChat Ágil e Pleno contra Grok 4.7, Sabiá 5 e DeepSeek V4.1 Flash nas rodadas de 16, 17 e 18/11/2026.",
+      "highlights": [],
+      "files": [],
+      "findings": [],
+      "benchmarkSources": [
+        {
+          "reportId": "benchmark-grok-4-7-2026-11-16",
+          "label": "Grok 4.7"
+        },
+        {
+          "reportId": "benchmark-sabia-5-2026-11-17",
+          "label": "Sabiá 5"
+        },
+        {
+          "reportId": "benchmark-deepseek-v4-1-flash-2026-11-18",
+          "label": "DeepSeek V4.1 Flash"
+        }
+      ]
     }
   ],
   "evidence": [
