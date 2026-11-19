@@ -20,6 +20,28 @@ const encodedVideo=report.match(/src="data:video\/mp4;base64,([A-Za-z0-9+/=]+)"/
 assert(encodedVideo,'Missing embedded video');
 assert.equal(createHash('sha256').update(Buffer.from(encodedVideo,'base64')).digest('hex'),'818c7d7115918fda8b7d6798d5a3a1b0561b9928cdb514d9a21f342d7221fcf1');
 
+async function verifyVideoMetadata(video) {
+  const duration=await video.evaluate(element=>{
+    if(element.readyState>=HTMLMediaElement.HAVE_METADATA)return element.duration;
+    if(element.error)throw Error(element.error.message);
+    return new Promise((resolve,reject)=>{
+      const timeout=setTimeout(()=>finish(Error('Timed out waiting for embedded video metadata')),10000);
+      const loaded=()=>finish();
+      const failed=()=>finish(Error(element.error?.message||'Embedded video failed to load'));
+      function finish(error) {
+        clearTimeout(timeout);
+        element.removeEventListener('loadedmetadata',loaded);
+        element.removeEventListener('error',failed);
+        if(error)reject(error);
+        else resolve(element.duration);
+      }
+      element.addEventListener('loadedmetadata',loaded);
+      element.addEventListener('error',failed);
+    });
+  });
+  assert(Math.abs(duration-21.2)<0.1,'Unexpected embedded video duration');
+}
+
 const browser=await chromium.launch({headless:true,...(process.env.RELALIA_BROWSER_CHANNEL?{channel:process.env.RELALIA_BROWSER_CHANNEL}:{})});
 try {
   for(const width of [320,390,768,1440,1920]) {
@@ -30,14 +52,16 @@ try {
     await page.route(/^https?:/,route=>route.abort());
     await page.goto(pathToFileURL(path.resolve(reportPath)).href);
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),width,'Report overflows horizontally');
-    assert(await page.locator('video').evaluate(v=>Math.abs(v.duration-21.2)<0.1),'Video metadata unavailable');
+    const video=page.locator('video');
+    await verifyVideoMetadata(video);
     for(const id of ['open-chat','download-chat','open-giro','download-giro'])
       assert((await page.locator(`#${id}`).getAttribute('href')).startsWith('blob:'),`${id} is unavailable`);
     assert((await page.locator('#download-video').getAttribute('href')).startsWith('data:video/mp4;'));
     if(width===1440) {
-      await page.locator('video').evaluate(async video=>{video.muted=true;await video.play();});
-      await page.waitForTimeout(300);
-      assert(await page.locator('video').evaluate(video=>{video.pause();return video.currentTime>0;}),'Embedded video did not play');
+      await video.scrollIntoViewIfNeeded();
+      await video.evaluate(async element=>{element.muted=true;await element.play();});
+      await page.waitForFunction(()=>document.querySelector('video')?.currentTime>0.05,undefined,{timeout:10000});
+      await video.evaluate(element=>element.pause());
     }
 
     await page.locator('#chat-preview summary').click();
@@ -122,7 +146,7 @@ try {
         document.querySelector('button[aria-label="Enviar mensagem"]').click();
         window.scrollTo(0,0);
       });
-      await page.waitForTimeout(550);
+      await chat.getByText('Resposta simulada para demonstração').nth(5).waitFor();
       assert((await input.evaluate(()=>window.scrollY))<10,'Response moved the reader away from earlier messages');
     }
 
@@ -182,7 +206,7 @@ try {
   await staticPage.goto(pathToFileURL(path.resolve(reportPath)).href);
   assert.equal(await staticPage.locator('.screen img').count(),4,'Static comparisons are missing without JavaScript');
   assert.equal(await staticPage.locator('.demo:visible').count(),0,'Interactive previews should not appear without JavaScript');
-  assert(await staticPage.locator('video').evaluate(video=>Math.abs(video.duration-21.2)<0.1),'Video is unavailable without JavaScript');
+  await verifyVideoMetadata(staticPage.locator('video'));
   await noJs.close();
   console.log('Static comparisons and video verified without JavaScript');
 } finally {
