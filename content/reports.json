@@ -6041,6 +6041,7 @@
           "note": "Subtotais disponíveis do plano atual, com falhas de consumo registrado incluídas e adversário compartilhado contado uma vez por tentativa. Duração é a soma das tentativas, não latência da resposta. Tokens de cache e raciocínio não são somados novamente. Custos, tokens e duração da geração Tri7 são desconhecidos; estes valores não representam o custo total do VadeChat."
         },
         "completionNote": "Execução finalizada, conforme confirmação do executor em 03/11/2026, após sucesso na reexecução das três verificações afetadas por erro inicial.",
+        "executionConfirmed": true,
         "sourceStatusNote": "O PDF reenviado ainda registra o rótulo de parcial e três decisões como pendentes. O executor informou que a primeira tentativa teve erro, as três verificações passaram na reexecução e a rodada foi concluída. As contagens desta seção reproduzem o registro do PDF; o status de execução da publicação segue a confirmação do executor. Não foram fornecidos pareceres individuais ou registros de decisões para uma conferência adicional."
       }
     },

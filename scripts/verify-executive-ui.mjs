@@ -38,10 +38,11 @@ try{
    const card=page.locator('.executive-card').nth(i);
    assert.equal(await card.locator('.executive-score>strong').innerText(),m.vcMean.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}));
    const delta=(m.vcMean-m.opponentMean).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2,signDisplay:'exceptZero'});
-   assert.equal(await card.locator('.executive-difference').innerText(),`${delta} pontos`);
+   assert.equal(await card.locator('.executive-difference').innerText(),`${delta} pontos na média`);
    const summaryRow=page.getByRole('region',{name:'Médias e resultados exatos'}).locator('tbody tr').nth(i);
    assert.equal(await summaryRow.locator('td').nth(2).innerText(),delta);
-   assert((await card.innerText()).includes(m.wins+' '+(m.wins===1?'vitória':'vitórias')+' · '+m.ties+' '+(m.ties===1?'empate':'empates')+' · '+m.losses+' '+(m.losses===1?'derrota':'derrotas')));
+   assert.equal(await card.locator('.benchmark-outcome-details dd').first().innerText(),`${m.wins}–${m.ties}–${m.losses}`);
+   assert.equal(await card.locator('.benchmark-outcome-details dd').last().innerText(),`${m.n}/${m.coverageTotal}`);
   }
   const tables=page.locator('.executive-results .benchmark-table-wrap');
   for(let i=0;i<2;i++){await tables.nth(i).focus();assert(await tables.nth(i).evaluate(e=>e===document.activeElement));}

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { getReport } from '@/lib/reports';
 import type { Report } from '@/lib/types';
+import { executiveOutcome } from '@/lib/benchmark-outcomes.mjs';
+import { outcomeCoverage, outcomeLabel, outcomeRecord } from './BenchmarkOutcome';
 
 type Sources = NonNullable<Report['benchmarkSources']>;
 const modes = [{ key: 'agil', label: 'Ágil' }, { key: 'pleno', label: 'Pleno' }];
@@ -77,19 +79,22 @@ export default function WeeklyBenchmarkReport({ report, sources }: { report: Rep
       <div className="weekly-charts">{results.map(mode => <MeanChart key={mode.key} mode={mode.label} rows={mode.rows}/>)}</div>
       <p className="weekly-reading">As linhas conectam rodadas com adversários e juízes diferentes. A cobertura aparece abaixo de cada data. No Pleno contra Claude, a média usa os 4 embates diretos e o empate derivado da Q04 fica separado.</p>
     </section>
-    <details className="executive-detail">
-      <summary>Notas, placares e cobertura</summary>
+    <section aria-labelledby="weekly-outcomes">
+      <h3 id="weekly-outcomes">Resultados por rodada e modo</h3>
       <div className="benchmark-table-wrap" role="region" tabIndex={0} aria-label="Valores exatos das três rodadas">
         <table className="weekly-values">
           <caption>V / E / D são vitórias, empates e derrotas do VadeChat</caption>
-          <thead><tr><th scope="col">Modo</th><th scope="col">Modelo</th><th scope="col">Nota VadeChat</th><th scope="col">Nota adversária</th><th scope="col">V / E / D</th><th scope="col">Cobertura</th></tr></thead>
-          <tbody>{results.flatMap(mode => mode.rows.map(({ reportId, label, date, result }) => <tr key={`${mode.key}-${reportId}`}>
-            <th scope="row">{mode.label}</th><td>{label}<small>{shortDate(date)}</small></td><td>{score(result.vcMean)}</td><td>{score(result.opponentMean)}</td>
-            <td>{result.wins} / {result.ties} / {result.losses}</td><td>{result.n}/{result.coverageTotal}</td>
-          </tr>))}</tbody>
+          <thead><tr><th scope="col">Modo</th><th scope="col">Modelo</th><th scope="col">Média VadeChat</th><th scope="col">Média adversária</th><th scope="col">V / E / D</th><th scope="col">Cobertura</th><th scope="col">Resultado por vitórias</th></tr></thead>
+          <tbody>{results.flatMap(mode => mode.rows.map(({ reportId, label, date, result, benchmark }) => {
+            const outcome = executiveOutcome(result, benchmark.executionConfirmed);
+            return <tr key={`${mode.key}-${reportId}`}>
+              <th scope="row">{mode.label}</th><td>{label}<small>{shortDate(date)}</small></td><td>{score(result.vcMean)}</td><td>{score(result.opponentMean)}</td>
+              <td>{outcomeRecord(outcome)}</td><td>{outcomeCoverage(outcome)}</td><td>{outcomeLabel({result: outcome, opponent: label})}</td>
+            </tr>;
+          }))}</tbody>
         </table>
       </div>
-    </details>
+    </section>
     <section className="weekly-sources" aria-labelledby="weekly-sources">
       <h3 id="weekly-sources">Benchmarks completos</h3>
       <ul>{rounds.map(round => <li key={round.reportId}><Link href={`/relatorios/${round.reportId}/`}>

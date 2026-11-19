@@ -6,6 +6,8 @@ import remarkGfm from 'remark-gfm';
 import {modeLabel, participantLabel as labelParticipant, reconstructPrompt, resultLabel as labelResult} from '@/lib/benchmark';
 import type {Mode, Participant, SourceDocument, BenchmarkQuestion, Benchmark} from '@/lib/benchmark';
 import {formatScore, statistics, classificationCounts, outcomeCounts} from '@/lib/benchmark-math.mjs';
+import { exploratoryOutcome } from '@/lib/benchmark-outcomes.mjs';
+import { BenchmarkOutcomeCards } from './BenchmarkOutcome';
 import Downloads from './Downloads';
 import SelectFilter from './SelectFilter';
 import type {Report} from '@/lib/types';
@@ -156,7 +158,7 @@ function Protocol() {
     <div className="section-head"><h3>Protocolo e limites da execução</h3><p>Procedimentos documentados; configurações ausentes permanecem não registradas.</p></div>
     <p>O protocolo determina uso exclusivo da pergunta, referência humana e respostas A/B; avaliação de significado; separação entre omissões, contradições e informações não verificáveis; e proíbe favorecer extensão, citações ou pesquisar legislação. A ordem A/B alterna por questão e vale para os dois modos.</p>
     <ul>{benchmark.criteria.map(c=><li key={c.label}>{c.label}: 0 a {c.max} pontos ({c.max*10}% da escala total).</li>)}</ul>
-    <p>Conforme requer nota ≥ 8 sem contradição essencial. Parcialmente conforme, Divergente, Abstenção e Inconclusiva seguem as definições do protocolo integral. O vencedor usa a maior nota; notas iguais resultam em empate.</p>
+    <p>Conforme requer nota ≥ 8 sem contradição essencial. Parcialmente conforme, Divergente, Abstenção e Inconclusiva seguem as definições do protocolo integral. Pelo protocolo original, em cada embate vence a resposta com maior nota. Notas iguais resultam em empate.</p>
     <p>{benchmark.metadata.source} Juiz: {benchmark.metadata.judge}. Revisor: {benchmark.metadata.reviewer}. {benchmark.metadata.reviewerRole} Participante {benchmark.alternativeLabel}: {benchmark.metadata.alternativeModel}. A modalidade de acesso não identifica modelo interno, roteamento, nível de raciocínio ou ferramentas.</p>
     <p>{benchmark.metadata.missing}</p>
     <ul className="benchmark-limitations">{benchmark.limitations.map(text=><li key={text}>{text}</li>)}</ul>
@@ -184,11 +186,11 @@ function BenchmarkBody({report}:{report:Report}) {
     <section id="benchmark-results" className="benchmark-section">
       <div className="section-head"><h3>O que esta amostra mostrou</h3><p>Síntese editorial dos julgamentos originais · conformidade com o gabarito humano</p></div>
       {!benchmark.conditions.length && <p>{benchmark.summary}</p>}
+      <BenchmarkOutcomeCards opponent={benchmark.alternativeLabel} modes={modes.map(key => ({
+        label: modeLabel(key),
+        result: exploratoryOutcome(benchmark.questions, key),
+      }))}/>
       <div className="benchmark-toggle" role="group" aria-label="Selecionar embate">{modes.map(m=><button key={m} aria-pressed={mode===m} className={`action ${mode===m?'primary':''}`} onClick={()=>setMode(m)}>{modeLabel(m)} × {benchmark.alternativeLabel}</button>)}</div>
-      <div className="benchmark-score-grid" aria-live="polite">{participants.map(participant=>{
-        const s=statistics(benchmark.questions,mode,participant);
-        return <div className={`benchmark-stat ${participant==='vadechat'?'vc-stat':'gpt-stat'}`} key={participant}><span>{participantLabel(mode,participant)}</span><strong>{formatScore(s.mean)}<small>/10 · média</small></strong><span>{s.wins} {s.wins===1?'vitória':'vitórias'} · {s.ties} {s.ties===1?'empate':'empates'} · {s.losses} {s.losses===1?'derrota':'derrotas'}</span></div>;
-      })}</div>
       {benchmark.conditions.length>0 && <><p>{benchmark.summary}</p><aside className="benchmark-review"><strong>Ressalvas que afetam a interpretação dos resultados</strong><p>As notas são as originais do ChatGPT Grátis. GPT-6.1 Alta aponta erros de leitura e possível desconto ou crédito indevido, e pede revisão de notas e vencedores em Q05. Q04 Pleno também tem omissões adicionais não registradas pelo juiz. Consulte a auditoria junto de cada resultado.</p></aside></>}
       <p className="note">Resultados do juiz preservados. Vencer em pontos não implica classificação Conforme. A execução não mede preço, custo-benefício ou economia de tempo.</p>
       {benchmark.conditions.length>0 && <DetailedResults mode={mode}/>}

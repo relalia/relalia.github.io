@@ -5,6 +5,7 @@ import type {ComparisonData} from '@/lib/comparisons';
 import type {Report} from '@/lib/types';
 import type {SourceDocument} from '@/lib/benchmark';
 import {TextEvidence} from './BenchmarkReport';
+import { BenchmarkRetestOutcomes } from './BenchmarkOutcome';
 import Downloads from './Downloads';
 
 type Row=ComparisonData['rows'][number];
@@ -55,7 +56,7 @@ export default function BenchmarkComparisonReport({report, data}:{report:Report;
     <p className="benchmark-subtitle">{data.runLabels?`${data.runLabels.old} → ${data.runLabels.new}`:'Run 01 · 09/10/2026 (legado01) → Run 02 · 14/10/2026'}</p>
     <nav className="benchmark-nav" aria-label="Seções do comparativo"><a href="#comparison-results">Resultados</a><a href="#comparison-table">Dez comparações</a><a href="#comparison-changes">Mudanças e textos integrais</a><a href="#comparison-reviews">Revisões</a><a href="#comparison-integrity">Integridade e método</a><a href="#comparison-downloads">Evidências e downloads</a></nav>
     <section id="comparison-results" className="benchmark-section"><h3>Resumo dos resultados</h3>
-      <div className="benchmark-score-grid">{modes.map(m=><div className="vc-stat" key={m}><span>VadeChat {modeLabel(m)} · média de cinco notas</span><strong>{fmt(data.summary[m].old)} → {fmt(data.summary[m].new)}</strong><span>Variação {delta(data.summary[m].delta)} ponto</span></div>)}</div>
+      <BenchmarkRetestOutcomes rows={data.rows} summaries={data.summary} opponent={alternative}/>
       <div className="benchmark-table-wrap" tabIndex={0} role="region" aria-label="Médias e contagens por modo"><table><caption>Notas originais · cinco pares completos por modo</caption><thead><tr><th scope="col">Modo</th><th scope="col">Média anterior</th><th scope="col">Média nova</th><th scope="col">Variação</th><th scope="col">Subiram / caíram / iguais</th></tr></thead><tbody>{modes.map(m=>{const s=data.summary[m];return <tr key={m}><th scope="row">{modeLabel(m)}</th><td>{fmt(s.old)}</td><td>{fmt(s.new)}</td><td>{delta(s.delta)}</td><td>{s.up} / {s.down} / {s.same}</td></tr>;})}</tbody></table></div>
       <ul className="highlights">{data.highlights.map(h=><li key={h}>{h}</li>)}</ul>
       <p>{data.editorial.lead}</p><p className="benchmark-caveat">{data.caveat}</p>

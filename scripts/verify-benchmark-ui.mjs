@@ -63,9 +63,12 @@ try {
     await textualMarkers.locator('summary').click();
     for(const mode of ['agil','pleno']) {
       await page.locator('#benchmark-results').getByRole('button',{name:`${mode==='agil'?'Ágil':'Pleno'} × ${alternativeLabel}`,exact:true}).click();
-      const means=await page.locator('#benchmark-results .benchmark-score-grid strong').allTextContents();
-      assert.ok(means[0].startsWith(formatScore(statistics(benchmark.questions,mode,'vadechat').mean)));
-      assert.ok(means[1].startsWith(formatScore(statistics(benchmark.questions,mode,alternativeKey).mean)));
+      const score=value=>value.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+      const card=page.locator('#benchmark-results .benchmark-outcome-card').getByText(
+        `${score(statistics(benchmark.questions,mode,'vadechat').mean)} × ${score(statistics(benchmark.questions,mode,alternativeKey).mean)}`,
+        {exact:true},
+      );
+      assert.ok(await card.isVisible());
       for(const q of benchmark.questions) {
         const card=page.locator(`#${q.id}`);
         assert.equal(await card.locator('.benchmark-question-text').innerText(),q.question.text.trim());

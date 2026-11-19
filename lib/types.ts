@@ -104,9 +104,9 @@ export interface ExecutiveMode {
   n: number;
   vcMean: number;
   opponentMean: number;
-  wins: number;
-  ties: number;
-  losses: number;
+  wins?: number | null;
+  ties?: number | null;
+  losses?: number | null;
   coverageTotal: number;
   pendingJudgments: number;
   inconclusive: number;
@@ -126,6 +126,7 @@ export interface ExecutiveMode {
 
 export interface ExecutiveBenchmark {
   completionNote?: string;
+  executionConfirmed?: true;
   sourceStatusNote?: string;
   pendingNotice?: string;
   scoreBasis?: 'final';

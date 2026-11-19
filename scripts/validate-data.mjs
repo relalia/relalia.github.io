@@ -14,21 +14,26 @@ function validateExecutive(report) {
   const {scaleMax, questions, modes, source, scoreBasis, operations} = report.executive;
   assert(scaleMax===10 && natural(questions) && questions>0,`Invalid benchmark scale or question count ${report.id}`);
   assert(scoreBasis===undefined || scoreBasis==='final',`Invalid benchmark score basis ${report.id}`);
+  assert(report.executive.executionConfirmed===undefined ||
+    (report.executive.executionConfirmed===true && text(report.executive.completionNote)),`Missing execution confirmation ${report.id}`);
   assert(Array.isArray(modes) && modes.length===2 && ['agil','pleno'].every(key=>modes.some(mode=>mode.key===key)),`Invalid benchmark modes ${report.id}`);
   assert(source && report.files.some(file=>file.origin==='original' && file.kind==='pdf' && file.path===source.path && file.sha256===source.sha256),`Invalid benchmark PDF source ${report.id}`);
   assert(natural(source.pages) && [source.qualityPage ?? 2,source.conclusionsPage ?? 3].every(page=>natural(page) && page>=1 && page<=source.pages),`Invalid benchmark source pages ${report.id}`);
 
   for(const mode of modes) {
     const label=`${report.id}/${mode.key}`;
-    assert([mode.wins,mode.ties,mode.losses,mode.n,mode.coverageTotal].every(natural) &&
-      mode.wins+mode.ties+mode.losses===mode.n && mode.n>0 && mode.n<=mode.coverageTotal && mode.coverageTotal<=questions,`Invalid benchmark coverage or outcomes ${label}`);
+    const counts = [mode.wins, mode.ties, mode.losses].filter(value => value != null);
+    assert([mode.n, mode.coverageTotal, ...counts].every(natural) &&
+      mode.n<=mode.coverageTotal && mode.coverageTotal<=questions,`Invalid benchmark coverage or outcomes ${label}`);
+    const knownOutcomes = counts.reduce((sum, count) => sum + count, 0);
+    assert(counts.length===3 ? knownOutcomes===mode.n : knownOutcomes<=mode.n,`Invalid benchmark coverage or outcomes ${label}`);
     assert(score(mode.vcMean,scaleMax) && score(mode.opponentMean,scaleMax),`Invalid benchmark mean ${label}`);
     assert(scoreBasis==='final' ? natural(mode.correctedBouts) && mode.correctedBouts<=mode.n : mode.correctedBouts===undefined,
       `Invalid corrected bout count ${label}`);
     assert([mode.reviewsCompleted,mode.reviewsTotal,mode.pendingReviews,mode.contests,mode.pendingDecisions].every(natural) &&
       mode.reviewsCompleted+mode.pendingReviews===mode.reviewsTotal && mode.contests<=mode.reviewsCompleted && mode.pendingDecisions<=mode.contests,`Invalid benchmark review counts ${label}`);
     assert(Array.isArray(mode.criteria) && mode.criteria.length>0 && mode.criteria.every(criterion=>
-      text(criterion.code) && text(criterion.label) && natural(criterion.max) && criterion.max>0 && natural(criterion.n) && criterion.n>0 && criterion.n<=mode.n &&
+      text(criterion.code) && text(criterion.label) && natural(criterion.max) && criterion.max>0 && natural(criterion.n) && (criterion.n>0 || mode.n===0) && criterion.n<=mode.n &&
       score(criterion.vc,criterion.max) && score(criterion.opponent,criterion.max)),`Invalid benchmark criteria ${label}`);
     assert(new Set(mode.criteria.map(criterion=>criterion.code)).size===mode.criteria.length &&
       mode.criteria.reduce((total,criterion)=>total+criterion.max,0)===scaleMax,`Invalid benchmark criterion scale ${label}`);

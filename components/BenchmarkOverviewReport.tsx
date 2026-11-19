@@ -4,6 +4,7 @@ import type {Report} from '@/lib/types';
 import { evidenceById } from '@/lib/reports';
 import EvidenceGallery from './EvidenceGallery';
 import Downloads from './Downloads';
+import { BenchmarkRetestOutcomes } from './BenchmarkOutcome';
 
 type Benchmark=typeof data.benchmarks[number];
 type Series=Benchmark['series'][number];
@@ -69,6 +70,12 @@ export default function BenchmarkOverviewReport({report}:{report:Report}) {
     <section id="overview-results" className="benchmark-section"><h3>O que mudou nas médias</h3>
       <div className="overview-metrics">{data.benchmarks.flatMap(b=>(['agil','pleno'] as const).map(m=>{const s=b.summaries[m];return <div key={b.key+m} className={`overview-metric ${m}`}><span>{b.label}</span><strong>VadeChat {modeName(m)}</strong><b>{fmt(s.old)} → {fmt(s.new)}</b><span>Δ média <em>{delta(s.delta)}</em> · {s.denominator} perguntas pareadas</span></div>;}))}</div>
       <p>{data.lead}</p><p className="benchmark-caveat">{data.caveat}</p>
+    </section>
+    <section className="benchmark-section"><h3>Resultados por execução</h3>
+      {data.benchmarks.map(b => <div key={b.key}>
+        <h4>{b.label}</h4>
+        <BenchmarkRetestOutcomes rows={b.rows} summaries={b.summaries} opponent={b.alternative}/>
+      </div>)}
     </section>
     <section id="overview-figure" className="benchmark-section"><h3>Trajetórias observadas — médias de 0 a 10</h3><p>Mesma escala nos dois painéis. As respostas adversárias são fixas, mas suas duas séries de avaliação são preservadas.</p>
       <div className="overview-two">{data.benchmarks.map(b=><MeanFigure b={b} key={b.key}/>)}</div>

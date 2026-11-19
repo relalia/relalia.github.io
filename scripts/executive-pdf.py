@@ -15,6 +15,9 @@ def executive_story(data, p):
         return format(rounded, 'f').replace('.', ',')
     def operation_value(value, format_value):
         return 'Não informado' if value is None else format_value(value)
+    def outcome_record(mode):
+        counts = [mode.get(key) for key in ('wins', 'ties', 'losses')]
+        return 'Não informado' if None in counts else ' / '.join(map(str, counts))
     def table(rows, widths):
         t = Table([[p(cell, style='Caption') for cell in row] for row in rows], colWidths=widths, repeatRows=1, hAlign='LEFT')
         t.setStyle(TableStyle([
@@ -46,7 +49,7 @@ def executive_story(data, p):
         signed_difference = ('+' if difference > 0 else '') + number(difference)
         chart.add(String(x, 18, f"Diferença: {signed_difference} pontos · n = {mode['n']}", fontName='Helvetica', fontSize=9, fillColor=GREEN))
     story += [chart, table([['Modo', 'VadeChat', data['opponent'], 'V / E / D', 'Comparáveis']]+[
-        [m['label'], number(m['vcMean']), number(m['opponentMean']), f"{m['wins']} / {m['ties']} / {m['losses']}", f"{m['n']}/{m['coverageTotal']}"] for m in data['modes']], [65,80,135,95,128]),
+        [m['label'], number(m['vcMean']), number(m['opponentMean']), outcome_record(m), f"{m['n']}/{m['coverageTotal']}"] for m in data['modes']], [65,80,135,95,128]),
         Spacer(1,10), p(data['precisionNote'], style='Caption'), p(data['caveat']),
         p('Onde os pontos foram obtidos', style='FindingTitle'),
         table([['Critério', 'Máximo', 'Ágil · VC / adversário', 'Pleno · VC / adversário']]+[
