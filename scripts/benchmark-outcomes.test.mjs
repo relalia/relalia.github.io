@@ -63,6 +63,7 @@ test('known ties, empty series, partial results and missing judgments stay disti
   const input = { wins: 0, ties: 2, losses: 0, n: 2, coverageTotal: 5, vcMean: 8, opponentMean: 7 };
   assert.equal(resultByWins(input).winner, 'tie');
   assert.equal(resultByWins({ ...input, n: 0, ties: 0 }).winner, 'none');
+  assert.deepEqual(values(resultByWins({ n: 0, coverageTotal: 5, vcMean: 8, opponentMean: 7 })), ['none', 0, 0, 0, 8, 7, 0, 5]);
   assert.equal(resultByWins(input, true).partial, true);
 
   const missing = resultByWins({ ...input, ties: null });
