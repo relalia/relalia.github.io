@@ -41,6 +41,7 @@
 .weekly-value { fill: currentColor; font-size: 14px; font-weight: 750; paint-order: stroke; stroke: #fcfefd; stroke-width: 3px; }
 .weekly-reading { margin: 12px 0 16px; color: #526b65; font-size: 12px; }
 .weekly-values { min-width: 510px; font-variant-numeric: tabular-nums; }
+.weekly-values th small { display: block; color: #526b65; font-weight: 400; }
 .weekly-sources ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 165px), 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
 .weekly-sources a { display: flex; align-items: center; justify-content: space-between; gap: 8px; height: 100%; padding: 9px 12px; border: 1px solid #dce8e0; border-radius: 10px; text-decoration: none; }
 .weekly-sources a:hover { background: #edf6f0; }

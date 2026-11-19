@@ -1,5 +1,6 @@
 """Check extractable generated PDF content and protect original paths."""
 from pathlib import Path
+from executive_values import fmt as executive_fmt, outcome_record
 import json
 import re
 from pypdf import PdfReader
@@ -180,8 +181,8 @@ for report in data['reports']:
             assert executive['source']['path'] in text
             assert normalize(report['summary']) in text
             for mode in executive['modes']:
-                vc,opponent=(f'{mode[key]:.2f}'.replace('.',',') for key in ('vcMean','opponentMean'))
-                assert f"{mode['label']} {vc} {opponent} {mode['wins']} / {mode['ties']} / {mode['losses']} {mode['n']}/{mode['coverageTotal']}" in text
+                vc,opponent=(executive_fmt(mode[key], 2) for key in ('vcMean','opponentMean'))
+                assert f"{mode['label']} {vc} {opponent} {outcome_record(mode)} {mode['n']}/{mode['coverageTotal']}" in text
                 review_prefix=f"{mode['label']} · registro do PDF: Revisões"
                 if review_prefix in text:
                     review = f"{review_prefix} {mode['reviewsCompleted']}/{mode['reviewsTotal']} ({mode['pendingReviews']} pendentes); contestações {mode['contests']}; decisões pendentes {mode['pendingDecisions']}"
@@ -194,7 +195,7 @@ for report in data['reports']:
                     assert f"Revisões: {mode['reviewsCompleted']}/{mode['reviewsTotal']} por modo; nenhuma pendente." in text
                     assert 'Contestações, decisões pendentes e julgamentos pendentes, inconclusivos ou desatualizados: 0.' in text
                 for criterion in mode['criteria']:
-                    assert f"{criterion['vc']:.1f} / {criterion['opponent']:.1f}".replace('.',',') in text
+                    assert f"{executive_fmt(criterion['vc'])} / {executive_fmt(criterion['opponent'])}" in text
             for row in executive['operations']['rows']:
                 tokens='Não informado' if row['tokensTotal'] is None else f"{row['tokensTotal']:,}".replace(',','.')
                 cost='Não informado' if row['providerCostUsd'] is None else source_module.fmt(row['providerCostUsd'],6)

@@ -1,16 +1,47 @@
 """Verify catalog aggregates against the supplied PDF, not individual judgments."""
 from pathlib import Path
-from decimal import Decimal, ROUND_HALF_UP
 import hashlib
 import json
 import re
 from pypdf import PdfReader
+from executive_values import fmt
 
 ROOT = Path(__file__).resolve().parents[1]
 compact = lambda text: ' '.join(text.split())
 num = lambda text: float(text.replace('.', '').replace(',', '.'))
-def fmt(value, digits=1):
-    return str(Decimal(str(value)).quantize(Decimal(1).scaleb(-digits), rounding=ROUND_HALF_UP)).replace('.', ',')
+UNAVAILABLE = r'(?i:[–—-]|n/d|não informad[oa]|sem dados|sem média|desconhecid[oa])'
+
+
+def source_value(value, digits=None):
+    if value is None:
+        return UNAVAILABLE
+    return re.escape(str(value) if digits is None else fmt(value, digits))
+
+
+def verify_score_row(mode, overview, conclusions):
+    counts = tuple(mode.get(key) for key in ('wins', 'ties', 'losses'))
+    means = (mode['vcMean'], mode['opponentMean'])
+    if all(value is not None for value in (*means, *counts)):
+        match = re.search(rf"{re.escape(mode['label'])}: média ([\d,]+) contra ([\d,]+) em (\d+) embates; (\d+) vitórias?, (\d+) empates? e (\d+) derrotas?", conclusions)
+        assert match, mode['label']
+        values = match.groups()
+        assert tuple(map(num, values[:2])) == means
+        assert tuple(map(int, values[2:])) == (mode['n'], *counts)
+        assert sum(counts) == mode['n']
+
+    record = ' / '.join(source_value(count) for count in counts)
+    if all(count is None for count in counts):
+        record = rf'(?:{record}|{UNAVAILABLE})'
+    planned = mode['coverageTotal']
+    coverage = re.escape(f"{mode['n']}/{planned}")
+    if planned:
+        coverage += re.escape(f" ({mode['n']/planned:.0%})")
+    else:
+        coverage += r'(?: \(0%\))?'
+    judgments = f"{mode['pendingJudgments']} / {mode['inconclusive']} / {mode['outdated']}"
+    row = (rf"\b{re.escape(mode['label'])} {source_value(means[0], 1)} / {source_value(means[1], 1)} "
+           rf"{record} {coverage} {re.escape(judgments)}\b")
+    assert re.search(row, overview), f"Score row differs from the source for {mode['label']}"
 
 def verify(report):
     data = report['executive']
@@ -46,22 +77,17 @@ def verify(report):
             heading = 'Notas finais por modo' if final_scores else 'Resultados'
             assert f'Ágil VadeChat Pleno VadeChat {heading}' in pages[0]
     for mode in data['modes']:
-        match = re.search(rf"{mode['label']}: média ([\d,]+) contra ([\d,]+) em (\d+) embates; (\d+) vitórias?, (\d+) empates? e (\d+) derrotas?", conclusions)
-        assert match, mode['label']
-        values = match.groups()
-        assert (num(values[0]), num(values[1])) == (mode['vcMean'], mode['opponentMean'])
-        assert tuple(map(int,values[2:])) == (mode['n'],mode['wins'],mode['ties'],mode['losses'])
-        assert mode['wins']+mode['ties']+mode['losses'] == mode['n'] <= mode['coverageTotal'] == data['questions']
-        coverage = f"{mode['n']}/{mode['coverageTotal']} ({mode['n']/mode['coverageTotal']:.0%})"
-        assert f"{mode['label']} {fmt(mode['vcMean'])} / {fmt(mode['opponentMean'])} {mode['wins']} / {mode['ties']} / {mode['losses']} {coverage} {mode['pendingJudgments']} / {mode['inconclusive']} / {mode['outdated']}" in pages[0]
+        assert mode['n'] <= mode['coverageTotal'] <= data['questions']
+        verify_score_row(mode, pages[0], conclusions)
         if final_scores:
             corrected = corrected_label(mode['correctedBouts'])
             assert f"{mode['label']} · {mode['n']}/{mode['coverageTotal']} embates com nota final · {corrected}" in pages[0]
             assert f"{mode['label']} · {corrected} · {mode['pendingDecisions']} decisões pendentes" in quality_page
         for criterion in mode['criteria']:
-            expected = f"{mode['label']} · {criterion['code']} /{criterion['max']} n = {criterion['n']} VadeChat {fmt(criterion['vc'])} / {criterion['max']} Adversário {fmt(criterion['opponent'])} / {criterion['max']}"
-            assert expected in quality_page, expected
-            assert 0 <= criterion['vc'] <= criterion['max'] and 0 <= criterion['opponent'] <= criterion['max']
+            prefix = f"{mode['label']} · {criterion['code']} /{criterion['max']} n = {criterion['n']} VadeChat"
+            expected = (rf"{re.escape(prefix)} {source_value(criterion['vc'], 1)} / {criterion['max']} "
+                        rf"Adversário {source_value(criterion['opponent'], 1)} / {criterion['max']}\b")
+            assert re.search(expected, quality_page), expected
         quality = f"{mode['label']} {mode['contradictionsVc']} / {mode['contradictionsOpponent']} {mode['abstentionsVc']} / {mode['abstentionsOpponent']} {mode['reviewsCompleted']}/{mode['reviewsTotal']}; {mode['pendingReviews']} pendentes {mode['contests']} / {mode['pendingDecisions']}"
         assert quality in quality_page, quality
     operations = conclusions.split('Subtotais',1)[0]

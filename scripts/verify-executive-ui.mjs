@@ -5,10 +5,22 @@ import {execFileSync,spawn} from 'node:child_process';
 import {once} from 'node:events';
 import {chromium} from 'playwright';
 import {openTimeline} from './timeline-ui.mjs';
+import {executiveOutcome} from '../lib/benchmark-outcomes.mjs';
 const id=process.argv[2]||'vadechat-ux-2026-11-02',base=process.env.RELALIA_TEST_URL||'http://127.0.0.1:4185';
 const data=JSON.parse(fs.readFileSync('content/reports.json','utf8')),r=data.reports.find(r=>r.id===id),ev=data.evidence.filter(e=>e.reportId===id);
 assert(r?.executive,'Select an executive report');
 const latest=[...data.reports].sort((a,b)=>b.date.localeCompare(a.date))[0];
+const weekly=data.reports.find(report=>report.benchmarkSources?.some(source=>source.reportId===id));
+const formatMean=(value,digits=2)=>value===null?'Não informada':value.toLocaleString('pt-BR',{minimumFractionDigits:digits,maximumFractionDigits:digits});
+function expectedOutcome(mode, benchmark, labels=benchmark.opponent) {
+ const outcome=executiveOutcome(mode,benchmark.executionConfirmed);
+ const title={vadechat:'Vitória do VadeChat',opponent:`${labels} venceu`,tie:'Empate',none:'Sem embates comparáveis',unknown:'Placar indisponível'}[outcome.winner];
+ const record=outcome.record;
+ return {
+  result:outcome.partial?`${title} · parcial`:title,
+  record:record?`${record.wins}–${record.ties}–${record.losses}`:'Indisponível',
+ };
+}
 const before=JSON.parse(execFileSync('git',['show','HEAD:content/reports.json'],{encoding:'utf8'}));
 for(const previous of before.reports.filter(r=>r.id!==id))assert.deepEqual(data.reports.find(r=>r.id===previous.id),previous);
 for(const previous of before.evidence.filter(e=>e.reportId!==id))assert.deepEqual(data.evidence.find(e=>e.id===previous.id),previous);
@@ -36,12 +48,18 @@ try{
   if(r.executive.completionNote){await page.getByText(r.executive.completionNote,{exact:true}).waitFor();assert.equal(await page.locator('.meta .tag').first().innerText(),r.status);}
   for(const [i,m] of r.executive.modes.entries()){
    const card=page.locator('.executive-card').nth(i);
-   assert.equal(await card.locator('.executive-score>strong').innerText(),m.vcMean.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}));
-   const delta=(m.vcMean-m.opponentMean).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2,signDisplay:'exceptZero'});
-   assert.equal(await card.locator('.executive-difference').innerText(),`${delta} pontos na média`);
+   const expected=expectedOutcome(m,r.executive);
+   const delta=m.vcMean===null || m.opponentMean===null?null:
+    (m.vcMean-m.opponentMean).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2,signDisplay:'exceptZero'});
    const summaryRow=page.getByRole('region',{name:'Médias e resultados exatos'}).locator('tbody tr').nth(i);
-   assert.equal(await summaryRow.locator('td').nth(2).innerText(),delta);
-   assert.equal(await card.locator('.benchmark-outcome-details dd').first().innerText(),`${m.wins}–${m.ties}–${m.losses}`);
+   if(m.vcMean===null)await card.getByText('Média do VadeChat não informada',{exact:true}).waitFor();
+   else assert.equal(await card.locator('.executive-score>strong').innerText(),formatMean(m.vcMean));
+   if(delta===null)assert.equal(await card.locator('.executive-difference').count(),0);
+   else assert.equal(await card.locator('.executive-difference').innerText(),`${delta} pontos na média`);
+   assert.deepEqual(await summaryRow.locator('td').allTextContents(),
+    [formatMean(m.vcMean),formatMean(m.opponentMean),delta??'Indisponível',expected.record,`${m.n}/${m.coverageTotal}`,expected.result]);
+   assert.equal(await card.locator('.benchmark-outcome-title strong').textContent(),expected.result);
+   assert.equal(await card.locator('.benchmark-outcome-details dd').first().innerText(),expected.record);
    assert.equal(await card.locator('.benchmark-outcome-details dd').last().innerText(),`${m.n}/${m.coverageTotal}`);
   }
   const tables=page.locator('.executive-results .benchmark-table-wrap');
@@ -53,15 +71,15 @@ try{
    for(const [modeIndex,mode] of r.executive.modes.entries()){
     for(const [criterionIndex,value] of mode.criteria.entries()){
      const cell=criteria.getByRole('row').nth(criterionIndex+1).getByRole('cell').nth(modeIndex);
-     const score=number=>number.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1});
      const baseSize=value.n===mode.n?'':`n = ${value.n}`;
-     assert.equal((await cell.textContent()).trim(),`${score(value.vc)} / ${score(value.opponent)}${baseSize}`);
+     assert.equal((await cell.textContent()).trim(),`${formatMean(value.vc,1)} / ${formatMean(value.opponent,1)}${baseSize}`);
      const bars=await cell.locator('.executive-track').evaluateAll(tracks=>tracks.map(track=>({
       trackWidth:track.getBoundingClientRect().width,
       barWidth:track.firstElementChild.getBoundingClientRect().width,
      })));
-     assert.equal(bars.length,2);
-     for(const [i,points] of [value.vc,value.opponent].entries()){
+     const pointsByBar=[value.vc,value.opponent].filter(points=>points!==null);
+     assert.equal(bars.length,pointsByBar.length);
+     for(const [i,points] of pointsByBar.entries()){
       const {trackWidth,barWidth}=bars[i];
       assert(trackWidth>0 && Math.abs(barWidth-trackWidth*points/value.max)<0.5);
      }
@@ -180,6 +198,18 @@ try{
   await page.locator(mobile?'.timeline-drawer-panel':'.timeline-pane').screenshot({path:output+'/timeline-'+width+'.png'});
   await page.locator('.timeline a[href="/relatorios/'+id+'/"]').click();await page.getByRole('heading',{name:r.title,exact:true}).waitFor();
   if(mobile)await drawer.waitFor({state:'hidden'});
+  if(weekly){
+   await page.goto(base+'/relatorios/'+weekly.id+'/');
+   const region=page.getByRole('region',{name:'Valores exatos das três rodadas'});
+   await region.getByRole('columnheader',{name:'Resultado por vitórias'}).waitFor();
+   for(const mode of r.executive.modes){
+    const expected=expectedOutcome(mode,r.executive);
+    const row=region.getByRole('row').filter({hasText:r.executive.opponent}).filter({hasText:mode.label});
+    assert.deepEqual(await row.getByRole('cell').allTextContents(),
+     [expected.result,expected.record,`${formatMean(mode.vcMean)} × ${formatMean(mode.opponentMean)}`,`${mode.n}/${mode.coverageTotal}`]);
+   }
+   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+1));
+  }
   await ctx.close();console.log(width+'px: results, keyboard tables/details, PDF downloads, direct route/reload, timeline, homepage and overflow verified'+(ev.length?'; video playback/seek and image zoom verified.':'.'));
  }
  assert.deepEqual(errors,[]);

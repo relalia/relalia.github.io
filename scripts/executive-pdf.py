@@ -1,8 +1,8 @@
 """Results-first PDF section, using the same catalog aggregates as the page."""
-from decimal import Decimal, ROUND_HALF_UP
 from reportlab.lib import colors
 from reportlab.platypus import Table, TableStyle, PageBreak, Spacer, KeepTogether
 from reportlab.graphics.shapes import Drawing, Rect, String
+from executive_values import fmt, outcome_record
 
 GREEN = colors.HexColor('#17645b')
 BLUE = colors.HexColor('#275f9d')
@@ -11,13 +11,9 @@ def executive_story(data, p):
     final_scores = data.get('scoreBasis') == 'final'
     score_description = 'Médias e resultados finais com correções validadas.' if final_scores else 'Médias e resultados originais do juiz.'
     def number(value, digits=2):
-        rounded = Decimal(str(value)).quantize(Decimal(1).scaleb(-digits), rounding=ROUND_HALF_UP)
-        return format(rounded, 'f').replace('.', ',')
+        return fmt(value, digits)
     def operation_value(value, format_value):
         return 'Não informado' if value is None else format_value(value)
-    def outcome_record(mode):
-        counts = [mode.get(key) for key in ('wins', 'ties', 'losses')]
-        return 'Não informado' if None in counts else ' / '.join(map(str, counts))
     def table(rows, widths):
         t = Table([[p(cell, style='Caption') for cell in row] for row in rows], colWidths=widths, repeatRows=1, hAlign='LEFT')
         t.setStyle(TableStyle([
@@ -42,12 +38,17 @@ def executive_story(data, p):
         chart.add(String(x, 136, f"VadeChat {mode['label']}  {number(mode['vcMean'])}", fontName='Helvetica-Bold', fontSize=12, fillColor=GREEN))
         for j, (label, value, color) in enumerate([(f"VadeChat {mode['label']}", mode['vcMean'], GREEN), (data['opponent'], mode['opponentMean'], BLUE)]):
             y = 109-j*38
-            chart.add(String(x, y, f'{label} · {number(value)} / 10', fontName='Helvetica', fontSize=9, fillColor=color))
-            chart.add(Rect(x, y-17, 225, 9, fillColor=colors.HexColor('#e4ece8'), strokeColor=None))
-            chart.add(Rect(x, y-17, 225*value/data['scaleMax'], 9, fillColor=color, strokeColor=None))
-        difference = round(mode['vcMean'] - mode['opponentMean'], 2)
-        signed_difference = ('+' if difference > 0 else '') + number(difference)
-        chart.add(String(x, 18, f"Diferença: {signed_difference} pontos · n = {mode['n']}", fontName='Helvetica', fontSize=9, fillColor=GREEN))
+            value_label = number(value) if value is None else f'{number(value)} / 10'
+            chart.add(String(x, y, f'{label} · {value_label}', fontName='Helvetica', fontSize=9, fillColor=color))
+            if value is not None:
+                chart.add(Rect(x, y-17, 225, 9, fillColor=colors.HexColor('#e4ece8'), strokeColor=None))
+                chart.add(Rect(x, y-17, 225*value/data['scaleMax'], 9, fillColor=color, strokeColor=None))
+        difference_label = 'Não informada'
+        if mode['vcMean'] is not None and mode['opponentMean'] is not None:
+            difference = round(mode['vcMean'] - mode['opponentMean'], 2)
+            signed_difference = ('+' if difference > 0 else '') + number(difference)
+            difference_label = f'{signed_difference} pontos'
+        chart.add(String(x, 18, f"Diferença: {difference_label} · n = {mode['n']}", fontName='Helvetica', fontSize=9, fillColor=GREEN))
     story += [chart, table([['Modo', 'VadeChat', data['opponent'], 'V / E / D', 'Comparáveis']]+[
         [m['label'], number(m['vcMean']), number(m['opponentMean']), outcome_record(m), f"{m['n']}/{m['coverageTotal']}"] for m in data['modes']], [65,80,135,95,128]),
         Spacer(1,10), p(data['precisionNote'], style='Caption'), p(data['caveat']),

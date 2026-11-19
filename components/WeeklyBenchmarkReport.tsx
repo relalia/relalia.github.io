@@ -2,18 +2,17 @@ import Link from 'next/link';
 import { getReport } from '@/lib/reports';
 import type { Report } from '@/lib/types';
 import { executiveOutcome } from '@/lib/benchmark-outcomes.mjs';
-import { outcomeCoverage, outcomeLabel, outcomeRecord } from './BenchmarkOutcome';
+import { outcomeCoverage, outcomeLabel, outcomeMean as score, outcomeRecord } from './BenchmarkOutcome';
 
 type Sources = NonNullable<Report['benchmarkSources']>;
 const modes = [{ key: 'agil', label: 'Ágil' }, { key: 'pleno', label: 'Pleno' }];
-const score = (value: number) => value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const shortDate = (date: string) => `${date.slice(8, 10)}/${date.slice(5, 7)}`;
 
 function loadRounds(sources: Sources) {
   return sources.map(source => {
     const report = getReport(source.reportId);
     if (!report?.executive) throw new Error(`Missing executive benchmark ${source.reportId}`);
-    return { ...source, date: report.date, benchmark: report.executive };
+    return { ...source, date: report.executive.runDate, benchmark: report.executive };
   }).sort((a, b) => a.date.localeCompare(b.date));
 }
 
@@ -38,23 +37,36 @@ function MeanChart({ mode, rows }: { mode: string; rows: ReturnType<typeof modeR
         <line className="weekly-gridline" x1="34" x2="278" y1={y(tick)} y2={y(tick)}/>
         <text className="weekly-axis" x="26" y={y(tick) + 4} textAnchor="end">{tick}</text>
       </g>)}
-      {(['vcMean', 'opponentMean'] as const).map(metric => <polyline key={metric}
+      {(['vcMean', 'opponentMean'] as const).map(metric => <path key={metric}
         className={`weekly-line ${metric === 'vcMean' ? 'weekly-vc' : 'weekly-opponent'}`}
-        points={rows.map(({ result }, i) => `${x(i)},${y(result[metric])}`).join(' ')}/>)}
+        d={rows.map(({ result }, i) => {
+          const value = result[metric];
+          if (value === null) return '';
+          const command = i > 0 && rows[i - 1].result[metric] !== null ? 'L' : 'M';
+          return `${command}${x(i)} ${y(value)}`;
+        }).join(' ')}/>)}
       {rows.map(({ reportId, date, label, result }, i) => {
-        const vcY = y(result.vcMean), opponentY = y(result.opponentMean), at = x(i);
-        const vcAbove = vcY <= opponentY;
-        const upper = Math.min(vcY, opponentY), lower = Math.max(vcY, opponentY);
+        const vcY = result.vcMean === null ? null : y(result.vcMean);
+        const opponentY = result.opponentMean === null ? null : y(result.opponentMean);
+        const at = x(i);
+        const vcAbove = vcY !== null && (opponentY === null || vcY <= opponentY);
+        const available = vcY ?? opponentY ?? 0;
+        const upper = Math.min(vcY ?? available, opponentY ?? available);
+        const lower = Math.max(vcY ?? available, opponentY ?? available);
         const nearAxis = lower + 21 > 200;
-        const stackAbove = nearAxis && lower - upper < 25;
+        const stackAbove = vcY !== null && opponentY !== null && nearAxis && lower - upper < 25;
         const lowerLabel = stackAbove ? upper - 11 : lower + (nearAxis ? -11 : 21);
         const upperLabel = upper - (stackAbove ? 27 : 11);
         const diamond = vcY === opponentY ? 3 : 4.5;
         return <g key={reportId} textAnchor="middle">
-          <circle className="weekly-marker weekly-vc" cx={at} cy={vcY} r="5.5"/>
-          <path className="weekly-marker weekly-opponent" d={`M ${at} ${opponentY - diamond} l ${diamond} ${diamond} -${diamond} ${diamond} -${diamond} -${diamond} Z`}/>
-          <text className="weekly-value weekly-vc" x={at} y={vcAbove ? upperLabel : lowerLabel}>{score(result.vcMean)}</text>
-          <text className="weekly-value weekly-opponent" x={at} y={vcAbove ? lowerLabel : upperLabel}>{score(result.opponentMean)}</text>
+          {vcY !== null && <>
+            <circle className="weekly-marker weekly-vc" cx={at} cy={vcY} r="5.5"/>
+            <text className="weekly-value weekly-vc" x={at} y={vcAbove ? upperLabel : lowerLabel}>{score(result.vcMean)}</text>
+          </>}
+          {opponentY !== null && <>
+            <path className="weekly-marker weekly-opponent" d={`M ${at} ${opponentY - diamond} l ${diamond} ${diamond} -${diamond} ${diamond} -${diamond} -${diamond} Z`}/>
+            <text className="weekly-value weekly-opponent" x={at} y={vcAbove ? lowerLabel : upperLabel}>{score(result.opponentMean)}</text>
+          </>}
           <text className="weekly-category" x={at} y="211">{label.split(' ')[0]}</text>
           <text className="weekly-axis" x={at} y="228">{shortDate(date)}</text>
           <text className={result.n < result.coverageTotal ? 'weekly-coverage' : 'weekly-axis'} x={at} y="244">{result.n}/{result.coverageTotal}</text>
@@ -84,12 +96,13 @@ export default function WeeklyBenchmarkReport({ report, sources }: { report: Rep
       <div className="benchmark-table-wrap" role="region" tabIndex={0} aria-label="Valores exatos das três rodadas">
         <table className="weekly-values">
           <caption>V / E / D são vitórias, empates e derrotas do VadeChat</caption>
-          <thead><tr><th scope="col">Modo</th><th scope="col">Modelo</th><th scope="col">Média VadeChat</th><th scope="col">Média adversária</th><th scope="col">V / E / D</th><th scope="col">Cobertura</th><th scope="col">Resultado por vitórias</th></tr></thead>
+          <thead><tr><th scope="col">Modelo e modo</th><th scope="col">Resultado por vitórias</th><th scope="col">V / E / D</th><th scope="col">Média VadeChat × concorrente</th><th scope="col">Cobertura</th></tr></thead>
           <tbody>{results.flatMap(mode => mode.rows.map(({ reportId, label, date, result, benchmark }) => {
             const outcome = executiveOutcome(result, benchmark.executionConfirmed);
             return <tr key={`${mode.key}-${reportId}`}>
-              <th scope="row">{mode.label}</th><td>{label}<small>{shortDate(date)}</small></td><td>{score(result.vcMean)}</td><td>{score(result.opponentMean)}</td>
-              <td>{outcomeRecord(outcome)}</td><td>{outcomeCoverage(outcome)}</td><td>{outcomeLabel({result: outcome, opponent: label})}</td>
+              <th scope="row">{label}<small>{mode.label} · {shortDate(date)}</small></th>
+              <td>{outcomeLabel({result: outcome, opponent: benchmark.opponent})}</td>
+              <td>{outcomeRecord(outcome)}</td><td>{score(result.vcMean)} × {score(result.opponentMean)}</td><td>{outcomeCoverage(outcome)}</td>
             </tr>;
           }))}</tbody>
         </table>

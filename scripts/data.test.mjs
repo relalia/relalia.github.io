@@ -180,6 +180,31 @@ test('final benchmark scores require a valid count of corrected bouts for each m
   executive.scoreBasis='unknown';
   assert.throws(()=>validateData(next),/Invalid benchmark score basis/);
 });
+
+test('executive catalog accepts explicit unknown aggregates and rejects inconsistent pending work',()=>{
+  const next = structuredClone(data);
+  const report = next.reports.find(report => report.executive?.executionConfirmed);
+  const [mode] = report.executive.modes;
+  mode.vcMean = null;
+  mode.criteria[0].vc = null;
+  mode.ties = null;
+  delete mode.losses;
+  assert.doesNotThrow(() => validateData(next));
+
+  mode.vcMean = undefined;
+  assert.throws(() => validateData(next), /Invalid benchmark mean/);
+  mode.vcMean = null;
+  mode.pendingJudgments = -1;
+  assert.throws(() => validateData(next), /Invalid benchmark judgment counts/);
+  mode.pendingJudgments = 0;
+
+  report.status = 'Rodada parcial';
+  assert.throws(() => validateData(next), /Invalid execution confirmation/);
+  report.status = 'Execução finalizada';
+  mode.pendingReviews = 1;
+  mode.reviewsCompleted -= 1;
+  assert.throws(() => validateData(next), /Pending work in completed benchmark/);
+});
 test('benchmark operations distinguish unknown values from missing fields and zero counts',()=>{
   const next=structuredClone(data);
   const {rows}=next.reports.find(report=>report.id==='benchmark-sabia-5-2026-11-17').executive.operations;

@@ -12,6 +12,7 @@ const benchmark=JSON.parse(fs.readFileSync(`content/${benchmarkId}.json`,'utf8')
 const alternativeLabel=benchmark.alternativeLabel || 'ChatGPT gratuito';
 const alternativeKey=benchmark.questions[0].alternative?'alternative':'chatgpt';
 import {statistics,formatScore} from '../lib/benchmark-math.mjs';
+import {exploratoryOutcome} from '../lib/benchmark-outcomes.mjs';
 const base=process.env.RELALIA_TEST_URL || 'http://127.0.0.1:4174';
 const server=process.env.RELALIA_TEST_URL?null:spawn(process.execPath,['scripts/serve.mjs'],{env:{...process.env,RELALIA_PORT:'4174'},stdio:['ignore','pipe','inherit']});
 if(server) await Promise.race([once(server.stdout,'data'),once(server,'exit').then(([code])=>{throw Error(`Static preview exited ${code}`);})]);
@@ -62,13 +63,21 @@ try {
     assert.ok((await page.locator('#tooltip-agil').innerText()).includes(formatScore(benchmark.questions[0].comparisons.agil.scores.vadechat.total)));
     await textualMarkers.locator('summary').click();
     for(const mode of ['agil','pleno']) {
-      await page.locator('#benchmark-results').getByRole('button',{name:`${mode==='agil'?'Ágil':'Pleno'} × ${alternativeLabel}`,exact:true}).click();
+      const label = mode==='agil'?'Ágil':'Pleno';
+      const results = page.locator('#benchmark-results');
+      await results.getByRole('button',{name:`${label} × ${alternativeLabel}`,exact:true}).click();
       const score=value=>value.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
-      const card=page.locator('#benchmark-results .benchmark-outcome-card').getByText(
+      const resultCard = results.getByRole('article', { name: `VadeChat ${label}`, exact: true });
+      const means = resultCard.getByText(
         `${score(statistics(benchmark.questions,mode,'vadechat').mean)} × ${score(statistics(benchmark.questions,mode,alternativeKey).mean)}`,
         {exact:true},
       );
-      assert.ok(await card.isVisible());
+      assert.ok(await means.isVisible());
+      const {winner,record,comparable,coverageTotal}=exploratoryOutcome(benchmark.questions,mode);
+      const labels={vadechat:'Vitória do VadeChat',opponent:`${alternativeLabel} venceu`,tie:'Empate'};
+      assert.equal(await resultCard.locator('.benchmark-outcome-title strong').textContent(),labels[winner]);
+      assert.deepEqual(await resultCard.locator('.benchmark-outcome-details dd').allTextContents(),
+        [`${record.wins}–${record.ties}–${record.losses}`,await means.textContent(),`${comparable}/${coverageTotal}`]);
       for(const q of benchmark.questions) {
         const card=page.locator(`#${q.id}`);
         assert.equal(await card.locator('.benchmark-question-text').innerText(),q.question.text.trim());

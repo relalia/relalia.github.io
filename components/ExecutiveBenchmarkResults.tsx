@@ -1,33 +1,39 @@
 import type { ExecutiveBenchmark } from '@/lib/types';
 import { formatDate } from '@/lib/reports';
 import { executiveOutcome } from '@/lib/benchmark-outcomes.mjs';
-import { BenchmarkOutcomeTitle, outcomeCoverage, outcomeLabel, outcomeRecord } from './BenchmarkOutcome';
+import { BenchmarkOutcomeTitle, outcomeCoverage, outcomeLabel, outcomeMean as score, outcomeRecord } from './BenchmarkOutcome';
 
-const score = (value: number, digits = 2) => value.toLocaleString('pt-BR', { minimumFractionDigits: digits, maximumFractionDigits: digits });
 const signedScore = (value: number) => value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2, signDisplay: 'exceptZero' });
 const count = (value: number) => value.toLocaleString('pt-BR');
 const operationValue = (value: number | null, format: (value: number) => string) => value === null ? 'Não informado' : format(value);
 
 export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBenchmark }) {
   const finalScores = data.scoreBasis === 'final';
-  const modes = data.modes.map(mode => ({ mode, result: executiveOutcome(mode, data.executionConfirmed) }));
+  const modes = data.modes.map(mode => ({
+    mode,
+    result: executiveOutcome(mode, data.executionConfirmed),
+    difference: mode.vcMean === null || mode.opponentMean === null ? null : signedScore(mode.vcMean - mode.opponentMean),
+  }));
   return <section className="benchmark executive-results" id="benchmark-resultados" aria-labelledby="executive-heading">
     <div className="section-head"><h3 id="executive-heading">Resultados do benchmark</h3><p>Rodada datada de {formatDate(data.runDate)} na fonte · {data.questions} perguntas · {data.modes.reduce((n, mode) => n + mode.n, 0)} embates comparáveis · escala 0–{data.scaleMax}</p></div>
     <p className="executive-source-title">{data.title}</p>
     {data.completionNote && <p className="executive-caption">{data.completionNote}</p>}
     {data.pendingNotice && <p className="benchmark-caveat"><strong>{data.pendingNotice}</strong></p>}
     <div className="executive-cards">
-      {modes.map(({ mode, result }) => <article className="executive-card" key={mode.key} aria-labelledby={`executive-${mode.key}`}>
+      {modes.map(({ mode, result, difference }) => <article className="executive-card" key={mode.key} aria-labelledby={`executive-${mode.key}`}>
         <div className="executive-card-heading"><h4 id={`executive-${mode.key}`}>VadeChat {mode.label}</h4><span className="tag">n = {mode.n}</span></div>
         <BenchmarkOutcomeTitle result={result} opponent={data.opponent}/>
         <dl className="benchmark-outcome-details">
           <div><dt>VadeChat · vitórias–empates–derrotas</dt><dd>{outcomeRecord(result)}</dd></div>
           <div><dt>Embates comparáveis</dt><dd>{outcomeCoverage(result)}</dd></div>
         </dl>
-        <div className="executive-score"><strong>{score(mode.vcMean)}</strong><span>/ {data.scaleMax}</span><span className="executive-difference">{signedScore(mode.vcMean - mode.opponentMean)} pontos na média</span></div>
-        <p className="executive-against">{data.opponent}: <strong>{score(mode.opponentMean)}</strong> / {data.scaleMax}</p>
+        <div className="executive-score">
+          {mode.vcMean === null ? <span>Média do VadeChat não informada</span> : <><strong>{score(mode.vcMean)}</strong><span>/ {data.scaleMax}</span></>}
+          {difference !== null && <span className="executive-difference">{difference} pontos na média</span>}
+        </div>
+        <p className="executive-against">{data.opponent}: <strong>{score(mode.opponentMean)}</strong>{mode.opponentMean !== null && ` / ${data.scaleMax}`}</p>
         {[{ label: `VadeChat ${mode.label}`, value: mode.vcMean, vc: true }, { label: `${data.opponent} contra ${mode.label}`, value: mode.opponentMean, vc: false }].map(series => <div className="executive-bar" key={series.label}>
-          <div><span>{series.label}</span><strong>{score(series.value)}</strong></div><div className="executive-track" aria-hidden="true"><span className={series.vc ? 'executive-vc' : 'executive-opponent'} style={{ width: `${series.value / data.scaleMax * 100}%` }} /></div>
+          <div><span>{series.label}</span><strong>{score(series.value)}</strong></div>{series.value !== null && <div className="executive-track" aria-hidden="true"><span className={series.vc ? 'executive-vc' : 'executive-opponent'} style={{ width: `${series.value / data.scaleMax * 100}%` }} /></div>}
         </div>)}
       </article>)}
     </div>
@@ -35,7 +41,7 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
     <div className="benchmark-table-wrap" role="region" aria-label="Médias e resultados exatos" tabIndex={0}><table>
       <caption>{finalScores ? 'Médias e resultados finais' : 'Médias e resultados originais'} · adversário separado contra cada modo</caption>
       <thead><tr><th scope="col">Modo</th><th scope="col">VadeChat</th><th scope="col">{data.opponent}</th><th scope="col">Diferença da média</th><th scope="col">Vitórias / empates / derrotas</th><th scope="col">Comparáveis</th><th scope="col">Resultado por vitórias</th></tr></thead>
-      <tbody>{modes.map(({ mode, result }) => <tr key={mode.key}><th scope="row">{mode.label}</th><td>{score(mode.vcMean)}</td><td>{score(mode.opponentMean)}</td><td>{signedScore(mode.vcMean - mode.opponentMean)}</td><td>{outcomeRecord(result)}</td><td>{outcomeCoverage(result)}</td><td>{outcomeLabel({result, opponent: data.opponent})}</td></tr>)}</tbody>
+      <tbody>{modes.map(({ mode, result, difference }) => <tr key={mode.key}><th scope="row">{mode.label}</th><td>{score(mode.vcMean)}</td><td>{score(mode.opponentMean)}</td><td>{difference ?? 'Indisponível'}</td><td>{outcomeRecord(result)}</td><td>{outcomeCoverage(result)}</td><td>{outcomeLabel({result, opponent: data.opponent})}</td></tr>)}</tbody>
     </table></div>
     <div className="benchmark-caveat">{data.caveat}</div>
 
@@ -51,8 +57,8 @@ export default function ExecutiveBenchmarkResults({ data }: { data: ExecutiveBen
           return <td key={mode.key}>
             {score(values.vc, 1)} / {score(values.opponent, 1)}{values.n !== mode.n && <small>n = {values.n}</small>}
             {finalScores && <div className="executive-criterion-bars" aria-hidden="true">
-              <div className="executive-track"><span className="executive-vc" style={{ width: `${values.vc / values.max * 100}%` }}/></div>
-              <div className="executive-track"><span className="executive-opponent" style={{ width: `${values.opponent / values.max * 100}%` }}/></div>
+              {values.vc !== null && <div className="executive-track"><span className="executive-vc" style={{ width: `${values.vc / values.max * 100}%` }}/></div>}
+              {values.opponent !== null && <div className="executive-track"><span className="executive-opponent" style={{ width: `${values.opponent / values.max * 100}%` }}/></div>}
             </div>}
           </td>;
         })}</tr>)}</tbody>

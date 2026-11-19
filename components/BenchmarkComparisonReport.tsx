@@ -4,6 +4,7 @@ import Link from 'next/link';
 import type {ComparisonData} from '@/lib/comparisons';
 import type {Report} from '@/lib/types';
 import type {SourceDocument} from '@/lib/benchmark';
+import { reportedJudgment } from '@/lib/benchmark-outcomes.mjs';
 import {TextEvidence} from './BenchmarkReport';
 import { BenchmarkRetestOutcomes } from './BenchmarkOutcome';
 import Downloads from './Downloads';
@@ -14,7 +15,17 @@ type Run='old'|'new';
 const modeLabel=(mode:string)=>mode==='agil'?'Ágil':'Pleno';
 const fmt=(n:number)=>n.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:2});
 const delta=(n:number)=>`${n>0?'+':''}${fmt(n)}`;
-const result=(r:Row,p:Run,alternative:string)=>r[p].winner==='tie'?'Empate comum':r[p].winner==='vc'?`VadeChat ${modeLabel(r.mode)} venceu`:r[p].winner==='inconclusive'?'Inconclusivo':`${alternative} venceu`;
+function result(row: Row, run: Run, alternative: string) {
+  const winner = reportedJudgment(row[run]?.winner);
+  return {
+    vadechat: `VadeChat ${modeLabel(row.mode)} venceu`,
+    opponent: `${alternative} venceu`,
+    tie: 'Empate comum',
+    inconclusive: 'Inconclusivo',
+    pending: 'Julgamento pendente',
+    unknown: 'Resultado não informado',
+  }[winner];
+}
 const sources=(r:Row,p:Run)=>r.sources[p] as unknown as Record<string,string>;
 
 function RunEvidence({row,run,data}:{row:Row;run:Run;data:ComparisonData}) {

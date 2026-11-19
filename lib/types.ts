@@ -93,8 +93,8 @@ export interface ExecutiveCriterion {
   code: string;
   label: string;
   max: number;
-  vc: number;
-  opponent: number;
+  vc: number | null;
+  opponent: number | null;
   n: number;
 }
 
@@ -102,8 +102,8 @@ export interface ExecutiveMode {
   key: string;
   label: string;
   n: number;
-  vcMean: number;
-  opponentMean: number;
+  vcMean: number | null;
+  opponentMean: number | null;
   wins?: number | null;
   ties?: number | null;
   losses?: number | null;

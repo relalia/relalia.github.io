@@ -23,9 +23,9 @@ export function outcomeCoverage({ comparable, coverageTotal }: Outcome) {
   return comparable === null ? 'Indisponível' : `${comparable}/${coverageTotal}`;
 }
 
-export function outcomeMean(mean: number | null) {
+export function outcomeMean(mean: number | null, digits = 2) {
   return mean === null ? 'Não informada' : mean.toLocaleString('pt-BR', {
-    minimumFractionDigits: 2, maximumFractionDigits: 2,
+    minimumFractionDigits: digits, maximumFractionDigits: digits,
   });
 }
 
@@ -58,7 +58,7 @@ export function BenchmarkRetestOutcomes({ rows, summaries, opponent }: {
   summaries: Record<Mode, { denominator: number }>;
   opponent: string;
 }) {
-  return (['old', 'new'] as const).map((run, index) => <div key={run}>
+  return (['old', 'new'] as const).map((run, index) => <div key={run} role="group" aria-label={`Run 0${index + 1}`}>
     <p className="benchmark-outcome-run"><strong>Run 0{index + 1}</strong></p>
     <BenchmarkOutcomeCards opponent={opponent} modes={(['agil', 'pleno'] as const).map(mode => ({
       label: modeLabel(mode),

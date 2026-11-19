@@ -2,6 +2,7 @@ import Link from 'next/link';
 import data from '@/content/sintese-benchmarks-interface-2026-10-16.json';
 import type {Report} from '@/lib/types';
 import { evidenceById } from '@/lib/reports';
+import { getComparison } from '@/lib/comparisons';
 import EvidenceGallery from './EvidenceGallery';
 import Downloads from './Downloads';
 import { BenchmarkRetestOutcomes } from './BenchmarkOutcome';
@@ -72,10 +73,13 @@ export default function BenchmarkOverviewReport({report}:{report:Report}) {
       <p>{data.lead}</p><p className="benchmark-caveat">{data.caveat}</p>
     </section>
     <section className="benchmark-section"><h3>Resultados por execução</h3>
-      {data.benchmarks.map(b => <div key={b.key}>
-        <h4>{b.label}</h4>
-        <BenchmarkRetestOutcomes rows={b.rows} summaries={b.summaries} opponent={b.alternative}/>
-      </div>)}
+      {data.benchmarks.map(b => {
+        const comparison = getComparison(b.comparisonId);
+        return <div key={b.key}>
+          <h4>{b.label}</h4>
+          <BenchmarkRetestOutcomes rows={comparison.rows} summaries={comparison.summary} opponent={b.alternative}/>
+        </div>;
+      })}
     </section>
     <section id="overview-figure" className="benchmark-section"><h3>Trajetórias observadas — médias de 0 a 10</h3><p>Mesma escala nos dois painéis. As respostas adversárias são fixas, mas suas duas séries de avaliação são preservadas.</p>
       <div className="overview-two">{data.benchmarks.map(b=><MeanFigure b={b} key={b.key}/>)}</div>

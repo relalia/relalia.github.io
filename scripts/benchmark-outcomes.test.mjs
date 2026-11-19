@@ -6,7 +6,7 @@ import claude from '../content/benchmark-claude-2026-10-13.json' with { type: 'j
 import chatgptRetest from '../content/benchmark-comparativo-2026-10-14.json' with { type: 'json' };
 import claudeRetest from '../content/benchmark-comparativo-claude-2026-10-15.json' with { type: 'json' };
 import overview from '../content/sintese-benchmarks-interface-2026-10-16.json' with { type: 'json' };
-import { executiveOutcome, exploratoryOutcome, resultByWins, retestOutcome } from '../lib/benchmark-outcomes.mjs';
+import { executiveOutcome, exploratoryOutcome, reportedJudgment, resultByWins, retestOutcome } from '../lib/benchmark-outcomes.mjs';
 
 const executives = catalog.reports.filter(report => report.executive);
 const byId = id => executives.find(report => report.id === id).executive;
@@ -72,9 +72,27 @@ test('known ties, empty series, partial results and missing judgments stay disti
   assert.equal(resultByWins({ ...input, losses: 1 }).record, null);
 
   const vc = { total: 8 }, opponent = { total: 7 };
-  const series = winner => [{ mode: 'agil', old: { winner, vc, opponent } }];
+  const series = winner => [{ question: 'Q01', mode: 'agil', old: { winner, vc, opponent } }];
   assert.equal(retestOutcome(series(undefined), 'agil', 'old', 1).winner, 'unknown');
   assert.equal(retestOutcome(series('inconclusive'), 'agil', 'old', 1).winner, 'none');
   assert.equal(retestOutcome(series('vc'), 'agil', 'old', 2).winner, 'unknown');
   assert.equal(executiveOutcome({ ...input, pendingJudgments: 0, pendingReviews: 1, pendingDecisions: 0 }).partial, true);
+});
+
+test('missing, pending and duplicate judgments cannot create an unsourced winner', () => {
+  const winner = { question: 'Q01', mode: 'agil', old: { winner: 'vc', vc: { total: 7 } } };
+  const pending = { question: 'Q02', mode: 'agil', old: { winner: 'pending' } };
+  const partial = retestOutcome([winner, pending], 'agil', 'old', 2);
+  assert.deepEqual(values(partial), ['vadechat', 1, 0, 0, 7, null, 1, 2]);
+  assert.equal(partial.partial, true);
+  const duplicate = retestOutcome([winner, { ...winner }, pending], 'agil', 'old', 2);
+  assert.equal(duplicate.winner, 'unknown');
+  assert.equal(duplicate.record, null);
+  assert.equal(duplicate.vcMean, null);
+  assert.equal(duplicate.partial, true);
+  assert.equal(reportedJudgment(undefined), 'unknown');
+  assert.equal(reportedJudgment('unexpected'), 'unknown');
+  assert.equal(reportedJudgment('pending'), 'pending');
+  const omittedScores = exploratoryOutcome([{ id: 'Q01', comparisons: { agil: { winner: 'alternative' } } }], 'agil');
+  assert.deepEqual(values(omittedScores), ['opponent', 0, 0, 1, null, null, 1, 1]);
 });
