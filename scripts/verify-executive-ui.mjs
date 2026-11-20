@@ -23,7 +23,7 @@ function expectedOutcome(mode, benchmark, labels=benchmark.opponent) {
 }
 const before=JSON.parse(execFileSync('git',['show','HEAD:content/reports.json'],{encoding:'utf8'}));
 function weeklyBenchmarkFields(report) {
- const { manualLegalTest, summary, ...benchmarkFields } = report;
+ const { manualLegalTest, summary, title, ...benchmarkFields } = report;
  return benchmarkFields;
 }
 for(const previous of before.reports.filter(r=>r.id!==id)){

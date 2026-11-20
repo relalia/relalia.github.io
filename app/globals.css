@@ -47,9 +47,25 @@
 .weekly-sources a:hover { background: #edf6f0; }
 .weekly-sources small, .weekly-sources strong { display: block; }
 .weekly-sources small { color: #526b65; }
-.manual-legal-link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 650; }
-.manual-legal { margin-top: 28px; padding-top: 6px; border-top: 1px solid #dce8e0; scroll-margin-top: 20px; }
-.manual-legal:focus { outline: none; }
+.report-title-subheading { display: block; margin-top: 5px; font-size: clamp(17px, 2vw, 23px); letter-spacing: -.015em; }
+.weekly-report-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; border-bottom: 1px solid #dce8e0; }
+.weekly-report-tabs button {
+  min-height: 48px;
+  padding: 9px clamp(6px, 2vw, 16px);
+  border: 1px solid #dce8e0;
+  border-bottom: 3px solid transparent;
+  border-radius: 10px 10px 0 0;
+  background: #f7faf8;
+  color: #385b54;
+  font-weight: 650;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.weekly-report-tabs button:hover { background: #edf6f0; }
+.weekly-report-tabs button[aria-selected="true"] { background: #e7f2eb; border-bottom-color: #17645b; color: #174d46; }
+.weekly-report-tabs button:focus-visible { outline-offset: -3px; }
+.weekly-tab-panel { min-width: 0; }
+.weekly-tab-panel:focus-visible { outline: 3px solid #d69a39; outline-offset: 4px; }
 .manual-legal h4 { margin: 24px 0 10px; font-size: 16px; }
 .manual-legal-context { margin: 6px 0 14px; color: #526b65; font-size: 12px; }
 .manual-legal-agil { color: var(--weekly-opponent); }
@@ -100,7 +116,9 @@
   .weekly-chart { break-inside: avoid; }
   .weekly-values { min-width: 0; }
   .weekly-values tr { break-inside: avoid; }
-  .manual-legal-link { display: none; }
+  .weekly-report-tabs { display: none; }
+  .weekly-tab-panel[hidden] { display: block!important; }
+  .weekly-tab-panel:focus-visible { outline: none; }
   .manual-legal-track { print-color-adjust: exact; }
   .manual-legal h3, .manual-legal h4, .manual-legal-questions summary { break-after: avoid; }
   .manual-legal-scores, .manual-legal-chart, .manual-legal-actions li, .manual-legal-questions details { break-inside: avoid; }

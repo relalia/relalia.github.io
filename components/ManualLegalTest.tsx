@@ -1,5 +1,4 @@
 import type { ManualLegalTest as LegalTest } from '@/lib/types';
-import ManualLegalSection from './ManualLegalSection';
 
 const modes = [
   { key: 'agil', label: 'Ágil' },
@@ -8,14 +7,14 @@ const modes = [
 const finalScore = new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const itemScore = new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 
-export default function ManualLegalTest({ test, id }: { test: LegalTest; id: string }) {
+export default function ManualLegalTest({ test }: { test: LegalTest }) {
   const total = test.questions.length;
   const fullAhead = test.questions.filter(({ scores }) => scores.pleno > scores.agil).length;
   const ties = test.questions.filter(({ scores }) => scores.pleno === scores.agil).length;
   const incidentMax = test.incidents.reduce((max, { counts }) => Math.max(max, counts.agil, counts.pleno), total);
 
-  return <ManualLegalSection id={id}>
-    <h3 id={`${id}-titulo`}>Teste jurídico cartorário manual</h3>
+  return <section className="manual-legal" aria-labelledby="teste-manual-cartorario-titulo">
+    <h3 id="teste-manual-cartorario-titulo">Teste jurídico cartorário manual</h3>
     <p className="manual-legal-context">{test.methodology}</p>
     <dl className="manual-legal-scores" aria-label="Notas finais do teste manual">
       {modes.map(({ key, label }) => <div key={key} className={`manual-legal-${key}`}>
@@ -73,5 +72,5 @@ export default function ManualLegalTest({ test, id }: { test: LegalTest; id: str
     </div>
     <p className="manual-legal-retest"><strong>Próximo reteste.</strong> {test.retest}</p>
     <p className="manual-legal-context"><strong>Fonte.</strong> {test.source}</p>
-  </ManualLegalSection>;
+  </section>;
 }
