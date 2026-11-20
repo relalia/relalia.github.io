@@ -15,7 +15,7 @@ import StructureReport from './StructureReport';
 import AtlasStructureReport from './AtlasStructureReport';
 
 export default function ReportView({ report }: { report: Report }) {
-  const [title, ...subheadings] = report.title.split('\n');
+  const [title, ...titleLines] = report.title.split('\n');
   const featured = report.id === 'estrutura-vadechat-2026-11-12'
     ? report.files.find(file => file.path === '/reports/estrutura-vadechat-2026-11-12.html')
     : undefined;
@@ -23,7 +23,7 @@ export default function ReportView({ report }: { report: Report }) {
     <Timeline activeId={report.id} reports={timelineReports} intro={<section className="intro" aria-label="Sobre o portal"><p>Validações da plataforma Alia. Explore as rodadas, consulte os achados e acompanhe os retestes com seus documentos e evidências.</p></section>}>
     <article className="pane detail">
       <div className="kicker">{report.module} · {formatDate(report.date)}</div>
-      <h2>{title}{subheadings.map(line => <span className="report-title-subheading" key={line}>{' '}{line}</span>)}</h2>
+      <h2>{title}{titleLines.map(line => <span className="report-title-line" key={line}>{' '}{line}</span>)}</h2>
       {report.id === 'atlas-estrutura-2026-11-13' ? <AtlasStructureReport/> : featured ? <><StructureReport/><Downloads files={report.files}/></> : report.benchmarkSources ? <WeeklyBenchmarkReport report={report} sources={report.benchmarkSources}/> : report.overviewId ? <BenchmarkOverviewReport report={report}/> : report.comparisonId ? <BenchmarkComparisonReport report={report} data={getComparison(report.comparisonId)}/> : report.benchmarkId ? <BenchmarkReport report={report} benchmark={getBenchmark(report.benchmarkId)}/> : <>
       <div className="meta"><span className="tag">{report.status}</span><span className="tag">{report.count}</span></div>
       {report.latency ? <LatencyBenchmarkResults data={report.latency} note={report.note}/> : <>

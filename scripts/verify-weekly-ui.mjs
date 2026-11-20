@@ -50,8 +50,14 @@ try {
     await page.goto(origin + route + manualHash);
     await page.getByLabel('Senha', { exact: true }).fill(password);
     await page.getByRole('button', { name: 'Entrar', exact: true }).click();
-    await page.getByRole('heading', { name: title, exact: true }).waitFor();
+    const heading = page.getByRole('heading', { name: title, exact: true });
+    await heading.waitFor();
     assert.equal(await page.title(), title);
+    assert(await heading.evaluate(element => {
+      const firstLine = getComputedStyle(element);
+      const nextLine = getComputedStyle(element.querySelector('.report-title-line'));
+      return nextLine.fontSize === firstLine.fontSize && nextLine.fontWeight === firstLine.fontWeight;
+    }), `Title lines use different type sizes or weights at ${width}px`);
     const tablist = page.getByRole('tablist', { name: 'Relatórios da edição' });
     const summaryTab = tablist.getByRole('tab', { name: 'Resumo da semana' });
     const manualTab = tablist.getByRole('tab', { name: 'Teste jurídico cartorário manual' });

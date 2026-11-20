@@ -47,7 +47,7 @@
 .weekly-sources a:hover { background: #edf6f0; }
 .weekly-sources small, .weekly-sources strong { display: block; }
 .weekly-sources small { color: #526b65; }
-.report-title-subheading { display: block; margin-top: 5px; font-size: clamp(17px, 2vw, 23px); letter-spacing: -.015em; }
+.report-title-line { display: block; margin-top: 5px; }
 .weekly-report-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; border-bottom: 1px solid #dce8e0; }
 .weekly-report-tabs button {
   min-height: 48px;
