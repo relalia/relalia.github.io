@@ -7,8 +7,21 @@ const tabs = [
   { panelId: 'teste-manual-cartorario', label: 'Teste jurídico cartorário manual' },
 ] as const;
 
-function tabFromHash() {
-  return tabs.findIndex(({ panelId }) => location.hash === `#${panelId}`);
+function fragmentTarget(group: HTMLElement) {
+  if (!location.hash) return { index: 0 };
+  let id: string;
+  try {
+    id = decodeURIComponent(location.hash.slice(1));
+  } catch {
+    return null;
+  }
+  const target = document.getElementById(id);
+  if (!target || !group.contains(target)) return null;
+
+  const panel = target.closest('.weekly-tab-panel');
+  const index = tabs.findIndex(({ panelId }) => panelId === panel?.id);
+  if (index < 0) return null;
+  return { index, anchor: target === panel ? undefined : target };
 }
 
 export default function WeeklyReportTabs({ summary, manual }: { summary: ReactNode; manual: ReactNode }) {
@@ -18,25 +31,32 @@ export default function WeeklyReportTabs({ summary, manual }: { summary: ReactNo
   const manualPanel = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const container = group.current;
+    if (!container) return;
     let frame = 0;
-    const initial = tabFromHash();
-    if (initial >= 0) {
-      setSelected(initial);
-      frame = requestAnimationFrame(() => {
-        const tab = buttons.current[initial];
-        tab?.focus({ preventScroll: true });
-        tab?.scrollIntoView({ block: 'nearest', behavior: 'instant' });
-      });
-    }
 
-    function syncHistory() {
+    const syncLocation = (initial = false) => {
       cancelAnimationFrame(frame);
-      const index = Math.max(0, tabFromHash());
+      const match = fragmentTarget(container);
+      if (!match) return;
+      const { index, anchor } = match;
       setSelected(index);
-      if (group.current?.contains(document.activeElement)) {
-        buttons.current[index]?.focus({ preventScroll: true });
-      }
-    }
+
+      const revealTab = initial && Boolean(location.hash);
+      if (!anchor && !revealTab && !container.contains(document.activeElement)) return;
+      frame = requestAnimationFrame(() => {
+        if (anchor) {
+          if (anchor.tabIndex < 0 && !anchor.hasAttribute('tabindex')) anchor.tabIndex = -1;
+          anchor.focus({ preventScroll: true });
+          anchor.scrollIntoView({ block: 'start', behavior: 'instant' });
+          return;
+        }
+        const tab = buttons.current[index];
+        tab?.focus({ preventScroll: true });
+        if (revealTab) tab?.scrollIntoView({ block: 'nearest', behavior: 'instant' });
+      });
+    };
+    const syncHistory = () => syncLocation();
 
     let closed: HTMLDetailsElement[] | undefined;
     function expandForPrint() {
@@ -49,6 +69,7 @@ export default function WeeklyReportTabs({ summary, manual }: { summary: ReactNo
       closed = undefined;
     }
 
+    syncLocation(true);
     window.addEventListener('hashchange', syncHistory);
     window.addEventListener('popstate', syncHistory);
     window.addEventListener('beforeprint', expandForPrint);

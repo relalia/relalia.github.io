@@ -71,6 +71,12 @@ try {
     assert(left && right && Math.abs(left.y - right.y) < 1 && Math.abs(left.width - right.width) < 1 &&
       left.height >= 44 && left.height === right.height && right.x >= left.x + left.width && right.x + right.width <= width,
       `Tabs are not aligned side by side at ${width}px`);
+    if (width === 1440) {
+      await page.emulateMedia({ forcedColors: 'active' });
+      const indicator = tab => tab.evaluate(element => getComputedStyle(element).borderBottomColor);
+      assert.notEqual(await indicator(manualTab), await indicator(summaryTab), 'Selected tab loses its visual indicator in forced colors');
+      await page.emulateMedia({ forcedColors: 'none' });
+    }
 
     assert.deepEqual(await manual.locator('.manual-legal-scores dd').allInnerTexts(), ['4,53 / 10', '6,60 / 10', '8 / 10 perguntas\n2 empates em nota']);
     assert.deepEqual(await manual.locator('.manual-legal-incident strong').allTextContents(), ['8', '3', '3', '4', '2', '2', '0', '3']);
@@ -115,6 +121,10 @@ try {
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1), `Summary overflows at ${width}px`);
 
     await summaryTab.focus();
+    const modifierEvent = await summaryTab.evaluate(element => element.dispatchEvent(new KeyboardEvent('keydown', {
+      key: 'ArrowRight', altKey: true, bubbles: true, cancelable: true,
+    })));
+    assert(modifierEvent && await summaryTab.getAttribute('aria-selected') === 'true');
     await page.keyboard.press('ArrowRight');
     await page.waitForURL(`**/${manualHash}`);
     await waitForTabFocus(page, 'teste-manual-cartorario-tab');
@@ -137,7 +147,11 @@ try {
       await page.evaluate(() => window.dispatchEvent(new Event('afterprint')));
       assert.equal(await manual.locator('details[open]').count(), 1);
       assert.equal(await critical.getAttribute('open'), '');
+      await summaryTab.click();
+      await page.emulateMedia({ media: 'print' });
+      assert(await manualPanel.isVisible() && await summaryPanel.isVisible() && await tablist.isHidden());
       await page.pdf({ path: `${output}/weekly-print.pdf`, preferCSSPageSize: true });
+      await page.emulateMedia({ media: null });
       await page.goto(`${origin}/relatorios/resumo-benchmarks-vadechat-2026-11-06/`);
       await page.getByRole('heading', { name: 'Notas médias por rodada' }).waitFor();
       assert.equal(await page.locator('.manual-legal').count(), 0);
@@ -153,6 +167,22 @@ try {
     await page.waitForURL(`**/${manualHash}`);
     await page.reload();
     await waitForTabFocus(page, 'teste-manual-cartorario-tab');
+    if (width === 320 || width === 1440) {
+      await page.goto(`${origin}${route}#%E0%A4%A`);
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      assert(await manualPanel.isVisible(), 'A malformed fragment changed the selected tab');
+      for (const [fragment, panel] of [['teste-manual-cartorario-titulo', manualPanel], ['weekly-outcomes', summaryPanel]]) {
+        const encoded = width === 1440 ? `%${fragment.charCodeAt(0).toString(16)}${fragment.slice(1)}` : fragment;
+        await page.goto(`${origin}${route}#${encoded}`);
+        await page.reload();
+        await panel.waitFor({ state: 'visible', timeout: 2500 });
+        await page.waitForFunction(id => {
+          const target = document.getElementById(id);
+          const top = target?.getBoundingClientRect().top;
+          return target === document.activeElement && top >= 0 && top < innerHeight / 3;
+        }, fragment, { timeout: 2500 });
+      }
+    }
     assert.deepEqual(errors, []);
     await context.close();
     console.log(`${width}px: equal tabs, exclusive panels, results, keyboard, history and deep link verified.`);

@@ -65,6 +65,7 @@
 .weekly-report-tabs button[aria-selected="true"] { background: #e7f2eb; border-bottom-color: #17645b; color: #174d46; }
 .weekly-report-tabs button:focus-visible { outline-offset: -3px; }
 .weekly-tab-panel { min-width: 0; }
+.weekly-tab-panel [id] { scroll-margin-top: 20px; }
 .weekly-tab-panel:focus-visible { outline: 3px solid #d69a39; outline-offset: 4px; }
 .manual-legal h4 { margin: 24px 0 10px; font-size: 16px; }
 .manual-legal-context { margin: 6px 0 14px; color: #526b65; font-size: 12px; }
