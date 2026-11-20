@@ -45,6 +45,36 @@ test('weekly editions reject misdated sources, inconsistent totals and invalid n
   edition.date=originalEditionDate;
   assert.doesNotThrow(()=>validateData(next));
 });
+test('the manual legal test preserves its reviewed scores and weekly bouts stay separate',()=>{
+  const next=structuredClone(data);
+  const report=next.reports.find(report=>report.id==='resumo-benchmarks-vadechat-2026-11-19');
+  const manual=report.manualLegalTest;
+  assert.equal(report.count,'3 benchmarks · 30 embates comparáveis');
+  assert.deepEqual(manual.finalScores,{agil:4.53,pleno:6.6});
+  assert.deepEqual(manual.questions.map(({scores})=>[scores.agil,scores.pleno]),
+    [[1,1],[8,10],[4.5,7],[4,9],[5,9.5],[7,9],[7.5,8],[2,7],[6,6],[4,6.5]]);
+  assert.deepEqual(manual.incidents.map(({counts})=>[counts.agil,counts.pleno]),[[8,3],[3,4],[2,2],[0,3]]);
+  assert.equal(manual.recommendations.length,7);
+  for(const badScore of [11,7.04]){
+    manual.questions[7].scores.pleno=badScore;
+    assert.throws(()=>validateData(next),/Invalid manual legal test questions/);
+  }
+  manual.questions[7].scores.pleno=7;
+  manual.questions.reverse();
+  assert.throws(()=>validateData(next),/Invalid manual legal test questions/);
+  manual.questions.reverse();
+  for(const badPages of [[21,18],[18,30],[0]]){
+    manual.questions[7].sourcePages=badPages;
+    assert.throws(()=>validateData(next),/Invalid manual legal test questions/);
+  }
+  manual.questions[7].sourcePages=[18,21];
+  manual.incidents[0].counts.extra=1000;
+  assert.throws(()=>validateData(next),/Invalid manual legal test incidents/);
+  delete manual.incidents[0].counts.extra;
+  assert.doesNotThrow(()=>validateData(next));
+  manual.recommendations[0].acceptance='';
+  assert.throws(()=>validateData(next),/Invalid manual legal test recommendations/);
+});
 test('standalone HTML attachments must be generated inside reports',()=>{
   const copy=structuredClone(data);
   const file=copy.reports.find(report=>report.id==='estrutura-vadechat-2026-11-12').files[0];

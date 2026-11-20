@@ -22,7 +22,16 @@ function expectedOutcome(mode, benchmark, labels=benchmark.opponent) {
  };
 }
 const before=JSON.parse(execFileSync('git',['show','HEAD:content/reports.json'],{encoding:'utf8'}));
-for(const previous of before.reports.filter(r=>r.id!==id))assert.deepEqual(data.reports.find(r=>r.id===previous.id),previous);
+function weeklyBenchmarkFields(report) {
+ const { manualLegalTest, summary, ...benchmarkFields } = report;
+ return benchmarkFields;
+}
+for(const previous of before.reports.filter(r=>r.id!==id)){
+ const current=data.reports.find(r=>r.id===previous.id);
+ if(previous.benchmarkSources && current?.manualLegalTest){
+  assert.deepEqual(weeklyBenchmarkFields(current),weeklyBenchmarkFields(previous));
+ }else assert.deepEqual(current,previous);
+}
 for(const previous of before.evidence.filter(e=>e.reportId!==id))assert.deepEqual(data.evidence.find(e=>e.id===previous.id),previous);
 const hash=b=>createHash('sha256').update(b).digest('hex');
 for(const report of before.reports.filter(report=>report.id!==id))for(const f of report.files){assert.equal(hash(fs.readFileSync('public'+f.path)),hash(execFileSync('git',['show','HEAD:public'+f.path],{maxBuffer:40*1024*1024})));}

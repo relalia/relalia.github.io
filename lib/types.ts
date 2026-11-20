@@ -57,6 +57,7 @@ export interface Report {
   executive?: ExecutiveBenchmark;
   latency?: LatencyBenchmark;
   benchmarkSources?: { reportId: string; label: string }[];
+  manualLegalTest?: ManualLegalTest;
   overviewId?: string;
   comparisonId?: string;
   benchmarkId?: string;
@@ -72,6 +73,31 @@ export interface Report {
   note?: string;
   files: Attachment[];
   findings: Finding[];
+}
+
+interface LegalTestModes<T> {
+  agil: T;
+  pleno: T;
+}
+
+export interface ManualLegalTest {
+  source: string;
+  sourcePageCount: number;
+  methodology: string;
+  finalScores: LegalTestModes<number>;
+  scoringNote: string;
+  incidents: { label: string; counts: LegalTestModes<number> }[];
+  evidenceNote: string;
+  recommendations: { title: string; change: string; acceptance: string }[];
+  questions: {
+    number: number;
+    title: string;
+    scores: LegalTestModes<number>;
+    findings: LegalTestModes<string>;
+    expected: string;
+    sourcePages: [first: number, last?: number];
+  }[];
+  retest: string;
 }
 
 interface LatencyParticipant {

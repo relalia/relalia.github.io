@@ -93,6 +93,28 @@ function validateLatency(report) {
   assert(report.files.some(file => file.kind === 'pdf' && file.origin === 'original'), `Missing latency source ${report.id}`);
 }
 
+function validateManualLegalTest(report) {
+  const test = report.manualLegalTest;
+  assert(test && report.benchmarkSources && report.module === 'VadeChat', `Manual legal test needs a VadeChat weekly report ${report.id}`);
+  const hasModes = (values, valid) => values && typeof values === 'object' && !Array.isArray(values) &&
+    Object.keys(values).length === 2 && ['agil', 'pleno'].every(mode => Object.hasOwn(values, mode) && valid(values[mode]));
+  const hasUniqueEntries = (entries, key) => Array.isArray(entries) && entries.length > 0 &&
+    entries.every(entry => text(entry?.[key])) && new Set(entries.map(entry => entry[key])).size === entries.length;
+  const validScore = (value, precision) => score(value, 10) && Number(value.toFixed(precision)) === value;
+  const validPages = pages => Array.isArray(pages) && [1, 2].includes(pages.length) &&
+    pages.every(page => natural(page) && page >= 1 && page <= test.sourcePageCount) && (pages.length === 1 || pages[0] < pages[1]);
+  assert([test.source, test.methodology, test.scoringNote, test.evidenceNote, test.retest].every(text) &&
+    natural(test.sourcePageCount) && test.sourcePageCount > 0 && hasModes(test.finalScores, value => validScore(value, 2)),
+    `Invalid manual legal test summary ${report.id}`);
+  assert(hasUniqueEntries(test.incidents, 'label') && test.incidents.every(incident => hasModes(incident.counts, natural)),
+    `Invalid manual legal test incidents ${report.id}`);
+  assert(hasUniqueEntries(test.questions, 'title') && test.questions.every((question, index) => question.number === index + 1 &&
+    hasModes(question.scores, value => validScore(value, 1)) && hasModes(question.findings, text) && text(question.expected) && validPages(question.sourcePages)),
+    `Invalid manual legal test questions ${report.id}`);
+  assert(hasUniqueEntries(test.recommendations, 'title') && test.recommendations.every(item => text(item.change) && text(item.acceptance)),
+    `Invalid manual legal test recommendations ${report.id}`);
+}
+
 export function validateData(data,assetExists=()=>true) {
   assert(Array.isArray(data.reports) && data.reports.length>0,'Catalog needs reports');
   assert(Array.isArray(data.evidence),'Catalog needs evidence');
@@ -127,6 +149,7 @@ export function validateData(data,assetExists=()=>true) {
     }
     if(report.executive) validateExecutive(report);
     if(report.latency) validateLatency(report);
+    if(report.manualLegalTest !== undefined) validateManualLegalTest(report);
   }
   for(const report of data.reports.filter(report=>report.benchmarkSources)) {
     const sources=report.benchmarkSources;

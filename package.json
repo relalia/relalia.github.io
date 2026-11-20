@@ -14,7 +14,8 @@
     "test:comparison-ui": "node scripts/verify-comparison-ui.mjs",
     "check": "pnpm test && pnpm typecheck && pnpm build && pnpm verify",
     "test:overview-ui": "node scripts/verify-overview-ui.mjs",
-    "test:atlas-ui": "node scripts/verify-atlas-ui.mjs"
+    "test:atlas-ui": "node scripts/verify-atlas-ui.mjs",
+    "test:weekly-ui": "node scripts/verify-weekly-ui.mjs"
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.3.7",

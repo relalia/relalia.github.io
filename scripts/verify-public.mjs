@@ -6,16 +6,23 @@ import {validateAccessConfig} from '../lib/access.mjs';
 import {assertStaticReport} from './static-report.mjs';
 const root=path.resolve('out');
 const exists=p=>fs.existsSync(path.join(root,p));
+function readReport(artifact, report) {
+  const html=fs.readFileSync(path.join(root,artifact),'utf8');
+  assertStaticReport(html,report.id,artifact);
+  if (html.includes('teste-manual-cartorario-titulo') !== Boolean(report.manualLegalTest)) {
+    throw Error(`Unexpected manual legal test in ${artifact}`);
+  }
+  return html;
+}
 validateData(data,p=>exists(p.slice(1)));
 if(!exists('index.html') || !exists('.nojekyll')) throw Error('Missing static root');
 if (!exists('access-config.json') || !validateAccessConfig(JSON.parse(fs.readFileSync(path.join(root,'access-config.json'),'utf8')))) throw Error('Missing/invalid access configuration: run scripts/set-access-password.ps1 locally');
 const latest=[...data.reports].sort((a,b)=>b.date.localeCompare(a.date))[0];
-assertStaticReport(fs.readFileSync(path.join(root,'index.html'),'utf8'),latest.id,'/');
+readReport('index.html',latest);
 for(const report of data.reports) {
   const route=`relatorios/${report.id}/index.html`;
   if(!exists(route)) throw Error(`Missing static route ${route}`);
-  const html=fs.readFileSync(path.join(root,route),'utf8');
-  assertStaticReport(html,report.id,route);
+  const html=readReport(route,report);
   // Level 1 hides the interface on initial render. Report content remains public in RSC data.
   if (!html.includes('JavaScript está desativado')) throw Error(`Missing access gate fallback ${route}`);
   if (html.includes('class="shell"')) throw Error(`Portal interface rendered before unlock ${route}`);

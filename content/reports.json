@@ -7539,7 +7539,7 @@
       "module": "VadeChat",
       "status": "Síntese visual",
       "count": "3 benchmarks · 30 embates comparáveis",
-      "summary": "Comparação das notas médias e dos resultados por vitórias do VadeChat Ágil e Pleno contra Grok 4.7, Sabiá 5 e DeepSeek V4.1 Flash nas rodadas de 16, 17 e 18/11/2026.",
+      "summary": "Comparação do VadeChat com Grok 4.7, Sabiá 5 e DeepSeek V4.1 Flash, com os achados de um teste jurídico cartorário manual e recomendações de correção.",
       "highlights": [],
       "files": [],
       "findings": [],
@@ -7556,7 +7556,171 @@
           "reportId": "benchmark-deepseek-v4-1-flash-2026-11-18",
           "label": "DeepSeek V4.1 Flash"
         }
-      ]
+      ],
+      "manualLegalTest": {
+        "source": "Teste Jurídico Cartorário do VadeChat - Perfis Ágil e Pleno, 19/11/2026. Notas e contagens na p. 25. Recomendações nas p. 27–28.",
+        "sourcePageCount": 29,
+        "methodology": "As mesmas 10 perguntas foram copiadas manualmente, uma a uma, primeiro no Ágil e depois no Pleno, com o mesmo prompt e busca na Base de Conhecimento do VadeChat. A Qwen 4 Max criou as perguntas, o gabarito e a rubrica e avaliou as respostas. O Claude Opus 5.5, no modo Extra, revisou o gabarito, as notas e as citações.",
+        "finalScores": { "agil": 4.53, "pleno": 6.6 },
+        "scoringNote": "Notas finais ponderadas, com peso 1 nos itens 1–5 e peso 2 nos itens 6–10. O teste aplicou os ajustes de formato, contexto e o bônus do Pleno no item 6.",
+        "incidents": [
+          { "label": "Formato ou limite descumprido", "counts": { "agil": 8, "pleno": 3 } },
+          { "label": "Citações deslocadas ou impróprias", "counts": { "agil": 3, "pleno": 4 } },
+          { "label": "Abstenções integrais", "counts": { "agil": 2, "pleno": 2 } },
+          { "label": "Respostas com contexto de outra pergunta", "counts": { "agil": 0, "pleno": 3 } }
+        ],
+        "evidenceNote": "O teste não constatou normas inventadas. No Pleno, 4 respostas vieram com listas de 30 a 41 dispositivos, a maioria sem uso no texto. A versão da base usada em cada rodada ficou sem registro.",
+        "recommendations": [
+          {
+            "title": "Validar vigência, escopo e premissa",
+            "change": "O Ágil inverteu o efeito do silêncio na usucapião (item 8). Confira vigência, jurisdição e escopo antes de gerar. Aplique a fonte federal à regra geral e delimite as exceções. Se a norma citada não for localizada, sinalize a lacuna e só corrija a premissa com fonte confirmada.",
+            "acceptance": "Nos itens 5, 8 e 9, distinguir a regra geral da REURB, os efeitos do silêncio e as regras das atas em cada procedimento, e refutar a falsa dispensa de registro. Tratar o item 8 como bloqueador do reteste se a conclusão voltar a ser invertida."
+          },
+          {
+            "title": "Isolar o contexto de cada pergunta",
+            "change": "Monte o contexto de geração e de busca a partir da pergunta atual. Reuse histórico somente se o enunciado fizer referência explícita a um turno anterior. Registre quais trechos entraram em cada execução.",
+            "acceptance": "Repetir a sequência completa e depois os itens 4, 7 e 10 em sessões isoladas. Exigir 0/10 respostas com trechos de outra pergunta e nenhuma repetição indevida do conteúdo do item 2."
+          },
+          {
+            "title": "Reordenar a busca e verificar citações",
+            "change": "Priorize o dispositivo que fundamenta cada afirmação, com órgão, jurisdição e artigo identificados. Confira se o trecho citado sustenta a conclusão e remova evidências sem uso na resposta. Use até três referências principais e acrescente outras só se o enunciado exigir.",
+            "acceptance": "Nos itens 2, 3, 4 e 10, exigir nenhuma citação deslocada e evidência associada a cada conclusão. O art. 167, I, da LRP, por exemplo, não substitui o art. 1.245 do CC como fundamento da transmissão."
+          },
+          {
+            "title": "Melhorar a cobertura e a recuperação",
+            "change": "Audite presença e recuperação por artigo. Priorize as Leis 9.784/1999 (art. 22) e 13.726/2018 (art. 3º), o CC (arts. 117, 177, 661, 685, 982, 983, 998, 1.150 e 1.245), a Lei 8.935/1994 (arts. 7º, 11 e 45), a Lei 10.169/2000, a ADI 1.378-MC, a LRP (art. 160) e o Prov. CNJ 149/2023 (arts. 306, 402, 440-F e 440-S). Com evidência parcial confirmada, responda a parte sustentada e sinalize a lacuna.",
+            "acceptance": "No item 1, localizar e citar os dispositivos ou registrar separadamente se a norma falta no índice ou se a busca não a recuperou. Nos itens 3, 8 e 10, recuperar a fonte direta de cada regra central."
+          },
+          {
+            "title": "Validar o formato antes de entregar",
+            "change": "Conte palavras sem as citações entre colchetes e valide instruções estruturais depois da geração. Se a resposta falhar, reescreva e confira se todas as partes pedidas continuam presentes.",
+            "acceptance": "Exigir 0 descumprimentos nos 10 itens. No item 4, entregar seis linhas, uma por ato. Nos itens com limite, conferir a contagem sem omitir condições ou conclusões."
+          },
+          {
+            "title": "Registrar a versão da base indexada",
+            "change": "Registre versão, data e fonte dos documentos por execução. Compare a versão indexada com a fonte oficial antes de reindexar. Confira os arts. 396-A, 399-A e 411-A de Goiás, pendentes no teste.",
+            "acceptance": "Registrar a origem e a vigência dos três artigos, ou marcá-los como não confirmados. Incluir um controle para que os arts. 461 a 463 não apareçam como vigentes, conforme a revogação registrada na revisão."
+          },
+          {
+            "title": "Versionar o gabarito e reproduzir a rodada",
+            "change": "Congele o gabarito revisado, a rubrica, as fontes, os prompts e a versão da base. Registre cada correção e o motivo de cada desconto. Use a mesma base para repetir os dois perfis e isolar o efeito do perfil.",
+            "acceptance": "Conferir os itens 1 e 3 com o gabarito corrigido, documentar a dedução de 0,5 do Pleno no item 5 se o registro da avaliação estiver disponível e aceitar as duas conclusões fundamentadas previstas para o item 10."
+          }
+        ],
+        "questions": [
+          {
+            "number": 1,
+            "title": "Reconhecimento de firma",
+            "scores": { "agil": 1, "pleno": 1 },
+            "findings": {
+              "agil": "“Resposta abstida — sem evidência suficiente.” Omitiu os tipos de reconhecimento e as dispensas em órgãos públicos.",
+              "pleno": "Deu a mesma abstenção integral e deixou os mesmos pontos sem resposta."
+            },
+            "expected": "Distinguir semelhança e autenticidade. Explicar o cotejo de assinatura e a conferência da cópia pelo agente público (Lei 13.726/2018, art. 3º, I e II). A regra sobre dúvida de autenticidade está na Lei 9.784/1999, art. 22, § 2º, segundo a revisão.",
+            "sourcePages": [3, 4]
+          },
+          {
+            "number": 2,
+            "title": "Escritura e propriedade",
+            "scores": { "agil": 8, "pleno": 10 },
+            "findings": {
+              "agil": "Acertou que a transmissão ocorre no registro. Citou a lista de atos registráveis da LRP e omitiu os arts. 1.227 e 1.245 do CC. Excedeu o limite.",
+              "pleno": "Citadas as regras da escritura e da transmissão com o fundamento central, dentro do limite."
+            },
+            "expected": "Citar o CC, art. 108 para a forma e arts. 1.227 e 1.245 para a transmissão. Responder aos dois pontos em até 120 palavras.",
+            "sourcePages": [4, 5]
+          },
+          {
+            "number": 3,
+            "title": "Gratuidades e emolumentos",
+            "scores": { "agil": 4.5, "pleno": 7 },
+            "findings": {
+              "agil": "Classificou emolumentos como “remuneração” e citou a Lei 6.015/1973 como lei de regência. Misturou gratuidades gerais e por pobreza, omitiu as primeiras certidões de nascimento e óbito e a celebração gratuita do casamento. Excedeu o limite.",
+              "pleno": "“Natureza jurídica: não localizada expressamente”. Indicou a Lei 10.169/2000 via Prov. 221/2026. Omitiu declaração de pobreza, declaração a rogo, responsabilidade por falsidade e vedação de mencionar a pobreza na certidão."
+            },
+            "expected": "Separar atos gratuitos a todos de isenções por pobreza. Classificar emolumentos como taxa segundo a referência do teste e citar diretamente a Lei 10.169/2000.",
+            "sourcePages": [6, 7]
+          },
+          {
+            "number": 4,
+            "title": "Competência das serventias",
+            "scores": { "agil": 4, "pleno": 9 },
+            "findings": {
+              "agil": "Generalizou a regra territorial da ata, omitiu a Junta Comercial para a limitada empresária e o nome do Tabelionato de Protesto. Citou o art. 1º da Lei 9.492 em lugar do art. 6º e ignorou o formato.",
+              "pleno": "Misturou conteúdo da pergunta 2 e ignorou a linha única por ato. Deslocou os arts. 440-AS e 440-F ao fundamentar a transferência e a competência geral para a ata."
+            },
+            "expected": "Uma linha por ato. Distinguir sociedade simples de empresária e indicar o órgão competente sem aplicar regra territorial de procedimento específico à ata genérica.",
+            "sourcePages": [7, 11]
+          },
+          {
+            "number": 5,
+            "title": "Prazos do Registro de Imóveis",
+            "scores": { "agil": 5, "pleno": 9.5 },
+            "findings": {
+              "agil": "Generalizou 60 dias da regra especial, estendeu a redução para 5 dias, acrescentou validade de 30 dias à certidão, omitiu horas úteis e excedeu o limite.",
+              "pleno": "Acertou os prazos e a contagem em dias e horas úteis. A fonte não explica o desconto de 0,5 ponto."
+            },
+            "expected": "No gabarito, prenotação em 20 dias, ou 40 na REURB-S. Registro ou devolução em 10 dias, ou 5 nas hipóteses legais. Certidão eletrônica em 4 horas com matrícula informada.",
+            "sourcePages": [11, 13]
+          },
+          {
+            "number": 6,
+            "title": "Inventário extrajudicial",
+            "scores": { "agil": 7, "pleno": 9 },
+            "findings": {
+              "agil": "Admitiu a via extrajudicial e depois afirmou a obrigatoriedade judicial, sem conciliar as regras. Omitiu condições sobre nascituro, impugnação e ineficácia do testamento. Excedeu o limite.",
+              "pleno": "Conciliou as regras e citou capacidade e concordância na regra geral, mas deixou de explicitar essa condição ou o atendimento ao art. 12-A no caso de testamento. Omitiu a Res. 571/2024, a espera pelo registro do nascituro e a hipótese de ineficácia judicial do testamento. Excedeu 150 palavras."
+            },
+            "expected": "Aplicar separadamente as condições dos arts. 12-A e 12-B da Res. CNJ 35/2007, com a alteração da Res. 571/2024. Conferir o art. 396-A de Goiás citado pelos dois perfis.",
+            "sourcePages": [13, 16]
+          },
+          {
+            "number": 7,
+            "title": "Divórcio com filhos menores",
+            "scores": { "agil": 7.5, "pleno": 8 },
+            "findings": {
+              "agil": "Desviou para procuração particular, excedeu o limite e omitiu a Res. 571/2024 e o dispositivo nacional sobre os menores.",
+              "pleno": "Abriu com a compra de imóvel da pergunta 2. Os dois perfis citaram o art. 411-A de Goiás, pendente de conferência."
+            },
+            "expected": "Explicar a resolução judicial prévia sobre guarda, visitação e alimentos e a procuração pública com poderes especiais, cláusulas essenciais e validade de 30 dias. Os dois omitiram detalhes do gabarito sobre declaração de gravidez, remessa da dúvida ao juiz, livre escolha de tabelião e averbação sem homologação.",
+            "sourcePages": [16, 18]
+          },
+          {
+            "number": 8,
+            "title": "Usucapião e adjudicação",
+            "scores": { "agil": 2, "pleno": 7 },
+            "findings": {
+              "agil": "Afirmou que “o silêncio do notificado é discordância” e exigiu manifestação expressa. Negou prazo e efeito do silêncio na adjudicação, omitiu o tratamento das impugnações e as dispensas e não distinguiu as atas. Excedeu o limite.",
+              "pleno": "Acertou a concordância na usucapião e a mora na adjudicação. Omitiu os 15 dias úteis para anuência ou impugnação, a competência de cada ata, a representação por advogado, a prova de pagamento na ata e as dispensas na adjudicação. Na usucapião, omitiu o tratamento das impugnações e o prazo para órgãos públicos e terceiros."
+            },
+            "expected": "Separar concordância na usucapião de mora ou presunção de inadimplemento na adjudicação. Distinguir o tabelião do município do imóvel da livre escolha, ressalvada a diligência local. Conferir ART/RRT e procuração específica, omitidos pelos dois, e as dispensas de registro prévio da promessa e de regularidade fiscal do vendedor.",
+            "sourcePages": [18, 21]
+          },
+          {
+            "number": 9,
+            "title": "Premissa falsa sobre escritura eletrônica",
+            "scores": { "agil": 6, "pleno": 6 },
+            "findings": {
+              "agil": "Absteve-se sem refutar a falsa dispensa de registro ou explicar a continuidade.",
+              "pleno": "Deu a mesma abstenção genérica. Nenhum dos perfis inventou um artigo."
+            },
+            "expected": "Refutar explicitamente a premissa sobre o suposto Provimento CNJ 1.187/2025. Segundo o gabarito, a escritura eletrônica não substitui o registro (CC, art. 1.245) e a continuidade segue aplicável (LRP, arts. 195 e 237).",
+            "sourcePages": [22]
+          },
+          {
+            "number": 10,
+            "title": "Autocontrato e continuidade",
+            "scores": { "agil": 4, "pleno": 6.5 },
+            "findings": {
+              "agil": "Tratou o poder expresso de vender como suficiente para vender a si mesmo. Omitiu os arts. 117 e 177 do CC e providências como ratificação, nova escritura, nota devolutiva ou dúvida. Excedeu 150 palavras.",
+              "pleno": "“Não se registra.” Chamou de genéricos os poderes expressos, omitiu os arts. 117 e 177 do CC e citou o art. 157 de Goiás fora de escopo. Tratou compra e venda como promessa (CC, art. 1.417) e usou a LRP, art. 221, II, de forma indireta. Repetiu parte da pergunta 2 e excedeu 150 palavras."
+            },
+            "expected": "Distinguir poder de vender de permissão para autocontratar. Explicitar a anulabilidade, a providência e o efeito do contrato A–C sem registro. O gabarito aceita as duas conclusões se fundamentadas.",
+            "sourcePages": [22, 25]
+          }
+        ],
+        "retest": "Repita os 10 itens em ambos os perfis com a mesma base. Acrescente 5 controles (REURB-E, alteração de nome, prazo de protesto, apostila e CNIB) e 2 testes de sessão (pergunta curta após uma longa e mudança de especialidade)."
+      }
     }
   ],
   "evidence": [

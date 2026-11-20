@@ -3,9 +3,11 @@ import { getReport } from '@/lib/reports';
 import type { Report } from '@/lib/types';
 import { executiveOutcome } from '@/lib/benchmark-outcomes.mjs';
 import { outcomeCoverage, outcomeLabel, outcomeMean as score, outcomeRecord } from './BenchmarkOutcome';
+import ManualLegalTest from './ManualLegalTest';
 
 type Sources = NonNullable<Report['benchmarkSources']>;
 const modes = [{ key: 'agil', label: 'Ágil' }, { key: 'pleno', label: 'Pleno' }];
+const manualTestId = 'teste-manual-cartorario';
 const shortDate = (date: string) => `${date.slice(8, 10)}/${date.slice(5, 7)}`;
 
 function loadRounds(sources: Sources) {
@@ -81,6 +83,7 @@ export default function WeeklyBenchmarkReport({ report, sources }: { report: Rep
   const results = modes.map(mode => ({ ...mode, rows: modeResults(rounds, mode.key) }));
   return <div className="benchmark weekly-benchmark">
     <div className="meta"><span className="tag">{report.status}</span><span className="tag">{report.count}</span></div>
+    {report.manualLegalTest && <a className="manual-legal-link" href={`#${manualTestId}`}>Teste manual e recomendações ↓</a>}
     <section aria-labelledby="weekly-means">
       <h3 id="weekly-means">Notas médias por rodada</h3>
       <div className="weekly-legend">
@@ -114,5 +117,6 @@ export default function WeeklyBenchmarkReport({ report, sources }: { report: Rep
         <span><small>{shortDate(round.date)}</small><strong>{round.label}</strong></span><span aria-hidden="true">↗</span>
       </Link></li>)}</ul>
     </section>
+    {report.manualLegalTest && <ManualLegalTest test={report.manualLegalTest} id={manualTestId}/>}
   </div>;
 }
